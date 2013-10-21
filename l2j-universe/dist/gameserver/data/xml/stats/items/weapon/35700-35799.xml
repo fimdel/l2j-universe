@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="35708" name="Оружие Руми">
+		<!--Done by ALF-->
+		<set name="icon" value="icon.weapon_monster_i00"/>
+		<set name="weight" value="300"/>
+		<set name="type" value="SWORD"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="5"/>
+			<add stat="mAtk" order="0x10" value="5"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+</list>

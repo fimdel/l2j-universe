@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="5700" name="Seed: Alternative Great Cobol">
+	<!-- Plant this seed onto a monster in the Innadril area and it will bear the fruit of the Alternative Great Cobol. For best results, a level 41-51 character must plant it on a level 41-51 monster. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_cobol_seed_i00"/>
+		<set name="price" value="50"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SEED"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="5701" name="Seed: Alternative Red Codran">
+	<!-- Plant this seed onto a monster in the Innadril area and it will bear the fruit of the Alternative Red Codran. For best results, a level 44-54 character must plant it on a level 44-54 monster. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_codran_seed_i00"/>
+		<set name="price" value="40"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SEED"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="5702" name="Seed: Alternative Sea Codran">
+	<!-- Plant this seed onto a monster in the Innadril area and it will bear the fruit of the Alternative Sea Codran. For best results, a level 44-54 character must plant it on a level 44-54 monster. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_codran_seed_i00"/>
+		<set name="price" value="50"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SEED"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="5703" name="Lucky Charm">
+	<!-- Bestows blessing on its owner such that when the owner dies during a boss/raid war, his/her abilities will not be diminished. This item can only be used on self by a character whose level is 19 or below. -->
+		<set name="reuse_delay" value="10000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_charm_of_luck_i00"/>
+		<set name="price" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="10"/>
+		<skills>
+			<skill id="2168" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="5707" name="Record of Seven Signs">
+	<!-- Item used for studying the current situation of the Seven Signs system. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_ssq_scroll_i00"/>
+		<set name="price" value="500"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5708" name="Lord's Certificate of Approval">
+	<!-- When one possesses this item, although one does not belong to a castle owning clan, one can join the Lords of Dawn. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_permit_card_i00"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5741" name="Recipe: Sealed Zubei's Gauntlets">
+	<!-- For Dwarves only. Recipe for the sealed Zubei's gauntlets. Requires Create Item - Skill Level 6. The success rate is 100%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_red_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5742" name="Recipe: Sealed Zubei's Gauntlets (60%)">
+	<!-- For Dwarves only. Recipe for the sealed Zubei's gauntlets. Requires Create Item - Skill Level 6. The success rate is 60%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_red_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5743" name="Recipe: Sealed Avadon Gloves">
+	<!-- For Dwarves only. Recipe for the Sealed Avadon Gloves. Requires Create Item - Skill Level 6. The success rate is 100%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_red_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5744" name="Recipe: Sealed Avadon Gloves (60%)">
+	<!-- For Dwarves only. Recipe for the Sealed Avadon Gloves. Requires Create Item - Skill Level 6. The success rate is 60%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_red_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5745" name="Recipe: Sealed Blue Wolf Gloves">
+	<!-- For Dwarves only. Recipe for the sealed Blue Wolf gloves. Requires Create Item - Skill Level 7. The success rate is 100%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5746" name="Recipe: Sealed Blue Wolf Gloves (60%)">
+	<!-- For Dwarves only. Recipe for the sealed Blue Wolf gloves. Requires Create Item - Skill Level 7. The success rate is 60%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5747" name="Recipe: Sealed Doom Gloves">
+	<!-- For Dwarves only. Recipe for the Sealed Doom Gloves. Requires Create Item - Skill Level 7. The success rate is 100%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5748" name="Recipe: Sealed Doom Gloves (60%)">
+	<!-- For Dwarves only. Recipe for the Sealed Doom Gloves. Requires Create Item - Skill Level 7. The success rate is 60%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5749" name="Recipe: Sealed Zubei's Boots">
+	<!-- For Dwarves only. Recipe for the Sealed Zubei's Boots. Requires Create Item - Skill Level 6. The success rate is 100%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_red_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5750" name="Recipe: Sealed Zubei's Boots (60%)">
+	<!-- For Dwarves only. Recipe for the Sealed Zubei's Boots. Requires Create Item - Skill Level 6. The success rate is 60%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_red_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5751" name="Recipe: Sealed Avadon Boots">
+	<!-- For Dwarves only. Recipe for the Sealed Avadon Boots. Requires Create Item - Skill Level 6. The success rate is 100%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_red_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5752" name="Recipe: Sealed Avadon Boots (60%)">
+	<!-- For Dwarves only. Recipe for the Sealed Avadon Boots. Requires Create Item - Skill Level 6. The success rate is 60%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_red_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5753" name="Recipe: Sealed Blue Wolf Boots">
+	<!-- For Dwarves only. Recipe for the sealed Blue Wolf Boots. Requires Create Item - Skill Level 7. The success rate is 100%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5754" name="Recipe: Sealed Blue Wolf Boots (60%)">
+	<!-- For Dwarves only. Recipe for the sealed Blue Wolf Boots. Requires Create Item - Skill Level 7. The success rate is 60%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5755" name="Recipe: Sealed Doom Boots">
+	<!-- For Dwarves only. Recipe for the sealed Doom Boots. Requires Create Item - Skill Level 7. The success rate is 100%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5756" name="Recipe: Sealed Doom Boots (60%)">
+	<!-- For Dwarves only. Recipe for the sealed Doom Boots. Requires Create Item - Skill Level 7. The success rate is 60%. -->
+		<set name="class" value="RECIPIES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="90"/>
+		<set name="icon" value="icon.etc_recipe_violet_i00"/>
+		<set name="price" value="17700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="RECIPE"/>
+		<set name="ex_type" value="RECIPE"/>
+		<set name="weight" value="30"/>
+	</etcitem>
+	<etcitem id="5757" name="Sealed Zubei's Gauntlets Part">
+	<!-- Essential ingredient needed by a Dwarf to make a pair of Sealed Zubei's Gauntlets. It can also be sold to a regular store. -->
+		<set name="class" value="PIECES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="price" value="3843"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="5758" name="Sealed Avadon Gloves Part">
+	<!-- Essential ingredient needed by a Dwarf to make a pair of Sealed Avadon Gloves. It can also be sold to a regular store. -->
+		<set name="class" value="PIECES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="price" value="3843"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="5759" name="Sealed Blue Wolf Gloves Fabric">
+	<!-- Essential ingredient needed by a Dwarf to make a pair of Sealed Blue Wolf Gloves. It can also be sold to a regular store. -->
+		<set name="class" value="PIECES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_leather_gray_i00"/>
+		<set name="price" value="4455"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="5760" name="Sealed Doom Gloves Part">
+	<!-- Essential ingredient needed by a Dwarf to make a pair of Sealed Doom Gloves. It can also be sold to a regular store. -->
+		<set name="class" value="PIECES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_plate_silver_i00"/>
+		<set name="price" value="4455"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="5761" name="Sealed Zubei's Boots Design">
+	<!-- Essential ingredient needed by a Dwarf to make a pair of Sealed Zubei's Boots. It can also be sold to a regular store. -->
+		<set name="class" value="PIECES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="price" value="3843"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="5762" name="Sealed Avadon Boots Design">
+	<!-- Essential ingredient needed by a Dwarf to make a pair of Sealed Avadon Boots. It can also be sold to a regular store. -->
+		<set name="class" value="PIECES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_codran_seed_i00"/>
+		<set name="price" value="3843"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="5763" name="Sealed Blue Wolf Boots Design">
+	<!-- Essential ingredient needed by a Dwarf to make a pair of Sealed Blue Wolf Boots. It can also be sold to a regular store. -->
+		<set name="class" value="PIECES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_codran_seed_i00"/>
+		<set name="price" value="4455"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="5764" name="Sealed Doom Boots Part">
+	<!-- Essential ingredient needed by a Dwarf to make a pair of Sealed Doom Boots. It can also be sold to a regular store. -->
+		<set name="class" value="PIECES"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_codran_seed_i00"/>
+		<set name="price" value="4455"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="MATERIAL"/>
+		<set name="weight" value="60"/>
+	</etcitem>
+	<etcitem id="5789" name="Soulshot (No-grade) (Novice)">
+	<!-- A Soulshot (No-grade) for use by newbies. -->
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_soulshot_none_for_rookie_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="5790" name="Spiritshot (No-grade) (Novice)">
+	<!-- A Spiritshot (No-grade) for use by newbies. -->
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_spiritshot_none_for_rookie_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+</list>

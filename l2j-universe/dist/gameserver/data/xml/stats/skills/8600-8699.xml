@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="8600" levels="1" name="Summon Royal Aegis">
+    <!-- Mounts a Knight exclusive horse. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="9206;1;619;1"/>
+		<set name="npcId" val="13311"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Transformation" time="1800" val="129">
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="8601" levels="1" name="Summon Battle Scar">
+    <!-- Mounts a Warrior exclusive horse. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="9206;1;619;1"/>
+		<set name="npcId" val="13312"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Transformation" time="1800" val="130">		
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="8602" levels="1" name="Summon Blood Tail">
+    <!-- Mounts a Rogue exclusive horse. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="9206;1;619;1"/>
+		<set name="npcId" val="13313"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Transformation" time="1800" val="131">		
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="8603" levels="1" name="Summon Tempest Arrow">
+    <!-- Mounts an Archer exclusive horse. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="9206;1;619;1"/>
+		<set name="npcId" val="13314"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Transformation" time="1800" val="132">		
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="8604" levels="1" name="Summon Blue Phantom">
+    <!-- Mounts a Wizard exclusive horse. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="9206;1;619;1"/>
+		<set name="npcId" val="13315"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Transformation" time="1800" val="133">		
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="8605" levels="1" name="Summon White Wing">
+    <!-- Mounts a Summoner exclusive horse. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="9206;1;619;1"/>
+		<set name="npcId" val="13316"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Transformation" time="1800" val="134">		
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="8606" levels="1" name="Summon Swift Melody">
+    <!-- Mounts an Enchanter exclusive horse. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="9206;1;619;1"/>
+		<set name="npcId" val="13317"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Transformation" time="1800" val="135">		
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="8607" levels="1" name="Summon Silver Saint">
+    <!-- Mounts a Healer exclusive horse. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="9206;1;619;1"/>
+		<set name="npcId" val="13318"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Transformation" time="1800" val="136">		
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="8608" levels="1" name="R Talisman - P. Atk.">
+    <!-- Increases P. Atk by 37 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="pAtk" val="37"/>
+		</for>
+	</skill>	
+	<skill id="8609" levels="1" name="R90 Talisman - P. Atk.">
+    <!-- Increases P. Atk by 43 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="pAtk" val="43"/>
+		</for>
+	</skill>		
+	<skill id="8610" levels="1" name="R95 Talisman - P. Atk.">
+    <!-- Increases P. Atk by 52 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="pAtk" val="52"/>
+		</for>
+	</skill>
+	<skill id="8611" levels="1" name="R99 Talisman - P. Atk.">
+    <!-- Increases P. Atk by 60 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="pAtk" val="60"/>
+		</for>
+	</skill>	
+	<skill id="8612" levels="1" name="R Talisman - P. Def.">
+    <!-- Increases P. Def. by 38 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="pDef" val="38"/>
+		</for>
+	</skill>	
+	<skill id="8613" levels="1" name="R90 Talisman - P. Def.">
+    <!-- Increases P. Def. by 43 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="pDef" val="43"/>
+		</for>
+	</skill>	
+	<skill id="8614" levels="1" name="R95 Talisman - P. Def.">
+    <!-- Increases P. Def. by 49 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="pDef" val="49"/>
+		</for>
+	</skill>
+	<skill id="8615" levels="1" name="R99 Talisman - P. Def.">
+    <!-- Increases P. Def. by 54 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="pDef" val="54"/>
+		</for>
+	</skill>	
+	<skill id="8616" levels="1" name="R Talisman - M. Atk.">
+    <!-- Increases M. Atk. by 37 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="mAtk" val="37"/>
+		</for>
+	</skill>
+	<skill id="8617" levels="1" name="R90 Talisman - M. Atk.">
+    <!-- Increases M. Atk. by 46 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="mAtk" val="46"/>
+		</for>
+	</skill>
+	<skill id="8618" levels="1" name="R95 Talisman - M. Atk.">
+    <!-- Increases M. Atk. by 56 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="mAtk" val="56"/>
+		</for>
+	</skill>
+	<skill id="8619" levels="1" name="R99 Talisman - M. Atk.">
+    <!-- Increases M. Atk. by 66 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="mAtk" val="66"/>
+		</for>
+	</skill>
+	<skill id="8620" levels="1" name="R Talisman - M. Def.">
+    <!-- Increases M. Def. by 21 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="mDef" val="21"/>
+		</for>
+	</skill>
+	<skill id="8621" levels="1" name="R90 Talisman - M. Def.">
+    <!-- Increases M. Def. by 24 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="mDef" val="24"/>
+		</for>
+	</skill>
+	<skill id="8622" levels="1" name="R95 Talisman - M. Def.">
+    <!-- Increases M. Def. by 28 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="mDef" val="28"/>
+		</for>
+	</skill>
+	<skill id="8623" levels="1" name="R99 Talisman - M. Def.">
+    <!-- Increases M. Def. by 32 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="mDef" val="32"/>
+		</for>
+	</skill>
+	<skill id="8624" levels="1" name="R Talisman - Max HP">
+    <!-- Increases Max HP by 219 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r85_talisman_hp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8625" levels="1" name="R90 Talisman - Max HP">
+    <!-- Increases Max HP by 246 when equipped with the Talisman. -->
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.r85_talisman_hp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8626" levels="1" name="R95 Talisman - Max HP">
+    <!-- Increases Max HP by 277 when equipped with the Talisman. -->
+		<set name="magicLevel" val="95"/>
+		<set name="icon" val="icon.r85_talisman_hp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8627" levels="1" name="R99 Talisman - Max HP">
+    <!-- Increases Max HP by 305 when equipped with the Talisman. -->
+		<set name="magicLevel" val="99"/>
+		<set name="icon" val="icon.r85_talisman_hp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8628" levels="1" name="R Talisman - Max MP">
+    <!-- Increases Max MP by 119 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r85_talisman_mp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8629" levels="1" name="R90 Talisman - Max MP">
+    <!-- Increases Max MP by 119 when equipped with the Talisman. -->
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.r85_talisman_mp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8630" levels="1" name="R95 Talisman - Max MP">
+    <!-- Increases Max MP by 130 when equipped with the Talisman. -->
+		<set name="magicLevel" val="95"/>
+		<set name="icon" val="icon.r85_talisman_mp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8631" levels="1" name="R99 Talisman - Max MP">
+    <!-- Increases Max MP by 139 when equipped with the Talisman. -->
+		<set name="magicLevel" val="99"/>
+		<set name="icon" val="icon.r85_talisman_mp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8632" levels="1" name="R Talisman - Max CP">
+    <!-- Increases Max CP by 99 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r85_talisman_cp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8633" levels="1" name="R90 Talisman - Max CP">
+    <!-- Increases Max CP by 108 when equipped with the Talisman. -->
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.r85_talisman_cp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8634" levels="1" name="R95 Talisman - Max CP">
+    <!-- Increases Max CP by 116 when equipped with the Talisman. -->
+		<set name="magicLevel" val="95"/>
+		<set name="icon" val="icon.r85_talisman_cp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8635" levels="1" name="R99 Talisman - Max CP">
+    <!-- Increases Max CP by 124 when equipped with the Talisman. -->
+		<set name="magicLevel" val="99"/>
+		<set name="icon" val="icon.r85_talisman_cp_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8636" levels="1" name="R Talisman - Critical Damage">
+    <!-- Increases Critical Damage by 135 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r85_talisman_ca_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8637" levels="1" name="R90 Talisman - Critical Damage">
+    <!-- Increases Critical Damage by 142 when equipped with the Talisman. -->
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.r85_talisman_ca_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8638" levels="1" name="R95 Talisman - Critical Damage">
+    <!-- Increases Critical Damage by 149 when equipped with the Talisman. -->
+		<set name="magicLevel" val="95"/>
+		<set name="icon" val="icon.r85_talisman_ca_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8639" levels="1" name="R99 Talisman - Critical Damage">
+    <!-- Increases Critical Damage by 155 when equipped with the Talisman. -->
+		<set name="magicLevel" val="99"/>
+		<set name="icon" val="icon.r85_talisman_ca_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8640" levels="1" name="R Talisman - Critical Defense">
+    <!-- Increases Critical Defense by 135 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r85_talisman_ca_down_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8641" levels="1" name="R90 Talisman - Critical Defense">
+    <!-- Increases Critical Defense by 142 when equipped with the Talisman. -->
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.r85_talisman_ca_down_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8642" levels="1" name="R95 Talisman - Critical Defense">
+    <!-- Increases Critical Defense by 149 when equipped with the Talisman. -->
+		<set name="magicLevel" val="95"/>
+		<set name="icon" val="icon.r85_talisman_ca_down_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8643" levels="1" name="R99 Talisman - Critical Defense">
+    <!-- Increases Critical Defense by 155 when equipped with the Talisman. -->
+		<set name="magicLevel" val="99"/>
+		<set name="icon" val="icon.r85_talisman_ca_down_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8644" levels="1" name="R Talisman - M. Critical Rate">
+    <!-- Magic Critical occurs at 2% rate when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r_talisman_mc_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8645" levels="1" name="R Talisman - P. Accuracy">
+    <!-- Increases P. Accuracy by 2 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r_talisman_ph_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8646" levels="1" name="R Talisman - M. Accuracy">
+    <!-- Increases M. Accuracy by 2 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r_talisman_mh_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8647" levels="1" name="R Talisman - P. Evasion">
+    <!-- Increases P. Evasion by 2 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r_talisman_pm_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8648" levels="1" name="R Talisman - M. Evasion">
+    <!-- Increases M. Evasion by 2 when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r_talisman_mm_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8649" levels="1" name="R Talisman - Physical Critical Rate">
+    <!-- Physical Critical occurs at 2% rate when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r_talisman_cr_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8650" levels="1" name="R Talisman - P. Critical Evasion">
+    <!-- Physical Critical attack received decreases by 2% when equipped with the Talisman. -->
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.r_talisman_cm_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8651" levels="1" name="R Talisman - P. Atk. (active)">
+    <!-- Increases P. Atk. by 111 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pa_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8652" levels="1" name="R90 Talisman - P. Atk. (active)">
+    <!-- Increases P. Atk. by 129 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pa_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8653" levels="1" name="R95 Talisman - P. Atk. (active)">
+    <!-- Increases P. Atk. by 156 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pa_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8654" levels="1" name="R99 Talisman - P. Atk. (active)">
+    <!-- Increases P. Atk. by 180 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pa_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8655" levels="1" name="R Talisman - P. Def. (active)">
+    <!-- Increases P. Def. by 114 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8656" levels="1" name="R90 Talisman - P. Def. (active)">
+    <!-- Increases P. Def. by 129 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8657" levels="1" name="R95 Talisman - P. Def. (active)">
+    <!-- Increases P. Def. by 147 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8658" levels="1" name="R99 Talisman - P. Def. (active)">
+    <!-- Increases P. Def. by 162 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8659" levels="1" name="R Talisman - M. Atk. (active)">
+    <!-- Increases M. Atk. by 111 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ma_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8660" levels="1" name="R90 Talisman - M. Atk. (active)">
+    <!-- Increases M. Atk. by 138 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ma_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8661" levels="1" name="R95 Talisman - M. Atk. (active)">
+    <!-- Increases M. Atk. by 168 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ma_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8662" levels="1" name="R99 Talisman - M. Atk. (active)">
+    <!-- Increases M. Atk. by 198 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ma_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8663" levels="1" name="R Talisman - Magic Resistance (active)">
+    <!-- Increases Magic Resistance by 63 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_md_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8664" levels="1" name="R90 Talisman - M. Def. (active)">
+    <!-- Increases M. Def. by 72 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_md_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8665" levels="1" name="R95 Talisman - M. Def. (active)">
+    <!-- Increases M. Def. by 84 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_md_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8666" levels="1" name="R99 Talisman - M. Def. (active)">
+    <!-- Increases M. Def. by 96 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_md_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8667" levels="1" name="R Talisman - Max HP (active)">
+    <!-- Increases Max HP by 657 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_hp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8668" levels="1" name="R90 Talisman - Max HP (active)">
+    <!-- Increases Max HP by 738 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_hp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8669" levels="1" name="R95 Talisman - Max HP (active)">
+    <!-- Increases Max HP by 831 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_hp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8670" levels="1" name="R99 Talisman - Max HP (active)">
+    <!-- Increases Max HP by 915 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_hp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8671" levels="1" name="R Talisman - Max MP (active)">
+    <!-- Increases Max MP by 327 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_mp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8672" levels="1" name="R90 Talisman - Max MP (active)">
+    <!-- Increases Max MP by 357 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_mp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8673" levels="1" name="R95 Talisman - Max MP (active)">
+    <!-- Increases Max MP by 390 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_mp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8674" levels="1" name="R99 Talisman - Max MP (active)">
+    <!-- Increases Max MP by 417 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_mp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8675" levels="1" name="R Talisman - Max CP (active)">
+    <!-- Increases Max CP by 297 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_cp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8676" levels="1" name="R90 Talisman - Max CP (active)">
+    <!-- Increases Max CP by 324 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_cp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8677" levels="1" name="R95 Talisman - Max CP (active)">
+    <!-- Increases Max CP by 390 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_cp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8678" levels="1" name="R99 Talisman - Max CP (active)">
+    <!-- Increases Max CP by 417 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_cp_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8679" levels="1" name="R Talisman - Critical Damage (active)">
+    <!-- Increases P. Critical Damage by 405 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ca_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8680" levels="1" name="R90 Talisman - Critical Damage (active)">
+    <!-- Increases P. Critical Damage by 426 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ca_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8681" levels="1" name="R95 Talisman - Critical Damage (active)">
+    <!-- Increases P. Critical Damage by 447 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ca_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8682" levels="1" name="R99 Talisman - Critical Damage (active)">
+    <!-- Increases P. Critical Damage by 465 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ca_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8683" levels="1" name="R Talisman - Critical Defense (active)">
+    <!-- Increases Critical Defense by 405 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ca_down_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8684" levels="1" name="R90 Talisman - Critical Defense (active)">
+    <!-- Increases Critical Defense by 426 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ca_down_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8685" levels="1" name="R95 Talisman - Critical Defense (active)">
+    <!-- Increases Critical Defense by 447 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ca_down_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8686" levels="1" name="R99 Talisman - Critical Defense (active)">
+    <!-- Increases Critical Defense by 465 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_ca_down_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8687" levels="1" name="R Talisman - M. Critical Rate (active)">
+    <!-- Magic Critical occurs at 4% rate instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r_talisman_mc_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8688" levels="1" name="R Talisman - P. Accuracy (active)">
+    <!-- Increases P. Accuracy by 4 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r_talisman_ph_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8689" levels="1" name="R Talisman - M. Accuracy (active)">
+    <!-- Increases M. Accuracy by 4 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r_talisman_mh_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8690" levels="1" name="R Talisman - P. Evasion (active)">
+    <!-- Increases P. Evasion by 4 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r_talisman_pm_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8691" levels="1" name="R Talisman - M. Evasion (active)">
+    <!-- Increases M. Evasion by 4 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r_talisman_mm_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8692" levels="1" name="R Talisman - Physical Critical Rate (active)">
+    <!-- Physical Critical occurs at 4% rate instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r_talisman_cr_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8693" levels="1" name="R Talisman - P. Critical Evasion (active)">
+    <!-- Evasion during Physical Critical occurs at 4% rate instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r_talisman_cm_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8694" levels="1" name="R Special Talisman - Shield Defense">
+    <!-- Increases Shield Defense by 207 when equipped with the Talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8695" levels="1" name="R90 Special Talisman - Shield Defense">
+    <!-- Increases Shield Defense by 229 when equipped with the Talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8696" levels="1" name="R95 Special Talisman - Shield Defense">
+    <!-- Increases Shield Defense by 253 when equipped with the Talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8697" levels="1" name="R99 Special Talisman - Shield Defense">
+    <!-- Increases Shield Defense by 273 when equipped with the Talisman. -->
+		<set name="magicLevel" val="99"/>
+		<set name="icon" val="icon.r85_talisman_pd_up_passive"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8698" levels="1" name="R Special Talisman - Shield Defense (active)">
+    <!-- Increases Shield Defense by 1242 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="8699" levels="1" name="R90 Special Talisman - Shield Defense (active)">
+    <!-- Increases Shield Defense by 1371 instantly through the power of the talisman. -->
+		<set name="icon" val="icon.r85_talisman_pd_up_active"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+</list>

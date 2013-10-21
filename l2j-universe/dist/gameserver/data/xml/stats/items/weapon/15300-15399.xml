@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="15300" name="NPC exclusive transparent dual">
+		<set name="crystal_type" value="S80"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="weight" value="2080"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="282"/>
+			<add stat="mAtk" order="0x10" value="114"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15301" name="NPC exclusive transparent pole">
+		<set name="crystal_type" value="S80"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_long_spear_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="weight" value="1950"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="156"/>
+			<add stat="mAtk" order="0x10" value="83"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15302" name="NPC exclusive transparent bow">
+		<set name="atk_reuse" value="820"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_long_bow_i00"/>
+		<set name="mp_consume" value="2"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="6"/>
+		<set name="spiritshots" value="2"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="weight" value="1830"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="114"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="227"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15303" name="NPC exclusive transparent claw">
+		<set name="crystal_type" value="S80"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_foxs_nail_i00"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="weight" value="1013"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="376"/>
+			<add stat="mAtk" order="0x10" value="119"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15304" name="NPC exclusive transparent bowgun">
+		<set name="atk_reuse" value="400"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_hunting_gun_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="4"/>
+		<set name="spiritshots" value="2"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="weight" value="1850"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="64"/>
+			<add stat="mAtk" order="0x10" value="32"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15305" name="NPC exclusive transparent rapier">
+		<set name="crystal_type" value="S80"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_rapier_i00"/>
+		<set name="rnd_dam" value="40"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="weight" value="1520"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<enchant4_skill id="3426" level="1"/>
+		<!--Maximum Ability-->
+		<for>
+			<add stat="pAtk" order="0x10" value="36"/>
+			<add stat="mAtk" order="0x10" value="26"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15306" name="NPC exclusive transparent dual dagger">
+		<set name="crystal_type" value="S80"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.dual_dagger_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="weight" value="2150"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="304"/>
+			<add stat="mAtk" order="0x10" value="157"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15310" name="Sacred Sword of Einhasad">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_the_sword_of_hero_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="8357" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="7"/>
+			<add stat="mAtk" order="0x10" value="5"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15313" name="PC cafe' exclusive - Forgotten Blade" add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_forgotten_blade_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="weight" value="1300"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3566" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="281"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15314" name="For PC cafe use -  Basalt Battlehammer" add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_basalt_battlehammer_i00"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="1570"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3013" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="281"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15315" name="For PC cafe use - Imperial Staff" add_name="Weapons for PC Cafe Use">
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_imperial_staff_i00"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="weight" value="910"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3576" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="274"/>
+			<add stat="mAtk" order="0x10" value="193"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15316" name="For PC cafe use - Angel Slayer" add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_angel_slayer_i00"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="weight" value="950"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3572" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="246"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15317" name="For PC cafe use - Dragon Hunter Axe" add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_dragon_hunter_axe_i00"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="weight" value="1820"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3569" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="342"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15318" name="For PC cafe use - Saint Spear " add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_saint_spear_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="weight" value="1800"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3013" level="4"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="281"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15319" name="For PC cafe use - Demon Splinter" add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_demon_splinter_i00"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="weight" value="1350"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3565" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="342"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15320" name="For PC cafe use - Heaven's Divider " add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_heavens_divider_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="weight" value="1380"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3566" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="342"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15321" name="For PC cafe use - Arcana Macw" add_name="Weapons for PC Cafe Use">
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_arcana_mace_i00"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="1300"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3047" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="225"/>
+			<add stat="mAtk" order="0x10" value="175"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15322" name="For PC cafe use - Draconic Bow" add_name="Weapons for PC Cafe Use">
+		<set name="atk_reuse" value="1500"/>
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_draconic_bow_i00"/>
+		<set name="mp_consume" value="6"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="weight" value="1650"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3567" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="581"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15323" name="For PC cafe use - Laevateinn" add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_leavatein_i00"/>
+		<set name="rnd_dam" value="40"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="weight" value="1300"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3564" level="1"/>
+		</skills>
+		<enchant4_skill id="3426" level="1"/>
+		<!--Maximum Ability-->
+		<for>
+			<add stat="pAtk" order="0x10" value="255"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15324" name="For PC cafe use - Gram" add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_gram_i01"/>
+		<set name="rnd_dam" value="15"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="ex_type" value="ANCIENT_SWORD"/>
+		<set name="weight" value="1800"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3566" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="304"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="350"/>
+			<add stat="accCombat" order="0x10" value="2.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15325" name="For PC cafe use - Sarnga" add_name="Weapons for PC Cafe Use">
+		<set name="atk_reuse" value="400"/>
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_sarnga_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="weight" value="1600"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3567" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="356"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15326" name="For PC cafe use - Tallum Blade *Dark Legion" add_name="Weapons for PC Cafe Use">
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="weight" value="2080"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<enchant4_skill id="3570" level="1"/>
+		<!--Special Ability: Robust Health-->
+		<for>
+			<add stat="pAtk" order="0x10" value="342"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15342" name="Aqua Elf Transforming Harp" add_name="60 day limited period">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="86400"/>
+		<set name="icon" value="icon.harp_of_transform_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="temporal" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="1"/>
+			<add stat="mAtk" order="0x10" value="1"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="15344" name="Aqua Elf Transforming Harp - Event " add_name="60 day limited period">
+		<set name="freightable" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="86400"/>
+		<set name="icon" value="icon.harp_of_transform_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="temporal" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="1"/>
+			<add stat="mAtk" order="0x10" value="1"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+</list>

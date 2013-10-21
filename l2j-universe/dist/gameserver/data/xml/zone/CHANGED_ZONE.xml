@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "zone.dtd">
+<!--Этот тип зоны отображается как "Измененная Зона" (красный радар).-->
+<list>
+	<zone name="[belise_labyrinth_01]" type="CHANGED_ZONE" >
+		<set name="enabled" val="false" />
+		<polygon>
+			<coords loc="-118536 211656 -9000 -8000"/>
+			<coords loc="-118840 211368 -9000 -8000"/>
+			<coords loc="-118824 210936 -9000 -8000"/>
+			<coords loc="-118536 210648 -9000 -8000"/>
+			<coords loc="-118120 210648 -9000 -8000"/>
+			<coords loc="-117832 210936 -9000 -8000"/>
+			<coords loc="-117832 211352 -9000 -8000"/>
+			<coords loc="-118120 211656 -9000 -8000"/>
+		</polygon>
+	</zone>
+	<zone name="[belise_labyrinth_02]" type="CHANGED_ZONE" >
+		<set name="enabled" val="false" />
+		<polygon>
+			<coords loc="-116728 212472 -9000 -8000"/>
+			<coords loc="-116312 212472 -9000 -8000"/>
+			<coords loc="-116008 212760 -9000 -8000"/>
+			<coords loc="-116008 213176 -9000 -8000"/>
+			<coords loc="-116296 213480 -9000 -8000"/>
+			<coords loc="-116712 213480 -9000 -8000"/>
+			<coords loc="-117016 213176 -9000 -8000"/>
+			<coords loc="-117016 212776 -9000 -8000"/>
+		</polygon>
+	</zone>
+	<zone name="[belise_labyrinth_03_1]" type="CHANGED_ZONE" >
+		<set name="enabled" val="false" />
+		<polygon>
+			<coords loc="-117832 214584 -9000 -8000"/>
+			<coords loc="-117832 215000 -9000 -8000"/>
+			<coords loc="-118120 215304 -9000 -8000"/>
+			<coords loc="-118536 215304 -9000 -8000"/>
+			<coords loc="-118840 215000 -9000 -8000"/>
+			<coords loc="-118840 214584 -9000 -8000"/>
+			<coords loc="-118552 214280 -9000 -8000"/>
+			<coords loc="-118120 214280 -9000 -8000"/>
+		</polygon>
+	</zone>
+	<zone name="[belise_labyrinth_03_2]" type="CHANGED_ZONE" >
+		<set name="enabled" val="false" />
+		<set name="target" val="pc"/>
+		<set name="skill_name" val="14698;1"/>
+		<set name="skill_prob" val="100"/>
+		<set name="unit_tick" val="5"/>
+		<set name="initial_delay" val="1"/>
+		<polygon>
+			<coords loc="-117832 214584 -9000 -8000"/>
+			<coords loc="-117832 215000 -9000 -8000"/>
+			<coords loc="-118120 215304 -9000 -8000"/>
+			<coords loc="-118536 215304 -9000 -8000"/>
+			<coords loc="-118840 215000 -9000 -8000"/>
+			<coords loc="-118840 214584 -9000 -8000"/>
+			<coords loc="-118552 214280 -9000 -8000"/>
+			<coords loc="-118120 214280 -9000 -8000"/>
+		</polygon>
+	</zone>
+</list>

@@ -1,0 +1,35 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<!--AUTHOR: Bonux-->
+<list>
+	<!--Starts of Fate-->
+	<instance id="178" name="Labyrinth of Belis" maxChannels="20" collapseIfEmpty="0" timelimit="30" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="18" max="99"/>
+		<return loc="-111787 231886 -3160"/>
+		<teleport loc="-119923 211165 -8584"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="10331"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<geodata map="16_24"/>
+		<zones>
+			<zone name="[belise_labyrinth_01]" active="true"/>
+			<zone name="[belise_labyrinth_02]" active="true"/>
+			<zone name="[belise_labyrinth_03_1]" active="false"/>
+			<zone name="[belise_labyrinth_03_2]" active="true"/>
+		</zones>
+		<doors>
+			<door id="16240001" opened="true"/>
+			<door id="16240002" opened="false"/>
+			<door id="16240003" opened="false"/>
+			<door id="16240004" opened="false"/>
+			<door id="16240005" opened="false"/>
+			<door id="16240006" opened="false"/>
+			<door id="16240007" opened="false"/>
+			<door id="16240008" opened="false"/>
+		</doors>
+		<spawns>
+            <group name="labyrinth_of_belis_q10331" spawned="true"/>
+		</spawns>
+	</instance>
+</list>

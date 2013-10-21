@@ -1,0 +1,5194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="36100" name="Wizard" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="cloud_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="325"/>	<!--Horn of Glory-->
+		</equip>
+		<skills>
+			<skill id="1230" level="28"/>	<!--Prominence-->
+			<skill id="4077" level="8"/>	<!--NPC Aura Burn-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5053" level="6"/>	<!--Castle DD Water-->
+			<skill id="5396" level="1"/>	<!--NPC - Spell Stance-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="77.574">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36101" name="Healer" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardPriest"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="168169"/>
+		<set name="baseHpRate" value="7.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="cloud_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="92"/>	<!--Sprite's Staff-->
+		</equip>
+		<skills>
+			<skill id="4115" level="1"/>	<!--Aden Heal-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5114" level="7"/>	<!--Hold-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="82.382">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36102" name="Archer Captain" title="Archer">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.ArcherCaption"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="10212"/>	<!--For NPC (Bow)-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="4754" level="8"/>	<!--BOSS Power Shot-->
+			<skill id="4755" level="7"/>	<!--BOSS Power Shot-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.2235">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36103" name="Archer" title="Archer">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="cloud_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="287"/>	<!--Bow of Peril-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5046" level="7"/>	<!--Castle Power Shot-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="71.0">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36104" name="General" title="Officer's Barracks">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.General"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="30.0"/>
+		<set name="collision_radius" value="14.5"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<equip>
+			<rhand item_id="9813"/>	<!--Orc Officer-->
+			<lhand item_id="9813"/>	<!--Orc Officer-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="4725" level="7"/>	<!--Stun-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="70.4766">
+				<reward item_id="9912" min="40" max="154" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36105" name="Minister" title="Officer's Barracks">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="27.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<equip>
+			<rhand item_id="7895"/>	<!--Flaming Dragon Skull-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="4721" level="7"/>	<!--BOSS Strike-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="70.4766">
+				<reward item_id="9912" min="40" max="154" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36106" name="Ballista" title="Cloud Mountain">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.Ballista"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="9402540"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="1"/>
+		<set name="collision_height" value="59.0"/>
+		<set name="collision_radius" value="112.0"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.Ballista"/>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36107" name="Mercenary Captain" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.MercenaryCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="3525952"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="100"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="36"/>
+		<set name="collision_height" value="24.5"/>
+		<set name="collision_radius" value="12.0"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.MercenaryCaption"/>
+		<equip>
+			<rhand item_id="2500"/>	<!--Dark Legion's Edge-->
+			<lhand item_id="6377"/>	<!--Imperial Crusader Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36108" name="Mercenary Private" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="13891"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="27.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<equip>
+			<rhand item_id="96"/>	<!--Scythe-->
+		</equip>
+		<skills>
+			<skill id="4416" level="17"/>	<!--Orcs-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36109" name="Flagpole" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="541"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="2.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="30"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="64"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="192.0"/>
+		<set name="baseMpReg" value="1.2"/>
+		<set name="basePAtk" value="44"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="87"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="72.5"/>
+		<set name="collision_radius" value="46.0"/>
+		<set name="level" value="20"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<skills>
+			<skill id="4416" level="19"/>	<!--Others-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36110" name="Foreman" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.4"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="152641.0"/>
+		<set name="baseMpReg" value="300.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Manager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36111" name="Suspicious Merchant" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="suspiciousmerchant.SuspiciousMerchantTanor"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="100"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="27.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.SuspiciousMerchant"/>
+		<skills>
+			<skill id="4416" level="17"/>	<!--Orcs-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36112" name="Guard Captain" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="23.75"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<equip>
+			<rhand item_id="80"/>	<!--Tallum Blade-->
+			<lhand item_id="641"/>	<!--Dark Crystal Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36113" name="Archer Captain" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.ArcherCaption"/>
+		<skills>
+			<skill id="4416" level="15"/>	<!--Elves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36114" name="Support Unit Captain" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="28"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="9.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.SupportUnitCaption"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36115" name="Engineering Manager" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="19.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36116" name="Logistics Officer" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="17.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.LogisticsOfficer"/>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36117" name="Supply Box" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="5193"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="663"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="250"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="971"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="341"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="collision_height" value="8.5"/>
+		<set name="collision_radius" value="8.5"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Monster"/>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36118" name="Detention Camp Warden" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="PailakaGatekeeper"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36119" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="60396 139856 -856"/>
+			<set name="doors" value="21220008"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36120" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="60396 139856 -856"/>
+			<set name="doors" value="21220001"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36121" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="60396 139856 -856"/>
+			<set name="doors" value="21220002;21220003;21220006;21220007"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36122" name="Rebel Commander" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.RebelCommander"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="3590881"/>
+		<set name="baseHpRate" value="2.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="26.99"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="94"/>
+		<set name="rewardExp" value="3200"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="tanor_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="2500"/>	<!--Dark Legion's Edge-->
+			<lhand item_id="6377"/>	<!--Imperial Crusader Shield-->
+		</equip>
+		<skills>
+			<skill id="4178" level="7"/>	<!--BOSS Flamestrike-->
+			<skill id="4195" level="7"/>	<!--BOSS Twister-->
+			<skill id="4416" level="16"/>	<!--Dark Elves-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="13.78">
+				<reward item_id="9581" min="1" max="1" chance="66.0508"/>	<!--Scale Shirt-->
+				<reward item_id="9591" min="1" max="1" chance="33.9492"/>	<!--Steel Bracelet-->
+			</group>
+			<group chance="90.0">
+				<reward item_id="9912" min="40" max="200" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36123" name="Rebel Elite Soldier" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="144145"/>
+		<set name="baseHpRate" value="6.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="collision_height" value="45.0"/>
+		<set name="collision_radius" value="15.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="tanor_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="5065" level="7"/>	<!--Castle DD Unholy-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="78.165">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36124" name="Rebel Private" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="95585"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="2813"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="tanor_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="97"/>	<!--Lance-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="71.857">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36125" name="Royal Guard" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="91736"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="500"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="223"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1410.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="732"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="305"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="86"/>
+		<set name="rewardExp" value="2592"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="tanor_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="98"/>	<!--Halberd-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Humans-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="66.28">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36126" name="Escort" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="91736"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="500"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="223"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1410.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="732"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="305"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="86"/>
+		<set name="rewardExp" value="2592"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="tanor_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="287"/>	<!--Bow of Peril-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Elves-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="67.211">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36127" name="Power Control Unit" title="Control Room">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="59.5"/>
+		<set name="collision_radius" value="54.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.PowerControlUnit"/>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36128" name="Dwarven Gunnery Sergeant" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4353"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="17.5"/>
+		<set name="collision_radius" value="13.0"/>
+		<set name="level" value="76"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5461" level="6"/>	<!--Castle Gunner Shot-->
+			<skill id="5468" level="4"/>	<!--Castle Gunner Fire-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="61.737">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36129" name="Guard Captain" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.GuardCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.75"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<equip>
+			<rhand item_id="80"/>	<!--Tallum Blade-->
+			<lhand item_id="641"/>	<!--Dark Crystal Shield-->
+		</equip>
+		<skills>
+			<skill id="4172" level="10"/>	<!--Stun-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="4608" level="2"/>	<!--NPC Clan Buff - Berserk-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.137">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36130" name="Guard" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="tanor_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="75"/>	<!--Caliburs-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5112" level="7"/>	<!--Stun-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36131" name="Guard" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="tanor_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="75"/>	<!--Caliburs-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5045" level="6"/>	<!--Castle Power Strike-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="73.01">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36132" name="Support Unit Captain" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.SupportUnitCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="9.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL_BSPIRIT"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="tanor_siege_clan" range="600"/>
+		<skills>
+			<skill id="4194" level="12"/>	<!--BOSS Aura Burn-->
+			<skill id="4195" level="12"/>	<!--BOSS Twister-->
+			<skill id="4196" level="7"/>	<!--Decrease Speed-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5396" level="1"/>	<!--NPC - Spell Stance-->
+			<skill id="5398" level="1"/>	<!--NPC - Combination Force-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.1571">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36133" name="Wizard" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="tanor_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="325"/>	<!--Horn of Glory-->
+		</equip>
+		<skills>
+			<skill id="1230" level="28"/>	<!--Prominence-->
+			<skill id="4077" level="8"/>	<!--NPC Aura Burn-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5053" level="6"/>	<!--Castle DD Water-->
+			<skill id="5396" level="1"/>	<!--NPC - Spell Stance-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="77.574">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36134" name="Healer" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardPriest"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="168169"/>
+		<set name="baseHpRate" value="7.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="tanor_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="92"/>	<!--Sprite's Staff-->
+		</equip>
+		<skills>
+			<skill id="4115" level="1"/>	<!--Aden Heal-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5114" level="7"/>	<!--Hold-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="82.382">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36135" name="Archer Captain" title="Archer">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.ArcherCaption"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="10212"/>	<!--For NPC (Bow)-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="4754" level="8"/>	<!--BOSS Power Shot-->
+			<skill id="4755" level="7"/>	<!--BOSS Power Shot-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.2235">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36136" name="Archer" title="Archer">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="tanor_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="287"/>	<!--Bow of Peril-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5046" level="7"/>	<!--Castle Power Shot-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="71.0">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36137" name="Ballista" title="Tanor Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.Ballista"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="9402540"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="1"/>
+		<set name="collision_height" value="59.0"/>
+		<set name="collision_radius" value="112.0"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.Ballista"/>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36138" name="Mercenary Captain" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.MercenaryCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="3525952"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="100"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="36"/>
+		<set name="collision_height" value="24.5"/>
+		<set name="collision_radius" value="12.0"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.MercenaryCaption"/>
+		<equip>
+			<rhand item_id="2500"/>	<!--Dark Legion's Edge-->
+			<lhand item_id="6377"/>	<!--Imperial Crusader Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36139" name="Mercenary Private" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="13891"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="27.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<equip>
+			<rhand item_id="96"/>	<!--Scythe-->
+		</equip>
+		<skills>
+			<skill id="4416" level="17"/>	<!--Orcs-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36140" name="Flagpole" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="541"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="2.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="30"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="64"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="192.0"/>
+		<set name="baseMpReg" value="1.2"/>
+		<set name="basePAtk" value="44"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="87"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="72.5"/>
+		<set name="collision_radius" value="46.0"/>
+		<set name="level" value="20"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<skills>
+			<skill id="4416" level="19"/>	<!--Others-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36141" name="Foreman" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.4"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="152641.0"/>
+		<set name="baseMpReg" value="300.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Manager"/>
+		<equip>
+			<rhand item_id="128"/>	<!--Knight's Sword-->
+			<lhand item_id="632"/>	<!--Knight's Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36142" name="Suspicious Merchant" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="suspiciousmerchant.SuspiciousMerchantDragonspine"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="100"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="27.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.SuspiciousMerchant"/>
+		<skills>
+			<skill id="4416" level="17"/>	<!--Orcs-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36143" name="Guard Captain" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="23.75"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<equip>
+			<rhand item_id="80"/>	<!--Tallum Blade-->
+			<lhand item_id="641"/>	<!--Dark Crystal Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36144" name="Archer Captain" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.ArcherCaption"/>
+		<skills>
+			<skill id="4416" level="15"/>	<!--Elves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36145" name="Support Unit Captain" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="28"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="9.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.SupportUnitCaption"/>
+		<skills>
+			<skill id="4178" level="12"/>	<!--BOSS Flamestrike-->
+			<skill id="4195" level="12"/>	<!--BOSS Twister-->
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36146" name="Engineering Manager" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="19.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36147" name="Logistics Officer" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="17.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.LogisticsOfficer"/>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36148" name="Supply Box" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="5193"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="663"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="250"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="971"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="341"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="collision_height" value="8.5"/>
+		<set name="collision_radius" value="8.5"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Monster"/>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36149" name="Detention Camp Warden" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="PailakaGatekeeper"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36150" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="11569 95418 -2528"/>
+			<set name="doors" value="20200001"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36151" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="11569 95418 -2528"/>
+			<set name="doors" value="20200008"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36152" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="11569 95418 -2528"/>
+			<set name="doors" value="20200002;20200003;20200006;20200007"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36153" name="Rebel Commander" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.RebelCommander"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="3590881"/>
+		<set name="baseHpRate" value="2.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="26.99"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="94"/>
+		<set name="rewardExp" value="3200"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dragonspine_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="2500"/>	<!--Dark Legion's Edge-->
+			<lhand item_id="6377"/>	<!--Imperial Crusader Shield-->
+		</equip>
+		<skills>
+			<skill id="4178" level="12"/>	<!--BOSS Flamestrike-->
+			<skill id="4195" level="12"/>	<!--BOSS Twister-->
+			<skill id="4416" level="16"/>	<!--Dark Elves-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="13.78">
+				<reward item_id="9581" min="1" max="1" chance="66.0508"/>	<!--Scale Shirt-->
+				<reward item_id="9591" min="1" max="1" chance="33.9492"/>	<!--Steel Bracelet-->
+			</group>
+			<group chance="90.0">
+				<reward item_id="9912" min="40" max="200" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36154" name="Rebel Elite Soldier" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="144145"/>
+		<set name="baseHpRate" value="6.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="collision_height" value="45.0"/>
+		<set name="collision_radius" value="15.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dragonspine_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="5065" level="7"/>	<!--Castle DD Unholy-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="78.165">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36155" name="Rebel Private" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="95585"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="2813"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dragonspine_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="97"/>	<!--Lance-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="71.857">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36156" name="Royal Guard" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="91736"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="500"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="223"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1410.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="732"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="305"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="86"/>
+		<set name="rewardExp" value="2592"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dragonspine_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="98"/>	<!--Halberd-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Humans-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="66.28">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36157" name="Escort" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="91736"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="500"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="223"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1410.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="732"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="305"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="86"/>
+		<set name="rewardExp" value="2592"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dragonspine_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="287"/>	<!--Bow of Peril-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Elves-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="67.211">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36158" name="Power Control Unit" title="Control Room">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="59.5"/>
+		<set name="collision_radius" value="54.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.PowerControlUnit"/>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36159" name="Dwarven Gunnery Sergeant" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4353"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="17.5"/>
+		<set name="collision_radius" value="13.0"/>
+		<set name="level" value="76"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5461" level="6"/>	<!--Castle Gunner Shot-->
+			<skill id="5468" level="4"/>	<!--Castle Gunner Fire-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="61.737">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36160" name="Guard Captain" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.GuardCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.75"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<equip>
+			<rhand item_id="80"/>	<!--Tallum Blade-->
+			<lhand item_id="641"/>	<!--Dark Crystal Shield-->
+		</equip>
+		<skills>
+			<skill id="4172" level="10"/>	<!--Stun-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="4608" level="2"/>	<!--NPC Clan Buff - Berserk-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.137">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36161" name="Guard" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dragonspine_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="75"/>	<!--Caliburs-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5112" level="7"/>	<!--Stun-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36162" name="Guard" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dragonspine_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="75"/>	<!--Caliburs-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5045" level="6"/>	<!--Castle Power Strike-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="73.01">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36163" name="Support Unit Captain" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.SupportUnitCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="9.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL_BSPIRIT"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dragonspine_siege_clan" range="600"/>
+		<skills>
+			<skill id="4194" level="12"/>	<!--BOSS Aura Burn-->
+			<skill id="4195" level="12"/>	<!--BOSS Twister-->
+			<skill id="4196" level="7"/>	<!--Decrease Speed-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5396" level="1"/>	<!--NPC - Spell Stance-->
+			<skill id="5398" level="1"/>	<!--NPC - Combination Force-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.1571">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36164" name="Wizard" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dragonspine_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="325"/>	<!--Horn of Glory-->
+		</equip>
+		<skills>
+			<skill id="1230" level="28"/>	<!--Prominence-->
+			<skill id="4077" level="8"/>	<!--NPC Aura Burn-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5053" level="6"/>	<!--Castle DD Water-->
+			<skill id="5396" level="1"/>	<!--NPC - Spell Stance-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="77.574">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36165" name="Healer" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardPriest"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="168169"/>
+		<set name="baseHpRate" value="7.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dragonspine_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="92"/>	<!--Sprite's Staff-->
+		</equip>
+		<skills>
+			<skill id="4115" level="1"/>	<!--Aden Heal-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5114" level="7"/>	<!--Hold-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="82.382">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36166" name="Archer Captain" title="Archer">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.ArcherCaption"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="10212"/>	<!--For NPC (Bow)-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="4754" level="8"/>	<!--BOSS Power Shot-->
+			<skill id="4755" level="7"/>	<!--BOSS Power Shot-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.2235">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36167" name="Archer" title="Archer">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dragonspine_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="287"/>	<!--Bow of Peril-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5046" level="7"/>	<!--Castle Power Shot-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="71.0">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36168" name="Ballista" title="Dragonspine Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.Ballista"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="9402540"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="1"/>
+		<set name="collision_height" value="59.0"/>
+		<set name="collision_radius" value="112.0"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.Ballista"/>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36169" name="Mercenary Captain" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.MercenaryCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="3525952"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="100"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="36"/>
+		<set name="collision_height" value="24.5"/>
+		<set name="collision_radius" value="12.0"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.MercenaryCaption"/>
+		<equip>
+			<rhand item_id="2500"/>	<!--Dark Legion's Edge-->
+			<lhand item_id="6377"/>	<!--Imperial Crusader Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36170" name="Mercenary Private" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="27.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<equip>
+			<rhand item_id="96"/>	<!--Scythe-->
+		</equip>
+		<skills>
+			<skill id="4416" level="17"/>	<!--Orcs-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36171" name="Flagpole" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="541"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="2.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="30"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="64"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="192.0"/>
+		<set name="baseMpReg" value="1.2"/>
+		<set name="basePAtk" value="44"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="87"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="72.5"/>
+		<set name="collision_radius" value="46.0"/>
+		<set name="level" value="20"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<skills>
+			<skill id="4416" level="19"/>	<!--Others-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36172" name="Foreman" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.4"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="152641.0"/>
+		<set name="baseMpReg" value="300.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Manager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36173" name="Suspicious Merchant" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="suspiciousmerchant.SuspiciousMerchantAntharas"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="100"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="27.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.SuspiciousMerchant"/>
+		<skills>
+			<skill id="4416" level="17"/>	<!--Orcs-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36174" name="Guard Captain" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="23.75"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.GuardCaption"/>
+		<equip>
+			<rhand item_id="80"/>	<!--Tallum Blade-->
+			<lhand item_id="641"/>	<!--Dark Crystal Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36175" name="Archer Captain" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.ArcherCaption"/>
+		<skills>
+			<skill id="4416" level="15"/>	<!--Elves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36176" name="General" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="30.0"/>
+		<set name="collision_radius" value="14.5"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<equip>
+			<rhand item_id="9813"/>	<!--Orc Officer-->
+			<lhand item_id="9813"/>	<!--Orc Officer-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36177" name="Support Unit Captain" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="28"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="9.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.peace.SupportUnitCaption"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36178" name="Engineering Manager" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="19.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36179" name="Logistics Officer" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="17.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.LogisticsOfficer"/>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36180" name="Supply Box" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="Fighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="5193"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="663"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="250"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="971"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="341"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="collision_height" value="8.5"/>
+		<set name="collision_radius" value="8.5"/>
+		<set name="level" value="80"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Monster"/>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36181" name="Detention Camp Warden" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="PailakaGatekeeper"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36182" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="79633 91222 -1992"/>
+			<set name="doors" value="22200012"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36183" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="79633 91222 -1992"/>
+			<set name="doors" value="22200001"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36184" name="Gatekeeper" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.Doorman"/>
+		<ai_params>
+			<set name="tele_loc" value="79633 91222 -1992"/>
+			<set name="doors" value="22200004;22200005;22200006;22200007"/>
+		</ai_params>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+			<lhand item_id="20"/>	<!--Buckler-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36185" name="Rebel Commander" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.RebelCommander"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="3590881"/>
+		<set name="baseHpRate" value="2.0"/>
+		<set name="baseHpReg" value="391.418"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="5105"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="600"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1674.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7477"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="546"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="26.99"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="94"/>
+		<set name="rewardExp" value="3200"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="antharas_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="2500"/>	<!--Dark Legion's Edge-->
+			<lhand item_id="6377"/>	<!--Imperial Crusader Shield-->
+		</equip>
+		<skills>
+			<skill id="4178" level="7"/>	<!--BOSS Flamestrike-->
+			<skill id="4195" level="7"/>	<!--BOSS Twister-->
+			<skill id="4416" level="16"/>	<!--Dark Elves-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="13.78">
+				<reward item_id="9581" min="1" max="1" chance="66.0508"/>	<!--Scale Shirt-->
+				<reward item_id="9591" min="1" max="1" chance="33.9492"/>	<!--Steel Bracelet-->
+			</group>
+			<group chance="90.0">
+				<reward item_id="9912" min="40" max="200" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="36186" name="Rebel Elite Soldier" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="144145"/>
+		<set name="baseHpRate" value="6.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="80"/>
+		<set name="collision_height" value="45.0"/>
+		<set name="collision_radius" value="15.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="antharas_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="9"/>	<!--Demons-->
+			<skill id="5065" level="7"/>	<!--Castle DD Unholy-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="78.005">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36187" name="Rebel Private" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="95585"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="2813"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="antharas_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="97"/>	<!--Lance-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="71.957">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36188" name="Royal Guard" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="91736"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="500"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="223"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1410.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="732"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="305"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="86"/>
+		<set name="rewardExp" value="2592"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="antharas_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="98"/>	<!--Halberd-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Humans-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="66.28">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36189" name="Escort" title="Antharas' Fortress">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="91736"/>
+		<set name="baseHpRate" value="4.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="500"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="223"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1410.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="732"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="305"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="86"/>
+		<set name="rewardExp" value="2592"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="antharas_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="287"/>	<!--Bow of Peril-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Elves-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="66.211">
+				<reward item_id="9912" min="4" max="12" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36190" name="Main Machine" title="Control Room">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="35.0"/>
+		<set name="collision_radius" value="46.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="2813"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.MainMachine"/>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36191" name="Backup Power Unit" title="Control Room">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="15.5"/>
+		<set name="collision_radius" value="16.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="2813"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.BackupPowerUnit"/>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36192" name="Control Unit" title="Control Room">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="1"/>
+		<set name="collision_height" value="42.5"/>
+		<set name="collision_radius" value="39.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="2813"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.ControlUnit"/>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36193" name="Power Control Unit" title="Control Room">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="59.5"/>
+		<set name="collision_radius" value="54.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.fortress.siege.PowerControlUnit"/>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36194" name="Dwarven Gunnery Sergeant" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="72072"/>
+		<set name="baseHpRate" value="3.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="17.5"/>
+		<set name="collision_radius" value="13.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5461" level="6"/>	<!--Castle Gunner Shot-->
+			<skill id="5468" level="4"/>	<!--Castle Gunner Fire-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="48.2776">
+				<reward item_id="9912" min="24" max="72" chance="4.0000"/>	<!--Knight's Epaulette-->
+				<reward item_id="10014" min="1" max="1" chance="96.0000"/>	<!--Control Room Card-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36195" name="Scout Golem" title="Control Room">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="37790"/>
+		<set name="baseHpRate" value="1.61051"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="528"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="230"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1475.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="774"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="315"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="19.0"/>
+		<set name="collision_radius" value="5.0"/>
+		<set name="level" value="88"/>
+		<set name="rewardExp" value="2738"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Npc"/>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="46.0">
+				<reward item_id="9912" min="4" max="6" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="36196" name="Guard Captain" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.GuardCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.75"/>
+		<set name="collision_radius" value="10.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<equip>
+			<rhand item_id="80"/>	<!--Tallum Blade-->
+			<lhand item_id="641"/>	<!--Dark Crystal Shield-->
+		</equip>
+		<skills>
+			<skill id="4172" level="10"/>	<!--Stun-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="4608" level="2"/>	<!--NPC Clan Buff - Berserk-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.1571">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="36197" name="Guard" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="antharas_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="75"/>	<!--Caliburs-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5112" level="7"/>	<!--Stun-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36198" name="Guard" title="Guard">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="120120"/>
+		<set name="baseHpRate" value="5.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="563"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="237"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1540.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="824"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="324"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="90"/>
+		<set name="rewardExp" value="2888"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="antharas_siege_clan" range="600"/>
+		<equip>
+			<rhand item_id="75"/>	<!--Caliburs-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5045" level="6"/>	<!--Castle Power Strike-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="73.01">
+				<reward item_id="9912" min="4" max="16" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="36199" name="Support Unit Captain" title="Support Unit">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.fortress.siege.SupportUnitCaption"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="848963"/>
+		<set name="baseHpRate" value="0.5"/>
+		<set name="baseHpReg" value="397.497"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="4882"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="584"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1607.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="7149"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="532"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="60"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="9.0"/>
+		<set name="level" value="92"/>
+		<set name="rewardExp" value="3042"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="SOUL_BSPIRIT"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="antharas_siege_clan" range="600"/>
+		<skills>
+			<skill id="4194" level="12"/>	<!--BOSS Aura Burn-->
+			<skill id="4195" level="12"/>	<!--BOSS Twister-->
+			<skill id="4196" level="7"/>	<!--Decrease Speed-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+			<skill id="5396" level="1"/>	<!--NPC - Spell Stance-->
+			<skill id="5398" level="1"/>	<!--NPC - Combination Force-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="84.1571">
+				<reward item_id="9912" min="140" max="300" chance="100.0000"/>	<!--Knight's Epaulette-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+</list>

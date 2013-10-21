@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="9200" levels="1" name="Elixir: Lute Melody">
+	<!-- For 30 minutes, increases Atk. Spd. by 34% and Casting Spd. by 31%. Also there is a chance of triggering a 9% Vampiric Rage effect during a normal attack. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11518"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+				<add order="0x40" stat="absorbDam" val="9"/><!-- Should be chance triggered on normal attack, not 100% chance. -->
+				<mul order="0x30" stat="pAtkSpd" val="1.34"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.31"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9201" levels="1" name="Elixir: Pipe Organ Melody">
+	<!-- For 30 minutes, increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11519"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="hp_up;hpregen;mp_up">
+				<mul order="0x30" stat="maxHp" val="1.37"/>
+				<mul order="0x30" stat="maxMp" val="1.37"/>
+				<mul order="0x30" stat="maxCp" val="1.37"/>
+				<mul order="0x30" stat="regHp" val="1.20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9202" levels="1" name="Elixir: Guitar Melody">
+	<!-- For 30 minutes, increases P. Critical Rate by 32%, P. Critical Damage by 35%, and M. Critical Rate by 20. Decreases P. Skill MP consumption by 20%, M. 
+		Skill MP consumption by 10%, and buffs skill MP consumption for Iss Enchanters by 20%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11520"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="impulse;rCrit;cAtk">
+				<mul order="0x30" stat="rCrit" val="1.32"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+				<mul order="0x30" stat="mpConsum" val="0.9"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="0.8"/><!-- Should be only on ISS enchanter's buffs-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="9203" levels="1" name="Elixir: Harp Melody">
+	<!-- For 30 minutes, increases P. Accuracy by 5, P. Evasion and M. Evasion by 5, and Speed by 34. Decreases received critical damage by 30%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11521"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="accuracyUp;SpeedUp;Poem_Arfa;rEvas;CoP">
+				<add order="0x40" stat="accCombat" val="5"/>
+				<add order="0x40" stat="rEvas" val="5"/>
+				<add order="0x40" stat="mEvas" val="5"/>
+				<add order="0x40" stat="runSpd" val="34"/>
+				<mul order="0x30" stat="critDamRcpt" val="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9204" levels="1" name="Kukuri">
+	<!-- Mounts a Kukuri. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="castRange" val="400"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9205" levels="1" name="Sturdy Kukuri">
+	<!-- Feels sturdy while riding a kukuri. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0169"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9206" levels="1" name="Fast Run">
+    <!-- For 30 seconds, your mount runs at maximum speed. -->
+		<set name="icon" val="icon.skill9206"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" stackType="Hourglass" time="30" val="0" displayId="9206">
+			<mul order="0x30" stat="runSpd" val="1.5"/>
+			</effect>
+		</for>	
+	</skill>
+	<skill id="9209" levels="1" name="Kookaru">
+    <!-- Mounts a Kookaru. -->
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="hitTime" val="1000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="addSkills" val="619;1"/>
+		<set name="npcId" val="33200"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Transformation" time="60" val="137">		
+				<add order="0x40" stat="runSpd" val="50"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9210" levels="1" name="Dismount">
+    <!-- Dismounts from a ridable mount. -->
+		<set name="icon" val="icon.skill9210"/>
+		<set name="hitTime" val="2500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillId" val="9212"/>
+		<set name="alterIconTime" val="5"/>
+	</skill>
+	<skill id="9211" levels="1" name="Dismount">
+    <!-- Dismounts from a kukuri. -->
+		<set name="icon" val="icon.skill0217"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillId" val="9212"/>
+		<set name="alterIconTime" val="5"/>
+	</skill>
+	<skill id="9212" levels="1" name="Kukuri Dismount">
+    <!-- Dismounts from a kukuri. -->
+		<set name="icon" val="icon.skilltransform2"/>
+		<set name="hitTime" val="2500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillId" val="9212"/>
+		<set name="alterIconTime" val="5"/>
+	</skill>
+	<skill id="9213" levels="1" name="Kukurin">
+	<!-- Mounts a Kukurin. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="hitTime" val="1000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9214" levels="1" name="Divine Inspiration">
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9215" levels="1" name="Divine Inspiration">
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9216" levels="1" name="Divine Inspiration">
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9217" levels="1" name="Divine Inspiration">
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9218" levels="1" name="Elixir of Blessing - Horn Melody">
+	<!-- For 30 minutes, increases P. Atk. by 17%, P. Def. by 15%, M. Atk. by 79%, and M. Def. by 30%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11517"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="MagicDefUp;pAtk;pDef;mAtk">
+				<mul order="0x30" stat="pDef" val="1.15"/>
+				<mul order="0x30" stat="pAtk" val="1.17"/>
+				<mul order="0x30" stat="mAtk" val="1.79"/>
+				<mul order="0x30" stat="mDef" val="1.30"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9219" levels="1" name="Elixir of Blessing - Drum Melody">
+	<!-- For 30 minutes, increases Max MP by 20%, HP recovery bonus by 20%, M. Critical Rate by 20, 
+		Critical Damage during a normal attack by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, 
+		M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, Debuff Resistance by 10%, 
+		and P. Def. upon receiving a critical attack. Decreases Speed by 15%, and additionally increases 
+		Critical Damage during a normal attack when receiving more than a certain amount of damage. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11522"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="3" stackType="ancient">
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="regHp" val="1.2"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+				<mul order="0x30" stat="cAtk" val="1.2"/>
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<mul order="0x30" stat="runSpd" val="0.85"/>
+				<add order="0x40" stat="debuffResist" val="10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9220" levels="1" name="Elixir of Blessing - Lute Melody">
+	<!-- For 30 minutes, increases Atk. Spd. by 34% and Casting Spd. by 31%. Also there is a chance of triggering a 9% Vampiric Rage effect during a normal attack. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11518"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+				<add order="0x40" stat="absorbDam" val="9"/><!-- Should be chance triggered on normal attack, not 100% chance. -->
+				<mul order="0x30" stat="pAtkSpd" val="1.34"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.31"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9221" levels="1" name="Elixir of Blessing - Pipe Organ Melody">
+	<!-- For 30 minutes, increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11519"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="hp_up;hpregen;mp_up">
+				<mul order="0x30" stat="maxHp" val="1.37"/>
+				<mul order="0x30" stat="maxMp" val="1.37"/>
+				<mul order="0x30" stat="maxCp" val="1.37"/>
+				<mul order="0x30" stat="regHp" val="1.20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9222" levels="1" name="Elixir of Blessing - Guitar Melody">
+	<!-- For 30 minutes, increases P. Critical Rate by 32%, P. Critical Damage by 35%, and M. Critical Rate by 20. Decreases P. Skill MP consumption by 20%, M. 
+		Skill MP consumption by 10%, and buffs skill MP consumption for Iss Enchanters by 20%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11520"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="impulse;rCrit;cAtk">
+				<mul order="0x30" stat="rCrit" val="1.32"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+				<mul order="0x30" stat="mpConsum" val="0.9"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="0.8"/><!-- Should be only on ISS enchanter's buffs-->
+			</effect>
+		</for>
+	</skill>
+	<skill id="9223" levels="1" name="Elixir of Blessing - Harp Melody">
+	<!-- For 30 minutes, increases P. Accuracy by 5, P. Evasion and M. Evasion by 5, and Speed by 34. Decreases received critical damage by 30%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill11521"/>
+		<set name="magicLevel" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="accuracyUp;SpeedUp;Poem_Arfa;rEvas;CoP">
+				<add order="0x40" stat="accCombat" val="5"/>
+				<add order="0x40" stat="rEvas" val="5"/>
+				<add order="0x40" stat="mEvas" val="5"/>
+				<add order="0x40" stat="runSpd" val="34"/>
+				<mul order="0x30" stat="critDamRcpt" val="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9224" levels="1" name="Escape - Talking Island Village">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="townId" val="1"/>
+		<set name="itemConsumeId" val="32226"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RECALL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="9225" levels="1" name="Specter of Light">
+	<!-- Summons a Specter of Light. -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9226" levels="1" name="Fragment of Light">
+		<set name="icon" val="icon.skill0000"/>
+		<set name="castRange" val="200"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="9227" levels="1" name="Mentor's Horn Melody">
+    <!-- With the help of your mentor, increases P. Atk. by 17%, P. Def. by 15%, M. Atk. by 79%, and M. Def. by 30%. This buff is only applied while your mentor is logged in. -->
+        <set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isPreservedOnDeath" val="true"/>
+		<set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11" stackType="MagicDefUp;pAtk;pDef;mAtk">
+                <mul order="0x30" stat="mAtk" val="1.79"/>
+                <mul order="0x30" stat="pAtk" val="1.17"/>
+                <mul order="0x30" stat="pDef" val="1.15"/>
+                <mul order="0x30" stat="mDef" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="9228" levels="1" name="Mentor's Drum Melody">
+    <!-- With the help of your mentor, increases Max MP by 20%, HP recovery bonus by 20%, attack M. Critical Rate by 2, critical rate during a normal attack by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, resistance to de-buff by 10%, and P. Def. upon evading a critical attack. Decreases speed by 15%, and for party members equipped with melee weapons that receive more than ordinary damage attacks, critical power increases during an ordinary attack. This buff is only applied while your mentor is logged in. -->
+        <set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isPreservedOnDeath" val="true"/>
+		<set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11" stackType="ancient">
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="regHp" val="1.2"/>
+				<add order="0x40" stat="mCritRate" val="2"/>
+				<mul order="0x40" stat="rCrit" val="1.3"/>
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<add order="0x40" stat="debuffResist" val="10"/>
+				<mul order="0x30" stat="runSpd" val="0.85"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="9229" levels="1" name="Mentor's Lute Melody">
+    <!-- With the help of your mentor, increases Atk. Spd. by 34% and Casting Spd. by 31%. Chance of applying Vampiric Rage effect by 9%. This buff is only applied while your mentor is logged in. -->
+        <set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isPreservedOnDeath" val="true"/>
+		<set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11" stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+                <mul order="0x30" stat="pAtkSpd" val="1.34"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.31"/>
+				<add order="0x40" stat="absorbDam" val="9"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="9230" levels="1" name="Mentor's Pipe Organ Melody">
+    <!-- With the help of your mentor, increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%. This buff is only applied while your mentor is logged in. -->
+        <set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isPreservedOnDeath" val="true"/>
+		<set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11" stackType="hp_up;hpregen;mp_up">
+				<mul order="0x30" stat="maxHp" val="1.37"/>
+				<mul order="0x30" stat="maxMp" val="1.37"/>
+				<mul order="0x30" stat="maxCp" val="1.37"/>
+				<mul order="0x30" stat="regHp" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="9231" levels="1" name="Mentor's Guitar Melody">
+    <!-- With the help of your mentor, increases P. Critical Rate by 32%, P. Critical Power by 35%, and M. Critical Rate by 20. Decreases P. Skill MP consumption by 20%, M. Skill MP consumption by 10%, and enchant skill MP consumption for Iss Enchanters by 20%. This buff is only applied while your mentor is logged in. -->
+        <set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isPreservedOnDeath" val="true"/>
+		<set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11" stackType="impulse;rCrit;cAtk">
+				<mul order="0x40" stat="rCrit" val="1.32"/>
+				<mul order="0x40" stat="cAtk" val="1.35"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+				<mul order="0x30" stat="mpConsum" val="0.9"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="9232" levels="1" name="Mentor's Harp Melody">
+	<!-- With the help of your mentor, increases physical accuracy by 5, physical and magic evasion by 5, and speed by 34. Decreases received critical damage by 30%. This buff is only applied while your mentor is logged in. -->
+		<set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isPreservedOnDeath" val="true"/>
+		<set name="isSelfDispellable" val="false"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="CONT"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<for>
+			<effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11" stackType="accuracyUp;SpeedUp;Poem_Arfa;rEvas;CoP">
+				<add order="0x40" stat="accCombat" val="5"/>
+				<add order="0x40" stat="pSkillEvasion" val="5"/>
+				<add order="0x40" stat="mEvas" val="5"/>
+				<add order="0x40" stat="runSpd" val="34"/>
+				<mul order="0x30" stat="critDamRcpt" val="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="9233" levels="1" name="Mentor's Guidance">
+    <!-- With the help of your mentor, increases acquired XP and SP by 200%. This buff is only applied while your mentor is logged in. -->
+        <table name="#power">2.0</table>
+        <set name="icon" val="br_cashtex.skill.br_cash_rune_of_exp_buff_1"/>
+        <set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isPreservedOnDeath" val="true"/>
+		<set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+			<effect count="0x7fffffff" name="Mentoring" time="99999999" val="0">
+				<add order="0x40" stat="ExpMultiplier" val="#power"/>
+			</effect>	
+        </for>
+    </skill>
+	<skill id="9256" levels="3" name="Mentee's Appreciation">
+    <!-- In appreciation of your help your acquired XP and SP increases by 10%, 20%, 30%.  This buff is only applied while your mentee(s) is logged in. -->
+        <table name="#power">0.1 0.2 0.3</table>
+        <set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+        <set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isPreservedOnDeath" val="true"/>
+		<set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+			<effect count="0x7fffffff" name="Mentoring" time="99999999" val="0">
+				<add order="0x40" stat="ExpMultiplier" val="#power"/>
+			</effect>
+        </for>
+    </skill>
+</list>

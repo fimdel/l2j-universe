@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="32190" name="R Talisman - P. Atk.">		<!--Done By Darvin (c)Java-Team-->
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="durability" value="600"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.r85_talisman_pa_up_passive"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+	</armor>
+	<armor id="32191" name="R Talisman - P. Atk. Spd.">		<!--Done By Darvin (c)Java-Team-->
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="durability" value="600"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.r85_talisman_pa_up_active"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+	</armor>
+	<armor id="32192" name="R Talisman - M. Atk.">		<!--Done By Darvin (c)Java-Team-->
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="durability" value="600"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.r85_talisman_ma_up_passive"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+	</armor>
+	<armor id="32193" name="R Talisman - Casting Spd.">		<!--Done By Darvin (c)Java-Team-->
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="durability" value="600"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.r85_talisman_ma_up_active"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+	</armor>
+	<armor id="32194" name="Blessed Twilight Helmet" add_name="Attack Type">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="355"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="126"/>
+			<enchant stat="rEvas" order="0x40" value="0"/>
+			<enchant stat="mEvas" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="32195" name="Blessed Twilight Breastplate" add_name="Attack Type">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="947"/>
+		<set name="icon" value="icon.armor_t401_u_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7520"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="335"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="32196" name="Blessed Twilight Gaiters" add_name="Attack Type">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="592"/>
+		<set name="icon" value="icon.armor_t401_l_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3170"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="209"/>
+			<enchant stat="rCrit" order="0x40" value="0"/>
+			<enchant stat="mCritRate" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="32197" name="Blessed Twilight Gauntlet" add_name="Attack Type">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="236"/>
+		<set name="icon" value="icon.armor_t401_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="84"/>
+			<enchant stat="accCombat" order="0x40" value="0"/>
+			<enchant stat="maccCombat" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="32198" name="Blessed Twilight Boots" add_name="Attack Type">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="236"/>
+		<set name="icon" value="icon.armor_t401_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="84"/>
+			<enchant stat="runSpd" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+</list>

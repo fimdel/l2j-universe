@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="14800" levels="1" name="Master's Blessing - Resist Elemental (Range)">
+    <!-- The GM is always with you. For 1 hour, increases resistance to Fire, Water, Wind and Earth attacks by 30. -->
+		<set name="icon" val="icon.skill11565"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14801" levels="1" name="Master's Blessing - Resist Divine (Range)">
+    <!-- The GM is always with you. For 1 hour, increases resistance to Holy and Dark by 30, and Resistance to Poison and Bleed by 50%. -->
+		<set name="icon" val="icon.skill11567"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14802" levels="1" name="Master's Blessing - Resist Mental (Range)">
+    <!-- The GM is always with you. For 1 hour, increases resistance to hold/sleep/abnormal mental attacks by 50. -->
+		<set name="icon" val="icon.skill11824"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14803" levels="1" name="Garden Dark Magic">
+    <!-- Body is rigid and paralyzed. -->
+		<set name="icon" val="icon.skill0279"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14804" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 10. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="1"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14805" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 20. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="2"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14806" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 30. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="3"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14807" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 40. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="4"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14808" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 50. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="5"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14809" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 60. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="6"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14810" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 70. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="7"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14811" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 80. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="8"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14812" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 90. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="9"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14813" levels="1" name="Reflect Damage Resistance">
+    <!-- Increases reflect damage resistance by 100. -->
+		<set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="120000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="1"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="14814" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 10. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14815" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 20. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14816" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 30. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14817" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 40. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14818" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 50. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14819" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 60. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14820" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 70. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14821" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 80. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14822" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 90. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14823" levels="1" name="Lethal Strike Resistance">
+    <!-- Increases lethal strike resistance by 100. -->
+		<set name="icon" val="icon.skill0263"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="21100" levels="1" name="Soul of a Wise Magician's Ability">
+    <!-- For 5 minutes, receives the soul's help to raise Casting Spd. by 20%, M. Atk. by 20%, and M. Def. by 20%. Decreases MP consumption for skill use by 5%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_maid_hairband_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mpConsum" val="0.95"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="0.95"/>
+				<mul order="0x30" stat="mpDanceConsume" val="0.95"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21101" levels="1" name="Blessed Escape">
+    <!-- Allows the use of Blessed Escape. Cooldown is 12 hours. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_babypanda_cap_i00"/>
+		<set name="reuseDelay" val="43200000"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="200"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RECALL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="21102" levels="1" name="Blessed Resurrection">
+    <!-- Allows the use of Blessed Resurrection. Cooldown is 12 hours. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_sexypanda_cap_i00"/>
+		<set name="reuseDelay" val="43200000"/>
+		<set name="power" val="100"/>
+		<set name="magicLevel" val="85"/>
+		<set name="castRange" val="400"/>
+		<set name="hitTime" val="3000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_CORPSE_PLAYER"/>
+		<set name="corpse" val="true"/>
+		<set name="skillType" val="RESURRECT"/>
+		<set name="useSS" val="false"/>
+		<set name="canPet" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="21103" levels="1" name="Soul of an Adventurer of Immortality's Ability">
+    <!-- For 5 minutes, receives the soul's help to raise Max HP by 20%, Max MP by 20%, and Speed by 20%. Increases Resistance to de-buffs by 10%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_kungfupanda_cap_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<add order="0x40" stat="runSpd" val="20"/>
+				<add order="0x40" stat="debuffResist" val="10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21104" levels="1" name="Appetite for Destruction">
+    <!-- For 30 seconds, awakens your destructive instincts and increases P. Atk., P. Critical Rate and P. Critical Damage by 50%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_gatekeeper_of_hat_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="30" val="0">
+				<mul order="0x30" stat="pAtk" val="1.5"/>
+				<add order="0x40" stat="rCrit" val="50"/>
+				<mul order="0x30" stat="cAtk" val="1.5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21105" levels="1" name="Release Agathion's Seal - Lucky Girl">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1529"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21106" levels="1" name="Release Agathion's Seal - Lucky Boy">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1530"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21107" levels="1" name="Release Agathion's Seal - Dancing Child of Fortune">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1531"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21108" levels="1" name="Release Agathion's Seal - Monkey King">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1532"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21109" levels="1" name="Release Agathion's Seal - Wutangka">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1533"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21110" levels="1" name="Release Agathion's Seal - Bonus B">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1534"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21111" levels="1" name="Soul of an Adventurer of Immortality's Ability">
+    <!-- For 5 minutes, receives the soul's help to raise Max HP by 20%, Max MP by 20%, and Speed by 20%. Increases Resistance to de-buffs by 10%. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<add order="0x40" stat="runSpd" val="20"/>
+				<add order="0x40" stat="debuffResist" val="10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21112" levels="1" name="Soul of a Strong Warrior's Ability">
+    <!-- For 5 minutes, increases Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20% with the soul's help. Bestows the ability to recover as HP 5% of the physical damage inflicted on the enemy with a certain probability. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<add order="0x40" stat="absorbDam" val="5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21113" levels="1" name="Soul of a Wise Magician's Ability">
+    <!-- For 5 minutes, receives the soul's help to raise Casting Spd. by 20%, M. Atk. by 20%, and M. Def. by 20%. Decreases MP consumption for skill use by 5%. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_headphone_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<mul order="0x30" stat="mpConsum" val="0.95"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21114" levels="1" name="Soul of an Adventurer of Immortality's Ability">
+    <!-- For 5 minutes, receives the soul's help to raise Max HP by 20%, Max MP by 20%, and Speed by 20%. Increases Resistance to de-buffs by 10%. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<add order="0x40" stat="runSpd" val="20"/>
+				<add order="0x40" stat="debuffResist" val="10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21115" levels="1" name="Soul of a Strong Warrior's Ability">
+    <!-- For 5 minutes, increases Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20% with the soul's help. Bestows the ability to recover as HP 5% of the physical damage inflicted on the enemy with a certain probability. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<add order="0x40" stat="absorbDam" val="5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21116" levels="1" name="Soul of a Wise Magician's Ability">
+    <!-- For 5 minutes, receives the soul's help to raise Casting Spd. by 20%, M. Atk. by 20%, and M. Def. by 20%. Decreases MP consumption for skill use by 5%. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<mul order="0x30" stat="mpConsum" val="0.95"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21117" levels="1" name="Ability of Prominent Adventure's Soul">
+    <!-- For 5 minutes, receives the soul's help to raise Max HP by 20%, Max MP by 20%, and Speed by 20%. Increases HP Recovery Bonus by 20% and MP Recovery Bonus by 20%. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<add order="0x40" stat="runSpd" val="20"/>
+				<mul order="0x30" stat="regHp" val="1.2"/>
+				<mul order="0x30" stat="regMp" val="1.2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21118" levels="1" name="Brave Warrior's Soul Power">
+    <!-- For 5 minutes, increases Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20% with the soul's help. Increases Critical Damage by 20% and critical rate by 20%. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="cAtk" val="1.2"/>
+				<add order="0x40" stat="rCrit" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21119" levels="1" name="Soul of a Great Magician's Ability">
+    <!-- For 5 minutes, receives the soul's help to increase Casting Spd. by 20%, M. Atk. by 20%, and M. Def. by 20%. Increases the power of Prominent Damage through magic damage by 20% and the chance of prominent damage occurring through magic damage by 2. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_spirit_skill_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<mul order="0x30" stat="mCritDamage" val="1.2"/>
+				<add order="0x40" stat="mCritRate" val="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21120" levels="1" name="Jack O'Lantern Card">
+    <!-- Jack's game Skill -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_jack_ghost_i00"/>
+		<set name="magicLevel" val="1"/>
+		<set name="castRange" val="400"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21121" levels="1" name="Rotten Jack O'Lantern Card">
+    <!-- Jack's game Skill -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_rotten_jack_ghost_i00"/>
+		<set name="magicLevel" val="1"/>
+		<set name="castRange" val="400"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21122" levels="1" name="Blessing of Skooldie: Protection of Darkness">
+    <!-- For 1 hour, increases Max HP by 20%, Max MP by 20%, P. Def. by 20%, and M. Def. by 20%. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21123" levels="1" name="Blessing of Skooldie: Protection of Darkness">
+    <!-- For 1 hour, increases Max HP by 20%, Max MP by 20%, P. Def. by 20%, and M. Def. by 20%. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21124" levels="1" name="Blessing of Skooldie: Protection of Darkness">
+    <!-- For 1 hour, increases Max HP by 20%, Max MP by 20%, P. Def. by 20%, and M. Def. by 20%. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21125" levels="1" name="Blessing of Skooldie: Protection of Darkness">
+    <!-- For 1 hour, increases Max HP by 20%, Max MP by 20%, P. Def. by 20%, and M. Def. by 20%. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21126" levels="1" name="Blessing of Skooldie: Protection of Darkness">
+    <!-- For 1 hour, increases Max HP by 20%, Max MP by 20%, P. Def. by 20%, and M. Def. by 20%. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="BranchSys.icon.br_scooldie_mask_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2"/>
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21127" levels="1" name="Blessing of Halloween">
+    <!-- For 1 hour, increases Max HP by 40% and Max MP by 40%. Increases Atk. Spd. by 20% and P. Atk. by 10%. Increases Resistance to Dark by 20. Cooldown is 2 hours. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="7200000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21128" levels="1" name="Blessing of Halloween">
+    <!-- For 1 hour, increases Max HP by 40%, Max MP by 40%, Critical Rate by 10%, and Critical Damage by 10%. Increases Resistance to Dark by 20. Cooldown is 2 hours. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="7200000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<add order="0x40" stat="rCrit" val="10"/>
+				<mul order="0x30" stat="cAtk" val="1.1"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21129" levels="1" name="Blessing of Halloween">
+    <!-- For 1 hour, increases Max HP by 40%, Max MP by 40%, and Speed by 10%. Bestows the ability to recover as HP 5% of the physical damage inflicted on the enemy with a certain probability. Increases Resistance to Dark by 20. Cooldown is 2 hours. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="7200000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<add order="0x40" stat="runSpd" val="10"/>
+				<add order="0x40" stat="absorbDam" val="5"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21130" levels="1" name="Blessing of Halloween">
+    <!-- For 1 hour, increases Max HP by 40%, Max MP by 40%, and Casting Spd. by 20%. Decreases MP consumption for skill use by 5%. Increases Resistance to Dark by 20. Cooldown is 2 hours. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="7200000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<add order="0x40" stat="runSpd" val="20"/>
+				<mul order="0x30" stat="mpConsum" val="0.95"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21131" levels="1" name="Blessing of Halloween">
+    <!-- For 1 hour, increases Max HP by 40%, Max MP by 40%, and Casting Spd. by 20%. Increases the rate of causing exceptional magic damage by 2. Increases Resistance to Dark by 20. Cooldown is 2 hours. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="7200000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<add order="0x40" stat="runSpd" val="20"/>
+				<add order="0x40" stat="mCritRate" val="2"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21132" levels="1" name="Shadow Ability">
+    <!-- For 2 minutes, decreases the user's Speed by 30%, and obtains the ability to prevent a monster's preemptive attack. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill5739"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="21133" levels="1" name="Release Agathion's Seal - Frozen Corpse">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1535"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21134" levels="1" name="Release Agathion's Seal - Bluebird">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1536"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21135" levels="1" name="Release Agathion's Seal - Hatbird">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1537"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21136" levels="1" name="Golden Jack O'Lantern's Authority">
+    <!-- For 10 minutes, increases party members' Max HP by 40%, Max MP by 40%, Max CP by 40%, P. Def. by 30%, M. Def. by 30%, and Speed by 30. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_golden_jack0_mask_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="ETC"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<mul order="0x30" stat="maxCp" val="1.4"/>
+				<mul order="0x30" stat="pDef" val="1.3"/>
+				<mul order="0x30" stat="mDef" val="1.3"/>
+				<add order="0x40" stat="runSpd" val="30"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21137" levels="1" name="Blessing of Halloween">
+    <!-- For 10 minutes, increases Max HP by 40% and Max MP by 40%. Increases Atk. Spd. by 20% and P. Atk. by 10%. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21138" levels="1" name="Blessing of Halloween">
+    <!-- For 10 minutes, increases Max HP by 40%, Max MP by 40%, Critical Rate by 10%, and Critical Damage by 10%. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<add order="0x40" stat="rCrit" val="10"/>
+				<mul order="0x30" stat="cAtk" val="1.1"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21139" levels="1" name="Blessing of Halloween">
+    <!-- For 10 minutes, increases Max HP by 40%, Max MP by 40%, and Speed by 10%. Bestows the ability to recover as HP 5% of the physical damage inflicted on the enemy with a certain probability. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<add order="0x40" stat="runSpd" val="10"/>
+				<add order="0x40" stat="absorbDam" val="5"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21140" levels="1" name="Blessing of Halloween">
+    <!-- For 10 minutes, increases Max HP by 40%, Max MP by 40%, and Casting Spd. by 20%. Decreases MP consumption for skill use by 5%. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<add order="0x40" stat="runSpd" val="20"/>
+				<mul order="0x30" stat="mpConsum" val="0.95"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21141" levels="1" name="Blessing of Halloween">
+    <!-- For 10 minutes, increases Max HP by 40%, Max MP by 40%, and Casting Spd. by 20%. Increases the rate of causing exceptional magic damage by 2. Increases Resistance to Dark by 20. Cooldown is 1 hour. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1528"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4"/>
+				<mul order="0x30" stat="maxMp" val="1.4"/>
+				<add order="0x40" stat="runSpd" val="20"/>
+				<add order="0x40" stat="mCritRate" val="2"/>
+				<add order="0x40" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21142" levels="1" name="Release Agathion's Seal - Gwangong">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1551"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21143" levels="1" name="Release Agathion's Seal - Gwanseum Nyang Nyang">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1552"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21144" levels="1" name="Release Agathion's Seal - Blue Opera">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1553"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21145" levels="1" name="Release Agathion's Seal - Blue Opera">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1553"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21146" levels="1" name="Release Agathion's Seal - Red Opera">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1554"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21147" levels="1" name="Release Agathion's Seal - Opera">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1555"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21148" levels="1" name="Release Agathion's Seal - Miss Chipao">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1556"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21149" levels="1" name="Release Agathion's Seal - Nepal Snow">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1557"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21150" levels="1" name="Release Agathion's Seal - Round Ball Snow">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1558"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21151" levels="1" name="Release Agathion's Seal - Ladder Snow">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1559"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21152" levels="1" name="Fireworks">
+    <!-- Sets off firecrackers. Re-use delay is 5 minutes. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_rocket_cap_i00"/>
+		<set name="reuseDelay" val="300000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="HOT"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+	</skill>
+	<skill id="21153" levels="4" name="Blessed Body">
+    <!-- Increases Max HP by 25% for 20 minutes. Cooldown is 1 hour. -->
+		<table name="#Tab-maxHp">1.1 1.15 1.2 1.25</table>
+		<table name="#abnormal_lv">1 2 3 4</table>
+		<table name="#abnormal_time">1200</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_party_hat_gold_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="hp_up" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="maxHp" val="#Tab-maxHp"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21154" levels="4" name="Blessed Soul">
+    <!-- Increases Max MP by 25% for 20 minutes. Cooldown is 1 hour. -->
+		<table name="#Tab-maxMp">1.1 1.15 1.2 1.25</table>
+		<table name="#abnormal_lv">1 2 3 4</table>
+		<table name="#abnormal_time">1200</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_party_hat_mask_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="mp_up" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="maxMp" val="#Tab-maxMp"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21155" levels="1" name="Scent of Flavorful Cheese">
+    <!-- For 5 minutes, increases Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20%. Increases P. Critical Damage and P. Critical Rate by 20%. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_bigrat_cap_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<add order="0x40" stat="rCrit" val="20"/>
+				<mul order="0x30" stat="cAtk" val="1.2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21156" levels="1" name="Scent of Sweet Cheese">
+    <!-- For 5 minutes, receives the soul's help to raise Casting Spd. by 20%, M. Atk. by 20%, and M. Def. by 20%. Increases the power of Prominent Damage through magic damage by 20% and the chance of prominent damage occurring through magic damage by 2. Cooldown is 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_goldrat_cap_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>
+				<mul order="0x30" stat="mCritDamage" val="1.2"/>
+				<add order="0x40" stat="mCritRate" val="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21157" levels="1" name="Release Agathion's Seal - Iken">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1539"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21158" levels="1" name="Release Agathion's Seal - Lana">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1540"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21159" levels="1" name="Release Agathion's Seal - Gnocian">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1541"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21160" levels="1" name="Release Agathion's Seal - Orodriel">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1542"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21161" levels="1" name="Release Agathion's Seal - Lakinos">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1543"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21162" levels="1" name="Release Agathion's Seal - Mortia">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1544"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21163" levels="1" name="Release Agathion's Seal - Heintz">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1545"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21164" levels="1" name="Release Agathion's Seal - Meruril">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1546"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21165" levels="1" name="Release Agathion's Seal - Taman Zu Rapatui">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1547"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21166" levels="1" name="Release Agathion's Seal - Kaurin">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1548"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21167" levels="1" name="Release Agathion's Seal - Ahertbein">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1549"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21168" levels="1" name="Release Agathion's Seal - Naonin">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1550"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21169" levels="1" name="Kadomas Transformation">
+    <!-- Transforms into a Kadomas. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="npcId" val="27"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="isCommon" val="true"/>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20000"/>
+		</for>
+	</skill>
+	<skill id="21170" levels="4" name="Blessed Soul">
+    <!-- Increases Max MP by 25% for 20 minutes. Cooldown is 1 hour. -->
+		<table name="#Tab-maxMp">1.1 1.15 1.2 1.25</table>
+		<table name="#abnormal_lv">1 2 3 4</table>
+		<table name="#abnormal_time">1200</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_party_mask_purple_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="mp_up" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="maxMp" val="#Tab-maxMp"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21171" levels="1" name="Jet Bike Mount">
+    <!-- Mounts a jet bike. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="138"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isCommon" val="true"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="useSS" val="false"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="3600" val="20001">
+				<mul order="0x30" stat="runSpd" val="1.4"/>
+				<mul order="0x30" stat="pAtk" val="0.23"/> 
+				<mul order="0x30" stat="mAtk" val="0.05"/> 
+				<mul order="0x30" stat="accCombat" val="0.60 "/>	
+			</effect>
+		</for>
+	</skill>
+	<skill id="21172" levels="1" name="Enhanced Authority - CON+1 STR+1">
+    <!-- By enhance authority, CON+1 / STR+1 for 2 minutes. Consumes 240 energy. Cooldown 3 minutes. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_stat_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21173" levels="1" name="Enhanced Authority - WIT+1 INT+1">
+    <!-- By enhance authority, WIT+1 / INT+1 for 2 minutes. Consumes 240 energy. Cooldown 3 minutes. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_stat_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21174" levels="1" name="Enhanced Authority - WIT+1 MEN+1">
+    <!-- By enhance authority, WIT+1 / MEN+1 for 2 minutes. Consumes 240 energy. Cooldown 3 minutes. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_stat_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21175" levels="1" name="Enhanced Authority - CON+1 DEX+1">
+    <!-- By enhance authority, CON+1 / DEX+1 for 2 minutes. Consumes 240 energy. Cooldown 3 minutes. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_stat_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21176" levels="1" name="Divine Protection - Divinity">
+    <!-- Increases Holy P. Atk. and P. Def. by 10 each. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21177" levels="1" name="Divine Protection - Water">
+    <!-- Increases the power of and Resistance to water attacks by 10 each. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21178" levels="1" name="Divine Protection - Fire">
+    <!-- Increases fire type P. Atk. and P. Def. by 10 each. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21179" levels="1" name="Divine Protection - Wind">
+    <!-- Increases the power of and Resistance to water attacks by 10 each. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21180" levels="1" name="Divine Protection - Earth">
+    <!-- Increases the power of and Resistance to earth attacks by 10 each. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21181" levels="1" name="Divine Protection - Darkness">
+    <!-- Increases the power of and Resistance to Dark by 10 each. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_attr_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21182" levels="1" name="Blessing of Resistance - Hold">
+    <!-- Increases Resistance to hold by 40%. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21183" levels="1" name="Blessing of Resistance - Paralysis">
+    <!-- Increases Resistance to paralysis by 40%. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21184" levels="1" name="Blessing of Resistance - Sleep">
+    <!-- Increases Resistance to sleep by 40%. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21185" levels="1" name="Blessing of Resistance - Decrease Speed">
+    <!-- Increases Resistance to decreased Speed by 40%. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21186" levels="1" name="Blessing of Resistance - Bleed">
+    <!-- Increases Resistance to bleed by 40%. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21187" levels="1" name="Blessing of Resistance - Stun">
+    <!-- Increases Resistance to stun by 40%. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_resist_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21188" levels="1" name="Recovery Ability - HP">
+    <!-- Increases HP Recovery Bonus by 20%. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_regen_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21189" levels="1" name="Recovery Ability - MP">
+    <!-- Increases MP Recovery Bonus by 20%. Continuously consumes energy. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_regen_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21190" levels="1" name="Soul's Shield">
+    <!-- For 10 seconds, increases P. Def. and M. Def. by 60%. Consumes 500 energy. Cooldown 20 minutes. -->
+		<set name="icon" val="BranchSys2.icon.br_soulavatar_active_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21191" levels="1" name="Release Agathion's Seal - Phoenix">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1574"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21192" levels="1" name="Silent Move">
+    <!-- For 2 minutes, blocks receive preemptive attacks from monsters. Decreases Speed by 40%. Cooldown is 4 hours. -->
+		<set name="icon" val="BranchSys2.icon.br_fox_japan_cap_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21193" levels="1" name="Guardian Deity's Strength">
+    <!-- Increases Critical Damage by 35% for 10 minutes. Cooldown is 1 hour. -->
+		<set name="icon" val="BranchSys2.icon.br_paiwan_cap_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21194" levels="1" name="Release Agathion's Seal - Three-headed Dragon">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1575"/>
+		<set name="summonType" val="agathion"/>
+	</skill>
+	<skill id="21195" levels="1" name="Blessed Child Transformation Skill - Trejuo">
+    <!-- Transforms into the Blessed Child Trejuo. When transformed into Trejuo, recovers Vitality upon acquiring XP. Cooldown is 4 hours. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isCommon" val="true"/>
+		<set name="addSkills" val="619;1"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<for>
+			<effect count="1" name="Transformation" stackType="vitalityRegen" time="3600" val="20002"/>
+		</for>
+	</skill>
+	<skill id="21196" levels="1" name="Blessed Child Transformation Skill - Sujin">
+    <!-- Transforms into the Blessed Child Sujin. When transformed into Sujin, recovers Vitality upon acquiring XP. Cooldown is 4 hours. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isCommon" val="true"/>
+		<set name="addSkills" val="619;1"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<for>
+			<effect count="1" name="Transformation" stackType="vitalityRegen" time="3600" val="20003"/>
+		</for>
+	</skill>
+	<skill id="21197" levels="1" name="Induk's Buff">
+    <!-- Restores all HP, MP, and CP using the strength of Induk. Cooldown 30 minutes. Can only be used when HP, MP, and CP are all below 30%. Consumes 1 Proof of a Warrior upon skill use. -->
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_a_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21198" levels="1" name="Silence of Loyalty">
+    <!-- Through the power of loyalty, increases party members' P. Def., M. Def. by 30%, P. Atk. by 20%, M. Atk. by 45%, and Speed by 30 for 5 minutes. Cooldown 30 minutes. Consumes 1 Proof of a Warrior upon skill use. -->
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_b_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="21199" levels="1" name="Vitality of Excellence">
+    <!-- Restores Vitality by certain amount using the power of Excellence, and for 5 minutes, maintains the Vitality stage. Cooldown 30 minutes. Consumes 1 Proof of a Warrior and 2 Vitality Effects upon skill use. -->
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_c_i00"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

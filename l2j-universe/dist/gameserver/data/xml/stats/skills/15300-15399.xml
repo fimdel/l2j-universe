@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="15374" levels="2" name="Clan Hall - Horn Melody">
+   	<!--
+	1	Clan Hall - Horn Melody For 30 min., P. Atk. + 17%, P. Def. + 15%, M. Atk. + 79%, and M. Def. + 30%.
+	2	Clan Hall - Horn Melody For 30 min., P. Atk. + 19%, P. Def. + 15%, M. Atk. + 83%, and M. Def. + 30%.
+	-->
+		<table name="#pAtk">1.17 1.19</table>
+		<table name="#mAtk">1.79 1.83</table>
+		<table name="#stackLevel">11 12</table>
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="magicLevel" val="85"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="#stackLevel" stackType="MagicDefUp;pAtk;pDef;mAtk">
+				<mul order="0x30" stat="pDef" val="1.15"/>
+				<mul order="0x30" stat="pAtk" val="#pAtk"/>
+				<mul order="0x30" stat="mAtk" val="#mAtk"/>
+				<mul order="0x30" stat="mDef" val="1.30"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="15375" levels="2" name="Clan Hall - Drum Melody">
+   	<!-- 
+	1	Clan Hall - Drum Melody	For 30 min., Max MP + 20%, HP Recovery Bonus + 20%, M. Critical Rate + 20, Critical Damage during a standard attack + 20%, P. Atk. + 10%, P. Def. + 20%, Atk. Spd. + 20%, M. Atk. + 20%, M. Def. + 20%, Casting Spd. + 20%, Debuff Resistance + 10%, and P. Def. when receiving a critical attack. Also, Spd. - 15%, and Critical Damage during a standard attack is increased after receiving a certain amount of damage.
+	2	Clan Hall - Drum Melody	For 30 min., Max MP + 20%, HP Recovery Bonus + 20%, M. Critical Rate + 20, Critical Damage during a standard attack + 20%, P. Atk. + 10%, P. Def. + 20%, Atk. Spd. + 20%, M. Atk. + 20%, M. Def. + 20%, Casting Spd. + 20%, Debuff Resistance + 10%, and P. Def. when receiving a critical attack. Also, Spd. - 10%, and Critical Damage during a standard attack is increased after receiving a certain amount of damage.
+	-->
+		<table name="#spd">0.85 0.9</table>
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="magicLevel" val="85"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="3" stackType="ancient">
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="regHp" val="1.2"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+				<mul order="0x30" stat="cAtk" val="1.2"/>			
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>				
+				<mul order="0x30" stat="runSpd" val="#spd"/>
+				<add order="0x40" stat="debuffResist" val="10"/>				
+			</effect>
+		</for>
+	</skill>
+	<skill id="15376" levels="2" name="Clan Hall - Pipe Organ Melody">
+    	<!--
+			1	Clan Hall - Pipe Organ Melody	For 30 min., Max HP/ MP/ CP + 37%, and HP Recovery Bonus + 20%.
+			2	Clan Hall - Pipe Organ Melody	For 30 min., Max HP/ MP/ CP + 39%, and HP Recovery Bonus + 20%.
+		-->
+		<table name="#vuln">1.37 1.39</table>
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="magicLevel" val="85"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="11" stackType="hp_up;hpregen;mp_up">
+				<mul order="0x30" stat="maxHp" val="#vuln"/>
+				<mul order="0x30" stat="maxMp" val="#vuln"/>
+				<mul order="0x30" stat="maxCp" val="#vuln"/>
+				<mul order="0x30" stat="regHp" val="1.20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="15377" levels="2" name="Clan Hall - Guitar Melody">
+	<!--
+	1	Clan Hall - Guitar Melody	For 30 min., P. Critical Rate + 32%, P. Critical Damage + 35%, and M. Critical Rate + 20. Also, P. Skill MP Consumption - 20%, M. Skill MP Consumption -10%, and the Iss Enchanter's Enchant Skill MP Consumption - 20%.\0	a,none\0	a,none\0
+	2	Clan Hall - Guitar Melody	For 30 min., P. Critical Rate + 34%, P. Critical Damage + 35%, and M. Critical Rate + 20. Also, P. Skill MP Consumption - 20%, M. Skill MP Consumption - 10%, and the Iss Enchanter's Enchant Skill MP Consumption - 20%.\0	a,none\0	a,none\0
+	-->
+		<table name="#vuln">1.32 1.34</table>
+		<table name="#stackLevel">11 12</table>
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicLevel" val="85"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="#stackLevel" stackType="impulse;rCrit;cAtk">
+				<mul order="0x30" stat="rCrit" val="#vuln"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+				<mul order="0x30" stat="mpConsum" val="0.9"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="0.8"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="15378" levels="2" name="Clan Hall - Harp Melody">
+   	<!--
+	1	Clan Hall - Harp Melody	For 30 min., P. Accuracy + 5, P. Evasion/ M. Evasion + 5, and Spd. + 34. Also, Received Critical Damage - 30%.
+	2	Clan Hall - Harp Melody	For 30 min., P. Accuracy + 6, P. Evasion/ M. Evasion + 6, and Spd. + 35. Also, Received Critical Damage - 30%.
+	-->
+		<table name="#vuln">5 6</table>
+		<table name="#vuln2">34 35</table>
+		<table name="#stackLevel">11 12</table>
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="magicLevel" val="85"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="#stackLevel" stackType="accuracyUp;SpeedUp;Poem_Arfa;rEvas;CoP">
+				<add order="0x40" stat="accCombat" val="#vuln"/>
+				<add order="0x40" stat="rEvas" val="#vuln"/>
+				<add order="0x40" stat="mEvas" val="#vuln"/>
+				<add order="0x40" stat="runSpd" val="#vuln2"/>
+				<mul order="0x30" stat="critDamRcpt" val="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="15379" levels="2" name="Clan Hall - Lute Melody">
+	<!--
+	1	Clan Hall - Lute Melody	For 30 min., Atk. Spd. + 34%, Casting Spd. + 31%, and has a chance of applying 9% Vampiric Rage effect.
+	2	Clan Hall - Lute Melody	For 30 min., Atk. Spd. + 35%, Casting Spd. + 32%, and has a chance of applying 9% Vampiric Rage effect.
+	-->
+		<table name="#vuln1">1.34 1.35</table>
+		<table name="#vuln2">1.31 1.32</table>
+		<table name="#stackLevel">11 12</table>
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicLevel" val="85"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="#stackLevel" stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+				<add order="0x40" stat="absorbDam" val="9"/>
+				<mul order="0x30" stat="pAtkSpd" val="#vuln1"/>
+				<mul order="0x30" stat="mAtkSpd" val="#vuln2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="15380" levels="1" name="Clan Hall - Knight's Harmony">
+    <!--
+	1	Clan Hall - Knight's Harmony	For 30 min., P. Atk. + 12%, P. Critical Damage + 35%, P. Critical Rate + 100%, P. Def. + 45%, Shield Defense Rate + 30%, and Shield Defense + 50%.
+	-->
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicLevel" val="85"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="4" stackType="shieldProbUp;sDef;Harmony_isa;Great;HarmonyGuardian_1;HarmonyGuardian_2;song_of_hunter;dance_of_fire;dance_of_warrior;song_of_earth;rhythm_of_critical;rhythm_of_combat;berserk">
+				<mul order="0x30" stat="pAtk" val="1.12"/>
+				<mul order="0x30" stat="pDef" val="1.45"/>
+				<add order="0x40" stat="rShld" val="30"/>
+				<mul order="0x30" stat="sDef" val="1.50"/>
+				<add order="0x40" stat="rCrit" val="100"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+			</effect>
+		</for>
+	</skill>
+
+	<skill id="15381" levels="1" name="Clan Hall - Warrior's Harmony">
+   	<!--
+	1	Clan Hall - Warrior's Harmony	For 30 min., P. Atk. + 35%, P. Critical Damage + 35%, P. Critical Rate + 100%, Atk. Spd. + 8%, M. Atk. + 16%, Casting Spd. + 8%, and Spd. + 8.
+	-->
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="magicLevel" val="85"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="4" stackType="Great;Harmony;Harmony_isa;HarmonyBerserk_1;HarmonyBerserk_2;dance_of_warrior;song_of_earth;rhythm_of_combat;dance_of_fire;song_of_hunter;rhythm_of_critical;berserk">
+				<mul order="0x30" stat="pAtk" val="1.35"/>
+				<mul order="0x30" stat="mAtk" val="1.16"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>				
+				<add order="0x40" stat="rCrit" val="100"/>
+				<add order="0x40" stat="runSpd" val="8"/>
+				<mul order="0x30" stat="pDef" val="0.92"/>
+				<mul order="0x30" stat="mDef" val="0.84"/>
+				<sub order="0x40" stat="rEvas" val="4"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="15382" levels="1" name="Clan Hall - Wizard's Harmony">
+  	<!--
+	1	Clan Hall - Wizard's Harmony	For 30 min., M. Atk. + 40%, M. Critical Rate + 100%, Casting Spd. + 8%, P. Atk. + 8%, Atk. Spd. + 8%, Spd. + 8, M. Def. + 14%, and MP Recovery Bonus + 20%. Also, M. Skill MP Consumption - 15%, P. Skill MP Consumption - 5%, Skill Cooldown - 20%.
+	-->
+		<set name="reuseDelay" val="0"/>
+		<set name="hitTime" val="0"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicLevel" val="85"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="1800" val="0" stackOrder="4" stackType="concentration;Harmony_isa;buff_one;HarmonyMage_1;HarmonyMage_2;HarmonyMage_3;rhythm_of_magic;dance_of_mystic;song_of_warding;dance_of_siren;song_of_renewal;rhythm_of_start;berserk">
+				<mul order="0x30" stat="pAtk" val="1.08"/>
+				<mul order="0x30" stat="mAtk" val="1.40"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="mDef" val="1.14"/>
+				<add order="0x40" stat="mCritRate" val="100"/>
+				<add order="0x40" stat="mpEff" val="20"/>
+				<add order="0x40" stat="runSpd" val="8"/>
+				<mul order="0x30" stat="pDef" val="0.92"/>				
+				<sub order="0x30" stat="rEvas" val="4"/>
+				<mul order="0x30" stat="mpConsum" val="0.85"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="0.95"/>
+				<mul order="0x30" stat="mReuse" val="0.8"/>
+			</effect>
+		</for>
+	</skill>
+</list>

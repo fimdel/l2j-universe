@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="4202" name="Chrono Cithara">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_chrono_cithara_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="1"/>
+			<add stat="mAtk" order="0x10" value="1"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="4219" name="Dream Sword">
+		<set name="crystal_type" value="NONE"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_knights_sword_i00"/>
+		<set name="price" value="244000"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="weight" value="1530"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="4220" name="Dream Knife">
+		<set name="crystal_type" value="NONE"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_assassin_knife_i00"/>
+		<set name="price" value="244000"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="weight" value="1110"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="27"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="4221" name="Ubiquitous Axe">
+		<set name="crystal_type" value="NONE"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_tomahawk_i00"/>
+		<set name="price" value="244000"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="1850"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="21"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="4222" name="Dream Shield">
+		<set name="crystal_type" value="NONE"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.shield_hoplon_i00"/>
+		<set name="price" value="9900"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1380"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="90"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="4223" name="Ubiquitous Shield">
+		<set name="crystal_type" value="NONE"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.shield_dwarven_chain_shield_i00"/>
+		<set name="price" value="9900"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1380"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="90"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="4233" name="Knuckle Duster">
+		<set name="crystal_count" value="884"/>
+		<set name="crystal_type" value="C"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_knuckle_dust_i00"/>
+		<set name="price" value="2209700"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="weight" value="1490"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="148"/>
+			<add stat="mAtk" order="0x10" value="68"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="4237" name="Hatchling's Level 65 Weapon">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pet_arms_i04"/>
+		<set name="price" value="5628000"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="type" value="PET"/>
+		<set name="weight" value="100"/>
+		<equip>
+			<slot id="HATCHLING"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="24"/>
+			<add stat="mAtk" order="0x10" value="32"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="277"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="4238" name="Hatchling's Level 75 Weapon">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pet_arms_i04"/>
+		<set name="price" value="19073000"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="type" value="PET"/>
+		<set name="weight" value="100"/>
+		<equip>
+			<slot id="HATCHLING"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="31"/>
+			<add stat="mAtk" order="0x10" value="43"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="277"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+</list>

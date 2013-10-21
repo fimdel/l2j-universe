@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="10119" name="Dynasty Sigil">
+		<set name="crystal_count" value="0"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="false"/>
+		<set name="icon" value="icon.dynasty_sigil_i00"/>
+		<set name="price" value="6404000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="ex_type" value="SIGIL"/>
+		<set name="weight" value="930"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="8311" level="1"/>
+		</skills>
+		<for>
+			<add stat="pDef" order="0x10" value="15"/>
+			<add stat="rEvas" order="0x10" value="-8"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="10120" name="Sealed Dynasty Sigil">
+		<set name="crystal_count" value="0"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="false"/>
+		<set name="icon" value="icon.armor_dynasty_sigil_i01"/>
+		<set name="price" value="6404000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="ex_type" value="SIGIL"/>
+		<set name="weight" value="930"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="15"/>
+			<add stat="rEvas" order="0x10" value="-8"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="10121" name="Sealed Arcana Sigil">
+		<set name="crystal_count" value="0"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="false"/>
+		<set name="icon" value="icon.arcana_sigil_i01"/>
+		<set name="price" value="3355000"/>
+		<set name="type" value="SIGIL"/>
+		<set name="ex_type" value="SIGIL"/>
+		<set name="weight" value="940"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="13"/>
+			<add stat="rEvas" order="0x10" value="-8"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="10122" name="Red Crescent Earring">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_count" value="48"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystallizable" value="true"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.accessary_red_cresent_earing_i00"/>
+		<set name="price" value="20700"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<set name="ex_type" value="EARRING"/>
+		<for>
+			<add stat="mDef" order="0x10" value="24"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="10123" name="Necklace of Devotion">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_count" value="51"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystallizable" value="true"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.accessary_necklace_of_devotion_i00"/>
+		<set name="price" value="27600"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<set name="ex_type" value="NECKLACE"/>
+		<for>
+			<add stat="mDef" order="0x10" value="32"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="10124" name="Ring of Devotion">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_count" value="25"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystallizable" value="true"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.accessary_ring_of_devotion_i00"/>
+		<set name="price" value="13800"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<set name="ex_type" value="RING"/>
+		<for>
+			<add stat="mDef" order="0x10" value="16"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="10126" name="Dynasty Leather Armor" add_name="Force Master">
+		<set name="crystal_count" value="878"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.armor_t92_ud_i00"/>
+		<set name="price" value="18298000"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4180"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<cond msgId="113" addName="1">
+			<player classId="88,114"/>
+		</cond>
+		<for>
+			<add stat="pDef" order="0x10" value="170"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="10127" name="Dynasty Leather Armor" add_name="Weapon Master">
+		<set name="crystal_count" value="878"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.armor_t92_ub_i00"/>
+		<set name="price" value="18298000"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4180"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<cond msgId="113" addName="1">
+			<player classId="89,113,117,118,131,132,133"/>
+		</cond>
+		<for>
+			<add stat="pDef" order="0x10" value="170"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="10139" name="Agathion Bracelet">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="700"/>
+		<set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<set name="ex_type" value="BRACELET"/>
+		<skills>
+			<skill id="3267" level="1"/>
+			<skill id="3269" level="1"/>
+			<skill id="5414" level="1"/>
+		</skills>
+	</armor>
+	<armor id="10140" name="Blessed Ring of Escape">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="250"/>
+		<set name="icon" value="icon.accessary_ring_of_mana_i00"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<set name="ex_type" value="RING"/>
+		<skills>
+			<skill id="3408" level="1"/>
+		</skills>
+		<cond msgId="1507">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<add stat="mDef" order="0x10" value="24"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="10141" name="Grey Talisman - Yeti Transform">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="70"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="price" value="50000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="3335" level="1"/>
+		</skills>
+	</armor>
+	<armor id="10142" name="Grey Talisman - Buffalo Transform">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="70"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="price" value="50000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="3336" level="1"/>
+		</skills>
+	</armor>
+	<armor id="10158" name="Grey Talisman of Upper Grade Fishing">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="60"/>
+		<set name="icon" value="icon.etc_talisman_i07"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="3315" level="1"/>
+		</skills>
+	</armor>
+	<armor id="10168" name="Dynasty Leather Armor" add_name="Enchanter">
+		<set name="crystal_count" value="878"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.armor_t92_ud_i00"/>
+		<set name="price" value="18298000"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4180"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<cond msgId="113" addName="1">
+			<player classId="98,115,116,136"/>
+		</cond>
+		<for>
+			<add stat="pDef" order="0x10" value="170"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="10169" name="Enchanter Circlet (Kamael only)">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessary_weapon_master_circlet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+		<set name="ex_type" value="HAIR_ACCESSORY"/>
+		<cond msgId="113" addName="1">
+			<player classId="136"/>
+			<!--race - kamael       minLvl - 40 -->
+		</cond>
+	</armor>
+	<armor id="10170" name="Baylor's Earring">
+		<set name="crystal_count" value="487"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="crystallizable" value="true"/>
+		<set name="augmentable" value="false"/>
+		<set name="icon" value="icon.accessary_dynasty_earing_i00"/>
+		<set name="price" value="12185000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<set name="ex_type" value="EARRING"/>
+		<for>
+			<add stat="mDef" order="0x10" value="71"/>
+			<add stat="maxMp" order="0x10" value="31"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+			<add stat="defenceUnholy" order="0x60" value="30">
+				<or>
+					<using slotitem="10170;1;0"/>
+					<using slotitem="10170;2;0"/>
+				</or>
+			</add>
+			<add stat="maxMp" order="0x60" value="31">
+				<or>
+					<using slotitem="10170;1;0"/>
+					<using slotitem="10170;2;0"/>
+				</or>
+			</add>
+		</for>
+	</armor>
+	<armor id="10175" name="Goblin Circlet (Event)">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.accessory_taiwan_i00"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="FACE"/>
+		</equip>
+		<set name="ex_type" value="HAIR_ACCESSORY"/>
+	</armor>
+	<armor id="10176" name="White Half Mask">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.accessory_half_face_i00"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="FACE"/>
+		</equip>
+		<set name="ex_type" value="HAIR_ACCESSORY"/>
+	</armor>
+	<armor id="10177" name="Black Half Mask">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.Accessary_black_half_mask_i00"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="FACE"/>
+		</equip>
+		<set name="ex_type" value="HAIR_ACCESSORY"/>
+	</armor>
+</list>

@@ -1,0 +1,17 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="166" name="CrystalPrisonBaylor" maxChannels="25" collapseIfEmpty="10" timelimit="60" dispelBuffs="true">
+        <collapse on-party-dismiss="true" timer="10"/>
+        <level min="95" max="99"/>
+        <party min="1" max="14"/>
+        <return loc="149368 173640 -945"/>
+        <teleport loc="153592 143896 -12734"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="0"/>
+        <reuse resetReuse="1 15 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+		<doors>
+			<door id="24220008" opened="true"/>
+		</doors>
+    </instance>
+</list>

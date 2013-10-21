@@ -1,0 +1,19 @@
+<!ELEMENT list (restoration)*>
+
+	<!ELEMENT restoration (group)*>
+	<!ATTLIST restoration
+		skill_id CDATA #REQUIRED
+		skill_level CDATA #IMPLIED
+		name CDATA #IMPLIED
+		consume_item_id CDATA #IMPLIED
+		consume_item_count CDATA #IMPLIED>
+
+		<!ELEMENT group (item)*>
+		<!ATTLIST group
+			chance CDATA #REQUIRED>
+
+			<!ELEMENT item (#PCDATA)>
+			<!ATTLIST item
+				id CDATA #REQUIRED
+				min_count CDATA #REQUIRED
+				max_count CDATA #IMPLIED>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT list (track)*>
+
+	<!ELEMENT track (way)*>
+	<!ATTLIST track
+		id CDATA #REQUIRED
+		x CDATA #REQUIRED
+		y CDATA #REQUIRED
+		z CDATA #REQUIRED
+		name CDATA #IMPLIED>
+
+			<!ELEMENT way (point)*>
+			<!ATTLIST way
+				id CDATA #REQUIRED>
+
+				<!ELEMENT point (#PCDATA)>
+				<!ATTLIST point
+					x CDATA #REQUIRED
+					y CDATA #REQUIRED
+					z CDATA #REQUIRED
+					next_way_id CDATA #REQUIRED>

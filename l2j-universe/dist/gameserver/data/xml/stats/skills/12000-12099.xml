@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="12000" levels="1" name="Aerore Chain Skill Knock Blow">
+    		<!-- Inflicts a powerful blow on the target. -->
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="castRange" val="700"/>
+		<set name="power" val="230"/>
+		<set name="magicLevel" val="85"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="overHit" val="true"/>&gt;
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="isAlterSkill" val="true"/>
+    </skill>
+	<skill id="12001" levels="1" name="Glimmer Crystal">
+    <!-- none -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="magicLevel" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+	</skill>
+	<skill id="12002" levels="1" name="Glimmer">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+        <set name="castRange" val="150"/>
+        <set name="magicLvl" val="85"/>
+        <set name="reuseDelay" val="500"/>
+        <set name="hitTime" val="1000"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="12003" levels="1" name="Stronghold Fragment">
+    <!-- Bestows the authority to control the stronghold. -->
+		<set name="icon" val="icon.etc_dragons_blood_i03"/>
+        <set name="castRange" val="300"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="12004" levels="1" name="Summon Detector">
+    <!-- Detect the relic. -->
+		<set name="icon" val="icon.skill0324"/>
+		<set name="magicLvl" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+        <set name="magicType" val="MAGIC"/>
+		<set name="hitTime" val="300"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="skillType" val="SUMMON_ITEM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+        <set name="SummonItemId" val="22341"/>  <!-- затока с -->
+        <set name="SummonMinCount" val="120"/>
+	<skill id="12005" levels="1" name="Spray Insecticide">
+    <!-- Sprays medicine. -->
+		<set name="icon" val="icon.bug_spray_a"/>
+        <set name="castRange" val="150"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="reuseDelay" val="3000"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="12006" levels="1" name="Spray Insecticide">
+    <!-- Sprays medicine. -->
+		<set name="icon" val="icon.bug_spray_b"/>
+        <set name="castRange" val="150"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="reuseDelay" val="3000"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="12007" levels="1" name="Spray Insecticide">
+    <!-- Sprays medicine. -->
+		<set name="icon" val="icon.bug_spray_c"/>
+        <set name="castRange" val="150"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="reuseDelay" val="3000"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	</skill>
+	<skill id="12008" levels="1" name="Orbis's Reflect Shield">
+    <!-- Conquers Medusa's Soul. -->
+		<set name="icon" val="icon.skill3260"/>
+       <set name="castRange" val="150"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="reuseDelay" val="180000"/>
+        <set name="hitTime" val="800"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="12009" levels="1" name="Teredor Antidote">
+    <!-- Invincible against a terrible abnormal status. -->
+		<set name="icon" val="icon.grima_poison"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="DebuffImmunity" time="30" val="0"/>
+        </for>
+	</skill>
+	<skill id="12010" levels="1" name="Bonus Hall Key">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="castRange" val="450"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="reuseDelay" val="3000"/>
+        <set name="hitTime" val="500"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="12011" levels="1" name="Glimmer Crystal">
+    <!-- can summon Magmeld's wisps at Anghell Waterfall -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="3000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="17604"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="castRange" val="350"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="144">
+			<target mobId="33489"/>
+		</cond>
+	</skill>
+	<skill id="12012" levels="1" name="Check Item">
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12013" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12014" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12015" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12016" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12017" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12018" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12019" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12020" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12021" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12022" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12023" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12024" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12025" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12026" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12027" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12028" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12029" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12030" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12031" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12032" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12033" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12034" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12035" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12036" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12037" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12038" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12039" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12040" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12041" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12042" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12043" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12044" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12045" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12046" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12047" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12048" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12049" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12050" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12051" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12052" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12053" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12054" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12055" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12056" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12057" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12058" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12059" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12060" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12061" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12062" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12063" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12064" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12065" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12066" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12067" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12068" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12069" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12070" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12071" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12072" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12073" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12074" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12075" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12076" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12077" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12078" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12079" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12080" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12081" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12082" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12083" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12084" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12085" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12086" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12087" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12088" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12089" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12090" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12091" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12092" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12093" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12094" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12095" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12096" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12097" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12098" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="12099" levels="1" name="Check Item">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+</list>

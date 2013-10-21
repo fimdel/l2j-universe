@@ -1,0 +1,16 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="198" name="Cruma Lagacy" maxChannels="10" collapseIfEmpty="10" timelimit="60" dispelBuffs="false">
+		<level min="38" max="99"/>
+		<party min="2" max="9"/>
+		<return loc="17192 114173 -3439"/> 
+		<teleport loc="17544 114472 4000"/> <!-- todo coordinates -->
+		<quest id="10352"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="25829" type="point" respawn="0"> 
+				<coords loc="17736 114168 4000"/> 
+			</spawn>
+		</spawns>
+	</instance>
+</list>

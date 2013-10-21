@@ -1,0 +1,31 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="5000" name="dungeon school" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+        <level min="1" max="99"/>
+        <party min="1" max="1"/>
+        <return loc="-110344 252408 -2022"/>
+        <teleport loc="-113805 247735 -7872"/>
+        <quest id="0"/>
+        <reuse resetReuse="30 6 * * 4,7" setUponEntry="true" sharedReuseGroup="0"/>
+        <spawns>
+            <spawn mobId="22991" type="point" respawn="0">
+                <coords loc="-114120 248376 -7902"/>
+                <coords loc="-114520 248440 -7902"/>
+                <coords loc="-115048 247784 -7901"/>
+                <coords loc="-114440 247768 -7902"/>
+            </spawn>
+            <spawn mobId="19141" type="point" respawn="0">
+                <coords loc="-114136 248312 -7902"/>
+                <coords loc="-114520 248376 -7902"/>
+                <coords loc="-115032 247832 -7902"/>
+                <coords loc="-114440 247816 -7902"/>
+            </spawn>
+            <spawn mobId="33193" type="point" respawn="0">
+                <coords loc="-113928 247656 -7902"/>
+            </spawn>
+            <spawn mobId="33021" type="point" respawn="0">
+                <coords loc="-115000 248360 -7901"/>
+            </spawn>
+        </spawns>
+    </instance>
+</list>

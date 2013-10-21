@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="14700" levels="1" name="Maximum Defense">
+    <!-- For 1 minute, increases one's own P. Atk. by 25%, M. Atk. by 50%, P. Def. by 1800, M. Def. by 1620, HP recovery speed by 300, MP recovery speed by 300%, and resistance to buff canceling attacks by 80%. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormal="invul1" count="1" name="Buff" stackOrder="-1" stackType="Immobilize" time="60" val="0">
+                <mul order="0x30" stat="pAtk" val="1.25"/>
+                <mul order="0x30" stat="mAtk" val="1.50"/>
+                <add order="0x40" stat="pDef" val="1800"/>
+                <add order="0x40" stat="mDef" val="1620"/>
+                <add order="0x40" stat="regHp" val="300"/>
+                <add order="0x40" stat="regMp" val="300"/>
+                <add order="0x40" stat="cancelResist" val="80"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14701" levels="1" name="Brutal Agony">
+    <!-- none -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14702" levels="1" name="Invasion of Darkness">
+    <!-- none -->
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14703" levels="1" name="Cycle of Blood">
+    <!-- Bleed status. -->
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14704" levels="1" name="Forceful Yoke">
+    <!-- none -->
+        <set name="icon" val="icon.skill10015"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14705" levels="1" name="Stun Resistance">
+    <!-- A powerful shock. -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14706" levels="1" name="Stun Resistance">
+    <!-- A powerful shock. -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14707" levels="1" name="Stun Resistance">
+    <!-- A powerful shock. -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14708" levels="1" name="Istina">
+    <!-- Istina is a Lord of destruction who caused the sprouting of the Seed of Annihilation, one of the 9 seeds sown in Gracia containing hatred toward Einhasad. She is the creator and mother of all things that live inside the Seed of Annihilation. The life energy of Gracia is the source of her power. In order to complete the resurrection of Shilen, Istina caused a deadly poison created inside the Seed of Annihilation to permeate throughout the southern region of Gracia. -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14709" levels="1" name="Istina">
+    <!-- Istina is a Lord of destruction who caused the sprouting of the Seed of Annihilation, one of the 9 seeds sown in Gracia containing hatred toward Einhasad. She is the creator and mother of all things that live inside the Seed of Annihilation. The life energy of Gracia is the source of her power. In order to complete the resurrection of Shilen, Istina caused a deadly poison created inside the Seed of Annihilation to permeate throughout the southern region of Gracia. -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14710" levels="1" name="Raid Boss - Level 97">
+    <!-- The earth dragon whose name is synonymous with ferocity on the continent of Aden. It was buried deep underground for a long time. But after Shilen's awakening, the rain of blood permeated down and it came back to life. Now, its role is to destroy the lifeforms that seek the location of the Seal of Shilen. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14711" levels="1" name="Raid Boss - Level 97">
+    <!-- Fused mutant created by Embryo upon capturing the power of the Seven Signs, through the authority of darkness received from Shilen. Harp is the prototype that was created after countless experiments. It's body's left side contains powerful magic and its right side physical power to make it a complete fighting machine. It protects the entrance to the Altar of Shilen. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14712" levels="1" name="Raid Boss - Level 96">
+    <!-- One of the four disciples created in Embryo by their leader Etis van Etina through the power of the Seven Signs. It is twins with another disciple, Maliss. She is a Magus with the power of the Seal of Vengeance. She protects the Altar of Shilen and guards her power. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14713" levels="1" name="Raid Boss - Level 96">
+    <!-- One of the four disciples created in Embryo by their leader Etis van Etina through the power of the Seven Signs. It is twins with another disciple, Isadora. She is a dark healer with the power of the Seal of Avarice. She protects the Altar of Shilen and guards her power. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14714" levels="1" name="Raid Boss - Level 98">
+    <!-- Beleth's minion. In order to block external power for attacking the Witch Parme, Beleth summoned the twin monster Veridan from the edge of hell and placed it at the Emerald Square in the Crystal Caverns. The monsters there have no sense of self. They only exist and respond. It obediently follows Beleth's command. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14715" levels="1" name="Raid Boss - Level 98">
+    <!-- Beleth's minion. In order to block external power for attacking the Witch Parme, Beleth summoned the Kechi from the edge of hell and placed it above the Steam Corridor in the Crystal Caverns. Kechi freely controls fire and it has the ability to lead numerous minions. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14716" levels="1" name="Raid Boss - Level 98">
+    <!-- Beleth's minion. In order to block external power for attacking the Witch Parme, Beleth summoned the Michaela from the edge of hell and placed it in the Coral Garden in the Crystal Caverns. Despite her beautiful appearance, she enjoys to kill in a vicious manner. It can distinguish between good and evil. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14717" levels="1" name="Trasken">
+    <!-- A messenger from hell that was sent to the physical world in order to help complete the resurrection of Shilen. Hell's Gate. It kills by dazzling the lifeforms, then puts them into its mouth to send to Shilen in the realm of darkness. -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14718" levels="1" name="Raid Boss - Level 92">
+    <!-- Shilen's tenth lord. It is the leaders of the fairies that have fallen by the influence of the "Decaying Darkness." It has 80% of its sense of self, and it comes back to its senses now and again. The Fairy Settlement is filled with evil energy through its influence. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14719" levels="1" name="Raid Boss - Level 95">
+    <!-- Shilen's tenth lord. It is the leaders of the fairies that have fallen by the influence of the "Decaying Darkness." It has 80% of its sense of self, and it comes back to its senses now and again. The Fairy Settlement is filled with evil energy through its influence. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14720" levels="1" name="Raid Boss - Level 88">
+    <!-- A follower of Shilen on the continent. She follows the traces of Shilen's blood all the way to the evil spirit's altar. She is transformed into a Banshee Queen. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14721" levels="1" name="Raid Boss - Level 94">
+    <!-- Prison of the giants who dared to oppose the goddess Einhasad. It sleeps forever underneath the Ancient City Arcan. It was banished deep underneath the Ancient City Arcan. It makes the humans who seek it out experience its past. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14722" levels="1" name="Raid Boss - Level 98">
+    <!-- Prison of the giants who dared to oppose the goddess Einhasad. It sleeps forever underneath the Ancient City Arcan. It was banished deep underneath the Ancient City Arcan. It makes the humans who seek it out experience its past. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14723" levels="1" name="Raid Boss - Level 94">
+    <!-- Monster that holds ancient theoretical life force. It fell at the influence of the decaying darkness lords and became mutated. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14724" levels="1" name="Raid Boss - Level 43">
+    <!-- Monster that was attracted to trade with the continent. It was influenced by the decaying darkness lords. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14725" levels="1" name="Raid Boss - Level 43">
+    <!-- Monster that was attracted to trade with the continent. It was influenced by the decaying darkness lords. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14726" levels="1" name="Octavis">
+    <!-- It was originally a human hero who followed the rebel leader Spezion. It fell to the trickery of the angel Paulina. It betrayed the rebels and came to guard Orbis Temple. It was put to sleep by the command of the gods. But after the release of Shilen's seal, it was poisoned by the decaying darkness and became reckless. -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14727" levels="1" name="Balok">
+    <!-- This evil creature was made by Beleth in order to suppress the Isle of Prayer. Balok who can open the door to hell by using Belakia that he inherited from Beleth, gives Lunacy of Limit by summoning Hell's Disciple to those who can invade his territory. -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14728" levels="1" name="Raid Boss - Level 97">
+    <!-- Once a hero, Trone rebelled against the gods, was cursed, and fled to Fortuna. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14729" levels="1" name="Raid Boss - Level 92">
+    <!-- Once an outstanding magician, Yui rebelled against the gods. When her lover was killed, she lost her mind and became cursed by the gods. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14730" levels="1" name="Raid Boss - Level 94">
+    <!-- Once a great warrior, Master Kanen rebelled against the gods, became cursed, and fled to Fortuna. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14731" levels="1" name="Raid Boss - Level 95">
+    <!-- Assault captain Lucinda followed Trone and fled to Fortuna. He was also cursed. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14732" levels="1" name="Raid Boss - Level 96">
+    <!-- Konyar used to melt his enemies with powerful flame magic. But he realized too late that the gods were not affected by his flames. He even tried the final stage 3 transformation, but he was eventually cursed and banished to Fortuna. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14733" levels="1" name="Raid Boss - Level 93">
+    <!-- Mukshu was a great coward who used to lead the blind Hornapi. Without Hornapi, all he could do is run away. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14734" levels="1" name="Raid Boss - Level 96">
+    <!-- The great Orc lost his sight during battle. He attacks the enemy using sounds and Mukshu's instructions. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14735" levels="1" name="Raid Boss - Level 96">
+    <!-- Yoentumak has the ability to momentarily disappear. He was one of Trone's followers and the most fearful assassin. He rebelled against the gods along with Trone and became cursed. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14736" levels="1" name="Light Heal">
+    <!-- Restores the target's HP with 1488 Power. Once HP is filled, the remaining effect stores CP. -->
+        <set name="hitTime" val="500"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="skillType" val="HEAL_WITH_CP"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="castRange" val="600"/>
+        <set name="power" val="1488"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="14737" levels="1" name="Seal">
+    <!-- Sealed status. -->
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14738" levels="1" name="Olympiad - Horn Melody">
+    <!-- For 30 minutes, increases the selected target's P. Atk. + 17%, P. Def. + 15%, M. Atk. + 79%, and M. Def. + 30%. -->
+        <set name="icon" val="icon.skill11517"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14739" levels="1" name="Olympiad - Drum Melody">
+    <!-- For 30 minutes, increases the selected target's Max MP + 20%, HP recovery bonus + 20%, M. Critical Rate + 20, Critical Damage during a normal attack + 20%, P. Atk. + 10%, P. Def. + 20%, Atk. Spd. + 20%, M. Atk. + 20%, M. Def. + 20%, Casting Spd. + 20%, resistance to de-buff + 10%, and increased P. Def. upon evading a critical attack. Decreases Speed - 15%. Also for party members who are equipped with short-range weapons that receive more than a set amount of damage, critical power increases during a normal attack. -->
+        <set name="icon" val="icon.skill11522"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14740" levels="1" name="Olympiad - Pipe Organ Melody">
+    <!-- For 30 minutes, increases the selected target's Max HP + 37%, Max MP + 37%, Max CP + 37%, and HP recovery bonus + 20%. -->
+        <set name="icon" val="icon.skill11519"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14741" levels="1" name="Olympiad - Guitar Melody">
+    <!-- For 30 minutes, increases the selected target's physical critical rate + 32%, P. Critical Damage + 35%, M. Critical Rate + 20. Decreases MP consumption for physical skills - 20% and magic skills - 10%. Decreases MP consumption for Iss Enchanter's enchant skills - 20%. -->
+        <set name="icon" val="icon.skill11520"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14742" levels="1" name="Olympiad - Harp Melody">
+    <!-- For 30 minutes, increases the selected target's physical accuracy + 5, physical and magic evasion + 5, and speed + 34. Decreases received critical damage - 30%. -->
+        <set name="icon" val="icon.skill11521"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14743" levels="1" name="Olympiad - Lute Melody">
+    <!-- For 30 minutes, increases the selected target's Atk. Spd. + 34% and Casting Spd. + 31%. Applies Vampiric Rage effect + 9% with a certain probability. -->
+        <set name="icon" val="icon.skill11518"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14744" levels="1" name="Olympiad - Guardian's Harmony">
+    <!-- For 30 minutes, increases the selected target's P. Atk. + 12%, P. Def. + 45%, shield defense rate + 30%, shield P. Def. + 50%, P. Critical Damage + 35%, and physical critical rate + 100%. -->
+        <set name="icon" val="icon.skill11523"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14745" levels="1" name="Olympiad - Berserker's Harmony">
+    <!-- For 30 minutes, increases the selected target's P. Atk. + 35%, M. Atk. + 16%, Atk. Spd. and Casting Spd. + 8%, P. Critical Damage + 35%, physical critical rate + 100, and speed + 8. Decreases M. Def. - 16%, P. Def. - 8%, and physical evasion - 4. -->
+        <set name="icon" val="icon.skill11524"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14746" levels="1" name="Olympiad - Magician's Harmony">
+    <!-- For 30 minutes, increases the selected target's P. Atk. + 8%, M. Atk. + 40%, Atk. Spd. and Casting Spd. + 8%, M. Def. + 14%, M. Critical Rate + 100%, MP recovery bonus + 20%, and speed + 8. Decreases P. Def. - 8%, physical evasion - 4, MP consumption upon magic skill use - 15%, MP consumption upon physical skill use - 5%, and skill re-use time - 20%. -->
+        <set name="icon" val="icon.skill11525"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14747" levels="1" name="Raid Boss - Level 88">
+    <!-- A baby of Earth Wyrm from its egg. It is located in a deep place of Mithril Mines. It is not as huge as Earth Wyrm but has sizable mass, powerful destruction, and strong poison. It's supposed to grow more, but hatched earlier than schedule because of the blood that seeped into the mines. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14748" levels="1" name="Raid Boss - Level 98">
+    <!-- Right human hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. His contaminated soul despises all moving things. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14749" levels="1" name="Raid Boss - Level 97">
+    <!-- Right Orc hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. His contaminated soul considers all living things to be enemies. It wields a giant mace. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14750" levels="1" name="Raid Boss - Level 97">
+    <!-- Right human hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. It is maddened by its contaminated soul. It hurls merciless attacks on all those who are considered to be enemies. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14751" levels="1" name="Raid Boss - Level 97">
+    <!-- Right human hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. After being contaminated, it tries to kill all living things. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14752" levels="1" name="Raid Boss - Level 97">
+    <!-- Right Orc hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. Its contaminated soul keeps it trapped in madness. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14753" levels="1" name="Raid Boss - Level 97">
+    <!-- Right elf hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. Its soul is contaminated, and it enjoys cruel killing. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14754" levels="1" name="Raid Boss - Level 97">
+    <!-- Right human hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. By its contaminated soul, it considers all moving things to be enemies and tries to kill them. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14755" levels="1" name="Raid Boss - Level 97">
+    <!-- Right human hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. Its contaminated soul keeps it trapped in madness. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14756" levels="1" name="Raid Boss - Level 97">
+    <!-- Right Orc hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. Its soul is contaminated and it considers all life forms to be enemies. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14757" levels="1" name="Raid Boss - Level 97">
+    <!-- Right Orc hero in Orbis Temple. He would have slept deep within his honor, but he awakened due to the decaying darkness of Shilen. Its contaminated soul keeps it trapped in madness. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14758" levels="1" name="Raid Boss - Level 59">
+    <!-- This high rank sorcerer led the construction of Baium's Tower of Insolence. After the tower was collapsed, he resurrected by the dark arts that he bestowed upon himself. But due to serious side effects from the dark arts, his body became rotten and his soul was corrupted. As a high rank sorcerer, he still has the techniques but is possessed with lunacy. He kills everyone who invades the tower. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14759" levels="1" name="Raid Boss - Level 62">
+    <!-- This high rank sorcerer led the construction of Baium's Tower of Insolence. After the tower was collapsed, he resurrected by the dark arts that he bestowed upon himself. But due to serious side effects from the dark arts, his body became rotten and his soul was corrupted. As a high rank sorcerer, he is seeking the blood from those who invade the tower in order to reproduce his rotten body. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14760" levels="1" name="Raid Boss - Level 66">
+    <!-- This high rank sorcerer helped the construction of Baium's Tower of Insolence. After the collapse of the tower, she resurrected by consuming the blood and soul of the victims who were buried under the tower. As corrupted as she can be, she is seeking the blood from those who enter the tower in order to maintain her body. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14761" levels="1" name="Raid Boss - Level 70">
+    <!-- This evil creature was made from the sacrifice of a high rank sorcerer's soul and blood who was killed and buried under the tower. The sorcerer gained a new body but couldn't stop the corruption of his soul during that process. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14762" levels="1" name="Raid Boss - Level 72">
+    <!-- Baium wanted to make angels who can protect him like Einhasad. But the cruel and evil creature with black wings that was made from the high rank magic and medicine did not obey him. Even at the time of Baium's death, the creature mocked him and flew above the tower. Because of the magic that Baium bestowed, he cannot leave the tower and is dependent on the limited supply of prey. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14763" levels="1" name="Raid Boss - Level 75">
+    <!-- Baium wanted to make angels who can protect him like Einhasad. But the evil creature that was made from the high rank magic and medicine resembled the appearance of angels. Not only it did not obey Baium but also it went on a rampage of killing regardless the target is its enemy or friend. Because of the magic that Baium bestowed, he cannot leave the tower and is dependent on the limited supply of prey. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14764" levels="1" name="Raid Boss - Level 75">
+    <!-- Baium wanted to make angels who can protect him like Einhasad. But the evil creature that was made from the high rank magic and medicine resembled the appearance of angels. Not only it did not obey Baium but also it went on a rampage of killing regardless the target is its enemy or friend. Because of the magic that Baium bestowed, she cannot leave the tower and is dependent on the limited supply of prey. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14765" levels="5" name="Absorb Attribute">
+    <!-- Strong against absorption. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14766" levels="1" name="Light of Divine Protection">
+    <!-- Cancels all of the user's mass. -->
+        <set name="icon" val="icon.skill14766"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14767" levels="1" name="Siege Punch">
+    <!-- Launches a powerful attack on the target around you -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14768" levels="1" name="Raid Boss - Level 85">
+    <!-- After being killed by Frintezz who lost his soul to the devil, it was reborn as a monster called Scarlet van Halisha. It has lost sense of self, and it only makes sacrifices for the demon Halisha. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14769" levels="1" name="Raid Boss - Level 82">
+    <!-- Lord Ekimus of the Seed of Destruction was borne out of Ekidn who was one of Shilen's nine disciples. After being selected by Shilen, it came to lead the undead as the lord of destruction. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14770" levels="1" name="Raid Boss - Level 75">
+    <!-- High ranking demon in Shilen's dimension that haunts the castle's underground prison. It exists where material world and the realm of darkness collide. When it smells metal and blood, it rips through the dimension to appear and cause many deaths. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14771" levels="1" name="Raid Boss - Level 29">
+    <!-- Demon in Shilen's dimension that floats around in "Kamalok" the dimensional bubble that exists between the material world and the realm of darkness. When Shilen resurrects, it plans to conquer the material world and eventually cause destruction of the world. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14772" levels="1" name="Raid Boss - Level 39">
+    <!-- Demon in Shilen's dimension that floats around in "Kamalok" the dimensional bubble that exists between the material world and the realm of darkness. When Shilen resurrects, it plans to conquer the material world and eventually cause destruction of the world. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14773" levels="1" name="Raid Boss - Level 49">
+    <!-- Demon in Shilen's dimension that floats around in "Kamalok" the dimensional bubble that exists between the material world and the realm of darkness. When Shilen resurrects, it plans to conquer the material world and eventually cause destruction of the world. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14774" levels="1" name="Raid Boss - Level 59">
+    <!-- Demon in Shilen's dimension that floats around in "Kamalok" the dimensional bubble that exists between the material world and the realm of darkness. When Shilen resurrects, it plans to conquer the material world and eventually cause destruction of the world. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14775" levels="1" name="Raid Boss - Level 69">
+    <!-- Demon in Shilen's dimension that floats around in "Kamalok" the dimensional bubble that exists between the material world and the realm of darkness. When Shilen resurrects, it plans to conquer the material world and eventually cause destruction of the world. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14776" levels="1" name="Raid Boss - Level 78">
+    <!-- Demon in Shilen's dimension that floats around in "Kamalok" the dimensional bubble that exists between the material world and the realm of darkness. When Shilen resurrects, it plans to conquer the material world and eventually cause destruction of the world. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14777" levels="1" name="Raid Boss - Level 81">
+    <!-- Demon in Shilen's dimension that floats around in "Kamalok" the dimensional bubble that exists between the material world and the realm of darkness. When Shilen resurrects, it plans to conquer the material world and eventually cause destruction of the world. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14778" levels="1" name="Raid Boss - Level 83">
+    <!-- Demon in Shilen's dimension that floats around in "Kamalok" the dimensional bubble that exists between the material world and the realm of darkness. When Shilen resurrects, it plans to conquer the material world and eventually cause destruction of the world. -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14779" levels="1" name="Master's Blessing - Horn Melody">
+    <!-- The GM is always with you. For 1 hour, increases P. Atk. + 23%, P. Def. + 15%, M. Atk. + 91%, and M. Def. + 30%. -->
+        <set name="icon" val="icon.skill11517"/>
+        <set name="target" val="TARGET_PARTY"/>
+		<set name="mpConsume2" val="1"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1006;1040;1517;989;1036;988;1007;123;1009;871;"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="14" stackType="MagicDefUp;pAtk;pDef;mAtk">
+				<mul order="0x30" stat="pDef" val="1.15"/>
+				<mul order="0x30" stat="pAtk" val="1.23"/>
+				<mul order="0x30" stat="mAtk" val="1.91"/>
+				<mul order="0x30" stat="mDef" val="1.30"/>
+			</effect>
+		</for>
+	</skill>
+    <skill id="14780" levels="1" name="Master's Blessing - Drum Melody">
+    <!-- The GM is always with you. For 1 hour, increases Max MP + 20%, HP recovery bonus + 20%, M. Critical Rate + 20, Critical Damage during a normal attack + 20%, P. Atk. + 10%, P. Def. + 20%, Atk. Spd. + 20%, M. Atk. + 20%, M. Def. + 20%, Casting Spd. + 20%, resistance to de-buff + 10%, and increased P. Def. upon evading a critical attack. Also for clan members who are equipped with short-range weapons that receive more than a set amount of damage, critical power increases during a normal attack. -->
+        <set name="icon" val="icon.skill11522"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1356;1413;1363"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="3" stackType="ancient">
+				<mul order="0x30" stat="maxMp" val="1.2"/>
+				<mul order="0x30" stat="regHp" val="1.2"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+				<mul order="0x30" stat="cAtk" val="1.2"/>				
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="1.2"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.2"/>
+				<mul order="0x30" stat="mAtk" val="1.2"/>
+				<mul order="0x30" stat="mDef" val="1.2"/>				
+				<mul order="0x30" stat="runSpd" val="1.0"/>
+				<add order="0x40" stat="debuffResist" val="10"/>				
+			</effect>
+		</for>
+    </skill>
+    <skill id="14781" levels="1" name="Master's Blessing - Pipe Organ Melody">
+    <!-- The GM is always with you. For 1 hour, increases Max HP + 43%, Max MP + 43%, Max CP + 43%, and HP recovery bonus + 20%. -->
+        <set name="icon" val="icon.skill11519"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1044;1045;1501;1048"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="11" stackType="hp_up;hpregen;mp_up">
+				<mul order="0x30" stat="maxHp" val="1.43"/>
+				<mul order="0x30" stat="maxMp" val="1.43"/>
+				<mul order="0x30" stat="maxCp" val="1.43"/>
+				<mul order="0x30" stat="regHp" val="1.20"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14782" levels="1" name="Master's Blessing - Guitar Melody">
+    <!-- The GM is always with you. For 1 hour, increases physical critical rate + 38%, P. Critical Damage + 35%, and M. Critical Rate + 20. Decreases MP consumption for physical skills - 20% and magic skills - 10%. Decreases MP consumption for Iss Enchanter's enchant skills - 20%. -->
+        <set name="icon" val="icon.skill11520"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1476;1242;1253;1308;1518;1077"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="14" stackType="impulse;rCrit;cAtk">
+				<mul order="0x30" stat="rCrit" val="1.38"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+				<mul order="0x30" stat="mpConsum" val="0.9"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="0.8"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14783" levels="1" name="Master's Blessing - Harp Melody">
+    <!-- The GM is always with you. For 1 hour, increases P. Accuracy + 8, physical and magic evasion + 8, and speed + 37. Decreases received critical damage - 30%. -->
+        <set name="icon" val="icon.skill11521"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1535;230;1461;1240;1252;1309"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="14" stackType="accuracyUp;SpeedUp;Poem_Arfa;rEvas;CoP">
+				<add order="0x40" stat="accCombat" val="8"/>
+				<add order="0x40" stat="rEvas" val="8"/>
+				<add order="0x40" stat="mEvas" val="8"/>
+				<add order="0x40" stat="runSpd" val="37"/>
+				<mul order="0x30" stat="critDamRcpt" val="0.7"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14784" levels="1" name="Master's Blessing - Lute Melody">
+    <!-- The GM is always with you. For 1 hour, increases Atk. Spd. + 37% and Casting Spd. + 34%. Applies Vampiric Rage effect + 9% with a certain probability. -->
+        <set name="icon" val="icon.skill11518"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1002;1251;1310;971;1519;1086"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="14" stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+				<add order="0x40" stat="absorbDam" val="9"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.37"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.34"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14785" levels="1" name="Master's Blessing - Guardian's Harmony">
+    <!-- The GM is always with you. For 1 hour, increases P. Atk. + 12%, P. Def. + 45%, shield defense rate + 30%, shield P. Def. + 50%, P. Critical Damage + 35%, and physical critical rate + 100%. -->
+        <set name="icon" val="icon.skill11523"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1283;1590;264;1243;1389;1391;271"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="4" stackType="shieldProbUp;sDef;Harmony_isa;Great;HarmonyGuardian_1;HarmonyGuardian_2;song_of_hunter;dance_of_fire;dance_of_warrior;song_of_earth;rhythm_of_critical;rhythm_of_combat;berserk">
+				<mul order="0x30" stat="pAtk" val="1.12"/>
+				<mul order="0x30" stat="pDef" val="1.45"/>
+				<add order="0x40" stat="rShld" val="30"/>
+				<mul order="0x30" stat="sDef" val="1.50"/>
+				<add order="0x40" stat="rCrit" val="100"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14786" levels="1" name="Master's Blessing - Berserker's Harmony">
+    <!-- The GM is always with you. For 1 hour, increases P. Atk. + 35%, M. Atk. + 16%, Atk. Spd. and Casting Spd. + 8%, P. Critical Damage + 35%, physical critical rate + 100, and speed + 8. Decreases M. Def. - 16%, P. Def. - 8%, and physical evasion - 4. -->
+        <set name="icon" val="icon.skill11524"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1062;1388;274;1562;1586;1390;269;1261"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="4" stackType="Great;Harmony;Harmony_isa;HarmonyBerserk_1;HarmonyBerserk_2;dance_of_warrior;song_of_earth;rhythm_of_combat;dance_of_fire;song_of_hunter;rhythm_of_critical;berserk">
+				<mul order="0x30" stat="pAtk" val="1.35"/>
+				<mul order="0x30" stat="mAtk" val="1.16"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>				
+				<add order="0x40" stat="rCrit" val="100"/>
+				<add order="0x40" stat="runSpd" val="8"/>
+				<mul order="0x30" stat="pDef" val="0.92"/>
+				<mul order="0x30" stat="mDef" val="0.84"/>
+				<sub order="0x40" stat="rEvas" val="4"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14787" levels="1" name="Master's Blessing - Magician's Harmony">
+    <!-- The GM is always with you. For 1 hour, increases P. Atk. + 8%, M. Atk. + 40%, Atk. Spd. and Casting Spd. + 8%, M. Def. + 14%, M. Critical Rate + 100%, MP recovery bonus + 20%, and speed + 8. Decreases P. Def. - 8%, physical evasion - 4, MP consumption upon magic skill use - 15%, MP consumption upon physical skill use - 5%, and skill re-use time - 20%. -->
+        <set name="icon" val="icon.skill11525"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="267;273;349;1588;1078;365;336;1596;337"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="4" stackType="concentration;Harmony_isa;buff_one;HarmonyMage_1;HarmonyMage_2;HarmonyMage_3;rhythm_of_magic;dance_of_mystic;song_of_warding;dance_of_siren;song_of_renewal;rhythm_of_start;berserk">
+				<mul order="0x30" stat="pAtk" val="1.08"/>
+				<mul order="0x30" stat="mAtk" val="1.40"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="mDef" val="1.14"/>
+				<add order="0x40" stat="mCritRate" val="100"/>
+				<add order="0x40" stat="mpEff" val="20"/>
+				<add order="0x40" stat="runSpd" val="8"/>
+				<mul order="0x30" stat="pDef" val="0.92"/>				
+				<sub order="0x30" stat="rEvas" val="4"/>
+				<mul order="0x30" stat="mpConsum" val="0.85"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="0.95"/>
+				<mul order="0x30" stat="mReuse" val="0.8"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14788" levels="1" name="Master's Blessing - Resist Elemental">
+    <!-- The GM is always with you. For 1 hour, increases resistance to Fire, Water, Wind and Earth attacks by 30. -->
+        <set name="icon" val="icon.skill11565"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1549;307;1182;481;306;1189;308;1548;529;1352;309;1191"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="4" stackType="elementalResist;IsaElement;song_of_elemental;song_of_sguard;dance_of_eguard;song_of_fguard;dance_of_aguard;FireAtr;AquaAtr;EarthAtr;WindAtr">
+				<add order="0x40" stat="defenceFire" val="30"/>
+				<add order="0x40" stat="defenceWater" val="30"/>
+				<add order="0x40" stat="defenceWind" val="30"/>
+				<add order="0x40" stat="defenceEarth" val="30"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14789" levels="1" name="Master's Blessing - Resist Divine">
+    <!-- The GM is always with you. For 1 hour, increases resistance to Holy and Dark by 30, and Resistance to Poison and Bleed by 50%. -->
+        <set name="icon" val="icon.skill11567"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="270;196;1392;1393;1033;530;277;1032"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="4" stackType="divineResist;dance_of_alignment;dance_of_light;song_of_invocation;HolyAtr;DarkAtr;poisonResist;bleedResist">
+				<add order="0x40" stat="defenceHoly" val="30"/>
+				<add order="0x40" stat="defenceUnholy" val="30"/>
+				<add order="0x40" stat="poisonResist" val="50"/>
+				<add order="0x40" stat="bleedResist" val="50"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14790" levels="1" name="Master's Blessing - Resist Mental">
+    <!-- The GM is always with you. For 1 hour, increases resistance to hold/sleep/abnormal mental attacks by 50. -->
+        <set name="icon" val="icon.skill11824"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="mpConsume2" val="1"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="311;1035;1362;1415"/>
+		<for>
+			<effect name="Buff" time="3600" val="0" stackOrder="4" stackType="mental;resist_debuff_dispel;dance_of_protection">
+				<add order="0x40" stat="rootResist" val="50"/>
+				<add order="0x40" stat="sleepResist" val="50"/>
+				<add order="0x40" stat="mentalResist" val="50"/>
+				<add order="0x40" stat="cancelResist" val="30"/>
+				<add order="0x40" stat="debuffResist" val="20"/>
+			</effect>
+		</for>
+    </skill>
+    <skill id="14791" levels="1" name="Master's Blessing - Horn Melody (Range)">
+    <!-- The GM is always with you. For 1 hour, increases P. Atk. + 23%, P. Def. + 15%, M. Atk. + 91%, and M. Def. + 30%. -->
+        <set name="icon" val="icon.skill11517"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14792" levels="1" name="Master's Blessing - Drum Melody (Range)">
+    <!-- The GM is always with you. For 1 hour, increases Max MP + 20%, HP recovery bonus + 20%, M. Critical Rate + 20, Critical Damage during a normal attack + 20%, P. Atk. + 10%, P. Def. + 20%, Atk. Spd. + 20%, M. Atk. + 20%, M. Def. + 20%, Casting Spd. + 20%, resistance to de-buff + 10%, and increased P. Def. upon evading a critical attack. Also for clan members who are equipped with short-range weapons that receive more than a set amount of damage, critical power increases during a normal attack. -->
+        <set name="icon" val="icon.skill11522"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14793" levels="1" name="Master's Blessing - Pipe Organ Melody (Range)">
+    <!-- The GM is always with you. For 1 hour, increases Max HP + 43%, Max MP + 43%, Max CP + 43%, and HP recovery bonus + 20%. -->
+        <set name="icon" val="icon.skill11519"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14794" levels="1" name="Master's Blessing - Guitar Melody (Range)">
+    <!-- The GM is always with you. For 1 hour, increases physical critical rate + 38%, P. Critical Damage + 35%, and M. Critical Rate + 20. Decreases MP consumption for physical skills - 20% and magic skills - 10%. Decreases MP consumption for Iss Enchanter's enchant skills - 20%. -->
+        <set name="icon" val="icon.skill11520"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14795" levels="1" name="Master's Blessing - Harp Melody (Range)">
+    <!-- The GM is always with you. For 1 hour, increases P. Accuracy + 8, physical and magic evasion + 8, and speed + 37. Decreases received critical damage - 30%. -->
+        <set name="icon" val="icon.skill11521"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14796" levels="1" name="Master's Blessing - Lute Melody (Range)">
+    <!-- The GM is always with you. For 1 hour, increases Atk. Spd. + 37% and Casting Spd. + 34%. Applies Vampiric Rage effect + 9% with a certain probability. -->
+        <set name="icon" val="icon.skill11518"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14797" levels="1" name="Master's Blessing - Guardian's Harmony (Range)">
+    <!-- The GM is always with you. For 1 hour, increases P. Atk. + 12%, P. Def. + 45%, shield defense rate + 30%, shield P. Def. + 50%, P. Critical Damage + 35%, and physical critical rate + 100%. -->
+        <set name="icon" val="icon.skill11523"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14798" levels="1" name="Master's Blessing - Berserker's Harmony (Range)">
+    <!-- The GM is always with you. For 1 hour, increases P. Atk. + 35%, M. Atk. + 16%, Atk. Spd. and Casting Spd. + 8%, P. Critical Damage + 35%, physical critical rate + 100, and speed + 8. Decreases M. Def. - 16%, P. Def. - 8%, and physical evasion - 4. -->
+        <set name="icon" val="icon.skill11524"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14799" levels="1" name="Master's Blessing - Magician's Harmony (Range)">
+    <!-- The GM is always with you. For 1 hour, increases P. Atk. + 8%, M. Atk. + 40%, Atk. Spd. and Casting Spd. + 8%, M. Def. + 14%, M. Critical Rate + 100%, MP recovery bonus + 20%, and speed + 8. Decreases P. Def. - 8%, physical evasion - 4, MP consumption upon magic skill use - 15%, MP consumption upon physical skill use - 5%, and skill re-use time - 20%. -->
+        <set name="icon" val="icon.skill11525"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="13300" levels="3" name="Magic One-handed Blunt Special Ability">
+    <!-- Magic Critical Damage + 381 and Magic Accuracy + 1. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="mCritDamage" val="381"/>
+		</for>
+	</skill>
+	<skill id="13301" levels="3" name="Magic Two-handed Blunt Special Ability">
+    <!-- M. Atk. + 44, Magic Critical Damage + 381, and M. Casting Spd. + 1%. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="mCritDamage" val="381"/>
+			<add order="0x40" stat="mAtk" val="44"/>
+			<mul order="0x40" stat="mAtkSpd" val="1.01"/>
+		</for>
+	</skill>
+	<skill id="13302" levels="3" name="Magic Two-handed Blunt Special Ability">
+    <!-- M. Atk. + 44, Magic Critical Damage + 381, and M. Casting Spd. + 1%. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="mCritDamage" val="381"/>
+			<add order="0x40" stat="mAtk" val="44"/>
+			<mul order="0x40" stat="mAtkSpd" val="1.01"/>
+		</for>
+	</skill>
+	<skill id="13303" levels="3" name="Magic Two-handed Blunt Special Ability">
+    <!-- M. Atk. + 44, Magic Critical Damage + 381, and M. Casting Spd. + 1%. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="mCritDamage" val="381"/>
+			<add order="0x40" stat="mAtk" val="44"/>
+			<mul order="0x40" stat="mAtkSpd" val="1.01"/>
+		</for>
+	</skill>
+	<skill id="13304" levels="3" name="Magic Two-handed Blunt Special Ability">
+    <!-- M. Atk. + 44, Magic Critical Damage + 381, and M. Casting Spd. + 1%. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="mCritDamage" val="381"/>
+			<add order="0x40" stat="mAtk" val="44"/>
+			<mul order="0x40" stat="mAtkSpd" val="1.01"/>
+		</for>
+	</skill>
+	<skill id="13305" levels="3" name="Magic Two-handed Blunt Special Ability">
+    <!-- M. Atk. + 44, Magic Critical Damage + 381, and M. Casting Spd. + 1%. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="mCritDamage" val="381"/>
+			<add order="0x40" stat="mAtk" val="44"/>
+			<mul order="0x40" stat="mAtkSpd" val="1.01"/>
+		</for>
+	</skill>
+	<skill id="13310" levels="1" name="Heavy Armor Upper Special Ability">
+    <!-- P. Def. by + 34 and received P. Critical Damage by - 4.3%. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="magicLevel" val="1"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="pDef" val="34"/>
+			<sud order="0x30" stat="cAtkStatic" val="4.3"/>		
+		</for>
+	</skill>
+	<skill id="13311" levels="1" name="Light Armor Upper Special Ability">
+    <!-- Increases P. Evasion by 2 and resistance to physical attributes by 5. Decreases P. Critical incurred rate by 3.4%. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="magicLevel" val="1"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="rEvas" val="3"/>
+			<sud order="0x30" stat="cAtkStatic" val="3.4"/>		
+		</for>
+	</skill>
+	<skill id="13312" levels="1" name="Robe Upper Special Ability">
+	<!-- Magic evasion by + 3 and resistance to mental attacks by + 9. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="magicLevel" val="1"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>				
+			<add order="0x40" stat="mEvas" val="3"/>		
+		</for>
+	</skill>
+	<skill id="13313" levels="1" name="Blessed Antharas Earring">
+    <!-- Increases P. Def./M. Def. Increases resistance to earth/holy attacks and bleed/shock/mental attacks, bleed/shock/mental attack bonus, and the effectiveness of HP recovery magic. Decreases MP consumption and restores HP by using some of the damage inflicted upon the enemy with a certain probability. CON+3, MEN+3 -->
+		<set name="icon" val="icon.accessory_necklace_of_valakas_i00"/>
+		<set name="magicLevel" val="90"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="bleedResist" val="50"/>
+			<add order="0x40" stat="bleedPower" val="50"/>
+			<mul order="0x30" stat="hpEff" val="1.40"/>
+			<add order="0x40" stat="mentalResist" val="40"/>
+			<add order="0x40" stat="mentalPower" val="40"/>
+			<add order="0x40" stat="stunResist" val="40"/>
+			<add order="0x40" stat="stunPower" val="40"/>			
+			<add order="0x40" stat="absorbDam" val="4"/>
+			<mul order="0x30" stat="mpConsum" val="0.90"/>			
+			<add order="0x40" stat="defenceEarth" val="30"/>
+			<add order="0x40" stat="defenceHoly" val="15"/>			
+			<add order="0x10" stat="CON" val="3"/>			
+			<add order="0x10" stat="MEN" val="3"/>			
+		</for>
+	</skill>
+    	<skill id="13314" levels="1" name="Blessed Antharas Earring Stun Cancel">
+    	<!-- Cancels Stun and gives Stun resist. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="NEGATE_EFFECTS"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="negateEffects" val="Stun"/>
+		<set name="castOverStun" val="true"/>
+		<for>
+		    <effect name="Buff" stackOrder="1" stackType="AntharasStunRes" time="300">
+		    	<add order="0x40" stat="stunResist" val="100"/>
+		    </effect>
+		</for>
+   	 </skill>
+	<skill id="13315" levels="1" name="Blessed Valakas Necklace">
+    <!-- Increases Resistance to fire/darkness attacks, Resistance to sleep attack, sleep attack bonus, Max HP/ P. Atk./ M. Atk. and magic damage critical rate. Decreases skill re-use time. Redirects some of the physical damage received back upon the enemy. STR+3, INT+3 -->
+		<set name="icon" val="icon.accessory_necklace_of_valakas_i00"/>
+		<set name="magicLevel" val="90"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x60" stat="maxHp" val="625"/>
+			<add order="0x40" stat="sleepResist" val="50"/>
+			<add order="0x40" stat="sleepPower" val="50"/>
+			<mul order="0x30" stat="mReuse" val="0.90"/>
+			<mul order="0x30" stat="pReuse" val="0.90"/>			
+			<mul order="0x30" stat="pAtk" val="1.10"/>
+			<mul order="0x30" stat="mAtk" val="1.20"/>
+			<add order="0x40" stat="mCritRate" val="1"/>
+			<add order="0x40" stat="reflectDam" val="5"/>
+			<add order="0x40" stat="defenceFire" val="30"/>
+			<add order="0x40" stat="defenceUnholy" val="15"/>	
+			<add order="0x10" stat="STR" val="3"/>			
+			<add order="0x10" stat="INT" val="3"/>			
+		</for>
+	</skill>
+	<skill id="13316" levels="1" name="Blessed Valakas Necklace">
+   	<!-- Cancels hold and receives hold resistance. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="NEGATE_EFFECTS"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="negateEffects" val="Root"/>
+		<for>
+		    <effect name="Buff" stackOrder="1" stackType="ValakasHoldRes" time="300">
+		    	<add order="0x40" stat="rootResist" val="100"/>
+		    </effect>
+		</for>
+   	</skill>
+	<skill id="13317" levels="1" name="Earth Wyrm Heart Ring">
+    	<!-- Increases resistance to wind/water attacks, resistance to physical/mental/poison attacks, resistance to knock back/knock down/pulling, poison attack bonus, Critical Damage, Accuracy/Atk. Spd./Casting Spd./and MP recovery speed. -->
+		<set name="magicLvl" val="85"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_SELF"/>
+		<for>
+			<add order="0x40" stat="knockBackResist" val="20"/>
+			<add order="0x40" stat="knockDownResist" val="20"/>
+			<add order="0x40" stat="magicResist" val="2"/>
+			<add order="0x40" stat="physResist" val="2"/>
+			<add order="0x40" stat="poisonPower" val="50"/>
+			<sub order="0x40" stat="poisonResist" val="50"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.04"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.04"/>
+			<add order="0x40" stat="defenceWind" val="20"/>
+			<add order="0x40" stat="defenceWater" val="20"/>
+			<add order="0x40" stat="mDef" val="112"/>
+			<add order="0x40" stat="pDef" val="112"/>
+			<mul order="0x30" stat="regMp" val="1.1"/>
+		</for>
+	</skill>
+	<skill id="13318" levels="1" name="Earth Wyrm Heart Ring">
+    <!-- Increases all party members' Atk. Spd./Casting Spd. by 5% for 5 minutes. In addition, 2% vampiric rate applies with a certain probability. -->
+		<set name="aggroPoints" val="1"/>
+		<set name="hitTime" val="200"/> <!--Guess-->
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLvl" val="85"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="reuseDelay" val="7200000"/> <!--Guess-->
+		<set name="skillRadius" val="300"/> <!--Guess-->
+		<set name="skillType" val="BUFF"/>
+		<set name="staticReuse" val="true"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="isStealable" val="false"/>
+		<for>
+			<effect name="Buff" time="300" val="0" abnormalLvl="1" abnormalType="ring_of_traskan">
+				<mul order="0x30" stat="mAtkSpd" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<add order="0x40" stat="absorbDam" val="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="13319" levels="1" name="Earth Wyrm Heart Ring">
+    <!-- Removes poison effect. -->
+		<set name="aggroPoints" val="1"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLvl" val="85"/>
+		<set name="hitTime" val="200"/> <!--Guess-->
+		<set name="reuseDelay" val="7200000"/> <!--Guess-->
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="NEGATE_EFFECTS"/>
+		<set name="target" val="TARGET_SELF"/>
+		<for>
+			<effect count="1" name="NegateEffects" stackType="Poison" time="0" val="0"/>
+		</for>
+	</skill>
+    <skill id="13320" levels="1" name="Istina's Ring">
+    <!-- Critical rate by + 54.4, accuracy by + 3, and resistance to water by + 20. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>            
+			<add order="0x10" stat="accCombat" val="3"/>
+			<add order="0x40" stat="rCrit" val="54"/>
+			<add order="0x40" stat="defenceWater" val="20"/>
+        </for>
+    </skill>
+    <skill id="13321" levels="1" name="Istina's Earring">
+    <!-- Resistance to wind by + 30, resistance to shock by + 30, shock attack bonus + 30, and additional 5% vampiric rage with a certain probability. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+			<add order="0x40" stat="stunResist" val="30"/>
+			<add order="0x40" stat="defenceWind" val="30"/>
+			<add order="0x40" stat="stunPower" val="30"/>
+			<add order="0x40" stat="absorbDam" val="5"/>
+        </for>
+    </skill>
+    <skill id="13322" levels="1" name="Istina's Necklace">
+    <!-- Resistance to holy by + 35 and skill delay - 10%. Additionally, damage is incurred, 3% is reflected. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+			<add order="0x40" stat="defenceHoly" val="35"/>
+			<mul order="0x30" stat="mReuse" val="0.95"/>
+			<add order="0x40" stat="reflectDam" val="3"/>
+        </for>
+    </skill>
+    <skill id="13323" levels="1" name="Istina's Belt">
+    <!-- HP recovery speed + 3.48 and item slot + 6. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+			<add order="0x40" stat="regHp" val="3.48"/>
+			<add order="0x40" stat="inventoryLimit" val="6"/>
+        </for>
+    </skill>
+    <skill id="13324" levels="1" name="Istina's Shirt">
+    <!-- Max HP + 465. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="maxHp" val="465"/>
+        </for>
+    </skill>
+    <skill id="13324" levels="1" name="Istina's Shirt">
+    <!-- Max HP + 465. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="maxHp" val="465"/>
+        </for>
+    </skill>
+	<skill id="13325" levels="1" name="Octavis's Ring"> 
+    <!-- Resistance to fire + 20 and Critical Damage + 15%. -->
+ 	    <set name="target" val="TARGET_SELF"/> 
+		<set name="skillType" val="BUFF"/> 
+ 		<set name="operateType" val="OP_PASSIVE"/> 
+ 		<for> 
+ 		    <add order="0x40" stat="defenceFire" val="20"/>        
+ 		    <mul order="0x30" stat="rCrit" val="1.15"/>  
+ 		</for> 
+ 	</skill> 
+	<skill id="13326" levels="1" name="Octavis's Earring"> 
+    <!-- Resistance to earth + 30, resistance to hold/sleep + 40, hold/sleep attack bonus + 40. -->
+ 		<set name="target" val="TARGET_SELF"/> 
+ 		<set name="skillType" val="BUFF"/> 
+ 		<set name="operateType" val="OP_PASSIVE"/> 
+ 		    <for> 
+				<add order="0x40" stat="stunResist" val="30"/> 
+ 		        <add order="0x40" stat="sleepResist" val="30"/> 
+ 		        <add order="0x40" stat="defenceEarth" val="20"/> 
+ 		    </for> 
+	</skill> 
+ 	<skill id="13327" levels="1" name="Octavis's Necklace"> 
+    <!-- Resistance to darkness + 35, Skill P. Atk. + 5%. -->
+		<set name="target" val="TARGET_SELF"/> 
+ 		<set name="skillType" val="BUFF"/> 
+ 		<set name="operateType" val="OP_PASSIVE"/> 
+ 		<for> 
+ 		    <add order="0x40" stat="defenceUnholy" val="35"/> 
+ 		    <mul order="0x40" stat="skillPower" val="1.05"/> 
+ 		</for> 
+ 	</skill> 
+ 	<skill id="13328" levels="1" name="Octavis's Belt"> 
+    <!-- MP recovery rate + 2.3 and weight limit + 13000. -->
+		<table name="#Weight">13000</table>
+		<set name="magicLevel" val="1"/>
+ 		<set name="target" val="TARGET_SELF"/> 
+ 		<set name="skillType" val="BUFF"/> 
+ 		<set name="operateType" val="OP_PASSIVE"/> 
+ 		<for> 
+ 		    <add order="0x40" stat="regMp" val="2.3"/> 
+			<add order="0x40" stat="maxLoad" val="#Weight"/>
+		</for>
+	</skill> 
+    <skill id="13339" levels="1" name="Enchant Heavy Armor (R Grade)">
+    <!-- P. Def and MP Recovery Bonus increase when a set item is enchanted. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="pDef" val="76"/>
+			<add order="0x40" stat="regMp" val="3"/>
+		</for>
+	</skill>
+	<skill id="13340" levels="1" name="Enchant Light Armor (R Grade)">
+    <!-- Increases M. Def. and Evasion by enchanting set items. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="mDef" val="52"/>
+			<add order="0x40" stat="rEvas" val="3"/>
+		</for>
+	</skill>
+	<skill id="13341" levels="1" name="Enchant Robe (R Grade)">
+    <!-- Increases P. Def. and weight capacity by enchanting set items. -->
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="pDef" val="56"/>
+			<mul order="0x30" stat="maxLoad" val="1.50"/>
+		</for>
+	</skill>
+    <skill id="13344" levels="1" name="Bracelet of Insolence">
+    <!-- 4 Talisman(s) can be equipped. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="talismansLimit" val="4"/>
+        </for>
+    </skill>
+	<skill id="13378" levels="1" name="Refined Istina's Bracelet">
+	<!-- CON+1,MEN+1. 5 Talisman(s) can be equipped. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="MEN" val="1"/>
+			<add order="0x10" stat="CON" val="1"/>
+			<add order="0x40" stat="maxMp" val="216"/>
+			<add order="0x40" stat="talismansLimit" val="5"/>
+		</for>
+	</skill>
+	<skill id="13379" levels="1" name="Refined Octavis Bracelet">
+	<!-- DEX+1,DEX+1. 5 Talisman(s) can be equipped. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="DEX" val="1"/>
+			<add order="0x10" stat="WIT" val="1"/>
+			<add order="0x40" stat="maxMp" val="216"/>
+			<add order="0x40" stat="talismansLimit" val="5"/>
+		</for>
+	</skill>
+	<skill id="13384" levels="1" name="Equip Talisman of Infinity">
+	<!-- Talisman of Infinity burns with power. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="magicLevel" val="97"/>
+		<set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="hitTime" val="1000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="referenceItemId" val="34984"/>
+		<for>
+			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
+				<add order="0x60" stat="maxHp" val="100"/>
+				<add order="0x60" stat="maxMp" val="100"/>
+				<add order="0x60" stat="maxCp" val="100"/>
+				<add order="0x60" stat="accCombat" val="1"/>
+				<add order="0x60" stat="rEvas" val="1"/>
+				<add order="0x60" stat="mEvas" val="1"/>
+				<add order="0x60" stat="mAtkSpd" val="10"/>
+				<add order="0x60" stat="pAtkSpd" val="10"/>
+				<add order="0x40" stat="absorbDam" val="0.2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="13385" levels="1" name="Equip Talisman of Destruction">
+	<!-- Talisman of Destruction burns with power. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="magicLevel" val="97"/>
+		<set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="hitTime" val="1000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="referenceItemId" val="34985"/>
+		<for>
+			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
+				<add order="0x60" stat="maxHp" val="100"/>
+				<add order="0x60" stat="maxMp" val="100"/>
+				<add order="0x60" stat="maxCp" val="100"/>
+				<add order="0x60" stat="accCombat" val="2"/>
+				<add order="0x60" stat="rEvas" val="2"/>
+				<add order="0x60" stat="mEvas" val="2"/>
+				<add order="0x60" stat="rCrit" val="30"/>
+				<add order="0x60" stat="mAtkSpd" val="10"/>
+				<add order="0x60" stat="pAtkSpd" val="10"/>
+				<add order="0x40" stat="absorbDam" val="0.2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="13386" levels="1" name="Equip Talisman of Annihilation">
+	<!-- Talisman of Annihilation burns with power. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="magicLevel" val="97"/>
+		<set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="hitTime" val="1000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="referenceItemId" val="34986"/>
+		<for>
+			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
+				<add order="0x60" stat="maxHp" val="300"/>
+				<add order="0x60" stat="maxMp" val="300"/>
+				<add order="0x60" stat="maxCp" val="300"/>
+				<add order="0x60" stat="accCombat" val="2"/>
+				<add order="0x60" stat="rEvas" val="2"/>
+				<add order="0x60" stat="mEvas" val="2"/>
+				<add order="0x60" stat="rCrit" val="30"/>
+				<add order="0x60" stat="mAtkSpd" val="20"/>
+				<add order="0x60" stat="pAtkSpd" val="20"/>
+				<add order="0x40" stat="absorbDam" val="0.3"/>
+				<add order="0x60" stat="pAtk" val="103"/>
+				<add order="0x60" stat="mAtk" val="156"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="13387" levels="1" name="Equip Talisman of Hellfire">
+	<!-- Talisman of Hellfire burns with power. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="magicLevel" val="97"/>
+		<set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="hitTime" val="1000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="referenceItemId" val="34987"/>
+		<for>
+			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
+				<add order="0x60" stat="maxHp" val="400"/>
+				<add order="0x60" stat="maxMp" val="400"/>
+				<add order="0x60" stat="maxCp" val="400"/>
+				<add order="0x60" stat="accCombat" val="2"/>
+				<add order="0x60" stat="rEvas" val="2"/>
+				<add order="0x60" stat="mEvas" val="2"/>
+				<add order="0x60" stat="rCrit" val="30"/>
+				<add order="0x60" stat="mAtkSpd" val="30"/>
+				<add order="0x60" stat="pAtkSpd" val="30"/>
+				<add order="0x40" stat="absorbDam" val="0.3"/>
+				<add order="0x60" stat="pAtk" val="103"/>
+				<add order="0x60" stat="mAtk" val="156"/>
+				<add order="0x60" stat="pDef" val="20"/>
+				<add order="0x60" stat="mDef" val="20"/>
+				<add order="0x60" stat="reflectDam" val="10"/>
+				<mul order="0x40" stat="skillPower" val="1.00"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="13388" levels="1" name="Equip Talisman of Desire">
+	<!-- Talisman of Desire burns with power. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="magicLevel" val="97"/>
+		<set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="hitTime" val="1000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="referenceItemId" val="34988"/>
+		<for>
+			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
+				<add order="0x60" stat="maxHp" val="500"/>
+				<add order="0x60" stat="maxMp" val="500"/>
+				<add order="0x60" stat="maxCp" val="500"/>
+				<add order="0x60" stat="accCombat" val="2"/>
+				<add order="0x60" stat="rEvas" val="2"/>
+				<add order="0x60" stat="mEvas" val="2"/>
+				<add order="0x60" stat="rCrit" val="30"/>
+				<add order="0x60" stat="mAtkSpd" val="40"/>
+				<add order="0x60" stat="pAtkSpd" val="40"/>
+				<add order="0x40" stat="absorbDam" val="0.3"/>
+				<add order="0x60" stat="pAtk" val="203"/>
+				<add order="0x60" stat="mAtk" val="256"/>
+				<add order="0x60" stat="pDef" val="40"/>
+				<add order="0x60" stat="mDef" val="40"/>
+				<add order="0x60" stat="reflectDam" val="20"/>
+				<mul order="0x40" stat="skillPower" val="2.00"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="13389" levels="1" name="Equip Talisman of Longing">
+	<!-- Talisman of Longing burns with power. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="magicLevel" val="97"/>
+		<set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="hitTime" val="1000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="referenceItemId" val="34989"/>
+		<for>
+			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
+				<add order="0x60" stat="STR" val="2"/>
+				<add order="0x60" stat="DEX" val="2"/>
+				<add order="0x60" stat="CON" val="2"/>
+				<add order="0x60" stat="INT" val="2"/>
+				<add order="0x60" stat="WIT" val="2"/>
+				<add order="0x60" stat="MEN" val="2"/>
+				<add order="0x60" stat="maxHp" val="600"/>
+				<add order="0x60" stat="maxMp" val="600"/>
+				<add order="0x60" stat="maxCp" val="600"/>
+				<add order="0x60" stat="accCombat" val="2"/>
+				<add order="0x60" stat="rEvas" val="2"/>
+				<add order="0x60" stat="mEvas" val="2"/>
+				<add order="0x60" stat="rCrit" val="30"/>
+				<add order="0x60" stat="mAtkSpd" val="50"/>
+				<add order="0x60" stat="pAtkSpd" val="50"/>
+				<add order="0x40" stat="absorbDam" val="0.3"/>
+				<add order="0x60" stat="pAtk" val="303"/>
+				<add order="0x60" stat="mAtk" val="356"/>
+				<add order="0x60" stat="pDef" val="60"/>
+				<add order="0x60" stat="mDef" val="60"/>
+				<add order="0x60" stat="reflectDam" val="30"/>
+				<mul order="0x40" stat="skillPower" val="4.00"/>
+			</effect>
+		</for>
+	</skill>
+</list>

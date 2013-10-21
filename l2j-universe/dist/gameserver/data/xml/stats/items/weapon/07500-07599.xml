@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="7560" name="Monster Only (Fishing Rod)">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_monster_i00"/>
+		<set name="price" value="30000"/>
+		<set name="rnd_dam" value="1"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="ROD"/>
+		<set name="weight" value="1000"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="1"/>
+			<add stat="mAtk" order="0x10" value="1"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="7575" name="Draconic Bow">
+		<set name="atk_reuse" value="1500"/>
+		<set name="crystal_count" value="2052"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_draconic_bow_i00"/>
+		<set name="kamael_convert" value="9372"/>
+		<set name="mp_consume" value="6"/>
+		<set name="price" value="42759400"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="weight" value="1650"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="581"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="7576" name="Draconic Bow" add_name="Cheap Shot">
+		<set name="atk_reuse" value="1500"/>
+		<set name="crystal_count" value="2052"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_draconic_bow_i01"/>
+		<set name="kamael_convert" value="9373"/>
+		<set name="mp_consume" value="6"/>
+		<set name="price" value="42759400"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="weight" value="1650"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3552" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="581"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<set stat="cheapShot" order="0x08" value="1"/>
+			<set stat="cheapShotChance" order="0x08" value="26"/>
+			<mul stat="pAtk" order="0x30" value="1.05">
+				<target pvp="true"/>
+			</mul>
+			<mul stat="mAtk" order="0x30" value="1.05">
+				<target pvp="true"/>
+			</mul>
+		</for>
+	</weapon>
+	<weapon id="7577" name="Draconic Bow" add_name="Focus">
+		<set name="atk_reuse" value="1500"/>
+		<set name="crystal_count" value="2052"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_draconic_bow_i01"/>
+		<set name="kamael_convert" value="9374"/>
+		<set name="mp_consume" value="6"/>
+		<set name="price" value="42759400"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="weight" value="1650"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3567" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="581"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="7578" name="Draconic Bow" add_name="Critical Slow">
+		<set name="atk_reuse" value="1500"/>
+		<set name="crystal_count" value="2052"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_draconic_bow_i01"/>
+		<set name="kamael_convert" value="9375"/>
+		<set name="mp_consume" value="6"/>
+		<set name="price" value="42759400"/>
+		<set name="rnd_dam" value="5"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="weight" value="1650"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<triggers>
+			<trigger id="3574" level="1" type="CRIT" chance="100"/>
+		</triggers>
+		<skills>
+			<skill id="3552" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="581"/>
+			<add stat="mAtk" order="0x10" value="132"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+</list>

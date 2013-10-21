@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="5900" name="Coin Collecting Album">
+	<!-- High-quality coin collecting album made of leather. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_magic_book_black_i00"/>
+		<set name="price" value="10000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5901" name="Blood Offering">
+	<!-- Blood that can be obtained by killing a Monster of Offering. The number of this item will determine your score. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_dragon_blood_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5902" name="Scroll of Ancient Magic">
+	<!-- Scroll that contains ancient magic. Take it to Gatekeeper Ziggurat. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5903" name="Ancient Ash Urn">
+	<!-- Ancient urn that was found in the Tower of Insolence. Take it to Seer Reva of Town of Aden. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_oil_pot_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5904" name="Wesley's Mixing Stone">
+	<!-- Small gemstone that is given by Wesley. This item is required to use a mixing urn. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_gem_green_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5905" name="Magister's Mixing Stone">
+	<!-- Gemstone that activates the mixing urn in the basement of the Ivory Tower. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_gem_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5906" name="5th Anniversary Gift Box (10 Honey Rice Cake Set)">
+	<!-- Commemorating the 5th anniversary of Lineage II, this Wrapped Pack contains 10 multi-colored honey rice cakes and 1 Lineage II Commemorative Mark. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="5907" name="5th Anniversary Gift Box (9 Honey Rice Cake Set)">
+	<!-- Commemorating the 5th anniversary of Lineage II, this Wrapped Pack contains 9 multi-colored honey rice cakes and 1 Lineage II Commemorative Mark. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="5908" name="Red Soul Crystal: Stage 13">
+	<!-- Red crystal containing the light of absorbed souls. stage 13. Special abilities can be applied to the weapon when absorbing certain amount of souls. Every time it is used, it consumes 26 of MP. A crystal of this level is said to absorb crystals on its own, so it doesn't seem like you need to use it directly on the monsters. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_soul_stone_i00"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="20"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="5909" name="5th Anniversary Gift Box (8 Honey Rice Cake Set)">
+	<!-- Commemorating the 5th anniversary of Lineage II, this Wrapped Pack contains 8 multi-colored honey rice cakes and 1 Lineage II Commemorative Mark. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="5910" name="5th Anniversary Gift Box (7 Honey Rice Cake Set)">
+	<!-- Commemorating the 5th anniversary of Lineage II, this Wrapped Pack contains 7 multi-colored honey rice cakes and 1 Lineage II Commemorative Mark. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="5911" name="Green Soul Crystal - Stage 13">
+	<!-- Green crystal containing the light of absorbed souls. stage 13. Special abilities can be applied to the weapon when absorbing certain amount of souls. Every time it is used, it consumes 26 of MP. A crystal of this level is said to absorb crystals on its own, so it doesn't seem like you need to use it directly on the monsters. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_soul_stone_i02"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="20"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="5912" name="5th Anniversary Gift Box (6 Honey Rice Cake Set)">
+	<!-- Commemorating the 5th anniversary of Lineage II, this Wrapped Pack contains 6 multi-colored honey rice cakes and 1 Lineage II Commemorative Mark. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="5913" name="5th Anniversary Gift Box (3 Honey Wheat Cake Set)">
+	<!-- Commemorating the 5th anniversary of Lineage II, this Wrapped Pack contains 3 multi-colored honey wheat cakes and 1 Lineage II Commemorative Mark. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="5914" name="Blue Soul Crystal: Stage 13">
+	<!-- Blue crystal containing the light of absorbed souls. stage 13. Special abilities can be applied to the weapon when absorbing certain amount of souls. Every time it is used, it consumes 26 of MP. A crystal of this level is said to absorb crystals on its own, so it doesn't seem like you need to use it directly on the monsters. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_soul_stone_i01"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="20"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="5915" name="Pirate's Treasure Map">
+	<!-- Map that was created after putting together the map pieces found on Alligator Island. It appears to have a mark showing the location of treasure! -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_map_ivory_i00"/>
+		<set name="price" value="200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5916" name="Spellbook Page">
+	<!-- Torn piece of paper that seems to have been ripped out of a spellbook. If you Double-click it, you can examine it closely. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="price" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+		<skills>
+			<skill id="2171" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="5917" name="Kranvel's Spellbook: Chapter of Fire">
+	<!-- Great Magus Kranvel's Spellbook: Chapter of Fire. Collect the Chapters on Fire, Water, Wind and Earth and take all of them to Elder Casian. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_red_i00"/>
+		<set name="price" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5918" name="Kranvel's Spellbook: Chapter of Water">
+	<!-- Great Magus Kranvel's Spellbook: Chapter of Water. Collect the Chapters on Fire, Water, Wind and Earth and take all of them to Elder Casian. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_blue_i00"/>
+		<set name="price" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5919" name="Kranvel's Spellbook: Chapter of Wind">
+	<!-- Great Magus Kranvel's Spellbook: Chapter of Wind. Collect the Chapters on Fire, Water, Wind and Earth and take all of them to Elder Casian. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="price" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5920" name="Kranvel's Spellbook: Chapter of Earth">
+	<!-- Great Magus Kranvel's Spellbook: Chapter of Earth. Collect the Chapters on Fire, Water, Wind and Earth and take all of them to Elder Casian. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_black_i00"/>
+		<set name="price" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5921" name="Worthless Piece of Paper">
+	<!-- Paper piece that has useless scribbles written on it. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_black_i00"/>
+		<set name="price" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="5922" name="Blueprint: Giants Golem 1">
+	<!-- Part of the golem blueprints from the Lesser Giant era. The first page out of five pages. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5923" name="Blueprint: Giants Golem 2">
+	<!-- Part of the golem blueprints from the Lesser Giant era. The second page out of five pages. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5924" name="Blueprint: Giants Golem 3">
+	<!-- Part of the golem blueprints from the Lesser Giant era. The third page out of five pages. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5925" name="Blueprint: Giants Golem 4">
+	<!-- Part of the golem blueprints from the Lesser Giant era. The fourth page out of five pages. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5926" name="Blueprint: Giants Golem 5">
+	<!-- Part of the golem blueprints from the Lesser Giant era. The fifth page out of five pages. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5927" name="Book: Basics of Giants Magic, Chapter 1">
+	<!-- Book on the magic of the giants from the Lesser Giant er 1st chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5928" name="Book: Basics of Giants Magic, Chapter 2">
+	<!-- Book on the magic of the giants from the Lesser Giant er 2nd chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5929" name="Book: Basics of Giants Magic, Chapter 3">
+	<!-- Book on the magic of the giants from the Lesser Giant er 3rd chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5930" name="Book: Basics of Giants Magic, Chapter 4">
+	<!-- Book on the magic of the giants from the Lesser Giant er 4th chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5931" name="Book: Basics of Giants Magic, Chapter 5">
+	<!-- Book on the magic of the giants from the Lesser Giant er 5th chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5932" name="Handbook: Giants Architecture, Chapter 1">
+	<!-- Architectural handbook of the giants from the Lesser Giant er 1st chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5933" name="Handbook: Giants Architecture, Chapter 2">
+	<!-- Architectural handbook of the giants from the Lesser Giant er 2nd chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5934" name="Handbook: Giants Architecture, Chapter 3">
+	<!-- Architectural handbook of the giants from the Lesser Giant er 3rd chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5935" name="Handbook: Giants Architecture, Chapter 4">
+	<!-- Architectural handbook of the giants from the Lesser Giant er 4th chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5936" name="Handbook: Giants Architecture, Chapter 5">
+	<!-- Architectural handbook of the giants from the Lesser Giant er 5th chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5937" name="Book: Giants Medical Science, Chapter 1">
+	<!-- Medical book of the giants from the Lesser Giant er 1st chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5938" name="Book: Giants Medical Science, Chapter 2">
+	<!-- Medical book of the giants from the Lesser Giant er 2nd chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5939" name="Book: Giants Medical Science, Chapter 3">
+	<!-- Medical book of the giants from the Lesser Giant er 3rd chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5940" name="Book: Giants Medical Science, Chapter 4">
+	<!-- Medical book of the giants from the Lesser Giant er 4th chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5941" name="Book: Giants Medical Science, Chapter 5">
+	<!-- Medical book of the giants from the Lesser Giant er 5th chapter. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5942" name="Giant's Love Letter">
+	<!-- It seems like even the giants used to have a love life. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_report_i00"/>
+		<set name="price" value="200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5943" name="Giants' Doodle">
+	<!-- Crude picture drawn by a would-be painter giant. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_painting_i00"/>
+		<set name="price" value="200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5944" name="Ancient Parchment">
+	<!-- Piece of parchment from the Lesser Giant era. If you Double-click it, you can read the contents. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_roll_of_paper_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="2172" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="5945" name="Book: Giants Science &amp; Technology, Chapter 1">
+	<!-- Part of the theory book that describes the science and technology of the Lesser Giant era. The 1st of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5946" name="Book: Giants Science &amp; Technology, Chapter 2">
+	<!-- Part of the theory book that describes the science and technology of the Lesser Giant era. The 2nd of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5947" name="Book: Giants Science &amp; Technology, Chapter 3">
+	<!-- Part of the theory book that describes the science and technology of the Lesser Giant era. The 3rd of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5948" name="Book: Giants Science &amp; Technology, Chapter 4">
+	<!-- Part of the theory book that describes the science and technology of the Lesser Giant era. The 4th of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5949" name="Book: Giants Science &amp; Technology, Chapter 5">
+	<!-- Part of the theory book that describes the science and technology of the Lesser Giant era. The 5th of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5950" name="Almanac: Lesser Giant Culture, Chapter 1">
+	<!-- Part of the almanac that contains information about the culture of the Lesser Giant era. The 1st of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_summon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5951" name="Almanac: Lesser Giant Culture, Chapter 2">
+	<!-- Part of the almanac that contains information about the culture of the Lesser Giant era. The 2nd of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_summon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5952" name="Almanac: Lesser Giant Culture, Chapter 3">
+	<!-- Part of the almanac that contains information about the culture of the Lesser Giant era. The 3rd of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_summon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5953" name="Almanac: Lesser Giant Culture, Chapter 4">
+	<!-- Part of the almanac that contains information about the culture of the Lesser Giant era. The 4th of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_summon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5954" name="Almanac: Lesser Giant Culture, Chapter 5">
+	<!-- Part of the almanac that contains information about the culture of the Lesser Giant era. The 5th of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_summon_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5955" name="Ancient Lesser Giant Book">
+	<!-- Book from the Lesser Giant era. If you Double-click it, you can examine its contents. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="2173" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="5956" name="15-year-old Wine">
+	<!-- Gift from Harlan as a token of gratitude. It is aged 15 years. Average quality wine. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_luxury_wine_a_i00"/>
+		<set name="price" value="5900"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="20"/>
+	</etcitem>
+	<etcitem id="5957" name="30-year-old Wine">
+	<!-- Gift from Harlan as a token of gratitude. It is aged 30 years. High quality wine. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_luxury_wine_b_i00"/>
+		<set name="price" value="7900"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="20"/>
+	</etcitem>
+	<etcitem id="5958" name="60-year-old Wine">
+	<!-- Gift from Harlan as a token of gratitude. It is aged 60 years. Excellent quality wine. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_luxury_wine_c_i00"/>
+		<set name="price" value="30900"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="20"/>
+	</etcitem>
+	<etcitem id="5959" name="Ritron's Dessert Recipe">
+	<!-- Secret recipe for making dessert by using ritron fruit as its ingredient. It can to sold at a store. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="price" value="40000"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+	</etcitem>
+	<etcitem id="5960" name="Ritron Jelly">
+	<!-- Delicious jelly made from ritron fruit. It can be sold at a store. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_cobol_i04"/>
+		<set name="price" value="920"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+	</etcitem>
+	<etcitem id="5961" name="Kail's Silver Basilisk">
+	<!-- Royal-grade Coin -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kyles_silver_basilisk_i00"/>
+		<set name="price" value="1000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5962" name="Kail's Gold Golem">
+	<!-- Royal-grade Coin -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kyles_gold_golem_i00"/>
+		<set name="price" value="1000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5963" name="Kail's Blood Dragon">
+	<!-- Royal-grade Coin -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kyles_blood_dragon_i00"/>
+		<set name="price" value="1000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5964" name="Warehouse Keeper's Medal">
+	<!-- Medal that is issued by the Iron Gate Guild to Warehouse Keepers according to their productivity. If you collect them, you can use them to play bingo. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_irongate_medal_i00"/>
+		<set name="price" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5965" name="Blank Scroll">
+	<!-- Spellbook that does not contain any magical power. Perhaps it can be helpful if you deal with Mammon's Trader? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_gray_i00"/>
+		<set name="price" value="500"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5966" name="Ancient Red Papyrus">
+	<!-- Papyrus scroll found in the Tower of Insolence. If you Double-click it, you can read its contents. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_red_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="2176" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="5967" name="Ancient Blue Papyrus">
+	<!-- Papyrus scroll found in the Tower of Insolence. If you Double-click it, you can read its contents. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="2176" level="2"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="5968" name="Ancient Black Papyrus">
+	<!-- Papyrus scroll found in the Tower of Insolence. If you Double-click it, you can read its contents. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_black_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="2176" level="3"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="5969" name="Ancient White Papyrus">
+	<!-- Papyrus scroll found in the Tower of Insolence. If you Double-click it, you can read its contents. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="2176" level="4"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="5970" name="Ancient Chain Letter">
+	<!-- Mysterious letter found in the Tower of Insolence. Its text reads "if you send this letter to 10 other people, you will have good luck!" -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_black_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5971" name="Ancient Joke Book">
+	<!-- Collection of jokes of Galfredo Romer, a Royal Clown. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_black_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5972" name="Revelation of the Seals: Chapter of Avarice">
+	<!-- Ancient record regarding the Seven Seals. The first of seven chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5973" name="Revelation of the Seals: Chapter of Gnosis">
+	<!-- Ancient record regarding the Seven Seals. The second of seven chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5974" name="Revelation of the Seals: Chapter of Strife">
+	<!-- Ancient record regarding the Seven Seals. The third of seven chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5975" name="Revelation of the Seals: Chapter of Vengeance">
+	<!-- Ancient record regarding the Seven Seals. The fourth of seven chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5976" name="Revelation of the Seals: Chapter of Awakening">
+	<!-- Ancient record regarding the Seven Seals. The fifth of seven chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5977" name="Revelation of the Seals: Chapter of Calamity">
+	<!-- Ancient record regarding the Seven Seals. The sixth of seven chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5978" name="Revelation of the Seals: Chapter of Descent">
+	<!-- Ancient record regarding the Seven Seals. The seventh of seven chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5979" name="Ancient Epic, Chapter 1">
+	<!-- Story of heroes written by ancient troubadours. The first of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5980" name="Ancient Epic, Chapter 2">
+	<!-- Story of heroes written by ancient troubadours. The second of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5981" name="Ancient Epic, Chapter 3">
+	<!-- Story of heroes written by ancient troubadours. The third of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5982" name="Ancient Epic, Chapter 4">
+	<!-- Story of heroes written by ancient troubadours. The fourth of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5983" name="Ancient Epic, Chapter 5">
+	<!-- Story of heroes written by ancient troubadours. The fifth of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5984" name="Imperial Genealogy 1">
+	<!-- The genealogy of the Elmoreden royal family. The first of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5985" name="Imperial Genealogy 2">
+	<!-- The genealogy of the Elmoreden royal family. The second of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5986" name="Imperial Genealogy 3">
+	<!-- The genealogy of the Elmoreden royal family. The third of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5987" name="Imperial Genealogy 4">
+	<!-- The genealogy of the Elmoreden royal family. The fourth of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5988" name="Imperial Genealogy 5">
+	<!-- The genealogy of the Elmoreden royal family. The fifth of five chapters. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5989" name="Blueprint: Tower of Insolence, 1st Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 1st of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5990" name="Blueprint: Tower of Insolence, 2nd Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 2nd of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5991" name="Blueprint: Tower of Insolence, 3rd Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 3rd of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5992" name="Blueprint: Tower of Insolence, 4th Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 4th of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5993" name="Blueprint: Tower of Insolence, 5th Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 5th of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5994" name="Blueprint: Tower of Insolence, 6th Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 6th of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5995" name="Blueprint: Tower of Insolence, 7th Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 7th of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5996" name="Blueprint: Tower of Insolence, 8th Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 8th of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5997" name="Blueprint: Tower of Insolence, 9th Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 9th of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5998" name="Blueprint: Tower of Insolence, 10th Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 10th of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="5999" name="Blueprint: Tower of Insolence, 11th Floor">
+	<!-- Blueprint drafted by the architects of the Tower of Insolence. This is the blueprint of the 11th of 13 floors. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_letter_blue_i00"/>
+		<set name="price" value="400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+</list>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="18100" name="Blessed Eternal Necklace">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R99"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="1173"/>
+		<set name="icon" value="icon.r991_necklace_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="isBlessed" value="true"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<set name="ex_type" value="NECKLACE"/>
+		<for>
+			<add stat="mDef" order="0x10" value="166"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="18101" name="Blessed Eternal Earring">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R99"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="879"/>
+		<set name="icon" value="icon.r991_earring_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="isBlessed" value="true"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<set name="ex_type" value="EARRING"/>
+		<for>
+			<add stat="mDef" order="0x10" value="124"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="18102" name="Blessed Eternal Ring">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R99"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="586"/>
+		<set name="icon" value="icon.r991_ring_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="isBlessed" value="true"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<set name="ex_type" value="RING"/>
+		<for>
+			<add stat="mDef" order="0x10" value="83"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+</list>

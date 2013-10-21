@@ -1,0 +1,46 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<!--AUTHOR: Iqman-->
+<list>
+	<!--Incubator of evil [3rd proff]-->
+	<instance id="185" name="Incubator Of Evil" maxChannels="20" collapseIfEmpty="0" timelimit="60" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="76" max="99"/>
+		<teleport loc="56168 -172952 -7980 0"/>
+		<return loc="172328 31080 -3725 0"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<!-- <quest id="10341"/> todo multiply quest values [bonux] -->
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<geodata map="21_12"/>
+		<spawns>
+			<spawn mobId="33170" respawn="0" type="point">
+				<coords loc="56168 -172664 -7980 49151"></coords>
+			</spawn>
+			<spawn mobId="33171" respawn="0" type="point">
+				<coords loc="56280 -172632 -7980 49151"></coords>
+			</spawn>
+			<spawn mobId="33172" respawn="0" type="point">
+				<coords loc="56376 -172632 -7980 49151"></coords>
+			</spawn>
+			<spawn mobId="33173" respawn="0" type="point">
+				<coords loc="56056 -172632 -7980 49151"></coords>
+			</spawn>
+			<spawn mobId="33174" respawn="0" type="point">
+				<coords loc="55976 -172632 -7980 49151"></coords>
+			</spawn>
+			<!-- barrels spawn -->
+			<spawn mobId="33416" respawn="0" type="point">
+				<coords loc="56280 -176296 -7980 16383"></coords>
+			</spawn>	
+			<spawn mobId="33416" respawn="0" type="point">
+				<coords loc="56072 -176296 -7976 16383"></coords>
+			</spawn>	
+			<spawn mobId="33416" respawn="0" type="point">
+				<coords loc="56504 -176296 -7980 16383"></coords>
+			</spawn>	
+			<spawn mobId="33416" respawn="0" type="point">
+				<coords loc="55880 -176296 -7980 16383"></coords>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

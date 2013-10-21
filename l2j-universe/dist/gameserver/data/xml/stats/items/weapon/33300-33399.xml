@@ -1,0 +1,2062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="33303" name="Shield of Nightmare of Destiny (Fire, Wind, Dark)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.shield_shield_of_nightmare_i00"/>
+		<set name="weight" value="118"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="ex_type" value="SHIELD"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="0"/>
+		<for>
+			<add stat="sDef" order="0x10" value="256"/>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33316" name="Shield of Nightmare of Destiny (Water, Earth, Holy)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.shield_shield_of_nightmare_i00"/>
+		<set name="weight" value="118"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="ex_type" value="SHIELD"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystal_count" value="0"/>
+		<for>
+			<add stat="sDef" order="0x10" value="256"/>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33325" name="Vesper Shaper of Destiny (Fire)" add_name="Critical Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_shaper_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3572" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="346"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33326" name="Vesper Dual Daggers of Destiny (Fire)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.dual_dagger_i00"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="360"/>
+			<add stat="mAtk" order="0x10" value="181"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33327" name="Vesper Cutter of Destiny (Fire)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_cutter_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33328" name="Vesper Buster of Destiny (Fire)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_burster_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33329" name="Vesper Pincer of Destiny (Fire)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_pincer_i01"/>
+		<set name="weight" value="128"/>
+		<set name="rnd_dam" value="40"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="359"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33330" name="Vesper Slasher of Destiny (Fire)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_slasher_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33331" name="Vesper Nagan of Destiny (Fire)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_nagen_i01"/>
+		<set name="weight" value="180"/>
+		<set name="rnd_dam" value="15"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="ex_type" value="ANCIENT_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="429"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="350"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33332" name="Vesper Thrower of Destiny (Fire)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_thrower_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="mp_consume" value="6"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="724"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33333" name="Vesper Shooter of Destiny (Fire)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_schutze_i01"/>
+		<set name="weight" value="158"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="444"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33334" name="Vesper Avenger of Destiny (Fire)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_avenger_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33335" name="Vesper Caster of Destiny (Fire)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_caster_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33336" name="Vesper Retributer of Destiny (Fire)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_retributer_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33337" name="Vesper Singer of Destiny (Fire)" add_name="Empower">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_singer_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3575" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="386"/>
+			<add stat="mAtk" order="0x10" value="257"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33338" name="Vesper Stormer of Destiny (Fire)" add_name="Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_stormer_i01"/>
+		<set name="weight" value="201"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33339" name="Vesper Fighter of Destiny (Fire)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_fighter_i01"/>
+		<set name="weight" value="155"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33340" name="Vesper Dual Sword of Destiny (Fire)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33341" name="Vesper Shaper of Destiny (Water)" add_name="Critical Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_shaper_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3572" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="346"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33342" name="Vesper Dual Daggers of Destiny (Water)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.dual_dagger_i00"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="360"/>
+			<add stat="mAtk" order="0x10" value="181"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33343" name="Vesper Cutter of Destiny (Water)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_cutter_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33344" name="Vesper Buster of Destiny (Water)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_burster_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33345" name="Vesper Pincer of Destiny (Water)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_pincer_i01"/>
+		<set name="weight" value="128"/>
+		<set name="rnd_dam" value="40"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="359"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33346" name="Vesper Slasher of Destiny (Water)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_slasher_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33347" name="Vesper Nagan of Destiny (Water)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_nagen_i01"/>
+		<set name="weight" value="180"/>
+		<set name="rnd_dam" value="15"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="ex_type" value="ANCIENT_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="429"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="350"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33348" name="Vesper Thrower of Destiny (Water)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_thrower_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="mp_consume" value="6"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="724"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33349" name="Vesper Shooter of Destiny (Water)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_schutze_i01"/>
+		<set name="weight" value="158"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="444"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33350" name="Vesper Avenger of Destiny (Water)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_avenger_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33351" name="Vesper Caster of Destiny (Water)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_caster_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33352" name="Vesper Retributer of Destiny (Water)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_retributer_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33353" name="Vesper Singer of Destiny (Water)" add_name="Empower">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_singer_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3575" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="386"/>
+			<add stat="mAtk" order="0x10" value="257"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33354" name="Vesper Stormer of Destiny (Water)" add_name="Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_stormer_i01"/>
+		<set name="weight" value="201"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33355" name="Vesper Fighter of Destiny (Water)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_fighter_i01"/>
+		<set name="weight" value="155"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33356" name="Vesper Dual Sword of Destiny (Water)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33357" name="Vesper Shaper of Destiny (Wind)" add_name="Critical Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_shaper_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3572" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="346"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33358" name="Vesper Dual Daggers of Destiny (Wind)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.dual_dagger_i00"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="360"/>
+			<add stat="mAtk" order="0x10" value="181"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33359" name="Vesper Cutter of Destiny (Wind)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_cutter_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33360" name="Vesper Buster of Destiny (Wind)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_burster_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33361" name="Vesper Pincer of Destiny (Wind)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_pincer_i01"/>
+		<set name="weight" value="128"/>
+		<set name="rnd_dam" value="40"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="359"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33362" name="Vesper Slasher of Destiny (Wind)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_slasher_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33363" name="Vesper Nagan of Destiny (Wind)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_nagen_i01"/>
+		<set name="weight" value="180"/>
+		<set name="rnd_dam" value="15"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="ex_type" value="ANCIENT_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="429"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="350"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33364" name="Vesper Thrower of Destiny (Wind)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_thrower_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="mp_consume" value="6"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="724"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33365" name="Vesper Shooter of Destiny (Wind)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_schutze_i01"/>
+		<set name="weight" value="158"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="444"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33366" name="Vesper Avenger of Destiny (Wind)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_avenger_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33367" name="Vesper Caster of Destiny (Wind)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_caster_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33368" name="Vesper Retributer of Destiny (Wind)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_retributer_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33369" name="Vesper Singer of Destiny (Wind)" add_name="Empower">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_singer_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3575" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="386"/>
+			<add stat="mAtk" order="0x10" value="257"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33370" name="Vesper Stormer of Destiny (Wind)" add_name="Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_stormer_i01"/>
+		<set name="weight" value="201"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33371" name="Vesper Fighter of Destiny (Wind)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_fighter_i01"/>
+		<set name="weight" value="155"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33372" name="Vesper Dual Sword of Destiny (Wind)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33373" name="Vesper Shaper of Destiny (Earth)" add_name="Critical Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_shaper_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3572" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="346"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33374" name="Vesper Dual Daggers of Destiny (Earth)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.dual_dagger_i00"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="360"/>
+			<add stat="mAtk" order="0x10" value="181"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33375" name="Vesper Cutter of Destiny (Earth)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_cutter_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33376" name="Vesper Buster of Destiny (Earth)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_burster_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33377" name="Vesper Pincer of Destiny (Earth)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_pincer_i01"/>
+		<set name="weight" value="128"/>
+		<set name="rnd_dam" value="40"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="359"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33378" name="Vesper Slasher of Destiny (Earth)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_slasher_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33379" name="Vesper Nagan of Destiny (Earth)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_nagen_i01"/>
+		<set name="weight" value="180"/>
+		<set name="rnd_dam" value="15"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="ex_type" value="ANCIENT_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="429"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="350"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33380" name="Vesper Thrower of Destiny (Earth)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_thrower_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="mp_consume" value="6"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="724"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33381" name="Vesper Shooter of Destiny (Earth)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_schutze_i01"/>
+		<set name="weight" value="158"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="444"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33382" name="Vesper Avenger of Destiny (Earth)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_avenger_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33383" name="Vesper Caster of Destiny (Earth)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_caster_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33384" name="Vesper Retributer of Destiny (Earth)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_retributer_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33385" name="Vesper Singer of Destiny (Earth)" add_name="Empower">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_singer_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3575" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="386"/>
+			<add stat="mAtk" order="0x10" value="257"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33386" name="Vesper Stormer of Destiny (Earth)" add_name="Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_stormer_i01"/>
+		<set name="weight" value="201"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33387" name="Vesper Fighter of Destiny (Earth)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_fighter_i01"/>
+		<set name="weight" value="155"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33388" name="Vesper Dualsword of Destiny (Earth)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33389" name="Vesper Shaper of Destiny (Holy)" add_name="Critical Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_shaper_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3572" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="346"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33390" name="Vesper Dual Daggers of Destiny (Holy)">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.dual_dagger_i00"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="360"/>
+			<add stat="mAtk" order="0x10" value="181"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33391" name="Vesper Cutter of Destiny (Holy)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_cutter_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33392" name="Vesper Buster of Destiny (Holy)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_burster_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33393" name="Vesper Pincer of Destiny (Holy)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_pincer_i01"/>
+		<set name="weight" value="128"/>
+		<set name="rnd_dam" value="40"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="359"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33394" name="Vesper Slasher of Destiny (Holy)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_slasher_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33395" name="Vesper Nagan of Destiny (Holy)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_nagen_i01"/>
+		<set name="weight" value="180"/>
+		<set name="rnd_dam" value="15"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="ex_type" value="ANCIENT_SWORD"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="429"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="350"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33396" name="Vesper Thrower of Destiny (Holy)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_thrower_i01"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="mp_consume" value="6"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="724"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33397" name="Vesper Shooter of Destiny (Holy)" add_name="Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_schutze_i01"/>
+		<set name="weight" value="158"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="444"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33398" name="Vesper Avenger of Destiny (Holy)" add_name="Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_avenger_i01"/>
+		<set name="weight" value="174"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="33399" name="Vesper Caster of Destiny (Holy)" add_name="Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_caster_i01"/>
+		<set name="weight" value="108"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="S"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="317"/>
+			<add stat="mAtk" order="0x10" value="234"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+</list>

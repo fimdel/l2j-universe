@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>   
+ <skill id="30357" levels="1" name="health R elic">
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.etc_potion_scarlet_i00"/>
+        <set name="power" val="2"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="30357"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="HOT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect count="5" name="HealOverTime" stackOrder="5" stackType="HpRecoverCast" time="1" val="100"/>
+        </for>
+    </skill>
+ <skill id="30358" levels="1" name="Mental R">
+        <set name="icon" val=""/>
+        <set name="displayId" val="2005"/>
+        <set name="itemConsumeId" val="728"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="MANAHEAL"/>
+        <set name="power" val="4000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+    </skill>
+ <skill id="30359" levels="1" name="CP R">
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="power" val="100"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="30359"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="COMBATPOINTHEAL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <set name="isHandler" val="true"/>
+        <cond msgId="1509">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </skill>
+ <skill id="30360" levels="1" name="VEL HP R">
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.etc_potion_scarlet_i00"/>
+        <set name="power" val="2"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="30360"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="HOT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect count="5" name="HealOverTime" stackOrder="5" stackType="HpRecoverCast" time="1" val="900"/>
+        </for>
+    </skill>
+ <skill id="30361" levels="1" name="VEL MP R">
+        <set name="icon" val=""/>
+        <set name="displayId" val="2005"/>
+        <set name="itemConsumeId" val="728"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="MANAHEAL"/>
+        <set name="power" val="8000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+    </skill>
+ <skill id="30362" levels="1" name="VEL CP R">
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="power" val="1000"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="30362"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="COMBATPOINTHEAL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <set name="isHandler" val="true"/>
+        <cond msgId="1509">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </skill>
+</list>

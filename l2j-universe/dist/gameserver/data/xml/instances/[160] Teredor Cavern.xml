@@ -1,0 +1,503 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Teredor -->
+	<instance id="160" name="Teredor Cavern" maxChannels="10" collapseIfEmpty="10" timelimit="120" dispelBuffs="true" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="85" max="99"/>
+		<party min="7" max="7"/>
+		<return loc="85772 -142527 -1336"/>
+		<teleport loc="186805 -173786 -3872"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+        <spawns>		
+		<!-- 33092 Amer -->	
+			<spawn mobId="33092" type="point" respawn="0">
+				<coords loc="186767 -173841 -3872 215"/>
+			</spawn>
+			<!-- 19024 Beatle -->
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="184243 -181629 -3760 215"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="186599 -177587 -3568 1137"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="187283 -177743 -3568 30480"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="184756 -180661 -3720 43383"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="186972 -179108 -3568 0"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="186540 -179012 -3552 0"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="186764 -179044 -3552 0"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="184763 -179882 -3640 9616"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="184763 -179141 -3568 39890"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="186892 -183140 -3272 0"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="186524 -183124 -3280 0"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="186060 -183124 -3280 0"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="185580 -183092 -3280 0"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="185905 -183156 -3280 0"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="186086 -179440 -3592 76"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="185815 -179465 -3592 14394"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="185872 -183598 -3312 13496"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="185284 -183732 -3312 28892"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="185116 -183799 -3312 16380"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="185956 -183531 -3312 31571"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="185620 -183598 -3312 23460"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="180820 -184539 -3504 21368"/>
+			</spawn>
+			<spawn mobId="19024" type="point" respawn="60">
+				<coords loc="181309 -185648 -3504 10463"/>
+			</spawn>
+
+			<!-- 19023  Egg -->
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176603 -184975 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176603 -184766 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175918 -185587 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176313 -184723 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176336 -184856 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176280 -185232 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176474 -185153 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175971 -185648 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175744 -185405 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176033 -185639 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175738 -185525 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175655 -185563 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175945 -185456 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176238 -184769 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175899 -185323 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176396 -184770 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176379 -184690 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176777 -184710 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176699 -184895 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176370 -184654 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175680 -185745 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175618 -185789 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176514 -185167 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175635 -185812 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176001 -185692 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="175989 -185825 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176436 -184651 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176542 -185126 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176607 -184968 -3800 0"/>
+			</spawn>
+			<spawn mobId="19023" type="point" respawn="60">
+				<coords loc="176562 -184742 -3800 0"/>
+			</spawn>
+
+			<!-- 18997  Egg -->
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186800 -179589 -3608 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184777 -183786 -3304 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187088 -176395 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186687 -179204 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187196 -176784 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185221 -183441 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186661 -179481 -3600 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187137 -176715 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184831 -183503 -3296 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186959 -179421 -3592 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184733 -183585 -3304 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187215 -176645 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184740 -183793 -3304 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186739 -179474 -3600 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187321 -176337 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185148 -183578 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186824 -179279 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187389 -176785 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185174 -183377 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187354 -176773 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186793 -179461 -3592 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184747 -183833 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187355 -176814 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186839 -179466 -3592 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184852 -183816 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186855 -179383 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187106 -176759 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186770 -179223 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185040 -183783 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187273 -176468 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184993 -183492 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186948 -179396 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187150 -176555 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186692 -179187 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184751 -183804 -3304 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187373 -176822 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186945 -179160 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184732 -183583 -3304 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187276 -176548 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186959 -179390 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187414 -176813 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184834 -183616 -3296 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185076 -183606 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187168 -176497 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186506 -179553 -3608 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184904 -183847 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187320 -176656 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186951 -179638 -3616 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187261 -176549 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184862 -183482 -3296 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186677 -179347 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187246 -176780 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184824 -183677 -3296 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186955 -179632 -3608 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187265 -176485 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185205 -183422 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186712 -179155 -4624 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186620 -179545 -3600 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184904 -183382 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187225 -176393 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184812 -183666 -3296 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="187131 -176678 -3568 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="186870 -179627 -3608 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="176522 -185113 -3800 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184849 -183790 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180575 -184736 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="176588 -185161 -3800 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180941 -184929 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="176440 -184801 -3800 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180952 -184841 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184759 -183804 -3304 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185078 -183466 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180636 -185059 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="176373 -184877 -3800 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180837 -184778 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185015 -183669 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="176240 -184936 -3800 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="176341 -185049 -3800 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185149 -183480 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180860 -184934 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184980 -183805 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="176468 -184834 -3800 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180534 -185104 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184843 -183637 -3296 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180554 -184743 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="176415 -184740 -3800 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180665 -185529 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="181463 -185960 -3504 56991"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180631 -185960 -3504 30296"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="185157 -183711 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180809 -185088 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="181567 -185585 -3504 57032"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180631 -185960 -3504 64616"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="181671 -185585 -3504 16368"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180581 -184988 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184968 -183827 -3312 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="181359 -185710 -3504 56799"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="181775 -185835 -3504 28853"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="181775 -185835 -3504 7902"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="182087 -185085 -3504 45623"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180982 -185041 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184729 -183586 -3304 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="184859 -183684 -3296 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180685 -185043 -3504 0"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="180943 -186085 -3496 10577"/>
+			</spawn>
+			<spawn mobId="18997" type="point" respawn="60">
+				<coords loc="181463 -186085 -3504 22126"/>
+			</spawn>
+		</spawns>	
+	</instance>
+</list>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="11997" levels="1" name="Healer - Individual Passive">
+		<set name="icon" val="icon.skill0217"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="11998" levels="1" name="Healer - Individual">
+    <!-- Atk. Spd. + 30% for 5 seconds. -->
+		<set name="magicLvl" val="85"/>
+		<set name="target" val="TARGET_SUMMON"/>
+		<set name="hitTime" val="500"/>
+		<set name="reuseDelay" val="5000"/>
+        <set name="magicType" val="MAGIC"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect name="Buff" time="5" val="0">
+                <mul order="0x30" stat="runSpd" val="1.3"/>
+            </effect>
+		</for>
+	</skill>
+    <skill id="11999" levels="1" name="Aerore Chain Skill Air Blow">
+    		<!-- Inflicts a powerful blow on the target. -->
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="castRange" val="700"/>
+		<set name="power" val="230"/>
+		<set name="magicLevel" val="85"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="overHit" val="true"/>&gt;
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<set name="isAlterSkill" val="true"/>
+		<set name="isSkillTimePermanent" val="true"/>
+    </skill>
+</list>

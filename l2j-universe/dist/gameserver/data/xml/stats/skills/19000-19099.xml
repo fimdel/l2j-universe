@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>	
+	<skill id="19001" levels="1" name="Test Bleed">
+    <!-- Race confirm -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>	
+	<skill id="19002" levels="1" name="Anger">
+    <!-- Action prevent item skill confirm -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="19003" levels="5" name="Clan Resistance Hall">
+    <!-- Increases clan members' resistance to holy/dark attacks by 3. Applies after the elder stage. -->
+		<table name="#Def">3 4 5 6 7</table>
+		<set name="isClanSkill" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="minPledgeClass" val="5"/>  <!-- Старейшена -->
+		<set name="isCommon" val="true"/>
+		<for>
+			<add order="0x40" stat="defenceHoly" val="#Def"/>
+			<add order="0x40" stat="defenceUnholy" val="#Def"/>
+		</for>
+	</skill>
+	<skill id="19004" levels="5" name="Clan De-Buff Control">
+    <!-- Increases clan members' resistance to de-buff by 3%. Applies after the elder stage. -->
+		<table name="#Def">3 4 5 6 7</table>
+		<set name="isClanSkill" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="minPledgeClass" val="5"/>  <!-- Старейшена -->
+		<set name="isCommon" val="true"/>
+		<for>
+			<add order="0x40" stat="debuffResist" val="#Def"/>
+		</for>
+	</skill>
+	<skill id="19005" levels="5" name="Clan Muzzle Control">
+    <!-- Increases clan members' resistance to paralysis by 12. Applies after the elder stage. -->
+		<table name="#Def">12 13 14 15 16</table>
+		<set name="isClanSkill" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="minPledgeClass" val="5"/>  <!-- Старейшена -->
+		<set name="isCommon" val="true"/>
+		<for>
+			<add order="0x40" stat="paralyzeResist" val="#Def"/>
+		</for>
+	</skill>
+	<skill id="19006" levels="5" name="Clan Mental Control">
+    <!-- Increases clan members' resistance to mental attacks by 12. Applies after the elder stage. -->
+		<table name="#Def">12 13 14 15 16</table>
+		<set name="isClanSkill" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="minPledgeClass" val="5"/>  <!-- Старейшена -->
+		<set name="isCommon" val="true"/>
+		<for>			
+			<add order="0x40" stat="mentalResist" val="#Def"/>
+		</for>
+	</skill>
+	<skill id="19007" levels="1" name="Clan Summon">
+    <!-- Summons a clan member. Consumes 10 Soul Ores. Consumes 900 Individual Fame. Applies after the viscount stage. -->
+		<set name="isClanSkill" val="true"/>
+		<set name="reuseDelay" val="1800000"/>
+		<set name="hitTime" val="15000"/>
+		<set name="minPledgeClass" val="8"/> <!-- Виконт -->
+		<set name="target" val="TARGET_CLAN_ONLY"/>
+        <set name="skillType" val="CALL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="party" val="true"/>
+        <set name="skillRadius" val="-2"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="10"/>
+	</skill>	
+	<skill id="19008" levels="1" name="Clan Guardian">
+    <!-- Summons the clan guardian for 3 minutes. It recovers HP/MP/CP by 500 power for all clan members within the range. Consumes 100 Soul Ores. Consumes 1000 Clan Fame. Applies after the distinguished king stage. Can only be used on the battlefield. -->
+	    <set name="isClanSkill" val="true"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="19009" levels="1" name="Clan Advent">
+	<!-- When the clan leader logs in, clan members' P. Atk., P. Def., and M. Def. + 5%, M. Atk. + 6%, and HP/MP recovery bonus + 5. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="1"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="0x7fffffff" name="Buff" stackOrder="1" time="3600" val="0" stackType="clan_renewal">
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pDef" val="1.05"/>
+				<mul order="0x30" stat="mDef" val="1.05"/>
+				<mul order="0x30" stat="mAtk" val="1.06"/>
+				<add order="0x40" stat="regHp" val="5"/>
+				<add order="0x40" stat="regMp" val="5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="19010" levels="1" name="Clan Copy">
+    <!-- Summons a copy of yourself to cause confusion among the enemy. Consumes 50 Soul Ores. Consumes 1500 Individual Fame. Applies after the marquis stage. -->
+		<set name="isClanSkill" val="true"/>
+		<table name="#mpConsume2">65</table>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="1000"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="minPledgeClass" val="10"/> <!-- Маркиз -->
+	</skill>	
+	<skill id="19011" levels="1" name="Clan Legend">
+    <!-- Increases P. Atk. and P. Def. when HP is below 30%. Applies after the lord stage. -->
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="isClanSkill" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<for>
+			<add order="0x40" stat="pAtk" val="218">
+				<player percentHp="30"/>
+			</add>
+			<add order="0x40" stat="pDef" val="145">
+				<player percentHp="30"/>
+			</add>
+		</for>
+	</skill>	
+	<skill id="19012" levels="1" name="Clan Hide">
+    <!-- Hides nearby clan members. Decreases Speed by 50% when hidden. Consumes 150 Soulstones. Consumes 1000 Clan Fame. Applies after the lord stage. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="19013" levels="1" name="Clan Un-debuff">
+    <!-- Cancels all de-buffs of nearby clan members. Consumes 50 Soul Ores. Consumes 1500 Individual Fame. Applies after the marquis stage. -->
+		<set name="isClanSkill" val="true"/>
+		<table name="#mpConsume2">65</table>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_CLAN_ONLY"/>		
+        <set name="skillRadius" val="2000"/>
+		<set name="minPledgeClass" val="10"/> <!-- Маркиз -->		
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="50"/>
+        <for>
+            <effect count="1" name="DispelEffects" time="0" val="0">
+                <def name="dispelType" val="cleanse"/>
+                <def name="cancelRate" val="100"/>
+                <def name="negateCount" val="10"/>
+            </effect>
+        </for>
+	</skill>
+	<skill id="19014" levels="1" name="Clan Defense">
+    <!-- Makes nearby clan members invincible. Consumes 50 Soul Ores. Consumes 1000 Clan Fame. Applies after the distinguished king stage. -->
+		<set name="isClanSkill" val="true"/>
+		<table name="#mpConsume2">65</table>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_CLAN_ONLY"/>		
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="50"/>		
+        <set name="skillRadius" val="1500"/>
+		<set name="minPledgeClass" val="10"/> <!-- Король -->		
+		<for>
+			<effect count="1" name="Invulnerable" abnormal="invul2" stackOrder="-1" stackType="invul" time="30" val="0"/>
+		</for>
+	</skill>
+	<skill id="19015" levels="1" name="Clan Friendly">
+    <!-- Increases nearby clan members' P. Critical Rate by 3% and M. Critical Rate by 20. Consumes 100 Soul Ores. Consumes 3500 Individual Fame. Applies after the marquis stage. -->
+		<set name="isClanSkill" val="true"/>
+		<table name="#mpConsume2">65</table>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_CLAN_ONLY"/>
+		<set name="minPledgeClass" val="10"/> <!-- Маркиз -->		
+        <set name="itemConsumeId" val="3031"/>
+		<set name="itemConsumeCount" val="100"/>		
+        <set name="skillRadius" val="2000"/>
+		<for>
+			<effect count="1" name="Buff" time="1200" val="0">
+				<mul order="0x30" stat="rCrit" val="1.03"/>
+				<add order="0x40" stat="mCritRate" val="20"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="19016" levels="1" name="Clan Boundary">
+    <!-- Increases nearby clan members' P. Atk. by 3% and P. Def. by 3%. Consumes 100 Soul Ores. Consumes 3000 Individual Fame. Applies after the count stage. -->
+		<set name="isClanSkill" val="true"/>
+		<table name="#mpConsume2">65</table>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>	
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_CLAN_ONLY"/>
+		<set name="minPledgeClass" val="10"/>	
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="100"/>		
+        <set name="skillRadius" val="2000"/>
+		<for>
+			<effect count="1" name="Buff" time="1200" val="0">
+				<mul order="0x30" stat="pAtk" val="1.03"/>
+				<mul order="0x30" stat="pDef" val="1.03"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="19017" levels="1" name="Clan Prison">
+    <!-- For 60 seconds, decreases Speed of nearby enemies by 23% and stops them from escaping. Consumes 50 Soul Ores. Consumes 3000 Individual Fame. Applies after the duke stage. -->
+		<set name="isClanSkill" val="true"/>
+		<table name="#mpConsume2">65</table>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>	
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="target" val="TARGET_AREA"/>
+		<set name="minPledgeClass" val="10"/>
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="100"/>		
+        <set name="skillRadius" val="500"/>
+		<for>
+			<effect count="1" name="Buff" time="60" val="0">				
+				<mul order="0x30" stat="runSpd" val="0.77"/>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="19018" levels="1" name="Clan Guardian Recovery">
+    <!-- Restores HP/MP/CP. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="19034" levels="1" name="Imprint of Light">
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="180000"/>
+		<set name="magicLevel" val="30"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0246"/>
+		<set name="castRange" val="85"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume1" val="50"/>
+		<set name="target" val="TARGET_HOLY"/>
+		<set name="skillType" val="TAKECASTLE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isCommon" val="true"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="castle_side" val="LIGHT"/>
+	</skill>
+	<skill id="19035" levels="1" name="Imprint of Darkness">
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="180000"/>
+		<set name="magicLevel" val="30"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0246"/>
+		<set name="castRange" val="85"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume1" val="50"/>
+		<set name="target" val="TARGET_HOLY"/>
+		<set name="skillType" val="TAKECASTLE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isCommon" val="true"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="castle_side" val="DARK"/>
+	</skill>
+	<skill id="19036" levels="1" name="Blessing of Light">
+    <!-- Proclaimer buff. -->
+        <table name="#power">0.03</table>
+        <set name="magicLevel" val="1"/>
+		<set name="mpConsume1" val="0"/>
+		<set name="isSelfDispellable" val="true"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="proclaimer" time="3600" val="0">
+				<add order="0x40" stat="ExpMultiplier" val="#power"/>
+			</effect>
+		</for>
+    </skill>
+	<skill id="19037" levels="1" name="Radiant Cloak of Light">
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="icon" val="icon.skill19037"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="magicLevel" val="1"/>
+		<for>
+			<add stat="STR" order="0x10" val="3"/>
+			<add stat="DEX" order="0x10" val="3"/>
+			<add stat="CON" order="0x10" val="3"/>
+			<add stat="MEN" order="0x10" val="3"/>
+			<add stat="WIT" order="0x10" val="3"/>
+			<add stat="INT" order="0x10" val="3"/>
+			<mul stat="pvpPhysDefenceBonus" order="0x30" val="1.15"/>
+			<mul stat="pvpPhysSkillDefenceBonus" order="0x30" val="1.15"/>
+			<mul stat="pvpMagicSkillDefenceBonus" order="0x30" val="1.15"/>
+		</for>
+	</skill>
+	<skill id="19038" levels="1" name="Cold Cloak of Darkness">
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="icon" val="icon.skill19038"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="magicLevel" val="1"/>
+		<for>
+			<add stat="STR" order="0x10" val="3"/>
+			<add stat="DEX" order="0x10" val="3"/>
+			<add stat="CON" order="0x10" val="3"/>
+			<add stat="MEN" order="0x10" val="3"/>
+			<add stat="WIT" order="0x10" val="3"/>
+			<add stat="INT" order="0x10" val="3"/>
+			<mul stat="pvpPhysDefenceBonus" order="0x30" val="1.15"/>
+			<mul stat="pvpPhysSkillDefenceBonus" order="0x30" val="1.15"/>
+			<mul stat="pvpMagicSkillDefenceBonus" order="0x30" val="1.15"/>
+		</for>
+	</skill>
+	<skill id="19039" levels="1" name="Cloak of Light">
+	<!--All Stats +2, decreased damage received during PvP by 5%. Ineffective in Chaotic state.-->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="icon" val="icon.skill19039"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="magicLevel" val="1"/>
+		<for>
+			<add stat="STR" order="0x10" val="2"/>
+			<add stat="DEX" order="0x10" val="2"/>
+			<add stat="CON" order="0x10" val="2"/>
+			<add stat="MEN" order="0x10" val="2"/>
+			<add stat="WIT" order="0x10" val="2"/>
+			<add stat="INT" order="0x10" val="2"/>
+			<mul stat="pvpPhysDefenceBonus" order="0x30" val="1.05"/>
+			<mul stat="pvpPhysSkillDefenceBonus" order="0x30" val="1.05"/>
+			<mul stat="pvpMagicSkillDefenceBonus" order="0x30" val="1.05"/>
+		</for>
+	</skill>
+	<!--All Stats +2, decreased damage received during PvP by 5%.-->
+	<skill id="19040" levels="1" name="Cloak of Darkness">
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="icon" val="icon.skill19040"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="magicLevel" val="1"/>
+		<for>
+			<add stat="STR" order="0x10" val="2"/>
+			<add stat="DEX" order="0x10" val="2"/>
+			<add stat="CON" order="0x10" val="2"/>
+			<add stat="MEN" order="0x10" val="2"/>
+			<add stat="WIT" order="0x10" val="2"/>
+			<add stat="INT" order="0x10" val="2"/>
+			<mul stat="pvpPhysDefenceBonus" order="0x30" val="1.05"/>
+			<mul stat="pvpPhysSkillDefenceBonus" order="0x30" val="1.05"/>
+			<mul stat="pvpMagicSkillDefenceBonus" order="0x30" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="19041" levels="1" name="Castle Return">
+		<set name="icon" val="icon.skill19041"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="magicLevel" val="1"/>
+		<set name="useSS" val="false"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RECALL"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="castle" val="true"/>
+		<set name="reuseDelay" val="1800000"/>
+		<set name="hitTime" val="20000"/>
+		<set name="isHandler" val="true"/>
+		<set name="hitCancelTime" val="500"/>
+	</skill>
+	<skill id="19074" levels="1" name="Academy Precept">
+    <!-- For 60 minutes, increases academy members' P. Atk. by 10%, M. Atk. by 10%, Critical Rate by 10%, and M. Critical Rate by 10%. -->
+		<set name="isClanSkill" val="true"/>
+		<table name="#mpConsume2">100</table>
+		<set name="reuseDelay" val="43200000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="400"/>
+		<set name="magicLevel" val="1"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="minPledgeClass" val="5"/> <!-- Король -->
+	</skill>	
+	<skill id="19075" levels="1" name="Clan Relation">
+    <!-- none -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19076" levels="1" name="Clan Academy Reward">
+    <!-- none -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>	
+	<skill id="19080" levels="1" name="Sigel Ixion">
+    <!-- Transforms into Ixion. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19081" levels="1" name="Tyrr Ixion">
+    <!-- Transforms into Ixion. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>	
+	<skill id="19082" levels="1" name="Othell Ixion">
+    <!-- Transforms into Ixion. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19083" levels="1" name="Yul Ixion">
+    <!-- Transforms into Ixion. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>	
+	<skill id="19084" levels="1" name="Feoh Ixion">
+    <!-- Transforms into Ixion. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19085" levels="1" name="Iss Ixion">
+    <!-- Transforms into Ixion. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>	
+	<skill id="19086" levels="1" name="Wynn Ixion">
+    <!-- Transforms into Ixion. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19087" levels="1" name="Aeore Ixion">
+    <!-- Transforms into Ixion. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>	
+	<skill id="19088" levels="4" name="Summon Siege Golem">
+		<!-- Summons a siege weapon. Requires 400 R-grade crystals. Automatically acquired by dwarves at level 85. -->
+		<table name="#npcId">15054 15055 15056 15057</table>
+		<set name="mpConsume2" val="530"/>
+		<set name="itemConsumeId" val="17371"/>
+		<set name="itemConsumeCount" val="400"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="reuseDelay" val="7200000"/>
+		<set name="hitTime" val="180000"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="lifeTime" val="1200000"/>
+		<set name="npcId" val="#npcId"/>
+		<set name="summonType" val="SIEGE_SUMMON"/>
+		<cond msgId="16">
+			<player summon_siege_golem=""/>
+		</cond>
+	 </skill>		
+	<skill id="19089" levels="4" name="Summon Wild Hog Cannon">
+    <!-- Summons a siege weapon. Can only move in normal mode. During siege mode, it cannot move, and it can inflict long-range attacks. Switching modes takes 30 seconds. Requires 600 R-grade crystals. Automatically acquired by dwarves at level 85. -->
+		<table name="#npcId">15058 15059 15060 15061</table>
+		<set name="mpConsume2" val="530"/>
+		<set name="itemConsumeId" val="17371"/>
+		<set name="itemConsumeCount" val="600"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="reuseDelay" val="7200000"/>
+		<set name="hitTime" val="180000"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="lifeTime" val="1200000"/>
+		<set name="npcId" val="#npcId"/>
+		<set name="summonType" val="SIEGE_SUMMON"/>
+		<cond msgId="16">
+			<player summon_siege_golem=""/>
+		</cond>
+	</skill>		
+	<skill id="19090" levels="4" name="Summon Swoop Cannon">
+    <!-- Summons a Swoop Cannon. Requires 500 R-grade crystals. Automatically acquired by dwarves at level 85. -->
+		<table name="#npcId">15062 15063 15064 15065</table>
+		<set name="mpConsume2" val="530"/>
+		<set name="itemConsumeCount" val="500"/>
+		<set name="itemConsumeId" val="17371"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="reuseDelay" val="7200000"/>
+		<set name="hitTime" val="180000"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="lifeTime" val="1200000"/>
+		<set name="npcId" val="#npcId"/>
+		<set name="summonType" val="SIEGE_SUMMON"/>
+		<cond msgId="16">
+			<player summon_siege_golem=""/>
+		</cond>
+	</skill>
+	<skill id="19092" levels="1" name="Mass Return">
+    <!-- Teleports party members to a nearby village to safe area. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19093" levels="1" name="Added Blow Quiver">
+    <!-- Chance of inflicting damage again upon shooting. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>	
+	<skill id="19094" levels="1" name="Increased Damage Quiver">
+    <!-- Great damage occurs if critical occurs while shooting. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19095" levels="1" name="Added Bleed Quiver">
+    <!-- Chance of inflicting bleed if critical occurs while shooting. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>	
+	<skill id="19096" levels="1" name="Added Target">
+    <!-- none -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19097" levels="1" name="Critical Target">
+    <!-- none -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>		
+	<skill id="19098" levels="1" name="Bleed Target">
+    <!-- Consumes 100 HP per second for 15 seconds. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="19099" levels="1" name="GM's Authority">
+    <!-- Inflicts petrification on the target for 60 minutes. -->
+		<set name="power" val="99999"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="PARALYZE"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="relationSkillsId" val="437;1097"/>
+		<for>
+		<effect count="1" name="Petrification" stackOrder="-1" stackType="paralyze" time="3600" val="0">
+			<set order="0x80" stat="regHp" val="0"/>
+		</effect>
+		</for>
+	</skill>
+</list>

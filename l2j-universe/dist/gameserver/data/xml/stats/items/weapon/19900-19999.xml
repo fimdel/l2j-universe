@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="19911" name="Blessed Eternal Shield" add_name="Defense Type / Heavy">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_akra_i00"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="isBlessed" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="1182"/>
+		<for>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="sDef" order="0x10" value="526"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19927" name="Blessed Celestial Shield" add_name="Defense Type / Heavy">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_verteidiger_i01"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="19938" name="Requiem Shaper" add_name="Guidance + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_aspeda_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3008" level="6"/>
+			<skill id="8297" level="1"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="369"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19939" name="Requiem Shaper" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_aspeda_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="369"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19940" name="Requiem Shaper" add_name="Focus + Guidance">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_aspeda_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="3008" level="6"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="369"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19941" name="Requiem Cutter" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_estia_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19942" name="Requiem Cutter" add_name="Focus + Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_estia_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="3013" level="5"/>
+		</skills>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19943" name="Requiem Cutter" add_name="Health + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_estia_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+			<skill id="8297" level="1"/>
+		</skills>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19944" name="Requiem Slasher" add_name="Focus + Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_polion_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13258" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19945" name="Requiem Slasher" add_name="Damage Up + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_polion_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="13062" level="3"/>
+		</skills>
+		<enchant4_skill id="13258" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19946" name="Requiem Slasher" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_polion_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13258" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19947" name="Requiem Avenger" add_name="Haste + Critical Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_batista_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="3572" level="2"/>
+		</skills>
+		<enchant4_skill id="13253" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19948" name="Requiem Avenger" add_name="Critical Damage + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_batista_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3572" level="2"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13253" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19949" name="Requiem Avenger" add_name="Focus + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_batista_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="8297" level="1"/>
+		</skills>
+		<enchant4_skill id="13253" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19950" name="Requiem Fighter" add_name="Focus + Damage Up">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_fantasma_i01"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13264" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19951" name="Requiem Fighter" add_name="Damage + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_fantasma_i01"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="13062" level="3"/>
+		</skills>
+		<enchant4_skill id="13264" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19952" name="Requiem Fighter" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_fantasma_i01"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13264" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19953" name="Requiem Stormer" add_name="HP Drain + Guidance">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_soryu_i01"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3008" level="6"/>
+			<skill id="3568" level="1"/>
+		</skills>
+		<enchant4_skill id="13263" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19954" name="Requiem Stormer" add_name="Guidance + Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_soryu_i01"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3008" level="6"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13263" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19955" name="Requiem Stormer" add_name="Damage + HP Drain">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_soryu_i01"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3568" level="1"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13263" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19956" name="Requiem Thrower" add_name="Damage + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_grabathus_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13062" level="2"/>
+		</skills>
+		<enchant4_skill id="13289" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="831"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19957" name="Requiem Thrower" add_name="Focus + Long Blow">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_grabathus_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13061" level="1"/>
+		</skills>
+		<enchant4_skill id="13289" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="831"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19958" name="Requiem Thrower" add_name="Long Blow + Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_grabathus_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="13062" level="1"/>
+			<skill id="13061" level="1"/>
+		</skills>
+		<enchant4_skill id="13289" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="831"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19959" name="Requiem Shooter" add_name="Focus + Critical Slow">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_shyayaka_i01"/>
+		<set name="weight" value="1580"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="3655" level="1"/>
+		</skills>
+		<enchant4_skill id="13294" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="535"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19960" name="Requiem Shooter" add_name="Critical Slow + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_shyayaka_i01"/>
+		<set name="weight" value="1580"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3655" level="1"/>
+			<skill id="8297" level="1"/>
+		</skills>
+		<enchant4_skill id="13294" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="535"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19961" name="Requiem Shooter" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_shyayaka_i01"/>
+		<set name="weight" value="1580"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13294" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="535"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19962" name="Requiem Buster" add_name="Acumen + Magic Hold">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_kaynon_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+			<skill id="3577" level="3"/>
+		</skills>
+		<enchant4_skill id="13295" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="338"/>
+			<add stat="mAtk" order="0x10" value="245"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19963" name="Requiem Buster" add_name="Magic Hold + Mana Up">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_kaynon_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3014" level="3"/>
+			<skill id="3577" level="3"/>
+		</skills>
+		<enchant4_skill id="13295" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="338"/>
+			<add stat="mAtk" order="0x10" value="245"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19964" name="Requiem Buster" add_name="Mana Up + Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_kaynon_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3014" level="3"/>
+			<skill id="3047" level="3"/>
+		</skills>
+		<enchant4_skill id="13295" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="338"/>
+			<add stat="mAtk" order="0x10" value="245"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19965" name="Requiem Caster" add_name="Empower + Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_anatrian_i01"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3575" level="2"/>
+			<skill id="3047" level="3"/>
+		</skills>
+		<enchant4_skill id="13296" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="338"/>
+			<add stat="mAtk" order="0x10" value="245"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19966" name="Requiem Caster" add_name="Acumen + Magic Hold">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_anatrian_i01"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+			<skill id="3577" level="3"/>
+		</skills>
+		<enchant4_skill id="13296" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="338"/>
+			<add stat="mAtk" order="0x10" value="245"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19967" name="Requiem Caster" add_name="Magic Hold + Empower">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_anatrian_i01"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3575" level="2"/>
+			<skill id="3577" level="3"/>
+		</skills>
+		<enchant4_skill id="13296" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="338"/>
+			<add stat="mAtk" order="0x10" value="245"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19968" name="Requiem Retributer" add_name="MP Regeneration + Acumen">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_grangkaz_i01"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+			<skill id="3576" level="4"/>
+		</skills>
+		<enchant4_skill id="13301" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="411"/>
+			<add stat="mAtk" order="0x10" value="270"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19969" name="Requiem Retributer" add_name="Acumen + Empower">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_grangkaz_i01"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3047" level="3"/>
+			<skill id="3575" level="2"/>
+		</skills>
+		<enchant4_skill id="13301" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="411"/>
+			<add stat="mAtk" order="0x10" value="270"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19970" name="Requiem Retributer" add_name="Empower + MP Regeneration">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_grangkaz_i01"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="599"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3575" level="2"/>
+			<skill id="3576" level="4"/>
+		</skills>
+		<enchant4_skill id="13301" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="411"/>
+			<add stat="mAtk" order="0x10" value="270"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19971" name="Requiem Dual Sword" add_name="Haste + Damage Up">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualsword_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13274" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19972" name="Requiem Dual Sword" add_name="Damage + Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualsword_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+			<skill id="13062" level="4"/>
+		</skills>
+		<enchant4_skill id="13274" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19973" name="Requiem Dual Sword" add_name="Health + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualsword_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3013" level="5"/>
+			<skill id="8297" level="1"/>
+		</skills>
+		<enchant4_skill id="13274" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19974" name="Requiem Dual Dagger" add_name="Damage + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualdagger_i01"/>
+		<set name="weight" value="2050"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13062" level="2"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19975" name="Requiem Dual Dagger" add_name="Focus + Guidance">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualdagger_i01"/>
+		<set name="weight" value="2050"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="3008" level="6"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19976" name="Requiem Dual Dagger" add_name="Guidance + Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualdagger_i01"/>
+		<set name="weight" value="2050"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3008" level="6"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19977" name="Requiem Dual Blunt Weapon" add_name="Focus + Guidance">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualblunt_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="3008" level="6"/>
+		</skills>
+		<enchant4_skill id="13269" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19978" name="Requiem Dual Blunt Weapon" add_name="Guidance + Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualblunt_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="3008" level="6"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13269" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19979" name="Requiem Dual Blunt Weapon" add_name="Damage + Focus ">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualblunt_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="719"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13062" level="3"/>
+		</skills>
+		<enchant4_skill id="13269" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19980" name="Blessed Requiem Shaper" add_name="Guidance + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_aspeda_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="3008" level="6"/>
+			<skill id="8297" level="1"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="369"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19981" name="Blessed Requiem Shaper" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_aspeda_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="369"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19982" name="Blessed Requiem Shaper" add_name="Focus + Guidance">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_aspeda_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="3008" level="6"/>
+		</skills>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="369"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19983" name="Blessed Requiem Cutter" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_estia_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19984" name="Blessed Requiem Cutter" add_name="Focus + Health">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_estia_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="3013" level="5"/>
+		</skills>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19985" name="Blessed Requiem Cutter" add_name="Health + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_estia_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="3013" level="5"/>
+			<skill id="8297" level="1"/>
+		</skills>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19986" name="Blessed Requiem Slasher" add_name="Focus + Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_polion_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13062" level="3"/>
+		</skills>
+		<enchant4_skill id="13258" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19987" name="Blessed Requiem Slasher" add_name="Damage + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_polion_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13258" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19988" name="Blessed Requiem Slasher" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_polion_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13258" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19989" name="Blessed Requiem Avenger" add_name="Haste + Critical Damage">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_batista_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="3572" level="2"/>
+		</skills>
+		<enchant4_skill id="13253" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19990" name="Blessed Requiem Avenger" add_name="Critical Damage + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_batista_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="3572" level="2"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13253" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19991" name="Blessed Requiem Avenger" add_name="Focus + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_batista_i01"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="8297" level="1"/>
+		</skills>
+		<enchant4_skill id="13253" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19992" name="Blessed Requiem Fighter" add_name="Focus + Damage Up">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_fantasma_i01"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13062" level="1"/>
+		</skills>
+		<enchant4_skill id="13264" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19993" name="Blessed Requiem Fighter" add_name="Damage + Haste">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_fantasma_i01"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="13062" level="3"/>
+		</skills>
+		<enchant4_skill id="13264" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19994" name="Blessed Requiem Fighter" add_name="Haste + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_fantasma_i01"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8297" level="1"/>
+			<skill id="8289" level="1"/>
+		</skills>
+		<enchant4_skill id="13264" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19995" name="Blessed Requiem Stormer" add_name="HP Drain + Guidance">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_soryu_i01"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="3008" level="6"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19996" name="Blessed Requiem Stormer" add_name="Guidance + Damage Up">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_soryu_i01"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="3008" level="6"/>
+			<skill id="13062" level="4"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19997" name="Blessed Requiem Stormer" add_name="Damage + HP Drain">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_soryu_i01"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="3008" level="6"/>
+			<skill id="13062" level="4"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19998" name="Blessed Requiem Thrower" add_name="Damage + Focus">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_grabathus_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13062" level="2"/>
+		</skills>
+		<enchant4_skill id="13289" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="831"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="19999" name="Blessed Requiem Thrower" add_name="Focus + Long Blow">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_grabathus_i01"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="749"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="isBlessed" value="true"/>
+		<skills>
+			<skill id="8289" level="1"/>
+			<skill id="13061" level="1"/>
+		</skills>
+		<enchant4_skill id="13289" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="831"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+</list>

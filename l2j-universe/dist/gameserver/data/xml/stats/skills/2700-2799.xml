@@ -1,0 +1,1991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="2700" levels="1" name="Giran Dwarf Mercenary">
+    <!-- Transforms into a Dwarf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13597"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13173"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14"/>
+		</for>
+	</skill>
+	<skill id="2701" levels="1" name="Giran Kamael Mercenary">
+    <!-- Transforms into a Kamael mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13598"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13174"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15"/>
+		</for>
+	</skill>
+	<skill id="2702" levels="1" name="Giran Knight Mercenary">
+    <!-- Transforms into a Knight Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13599"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13175"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16"/>
+		</for>
+	</skill>
+	<skill id="2703" levels="1" name="Giran Archer Mercenary">
+    <!-- Transforms into an Archer Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13600"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13176"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17"/>
+		</for>
+	</skill>
+	<skill id="2704" levels="1" name="Giran Wizard Mercenary">
+    <!-- Transforms into a Wizard Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13601"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13177"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18"/>
+		</for>
+	</skill>
+	<skill id="2705" levels="1" name="Giran Kamael Captain Mercenary">
+    <!-- Transforms into a Kamael guard captain. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13602"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13178"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19"/>
+		</for>
+	</skill>
+	<skill id="2706" levels="1" name="Giran Knight Captain Mercenary">
+    <!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13603"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13179"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20"/>
+		</for>
+	</skill>
+	<skill id="2707" levels="1" name="Giran Commander Mercenary">
+    <!-- Transforms into a Commander Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13604"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13180"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21"/>
+		</for>
+	</skill>
+	<skill id="2708" levels="1" name="Oren Human Mercenary">
+    <!-- Transforms into a human mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13605"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13169"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10"/>
+		</for>
+	</skill>
+	<skill id="2709" levels="1" name="Oren Elf Mercenary">
+    <!-- Transforms into an Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13606"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13170"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11"/>
+		</for>
+	</skill>
+	<skill id="2710" levels="1" name="Oren Dark Elf Mercenary">
+    <!-- Transforms into a Dark Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13607"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13171"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12"/>
+		</for>
+	</skill>
+	<skill id="2711" levels="1" name="Oren Orc Mercenary">
+    <!-- Transforms into an Orc mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13608"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13172"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13"/>
+		</for>
+	</skill>
+	<skill id="2712" levels="1" name="Oren Dwarf Mercenary">
+    <!-- Transforms into a Dwarf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13609"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13173"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14"/>
+		</for>
+	</skill>
+	<skill id="2713" levels="1" name="Oren Kamael Mercenary">
+    <!-- Transforms into a Kamael mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13610"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13174"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15"/>
+		</for>
+	</skill>
+	<skill id="2714" levels="1" name="Oren Knight Mercenary">
+    <!-- Transforms into a Knight Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13611"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13175"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16"/>
+		</for>
+	</skill>
+	<skill id="2715" levels="1" name="Oren Archer Mercenary">
+    <!-- Transforms into an Archer Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13612"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13176"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17"/>
+		</for>
+	</skill>
+	<skill id="2716" levels="1" name="Oren Wizard Mercenary">
+    <!-- Transforms into a Wizard Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13613"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13177"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18"/>
+		</for>
+	</skill>
+	<skill id="2717" levels="1" name="Oren Kamael Captain Mercenary">
+    <!-- Transforms into a Kamael guard captain. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13614"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13178"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19"/>
+		</for>
+	</skill>
+	<skill id="2718" levels="1" name="Oren Knight Captain Mercenary">
+    <!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13615"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13179"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20"/>
+		</for>
+	</skill>
+	<skill id="2719" levels="1" name="Oren Commander Mercenary">
+    <!-- Transforms into a Commander Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13616"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13180"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21"/>
+		</for>
+	</skill>
+	<skill id="2720" levels="1" name="Aden Human Mercenary">
+    <!-- Transforms into a human mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13617"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13169"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10"/>
+		</for>
+	</skill>
+	<skill id="2721" levels="1" name="Aden Elf Mercenary">
+    <!-- Transforms into an Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13618"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13170"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11"/>
+		</for>
+	</skill>
+	<skill id="2722" levels="1" name="Aden Dark Elf Mercenary">
+    <!-- Transforms into a Dark Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13619"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13171"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12"/>
+		</for>
+	</skill>
+	<skill id="2723" levels="1" name="Aden Orc Mercenary">
+    <!-- Transforms into an Orc mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13620"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13172"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13"/>
+		</for>
+	</skill>
+	<skill id="2724" levels="1" name="Aden Dwarf Mercenary">
+    <!-- Transforms into a Dwarf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13621"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13173"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14"/>
+		</for>
+	</skill>
+	<skill id="2725" levels="1" name="Aden Kamael Mercenary">
+    <!-- Transforms into a Kamael mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13622"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13174"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15"/>
+		</for>
+	</skill>
+	<skill id="2726" levels="1" name="Aden Knight Mercenary">
+    <!-- Transforms into a Knight Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13623"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13175"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16"/>
+		</for>
+	</skill>
+	<skill id="2727" levels="1" name="Aden Archer Mercenary">
+    <!-- Transforms into an Archer Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13624"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13176"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17"/>
+		</for>
+	</skill>
+	<skill id="2728" levels="1" name="Aden Wizard Mercenary">
+    <!-- Transforms into a Wizard Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13625"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13177"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18"/>
+		</for>
+	</skill>
+	<skill id="2729" levels="1" name="Aden Kamael Captain Mercenary">
+    <!-- Transforms into a Kamael guard captain. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13626"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13178"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19"/>
+		</for>
+	</skill>
+	<skill id="2730" levels="1" name="Aden Knight Captain Mercenary">
+    <!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13627"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13179"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20"/>
+		</for>
+	</skill>
+	<skill id="2731" levels="1" name="Aden Commander Mercenary">
+    <!-- Transforms into a Commander Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13628"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13180"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21"/>
+		</for>
+	</skill>
+	<skill id="2732" levels="1" name="Innadril Human Mercenary">
+    <!-- Transforms into a human mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13629"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13169"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10"/>
+		</for>
+	</skill>
+	<skill id="2733" levels="1" name="Innadril Elf Mercenary">
+    <!-- Transforms into an Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13630"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13170"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11"/>
+		</for>
+	</skill>
+	<skill id="2734" levels="1" name="Innadril Dark Elf Mercenary">
+    <!-- Transforms into a Dark Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13631"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13171"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12"/>
+		</for>
+	</skill>
+	<skill id="2735" levels="1" name="Innadril Orc Mercenary">
+    <!-- Transforms into an Orc mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13632"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13172"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13"/>
+		</for>
+	</skill>
+	<skill id="2736" levels="1" name="Innadril Dwarf Mercenary">
+    <!-- Transforms into a Dwarf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13633"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13173"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14"/>
+		</for>
+	</skill>
+	<skill id="2737" levels="1" name="Innadril Kamael Mercenary">
+    <!-- Transforms into a Kamael mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13634"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13174"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15"/>
+		</for>
+	</skill>
+	<skill id="2738" levels="1" name="Innadril Knight Mercenary">
+    <!-- Transforms into a Knight Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13635"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13175"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16"/>
+		</for>
+	</skill>
+	<skill id="2739" levels="1" name="Innadril Archer Mercenary">
+    <!-- Transforms into an Archer Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13636"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13176"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17"/>
+		</for>
+	</skill>
+	<skill id="2740" levels="1" name="Innadril Wizard Mercenary">
+    <!-- Transforms into a Wizard Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13637"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13177"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18"/>
+		</for>
+	</skill>
+	<skill id="2741" levels="1" name="Innadril Kamael Captain Mercenary">
+    <!-- Transforms into a Kamael guard captain. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13638"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13178"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19"/>
+		</for>
+	</skill>
+	<skill id="2742" levels="1" name="Innadril Knight Captain Mercenary">
+    <!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13639"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13179"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20"/>
+		</for>
+	</skill>
+	<skill id="2743" levels="1" name="Innadril Commander Mercenary">
+    <!-- Transforms into a Commander Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13640"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13180"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21"/>
+		</for>
+	</skill>
+	<skill id="2744" levels="1" name="Goddard Human Mercenary">
+    <!-- Transforms into a human mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13641"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13169"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10"/>
+		</for>
+	</skill>
+	<skill id="2745" levels="1" name="Goddard Elf Mercenary">
+    <!-- Transforms into an Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13642"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13170"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11"/>
+		</for>
+	</skill>
+	<skill id="2746" levels="1" name="Goddard Dark Elf Mercenary">
+    <!-- Transforms into a Dark Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13643"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13171"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12"/>
+		</for>
+	</skill>
+	<skill id="2747" levels="1" name="Goddard Orc Mercenary">
+    <!-- Transforms into an Orc mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13644"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13172"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13"/>
+		</for>
+	</skill>
+	<skill id="2748" levels="1" name="Goddard Dwarf Mercenary">
+    <!-- Transforms into a Dwarf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13645"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13173"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14"/>
+		</for>
+	</skill>
+	<skill id="2749" levels="1" name="Goddard Kamael Mercenary">
+    <!-- Transforms into a Kamael mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13646"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13174"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15"/>
+		</for>
+	</skill>
+	<skill id="2750" levels="1" name="Goddard Knight Mercenary">
+    <!-- Transforms into a Knight Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13647"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13175"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16"/>
+		</for>
+	</skill>
+	<skill id="2751" levels="1" name="Goddard Archer Mercenary">
+    <!-- Transforms into an Archer Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13648"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13176"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17"/>
+		</for>
+	</skill>
+	<skill id="2752" levels="1" name="Goddard Wizard Mercenary">
+    <!-- Transforms into a Wizard Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13649"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13177"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18"/>
+		</for>
+	</skill>
+	<skill id="2753" levels="1" name="Goddard Kamael Captain Mercenary">
+    <!-- Transforms into a Kamael guard captain. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13650"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13178"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19"/>
+		</for>
+	</skill>
+	<skill id="2754" levels="1" name="Goddard Knight Captain Mercenary">
+    <!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13651"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13179"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20"/>
+		</for>
+	</skill>
+	<skill id="2755" levels="1" name="Goddard Commander Mercenary">
+    <!-- Transforms into a Commander Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13652"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13180"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21"/>
+		</for>
+	</skill>
+	<skill id="2756" levels="1" name="Rune Human Mercenary">
+    <!-- Transforms into a human mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13653"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13169"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10"/>
+		</for>
+	</skill>
+	<skill id="2757" levels="1" name="Rune Elf Mercenary">
+    <!-- Transforms into an Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13654"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13170"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11"/>
+		</for>
+	</skill>
+	<skill id="2758" levels="1" name="Rune Dark Elf Mercenary">
+    <!-- Transforms into a Dark Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13655"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13171"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12"/>
+		</for>
+	</skill>
+	<skill id="2759" levels="1" name="Rune Orc Mercenary">
+    <!-- Transforms into an Orc mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13656"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13172"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13"/>
+		</for>
+	</skill>
+	<skill id="2760" levels="1" name="Rune Dwarf Mercenary">
+    <!-- Transforms into a Dwarf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13657"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13173"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14"/>
+		</for>
+	</skill>
+	<skill id="2761" levels="1" name="Rune Kamael Mercenary">
+    <!-- Transforms into a Kamael mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13658"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13174"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15"/>
+		</for>
+	</skill>
+	<skill id="2762" levels="1" name="Rune Knight Mercenary">
+    <!-- Transforms into a Knight Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13659"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13175"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16"/>
+		</for>
+	</skill>
+	<skill id="2763" levels="1" name="Rune Archer Mercenary">
+    <!-- Transforms into an Archer Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13660"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13176"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17"/>
+		</for>
+	</skill>
+	<skill id="2764" levels="1" name="Rune Wizard Mercenary">
+    <!-- Transforms into a Wizard Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13661"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13177"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18"/>
+		</for>
+	</skill>
+	<skill id="2765" levels="1" name="Rune Kamael Captain Mercenary">
+    <!-- Transforms into a Kamael guard captain. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13662"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13178"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19"/>
+		</for>
+	</skill>
+	<skill id="2766" levels="1" name="Rune Knight Captain Mercenary">
+    <!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13663"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13179"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20"/>
+		</for>
+	</skill>
+	<skill id="2767" levels="1" name="Rune Commander Mercenary">
+    <!-- Transforms into a Commander Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13664"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13180"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21"/>
+		</for>
+	</skill>
+	<skill id="2768" levels="1" name="Schuttgart Human Mercenary">
+    <!-- Transforms into a human mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13665"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13169"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10"/>
+		</for>
+	</skill>
+	<skill id="2769" levels="1" name="Schuttgart Elf Mercenary">
+    <!-- Transforms into an Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13666"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13170"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11"/>
+		</for>
+	</skill>
+	<skill id="2770" levels="1" name="Schuttgart Dark Elf Mercenary">
+    <!-- Transforms into a Dark Elf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13667"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13171"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12"/>
+		</for>
+	</skill>
+	<skill id="2771" levels="1" name="Schuttgart Orc Mercenary">
+    <!-- Transforms into an Orc mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13668"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13172"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13"/>
+		</for>
+	</skill>
+	<skill id="2772" levels="1" name="Schuttgart Dwarf Mercenary">
+    <!-- Transforms into a Dwarf mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13669"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13173"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14"/>
+		</for>
+	</skill>
+	<skill id="2773" levels="1" name="Schuttgart Kamael Mercenary">
+    <!-- Transforms into a Kamael mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13670"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13174"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15"/>
+		</for>
+	</skill>
+	<skill id="2774" levels="1" name="Schuttgart Knight Mercenary">
+    <!-- Transforms into a Knight Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13671"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13175"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16"/>
+		</for>
+	</skill>
+	<skill id="2775" levels="1" name="Schuttgart Archer Mercenary">
+    <!-- Transforms into an Archer Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13672"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13176"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17"/>
+		</for>
+	</skill>
+	<skill id="2776" levels="1" name="Schuttgart Wizard Mercenary">
+    <!-- Transforms into a Wizard Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13673"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13177"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18"/>
+		</for>
+	</skill>
+	<skill id="2777" levels="1" name="Schuttgart Kamael Captain Mercenary">
+    <!-- Transforms into a Kamael guard captain. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13674"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13178"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19"/>
+		</for>
+	</skill>
+	<skill id="2778" levels="1" name="Schuttgart Knight Captain Mercenary">
+    <!-- Transforms into a Knight Captain Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13675"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13179"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20"/>
+		</for>
+	</skill>
+	<skill id="2779" levels="1" name="Schuttgart Commander Mercenary">
+    <!-- Transforms into a Commander Mercenary. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="reuseDelay" val="14400000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="mpConsume2" val="31"/>
+		<set name="itemConsumeId" val="13676"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="619;1;5491;1"/>
+		<set name="npcId" val="13180"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2955">
+			<zone type="SIEGE"/> <!-- TODO -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21"/>
+		</for>
+	</skill>
+	<skill id="2780" levels="1" name="Magician's Will">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2781" levels="1" name="Silent Mind">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2782" levels="1" name="Turn Stone">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2783" levels="1" name="Lucky Strike">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2784" levels="1" name="Eye for Eye">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2785" levels="1" name="Curse of Desparion">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2786" levels="1" name="Counter Critical">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2787" levels="1" name="Onslaught of Pa'agrio">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2788" levels="1" name="Great Fury">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="81"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2789" levels="1" name="Final Flying Form">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="840"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2790" levels="1" name="Aura Bird - Falcon">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="841"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2791" levels="1" name="Aura Bird - Owl">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="842"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2792" levels="2" name="Stone of Stamina">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="80"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2793" levels="2" name="Stone of Mana">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="power" val="300"/>
+		<set name="magicLevel" val="80"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="14040"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="isHandler" val="true"/>
+		<set name="altUse" val="true"/>
+		<set name="skillType" val="MANAHEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="flyingTransformUsage" val="true"/>
+		<cond msgId="113" addName="1">
+			<player flyingTransform="true"/>
+		</cond>
+	</skill>
+	<skill id="2794" levels="2" name="Stone of Recovery">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="80"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2795" levels="1" name="Stone of Destruction">
+    <!-- P. Atk. is temporarily increased. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.stone_1_i00"/>
+		<set name="magicLevel" val="80"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2796" levels="1" name="Stone of Invincibility">
+    <!-- P. Def. is temporarily increased. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.stone_2_i00"/>
+		<set name="magicLevel" val="80"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2797" levels="1" name="Stone of Great Speed">
+    <!-- Atk. Spd. and Casting Spd. are increased. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.stone_3_i00"/>
+		<set name="magicLevel" val="80"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2798" levels="1" name="Stone of Speed">
+    <!-- Speed is temporarily increased. Effect 2. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.stone_8_i00"/>
+		<set name="magicLevel" val="80"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="2799" levels="1" name="Stone of Concentration">
+    <!-- Critical attack rate is temporarily increased. Effect 2. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.stone_7_i00"/>
+		<set name="magicLevel" val="80"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

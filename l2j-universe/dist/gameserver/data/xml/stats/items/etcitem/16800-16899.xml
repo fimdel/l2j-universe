@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="16852" name="Hero's Treasure Chest">
+	<!-- Chest containing an equipment set pack which can be used for 90 days. Cannot be exchanged or dropped. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="16853" name="Equipment Set Pack" add_name="(90-day)">
+	<!-- When used, you can obtain a 90-day Limited Period equipment set for your class. Can be used after the 1st class change. Expires after 90 days if not used. Cannot be exchanged or dropped. -->
+		<set name="reuse_delay" value="10000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_equip_item_box_i01"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+</list>

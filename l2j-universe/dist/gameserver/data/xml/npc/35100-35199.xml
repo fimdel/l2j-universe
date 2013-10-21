@@ -1,0 +1,5028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="35100" name="Chamberlain of Light" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="152641.0"/>
+		<set name="baseMpReg" value="300.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="1"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="9.5"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.ChamberlainLight"/>
+		<skills>
+			<skill id="4416" level="15"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35101" name="Grad" title="Wyvern Manager">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="1"/>
+		<set name="collision_height" value="24.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="WyvernManager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35102" name="Greenspan" title="Mercenary Manager">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="1"/>
+		<set name="collision_height" value="21.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="MercManager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35103" name="Manor Manager" title="Gludio">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="398"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="299"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="1"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="9.5"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="ManorManager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35104" name="Tyron" title="Herald">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="160"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="1"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.CastleMessenger"/>
+		<equip>
+			<rhand item_id="74"/>	<!--Katana-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35105" name="Dion Holy Artifact" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="541"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="2.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="30"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="64"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="192.0"/>
+		<set name="baseMpReg" value="1.2"/>
+		<set name="basePAtk" value="44"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="87"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="98.0"/>
+		<set name="collision_radius" value="25.0"/>
+		<set name="level" value="20"/>
+		<set name="rewardExp" value="40"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Artefact"/>
+		<skills>
+			<skill id="4416" level="19"/>	<!--Others-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="35106" name="Duke Byron Ashton" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="1409624"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="751"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="259"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="5332.2"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="3298"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="354"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="83"/>
+		<set name="rewardExp" value="689"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="79"/>	<!--Sword of Damascus-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="35107" name="Ivano" title="Royal Guard Captain">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="332662"/>
+		<set name="baseHpRate" value="2.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="691"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="253"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="5126.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="3037"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="346"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="81"/>
+		<set name="rewardExp" value="656"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="142"/>	<!--Keshanberk-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="35108" name="Royal Knight" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="200230"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="635"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="247"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1641.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="930"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="337"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="123"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="624"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="76"/>	<!--Sword of Delusion-->
+			<lhand item_id="2497"/>	<!--Full Plate Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="35109" name="Royal Wizard" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="77"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="325"/>	<!--Horn of Glory-->
+		</equip>
+		<skills>
+			<skill id="1230" level="14"/>	<!--Prominence-->
+			<skill id="4001" level="6"/>	<!--NPC Windstrike-->
+			<skill id="4026" level="1"/>	<!--Gludio Flame-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35110" name="Royal Wizard" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardPriest"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="77"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="193"/>	<!--Stick of Faith-->
+		</equip>
+		<skills>
+			<skill id="1230" level="14"/>	<!--Prominence-->
+			<skill id="4027" level="1"/>	<!--Gludio Heal-->
+			<skill id="4037" level="1"/>	<!--Decrease P. Atk.-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35111" name="Royal Guard" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="77"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="94"/>	<!--Bec de Corbin-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35112" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35113" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2499"/>	<!--Elven Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35114" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="87"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="276"/>	<!--Elven Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35115" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35116" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35117" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="14"/>	<!--Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35118" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35119" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35120" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="14"/>	<!--Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35121" name="Royal Knight" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="200230"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="635"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="247"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1641.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="930"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="337"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="123"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="624"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="76"/>	<!--Sword of Delusion-->
+			<lhand item_id="2497"/>	<!--Full Plate Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="35122" name="Royal Wizard" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="325"/>	<!--Horn of Glory-->
+		</equip>
+		<skills>
+			<skill id="1230" level="14"/>	<!--Prominence-->
+			<skill id="4001" level="6"/>	<!--NPC Windstrike-->
+			<skill id="4026" level="1"/>	<!--Gludio Flame-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35123" name="Royal Wizard" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardPriest"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="193"/>	<!--Stick of Faith-->
+		</equip>
+		<skills>
+			<skill id="1230" level="14"/>	<!--Prominence-->
+			<skill id="4027" level="1"/>	<!--Gludio Heal-->
+			<skill id="4037" level="1"/>	<!--Decrease P. Atk.-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35124" name="Royal Guard" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="94"/>	<!--Bec de Corbin-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35125" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="93"/>	<!--Winged Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35126" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="87"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2499"/>	<!--Elven Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35127" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="276"/>	<!--Elven Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35128" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35129" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35130" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="14"/>	<!--Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35131" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35132" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35133" name="Escort" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="dion_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="14"/>	<!--Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35134" name="Gatekeeper" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.TeleportSiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dion_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="23"/>	<!--Mercenaries-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35135" name="Gatekeeper" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.TeleportSiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dion_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="23"/>	<!--Mercenaries-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35136" name="Gatekeeper" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.TeleportSiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="dion_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="23"/>	<!--Mercenaries-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35137" name="Mass Gatekeeper" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.CastleMassTeleporter"/>
+		<ai_params>
+			<set name="teleport_loc" value="22070 160524 -2669"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35138" name="Outer Castle Gatekeeper" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.Doorman"/>
+		<ai_params>
+			<set name="main_dialog" value="residence2/castle/gludio_outter_doorman001.htm"/>
+			<set name="fail_dialog" value="residence2/castle/gludio_outter_doorman002.htm"/>
+			<set name="siege_dialog" value="residence2/castle/gludio_outter_doorman003.htm"/>
+			<set name="territory_id" value="82"/>
+			<set name="tele_loc0" value="22314 156430 -2960"/>
+			<set name="tele_loc1" value="22307 156901 -2960"/>
+			<set name="doors" value="20220001;20220002"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35139" name="Inner Castle Gatekeeper" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.Doorman"/>
+		<ai_params>
+			<set name="main_dialog" value="residence2/castle/gludio_inner_doorman001.htm"/>
+			<set name="fail_dialog" value="residence2/castle/gludio_inner_doorman002.htm"/>
+			<set name="siege_dialog" value="residence2/castle/gludio_inner_doorman003.htm"/>
+			<set name="territory_id" value="82"/>
+			<set name="tele_loc0" value="22071 159049 -2720"/>
+			<set name="tele_loc1" value="22077 159515 -2704"/>
+			<set name="doors" value="20220005;20220006"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35140" name="Blacksmith" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="16.5"/>
+		<set name="collision_radius" value="7.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.Blacksmith"/>
+		<equip>
+			<rhand item_id="89"/>	<!--Big Hammer-->
+		</equip>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35141" name="Warehouse Keeper" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="17.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.Warehouse"/>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35142" name="Chamberlain of Light" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="152641.0"/>
+		<set name="baseMpReg" value="300.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="9.5"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.ChamberlainLight"/>
+		<skills>
+			<skill id="4416" level="15"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35143" name="Hodler" title="Wyvern Manager">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="24.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="WyvernManager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35144" name="Mercenary Manager Sanford" title="Mercenary Manager">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="21.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="MercManager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35145" name="Manor Manager" title="Dion">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="9.5"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="ManorManager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35146" name="Gibbson" title="Herald">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="160"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="2"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.CastleMessenger"/>
+		<equip>
+			<rhand item_id="74"/>	<!--Katana-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35147" name="Giran Holy Artifact" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="541"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="2.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="30"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="64"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="192.0"/>
+		<set name="baseMpReg" value="1.2"/>
+		<set name="basePAtk" value="44"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="87"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="98.0"/>
+		<set name="collision_radius" value="25.0"/>
+		<set name="level" value="20"/>
+		<set name="rewardExp" value="40"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Artefact"/>
+		<skills>
+			<skill id="4416" level="19"/>	<!--Others-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="35148" name="Baron Carmon Esthus" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="1409624"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="751"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="259"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="5332.2"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="3298"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="354"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="83"/>
+		<set name="rewardExp" value="689"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="79"/>	<!--Sword of Damascus-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="35149" name="Ulric" title="Royal Guard Captain">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="54637"/>
+		<set name="baseHpRate" value="2.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="691"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="253"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="5126.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="3037"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="346"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="81"/>
+		<set name="rewardExp" value="656"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="142"/>	<!--Keshanberk-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="35150" name="Royal Knight" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="200230"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="635"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="247"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1641.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="930"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="337"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="123"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="93"/>
+		<set name="rewardExp" value="624"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="76"/>	<!--Sword of Delusion-->
+			<lhand item_id="2497"/>	<!--Full Plate Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="35151" name="Royal Wizard" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="325"/>	<!--Horn of Glory-->
+		</equip>
+		<skills>
+			<skill id="1230" level="18"/>	<!--Prominence-->
+			<skill id="4001" level="6"/>	<!--NPC Windstrike-->
+			<skill id="4026" level="1"/>	<!--Gludio Flame-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35152" name="Royal Wizard" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardPriest"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="193"/>	<!--Stick of Faith-->
+		</equip>
+		<skills>
+			<skill id="1230" level="18"/>	<!--Prominence-->
+			<skill id="4027" level="1"/>	<!--Gludio Heal-->
+			<skill id="4037" level="1"/>	<!--Decrease P. Atk.-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35153" name="Royal Guard" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="94"/>	<!--Bec de Corbin-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35154" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35155" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2499"/>	<!--Elven Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35156" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="276"/>	<!--Elven Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35157" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35158" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35159" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="14"/>	<!--Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35160" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35161" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35162" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="14"/>	<!--Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35163" name="Royal Knight" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="200230"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="635"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="247"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1641.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="930"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="337"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="123"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="93"/>
+		<set name="rewardExp" value="624"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="76"/>	<!--Sword of Delusion-->
+			<lhand item_id="2497"/>	<!--Full Plate Shield-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="35164" name="Royal Wizard" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="325"/>	<!--Horn of Glory-->
+		</equip>
+		<skills>
+			<skill id="1230" level="18"/>	<!--Prominence-->
+			<skill id="4001" level="6"/>	<!--NPC Windstrike-->
+			<skill id="4026" level="1"/>	<!--Gludio Flame-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35165" name="Royal Wizard" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardPriest"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="193"/>	<!--Stick of Faith-->
+		</equip>
+		<skills>
+			<skill id="1230" level="18"/>	<!--Prominence-->
+			<skill id="4027" level="1"/>	<!--Gludio Heal-->
+			<skill id="4037" level="1"/>	<!--Decrease P. Atk.-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35166" name="Royal Guard" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="94"/>	<!--Bec de Corbin-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35167" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="93"/>	<!--Winged Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35168" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2499"/>	<!--Elven Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35169" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="276"/>	<!--Elven Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35170" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35171" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35172" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="14"/>	<!--Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35173" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35174" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35175" name="Escort" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="14"/>	<!--Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35176" name="Gatekeeper" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.TeleportSiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="giran_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="23"/>	<!--Mercenaries-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35177" name="Gatekeeper" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="73"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.TeleportSiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="giran_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="23"/>	<!--Mercenaries-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35178" name="Gatekeeper" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="73"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.TeleportSiegeGuard"/>
+		<ai_params>
+			<set name="isImmobilized" value="true"/>
+		</ai_params>
+		<faction name="giran_siege_clan" range="600"/>
+		<skills>
+			<skill id="4416" level="23"/>	<!--Mercenaries-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35179" name="Mass Gatekeeper" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.CastleMassTeleporter"/>
+		<ai_params>
+			<set name="teleport_loc" value="116629 145055 -2544"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35180" name="Outer Castle Gatekeeper" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.Doorman"/>
+		<ai_params>
+			<set name="main_dialog" value="residence2/castle/gludio_outter_doorman001.htm"/>
+			<set name="fail_dialog" value="residence2/castle/gludio_outter_doorman002.htm"/>
+			<set name="siege_dialog" value="residence2/castle/gludio_outter_doorman003.htm"/>
+			<set name="territory_id" value="83"/>
+			<set name="tele_loc0" value="112613 144856 -2832"/>
+			<set name="tele_loc1" value="113105 144850 -2832"/>
+			<set name="doors" value="23220001;23220002"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35181" name="Inner Castle Gatekeeper" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.Doorman"/>
+		<ai_params>
+			<set name="main_dialog" value="residence2/castle/gludio_inner_doorman001.htm"/>
+			<set name="fail_dialog" value="residence2/castle/gludio_inner_doorman002.htm"/>
+			<set name="siege_dialog" value="residence2/castle/gludio_inner_doorman003.htm"/>
+			<set name="territory_id" value="83"/>
+			<set name="tele_loc0" value="115234 145096 -2592"/>
+			<set name="tele_loc1" value="115660 145091 -2576"/>
+			<set name="doors" value="23220005;23220006"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35182" name="Blacksmith" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="16.5"/>
+		<set name="collision_radius" value="7.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.Blacksmith"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="89"/>	<!--Big Hammer-->
+		</equip>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35183" name="Warehouse Keeper" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="17.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.Warehouse"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<skills>
+			<skill id="4416" level="18"/>	<!--Dwarves-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35184" name="Chamberlain of Light" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="152641.0"/>
+		<set name="baseMpReg" value="300.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="9.5"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.ChamberlainLight"/>
+		<skills>
+			<skill id="4416" level="15"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35185" name="Bryce" title="Wyvern Manager">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="24.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="73"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="WyvernManager"/>
+		<faction name="giran_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2"/>	<!--Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35186" name="Arvid" title="Mercenary Manager">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="21.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="MercManager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35187" name="Manor Manager" title="Giran">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="9.5"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="0"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="0"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="ManorManager"/>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35188" name="Holmes" title="Herald">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4630"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="160"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="castle_id" value="3"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.castle.CastleMessenger"/>
+		<equip>
+			<rhand item_id="74"/>	<!--Katana-->
+		</equip>
+		<skills>
+			<skill id="4416" level="14"/>	<!--Humans-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35189" name="Oren Holy Artifact" title="">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="CharacterAI"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="541"/>
+		<set name="baseHpRate" value="1.0"/>
+		<set name="baseHpReg" value="2.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="30"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="64"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="192.0"/>
+		<set name="baseMpReg" value="1.2"/>
+		<set name="basePAtk" value="44"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="87"/>
+		<set name="baseRunSpd" value="1"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="98.0"/>
+		<set name="collision_radius" value="25.0"/>
+		<set name="level" value="20"/>
+		<set name="rewardExp" value="40"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="10"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="Artefact"/>
+		<skills>
+			<skill id="4416" level="19"/>	<!--Others-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20"/>
+			<defence attribute="water" value="20"/>
+			<defence attribute="wind" value="20"/>
+			<defence attribute="earth" value="20"/>
+			<defence attribute="holy" value="20"/>
+			<defence attribute="unholy" value="20"/>
+		</attributes>
+	</npc>
+	<npc id="35190" name="Balthus Van Dyke" title="Duke">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="1409624"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="751"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="259"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="5332.2"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="3298"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="354"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="83"/>
+		<set name="rewardExp" value="689"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="79"/>	<!--Sword of Damascus-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="35191" name="Quant" title="Royal Guard Captain">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="54637"/>
+		<set name="baseHpRate" value="2.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="691"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="253"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="5126.4"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="3037"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="346"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="81"/>
+		<set name="rewardExp" value="656"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="142"/>	<!--Keshanberk-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="120"/>
+			<defence attribute="water" value="120"/>
+			<defence attribute="wind" value="120"/>
+			<defence attribute="earth" value="120"/>
+			<defence attribute="holy" value="120"/>
+			<defence attribute="unholy" value="120"/>
+		</attributes>
+	</npc>
+	<npc id="35192" name="Royal Knight" title="Oren">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="200230"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="635"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="247"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1641.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="930"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="337"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="123"/>
+		<set name="baseShldRate" value="20"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="93"/>
+		<set name="rewardExp" value="624"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="76"/>	<!--Sword of Delusion-->
+			<lhand item_id="2497"/>	<!--Full Plate Shield-->
+		</equip>
+		<skills>
+			<skill id="1230" level="14"/>	<!--Prominence-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="80"/>
+			<defence attribute="water" value="80"/>
+			<defence attribute="wind" value="80"/>
+			<defence attribute="earth" value="80"/>
+			<defence attribute="holy" value="80"/>
+			<defence attribute="unholy" value="80"/>
+		</attributes>
+	</npc>
+	<npc id="35193" name="Royal Wizard" title="Oren">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardMystic"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="22.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="91"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="325"/>	<!--Horn of Glory-->
+		</equip>
+		<skills>
+			<skill id="1230" level="22"/>	<!--Prominence-->
+			<skill id="4001" level="6"/>	<!--NPC Windstrike-->
+			<skill id="4026" level="1"/>	<!--Gludio Flame-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35194" name="Royal Wizard" title="Oren">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardPriest"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="10"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="77"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="193"/>	<!--Stick of Faith-->
+		</equip>
+		<skills>
+			<skill id="1230" level="22"/>	<!--Prominence-->
+			<skill id="4027" level="1"/>	<!--Gludio Heal-->
+			<skill id="4037" level="1"/>	<!--Decrease P. Atk.-->
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35195" name="Royal Guard" title="Oren">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="195646"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="585"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="240"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1574.0"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="856"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="328"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="24.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="77"/>
+		<set name="rewardExp" value="593"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="94"/>	<!--Bec de Corbin-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35196" name="Escort" title="Oren">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35197" name="Escort" title="Oren">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="89"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="2499"/>	<!--Elven Long Sword-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35198" name="Escort" title="Oren">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardRanger"/>
+		<set name="baseAtkRange" value="1100"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="80"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="191170"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="23.5"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="276"/>	<!--Elven Bow-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+	<npc id="35199" name="Escort" title="Oren">
+		<set name="aggroRange" value="0"/>
+		<set name="ai_type" value="residences.SiegeGuardFighter"/>
+		<set name="baseAtkRange" value="80"/>
+		<set name="baseCON" value="75"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="41"/>
+		<set name="baseHpMax" value="4225"/>
+		<set name="baseHpRate" value="8.0"/>
+		<set name="baseHpReg" value="8.5"/>
+		<set name="baseINT" value="42"/>
+		<set name="baseMAtk" value="543"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="234"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="1507.8"/>
+		<set name="baseMpReg" value="3.0"/>
+		<set name="basePAtk" value="795"/>
+		<set name="basePAtkSpd" value="253"/>
+		<set name="basePDef" value="319"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseSTR" value="78"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="78"/>
+		<set name="baseWalkSpd" value="50"/>
+		<set name="collision_height" value="25.0"/>
+		<set name="collision_radius" value="8.0"/>
+		<set name="level" value="75"/>
+		<set name="rewardExp" value="563"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="1"/>
+		<set name="shots" value="NONE"/>
+		<set name="type" value="residences.SiegeGuard"/>
+		<faction name="oren_siege_clan" range="1200"/>
+		<equip>
+			<rhand item_id="16"/>	<!--Great Spear-->
+		</equip>
+		<skills>
+			<skill id="4416" level="22"/>	<!--Defending Army-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="40"/>
+			<defence attribute="water" value="40"/>
+			<defence attribute="wind" value="40"/>
+			<defence attribute="earth" value="40"/>
+			<defence attribute="holy" value="40"/>
+			<defence attribute="unholy" value="40"/>
+		</attributes>
+	</npc>
+</list>

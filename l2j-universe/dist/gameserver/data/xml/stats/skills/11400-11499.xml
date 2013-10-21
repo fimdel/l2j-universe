@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="11497" levels="1" name="Summoner - Individual Passive">
+		<set name="icon" val="icon.skill0217"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="11498" levels="1" name="Summoner - Individual">
+    <!-- For 5 seconds, increases P. Atk., M. Atk., Critical rate, and critical damage by 10%. -->
+		<set name="icon" val="icon.skill1543"/>
+		<set name="magicLvl" val="85"/>
+		<set name="target" val="TARGET_SUMMON"/>
+		<set name="hitTime" val="50"/>
+		<set name="reuseDelay" val="500"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect name="Buff" time="5" val="0">
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="mAtk" val="1.1"/>
+                <mul order="0x30" stat="rCrit" val="1.1"/>
+                <mul order="0x30" stat="cAtk" val="1.1"/>
+            </effect>
+		</for>
+	</skill>
+	    <skill id="11499" levels="1" name="Wynn Chain Air Blow">
+	    		<!-- Inflicts a powerful blow on the target. -->
+			<set name="reuseDelay" val="10000"/>
+			<set name="hitTime" val="2000"/>
+			<set name="mpConsume2" val="40"/>
+			<set name="castRange" val="700"/>
+			<set name="power" val="17803"/>
+			<set name="magicLevel" val="85"/>
+			<set name="coolTime" val="300"/>
+			<set name="skillType" val="PDAM"/>
+			<set name="target" val="TARGET_ONE"/>
+			<set name="overHit" val="true"/>&gt;
+			<set name="operateType" val="OP_ACTIVE"/>
+			<set name="nextAction" val="attack"/>
+	    </skill>
+</list>

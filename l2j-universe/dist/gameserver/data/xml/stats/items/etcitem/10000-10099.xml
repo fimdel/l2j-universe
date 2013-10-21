@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="10000" name="Wind Potion">
+	<!-- Increases Wind Resistance by 30 for 10 min. -->
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_wind_potion_i00"/>
+		<set name="price" value="10000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="POTION"/>
+		<set name="ex_type" value="POTION"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="2337" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="10001" name="Dark Potion">
+	<!-- Increases Dark Attack Resistance by 30 for 10 min. -->
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_unholy_potion_i00"/>
+		<set name="price" value="10000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="POTION"/>
+		<set name="ex_type" value="POTION"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="2340" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="10002" name="Holy Potion">
+	<!-- Increases  Holy Attack Resistance by 30 for 10 min. -->
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_holy_potion_i00"/>
+		<set name="price" value="10000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="POTION"/>
+		<set name="ex_type" value="POTION"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="2339" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="10012" name="Scorpion Poison Stinger">
+	<!-- Poison stinger from a scorpion. Good item for bartering with caravans. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_claw_i00"/>
+		<set name="price" value="1000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="20"/>
+	</etcitem>
+	<etcitem id="10013" name="Race Stamp">
+	<!-- Mark to obtain Secret Garden Key. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_hs_agit_war_joining_certificate_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+		<set name="weight" value="20"/>
+	</etcitem>
+	<etcitem id="10014" name="Control Room Card">
+	<!-- Card to operate Control Equipment. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_hs_agit_war_joining_certificate_i00"/>
+		<set name="price" value="250"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="20"/>
+	</etcitem>
+	<etcitem id="10015" name="Prison Gate Key">
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_key_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="10016" name="Underground Warehouse Key">
+	<!-- Key to open Underground Warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_key_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+	</etcitem>
+	<etcitem id="10017" name="Coral Treasure Chest Key">
+	<!-- Key to open Coral Treasure Chest. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_key_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="10025" name="Battle Manual - Fallen Arrow">
+	<!-- Battle Manual needed to learn Fallen Arrow. Used by Kamael soldiers.
+	Required level: 5 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="75"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10026" name="Battle Manual - Fallen Attack">
+	<!-- Battle Manual needed to learn Fallen Attack. Used by Kamael soldiers.
+	Required level: 5 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="75"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10027" name="Battle Manual - Detect Trap">
+	<!-- Battle Manual needed to learn Detect Trap. Used by female Kamael soldiers.
+	Required level: 15 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="550"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10028" name="Battle Manual - Defuse Trap">
+	<!-- Battle Manual needed to learn Defuse Trap. Used by female Kamael soldiers.
+	Required level: 15 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="550"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10029" name="Battle Manual - Dark Strike">
+	<!-- Battle Manual needed to learn Dark Strike. Used by Troopers.
+	Required level: 20 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10030" name="Battle Manual - Dark Smash">
+	<!-- Battle Manual needed to learn Dark Smash. Used by Berserkers.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2900"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10031" name="Battle Manual - Double Thrust">
+	<!-- Battle Manual needed to learn Double Thrust. Used by Troopers, and Warders.
+	Required level: 20 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10032" name="Battle Manual - Abyssal Blaze">
+	<!-- Battle Manual needed to learn Abyssal Blaze. Used by Troopers, and Warders.
+	Required level: 20 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10033" name="Battle Manual - Dark Explosion">
+	<!-- Battle Manual needed to learn Dark Explosion Used by Troopers and Warders.
+	Required level: 24 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="1150"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10034" name="Battle Manual - Shift Target">
+	<!-- Battle Manual needed to learn Shift Target. Used by Arbalesters.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="3200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10035" name="Battle Manual - Change Life Stone">
+	<!-- Battle Manual that teaches you about the Change Life Stone. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2600"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10036" name="Battle Manual - Spread Wing">
+	<!-- Battle Manual needed to learn Spread Wing. Used by Berserkers and Soul Breakers.
+	Required level: 52 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="5000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10037" name="Battle Manual - Slashing Blade">
+	<!-- Battle Manual needed to learn Slashing Blade. Used by Berserkers.
+	Required level: 46 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="3850"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10038" name="Battle Manual - Crushing Pain">
+	<!-- Battle Manual needed to learn Crushing Pain. Used by Berserkers.
+	Required level: 60 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="7000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10039" name="Battle Manual - Contagion">
+	<!-- Battle Manual needed to learn Contagion. Used by Berserkers.
+	Required level: 64 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="7950"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10040" name="Battle Manual - Life to Soul">
+	<!-- Battle Manual needed to learn Life to Soul. Used by Berserkers, Soul Breakers, and Arbalesters.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="3200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10041" name="Battle Manual - Scorn">
+	<!-- Battle Manual needed to learn Scorn. Used by Berserkers.
+	Required level: 43 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="3700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10042" name="Battle Manual - Triple Thrust">
+	<!-- Battle Manual needed to learn Triple Thrust. Used by Soul Breakers.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2900"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10043" name="Battle Manual - Shining Edge">
+	<!-- Battle Manual needed to learn Shining Edge. Used by Soul Breakers.
+	Required level: 49 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="4400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10044" name="Battle Manual - Checkmate">
+	<!-- Battle Manual needed to learn Checkmate. Used by Soul Breakers.
+	Required level: 52 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="5400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10045" name="Battle Manual - Soul of Pain">
+	<!-- Battle Manual needed to learn Soul of Pain. Used by Soul Breakers.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="3000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10046" name="Battle Manual - Dark Flame">
+	<!-- Battle Manual needed to learn Dark Flame. Used by Soul Breakers.
+	Required level: 46 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="4000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10047" name="Battle Manual - Annihilation Circle">
+	<!-- Battle Manual needed to learn Annihilation Circle. Used by Soul Breakers.
+	Required level: 58 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="6750"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10048" name="Battle Manual - Curse of Divinity">
+	<!-- Battle Manual needed to learn Curse of Divinity. Used by Soul Breakers.
+	Required level: 66 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="8700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10049" name="Battle Manual - Steal Divinity">
+	<!-- Battle Manual needed to learn Steal Divinity. Used by Soul Breakers.
+	Required level: 55 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="6000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10050" name="Battle Manual - Blink">
+	<!-- Battle Manual needed to learn Blink. Used by Soul Breakers.
+	Required level: 60 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="7200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10051" name="Battle Manual - Transfer Soul">
+	<!-- Battle Manual needed to learn Transfer Soul. Used by Soul Breakers. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="1150"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10052" name="Battle Manual - Twin Shot">
+	<!-- Battle Manual needed to learn Twin Shot. Used by Arbalesters.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2900"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10053" name="Battle Manual - Rising Shot">
+	<!-- Battle Manual needed to learn Rising Shot. Used by Arbalesters.
+	Required level: 46 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="3850"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10054" name="Battle Manual - Deadly Roulette">
+	<!-- Battle Manual needed to learn Deadly Roulette. Used by Arbalesters.
+	Required level: 66 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="8700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10055" name="Battle Manual - Temptation">
+	<!-- Battle Manual needed to learn Temptation. Used by Arbalesters.
+	Required level: 49 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="5400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10056" name="Battle Manual - Create Bio Potion">
+	<!-- Battle Manual needed to learn Create Bio Potion. Used by Warders. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="800"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10057" name="Battle Manual - Create Dark Seed">
+	<!-- Battle Manual needed to learn Create Dark Seed. Used by Arbalesters.
+	Required level: 62 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="7700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10058" name="Battle Manual - Fire Trap">
+	<!-- Battle Manual needed to learn Fire Trap. Used by Warders.
+	Required level: 28 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="1550"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10059" name="Battle Manual - Poison Trap">
+	<!-- Battle Manual needed to learn Poison Trap. Used by Arbalesters.
+	Required level: 49 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="4800"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10060" name="Battle Manual - Slow Trap">
+	<!-- Battle Manual needed to learn Slow Trap. Used by Arbalesters.
+	Required level: 52 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="5400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10061" name="Battle Manual - Flash Trap">
+	<!-- Battle Manual needed to learn Flash Trap. Used by Arbalesters.
+	Required level: 55 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="6000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10062" name="Battle Manual - Binding Trap">
+	<!-- Battle Manual needed to learn Binding Trap. Used by Arbalesters.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="3200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10063" name="Battle Manual - Quiver of Bolts (A-grade)">
+	<!-- Battle Manual needed to learn Quiver of Bolts (A-grade) . Used by Arbalesters.
+	Required level: 60 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="8700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10064" name="Battle Manual - Quiver of Bolts (S-grade)">
+	<!-- Battle Manual needed to learn Quiver of Bolts (S-grade) . Used by Arbalesters.
+	Required level: 74 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+		<set name="price" value="10000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10065" name="Battle Manual - Cure Dark Seed">
+	<!-- Battle Manual needed to learn Cure Dark Seed. Used by Arbalesters.
+	Required level: 64 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="8200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10066" name="Battle Manual - Decoy">
+	<!-- Battle Manual needed to learn Decoy. Used by Arbalesters.
+	Required level: 43 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="3700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10067" name="Battle Manual - Chain Lightning">
+	<!-- Battle Manual needed to learn Chain Lightning. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+		<set name="price" value="10800"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10068" name="Battle Manual - Enuma Elish">
+	<!-- Battle Manual needed to learn Enuma Elish. Used by Doombringers. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10069" name="Battle Manual - Leopold">
+	<!-- Battle Manual needed to learn Leopold. Used by Soul Hounds. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10070" name="Battle Manual - Change Weapon">
+	<!-- Battle Manual needed to learn Change Weapon. Used by Troopers and Warders.
+	Required level: 20 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="800"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10071" name="Battle Manual - Quiver of Bolts (B-grade)">
+	<!-- Battle Manual needed to learn Quiver of Bolts (B-grade). Used by Arbalesters.
+	Required level: 52 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="5400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10072" name="Battle Manual - Increase Power">
+	<!-- Battle Manual needed to learn Increases Power. Used by male Kamael soldiers.
+	Required level: 10 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="250"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10073" name="Battle Manual - Rapid Attack">
+	<!-- Battle Manual needed to learn Rapid Attack. Used by female Kamael soldiers.
+	Required level: 10 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+		<set name="price" value="250"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10074" name="Battle Manual - Furious Soul">
+	<!-- Battle Manual needed to learn Furious Soul. Used by Troopers.
+	Required level: 24 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="1150"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10075" name="Battle Manual - Sword Shield">
+	<!-- Battle Manual needed to learn Sword Shield. Used by Troopers.
+	Required level: 36 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2600"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10076" name="Battle Manual - Disarm">
+	<!-- Battle Manual needed to learn Disarm. Used by Troopers.
+	Required level: 36 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2600"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10077" name="Battle Manual - Fast Shot">
+	<!-- Battle Manual needed to learn Fast Shot. Used by Warders.
+	Required level: 32 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2050"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10078" name="Battle Manual - Death Mark">
+	<!-- Battle Manual needed to learn Death Mark. Used by Troopers and Warders.
+	Required level: 24 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="1150"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10079" name="Battle Manual - Courage">
+	<!-- Battle Manual needed to learn Courage. Used by Troopers.
+	Required level: 36 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2600"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10080" name="Battle Manual - Violent Temper">
+	<!-- Battle Manual needed to learn Violent Temper. Used by Berserkers.
+	Required level: 49 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="4800"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10081" name="Battle Manual - Soul to Empower">
+	<!-- Battle Manual needed to learn Soul to Empower. Used by Soul Breakers.
+	Required level: 43 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="3700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10082" name="Battle Manual - Darkness Protection">
+	<!-- Battle Manual needed to learn Darkness Protection. Used by Soul Breakers.
+	Required level: 58 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="6750"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10083" name="Battle Manual - Dark Weapon">
+	<!-- Battle Manual needed to learn Dark Weapon. Used by Soul Breakers.
+	Required level: 46 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="4250"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10084" name="Battle Manual - Pride of Kamael">
+	<!-- Battle Manual needed to learn Pride of Kamael. Used by Soul Breakers.
+	Required level: 49 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="4800"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10085" name="Battle Manual - Surrender to Dark">
+	<!-- Battle Manual needed to learn Surrender to Dark. Used by Troopers and Warders.
+	Required level: 28 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="1250"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10086" name="Battle Manual - Bleeding Shot">
+	<!-- Battle Manual needed to learn Bleeding Shot. Used by Arbalesters.
+	Required level: 43 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="3350"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10087" name="Battle Manual - Sharpshooting">
+	<!-- Battle Manual needed to learn Sharpshooting. Used by Arbalesters.
+	Required level: 60 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="7200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10088" name="Battle Manual - Real Target">
+	<!-- Battle Manual needed to learn Real Target. Used by Arbalesters.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="3200"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10089" name="Battle Manual - Imbue Dark Seed">
+	<!-- Battle Manual needed to learn Imbue Dark Seed. Used by Arbalesters.
+	Required level: 62 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="7700"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10090" name="Battle Manual - Prahnah">
+	<!-- Battle Manual needed to learn Prahnah. Used by Tricksters. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10091" name="Battle Manual - Final Form">
+	<!-- Battle Manual needed to learn Final Form. Used by Soul Hounds, Doombringers, and Tricksters. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+		<set name="price" value="40000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10092" name="Battle Manual - Shadow Bind">
+	<!-- Battle Manual needed to learn Shadow Bind. Used by Soul Breakers.
+	Required level: 52 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="5400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10093" name="Battle Manual - Voice Bind">
+	<!-- Battle Manual needed to learn Voice Bind. Used by Soul Breakers.
+	Required level: 58 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="6750"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10094" name="Battle Manual - Rush">
+	<!-- Battle Manual needed to learn Rush. Used by Troopers.
+	Required level: 32 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2050"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10095" name="Battle Manual - Storm Assault">
+	<!-- Battle Manual needed to learn Storm Assault. Used by Berserkers.
+	Required level: 49 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="4400"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10096" name="Battle Manual - Wing Assault">
+	<!-- Battle Manual needed to learn Wing Assault. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+		<set name="price" value="40000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10097" name="Battle Manual - Shoulder Charge">
+	<!-- Battle Manual needed to learn Shoulder Charge. Used by Berserkers.
+	Required level: 40 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+		<set name="price" value="2900"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10098" name="Battle Manual - Blade Rush">
+	<!-- Battle Manual needed to learn Blade Rush. Used by Berserkers.
+	Required level: 55 -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+		<set name="price" value="6000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+	<etcitem id="10099" name="Spellbook: Count of Fire">
+	<!-- Spellbook needed to learn Count of Fire. Used by Archmages. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_element_i00"/>
+		<set name="price" value="30000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+	</etcitem>
+</list>

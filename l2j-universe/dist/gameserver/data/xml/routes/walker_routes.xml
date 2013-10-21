@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "walker_routes.dtd">
+<!--
+	<route npcId="NPC-ID" type="TYPE WALK" delay="DELAY" isRunning="false/true" walkRange="RANGE">
+		<point x="XXXXX" y="YYYYYYYY" z="ZZZZZZ" h="HHHHHH(0)" delay="DELAY"/> - Спавн по первой точке в роуте
+		<point x="XXXXX" y="YYYYYYYY" z="ZZZZZZ" h="HHHHHH(0)" delay="DELAY" endPoint="true/false"/> - на посл. если требуется, устанавливается ластПойнт указатель(Для ТП)
+	</route>
+	В довесок, выносим нужного НПСа со спавна + лепим ему АИ (WalkerAI).
+	Типы движений:
+	CYCLE - Круговое, цикличное (Вперед, и с послденей точки ищет путь до 1й)
+	LINEAR - Линейное движение (Вперед, назад, по точкам)
+	TELEPORT - Телепорт на первую точку, при достижении последней точки.
+-->
+<list>
+	<route npcId="33106" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-112424" y="257813" z="-1534" delay="0" />
+		<point x="-112934" y="257783" z="-1310" delay="0" />
+		<point x="-113890" y="257765" z="-1165" delay="0" />
+		<point x="-114137" y="257385" z="-1164" delay="0" />
+		<point x="-113890" y="257793" z="-1164" delay="0" />
+		<point x="-113311" y="257791" z="-1164" delay="0" />
+		<point x="-112910" y="257796" z="-1310" delay="0" />
+		<point x="-112401" y="257794" z="-1538" delay="0" />
+		<point x="-112297" y="257690" z="-1534" delay="0" />
+		<point x="-112609" y="257329" z="-1529" delay="0" />
+		<point x="-112761" y="256812" z="-1510" delay="0" />
+		<point x="-113451" y="256512" z="-1533" delay="0" />
+		<point x="-113640" y="256292" z="-1533" delay="0" />
+		<point x="-113790" y="255997" z="-1540" delay="0" />
+		<point x="-114207" y="255827" z="-1538" delay="0" />
+		<point x="-114476" y="255815" z="-1538" delay="0" />
+		<point x="-115063" y="256176" z="-1538" delay="0" />
+		<point x="-115548" y="256638" z="-1538" delay="0" />
+		<point x="-116077" y="256793" z="-1542" delay="0" />
+		<point x="-116278" y="257493" z="-1538" delay="0" />
+		<point x="-116413" y="257801" z="-1539" delay="0" />
+		<point x="-115845" y="257795" z="-1310" delay="0" />
+		<point x="-115758" y="257799" z="-1310" delay="0" />
+		<point x="-115428" y="257793" z="-1164" delay="0" />
+		<point x="-114903" y="257597" z="-1164" delay="0" />
+		<point x="-114570" y="257332" z="-1164" delay="0" />
+		<point x="-114903" y="257597" z="-1164" delay="0" />
+		<point x="-115428" y="257793" z="-1164" delay="0" />
+		<point x="-115758" y="257799" z="-1310" delay="0" />
+		<point x="-115845" y="257795" z="-1310" delay="0" />
+		<point x="-116413" y="257801" z="-1539" delay="0" />
+		<point x="-116278" y="257493" z="-1538" delay="0" />
+		<point x="-116077" y="256793" z="-1542" delay="0" />
+		<point x="-115548" y="256638" z="-1538" delay="0" />
+		<point x="-115063" y="256176" z="-1538" delay="0" />
+		<point x="-114476" y="255815" z="-1538" delay="0" />
+		<point x="-114207" y="255827" z="-1538" delay="0" />
+		<point x="-113790" y="255997" z="-1540" delay="0" />
+		<point x="-113640" y="256292" z="-1533" delay="0" />
+		<point x="-113451" y="256512" z="-1533" delay="0" />
+		<point x="-112761" y="256812" z="-1510" delay="0" />
+		<point x="-112609" y="257329" z="-1529" delay="0" />
+		<point x="-112297" y="257690" z="-1534" delay="0" />
+		<point x="-112401" y="257794" z="-1538" delay="0" />
+		<point x="-112910" y="257796" z="-1310" delay="0" />
+		<point x="-113311" y="257791" z="-1164" delay="0" />
+		<point x="-113890" y="257793" z="-1164" delay="0" />
+		<point x="-114137" y="257385" z="-1164" delay="0" />
+		<point x="-113890" y="257765" z="-1165" delay="0" />
+		<point x="-112934" y="257783" z="-1310" delay="0" />
+		<point x="-112424" y="257813" z="-1534" delay="0" />
+	</route>
+	<route npcId="33208" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114280" y="257352" z="-1164" h="0" delay="0"/>
+		<point x="-114888" y="256920" z="-1172" h="0" delay="0"/>
+		<point x="-114232" y="256424" z="-1314" h="0" delay="0"/>
+		<point x="-114280" y="255832" z="-1537" h="0" delay="0"/>
+		<point x="-114216" y="255064" z="-1558" h="0" delay="0"/>
+	</route>
+	<route npcId="33105" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114024" y="255720" z="-1537" h="0" delay="0"/>
+		<point x="-114072" y="253096" z="-1546" h="0" delay="0"/>
+		<point x="-114344" y="252264" z="-1606" h="0" delay="0"/>
+	</route>
+	<route npcId="33105" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114483" y="255762" z="-1512" h="0" delay="0"/>
+		<point x="-114747" y="254999" z="-1520" h="0" delay="0"/>
+		<point x="-114694" y="253928" z="-1504" h="0" delay="0"/>
+		<point x="-114628" y="252473" z="-1552" h="0" delay="0"/>
+		<point x="-114379" y="252292" z="-1560" h="0" delay="0"/>
+	</route>
+	<route npcId="33105" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-112844" y="254780" z="-1520" h="0" delay="0"/>
+		<point x="-113582" y="254775" z="-1504" h="0" delay="2000"/>
+		<point x="-114137" y="255302" z="-1512" h="0" delay="0"/>
+		<point x="-114488" y="255291" z="-1512" h="0" delay="3000"/>
+		<point x="-114885" y="255042" z="-1520" h="0" delay="0"/>
+		<point x="-115343" y="254773" z="-1520" h="0" delay="2000"/>
+		<point x="-115814" y="254837" z="-1504" h="0" delay="0"/>
+		<point x="-116471" y="255387" z="-1448" h="0" delay="3000"/>
+	</route>
+	<route npcId="33105" type="LINEAR" delay="1" isRunning="true" walkRange="0">
+		<point x="-114931" y="254679" z="-1520" h="0" delay="2000"/>
+		<point x="-114534" y="254134" z="-1528" h="0" delay="2000"/>
+		<point x="-113941" y="254178" z="-1512" h="0" delay="3000"/>
+		<point x="-113570" y="254689" z="-1504" h="0" delay="3000"/>
+		<point x="-112845" y="254642" z="-1528" h="0" delay="3000"/>
+		<point x="-113612" y="254657" z="-1504" h="0" delay="2000"/>
+		<point x="-113931" y="254190" z="-1512" h="0" delay="4000"/>
+		<point x="-114518" y="254137" z="-1528" h="0" delay="3000"/>
+		<point x="-114677" y="254306" z="-1528" h="0" delay="2000"/>
+		<point x="-114940" y="254716" z="-1520" h="0" delay="3000"/>
+		<point x="-115383" y="254662" z="-1512" h="0" delay="3000"/>
+		<point x="-115853" y="254697" z="-1504" h="0" delay="2000"/>
+		<point x="-116574" y="255142" z="-1440" h="0" delay="4000"/>
+		<point x="-115879" y="254709" z="-1504" h="0" delay="3000"/>
+	</route>
+	<route npcId="33027" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-116735" y="255720" z="-1424" h="0" delay="0"/>
+		<point x="-116537" y="257294" z="-1512" h="0" delay="0"/>
+		<point x="-116083" y="257209" z="-1512" h="0" delay="0"/>
+		<point x="-114388" y="255513" z="-1512" h="0" delay="0"/>
+		<point x="-114341" y="255569" z="-1512" h="0" delay="0"/>
+		<point x="-115986" y="256796" z="-1512" h="0" delay="0"/>
+		<point x="-116498" y="257209" z="-1512" h="0" delay="0"/>
+		<point x="-116803" y="255765" z="-1424" h="0" delay="0"/>
+	</route>
+	<route npcId="33280" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-116803" y="255765" z="-1424" h="0" delay="0"/>
+		<point x="-116498" y="257209" z="-1512" h="0" delay="0"/>
+		<point x="-115986" y="256796" z="-1512" h="0" delay="0"/>
+		<point x="-114341" y="255569" z="-1512" h="0" delay="0"/>
+		<point x="-114388" y="255513" z="-1512" h="0" delay="0"/>
+		<point x="-116083" y="257209" z="-1512" h="0" delay="0"/>
+		<point x="-116537" y="257294" z="-1512" h="0" delay="0"/>
+		<point x="-116735" y="255720" z="-1424" h="0" delay="0"/>
+	</route>
+	<route npcId="33119" type="TELEPORT" delay="2000" isRunning="true" walkRange="0">
+		<point x="-115202" y="237279" z="-3088" h="0" delay="0"/>
+		<point x="-115740" y="235904" z="-3088" h="0" delay="0"/>
+		<point x="-114669" y="235375" z="-3088" h="0" delay="0"/>
+		<point x="-114004" y="235929" z="-3088" h="0" delay="0"/>
+		<point x="-113930" y="235776" z="-3040" h="0" delay="0"/>
+		<point x="-113599" y="237222" z="-3040" h="0" delay="0" endPoint="true"/>
+	</route>
+	<route npcId="33119" type="TELEPORT" delay="4000" isRunning="true" walkRange="0">
+		<point x="-115202" y="237279" z="-3088" h="0" delay="0"/>
+		<point x="-115871" y="236151" z="-3088" h="0" delay="0"/>
+		<point x="-114804" y="235496" z="-3088" h="0" delay="0"/>
+		<point x="-113676" y="236404" z="-3088" h="0" delay="0"/>
+		<point x="-113701" y="236716" z="-3040" h="0" delay="0"/>
+		<point x="-113599" y="237222" z="-3040" h="0" delay="0" endPoint="true"/>
+	</route>
+	<route npcId="33119" type="TELEPORT" delay="6000" isRunning="true" walkRange="0">
+		<point x="-115202" y="237279" z="-3088" h="0" delay="0"/>
+		<point x="-115740" y="235904" z="-3088" h="0" delay="0"/>
+		<point x="-114669" y="235375" z="-3088" h="0" delay="0"/>
+		<point x="-114004" y="235929" z="-3088" h="0" delay="0"/>
+		<point x="-113930" y="235776" z="-3040" h="0" delay="0"/>
+		<point x="-113599" y="237222" z="-3040" h="0" delay="0" endPoint="true"/>
+	</route>
+	<route npcId="33119" type="TELEPORT" delay="8000" isRunning="true" walkRange="0">
+		<point x="-115202" y="237279" z="-3088" h="0" delay="0"/>
+		<point x="-115871" y="236151" z="-3088" h="0" delay="0"/>
+		<point x="-114804" y="235496" z="-3088" h="0" delay="0"/>
+		<point x="-113676" y="236404" z="-3088" h="0" delay="0"/>
+		<point x="-113701" y="236716" z="-3040" h="0" delay="0"/>
+		<point x="-113599" y="237222" z="-3040" h="0" delay="0" endPoint="true"/>
+	</route>
+	<route npcId="33578" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-116649" y="255593" z="-1424" h="0" delay="0"/>
+		<point x="-116646" y="256790" z="-1496" h="0" delay="0"/>
+		<point x="-116450" y="257751" z="-1542" h="0" delay="0"/>
+		<point x="-114925" y="257783" z="-1136" h="0" delay="0"/>
+		<point x="-114380" y="257208" z="-1136" h="0" delay="0"/>
+		<point x="-113908" y="257329" z="-1136" h="0" delay="0"/>
+	</route>
+	<route npcId="33207" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114666" y="254736" z="-1559" delay="0" />
+		<point x="-114541" y="253246" z="-1566" delay="0" />
+		<point x="-114351" y="252703" z="-1574" delay="0" />
+		<point x="-114545" y="253272" z="-1566" delay="0" />
+		<point x="-114684" y="254711" z="-1559" delay="0" />
+		<point x="-115626" y="254731" z="-1542" delay="0" />
+		<point x="-116669" y="255349" z="-1458" delay="0" />
+		<point x="-117345" y="255645" z="-1325" delay="0" />
+		<point x="-117890" y="255888" z="-1353" delay="0" />
+		<point x="-117059" y="255523" z="-1325" delay="0" />
+		<point x="-115636" y="254741" z="-1542" delay="0" />
+		<point x="-114681" y="254731" z="-1559" delay="0" />
+	</route>
+	<route npcId="33111" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-115064" y="244088" z="-7999" h="57343" delay="0"/>
+		<point x="-115336" y="244360" z="-7999" h="24575" delay="0"/>
+		<point x="-115336" y="245016" z="-7999" h="16383" delay="0"/>
+		<point x="-114984" y="245368" z="-7999" h="0" delay="0"/>
+		<point x="-114392" y="245368" z="-7999" h="0" delay="0"/>
+		<point x="-114056" y="244984" z="-7999" h="53988" delay="0"/>
+		<point x="-114056" y="244360" z="-7999" h="49151" delay="0"/>
+		<point x="-114424" y="244008" z="-7999" h="32767" delay="0"/>
+		<point x="-115016" y="244040" z="-7999" h="32204" delay="0"/>
+	</route>
+	<route npcId="33112" type="CYCLE" delay="1" isRunning="false" walkRange="0">
+		<point x="-114616" y="245320" z="-7999" h="0" delay="0"/>
+		<point x="-115400" y="245192" z="-7999" h="0" delay="0"/>
+		<point x="-115368" y="244296" z="-7999" h="0" delay="0"/>
+		<point x="-114904" y="243864" z="-7999" h="0" delay="0"/>
+		<point x="-114232" y="243944" z="-7999" h="0" delay="0"/>
+		<point x="-113976" y="244392" z="-7999" h="0" delay="0"/>
+		<point x="-113960" y="245112" z="-7999" h="0" delay="0"/>
+		<point x="-114360" y="245304" z="-7999" h="0" delay="0"/>
+	</route>
+	<route npcId="33576" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-115048" y="244152" z="-7999" h="40959" delay="0"/>
+		<point x="-115224" y="244360" z="-7999" h="24575" delay="0"/>
+		<point x="-115224" y="244984" z="-7999" h="16383" delay="0"/>
+		<point x="-115032" y="245208" z="-7999" h="16383" delay="0"/>
+		<point x="-114424" y="245192" z="-7999" h="62180" delay="0"/>
+		<point x="-114184" y="245000" z="-7999" h="57343" delay="0"/>
+		<point x="-114200" y="244376" z="-7999" h="49151" delay="0"/>
+		<point x="-114392" y="244152" z="-7999" h="49151" delay="0"/>
+		<point x="-114920" y="244152" z="-7999" h="40959" delay="0"/>
+	</route>
+	<route npcId="33577" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-115016" y="244232" z="-7999" h="61025" delay="0"/>
+		<point x="-115160" y="244360" z="-7999" h="57343" delay="0"/>
+		<point x="-115176" y="244984" z="-7999" h="49151" delay="0"/>
+		<point x="-115000" y="245160" z="-7999" h="8191" delay="0"/>
+		<point x="-114424" y="245144" z="-7999" h="57343" delay="0"/>
+		<point x="-114248" y="245000" z="-7999" h="0" delay="0"/>
+		<point x="-114248" y="244376" z="-7999" h="49151" delay="0"/>
+		<point x="-114392" y="244248" z="-7999" h="40347" delay="0"/>
+		<point x="-114824" y="244216" z="-7999" h="33168" delay="0"/>
+	</route>
+	<route npcId="31364" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-46516" y="-117700" z="-240" delay="0" />
+		<point x="-45550" y="-115420" z="-240" delay="0" />
+		<point x="-44052" y="-114575" z="-240" delay="0" />
+		<point x="-44024" y="-112688" z="-240" delay="0" />
+		<point x="-45748" y="-111665" z="-240" delay="0" />
+		<point x="-46512" y="-109390" z="-208" delay="5" />
+	</route>
+	<route npcId="31365" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-48820" y="-113748" z="-232" delay="0" />
+		<point x="-47365" y="-113618" z="-224" delay="0" />
+		<point x="-45678" y="-113635" z="-240" delay="0" />
+		<point x="-45168" y="-114038" z="-224" delay="0" />
+		<point x="-44671" y="-114185" z="-240" delay="0" />
+		<point x="-44199" y="-113763" z="-240" delay="0" />
+		<point x="-44312" y="-113201" z="-240" delay="0" />
+		<point x="-44844" y="-112958" z="-240" delay="0" />
+		<point x="-45717" y="-113564" z="-240" delay="0" />
+		<point x="-47370" y="-113588" z="-224" delay="0" />
+		<point x="-48821" y="-113496" z="-232" delay="10" />
+		<point x="-48820" y="-113748" z="-232" delay="0" />
+	</route>
+	<route npcId="32072" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="84429" y="-144065" z="-1542" delay="10" />
+		<point x="84465" y="-142493" z="-1536" delay="0" />
+		<point x="85234" y="-140963" z="-1536" delay="0" />
+		<point x="87351" y="-140059" z="-1536" delay="5" />
+		<point x="89343" y="-140746" z="-1536" delay="0" />
+		<point x="90605" y="-143167" z="-1536" delay="0" />
+		<point x="90271" y="-143869" z="-1536" delay="10" />
+		<point x="90605" y="-143167" z="-1536" delay="0" />
+		<point x="89343" y="-140746" z="-1536" delay="0" />
+		<point x="87351" y="-140059" z="-1536" delay="5" />
+		<point x="85234" y="-140963" z="-1536" delay="0" />
+		<point x="84465" y="-142493" z="-1536" delay="0" />
+	</route>
+	<route npcId="31361" type="LINEAR" delay="1" isRunning="true" walkRange="0">
+		<point x="23436" y="11164" z="-3720" delay="0" />
+		<point x="20256" y="11104" z="-3720" delay="0" />
+		<point x="17330" y="13579" z="-3728" delay="0" />
+		<point x="17415" y="13044" z="-3736" delay="10" />
+		<point x="20153" y="12880" z="-3712" delay="0" />
+		<point x="21621" y="13349" z="-3624" delay="0" />
+		<point x="20686" y="10432" z="-3712" delay="0" />
+		<point x="22426" y="10260" z="-3648" delay="0" />
+		<point x="23436" y="11164" z="-3720" delay="0" />
+	</route>
+	<route npcId="31360" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="10968" y="14620" z="-4240" delay="0" />
+		<point x="11308" y="15847" z="-4584" delay="0" />
+		<point x="12119" y="16441" z="-4584" delay="0" />
+		<point x="15104" y="15661" z="-4376" delay="5" />
+		<point x="15265" y="16288" z="-4376" delay="0" />
+		<point x="12292" y="16934" z="-4584" delay="0" />
+		<point x="11777" y="17669" z="-4584" delay="0" />
+		<point x="11229" y="17650" z="-4568" delay="0" />
+		<point x="10641" y="17282" z="-4584" delay="0" />
+		<point x="7683" y="18034" z="-4376" delay="5" />
+		<point x="10551" y="16775" z="-4584" delay="0" />
+		<point x="11004" y="15942" z="-4584" delay="0" />
+		<point x="10827" y="14757" z="-4240" delay="0" />
+		<point x="10968" y="14620" z="-4240" delay="0" />
+	</route>
+	<route npcId="31362" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="115824" y="-181564" z="-1336" delay="20" />
+		<point x="116048" y="-181575" z="-1352" delay="0" />
+		<point x="116521" y="-181476" z="-1384" delay="0" />
+		<point x="116632" y="-180022" z="-1160" delay="0" />
+		<point x="115355" y="-178617" z="-928" delay="0" />
+		<point x="115763" y="-177585" z="-888" delay="0" />
+		<point x="115795" y="-177361" z="-880" delay="0" />
+		<point x="115877" y="-177338" z="-880" delay="15" />
+		<point x="115783" y="-177493" z="-880" delay="0" />
+		<point x="115112" y="-179836" z="-880" delay="0" />
+		<point x="115102" y="-180026" z="-872" delay="0" />
+		<point x="114876" y="-180045" z="-872" delay="30" />
+		<point x="114840" y="-179694" z="-872" delay="0" />
+		<point x="116322" y="-179602" z="-1088" delay="0" />
+		<point x="116792" y="-180386" z="-1200" delay="0" />
+		<point x="116319" y="-181573" z="-1384" delay="0" />
+		<point x="115824" y="-181564" z="-1336" delay="0" />
+	</route>
+	<route npcId="31363" type="LINEAR" delay="1" isRunning="true" walkRange="0">
+		<point x="115744" y="-183424" z="-1472" delay="60" />
+		<point x="115878" y="-183267" z="-1472" delay="0" />
+		<point x="116116" y="-183090" z="-1496" delay="0" />
+		<point x="116587" y="-184306" z="-1568" delay="10" />
+		<point x="116392" y="-184090" z="-1560" delay="0" />
+		<point x="117083" y="-182538" z="-1520" delay="0" />
+		<point x="117802" y="-182541" z="-1528" delay="10" />
+		<point x="116720" y="-182479" z="-1512" delay="10" />
+		<point x="115857" y="-183287" z="-1472" delay="0" />
+		<point x="115744" y="-183424" z="-1472" delay="0" />
+	</route>
+	<route npcId="31359" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="44964" y="50568" z="-3056" delay="0" />
+		<point x="44435" y="50025" z="-3056" delay="0" />
+		<point x="44455" y="49078" z="-3056" delay="0" />
+		<point x="45402" y="48437" z="-3056" delay="5" />
+		<point x="46104" y="48788" z="-3056" delay="5" />
+		<point x="46452" y="49743" z="-3056" delay="0" />
+		<point x="45730" y="50590" z="-3056" delay="60" />
+	</route>
+	<route npcId="31358" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="43932" y="51096" z="-2992" delay="0" />
+		<point x="43304" y="50364" z="-2992" delay="0" />
+		<point x="43041" y="49312" z="-2992" delay="0" />
+		<point x="43612" y="48322" z="-2992" delay="0" />
+		<point x="44009" y="47645" z="-2992" delay="0" />
+		<point x="45309" y="47341" z="-2992" delay="5" />
+		<point x="46726" y="47762" z="-2992" delay="0" />
+		<point x="47509" y="49004" z="-2992" delay="0" />
+		<point x="47443" y="50456" z="-2992" delay="0" />
+		<point x="47013" y="51287" z="-2992" delay="60" />
+	</route>
+	<route npcId="31357" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-82428" y="245204" z="-3712" delay="0" />
+		<point x="-82198" y="245361" z="-3712" delay="0" />
+		<point x="-82091" y="245028" z="-3720" delay="0" />
+		<point x="-82381" y="244911" z="-3720" delay="0" />
+		<point x="-82935" y="244481" z="-3728" delay="0" />
+		<point x="-83980" y="242776" z="-3728" delay="10" />
+		<point x="-85966" y="241371" z="-3728" delay="0" />
+		<point x="-86079" y="240868" z="-3720" delay="5" />
+		<point x="-86076" y="240392" z="-3712" delay="0" />
+		<point x="-86519" y="240706" z="-3704" delay="0" />
+		<point x="-86343" y="241130" z="-3728" delay="60" />
+	</route>
+	<route npcId="31356" type="LINEAR" delay="1" isRunning="true" walkRange="0">
+		<point x="-81926" y="243894" z="-3712" delay="3"/>
+		<point x="-82134" y="243600" z="-3728" delay="0"/>
+		<point x="-83182" y="243723" z="-3728" delay="0"/>
+		<point x="-84486" y="243236" z="-3728" delay="5"/>
+		<point x="-85205" y="243187" z="-3728" delay="0"/>
+		<point x="-86152" y="242898" z="-3728" delay="0"/>
+		<point x="-86288" y="242962" z="-3720" delay="0"/>
+		<point x="-86352" y="243207" z="-3720" delay="5"/>
+		<point x="-86501" y="242762" z="-3720" delay="0"/>
+		<point x="-86500" y="242615" z="-3728" delay="0"/>
+		<point x="-86123" y="241606" z="-3728" delay="0"/>
+		<point x="-85207" y="240698" z="-3728" delay="0"/>
+		<point x="-84066" y="241285" z="-3728" delay="5"/>
+		<point x="-83215" y="241170" z="-3728" delay="0"/>
+		<point x="-82364" y="242944" z="-3720" delay="0"/>
+		<point x="-81674" y="243391" z="-3712" delay="60"/>
+		<point x="-81926" y="243894" z="-3712" delay="0"/>
+	</route>
+	<route npcId="32070" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="84416" y="-144052" z="-1528" delay="5"/>
+		<point x="84460" y="-142495" z="-1536" delay="0"/>
+		<point x="85242" y="-140949" z="-1536" delay="0"/>
+		<point x="87362" y="-140059" z="-1536" delay="5"/>
+		<point x="89350" y="-140750" z="-1536" delay="0"/>
+		<point x="90607" y="-143176" z="-1536" delay="0"/>
+		<point x="90267" y="-143883" z="-1536" delay="5"/>
+	</route>
+	<route npcId="29095" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="147408" y="-43552" z="-2296" delay="0" />
+		<point x="147927" y="-43264" z="-2296" delay="0" />
+		<point x="148668" y="-43435" z="-2312" delay="0" />
+		<point x="149308" y="-43910" z="-2464" delay="0" />
+		<point x="150447" y="-44190" z="-2608" delay="0" />
+		<point x="151346" y="-44070" z="-2736" delay="4" />
+		<point x="152074" y="-43362" z="-2816" delay="0" />
+		<point x="152721" y="-42632" z="-2824" delay="0" />
+		<point x="153326" y="-41826" z="-2936" delay="0" />
+		<point x="153733" y="-41173" z="-3000" delay="0" />
+		<point x="154295" y="-40347" z="-3112" delay="4" />
+		<point x="154700" y="-39687" z="-3200" delay="0" />
+		<point x="155474" y="-39961" z="-3272" delay="0" />
+		<point x="155882" y="-40436" z="-3296" delay="0" />
+		<point x="156629" y="-41452" z="-3472" delay="0" />
+		<point x="156846" y="-42484" z="-3600" delay="4" />
+		<point x="156786" y="-44059" z="-3760" delay="0" />
+		<point x="157820" y="-45121" z="-3544" delay="0" />
+		<point x="158808" y="-45454" z="-3464" delay="0" />
+		<point x="159675" y="-46178" z="-3544" delay="0" />
+		<point x="160320" y="-46947" z="-3648" delay="4" />
+		<point x="159841" y="-47765" z="-3656" delay="0" />
+		<point x="158963" y="-48596" z="-3648" delay="0" />
+		<point x="159399" y="-49889" z="-3632" delay="0" />
+		<point x="159433" y="-51854" z="-3392" delay="0" />
+		<point x="159280" y="-53297" z="-3240" delay="4" />
+		<point x="159946" y="-54651" z="-3080" delay="0" />
+		<point x="160696" y="-55985" z="-2856" delay="0" />
+		<point x="160991" y="-57416" z="-2704" delay="0" />
+		<point x="160936" y="-58715" z="-2616" delay="0" />
+		<point x="160371" y="-59892" z="-2640" delay="4" />
+		<point x="158884" y="-60114" z="-2672" delay="0" />
+		<point x="157476" y="-59727" z="-2648" delay="0" />
+		<point x="155709" y="-59670" z="-2616" delay="0" />
+		<point x="155076" y="-59988" z="-2640" delay="0" />
+		<point x="154278" y="-60389" z="-2688" delay="4" />
+		<point x="153611" y="-61611" z="-2816" delay="0" />
+		<point x="153553" y="-62292" z="-2832" delay="0" />
+		<point x="153104" y="-63694" z="-2968" delay="0" />
+		<point x="151460" y="-64204" z="-3144" delay="0" />
+		<point x="149179" y="-64630" z="-3280" delay="4" />
+		<point x="147461" y="-64792" z="-3432" delay="0" />
+		<point x="145659" y="-64514" z="-3360" delay="0" />
+		<point x="144096" y="-64402" z="-3392" delay="0" />
+		<point x="141323" y="-62083" z="-3144" delay="0" />
+		<point x="140157" y="-61442" z="-3064" delay="4" />
+		<point x="138438" y="-61664" z="-3040" delay="0" />
+		<point x="138168" y="-61294" z="-3000" delay="0" />
+		<point x="138402" y="-60920" z="-3056" delay="0" />
+		<point x="138656" y="-59869" z="-3280" delay="0" />
+		<point x="138910" y="-58621" z="-3440" delay="4" />
+		<point x="138096" y="-57667" z="-3504" delay="0" />
+		<point x="138096" y="-56967" z="-3504" delay="0" />
+		<point x="138878" y="-56655" z="-3456" delay="0" />
+		<point x="139660" y="-56120" z="-3288" delay="0" />
+		<point x="139101" y="-54466" z="-3216" delay="4" />
+		<point x="139848" y="-52589" z="-2832" delay="0" />
+		<point x="139222" y="-51369" z="-2688" delay="0" />
+		<point x="139705" y="-50039" z="-2496" delay="0" />
+		<point x="139959" y="-48987" z="-2256" delay="0" />
+		<point x="140283" y="-47506" z="-2208" delay="4" />
+		<point x="140162" y="-46243" z="-2336" delay="0" />
+		<point x="142508" y="-45584" z="-2416" delay="0" />
+		<point x="143183" y="-44563" z="-2392" delay="0" />
+		<point x="144382" y="-43528" z="-2344" delay="0" />
+		<point x="145382" y="-43318" z="-2296" delay="4" />
+		<point x="147265" y="-43588" z="-2296" delay="0" />
+	</route>
+	<route npcId="33228" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-113494" y="255759" z="-1524" delay="0" />
+		<point x="-113473" y="255775" z="-1524" delay="0" />
+		<point x="-113442" y="255771" z="-1524" delay="0" />
+		<point x="-113432" y="255742" z="-1524" delay="0" />
+		<point x="-113443" y="255716" z="-1524" delay="0" />
+		<point x="-113466" y="255698" z="-1524" delay="0" />
+		<point x="-113496" y="255700" z="-1524" delay="0" />
+		<point x="-113508" y="255709" z="-1524" delay="0" />
+		<point x="-113504" y="255727" z="-1524" delay="0" />
+		<point x="-113500" y="255739" z="-1524" delay="0" />
+	</route>
+	<route npcId="33241" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114544" y="258706" z="-1192" delay="0" />
+		<point x="-114492" y="258769" z="-1192" delay="0" />
+		<point x="-114556" y="258763" z="-1192" delay="0" />
+		<point x="-114757" y="258809" z="-1192" delay="0" />
+		<point x="-114747" y="258935" z="-1192" delay="0" />
+		<point x="-114697" y="258930" z="-1192" delay="0" />
+		<point x="-114695" y="259157" z="-1192" delay="0" />
+		<point x="-114826" y="259132" z="-1192" delay="0" />
+		<point x="-114814" y="259280" z="-1192" delay="0" />
+	</route>
+	<route npcId="33242" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114058" y="259658" z="-1192" delay="0" />
+		<point x="-113894" y="259445" z="-1192" delay="0" />
+		<point x="-113747" y="259235" z="-1192" delay="0" />
+		<point x="-113856" y="259007" z="-1192" delay="0" />
+		<point x="-113846" y="259121" z="-1192" delay="0" />
+		<point x="-113889" y="259207" z="-1192" delay="0" />
+		<point x="-113939" y="259217" z="-1192" delay="0" />
+		<point x="-114076" y="259369" z="-1192" delay="0" />
+	</route>
+	<route npcId="33246" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114920" y="259866" z="-1192" delay="0" />
+		<point x="-114852" y="259835" z="-1192" delay="0" />
+		<point x="-114737" y="259866" z="-1192" delay="0" />
+		<point x="-114752" y="259715" z="-1192" delay="0" />
+		<point x="-114716" y="259715" z="-1192" delay="0" />
+		<point x="-114728" y="259465" z="-1192" delay="0" />
+		<point x="-114881" y="259447" z="-1192" delay="0" />
+		<point x="-115092" y="259549" z="-1192" delay="0" />
+		<point x="-114716" y="259582" z="-1192" delay="0" />
+	</route>
+	<route npcId="33121" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-113361" y="255703" z="-1524" delay="0" />
+		<point x="-113597" y="255868" z="-1533" delay="0" />
+		<point x="-113355" y="255695" z="-1524" delay="0" />
+		<point x="-113612" y="255863" z="-1533" delay="0" />
+		<point x="-113354" y="255696" z="-1524" delay="0" />
+		<point x="-113607" y="255870" z="-1533" delay="0" />
+		<point x="-113571" y="255845" z="-1534" delay="0" />
+		<point x="-113612" y="255874" z="-1533" delay="0" />
+		<point x="-113948" y="255693" z="-1537" delay="0" />
+		<point x="-114097" y="255607" z="-1539" delay="0" />
+		<point x="-114075" y="255502" z="-1540" delay="0" />
+		<point x="-114099" y="255621" z="-1539" delay="0" />
+		<point x="-113983" y="255703" z="-1537" delay="0" />
+		<point x="-113944" y="256031" z="-1538" delay="0" />
+		<point x="-113904" y="255821" z="-1536" delay="0" />
+		<point x="-113935" y="255965" z="-1538" delay="0" />
+		<point x="-113861" y="255907" z="-1538" delay="0" />
+		<point x="-113933" y="255667" z="-1537" delay="0" />
+		<point x="-113883" y="255685" z="-1535" delay="0" />
+		<point x="-113990" y="255460" z="-1541" delay="0" />
+		<point x="-113740" y="255764" z="-1531" delay="0" />
+		<point x="-113934" y="255650" z="-1537" delay="0" />
+		<point x="-113654" y="255559" z="-1523" delay="0" />
+		<point x="-113859" y="255683" z="-1533" delay="0" />
+		<point x="-113964" y="255771" z="-1537" delay="0" />
+		<point x="-113851" y="255515" z="-1534" delay="0" />
+		<point x="-113973" y="255700" z="-1537" delay="0" />
+		<point x="-113958" y="255660" z="-1538" delay="0" />
+		<point x="-114101" y="255883" z="-1538" delay="0" />
+		<point x="-113948" y="255659" z="-1538" delay="0" />
+		<point x="-114028" y="255784" z="-1538" delay="0" />
+		<point x="-113974" y="255702" z="-1537" delay="0" />
+		<point x="-114108" y="255913" z="-1538" delay="0" />
+		<point x="-114056" y="255577" z="-1540" delay="0" />
+		<point x="-114190" y="255578" z="-1538" delay="0" />
+		<point x="-114043" y="255542" z="-1541" delay="0" />
+		<point x="-114083" y="255850" z="-1538" delay="0" />
+		<point x="-113915" y="255611" z="-1538" delay="0" />
+		<point x="-114029" y="255853" z="-1538" delay="0" />
+		<point x="-113903" y="255612" z="-1537" delay="0" />
+		<point x="-113965" y="255735" z="-1536" delay="0" />
+		<point x="-113899" y="255620" z="-1536" delay="0" />
+		<point x="-114059" y="255915" z="-1538" delay="0" />
+		<point x="-113940" y="255703" z="-1537" delay="0" />
+		<point x="-114053" y="255954" z="-1538" delay="0" />
+		<point x="-113886" y="255638" z="-1536" delay="0" />
+		<point x="-114069" y="255985" z="-1538" delay="0" />
+		<point x="-113849" y="255528" z="-1534" delay="0" />
+		<point x="-113995" y="255806" z="-1538" delay="0" />
+		<point x="-113819" y="255457" z="-1532" delay="0" />
+		<point x="-113924" y="255510" z="-1539" delay="0" />
+		<point x="-113704" y="255707" z="-1524" delay="0" />
+		<point x="-114000" y="255666" z="-1538" delay="0" />
+		<point x="-113779" y="255843" z="-1532" delay="0" />
+		<point x="-114042" y="255718" z="-1538" delay="0" />
+		<point x="-113781" y="255886" z="-1533" delay="0" />
+		<point x="-114066" y="255735" z="-1538" delay="0" />
+		<point x="-113760" y="255924" z="-1534" delay="0" />
+		<point x="-113998" y="255779" z="-1538" delay="0" />
+		<point x="-113801" y="255925" z="-1536" delay="0" />
+		<point x="-114028" y="255776" z="-1538" delay="0" />
+		<point x="-113774" y="255923" z="-1534" delay="0" />
+		<point x="-113903" y="255836" z="-1537" delay="0" />
+		<point x="-113734" y="255954" z="-1534" delay="0" />
+		<point x="-113964" y="255805" z="-1538" delay="0" />
+		<point x="-113583" y="256030" z="-1534" delay="0" />
+		<point x="-113803" y="255901" z="-1535" delay="0" />
+		<point x="-113716" y="255951" z="-1533" delay="0" />
+		<point x="-113853" y="256032" z="-1539" delay="0" />
+		<point x="-113573" y="256100" z="-1534" delay="0" />
+		<point x="-113871" y="256031" z="-1538" delay="0" />
+		<point x="-113573" y="256099" z="-1534" delay="0" />
+		<point x="-113885" y="256036" z="-1538" delay="0" />
+		<point x="-113822" y="255863" z="-1533" delay="0" />
+		<point x="-113937" y="255785" z="-1537" delay="0" />
+		<point x="-113908" y="255720" z="-1535" delay="0" />
+		<point x="-113944" y="255674" z="-1537" delay="0" />
+		<point x="-113702" y="255727" z="-1524" delay="0" />
+		<point x="-113991" y="255661" z="-1538" delay="0" />
+		<point x="-113823" y="255686" z="-1531" delay="0" />
+		<point x="-113946" y="255686" z="-1537" delay="0" />
+		<point x="-113819" y="255689" z="-1531" delay="0" />
+		<point x="-113962" y="255679" z="-1537" delay="0" />
+		<point x="-113620" y="255710" z="-1524" delay="0" />
+		<point x="-113889" y="255676" z="-1535" delay="0" />
+		<point x="-113613" y="255709" z="-1524" delay="0" />
+		<point x="-113838" y="255779" z="-1532" delay="0" />
+		<point x="-113870" y="255909" z="-1538" delay="0" />
+		<point x="-113743" y="255842" z="-1532" delay="0" />
+		<point x="-113718" y="255725" z="-1524" delay="0" />
+		<point x="-113754" y="255399" z="-1535" delay="0" />
+		<point x="-113612" y="255521" z="-1524" delay="0" />
+		<point x="-113743" y="255730" z="-1531" delay="0" />
+		<point x="-113749" y="255829" z="-1531" delay="0" />
+	</route>
+	<route npcId="33208" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114281" y="257288" z="-1164" delay="0" />
+		<point x="-114782" y="257005" z="-1164" delay="0" />
+		<point x="-114785" y="256732" z="-1256" delay="0" />
+		<point x="-114247" y="256429" z="-1310" delay="0" />
+		<point x="-114297" y="255864" z="-1538" delay="0" />
+		<point x="-114166" y="255112" z="-1558" delay="0" />
+		<point x="-114294" y="255830" z="-1538" delay="0" />
+		<point x="-114236" y="256412" z="-1316" delay="0" />
+		<point x="-114789" y="256730" z="-1256" delay="0" />
+		<point x="-114800" y="256984" z="-1164" delay="0" />
+		<point x="-114411" y="257199" z="-1164" delay="0" />
+		<point x="-114332" y="257300" z="-1164" delay="0" />
+		<point x="-114456" y="257148" z="-1164" delay="0" />
+		<point x="-114799" y="257005" z="-1164" delay="0" />
+		<point x="-114713" y="256680" z="-1285" delay="0" />
+		<point x="-114262" y="256443" z="-1310" delay="0" />
+		<point x="-114298" y="255877" z="-1538" delay="0" />
+		<point x="-114163" y="255135" z="-1556" delay="0" />
+	</route>
+	<route npcId="33120" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="-114702" y="255075" z="-1554" delay="0" />
+		<point x="-114871" y="255345" z="-1540" delay="0" />
+		<point x="-114726" y="255134" z="-1550" delay="0" />
+		<point x="-114883" y="255356" z="-1539" delay="0" />
+		<point x="-114708" y="255089" z="-1554" delay="0" />
+		<point x="-114877" y="255370" z="-1539" delay="0" />
+		<point x="-114680" y="255032" z="-1557" delay="0" />
+		<point x="-114631" y="255209" z="-1547" delay="0" />
+		<point x="-114938" y="255246" z="-1541" delay="0" />
+		<point x="-114720" y="255431" z="-1541" delay="0" />
+		<point x="-114980" y="255275" z="-1536" delay="0" />
+		<point x="-114713" y="255467" z="-1542" delay="0" />
+		<point x="-114999" y="255276" z="-1534" delay="0" />
+		<point x="-114894" y="255226" z="-1542" delay="0" />
+		<point x="-115044" y="255346" z="-1530" delay="0" />
+		<point x="-114826" y="255221" z="-1542" delay="0" />
+		<point x="-115055" y="255353" z="-1524" delay="0" />
+		<point x="-114825" y="255231" z="-1542" delay="0" />
+		<point x="-114795" y="255302" z="-1541" delay="0" />
+		<point x="-115057" y="255351" z="-1524" delay="0" />
+		<point x="-114715" y="255308" z="-1540" delay="0" />
+		<point x="-114741" y="255484" z="-1543" delay="0" />
+		<point x="-114789" y="255322" z="-1541" delay="0" />
+		<point x="-114782" y="255438" z="-1541" delay="0" />
+		<point x="-114799" y="255312" z="-1541" delay="0" />
+		<point x="-114908" y="255253" z="-1541" delay="0" />
+		<point x="-114805" y="255387" z="-1541" delay="0" />
+		<point x="-114889" y="255289" z="-1541" delay="0" />
+		<point x="-114804" y="255451" z="-1541" delay="0" />
+		<point x="-114857" y="255407" z="-1540" delay="0" />
+		<point x="-115038" y="255405" z="-1531" delay="0" />
+		<point x="-115015" y="255295" z="-1532" delay="0" />
+		<point x="-115062" y="255343" z="-1524" delay="0" />
+		<point x="-115024" y="255094" z="-1538" delay="0" />
+		<point x="-114734" y="255216" z="-1545" delay="0" />
+		<point x="-115010" y="255290" z="-1533" delay="0" />
+		<point x="-114527" y="255317" z="-1541" delay="0" />
+		<point x="-114642" y="255571" z="-1538" delay="0" />
+		<point x="-114932" y="255487" z="-1534" delay="0" />
+		<point x="-114813" y="255750" z="-1542" delay="0" />
+		<point x="-114830" y="255184" z="-1545" delay="0" />
+		<point x="-114602" y="255192" z="-1549" delay="0" />
+		<point x="-114582" y="255481" z="-1539" delay="0" />
+		<point x="-114553" y="255435" z="-1538" delay="0" />
+		<point x="-114551" y="255572" z="-1538" delay="0" />
+		<point x="-114792" y="255413" z="-1541" delay="0" />
+		<point x="-114745" y="255371" z="-1539" delay="0" />
+		<point x="-114979" y="255261" z="-1537" delay="0" />
+		<point x="-114749" y="255325" z="-1540" delay="0" />
+		<point x="-114700" y="255211" z="-1546" delay="0" />
+		<point x="-114939" y="255197" z="-1543" delay="0" />
+		<point x="-115002" y="255268" z="-1535" delay="0" />
+		<point x="-114857" y="255448" z="-1540" delay="0" />
+		<point x="-115113" y="255427" z="-1524" delay="0" />
+		<point x="-114892" y="255538" z="-1536" delay="0" />
+		<point x="-114816" y="255320" z="-1542" delay="0" />
+		<point x="-114799" y="255416" z="-1541" delay="0" />
+		<point x="-114855" y="255239" z="-1542" delay="0" />
+		<point x="-114783" y="255227" z="-1543" delay="0" />
+		<point x="-114775" y="255535" z="-1541" delay="0" />
+		<point x="-114757" y="255287" z="-1540" delay="0" />
+		<point x="-114551" y="255134" z="-1552" delay="0" />
+		<point x="-114795" y="255228" z="-1543" delay="0" />
+		<point x="-114534" y="255104" z="-1553" delay="0" />
+		<point x="-114776" y="255190" z="-1546" delay="0" />
+	</route>
+	<route npcId="32901" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="206413" y="88164" z="-1146" delay="0" />
+		<point x="206226" y="88548" z="-1147" delay="0" />
+		<point x="206351" y="89023" z="-1147" delay="0" />
+		<point x="206587" y="89325" z="-1147" delay="0" />
+		<point x="207086" y="89470" z="-1147" delay="0" />
+		<point x="207539" y="89443" z="-1147" delay="0" />
+		<point x="207904" y="89164" z="-1146" delay="0" />
+		<point x="208011" y="88652" z="-1147" delay="0" />
+		<point x="207922" y="88248" z="-1143" delay="0" />
+		<point x="207607" y="87924" z="-1145" delay="0" />
+		<point x="207199" y="87714" z="-1137" delay="0" />
+		<point x="207609" y="87926" z="-1146" delay="0" />
+		<point x="207918" y="88239" z="-1142" delay="0" />
+		<point x="208018" y="88642" z="-1147" delay="0" />
+		<point x="207916" y="89140" z="-1146" delay="0" />
+		<point x="207555" y="89439" z="-1147" delay="0" />
+		<point x="207116" y="89477" z="-1147" delay="0" />
+		<point x="206612" y="89347" z="-1147" delay="0" />
+		<point x="206363" y="89049" z="-1147" delay="0" />
+		<point x="206231" y="88559" z="-1147" delay="0" />
+		<point x="206397" y="88192" z="-1147" delay="0" />
+		<point x="206628" y="87935" z="-1147" delay="0" />
+		<point x="207007" y="87808" z="-1147" delay="0" />
+		<point x="206641" y="87923" z="-1147" delay="0" />
+		<point x="206418" y="88163" z="-1147" delay="0" />
+		<point x="206230" y="88543" z="-1147" delay="0" />
+	</route>
+	<route npcId="32902" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="205359" y="88653" z="-1053" delay="0" />
+		<point x="205548" y="88024" z="-1052" delay="0" />
+		<point x="205547" y="88023" z="-1052" delay="0" />
+		<point x="206094" y="87403" z="-1050" delay="0" />
+		<point x="206798" y="87228" z="-1076" delay="0" />
+		<point x="207146" y="87210" z="-1083" delay="0" />
+		<point x="207409" y="87301" z="-1097" delay="0" />
+		<point x="207902" y="87454" z="-1083" delay="0" />
+		<point x="208318" y="87870" z="-1090" delay="0" />
+		<point x="208631" y="88314" z="-1056" delay="0" />
+		<point x="208819" y="88847" z="-1053" delay="0" />
+		<point x="208625" y="88322" z="-1058" delay="0" />
+		<point x="207909" y="87455" z="-1082" delay="0" />
+		<point x="207139" y="87211" z="-1083" delay="0" />
+		<point x="206800" y="87228" z="-1076" delay="0" />
+		<point x="206136" y="87370" z="-1053" delay="0" />
+		<point x="205568" y="87997" z="-1052" delay="0" />
+		<point x="205338" y="88719" z="-1053" delay="0" />
+	</route>
+	<route npcId="32903" type="LINEAR" delay="1" isRunning="false" walkRange="0">
+		<point x="206166" y="87839" z="-1131" delay="0" />
+		<point x="206498" y="87600" z="-1135" delay="0" />
+		<point x="206981" y="87501" z="-1137" delay="0" />
+		<point x="207413" y="87548" z="-1137" delay="0" />
+		<point x="207760" y="87798" z="-1137" delay="0" />
+		<point x="207984" y="88096" z="-1137" delay="0" />
+		<point x="208148" y="88507" z="-1137" delay="0" />
+		<point x="208065" y="89276" z="-1137" delay="0" />
+		<point x="207838" y="89627" z="-1137" delay="0" />
+		<point x="207355" y="89664" z="-1137" delay="0" />
+		<point x="207833" y="89635" z="-1137" delay="0" />
+		<point x="208054" y="89308" z="-1137" delay="0" />
+		<point x="208149" y="88511" z="-1137" delay="0" />
+		<point x="207968" y="88073" z="-1137" delay="0" />
+		<point x="207761" y="87795" z="-1137" delay="0" />
+		<point x="207413" y="87556" z="-1137" delay="0" />
+		<point x="207014" y="87500" z="-1137" delay="0" />
+		<point x="206521" y="87586" z="-1135" delay="0" />
+		<point x="206146" y="87855" z="-1130" delay="0" />
+	</route>
+
+	<route npcId="32971" type="RANDOM" delay="1" isRunning="true" walkRange="1000"/>
+</list>

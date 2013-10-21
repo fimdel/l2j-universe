@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="22882" name="Hair Accessory Appearance Restoration Stone">
+	<!-- Dimensional Item
+	Restores the original appearance of a modified hair accessory. Double click to use. Cannot be exchanged/dropped. Can be destroyed and stored in a private warehouse. Can be shared between characters within the same account through the Dimensional Merchant. -->
+		<set name="icon" value="BranchSys3.icon.g_bless_wp_processing_stone_r"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+</list>

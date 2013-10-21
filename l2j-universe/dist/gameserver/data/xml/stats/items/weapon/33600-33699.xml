@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="33650" name="Shilen Wand">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_apprentices_wand_i00"/>
+		<set name="weight" value="1080"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="10"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+</list>

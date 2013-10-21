@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="14156" levels="1" name="Snake">
+    <!-- none -->
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14157" levels="1" name="Long Snake">
+    <!-- none -->
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14158" levels="1" name="Crawler Spear">
+    <!-- none -->
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14164" levels="1" name="Arcane Jet">
+    <!-- none -->
+		<set name="icon" val="icon.skill1275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14165" levels="1" name="Arcane Bust">
+    <!-- none -->
+		<set name="icon" val="icon.skill1275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14167" levels="1" name="Black Powder">
+    <!-- none -->
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14168" levels="1" name="Throw Grenade">
+    <!-- none -->
+		<set name="icon" val="icon.skill1275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14172" levels="1" name="Ray of Pain">
+    <!-- Atk. Spd. is decreased. -->
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="power" val="50"/>
+		<set name="mpConsume" val="15"/>
+		<effect name="Debuff" count="1" time="30" val="0">
+			<mul order="0x30" stat="pAtkSpd" val="0.85"/> <!-- TODO: Значение с потолка -->
+		</effect>
+	</skill>
+	<skill id="14174" levels="1" name="Black Powder Eruption">
+    <!-- none -->
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="power" val="50"/>
+		<set name="mpConsume" val="15"/>
+	</skill>
+	<skill id="14187" levels="1" name="Magmeld Teleport">
+    <!-- Teleports to Magmeld Ancient City Arcan. -->
+		<set name="magicLevel" val="1"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="10000"/>
+		<set name="reuseDelay" val="1800000"/>
+		<set name="skillType" val="RECALL"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="useSS" val="false"/>
+		<set name="loc" val="207528;86576;-1000"/>
+		<cond msgId="2292">
+			<player agathion="16080"/>
+		</cond>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+</list>

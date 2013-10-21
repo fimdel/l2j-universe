@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="937" name="Directions to Ruins">
+	<!-- Follow the northwestern path from the village, and head west when you meet the Obelisk of Victory. The entrance to the ruins lies at the slope of the mountain. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="938" name="Deck">
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="95"/>
+		<set name="icon" value="icon.etc_spell_books_red_i00"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="939" name="Gara's Quest Item #11">
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal52"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="940" name="Gara's Quest Item #12">
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal52"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="941" name="Gara's Mark of Bravery">
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal52"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="942" name="Gara's Mark of Justice">
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal52"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="943" name="Gara's Mark of Despair">
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal52"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="944" name="Deathknight Skull">
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.armor_head15"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="947" name="Scroll: Enchant Weapon (B-grade)">
+	<!-- When enchanted, increases P. Atk. by 3 for B-grade one-handed swords, one-handed blunts, daggers, spears, and other weapons. increases P. Atk. by 4 for two-handed swords, two-handed blunts, dualswords, and two-handed fist weapons. increases P. Atk. by 6 for bows. Increases M. Atk. by 3 for all weapons. Starting at + 4, P. Atk. / M. Atk. bonus double. Enchanting is safe up to + 3. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i03"/>
+		<set name="price" value="500000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="948" name="Scroll: Enchant Armor (B-grade)">
+	<!-- Increases P. Def. by 1 for B-grade armor and accessories. Starting from + 4, increases P. Def. by 3. Can be safely enchanted up to + 3. For one-piece armor, it can safely be enchanted up to + 4. HP gradually increases with each enchant level starting from + 4. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i03"/>
+		<set name="price" value="80000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="949" name="Crystal Scroll: Enchant Weapon (B-grade)">
+	<!-- Scroll of enchantment that empowers a B-grade weapon. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="price" value="80000"/>
+		<set name="type" value="SCROLL"/>
+		<set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="950" name="Crystal Scroll: Enchant Armor (B-grade)">
+	<!-- Scroll of enchantment that empowers a B-grade armor. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+		<set name="price" value="80000"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="951" name="Scroll: Enchant Weapon (C-grade)">
+	<!-- When enchanted, increases P. Atk. by 3 for C-grade one-handed swords, one-handed blunts, daggers, spears, and other weapons. increases P. Atk. by 4 for two-handed swords, two-handed blunts, dualswords, and two-handed fist weapons. increases P. Atk. by 6 for bows. Increases M. Atk. by 3 for all weapons. Starting at + 4, P. Atk. / M. Atk. bonus double. Enchanting is safe up to + 3. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i02"/>
+		<set name="price" value="110000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="952" name="Scroll: Enchant Armor (C-grade)">
+	<!-- Increases P. Def. by 1 for C-grade armor and accessories. Increases by 3 starting from + 4. It can safely be enchanted up to + 3. For one-piece armor, it can safely be enchanted up to + 4. HP gradually increases with each enchant level starting from + 4. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i02"/>
+		<set name="price" value="15000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="953" name="Crystal Scroll: Enchant Weapon (C-grade)">
+	<!-- Scroll of enchantment that empowers a C-grade weapon. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="price" value="15000"/>
+		<set name="type" value="SCROLL"/>
+		<set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="954" name="Crystal Scroll: Enchant Armor (C-grade)">
+	<!-- Scroll of enchantment that empowers a C-grade armor. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+		<set name="price" value="15000"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="955" name="Scroll: Enchant Weapon (D-grade)">
+	<!-- When enchanted, increases P. Atk. by 2 for all D-grade weapons with the exception of bows, which will Increases by 4. Increases M. Atk. by 2 for all weapons. Starting at + 4, P. Atk. / M. Atk. bonus double. Enchanting is safe up to + 3. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="price" value="50000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="956" name="Scroll: Enchant Armor (D-grade)">
+	<!-- Increases P. Def. by 1 for D-grade armor and accessories. Increases by 3 starting from + 4. It can safely be enchanted up to + 3. For one-piece armor, it can safely be enchanted up to + 4. HP gradually increases with each enchant level starting from + 4. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+		<set name="price" value="6000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="957" name="Crystal Scroll: Enchant Weapon (D-grade)">
+	<!-- Scroll of enchantment that empowers a D-grade weapon. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="price" value="6000"/>
+		<set name="type" value="SCROLL"/>
+		<set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="958" name="Crystal Scroll: Enchant Armor (D-grade)">
+	<!-- Scroll of enchantment that empowers a D-grade armor. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+		<set name="price" value="6000"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="959" name="Scroll: Enchant Weapon (S-grade)">
+	<!-- When enchanted, increases P. Atk. by 5 for S-grade one-handed swords, one-handed blunts, daggers, spears, and other weapons. increases P. Atk. by 6 for two-handed swords, two-handed blunts, dualswords, and two-handed fist weapons. increases P. Atk. by 10 for bows. Increases M. Atk. by 4 for all weapons. Starting at + 4, P. Atk. / M. Atk. bonus double. Enchanting is safe up to + 3. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i05"/>
+		<set name="price" value="5000000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="960" name="Scroll: Enchant Armor (S-grade)">
+	<!-- When enchanted, P. Def. increases by 1 for S-grade armor and accessories. Starting at + 4, P. Def. increases by 3 and a HP bonus is granted. Enchanting is safe up to + 3, but one-piece body armor can be safely enchanted up to + 4. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="price" value="500000"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="961" name="Crystal Scroll: Enchant Weapon (S-grade)">
+	<!-- Scroll of enchantment that empowers an S-grade weapon. -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+		<set name="price" value="500000"/>
+		<set name="type" value="SCROLL"/>
+		<set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="962" name="Crystal Scroll: Enchant Armor (S-grade)">
+	<!-- Scroll of enchantment that empowers an S-grade armor -->
+		<set name="class" value="MISC"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+		<set name="price" value="500000"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="963" name="Orc Arrowhead">
+	<!-- Arrowhead that Turath orc marksmen use on Talking Island. Collect these and take to Master Minia. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.weapon_winged_spear_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="964" name="Alberius' Letter">
+	<!-- Letter from Alberius. Take this to Master Cobendell. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_scroll_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="965" name="Evergreen Amulet">
+	<!-- Necklace set with a green elemental stone. You must possess this to slay the dryad and obtain the dryad's tears. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.accessary_near_forest_necklace_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="966" name="Dryad's Tears">
+	<!-- Jewel that contains the essence of a dryad's soul. Gather ten of these and take them to Master Cobendell. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_crystal_ball_green_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="967" name="Cobendell's Medicine">
+	<!-- Cobendell's medicine -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_canuse24"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="968" name="Karrod's Letter">
+	<!-- Letter written by Blacksmith Karrod. Take this to the Abyssal Celebrant Cecktinon in the Shilen Temple. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_scroll_gray_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="969" name="Cecktinon's First Voucher">
+	<!-- Introduction letter from the Abyssal Celebrant Cecktinon. Take this and seek Magister Harne in the village. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="970" name="Cecktinon's Second Voucher">
+	<!-- Introduction letter from the Abyssal Celebrant Cecktinon. Go to the School of Dark Arts, hunt skeletons, and gather 10 bone fragments. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_letter_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="971" name="Soul Catcher">
+	<!-- Item used during the exorcism ritual to call upon a spirit of the dead. Take this to the Abyssal Celebrant Cecktinon. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.weapon_voodoo_doll_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="972" name="Preserving Oil">
+	<!-- Oil that when used, prevents the rotting of corpses. Take this and go hunt zombies in the swamps. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_potion_clear_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="973" name="Zombie Head">
+	<!-- The head of tree Elf zombies that have been cut after they are defeated. Take this to the abyssal celebrant Cecktinon. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_skull_black_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="974" name="Steelbender Head">
+	<!-- Please, I beg of you!  Don't take me to that nasty-tempered blacksmith! -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_skull_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="976" name="1st Badge of Sentinel">
+	<!-- A badge that certifies that its bearer is an Elven Sentinel. Destroy an orc Tanuki skullcrusher and report to Sentinel Kendell. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_system03"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="977" name="2nd Badge of Sentinel">
+	<!-- A badge that certifies that its bearer is an Elven Sentinel. Destroy an orc Bhato bloodspear and report to Sentinel Kendell. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_system03"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="978" name="Skullcrusher Amulet">
+	<!-- The amulet that represents the Skullcrusher Orc tribe. Take this to Sentinel Kendell. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal145"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="979" name="Bloodspear Amulet">
+	<!-- The amulet that represents the Bloodspear Orc tribe. Take this to Sentinel Kendell. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal89"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="980" name="0">
+	<!-- 0 -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.weapon_mace23"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="982" name="Esrandell's Letter">
+	<!-- Esrandell's introduction -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal20"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="983" name="Kendell's Letter">
+	<!-- Kendell's letter -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.item_normal20"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="984" name="1st Onyx Talisman">
+	<!-- Necklace crafted of onyx. Take this to Abyssal Celebrant Kartia. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.accessary_sages_necklace_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="985" name="2nd Onyx Talisman">
+	<!-- Necklace crafted of onyx. Recover the original scrolls from the blackskull Orcs and bring them to Abyssal Celebrant Kartia. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.accessary_sages_necklace_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="986" name="Ancient Scroll">
+	<!-- Ancient scroll called Kaysha's Revelation. Take it along with the clay tablet to Abyssal Celebrant Kartia. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_scroll_gray_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="987" name="Ancient Clay Tablet">
+	<!-- Ancient clay tablet engraved with text. Take it along with the ancient scroll to Abyssal Celebrant Kartia. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_plate_glay_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="988" name="Kartia's Translation">
+	<!-- Kartia's translation of Kaysha's Revelations. Take it to Tetrarch Thifiell. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="durability" value="100"/>
+		<set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+</list>

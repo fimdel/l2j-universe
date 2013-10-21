@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="11301" levels="8" name="Dimension Storm">
+    <!-- Attack nearby enemies with 152 Power added to M. Atk. -->
+		<table name="#power">152 154 157 161 165 169 173 177</table>
+		<table name="#magicLevel">85 86 87 88 89 90 91 92</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="2560"/>
+		<set name="mpConsume2" val="#mpConsume2"/>	
+		<set name="magicLevel" val="#magicLevel"/>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#power"/>
+		<set name="isMagic" val="false"/>
+		<set name="skillRadius" val="200"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="overHit" val="true"/>
+		<set name="soulBoost" val="true"/>
+		<for/>
+	</skill>
+	<skill id="11302" levels="8" name="Servitor Major Heal">
+    <!-- 
+	11302	1	Servitor Major Heal	Heals the servitor with 1488 Power.
+	11302	2	Servitor Major Heal	Heals the servitor with 1495 Power.
+	11302	3	Servitor Major Heal	Heals the servitor with 1507 Power.
+	11302	4	Servitor Major Heal	Heals the servitor with 1519 Power.
+	11302	5	Servitor Major Heal	Heals the servitor with 1532 Power.
+	11302	6	Servitor Major Heal	Heals the servitor with 1544 Power.
+	11302	7	Servitor Major Heal	Heals the servitor with 1557 Power.
+	11302	8	Servitor Major Heal	Heals the servitor with 1570 Power.
+	11302	101	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 1 Cost	Decreases MP Consumption.
+	11302	102	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 2 Cost	Decreases MP Consumption.
+	11302	103	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 3 Cost	Decreases MP Consumption.
+	11302	104	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 4 Cost	Decreases MP Consumption.
+	11302	105	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 5 Cost	Decreases MP Consumption.
+	11302	106	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 6 Cost	Decreases MP Consumption.
+	11302	107	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 7 Cost	Decreases MP Consumption.
+	11302	108	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 8 Cost	Decreases MP Consumption.
+	11302	109	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 9 Cost	Decreases MP Consumption.
+	11302	110	Servitor Major Heal	Recovers servitor's HP by 1570. Enchant Cost: Decreases MP Consumption.	+ 10 Cost	Decreases MP Consumption.
+	-->
+		<table name="#effectPoint">711 722 733 743 753 763 772 780</table>
+		<table name="#power">1488 1495 1507 1519 1532 1544 1557 1570</table>
+		<table name="#magicLevel">85 86 87 88 89 90 91 92</table>
+		<table name="#mpConsume2">70 75 80 85 88 90 95 99</table>
+		<set name="reuseDelay" val="3000"/>
+		<set name="hitTime" val="3500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="relationSkillsId" val="1127;"/> 
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SUMMON"/>
+		<set name="skillType" val="HEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">67 64 61 58 56 53 50 47 44 42</table>
+		</enchant1>
+	</skill>
+	<skill id="11303" levels="1" name="Mass Servitor Magic Barrier">
+    <!-- Increases M. Def. of all servitors by 30% for 30 minutes. -->
+		<table name="#Tab-mDef">1.3</table>
+		<table name="#effectPoint">495</table>
+		<table name="#abnormal_lv">1</table>
+		<table name="#abnormal_time">1800</table>
+		<table name="#mpConsume2">70</table>
+		<set name="relationSkillsId" val="1139;"/> 
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="3500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+        <enchant1 levels="10" name="Cost"/>
+        <enchant2 levels="10" name="Time">
+            <table name="#abnormal_time">1980 2160 2340 2520 2700 2880 3060 3240 3420 3600</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+        </enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="MagicDefUp" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mDef" val="#Tab-mDef"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11304" levels="1" name="Mass Servitor Haste">
+    <!-- Increases Atk. Spd. of all servitors by 34% for 30 minutes. -->
+		<table name="#Tab-pAtkSpd">1.34</table>
+		<table name="#effectPoint">495</table>
+		<table name="#abnormal_lv">1</table>
+		<table name="#abnormal_time">1800</table>
+		<table name="#mpConsume2">70</table>
+		<set name="relationSkillsId" val="1141;"/> 
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="3500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+        <enchant1 levels="10" name="Cost"/>
+        <enchant2 levels="10" name="Time">
+            <table name="#abnormal_time">1980 2160 2340 2520 2700 2880 3060 3240 3420 3600</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+        </enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="pAtkSpeedUp" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-pAtkSpd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11305" levels="1" name="Mass Servitor Shield">
+    <!-- Increases all servitors' P. Def. by 15% for 30 minutes. -->
+		<table name="#Tab-pDef">1.15</table>
+		<table name="#effectPoint">532</table>
+		<table name="#abnormal_lv">1</table>
+		<table name="#abnormal_time">1800</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="10000"/>
+		<set name="relationSkillsId" val="1140;"/> 
+		<set name="hitTime" val="3500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+        <enchant1 levels="10" name="Cost"/>
+        <enchant2 levels="10" name="Time">
+            <table name="#abnormal_time">1980 2160 2340 2520 2700 2880 3060 3240 3420 3600</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+        </enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="pDef" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="pDef" val="#Tab-pDef"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11306" levels="1" name="Mass Servitor Empower">
+    <!-- Increases all servitors' M. Atk. by 79% for 30 minutes. -->
+		<table name="#Tab-mAtk">1.79</table>
+		<table name="#effectPoint">495</table>
+		<table name="#abnormal_lv">1</table>
+		<table name="#abnormal_time">1800</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="3500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="relationSkillsId" val="1145;"/> 
+		<set name="castRange" val="900"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+        <enchant1 levels="10" name="Cost"/>
+        <enchant2 levels="10" name="Time">
+            <table name="#abnormal_time">1980 2160 2340 2520 2700 2880 3060 3240 3420 3600</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+        </enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="mAtk" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mAtk" val="#Tab-mAtk"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11307" levels="1" name="Mass Servitor Might">
+    <!-- Increases all servitors' P. Atk. by 17% for 30 minutes. -->
+		<table name="#pAtk">1.17</table>
+		<table name="#effectPoint">495</table>
+		<table name="#abnormal_lv">1</table>
+		<table name="#abnormal_time">1800</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="10000"/>
+		<set name="relationSkillsId" val="1146;"/> 
+		<set name="hitTime" val="3500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+        <enchant1 levels="10" name="Cost"/>
+        <enchant2 levels="10" name="Time">
+            <table name="#abnormal_time">1980 2160 2340 2520 2700 2880 3060 3240 3420 3600</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+        </enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="pAtk" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="pAtk" val="#pAtk"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11308" levels="1" name="Mass Servitor Wind Walk">
+    <!-- Increases Speed of all servitors by 34% for 30 minutes. -->
+		<table name="#runSpd">1.34</table>
+		<table name="#effectPoint">495</table>
+		<table name="#abnormal_lv">1</table>
+		<table name="#abnormal_time">1800</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="10000"/>
+		<set name="relationSkillsId" val="1144;"/>  
+		<set name="hitTime" val="3500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+        <enchant1 levels="10" name="Cost"/>
+        <enchant2 levels="10" name="Time">
+            <table name="#abnormal_time">1980 2160 2340 2520 2700 2880 3060 3240 3420 3600</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+        </enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="runSpd" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="runSpd" val="#runSpd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11309" levels="1" name="Mass Servitor Cleanse">
+    <!-- Cancel all servitors' debuffs. -->
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="30000"/>
+		<set name="hitTime" val="3500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="magicLevel" val="85"/>
+		<set name="relationSkillsId" val="1301;"/> 
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="NEGATE_EFFECTS"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="negateEffects" val="Root;Paralyze;Debuff"/>
+		<set name="negateStackType" val="RunSpeedDown;pAtkSpdDown"/>
+		<enchant1 levels="10" name="Cost"/>
+		<for/>
+	</skill>
+	<skill id="11310" levels="1" name="Mass Servitor Ultimate Defense">
+	<!-- Increases all servitor's P. Def. by 4680 and M. Def. by 4212 for 60 seconds. -->
+		<table name="#pDef">4680</table>
+		<table name="#mDef">4212</table>
+		<table name="#power">1</table>
+		<table name="#abnormal_time">60</table>
+		<table name="#mpConsume2">70</table>
+		<set name="magicLevel" val="85"/>
+		<set name="reuseDelay" val="900000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="relationSkillsId" val="1299;"/> 
+		<set name="castRange" val="900"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<enchant1 levels="10" name="Cost"/>
+		<enchant2 levels="10" name="Time">
+			<table name="#abnormal_time">61 62 63 64 65 66 67 68 69 70</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Wind Walk"/> <!--TODO-->
+		<for>
+			<effect count="1" name="Immobilize" stackOrder="-1" stackType="Immobilize" time="#abnormal_time" val="0">
+				<add order="0x40" stat="pDef" val="#pDef"/>
+				<add order="0x40" stat="mDef" val="#mDef"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11311" levels="3" name="Naviarope Strike">
+    <!-- Inflicts a powerful blow. -->
+		<table name="#power">4848 5098 5348</table>
+		<set name="effectPoint" val="679"/>
+		<table name="#magicLevel">85 86 87</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="40"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="overHit" val="true"/>
+		<set name="criticalRate" val="10"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="cancelTarget" val="50"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="shieldignore" val="true"/>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<for/>
+	</skill>
+	<skill id="11312" levels="3" name="Naviarope Flame">
+    <!-- Inflicts a powerful long-range attack. -->
+		<table name="#power">4848 5098 5348</table>
+		<set name="effectPoint" val="679"/>
+		<table name="#magicLevel">85 86 87</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillRadius" val="500"/>
+		<set name="overHit" val="true"/>
+		<set name="criticalRate" val="10"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="cancelTarget" val="50"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="shieldignore" val="true"/>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<for/>
+	</skill>
+	<skill id="11313" levels="3" name="Naviarope Explosion">
+    <!-- Inflicts a powerful blow to nearby enemies. -->
+		<table name="#power">484 509 534</table>
+		<set name="effectPoint" val="679"/>
+		<table name="#magicLevel">85 86 87</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillRadius" val="200"/>
+		<set name="overHit" val="true"/>
+		<set name="criticalRate" val="10"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="cancelTarget" val="50"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="shieldignore" val="true"/>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<for/>
+	</skill>
+	<skill id="11314" levels="3" name="Corpse Blast">
+    <!-- Detonates a corpse to inflict damage on nearby enemies. -->
+		<table name="#power">358 361 364</table>
+		<table name="#mpConsume2">70</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="400"/>
+		<set name="save" val="4"/>
+		<set name="activateRate" val="50"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_AREA_AIM_CORPSE"/>
+		<set name="corpse" val="true"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillRadius" val="200"/>
+		<for/>
+	</skill>
+	<skill id="11315" levels="1" name="Summon Defense">
+    <!-- Increases resistance to bow/crossbows + 50 and M. Def + 50%. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="isMusic" val="true"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<sub order="0x40" stat="bowWpnVuln" val="30"/>
+			<sub order="0x40" stat="crossbowWpnVuln" val="30"/>
+			<mul order="0x30" stat="mDef" val="1.5"/>
+		</for>
+	</skill>
+	<skill id="11316" levels="1" name="Summon Soulshots">
+    <!-- Summons 1900 Beast Soulshots with 80% probability and 380 Blessed Beast Spiritshots with 20% probability. Consumes 1 Crystal (R-Grade). -->
+		<set name="reuseDelay" val="60000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="magicLevel" val="85"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill11316"/>
+		<set name="mpConsume2" val="398"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="isHandler" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="11317" levels="8" name="Servitor Group Heal">
+    <!-- Restores all servitors' HP by 1191. Not Used. -->
+		<table name="#effectPoint">711 722 733 743 753 763 772 780</table>
+		<table name="#power">1191 1191 1191 1191 1191 1191</table>
+		<table name="#magicLevel">85 86 87 88 89 90 91 92</table>
+		<table name="#mpConsume2">270 275 280 285 290 296 300 307</table>
+		<set name="reuseDelay" val="6000"/>
+		<set name="hitTime" val="6500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SUMMON_AURA"/>
+		<set name="skillType" val="HEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for/>
+	</skill>
+</list>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="8763" name="Elrokian Trap">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="A"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_seize_mace_i00"/>
+		<set name="price" value="250000"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="500"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3626" level="1"/>
+			<skill id="3627" level="1"/>
+			<skill id="3628" level="1"/>
+		</skills>
+		<for>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+		</for>
+	</weapon>
+	<weapon id="8788" name="Sirra's Blade" add_name="Haste">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_sirr_blade_i01"/>
+		<set name="kamael_convert" value="9353"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="weight" value="1300"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3068" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="251"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8789" name="Sirra's Blade" add_name="Health">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_sirr_blade_i01"/>
+		<set name="kamael_convert" value="9354"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="weight" value="1300"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="251"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8790" name="Sirra's Blade" add_name="Critical Poison">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_sirr_blade_i01"/>
+		<set name="kamael_convert" value="9355"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="weight" value="1300"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<triggers>
+			<trigger id="3024" level="1" type="CRIT" chance="100"/>
+		</triggers>
+		<skills>
+			<skill id="3552" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="251"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8791" name="Sword of Ipos" add_name="Focus">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_sword_of_ipos_i01"/>
+		<set name="kamael_convert" value="9357"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="weight" value="1820"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3050" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="305"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8792" name="Sword of Ipos" add_name="Haste">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_sword_of_ipos_i01"/>
+		<set name="kamael_convert" value="9358"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="weight" value="1820"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3068" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="305"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8793" name="Sword of Ipos" add_name="Health">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_sword_of_ipos_i01"/>
+		<set name="kamael_convert" value="9359"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="weight" value="1820"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="305"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8794" name="Barakiel's Axe" add_name="Health">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_barakiel_axe_i01"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="1550"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="251"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8795" name="Barakiel's Axe" add_name="Haste">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_barakiel_axe_i01"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="1550"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3068" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="251"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8796" name="Barakiel's Axe" add_name="Focus">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_barakiel_axe_i01"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="1550"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3050" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="251"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8797" name="Behemoth's Tuning Fork" add_name="Focus">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_tuning_fork_of_behemoth_i01"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="weight" value="1890"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3050" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="305"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8798" name="Behemoth's Tuning Fork" add_name="Health">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_tuning_fork_of_behemoth_i01"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="weight" value="1890"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3013" level="5"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="305"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="8799" name="Behemoth's Tuning Fork" add_name="Anger">
+		<set name="crystal_count" value="2157"/>
+		<set name="crystal_type" value="A"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.weapon_tuning_fork_of_behemoth_i01"/>
+		<set name="price" value="26968400"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="weight" value="1890"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="3057" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="305"/>
+			<add stat="mAtk" order="0x10" value="121"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+</list>

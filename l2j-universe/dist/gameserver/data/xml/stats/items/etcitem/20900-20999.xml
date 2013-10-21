@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="20901" name="Santa Hat Set">
+	<!-- The Santa Hat and Rudolph's Nose are packaged together. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20902" name="Queen Ant's Ring Pack (7-day)">
+	<!-- Wrapped Pack containing the Queen Ant's Ring (7-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20903" name="Rose Petal">
+	<!-- Increases HP/MP Recovery Rate by 20% through rose aroma for 5 min. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="BranchSys.icon.br_herb_of_baguette_i00"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20904" name="Rose Essence">
+	<!-- Rose energy extract that is needed to use the Rose Spirit's special skill. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="BranchSys2.br_essence_rose_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="2"/>
+	</etcitem>
+	<etcitem id="20905" name="One Red Rose Bud">
+	<!-- One fragrant red rose bud. -->
+		<set name="price" value="500"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="BranchSys2.icon.br_rosalia_rose_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="2"/>
+	</etcitem>
+	<etcitem id="20906" name="One Blue Rose Bud">
+	<!-- One fragrant blue rose bud. -->
+		<set name="price" value="500"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="BranchSys2.icon.br_rosalia_rose_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="2"/>
+	</etcitem>
+	<etcitem id="20907" name="One White Rose Bud">
+	<!-- One fragrant white rose bud. -->
+		<set name="price" value="500"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="BranchSys2.icon.br_rosalia_rose_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="2"/>
+	</etcitem>
+	<etcitem id="20908" name="Desheloph Rose Necklace (Event)" add_name="Summon duration (3-hour)">
+	<!-- Summons the Rose Spirit Desheloph. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="180"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20909" name="Hyum Rose Necklace (Event)" add_name="Summon duration (3-hour)">
+	<!-- Summons the Rose Spirit Hyum. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="180"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20910" name="Lekang Rose Necklace (Event)" add_name="Summon duration (3-hour)">
+	<!-- Summons the Rose Spirit Lekang. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="180"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20911" name="Lilias Rose Necklace (Event)" add_name="Summon duration (3-hour)">
+	<!-- Summons the Rose Spirit Lilias. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="180"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20912" name="Lapham Rose Necklace (Event)" add_name="Summon duration (3-hour)">
+	<!-- Summons the Rose Spirit Lapham. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="180"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20913" name="Mafum Rose Necklace (Event)" add_name="Summon duration (3-hour)">
+	<!-- Summons the Rose Spirit Mafum. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="180"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_event"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20914" name="Enhanced Rose Spirit Coupon (5-hour)">
+	<!-- Coupon that can be exchanged for a necklace (5-hour) that summons an Enhanced Rose Spirit. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be shared between characters within the same account through the Dimensional Merchant. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="300"/>
+		<set name="icon" value="icon.etc_ticket_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20915" name="Enhanced Rose Necklace: Desheloph" add_name="5-hour (Event)">
+	<!-- Summons Enhanced Rose Spirit Desheloph. Hunger gauge lasts 5 hours. Cannot feed pet to refill hunger gauge. Special Abilities require Rose Essence to use. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="300"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20916" name="Enhanced Rose Necklace: Hyum" add_name="5-hour (Event)">
+	<!-- Summons Enhanced Rose Spirit Hyum. Hunger gauge lasts 5 hours. Cannot feed pet to refill hunger gauge. Special Abilities require Rose Essence to use. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="300"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20917" name="Enhanced Rose Necklace: Lekang" add_name="5-hour (Event)">
+	<!-- Summons Enhanced Rose Spirit Lekang. Hunger gauge lasts 5 hours. Cannot feed pet to refill hunger gauge. Special Abilities require Rose Essence to use. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="300"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20918" name="Enhanced Rose Necklace: Lilias" add_name="5-hour (Event)">
+	<!-- Summons Enhanced Rose Spirit Lilias. Hunger gauge lasts 5 hours. Cannot feed pet to refill hunger gauge. Special Abilities require Rose Essence to use. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="300"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20919" name="Enhanced Rose Necklace: Lapham" add_name="5-hour (Event)">
+	<!-- Summons Enhanced Rose Spirit Lapham. Hunger gauge lasts 5 hours. Cannot feed pet to refill hunger gauge. Special Abilities require Rose Essence to use. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="300"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20920" name="Enhanced Rose Necklace: Mafum" add_name="5-hour (Event)">
+	<!-- Summons Enhanced Rose Spirit Mafum. Hunger gauge lasts 5 hours. Cannot feed pet to refill hunger gauge. Special Abilities require Rose Essence to use. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="300"/>
+		<set name="icon" value="BranchSys2.icon.br_necklace_of_rose_i00"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20921" name="Rose Spirit Test Report" add_name="(24-hour)">
+	<!-- Report in which you can record your findings while testing the Enhanced Rose Spirit. You can only return it 24 hours after receiving it. It cannot be destroyed. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_royal_membership_i00"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20923" name="Vesper Slasher">
+	<!-- 2010 April Fools' Day Vesper Super Power Herb -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_royal_crown_of_vesper_i00"/>
+		<set name="type" value="HERB"/>
+		<skills>
+			<skill id="22159" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20924" name="Vesper Caster">
+	<!-- 2010 April Fools' Day Vesper Critical Power Herb -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_royal_circlet_of_vesper_i00"/>
+		<set name="type" value="HERB"/>
+		<skills>
+			<skill id="22160" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20925" name="Vesper Dualsword">
+	<!-- 2010 April Fools' Day Invincible Vesper Herb -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00"/>
+		<set name="type" value="HERB"/>
+		<skills>
+			<skill id="22161" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20926" name="Mt. Fuji Herb">
+	<!-- Mt. Fuji Herb -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_fuji_herb_i00"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="22162" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20927" name="Hawk Herb">
+	<!-- Hawk Herb -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_hawk_herb_i00"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="22163" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20928" name="Eggplant Herb">
+	<!-- Eggplant Herb -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_eggplant_herb_i00"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="22164" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20946" name="Jet Bike Pack (7-day)">
+	<!-- Wrapped Pack that has Jet Bike (7-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20947" name="Jet Bike Pack (30-day)">
+	<!-- Wrapped Pack that has Jet Bike (30-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20948" name="Agathion - Phoenix Pack (7-day)" add_name="Nirvana Rebirth">
+	<!-- Wrapped Pack that has Agathion - Phoenix (7-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20949" name="Agathion - Phoenix Pack (7-day)" add_name="Mountain Echoes">
+	<!-- Dimensional Item Pack
+	A wrapped pack containing an Agathion - Phoenix (7-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Can be shared between characters within the same account through the Dimensional Merchant. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20950" name="Fox Mask Pack">
+	<!-- Wrapped Pack that has Fox Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20951" name="Fox Mask Pack (7-day)" add_name="Silent Move">
+	<!-- Wrapped Pack that has Fox Mask (30-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20952" name="Paiwan Hat Pack">
+	<!-- Wrapped Pack that has Paiwan Hat. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20953" name="Paiwan Hat Pack (7-day)" add_name="Power of Guardian Deity">
+	<!-- Wrapped Pack that has Paiwan Hat (7-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20954" name="Small Placid">
+	<!-- When used, 5000 Soul Avatar Energy is recovered. Can be replenished only when Soul Avatar is on and when the consumed energy is 5000 or more. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_shield_bread_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="22165" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="20955" name="Medium Placid">
+	<!-- When used, 10000 Soul Avatar Energy is recovered. Can be replenished only when Soul Avatar is on and the consumed energy is 10000 or more. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_shield_bread_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="22166" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="20957" name="Agathion - Zombie Pack (7-day)" add_name="Soul Stealth">
+	<!-- Wrapped Pack that has Agathion - Zombie (7-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20958" name="April Fools' Day Special Gift (Event)">
+	<!-- The luckiest person will be given a special fortune box on April Fool's Day. What will be inside? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.lucky_bag_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<skills>
+			<skill id="22167" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="20959" name="Royal Crown of Vesper Pack">
+	<!-- Wrapped Pack containing a Royal Crown of Vesper. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20960" name="Royal Circlet of Vesper Pack">
+	<!-- Wrapped Pack containing a Royal Circlet of Vesper. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20961" name="Vesper Noble Mask Pack">
+	<!-- Wrapped Pack containing a Vesper Noble Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20962" name="Royal Crown of Vesper Pack (30-day)">
+	<!-- Wrapped Pack containing a Royal Crown of Vesper (30-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20963" name="Royal Circlet of Vesper Pack (30-day)">
+	<!-- Wrapped Pack containing a Royal Circlet of Vesper (30-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20964" name="Vesper Noble Mask Pack (30-day)">
+	<!-- Dimensional Item Pack
+	Wrapped Pack containing a Vesper Noble Mask (30-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Can be shared between characters within the same account through the Dimensional Merchant. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20965" name="Royal Crown of Vesper Pack">
+	<!-- Wrapped Pack containing a Royal Crown of Vesper. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20966" name="Royal Circlet of Vesper Pack">
+	<!-- Wrapped Pack containing a Royal Circlet of Vesper. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20967" name="Vesper Noble Mask Pack">
+	<!-- Wrapped Pack containing a Vesper Noble Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20969" name="Agathion - Guangong Pack">
+	<!-- Wrapped Pack containing an Agathion - Guangong. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20976" name="Warrior's Mark" add_name="30-day">
+	<!-- Noble mark representing bravery. Needed to use the Buff of Virtue, Silence of Fidelity, and Vitality of Courage with the opera mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_pekingopera_symbol_a_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="durability" value="43200"/>
+		<set name="temporal" value="true"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20977" name="Mark of Affection">
+	<!-- Noble mark representing friendship. Needed to use the Age of the Three Kingdoms with the opera mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_pekingopera_symbol_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20978" name="Zhongzi (B-grade)">
+	<!-- Taiwanese specialty food. Item that raises a B-grade weapon's enchant rate by 15%. Can only be used on items with 3 - 9 enchants. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_taiwan_riceball_a_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<skills>
+			<skill id="2517" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="20979" name="Zhongzi (A-grade)">
+	<!-- Taiwanese specialty food. Item that raises an A-grade weapon's enchant rate by 12%. Can only be used on items with 3 - 9 enchants. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_taiwan_riceball_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<skills>
+			<skill id="2518" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="20980" name="Zhongzi (S-grade)">
+	<!-- Taiwanese specialty food. Item that raises an S-grade weapon's enchant rate by 10%. Can only be used on items with 3 - 9 enchants. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_taiwan_riceball_c_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<skills>
+			<skill id="2519" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="20992" name="Thirst for Victory Quenching Juice">
+	<!-- Refreshing sports drink that immediately quenches thirst. Restores 1,000 energy when used while a Ball Trapping Agathion or Agathion - Penalty Kick are equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_victory_potion_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="22168" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="20993" name="Soccer Ball of Cheers">
+	<!-- Soccer ball given as a gift for cheering. When the soccer ball is used, you may obtain a Blessed Weapon Scroll of Enchantment (D~S-grade s) with a fixed chance. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_soccer_ball_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<skills>
+			<skill id="22169" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="20994" name="Agathion - Three-headed Dragon Pack" add_name="Wind Walk">
+	<!-- Wrapped Pack containing an Agathion - Three-headed Dragon. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20995" name="Liu Bei Opera Mask Pack" add_name="Buff of Virtue, Age of the Three Kingdoms">
+	<!-- Wrapped Pack containing a Liu Bei Opera Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20996" name="Guan Yu Opera Mask Pack" add_name="Silence of Fidelity, Age of the Three Kingdoms">
+	<!-- Wrapped Pack containing a Guan Yu Opera Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20997" name="Zhang Fei Opera Mask Pack" add_name="Vitality of Courage, Age of the Three Kingdoms">
+	<!-- Wrapped Pack containing a Zhang Fei Opera Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20998" name="Dragon Boat Pack">
+	<!-- Wrapped Pack containing a Dragon Boat. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+	<etcitem id="20999" name="Dragon Boat Pack (7-day)" add_name="Haste">
+	<!-- Wrapped Pack containing a Dragon Boat (7-day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+	</etcitem>
+</list>

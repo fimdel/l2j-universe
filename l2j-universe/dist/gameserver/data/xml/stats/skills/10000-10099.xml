@@ -1,0 +1,2073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="10001" levels="1" name="Superior Sword/Blunt Weapon Mastery">
+	<!-- STR + 2, P. Atk. + 205 when a Sword or Blunt weapon is equipped. Increases aggression toward yourself by 60% when attacking with a Sword or Blunt weapon. Additionally, there is a chance the cooldown of skills will reset or the duration double depending on your STR. -->
+		<table name="#pAtk">205</table>
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="217;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#pAtk">218 232 245 259 272 286 299 313 326 340</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+		</enchant1>
+		<triggers>
+			<trigger id="10060" level="1" type="ATTACK" chance="60"/>
+		</triggers>
+		<for>
+			<add order="0x40" stat="pAtk" val="#pAtk">
+				<using kind="Sword, Big Sword, Blunt, Big Blunt"/>
+			</add>
+			<add order="0x10" stat="STR" val="2">
+				<using kind="Sword, Big Sword, Blunt, Big Blunt"/>
+			</add>
+		</for>
+	</skill>
+	<skill id="10002" levels="1" name="Superior Heavy Armor Mastery">
+	<!-- STR + 2. Max HP + 6883 and P. Def. + 315 when equipped with a Heavy Armor. MP Recovery Bonus + 8.4 and Critical Damage received - 35%. Reflects 10% of incurred damage back to the attacker. When HP falls below 30%, P. Def. + 280 and Evasion + 17. -->
+		<table name="#pDef">315</table>
+		<table name="#pDefBonus">280</table>
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="229;291;191;232;429;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#pDef">335 356 377 397 418 439 459 480 501 522</table>
+			<table name="#pDefBonus">298 316 334 353 371 389 408 426 444 463</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+		</enchant1>
+		<for>
+			<add order="0x10" stat="STR" val="2"/>
+			<add order="0x40" stat="maxHp" val="6883">
+				<using armor="Heavy"/>
+			</add>
+			<add order="0x40" stat="pDef" val="#pDef">
+				<using armor="Heavy"/>
+			</add>
+			<mul order="0x30" stat="regMp" val="1.084">
+				<using armor="Heavy"/>
+			</mul>
+			<mul order="0x30" stat="critDamRcpt" val="0.65">
+				<using armor="Heavy"/>
+			</mul>
+			<add order="0x40" stat="reflectDam" val="10">
+				<using armor="Heavy"/>
+			</add>
+			<add order="0x40" stat="rEvas" val="17">
+				<and>
+					<using armor="Heavy"/>
+					<player percentHP="30"/>
+				</and>
+			</add>
+			<add order="0x40" stat="pDef" val="#pDefBonus">
+				<and>
+					<using armor="Heavy"/>
+					<player percentHP="30"/>
+				</and>
+			</add>
+		</for>
+	</skill>
+	<skill id="10003" levels="1" name="Superior Shield Mastery">
+	<!-- STR + 2 and Shield defense becomes possible in all directions. Shield defense success rate + 100%. When Shield defense succeeds, Shield P. Def. + 80% and an additional + 209. -->
+		<table name="#magicLevel">85</table>
+		<table name="#sDef">209</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="relationSkillsId" val="153;316;318;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#sDef">222 236 249 263 277 290 304 317 331 345</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+		</enchant1>
+		<for>
+			<add order="0x10" stat="STR" val="2"/>
+			<mul order="0x30" stat="rShld" val="2"/>
+			<mul order="0x30" stat="sDef" val="1.8"/>
+			<add order="0x40" stat="sDef" val="#sDef"/>
+			<set order="0x10" stat="shldAngle" val="360"/>
+		</for>
+	</skill>
+	<skill id="10004" levels="1" name="Superior Magic Resistance">
+	<!-- STR + 2 and M. Def. + 158. Attack magic resistance rate + 25%. When receiving damage, there is a chance of M. Def. and resistance to attributes momentarily increasing. -->
+		<table name="#mDef">158</table>
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="147;466;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#mDef">168 178 188 199 209 219 230 240 250 261</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+		</enchant1>
+		<triggers>
+			<trigger id="10058" level="1" type="RECEIVE_DAMAGE" chance="50">
+				<player damage="50;0"/>
+			</trigger>
+		</triggers>
+		<for>
+			<add order="0x10" stat="STR" val="2"/>
+			<add order="0x40" stat="mDef" val="#mDef"/>
+			<mul order="0x30" stat="concentration" val="0.75"/>
+		</for>
+	</skill>
+	<skill id="10005" levels="1" name="Superior Mind Resistance">
+	<!-- STR + 2. Resistance + 20 to Hold, Sleep, Paralysis, Mental attacks, Poison, Bleed, and Stun. In addition, there is a chance of reflecting debuffs back to the attacker. -->
+		<table name="#vuln">20</table>
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="350;351;328;329;335;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#vuln">21 22 23 24 25 26 27 28 29 30</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+		</enchant1>
+		<for>
+			<add order="0x10" stat="STR" val="2"/>
+			<sub order="0x40" stat="rootResist" val="#vuln"/>
+			<sub order="0x40" stat="sleepResist" val="#vuln"/>
+			<sub order="0x40" stat="mentalResist" val="#vuln"/>
+			<sub order="0x40" stat="poisonResist" val="#vuln"/>
+			<sub order="0x40" stat="bleedResist" val="#vuln"/>
+			<sub order="0x40" stat="stunResist" val="#vuln"/>
+			<add order="0x40" stat="reflectPhysicDebuff" val="5"/>
+			<add order="0x40" stat="reflectMagicDebuff" val="5"/>
+		</for>
+	</skill>
+	<skill id="10006" levels="1" name="Last Patience">
+	<!-- STR + 2. When receiving damage, there is a chance of increasing Physical Skill Power and Shield P. Def. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="983;"/>
+		<triggers>
+			<trigger id="10007" level="1" type="RECEIVE_DAMAGE" chance="15">
+				<player damage="100;0"/>
+			</trigger>
+		</triggers>
+		<for>
+			<add order="0x10" stat="STR" val="2"/>
+		</for>
+	</skill>
+	<skill id="10007" levels="3" name="Last Patience">
+	<!-- For 9 seconds, Shield P. Def./Skill Power + 25%. -->
+		<table name="#power">1.25 1.3 1.35</table>
+		<set name="reuseDelay" val="8000"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isTrigger" val="true"/>
+		<for>
+			<effect count="1" name="Buff" stackType="PhysicalPose" time="10" val="0">
+				<mul order="0x30" stat="sDef" val="#power"/>
+				<mul order="0x30" stat="skillPower" val="#power"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10008" levels="8" name="Shield Charge">
+	<!-- Uses a shield to attack the selected target with 10821 power added to P. Atk. and also P. Def. - 10%, P. Evasion - 2, and P. Critical Damage + 10%. Can be used while a shield is equipped. -->
+		<table name="#mpConsume2">53 54 56 58 59 61 63 65</table>
+		<table name="#magicLevel">85 86 88 90 92 94 96 98</table>
+		<table name="#Power">10821 11196 11948 12700 13452 14204 14956 15708</table>
+		<table name="#powerPvP">0</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="power" val="#Power"/>
+		<set name="powerPvP" val="#powerPvP"/>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="coolTime" val="570"/>
+		<set name="hitTime" val="800"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="castRange" val="40"/>
+		<set name="effectRange" val="400"/>
+		<set name="isDebuff" val="true"/>
+		<set name="relationSkillsId" val="984;"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#Power">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#mpConsume2">61 57 53 49 45 41 37 33 29 25</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 name="Duel">
+			<table name="#Power">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#powerPvP">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 name="Fire Attack">
+			<table name="#element">fire</table>
+			<table name="#Power">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 name="Water Attack">
+			<table name="#element">water</table>
+			<table name="#Power">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 name="Wind Attack">
+			<table name="#element">wind</table>
+			<table name="#Power">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<enchant6 name="Earth Attack">
+			<table name="#element">earth</table>
+			<table name="#Power">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant6>
+		<enchant7 name="Holy Attack">
+			<table name="#element">Holy</table>
+			<table name="#Power">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant7>
+		<enchant8 name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#Power">16084 16460 16836 17212 17588 17964 18340 18716 19092 19468</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant8>
+		<for>
+			<effect name="Debuff" time="9" val="0" stackOrder="1" stackType="critical_dmg_down" effectPower="80">
+				<mul order="0x10" stat="cAtk" val="1.1"/>
+				<mul order="0x30" stat="pDef" val="0.9"/>
+				<sub order="0x40" stat="rEvas" val="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10009" levels="8" name="Last Judgment">
+	<!-- Attacks the selected target with 13673 power added to P. Atk, and Speed - 30%. Can be used while a sword/blunt weapon is equipped. Over-hit. Critical. -->
+		<table name="#magicLevel">85 86 88 90 92 94 96 98</table>
+		<table name="#mpConsume2">64 66 68 70 72 75 77 79</table>
+		<table name="#reuseDelay">5000</table>
+		<table name="#power">13673 14145 15089 16034 16978 17923 18867 19812</table>
+		<table name="#powerPvP">0</table>
+		<table name="#element">none</table>
+		<table name="#elementPower">0</table>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="nextAction" val="attack"/>
+		<set name="power" val="#power"/>
+		<set name="powerPvP" val="#powerPvP"/>
+		<set name="element" val="#element"/>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="470"/>
+		<set name="hitTime" val="1200"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="40"/>
+		<set name="overHit" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="400;115;401;"/>
+		<cond msgId="113" addName="1">
+			<using kind="Sword, Blunt, Big Sword, Big Blunt"/>
+		</cond>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">74 69 64 60 55 50 45 41 36 31</table>
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 name="Duel">
+			<table name="#powerPvP">21166 21739 22312 22885 23458 24031 24604 25177 25750 26323</table>
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 name="Fire Attack">
+			<table name="#element">fire</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 name="Water Attack">
+			<table name="#element">water</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 name="Wind Attack">
+			<table name="#element">wind</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<enchant6 name="Earth Attack">
+			<table name="#element">earth</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant6>
+		<enchant7 name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant7>
+		<enchant8 name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant8>
+		<enchant9 levels="10" name="Recycle">
+			<table name="#power">20756 21229 21701 22173 22645 23118 23590 24062 24534 25007</table>
+			<table name="#reuseDelay">4850 4700 4550 4400 4250 4100 3950 3800 3650 3500</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant9>
+		<for>
+			<effect name="Buff" time="10" val="0" stackOrder="3" stackType="speed_down">
+				<mul order="0x30" stat="runSpd" val="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10010" levels="8" name="Justice Punishment">
+	<!-- Attacks the selected target with 17476 power added to P. Atk, and P. Atk./M. Atk. - 20%. Can be used while a sword/blunt weapon is equipped. Over-hit. Critical. -->
+		<table name="#power">17476 18677 19878 21079 22280 23481 24683 25884</table>
+		<table name="#magicLevel">85 86 88 90 92 94 96 98</table>
+		<table name="#mpConsume2">80 83 85 88 91 94 97 100</table>
+		<table name="#reuseDelay">5000</table>
+		<table name="#element">none</table>
+		<table name="#elementPower">0</table>
+		<table name="#powerPvP">0</table>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="nextAction" val="attack"/>
+		<set name="power" val="#power"/>
+		<set name="powerPvP" val="#powerPvP"/>
+		<set name="element" val="#element"/>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="370"/>
+		<set name="hitTime" val="1700"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="overHit" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="127;102;"/>
+		<cond msgId="113" addName="1">
+			<using kind="Sword, Blunt, Big Sword, Big Blunt"/>
+		</cond>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">26484 27085 27685 28286 28887 29487 30088 30688 31289 31890</table>
+			<table name="#mpConsume2">94 88 82 76 70 64 58 52 46 40</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 name="Duel">
+			<table name="#powerPvP">26784 27685 28586 29488 30390 31290 32188 33088 33985 34888</table>
+			<table name="#power">26484 27085 27685 28286 28887 29487 30088 30688 31289 31890</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 name="Fire Attack">
+			<table name="#element">fire</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14343 14634 14924 15226 15527 16155 16806 17484 18187 18918</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 name="Water Attack">
+			<table name="#element">water</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14343 14634 14924 15226 15527 16155 16806 17484 18187 18918</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 name="Wind Attack">
+			<table name="#element">wind</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14343 14634 14924 15226 15527 16155 16806 17484 18187 18918</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<enchant6 name="Earth Attack">
+			<table name="#element">earth</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14343 14634 14924 15226 15527 16155 16806 17484 18187 18918</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant6>
+		<enchant7 name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14343 14634 14924 15226 15527 16155 16806 17484 18187 18918</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant7>
+		<enchant8 name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14343 14634 14924 15226 15527 16155 16806 17484 18187 18918</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant8>
+		<enchant9 levels="10" name="Recycle">
+			<table name="#power">26484 27085 27685 28286 28887 29487 30088 30688 31289 31890</table>
+			<table name="#reuseDelay">4850 4700 4550 4400 4250 4100 3950 3800 3650 3500</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant9>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtkDown" time="15" val="0">
+				<mul order="0x30" stat="pAtk" val="0.8"/>
+				<mul order="0x30" stat="mAtk" val="0.8"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10011" levels="5" name="Shield Impact">
+	<!-- Attacks the target with P. Atk. Increased by 9870, and Stuns for 5 seconds. Can be used while a shield is equipped. -->
+		<table name="#magicLevel">85 88 91 94 97</table>
+		<table name="#power">9870 10901 10933 12965 13997</table>
+		<table name="#mpConsume2">49 52 54 57 60</table>
+		<table name="#reuseDelay">10000</table>
+		<table name="#activateRate">50</table>
+		<table name="#element">none</table>
+		<table name="#elementPower">0</table>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="flyRadius" val="50"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="flyType" val="DUMMY"/>
+		<set name="power" val="#power"/>
+		<set name="element" val="#element"/>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="470"/>
+		<set name="hitTime" val="800"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="trait" val="SHOCK"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="92;352;"/>
+		<set name="nextAction" val="attack"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#mpConsume2">56 52 49 45 42 38 34 31 27 24</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Chance">
+			<table name="#activateRate">53 56 59 62 65 68 71 74 77 80</table>
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 name="Fire Attack">
+			<table name="#element">fire</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 name="Water Attack">
+			<table name="#element">water</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 name="Wind Attack">
+			<table name="#element">wind</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<enchant6 name="Earth Attack">
+			<table name="#element">earth</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant6>
+		<enchant7 name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant7>
+		<enchant8 name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant8>
+		<enchant9 levels="10" name="Recycle">
+			<table name="#power">15028 15372 15716 16060 16404 16478 17092 17436 17780 18124</table>
+			<table name="#reuseDelay">9700 9400 9100 8800 8500 8200 7900 7600 7300 7000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant9>
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="5" val="0"/>
+		</for>
+	</skill>
+	<skill id="10012" levels="7" name="Shield Wave">
+	<!-- Attacks nearby targets with P. Atk. increased by 10174, and Stuns for 9 seconds. Can be used while a shield is equipped. -->
+		<table name="#magicLevel">87 89 91 93 95 97 99</table>
+		<table name="#power">10174 10833 11492 12150 12809 13468 14126</table>
+		<table name="#mpConsume2">59 61 63 65 67 69 71</table>
+		<table name="#reuseDelay">60000</table>
+		<table name="#activateRate">50</table>
+		<table name="#element">none</table>
+		<table name="#elementPower">0</table>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="flyRadius" val="50"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="flyType" val="DUMMY"/>
+		<set name="power" val="#power"/>
+		<set name="element" val="#element"/>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="470"/>
+		<set name="hitTime" val="1000"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="trait" val="SHOCK"/>
+		<set name="castRange" val="40"/>
+		<set name="effectRange" val="400"/>
+		<set name="isDebuff" val="true"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#mpConsume2">66 62 58 53 49 45 41 36 32 28</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Chance">
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#activateRate">53 56 59 62 65 68 71 74 77 80</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table> 
+		</enchant2>
+		<enchant3 name="Fire Attack">
+			<table name="#element">fire</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 name="Water Attack">
+			<table name="#element">water</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 name="Wind Attack">
+			<table name="#element">wind</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<enchant6 name="Earth Attack">
+			<table name="#element">earth</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant6>
+		<enchant7 name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant7>
+		<enchant8 name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant8>
+		<enchant9 levels="10" name="Recycle">
+			<table name="#power">14456 14785 15114 15444 15773 16102 16432 16761 17090 17420</table>
+			<table name="#reuseDelay">58000 56000 54000 52000 51000 49000 47000 45000 43000 42000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant9>
+		<for>
+			<effect name="Stun" time="9" stackType="Stun" stackOrder="-1"/>
+		</for>
+	</skill>
+	<skill id="10013" levels="8" name="Gust Blade">
+	<!-- Attacks nearby targets with P. Atk. increased by 10314. Can be used while a sword/blunt weapon is equipped. Over-hit. Critical. -->
+		<table name="#magicLevel">85 87 89 91 93 95 97 99</table>
+		<table name="#power">10314 11026 11738 12450 13162 13874 14586 15298</table>
+		<table name="#mpConsume2">121 125 129 133 138 142 146 151</table>
+		<table name="#reuseDelay">10000</table>
+		<table name="#powerPvP">0</table>
+		<table name="#element">none</table>
+		<table name="#elementPower">0</table>
+		<set name="nextAction" val="attack"/>
+		<set name="power" val="#power"/>
+		<set name="powerPvP" val="#powerPvP"/>
+		<set name="element" val="#element"/>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="370"/>
+		<set name="hitTime" val="1200"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="castRange" val="40"/>
+		<set name="skillRadius" val="400"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="overHit" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="105;49;"/>
+		<cond msgId="113" addName="1">
+			<using kind="Sword, Blunt, Big Sword, Big Blunt"/>
+		</cond>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#mpConsume2">141 132 123 114 105 96 87 78 69 60</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 name="Duel">
+			<table name="#powerPvP">16010 16722 17434 18146 18858 19570 20282 20994 21706 22418</table>
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 name="Fire Attack">
+			<table name="#element">fire</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 name="Water Attack">
+			<table name="#element">water</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 name="Wind Attack">
+			<table name="#element">wind</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<enchant6 name="Earth Attack">
+			<table name="#element">earth</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant6>
+		<enchant7 name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant7>
+		<enchant8 name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant8>
+		<enchant9 levels="10" name="Recycle">
+			<table name="#power">15654 16010 16366 16722 17078 17434 17790 18146 18502 18859</table>
+			<table name="#reuseDelay">9700 9400 9100 8800 8500 8200 7900 7600 7300 7000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant9>
+	</skill>
+	<skill id="10014" levels="8" name="Chain Galaxy">
+	<!-- Attacks nearby targets with 14300 power added to P. Atk. Healing power received - 90%. -->
+		<table name="#power">14300 14789 15769 16748 17727 18707 19686 20666</table>
+		<table name="#powerPvP">0</table>
+		<table name="#magicLevel">85 86 88 90 92 94 96 98</table>
+		<table name="#mpConsume2">159 162 167 173 179 184 190 196</table>
+		<table name="#reuseDelay">10000</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#power"/>
+		<set name="powerPvP" val="#powerPvP"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="370"/>
+		<set name="hitTime" val="1700"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillRadius" val="400"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#mpConsume2">184 172 160 148 137 125 113 101 90 78</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 name="Duel">
+			<table name="#powerPvP">22646 23626 24606 25586 26566 27546 28526 29506 30486 31466</table>
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 name="Fire Attack">
+			<table name="#element">fire</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 name="Water Attack">
+			<table name="#element">water</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 name="Wind Attack">
+			<table name="#element">wind</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<enchant6 name="Earth Attack">
+			<table name="#element">earth</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant6>
+		<enchant7 name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant7>
+		<enchant8 name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant8>
+		<enchant9 levels="10" name="Recycle">
+			<table name="#power">21645 22135 22625 23114 23604 24094 24583 25073 25563 26053</table>
+			<table name="#reuseDelay">9700 9400 9100 8800 8500 8200 7900 7600 7300 7000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant9>
+		<for>
+			<effect count="1" name="Buff" time="10" val="0">
+				<mul order="0x30" stat="hpEff" val="0.1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10015" levels="6" name="Chain Strike">
+	<!-- Drags the selected target to the user's location and makes him/her attack the user. Requires a shield to be equipped. -->
+		<table name="#magicLevel">85 87 90 93 96 99</table>
+		<table name="#activateRate">60 65 70 75 80 85</table>
+		<table name="#mpConsume2">58 61 63 66 69 72</table>
+		<table name="#power">1630</table>
+		<set name="castRange" val="600"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="power" val="#power"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="AGGRESSION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="PULL"/>
+		<set name="relationSkillsId" val="403;402;"/>
+		<set name="flyType" val="THROW_HORIZONTAL"/>
+		<set name="flySpeed" val="500"/>
+		<set name="isUsingWhileCasting" val="true"/>
+		<set name="isSkillTimePermanent" val="true"/> 
+		<cond msgId="113" addName="1">
+			<using kind="Shield"/>
+		</cond>
+		<enchant1 levels="10" name="Attack">
+			<table name="#power">1730 1830 1930 2030 2130 2330 2430 2530 2630 2730</table> <!--TODO: add Inflict Damage, not Aggression Power-->
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<for>
+			<effect count="1" name="TargetToMe" time="1" val="0" chance="#activateRate"/>
+		</for>
+	</skill>
+	<skill id="10016" levels="6" name="Chain Hydra">
+	<!-- Drags the selected target and enemies near the target to the user's location and makes them attack the user. Requires a shield to be equipped. -->
+		<table name="#magicLevel">89 91 93 95 97 99</table>
+		<table name="#activateRate">60 65 70 75 80 85</table>
+		<table name="#mpConsume2">123 127 132 136 140 144</table>
+		<table name="#radius">600</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="45000"/>
+		<set name="coolTime" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="target" val="TARGET_AREA"/>
+		<set name="flyType" val="THROW_HORIZONTAL"/>
+		<set name="flySpeed" val="500"/>
+		<set name="skillType" val="AGGRESSION"/>
+		<set name="castRange" val="#radius"/>
+		<set name="skillRadius" val="350"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="PULL"/>
+		<set name="relationSkillsId" val="404;107;"/>
+		<set name="isUsingWhileCasting" val="true"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<enchant1 levels="10" name="Radius">
+			<table name="#radius">620 640 660 680 700 720 740 760 780 800</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<cond msgId="113" addName="1">
+			<using kind="Shield"/>
+		</cond>
+		<for>
+			<effect count="1" name="TargetToMe" time="1" val="0" chance="#activateRate"/>
+		</for>
+	</skill>
+	<skill id="10017" levels="4" name="Final Ultimate Defense">
+	<!-- For 30 seconds, P. Def. + 4000 and M. Def. + 4000. Damage received is capped at 300 and 40% of it is reflected back to the attacker. Additionally, +80% resistance to buff canceling attacks. -->
+		<table name="#magicLevel">85 90 95 99</table>
+		<table name="#mpConsume2">58 63 68 72</table>
+		<table name="#reuseDelay">900000</table>
+		<table name="#pDef">4000 6000 8000 10000</table>
+		<table name="#ref">0.60 0.40 0.20 1</table>
+		<table name="#time">30</table>
+		<table name="#speed">0</table>
+		<table name="#stunPower">0</table>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="relationSkillsId" val="110;"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">67 63 59 54 50 46 41 37 33 28</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Time">
+			<table name="#time">33 36 39 42 45 48 51 54 57 60</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="WindWalk">
+			<table name="#speed">1 2 3 4 5 6 7 8 9 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="ChanceShock">
+			<table name="#stunPower">1 2 3 4 5 6 7 8 9 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 levels="10" name="Recovery" enchRoute="9">
+			<table name="#reuseDelay">873000 846000 819000 792000 765000 738000 711000 684000 657000 630000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<for>
+			<effect name="Buff" time="#time" val="0" stackOrder="-1" stackType="Immobilize">
+				<add order="0x40" stat="stunPower" val="#stunPower"/>
+				<add order="0x40" stat="runSpd" val="#speed"/>
+				<add order="0x40" stat="pDef" val="#pDef"/>
+				<add order="0x40" stat="mDef" val="#pDef"/>
+				<mul order="0x30" stat="reflectDam" val="#ref"/>
+				<mul order="0x40" stat="cancelResist" val="1.8"/>
+				<set order="0x30" stat="receiveDamageLimit" val="300">
+					<player damage="300;0"/>
+				</set>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10018" levels="2" name="Noble Sacrifice">
+	<!-- For 10 seconds, receives 60% of the damage inflicted to the party member. -->
+		<table name="#magicLevel">91 96</table>
+		<table name="#mpConsume2">60 65</table>
+		<table name="#reuseDelay">60000</table>
+		<table name="#val">60 90</table>
+		<table name="#time">10</table>
+		<table name="#healPercent">0</table>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="castRange" val="400"/>
+		<set name="effectRange" val="600"/>
+		<set name="skillRadius" val="1100"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="target" val="TARGET_PARTY_ONE"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">61 57 53 49 45 41 37 33 29 26</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Time">
+			<table name="#time">11 12 13 14 15 16 17 18 19 20</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="RecoversHP">
+			<table name="#healPercent">1 2 3 4 5 6 7 8 9 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Recovery" enchRoute="9">
+			<table name="#reuseDelay">58000 56000 54000 52000 51000 49000 47000 45000 43000 42000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<for>
+			<effect name="AbsorbDamageToEffector" time="#time" val="0" stackOrder="1" stackType="pDefSpec">
+				<add order="0x40" stat="transferToEffectorDam" val="#val"/>
+			</effect>
+			<effect name="HealPercent" val="#healPercent" count="1"/>
+		</for>
+	</skill>
+	<skill id="10019" levels="2" name="Protection of Faith">
+	<!-- For 15 seconds, all party members' P. Def. + 5000, M. Def. + 5000, and resistance to debuff + 50%. Receives 90% of the damage inflicted to each party member. -->
+		<table name="#Def">5000 10000</table>
+		<table name="#debuf">50 70</table>
+		<table name="#magicLevel">85 87</table>
+		<table name="#mpConsume2">127 140</table>
+		<table name="#reuseDelay">900000</table>
+		<table name="#speed">0</table>
+		<table name="#time">15</table>
+		<table name="#transferPartyDmg">90 90</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="528;"/>
+		<set name="skillRadius" val="700"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">131 123 114 106 98 89 81 72 64 56</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Time">
+			<table name="#time">16 18 19 21 22 24 25 27 28 30</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="WindWalk">
+			<table name="#speed">1 2 3 4 5 6 7 8 9 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Recycle" enchRoute="9">
+			<table name="#reuseDelay">873000 846000 819000 792000 765000 738000 711000 684000 657000 630000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<for>
+			<effect name="AbsorbDamageToEffector" time="#time" val="0" stackOrder="2" stackType="pDefSpec">
+				<add order="0x40" stat="runSpd" val="#speed"/>
+				<add order="0x40" stat="debuffResist" val="#debuf"/>
+				<add order="0x40" stat="mDef" val="#Def"/>
+				<add order="0x40" stat="pDef" val="#Def"/>
+				<add order="0x40" stat="transferToEffectorDam" val="#transferPartyDmg"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10020" levels="4" name="Focus Shield">
+		<!-- P. Def. + 350, shield P. Def. + 700, and shield defense + 35%. MP is continuously consumed. -->
+		<table name="#mana">1</table>
+		<table name="#pDef">350 400 450 500</table>
+		<table name="#sDef">700 800 900 1000</table>
+		<table name="#rShld">1.35 1.4 1.45 1.5</table>
+		<set name="magicLevel" val="85"/>
+		<set name="skillType" val="CONT"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="relationSkillsId" val="288;322;"/>
+		<set name="target" val="TARGET_SELF"/>
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="3" val="#mana">
+				<add order="0x40" stat="sDef" val="#sDef"/>
+				<add order="0x40" stat="pDef" val="#pDef"/>
+				<mul order="0x30" stat="rShld" val="#rShld"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10021" levels="4" name="Spike Shield">
+	<!-- For 10 seconds, reflects 10% of melee damage received back to the attacker. Additionally, there is a 50% chance of reflecting magic damage back to the attacker. Can be used while a shield is equipped. -->
+		<table name="#mpConsume2">20 21 23 24</table>
+		<table name="#magicLevel">85 90 95 99</table>
+		<table name="#reuseDelay">60000</table>
+		<table name="#ref">10 15 20 25</table>
+		<table name="#time">10</table>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="0"/>
+		<set name="hitTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="aggroPoints" val="595"/>
+		<set name="relationSkillsId" val="86;916;"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">22 21 19 18 16 15 13 12 11 9</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Time">
+			<table name="#time">11 12 13 14 15 16 17 18 19 20</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Recycle" enchRoute="9">
+			<table name="#reuseDelay">58 56 54 52 51 49 47 45 43 42</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<for>
+			<effect name="Buff" time="#time" val="0" stackOrder="3" stackType="dmg_shield">
+				<add order="0x40" stat="reflectDam" val="#ref"/>
+				<add order="0x40" stat="reflectAndBlockMSkillDam" val="50"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10022" levels="1" name="Ignore Death">
+	<!-- For 10 seconds, HP does not decrease below 1. -->
+		<table name="#magicLevel">97</table>
+		<table name="#mpConsume2">38</table>
+		<table name="#reuseDelay">1800000</table>
+		<table name="#time">10</table>
+		<table name="#healPercent">0</table>
+		<set name="lvlDepend" val="1"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="nextActionAttack" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="SSBoost" val="2.0"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">35 33 31 28 26 24 22 19 17 15</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Time">
+			<table name="#time">11 12 13 14 15 16 17 18 19 20</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="PowerHP">
+			<table name="#healPercent">1 2 3 4 5 6 7 8 9 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Recycle" enchRoute="9">
+			<table name="#reuseDelay">1746000 1692000 1638000 1584000 1530000 1476000 1422000 1368000 1314000 1260000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<for>
+			<effect name="DeathImmunity" time="#time" val="0">
+				<set order="0x40" stat="receiveDamageLimit" val="1">
+		    			<player damage="1;0"/>
+		    		</set>
+			</effect>
+			<effect name="HealPercent" val="#healPercent" count="1"/>
+		</for>
+	</skill>
+	<skill id="10023" levels="2" name="King of Beasts">
+	<!-- Summons the King of Beasts to attack nearby and frontal targets with 60000 power added to P. Atk. Over-hit. -->
+		<table name="#magicLevel">95 98</table>
+		<table name="#mpConsume2">136 142</table>
+		<table name="#reuseDelay">600000</table>
+		<table name="#power">60000 70000</table>
+		<table name="#powerPvP">0</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="effectRange" val="300"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="1200"/>
+		<set name="target" val="TARGET_MULTIFACE"/>
+		<set name="castRange" val="40"/>
+		<set name="nextAction" val="attack"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="power" val="#power"/>
+		<set name="powerPvP" val="#powerPvP"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="overHit" val="true"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">133 124 116 107 99 90 82 73 65 56</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Duel">
+			<table name="#powerPvP">70000 75000 80000 85000 90000 95000 100000 105000 110000 120000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 name="Fire Attack">
+			<table name="#element">fire</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 name="Water Attack">
+			<table name="#element">water</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 name="Wind Attack">
+			<table name="#element">wind</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<enchant6 name="Earth Attack">
+			<table name="#element">earth</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant6>
+		<enchant7 name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant7>
+		<enchant8 name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant8>
+		<enchant9 levels="10" name="Recycle">
+			<table name="#reuseDelay">582000 564000 546000 528000 510000 492000 474000 456000 438000 420000</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+		</enchant9>
+	</skill>
+	<skill id="10024" levels="1" name="Party Rescue">
+	<!-- Drags all party members to oneself, and for 15 seconds receives 90% of the damage inflicted to all party members. Additionally, all damage received is capped at 10. -->
+		<table name="#heal">0</table>
+		<table name="#magicLevel">99</table>
+		<table name="#mpConsume2">96</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="700"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="castRange" val="900"/>
+		<set name="skillRadius" val="400"/>
+		<cond msgId="113" addName="1">
+			<using kind="Shield"/>
+		</cond>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">92 88 84 80 76 72 69 65 61 57</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Power HP">
+			<table name="#heal">1 2 3 4 5 6 7 8 9 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="HealPercent" time="0" val="#heal"/>
+			<effect count="1" name="AbsorbDamageToEffector" time="15" val="0" stackOrder="1" stackType="pDefSpec">
+		   		 <add order="0x40" stat="transferToEffectorDam" val="90"/>
+			</effect>
+			<effect applyOnCaster="true" count="1" name="Buff" time="15" val="0">
+		    		<set order="0x40" stat="receiveDamageLimit" val="10">
+		    			<player damage="10;0"/>
+		    		</set>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10025" levels="4" name="Knight Frenzy">
+	<!-- For 1 minute(s), P. Def. and M. Def. + 50%, Speed + 10, Accuracy + 4 and Atk. Spd. + 10% when equipped with a sword/blunt weapon. Additionally, Critical Rate + 30 when equipped with a sword, and Critical Damage + 30% when equipped with a blunt weapon. -->
+		<table name="#magicLevel">85 90 95 99</table>
+		<table name="#mpConsume2">20 21 23 24</table>
+		<table name="#reuseDelay">600000</table>
+		<table name="#Def">1.5 1.7 2 2.2</table>
+		<table name="#Spd">10 20 25 30</table>
+		<table name="#AtkSpd">1.10 1.15 1.20 1.25</table>
+		<table name="#cAtk">1.3 1.4 1.5 1.6</table>
+		<table name="#rCrit">30 40 50 60</table>
+		<table name="#accCombat">4 6 8 10</table>
+		<table name="#sDef">1</table>
+		<table name="#pAtk">1</table>
+		<table name="#time">60</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="0"/>
+		<set name="hitTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="65;278;449;22;67;10;406;33;"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#mpConsume2">22 21 19 18 16 15 13 12 11 9</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Time">
+			<table name="#time">66 72 78 84 90 96 102 108 114 120</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Shield Defense">
+			<table name="#sDef">1.02 1.04 1.06 1.08 1.1 1.12 1.14 1.16 1.18 1.2</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Might">
+			<table name="#pAtk">1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 levels="10" name="Recycle" enchRoute="9">
+			<table name="#reuseDelay">582000 564000 546000 528000 510000 492000 474000 456000 438000 420000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+		<for>
+			<effect name="Buff" time="#time" val="0" stackOrder="3" stackType="knight_icon">
+				<mul order="0x30" stat="mDef" val="#Def"/>
+				<mul order="0x30" stat="pDef" val="#Def"/>
+				<mul order="0x30" stat="pAtk" val="#pAtk"/>
+				<mul order="0x30" stat="sDef" val="#sDef"/>
+				<add order="0x30" stat="runSpd" val="#Spd"/>
+				<mul order="0x30" stat="accCombat" val="#accCombat">
+					<using kind="Sword,Blunt"/>
+				</mul>
+				<mul order="0x30" stat="pAtkSpd" val="#AtkSpd">
+					<using kind="Sword,Blunt"/>
+				</mul>
+				<mul order="0x40" stat="cAtk" val="#cAtk">
+					<using kind="Blunt"/>
+				</mul>
+				<add order="0x40" stat="rCrit" val="#rCrit">
+					<using kind="Sword"/>
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10026" levels="6" name="Superior Aggression">
+	<!-- Provokes the selected target into attacking you. -->
+		<table name="#magicLevel">85 87 90 93 96 99</table>
+		<table name="#reuseDelay">5000</table>
+		<table name="#effectPoint">9937 10000 10070 10130 10200 10270</table>
+		<table name="#pDef">1</table>
+		<table name="#pAtk">1</table>
+		<table name="#stunResist">0</table>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="800"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="power" val="5500"/>
+		<set name="skillType" val="AGGRESSION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="castRange" val="400"/>
+		<set name="isReuseDelayPermanent" val="true"/> <!--Why?-->
+		<set name="relationSkillsId" val="28;"/>		
+		<enchant1 levels="10" name="Hex">
+			<table name="#pDef">1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>		
+		<enchant2 levels="10" name="Weakness">	
+			<table name="#pAtk">1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Break Shock">
+			<table name="#stunResist">1 2 3 4 5 6 7 8 9 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Recycle" enchRoute="9">
+			<table name="#reuseDelay">4850 4700 4550 4400 4250 4100 3950 3800 3650 3500</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<for>
+			<effect count="1" name="Aggression" time="3" val="0">
+				<div order="0x30" stat="pDef" val="#pDef"/>
+				<div order="0x30" stat="pAtk" val="#pAtk"/>
+				<sub order="0x40" stat="stunResist" val="#stunResist"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10027" levels="5" name="Superior Aggression Aura">
+	<!-- Provokes nearby enemies into attacking you. -->
+		<table name="#magicLevel">85 88 91 94 97</table>
+		<table name="#reuseDelay">10000</table>
+		<table name="#effectPoint">6349 6402 6452 6499 6542</table>
+		<table name="#pDef">1</table>
+		<table name="#pAtk">1</table>
+		<table name="#stunResist">0</table>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillRadius" val="400"/>
+		<set name="skillType" val="AGGRESSION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="18;"/>	
+		<enchant1 levels="10" name="Hex">
+			<table name="#pDef">1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>		
+		<enchant2 levels="10" name="Weakness">	
+			<table name="#pAtk">1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Break Shock">
+			<table name="#stunResist">1 2 3 4 5 6 7 8 9 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Recycle" enchRoute="9">
+			<table name="#reuseDelay">9700 9400 9100 8800 8500 8200 7900 7600 7300 7000</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<for>
+			<effect count="1" name="Aggression" time="3" val="0">
+				<div order="0x30" stat="pDef" val="#pDef"/>
+				<div order="0x30" stat="pAtk" val="#pAtk"/>
+				<sub order="0x40" stat="stunResist" val="#stunResist"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10028" levels="1" name="Rage Aura">
+	<!-- When a sword or blunt weapon is equipped, P. Atk. and P. Crit. Damage and Atk. Spd. + 10% and Speed + 10. Decreases nearby enemies' P. Atk. and Atk. Spd. by 20%. Only one Sigel Knight's Aura can be active at any time. -->
+		<table name="#magicLevel">85</table>
+		<set name="effectPoint" val="467"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="CONT"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+		<set name="relationSkillsId" val="982;"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelCombatAura" stackOrder="1">
+				<def name="forceSkillId" val="10029"/>
+				<mul order="0x30" stat="pAtk" val="1.10">
+					<using kind="Sword, Blunt"/>
+				</mul>
+				<mul order="0x30" stat="pAtkSpd" val="1.10">
+					<using kind="Sword, Blunt"/>
+				</mul>
+				<mul order="0x30" stat="cAtk" val="1.10">
+					<using kind="Sword, Blunt"/>
+				</mul>
+				<add order="0x30" stat="runSpd" val="10">
+					<using kind="Sword, Blunt"/>
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10029" levels="1" name="Rage Aura">
+	<!-- When a sword or blunt weapon is equipped, increases aggression power. Additionally, increases party members' P. Atk. and Atk. Spd. by 5% and decreases skill MP Consumption by 20%. Only one Sigel Knight's Aura can be active at any time. -->
+		<table name="#amount">0.8</table>
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="isDebuff" val="true"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="9" val="10" stackType="SigelCombatAura" stackOrder="1">
+				<def name="auraSkillId" val="10028"/>
+				<mul order="0x30" stat="pAtk" val="#amount"/>
+				<mul order="0x30" stat="pAtkSpd" val="#amount"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10030" levels="1" name="Challenge Aura">
+	<!-- When a sword or blunt weapon is equipped, increases aggression power. Additionally, increases party members' P. Atk. and Atk. Spd. by 5% and decreases skill MP Consumption by 20%. Only one Sigel Knight's Aura can be active at any time. -->
+		<table name="#magicLevel">85</table>
+		<set name="effectPoint" val="467"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="CONT"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+		<set name="relationSkillsId" val="982;"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelCombatAura" stackOrder="1">
+				<def name="forceSkillId" val="10031"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<mul order="0x30" stat="mpConsum" val="0.8"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10031" levels="1" name="Challenge Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%, and skill MP Consumption - 20%. -->
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_PARTY_WITHOUT_ME"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillRadius" val="1000"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelPartyAura" stackOrder="1">
+				<def name="auraSkillId" val="10030"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<mul order="0x30" stat="mpConsum" val="0.8"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10032" levels="1" name="Iron Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%. P. Def. + 215, shield P. Def. + 50%, shield defense rate + 100% when equipped with heavy armor. Resistance to bow/crossbows + 20%. Damage from critical attack - 15%. Only one Sigel Knight's Aura can be active at any time. -->
+		<table name="#magicLevel">85</table>
+		<set name="effectPoint" val="467"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="CONT"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+		<set name="relationSkillsId" val="982;"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelCombatAura" stackOrder="1">
+				<def name="forceSkillId" val="10033"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<mul order="0x30" stat="sDef" val="1.50">
+					<using armor="Heavy"/>
+				</mul>
+				<mul order="0x30" stat="rShld" val="2">
+					<using armor="Heavy"/>
+				</mul>
+				<mul order="0x30" stat="critDamRcpt" val="0.85">
+					<using armor="Heavy"/>
+				</mul>
+				<mul order="0x30" stat="bowWpnVuln" val="1.20">
+					<using armor="Heavy"/>
+				</mul>
+				<mul order="0x30" stat="crossbowWpnVuln" val="1.20">
+					<using armor="Heavy"/>
+				</mul>
+				<add order="0x40" stat="pDef" val="215">
+					<using armor="Heavy"/>
+				</add>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10033" levels="1" name="Iron Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%, P. Def. + 10%, resistance to bow/crossbows + 20%. Instant heal effect + 10%. -->
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_PARTY_WITHOUT_ME"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillRadius" val="1000"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelPartyAura" stackOrder="1">
+				<def name="auraSkillId" val="10032"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<mul order="0x30" stat="bowWpnVuln" val="1.20"/>
+				<mul order="0x30" stat="crossbowWpnVuln" val="1.20"/>
+				<add order="0x40" stat="pDef" val="215"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10034" levels="1" name="Resistance Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%, M. Def. + 10%, resistance to Fire/Water/Wind/Earth + 20. Only one Sigel Knight's Aura can be active at any time. -->
+		<table name="#magicLevel">85</table>
+		<set name="effectPoint" val="467"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="CONT"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+		<set name="relationSkillsId" val="982;"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelCombatAura" stackOrder="1">
+				<def name="forceSkillId" val="10035"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<mul order="0x30" stat="mDef" val="1.10"/>
+				<add order="0x30" stat="defenceFire" val="20"/>
+				<add order="0x30" stat="defenceWater" val="20"/>
+				<add order="0x30" stat="defenceWind" val="20"/>
+				<add order="0x30" stat="defenceEarth" val="20"/>
+				<add order="0x30" stat="defenceHoly" val="20"/>
+				<add order="0x30" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10035" levels="1" name="Resistance Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%, M. Def. + 10%, resistance to Fire/Water/Wind/Earth + 20. -->
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_PARTY_WITHOUT_ME"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillRadius" val="1000"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelPartyAura" stackOrder="1">
+				<def name="auraSkillId" val="10034"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<mul order="0x30" stat="mDef" val="1.10"/>
+				<add order="0x30" stat="defenceFire" val="20"/>
+				<add order="0x30" stat="defenceWater" val="20"/>
+				<add order="0x30" stat="defenceWind" val="20"/>
+				<add order="0x30" stat="defenceEarth" val="20"/>
+				<add order="0x30" stat="defenceHoly" val="20"/>
+				<add order="0x30" stat="defenceUnholy" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10036" levels="1" name="Recovery Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%. Increases resistance to P. Mez and debuffs by 20. Additionally, Healing effects are increased by 10%. Only one Sigel Knight's Aura can be active at any time. -->
+		<table name="#magicLevel">85</table>
+		<set name="effectPoint" val="467"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="CONT"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+		<set name="relationSkillsId" val="982;"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelCombatAura" stackOrder="1">
+				<def name="forceSkillId" val="10037"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<add order="0x40" stat="stunResist" val="20"/>
+				<add order="0x40" stat="paralyzeResist" val="20"/>
+				<add order="0x40" stat="knockBackResist" val="20"/>
+				<add order="0x40" stat="knockDownResist" val="20"/>
+				<add order="0x40" stat="rootResist" val="20"/>
+				<add order="0x40" stat="disarmResist" val="20"/>
+				<add order="0x40" stat="debuffResist" val="20"/>
+				<mul order="0x30" stat="hpEff" val="1.15"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10037" levels="1" name="Recovery Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%. Increases resistance to P. Mez and debuffs by 20. Additionally, Healing effects are increased by 10%. -->
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_PARTY_WITHOUT_ME"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillRadius" val="1000"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelPartyAura" stackOrder="1">
+				<def name="auraSkillId" val="10036"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<add order="0x40" stat="stunResist" val="20"/>
+				<add order="0x40" stat="paralyzeResist" val="20"/>
+				<add order="0x40" stat="knockBackResist" val="20"/>
+				<add order="0x40" stat="knockDownResist" val="20"/>
+				<add order="0x40" stat="rootResist" val="20"/>
+				<add order="0x40" stat="disarmResist" val="20"/>
+				<add order="0x40" stat="debuffResist" val="20"/>
+				<mul order="0x30" stat="hpEff" val="1.15"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10038" levels="1" name="Spirit Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%. Increases resistance to M. Mez and debuffs by 20. Additionally, MP recovery effects are increased by 10%. Only one Sigel Knight's Aura can be active at any time. -->
+		<table name="#magicLevel">85</table>
+		<set name="effectPoint" val="467"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="CONT"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="operateType" val="OP_ACTIVE_TOGGLE"/>
+		<set name="relationSkillsId" val="982;"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelCombatAura" stackOrder="1">
+				<def name="forceSkillId" val="10039"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<add order="0x40" stat="debuffResist" val="20"/>
+				<add order="0x40" stat="sleepResist" val="20"/>
+				<add order="0x40" stat="mutateResist" val="20"/>
+				<add order="0x40" stat="mentalResist" val="20"/>
+				<add order="0x40" stat="airjokeResist" val="20"/>
+				<mul order="0x30" stat="mpEff" val="1.10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10039" levels="1" name="Spirit Aura">
+	<!-- P. Atk. and Atk. Spd. + 5%. Increases resistance to M. Mez and debuffs by 20. Additionally, MP recovery effects are increased by 10%. -->
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_PARTY_WITHOUT_ME"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillRadius" val="1000"/>
+		<for>
+			<effect count="0x7fffffff" name="GiantForceAura" time="5" val="10" stackType="SigelPartyAura" stackOrder="1">
+				<def name="auraSkillId" val="10038"/>
+				<mul order="0x30" stat="pAtk" val="1.05"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.05"/>
+				<add order="0x40" stat="debuffResist" val="20"/>
+				<add order="0x40" stat="sleepResist" val="20"/>
+				<add order="0x40" stat="mutateResist" val="20"/>
+				<add order="0x40" stat="mentalResist" val="20"/>
+				<add order="0x40" stat="airjokeResist" val="20"/>
+				<mul order="0x30" stat="mpEff" val="1.10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10040" levels="6" name="Summon Golden Lion">
+	<!-- Summons a golden lion to fight alongside you. -->
+		<table name="#npcIds">14936 14937 14938 14939 14974 14975</table>
+		<table name="#magicLevel">85 86 89 92 95 98</table>
+		<table name="#mpConsume2">154 156 164 173 181 189</table>
+		<set name="summonTotalLifeTime" val="3600000"/>
+		<set name="summonTimeLostIdle" val="500"/>
+		<set name="summonTimeLostActive" val="1000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="3500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="summonType" val="SERVITOR"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="npcId" val="#npcIds"/>
+		<set name="relationSkillsId" val="283;"/>
+		<enchant1 levels="10" name="power01">
+			<table name="#npcIds">14976 14977 14978 14979 14980 14981 14982 14983 14984 14985</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+	</skill>
+	<skill id="10041" levels="4" name="Summon Cubic of Despair">
+	<!-- none -->
+	<!--TODO-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="2200"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="10042" levels="3" name="Summon Cubic of Life">
+	<!-- none -->
+	<!--TODO-->
+		<table name="#magicLevel">94 97 99</table>
+		<table name="#heal">3 6 9</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="43"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="2200"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<for>
+			<effect count="1" name="HealPercent" time="0" val="#heal"/>
+		</for>
+	</skill>
+	<skill id="10043" levels="8" name="Summon Knight Cubic">
+	<!-- Summons a Knight Cubic. The summoned cubic removes debuffs from you. -->
+	<!--TODO: unfinished-->
+		<table name="#mpConsume">96 98 101 105 108 111 115 118</table>
+		<table name="#magicLevel">85 86 88 90 92 94 96 98</table>
+		<table name="#cubicLevel">1 2 3 4 5 6 7 8</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="mpConsume" val="#mpConsume"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="2200"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="cancelable" val="false"/>
+		<set name="isCubic" val="true"/>
+		<set name="relationSkillsId" val="97;779;780;"/>
+		<for>
+			<effect name="Cubic" stackType="knight_cubic" stackOrder="1" time="900">
+				<def name="cubicId" val="15"/>
+				<def name="cubicLevel" val="#cubicLevel"/>
+				<player cubic="15"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10044" levels="1" name="Superior Elemental Mastery">
+	<!-- STR + 2 and resistance to all attributes + 20. -->
+		<table name="#element">20</table>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="197;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#element">21 22 23 24 25 26 27 28 29 30</table>
+		</enchant1>
+		<for>
+			<add order="0x10" stat="STR" val="2"/>
+			<add order="0x40" stat="defenceEarth" val="#element"/>
+			<add order="0x40" stat="defenceFire" val="#element"/>
+			<add order="0x40" stat="defenceWater" val="#element"/>
+			<add order="0x40" stat="defenceWind" val="#element"/>
+			<add order="0x40" stat="defenceHoly" val="#element"/>
+			<add order="0x40" stat="defenceUnholy" val="#element"/>
+		</for>
+	</skill>
+	<skill id="10045" levels="3" name="Shield Charge II">
+	<!-- Strikes with the shield. Attacks the target with 11196 power added to P. Atk. Decreases P. Def. by 10% and Evasion by 2. Increases Critical damage by 10%. -->
+		<table name="#Power">11196 11196 11196</table>
+		<table name="#rCrit">10 20 30</table>
+		<table name="#pDef">0.9 0.8 0.7</table>
+		<table name="#rEvas">2 3 4</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#magicLevel">85 86 87</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#Power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillsId" val="10249;10250;14579"/>
+		<for>
+			<effect name="Debuff" time="9" val="0">
+				<add order="0x40" stat="rCrit" val="#rCrit"/>
+				<mul order="0x30" stat="pDef" val="#pDef"/>
+				<sub order="0x40" stat="rEvas" val="#rEvas"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10046" levels="3" name="Shield Charge III">
+	<!-- Strikes with the shield. Attacks the target with 11948 power added to P. Atk. Decreases P. Def. by 10% and Evasion by 2. Increases Critical damage by 10%. -->
+		<table name="#Power">11948 11948 11948</table>
+		<table name="#rCrit">10 20 30</table>
+		<table name="#pDef">10 20 30</table>
+		<table name="#rEvas">2 3 4</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#magicLevel">85 86 87</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#Power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillsId" val="10249;10250;14579"/>
+		<for>
+			<effect name="Debuff" time="9" val="0" stackOrder="1" stackType="critical_dmg_down" effectPower="80">
+				<add order="0x40" stat="rCrit" val="#rCrit"/>
+				<mul order="0x30" stat="pDef" val="#pDef"/>
+				<sub order="0x40" stat="rEvas" val="#rEvas"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10047" levels="3" name="Shield Charge IV">
+	<!-- Strikes with the shield. Attacks the target with 12700 power added to P. Atk. Decreases P. Def. by 10% and Evasion by 2. Increases Critical damage by 10%. -->
+		<table name="#Power">12700 12700 12700</table>
+		<table name="#rCrit">10 20 30</table>
+		<table name="#pDef">10 20 30</table>
+		<table name="#rEvas">2 3 4</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#magicLevel">85 86 87</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#Power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillsId" val="10249;10250;14579"/>
+		<for>
+			<effect name="Debuff" time="9" val="0" stackOrder="1" stackType="critical_dmg_down" effectPower="80">
+				<add order="0x40" stat="rCrit" val="#rCrit"/>
+				<mul order="0x30" stat="pDef" val="#pDef"/>
+				<sub order="0x40" stat="rEvas" val="#rEvas"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10048" levels="3" name="Shield Charge V">
+	<!-- Strikes with the shield. Attacks the target with 13452 power added to P. Atk. Decreases P. Def. by 10% and Evasion by 2. Increases Critical damage by 10%. -->
+		<table name="#Power">13452 13452 13452</table>
+		<table name="#rCrit">10 20 30</table>
+		<table name="#pDef">10 20 30</table>
+		<table name="#rEvas">2 3 4</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#magicLevel">85 86 87</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#Power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillsId" val="10249;10250;14579"/>
+		<for>
+			<effect name="Debuff" time="9" val="0" stackOrder="1" stackType="critical_dmg_down" effectPower="80">
+				<add order="0x40" stat="rCrit" val="#rCrit"/>
+				<mul order="0x30" stat="pDef" val="#pDef"/>
+				<sub order="0x40" stat="rEvas" val="#rEvas"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10049" levels="3" name="Shield Charge VI">
+	<!-- Strikes with the shield. Attacks the target with 14204 power added to P. Atk. Decreases P. Def. by 10% and Evasion by 2. Increases Critical damage by 10%. -->
+		<table name="#Power">14204 14204 14204</table>
+		<table name="#rCrit">10 20 30</table>
+		<table name="#pDef">10 20 30</table>
+		<table name="#rEvas">2 3 4</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#magicLevel">85 86 87</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#Power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillsId" val="10249;10250;14579"/>
+        	<for>
+			<effect name="Debuff" time="9" val="0" stackOrder="1" stackType="critical_dmg_down" effectPower="80">
+				<add order="0x40" stat="rCrit" val="#rCrit"/>
+				<mul order="0x30" stat="pDef" val="#pDef"/>
+				<sub order="0x40" stat="rEvas" val="#rEvas"/>
+			</effect>
+        	</for>
+	</skill>
+	<skill id="10050" levels="3" name="Shield Charge VII">
+	<!-- Strikes with the shield. Attacks the target with 14956 power added to P. Atk. Decreases P. Def. by 10% and Evasion by 2. Increases Critical damage by 10%. -->
+		<table name="#Power">14956 14956 14956</table>
+		<table name="#rCrit">10 20 30</table>
+		<table name="#pDef">10 20 30</table>
+		<table name="#rEvas">2 3 4</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#magicLevel">85 86 87</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#Power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillsId" val="10249;10250;14579"/>
+        	<for>
+			<effect name="Debuff" time="9" val="0" stackOrder="1" stackType="critical_dmg_down" effectPower="80">
+				<add order="0x40" stat="rCrit" val="#rCrit"/>
+				<mul order="0x30" stat="pDef" val="#pDef"/>
+				<sub order="0x40" stat="rEvas" val="#rEvas"/>
+			</effect>
+       		</for>
+	</skill>
+	<skill id="10051" levels="6" name="Lion Roar">
+	<!-- Attack the enemies and block the physical skills. -->
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<table name="#activateRate">50 52 54 56 58 60</table>
+		<table name="#Power">14956 14956 14956</table>
+		<table name="#Holy">0</table>
+		<table name="#Dark">0</table>
+		<set name="power" val="#Power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="effectPoint" val="666"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="trait" val="DERANGEMENT"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="skillInterrupt" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<for>
+			<effect count="1" name="MutePhisycal" time="60" val="0">
+				<sub order="0x40" stat="defenceFire" val="#Holy"/>
+				<sub order="0x40" stat="defenceWind" val="#Dark"/>
+				<sub order="0x40" stat="defenceWater" val="#Dark"/>
+				<sub order="0x40" stat="defenceEarth" val="#Holy"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10052" levels="6" name="Lion Claw">
+	<!-- Flourishes claws to attack enemies at the front. -->
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<table name="#power">9503 9702 9896 10084 10266 10440</table>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<for/>
+	</skill>
+	<skill id="10053" levels="6" name="Lion Rush">
+	<!-- Dashes to the enemy to inflict damage and shock. -->
+		<table name="#power">88 94 101 115 123 131</table>
+		<table name="#effectPoint">145 150 154 164 169 173</table>
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<set name="activateRate" val="50"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="skillRadius" val="400"/>
+		<set name="castRange" val="600"/>
+		<set name="save" val="4"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="overHit" val="true"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<set name="flyType" val="CHARGE"/>
+		<set name="flyRadius" val="600"/>
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="9" val="0"/>
+		</for>
+	</skill>
+	<skill id="10054" levels="6" name="Lion Flame">
+	<!-- Spews flames at the enemy to inflict damage. -->
+		<table name="#effectPoint">227 243 268 285 313 331</table>
+		<table name="#power">129 132 135 138 142 144</table>
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="element" val="fire"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="shieldignore" val="true"/>
+		<for/>
+	</skill>
+	<skill id="10055" levels="1" name="Cubic Attack">
+	<!-- P. Atk. is temporarily decreased. Effect 3. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="10056" levels="8" name="Cubic Protection">
+	<!-- none -->
+	<!--TODO-->
+		<table name="#time">0 3 6 6 6 6 6 6</table>
+		<table name="#magicLevel">85 87 89 90 92 94 97 99</table>
+		<table name="#mDef">0 0 0 500 500 500 500 500</table>
+		<table name="#pDef">0 0 500 500 500 500 500 500</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="600"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isOffensive" val="false"/>
+		<set name="effectPoint" val="408"/>
+		<set name="castRange" val="1000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="useSS" val="false"/>
+		<set name="isHideUseMessage" val="true"/>
+		<for>
+			<effect count="1" name="DispelEffects" time="0" val="0">
+				<def name="dispelType" val="cleanse"/>
+				<def name="cancelRate" val="100"/>
+				<def name="negateCount" val="10"/>
+			</effect>
+			<effect count="1" name="Buff" stackType="CubicProtection" time="#time" val="0">
+				<add order="0x40" stat="cancelResist" val="100"/>
+				<add order="0x40" stat="mDef" val="#mDef"/>
+				<add order="0x40" stat="pDef" val="#pDef"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10057" levels="1" name="Cubic Curse">
+	<!-- Inflicted with poison and HP is temporarily decreased. Effect 5. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="10058" levels="1" name="Blessing of Protection">
+	<!-- M. Def. and resistance to all attributes are momentarily increased. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="magicLevel" val="85"/>
+		<set name="castRange" val="400"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isTrigger" val="true"/>
+		<for>
+			<effect count="1" name="Buff" stackType="ProtectionOf" time="10" val="0">
+				<add order="0x60" stat="mDef" val="1500"/>
+				<add order="0x40" stat="defenceFire" val="50"/>
+				<add order="0x40" stat="defenceWater" val="50"/>
+				<add order="0x40" stat="defenceWind" val="50"/>
+				<add order="0x40" stat="defenceEarth" val="50"/>
+				<add order="0x40" stat="defenceUnholy" val="50"/>
+				<add order="0x40" stat="defenceHoly" val="50"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10059" levels="3" name="Shield Charge VII">
+	<!-- Strikes with the shield. Attacks the target with 15708 power added to P. Atk. Decreases P. Def. by 10% and Evasion by 2. Increases Critical damage by 10%. -->
+		<table name="#Power">15708 15708 15708</table>
+		<table name="#rCrit">10 20 30</table>
+		<table name="#pDef">10 20 30</table>
+		<table name="#rEvas">2 3 4</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#magicLevel">85 86 87</table>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="power" val="#Power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="weaponsAllowed" val="2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Debuff" time="9" val="0" stackOrder="1" stackType="critical_dmg_down" effectPower="80">
+				<add order="0x40" stat="rCrit" val="#rCrit"/>
+				<mul order="0x30" stat="pDef" val="#pDef"/>
+				<sub order="0x40" stat="rEvas" val="#rEvas"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="10060" levels="1" name="Aggression Attack">
+	<!-- Provokes. -->
+		<set name="coolTime" val="200"/>
+		<set name="reuseDelay" val="6000"/>
+		<set name="power" val="3928"/>
+		<set name="magicLevel" val="85"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="700"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="effectPoint" val="3241"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="AGGRESSION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<for>
+			<effect count="1" name="Aggression" time="3" val="0"/>
+		</for>
+	</skill>
+	<skill id="10061" levels="1" name="Price of Summoning">
+	<!-- P. Def. is intentionally decreased as price for summoning a lion. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="magicLevel" val="86"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="isSaveable" val="false"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Debuff" time="9" val="0" >
+				<div order="0x30" stat="pDef" val="1.5"/>
+			</effect>
+		</for>
+	</skill>
+</list>

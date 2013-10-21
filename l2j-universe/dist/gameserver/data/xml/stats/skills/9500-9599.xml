@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="9527" levels="1" name="Verdof's Vitality Replenishing Herb">
+    <!-- Replenishes Vitality upon XP gain. -->
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="icon" val="icon.skilltransform4"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="100"/>
+    </skill>
+    <skill id="9543" levels="1" name="HP Recovery Herb">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="hitTime" val="100"/>
+        <set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="HEAL_PERCENT"/>
+        <set name="power" val="40"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="isHideUseMessage" val="true"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <set name="hitCancelTime" val="500"/>
+    </skill>
+    <skill id="9544" levels="1" name="Power Herb">
+    <!-- Increases P. Atk. By 100% and M. Atk. By 400% for 30 seconds. -->
+        <set name="icon" val="icon.etc_warrior_set_i00"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="hitTime" val="100"/>
+        <set name="isHideUseMessage" val="true"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <set name="hitCancelTime" val="500"/>
+        <for>
+            <effect name="Buff" time="30" val="0" stackType="pAtk" stackOrder="5">
+                <mul stat="pAtk" order="0x30" val="2"/>
+                <mul stat="mAtk" order="0x30" val="4"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="9579" levels="1" name="Clearest Water" >
+    <!-- The clearest water given to you by the Lady of the Lake. You can use it on the Mother Tree at the center of the Elven Village. -->
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicType" val="SPECIAL" />
+		<set name="magicLevel" val="1" />
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<set name="hitTime" val="5000"/>
+	</skill>
+	<skill id="9580" levels="1" name="Brightest Light" >
+    <!-- The brightest light given to you by Nerupa in Arms of Timiniel of Magmeld. You can use it in front of Shilen's statue in the middle of the Dark Elf Village. -->
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicType" val="SPECIAL" />
+		<set name="magicLevel" val="1" />
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<set name="hitTime" val="5000"/>
+	</skill>
+	<skill id="9581" levels="1" name="Purest Soul" >
+    <!-- The purest soul given to you by Enfeux in the Valley of Saints. You can use it in front of the Cave of Souls near the Kamael Village. -->
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicType" val="SPECIAL" />
+		<set name="magicLevel" val="1" />
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<set name="hitTime" val="5000"/>
+	</skill>
+	<skill id="9582" levels="1" name="Fiercest Flame" >
+    <!-- The fiercest flame given to you by Vulcan, the Blacksmith of Flame in the Forge of the Gods. You can use it in front of the Pa'agrio Temple in the Orc Village. -->
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicType" val="SPECIAL" />
+		<set name="magicLevel" val="1" />
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<set name="hitTime" val="5000"/>
+	</skill>
+	<skill id="9583" levels="1" name="Fondest Heart" >
+    <!-- A letter that speaks for Vulcan's fond heart. You can use it in the ruins of the Dwarven Village. -->
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicType" val="SPECIAL" />
+		<set name="magicLevel" val="1" />
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<set name="hitTime" val="5000"/>
+	</skill>
+</list>

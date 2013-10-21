@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="10497" levels="1" name="Warrior - Individual Passive">
+		<table name="#magicLevel">85</table>
+		<set name="reuseDelay" val="8000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isTrigger" val="true"/>
+		<for>
+			<effect count="1" name="Buff" time="10" val="0">
+				<mul order="0x30" stat="pAtk" val="1.1"/>
+			</effect>
+		</for>		
+	</skill>
+    <skill id="10498" levels="1" name="Warrior - Individual">
+    <!-- P. Atk. increases by 10% for 5 seconds. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<triggers>
+			<trigger id="10497" level="1" type="RECEIVE_DAMAGE" chance="50">
+				<player damage="100;0"/>
+			</trigger>
+		</triggers>
+	</skill>
+	    <skill id="10499" levels="1" name="Tyrr Chain Air Blow">
+	    		<!-- Inflicts a powerful blow on the target. -->
+			<set name="reuseDelay" val="10000"/>
+			<set name="hitTime" val="2000"/>
+			<set name="mpConsume2" val="40"/>
+			<set name="castRange" val="40"/>
+			<set name="power" val="15803"/>
+			<set name="magicLevel" val="85"/>
+			<set name="coolTime" val="300"/>
+			<set name="skillType" val="PDAM"/>
+			<set name="target" val="TARGET_ONE"/>
+			<set name="overHit" val="true"/>&gt;
+			<set name="operateType" val="OP_ACTIVE"/>
+			<set name="nextAction" val="attack"/>
+			<set name="isSkillTimePermanent" val="true"/>
+			<set name="isAlterSkill" val="true"/>
+	    </skill>
+</list>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="9337" levels="1" name="??????? ? ???????? ??????">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9338" levels="1" name="??????? ? ???????">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9339" levels="1" name="??????: ??????? ?????????? ??????">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9340" levels="1" name="?????? ?????: ???????? ??????">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9341" levels="1" name="?????? ?????: ?????? ???????????">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9342" levels="1" name="?????? ?????: ?????? ??????????">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9343" levels="1" name="?????? ?????: ????. ?????? ???????????">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9344" levels="1" name="?????? ?????: ?????? ?????? ????">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9345" levels="1" name="A Treasure Box">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="9346" levels="1" name="Hero Treasure Box">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+   <skill id="9365" levels="2" name="Support of Eva">
+    <!-- Recovers HP by 20%, MP by 20%, and CP by 30%. Can be used in the Olympiad. -->
+        <table name="#regHpMp">1.2 1.3</table>
+		<table name="#regCp">1.3 1.5</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" val="0">
+                <mul order="0x30" stat="regHp" val="#regHpMp"/>
+                <mul order="0x30" stat="regMp" val="#regHpMp"/>
+				<mul order="0x30" stat="regCp" val="#regCp"/>
+            </effect>
+        </for>
+   </skill>
+   <skill id="9367" levels="2" name="Support of Pa'agrio">
+    <!-- Cancels all abnormal status and makes you invincible for 5 seconds. Can be used in the Olympiad. -->
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+   </skill>
+   <skill id="9369" levels="2" name="Support of Maphr">
+    <!-- Increases enchant success rate by 10%. But does not apply to no-Grade items. -->
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+   </skill>
+   <skill id="9371" levels="1" name="Portal of Shyeed">
+    <!-- Summons a portal that lasts for 5 minutes. Cannot be used in special areas like the GM consultation area. -->
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+   </skill>
+   <skill id="9372" levels="1" name="Portal of Shyeed">
+    <!-- The portal is created. -->
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+   </skill>
+   <skill id="9373" levels="2" name="Support of Shyeed">
+    <!-- Teleports immediately to your summoned portal. Cannot be used in special areas like the GM consultation area. -->
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+   </skill>		
+   <skill id="9376" levels="1" name="Mentor Guardian's Harmony">
+    <!-- Increases the selected mentee's P. Atk. by 12%, P. Def. by 45%, shield defense rate by 30%, shield P. Def. by 50%, P. Critical Damage by 35% and P. Critical Rate by 100% for 2 hours. -->
+        <table name="#abnormal_time">120000</table>
+        <table name="#mpConsume2">1</table>
+        <table name="#mpConsume1">1</table>
+        <table name="#magicLevel">1</table>
+        <table name="#abnormal_lvl">2</table>
+        <set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="hitTime" val="2500"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume1" val="#mpConsume1"/>
+        <set name="mpConsume2" val="#mpConsume2"/>
+        <set name="target" val="TARGET_MENTEE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="#abnormal_lvl" stackType="berserk" time="#abnormal_time" val="0">
+                <mul order="0x30" stat="pAtk" val="1.12"/>
+                <mul order="0x30" stat="pDef" val="1.45"/>
+				<mul order="0x30" stat="rShld" val="1.3"/>
+				<mul order="0x30" stat="sDef" val="1.5"/>
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+				<mul order="0x30" stat="rCrit" val="2"/>
+            </effect>
+        </for>
+    </skill>
+   <skill id="9377" levels="1" name="Mentor's Magician's Harmony">
+    <!-- Increases the selected mentee's P. Atk. by 8%, M. Atk. by 40%, Atk. Spd. and Casting Spd. by 8%, M. Def. by 14%, M. Critical Rate by 100%, MP recovery bonus by 20%, Speed by 8 and decreases P. Def. by 8%, P. Evasion by 4, MP Consumption of magic skill by 15%, MP Consumption of physical skill by 5%, and skill re-use time by 20% for 2 hours. -->
+        <table name="#abnormal_time">120000</table>
+        <table name="#mpConsume2">1</table>
+        <table name="#mpConsume1">1</table>
+        <table name="#magicLevel">1</table>
+        <table name="#abnormal_lvl">2</table>
+        <set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="15000"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="hitTime" val="2500"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume1" val="#mpConsume1"/>
+        <set name="mpConsume2" val="#mpConsume2"/>
+        <set name="target" val="TARGET_MENTEE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="#abnormal_lvl" stackType="berserk" time="#abnormal_time" val="0">
+                <mul order="0x30" stat="pAtk" val="1.08"/>
+				<mul order="0x30" stat="mAtk" val="1.4"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="mDef" val="1.14"/>
+				<mul order="0x30" stat="mCritRate" val="2"/>
+				<mul order="0x30" stat="regMp" val="1.2"/>
+				<add order="0x40" stat="runSpd" val="8"/>
+				<mul order="0x30" stat="pDef" val="0.92"/>
+				<sub order="0x40" stat="pSkillEvasion" val="4"/>
+				<mul order="0x30" stat="mpConsum" val="0.85"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.95"/>
+                <mul order="0x30" stat="pReuse" val="0.80"/>
+                <mul order="0x30" stat="mReuse" val="0.80"/>
+            </effect>
+        </for>
+    </skill>
+   <skill id="9378" levels="1" name="Mentor's Berserker's Harmony">
+    <!-- Increases the selected mentee's P. Atk. by 35%, M. Atk. by 16%, Atk. Spd. and Casting Spd. by 8%, P. Critical Damage by 35%, P. Critical Rate by 100, Speed and decreases M. Def. by 16%, P. Def. by 8%, and P. Evasion by 4 for 2 hours. -->
+        <table name="#abnormal_time">120000</table>
+        <table name="#mpConsume2">1</table>
+        <table name="#mpConsume1">1</table>
+        <table name="#magicLevel">1</table>
+        <table name="#abnormal_lvl">2</table>
+        <set name="magicType" val="MAGIC"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="hitTime" val="2500"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume1" val="#mpConsume1"/>
+        <set name="mpConsume2" val="#mpConsume2"/>
+        <set name="target" val="TARGET_MENTEE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="#abnormal_lvl" stackType="berserk" time="#abnormal_time" val="0">
+                <mul order="0x30" stat="pAtk" val="1.35"/>
+				<mul order="0x30" stat="mAtk" val="1.16"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.08"/>
+				<mul order="0x30" stat="mAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="cAtk" val="1.35"/>
+				<mul order="0x30" stat="rCrit" val="2"/>
+				<add order="0x40" stat="runSpd" val="8"/>
+				<mul order="0x30" stat="mDef" val="0.84"/>
+				<mul order="0x30" stat="pDef" val="0.92"/>
+				<sub order="0x40" stat="pSkillEvasion" val="4"/>
+            </effect>
+        </for>
+    </skill>	
+   <skill id="9379" levels="1" name="Mentee's Mentor Summon">
+    <!-- Summons a mentor. -->
+        <set name="reuseDelay" val="36000"/>
+        <set name="magicLevel" val="40"/>
+        <set name="hitTime" val="10000"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="SUMMON_MENTOR"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="10000"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+    </skill>
+    <skill id="9399" levels="1" name="Firecracker of Fear">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="reuseDelay" val="1500"/>
+		<set name="magicLevel" val="1"/>
+		<set name="itemConsumeId" val="34761"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="HOT"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+</list>

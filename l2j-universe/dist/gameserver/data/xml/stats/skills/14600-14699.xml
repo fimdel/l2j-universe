@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="14600" levels="1" name="Chain Skills">
+    <!-- Enables use of chain skills. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="PASSIVE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14601" levels="1" name="Cry of Fate - Mark of Weakness">
+    <!-- For 10 seconds, weakens the enemy. Decreases 174 HP per second and increases weakness to de-buff by 5%. -->
+        <table name="#DOT">174</table>
+        <set name="castRange" val="600"/>
+        <set name="hitTime" val="1200"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume" val="1"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison1" abnormal="poison"/>
+        </for>
+    </skill>
+    <skill id="14602" levels="1" name="Cry of Fate - Mark of Plague">
+    <!-- Stigma that connects to the epidemic dimension. For 10 seconds, inflicts the plague in the enemy. Decreases 238 HP per second and block recovery. -->
+        <table name="#DOT">238</table>
+        <set name="castRange" val="600"/>
+        <set name="hitTime" val="1500"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume" val="1"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison2" abnormal="poison"/>
+        </for>
+    </skill>
+    <skill id="14603" levels="1" name="Cry of Fate - Exile">
+    <!-- Kicks out the target to another dimension. The exiled target becomes incapacitated and loses 167 HP per second. -->
+        <table name="#DOT">167</table>
+        <set name="castRange" val="600"/>
+        <set name="hitTime" val="3000"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume" val="1"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison2" abnormal="poison"/>
+        </for>
+    </skill>
+    <skill id="14604" levels="1" name="Chain Skills">
+    <!-- Enables use of chain skills. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="PASSIVE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14605" levels="1" name="Cry of Fate - Assault Attack">
+    <!-- Attacks the target with 5175 power added to P. Atk. For 5 seconds, decreases the enemy's P. Def./M. Def. by 70% and evasion by 10. -->
+        <table name="#Tab">0.7</table>
+        <set name="power" val="5175"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="300">
+                <mul order="0x30" stat="pDef" val="#Tab"/>
+                <mul order="0x30" stat="mDef" val="#Tab"/>
+                <mul order="0x30" stat="rEvas" val="0.9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14606" levels="1" name="Cry of Fate - Death Strike">
+    <!-- Attacks the target with 9444 Power added to P. Atk. -->
+        <set name="power" val="9444"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14607" levels="1" name="Cry of Fate - Pipe Organ Melody">
+    <!-- For 10 seconds, increases Max HP by 2572, Max MP by 953, HP recovery by 20%, and MP recovery by 20%. -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="10">
+                <add order="0x40" stat="maxHp" val="2572"/>
+                <add order="0x40" stat="maxMp" val="953"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <mul order="0x30" stat="regMp" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="14608" levels="1" name="Chain Skills">
+    <!-- Enables use of chain skills. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="PASSIVE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14609" levels="1" name="Cry of Fate - Dark Blast">
+    <!-- Inflicts no-type damage on the enemy with 124 power added to M. Atk. Decreases the enemy's attacking urge against yourself. -->
+        <set name="castRange" val="600"/>
+        <set name="hitTime" val="1500"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="power" val="124"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="14610" levels="1" name="Cry of Fate - Light of Heal">
+    <!-- Restores the target's HP with 1488 Power. Once HP is filled, the remaining effect stores CP. -->
+        <set name="hitTime" val="3000"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="skillType" val="HEAL_WITH_CP"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="power" val="1488"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="14611" levels="1" name="Cry of Fate - Dark Force">
+    <!-- Pushes and inflicts a magic attack. -->
+        <set name="castRange" val="600"/>
+        <set name="hitTime" val="2000"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="power" val="113"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="effetRange" val="600"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14612" levels="1" name="Press the icon to use the chain skill.">
+    <!-- Can use chain attacks. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <for>
+            <effect count="1" name="Buff" time="4" alterData="457"/>
+        </for>
+    </skill>
+    <skill id="14613" levels="1" name="Press the icon to use the chain skill.">
+    <!-- Can use chain attacks. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <for>
+            <effect count="1" name="Buff" time="4" alterData="458"/>
+        </for>
+    </skill>
+    <skill id="14614" levels="1" name="Press the icon to use the chain skill.">
+    <!-- Can use chain attacks. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="3000"/>
+        <for>
+            <effect count="1" name="Buff" time="4" alterData="459"/>
+        </for>
+    </skill>
+    <skill id="14615" levels="1" name="Teredor Biting">
+    <!-- P. Def. and M. Def. decreased 10%. Additional 500 decrease. Evasion 4 decrease. Accumulates with every incurred attack. -->
+        <set name="icon" val="icon.skill0122"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14616" levels="1" name="Absorb status.">
+    <!-- Blood is being sucked. -->
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14617" levels="1" name="Knock Down Resistance">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14618" levels="1" name="Knock Back Resistance">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14619" levels="1" name="Disarm Resistance">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14620" levels="1" name="Aerial Yoke Resistance">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14621" levels="1" name="Drag Resistance">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14622" levels="1" name="Banishment Resistance">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14623" levels="1" name="Mutation Resistance">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14624" levels="1" name="Apherus Dark Space">
+    <!-- Atk. Spd. and HP are decreased. -->
+        <set name="icon" val="icon.skill0048"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14625" levels="1" name="Release of Power">
+    <!-- Shares power with the target. -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillType" val="HEAL"/>
+        <set name="power" val="1488"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="30000"/>
+        <set name="hitTime" val="10000"/>
+        <set name="castRange" val="900"/>
+    </skill>
+    <skill id="14626" levels="1" name="Mental Attack Resistance">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14627" levels="1" name="Foul Secretion">
+    <!-- P. Def. is decreased. -->
+        <set name="icon" val="icon.skill0122"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14628" levels="1" name="Gastric Juice Eruption">
+    <!-- Speed is decreased. -->
+        <set name="icon" val="icon.skill1184"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14629" levels="1" name="Corpse Grinding">
+    <!-- Bleed status. -->
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14630" levels="1" name="Discard Decayed Branch">
+    <!-- Knocked back. -->
+        <set name="icon" val="icon.skill0101"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14631" levels="1" name="Foul Spore">
+    <!-- Silence status. -->
+        <set name="icon" val="icon.skill1064"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14632" levels="1" name="Terrifying Sword Dance">
+    <!-- Atk. Spd. is increased. -->
+        <set name="icon" val="icon.skill1086"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14633" levels="1" name="Severed Ankle">
+    <!-- Knocked back. -->
+        <set name="icon" val="icon.skill0261"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14634" levels="1" name="Stigma's Despair">
+    <!-- none -->
+        <set name="icon" val="icon.skill14634"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14635" levels="1" name="Corpse Explosion">
+    <!-- none -->
+        <set name="icon" val="icon.skill14635"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14636" levels="1" name="Merciless Grip">
+    <!-- Aerial yoke status. -->
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14637" levels="1" name="Driving Fog">
+    <!-- none -->
+        <set name="icon" val="icon.skill0014637"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14638" levels="1" name="Blade Claw">
+    <!-- Bleed status. -->
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14639" levels="1" name="Compound Poison">
+    <!-- Poison status. -->
+        <set name="icon" val="icon.skill0129"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14640" levels="1" name="Move at High Speed">
+    <!-- Evasion is increased. -->
+        <set name="icon" val="icon.skill1087"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14641" levels="1" name="Earthquake">
+    <!-- none -->
+        <set name="icon" val="icon.skill0014641"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14642" levels="1" name="Sever">
+    <!-- Knocked back. -->
+        <set name="icon" val="icon.skill0261"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14643" levels="1" name="Summon">
+    <!-- none -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14644" levels="1" name="White Dog's Fang">
+    <!-- none -->
+        <set name="icon" val="icon.skill0014644"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14645" levels="1" name="Dark Arrow">
+    <!-- Knocked back. -->
+        <set name="icon" val="icon.skill0101"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14646" levels="1" name="Polarization">
+    <!-- Atk. Spd. is decreased. -->
+        <set name="icon" val="icon.skill0115"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14647" levels="1" name="Polarization">
+    <!-- Atk. Spd. is decreased. -->
+        <set name="icon" val="icon.skill0115"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14648" levels="1" name="Flood">
+    <!-- Flood status. -->
+        <set name="icon" val="icon.skill1062"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14649" levels="1" name="Bounce">
+    <!-- Bounce status. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <for/>
+    </skill>
+    <skill id="14650" levels="1" name="Corpse Strike">
+    <!-- Monster attack! -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14651" levels="1" name="Shock">
+    <!-- Inflicts stun on the enemy for 7 seconds. -->
+        <set name="icon" val="icon.skill0092"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14652" levels="1" name="Absorb Blood">
+    <!-- Damage blood siphon 100%. -->
+        <set name="icon" val="icon.skill1268"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14653" levels="1" name="Rigor Mortis">
+    <!-- Monster absolute defense. Defense increased 50000. -->
+        <set name="icon" val="icon.skill0110"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14654" levels="1" name="Absorb Darkness">
+    <!-- Monster heal. Power 1024. -->
+        <set name="icon" val="icon.skill1401"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14655" levels="1" name="Barrier of Reflection">
+    <!-- Reflect damage 50% -->
+        <set name="icon" val="icon.skill0086"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14656" levels="1" name="Corpse Lunacy">
+    <!-- Increases P. Atk., Critical rage/damage, and Atk. Spd. by 100%. -->
+        <set name="icon" val="icon.skill1068"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14657" levels="1" name="Lingering Lunacy">
+    <!-- Aftereffect of going insane. -->
+        <set name="icon" val="icon.skill1170"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14658" levels="1" name="Whirlwind">
+    <!-- Monster attack! Power 36675. -->
+        <set name="icon" val="icon.skill0036"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14659" levels="1" name="Shock">
+    <!-- Inflicts stun on the enemy for 7 seconds. -->
+        <set name="icon" val="icon.skill0092"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14660" levels="1" name="Blood Strike">
+    <!-- Monster attack! Power 50937. -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14661" levels="1" name="Darkness Wave">
+    <!-- Monster attack! Power 49414. -->
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14662" levels="1" name="Darkness Shiver">
+    <!-- Monster attack! Power 50937. -->
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14663" levels="1" name="Guardian Blow">
+    <!-- Monster attack! Power 45844. -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14664" levels="1" name="Destruction Blow">
+    <!-- Monster attack! Power 50937. -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14665" levels="1" name="Ferocious Charge">
+    <!-- Monster Rush -->
+        <set name="icon" val="icon.skill0493"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14666" levels="1" name="Penetrating Blow">
+    <!-- Monster attack! Power 50937. -->
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14667" levels="1" name="Flames of Judgment">
+    <!-- none -->
+        <set name="icon" val="icon.skill1230"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14668" levels="1" name="Firestorm of Judgment">
+    <!-- none -->
+        <set name="icon" val="icon.skill1296"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14649" levels="1" name="Bounce">
+    <!-- Bounce status. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <for/>
+    </skill>
+    <skill id="14670" levels="1" name="Earth Wyrm Feeler Strike">
+    <!-- none -->
+        <set name="icon" val="icon.skill0036"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14671" levels="1" name="Earth Wyrm Feeler Strike">
+    <!-- none -->
+        <set name="icon" val="icon.skill0036"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14672" levels="1" name="Bounce">
+    <!-- Bounce status. -->
+        <set name="icon" val="icon.skill4107"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14673" levels="1" name="Cry of Fate - Shield Charge">
+    <!-- Uses a shield to attack the selected target with 1500 power added to P. Atk. Also decreases P. Def. by 10% and physical evasion by 2. Increase incurred physical critical damage by 10%. -->
+        <set name="power" val="1500"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="800"/>
+        <set name="mpConsume" val="1"/>
+        <set name="castRange" val="40"/>
+        <for>
+            <effect name="Buff" time="9" val="0" abnormalLvl="1" abnormalType="critical_dmg_down" effectPower="80">
+                <basemul order="0x30" stat="critDamRcpt" val="1.1"/>
+                <mul order="0x30" stat="pDef" val="0.9"/>
+                <sub order="0x40" stat="rEvas" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14674" levels="1" name="Cry of Fate - Chain Strike">
+    <!-- Drags a target to the center. -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="500"/>
+        <set name="mpConsume" val="1"/>
+        <set name="castRange" val="600"/>
+        <for>
+            <effect count="1" name="TargetToMe" time="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="14675" levels="1" name="Cry of Fate - Last Judgment">
+    <!-- Attacks with 2000 power added to P. Atk. Decreases Speed by 10%. -->
+        <set name="icon" val="icon.skill10009"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14676" levels="1" name="Cry of Fate - Armor Destruction">
+    <!-- Attacks the enemy with 1300 power added to P. Atk. Weakens P. Def. Additionally absorbs Momentum. -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1090"/>
+        <set name="hitCancelTime" val="200"/>
+        <set name="mpConsume" val="1"/>
+        <set name="castRange" val="40"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="1300"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="3" stackType="pDefDown" time="20" val="0">
+                <mul order="0x30" stat="pDef" val="0.85"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14677" levels="1" name="Cry of Fate - Giant Punch">
+    <!-- Strikes down at the ground with a fist to knock down nearby enemies for 3 seconds. Dual sword/two-handed sword/spear/blunt weapon must be equipped. -->
+        <set name="icon" val="icon.skill10266"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14678" levels="1" name="Cry of Fate - Power Bomber">
+    <!-- Powerfully strikes the target with 2000 Power added to P. Atk. to knock down for 2 seconds. -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="1490"/>
+        <set name="hitCancelTime" val="200"/>
+        <set name="mpConsume" val="1"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="2000"/>
+        <set name="castRange" val="40"/>
+        <for>
+            <effect name="Stun" time="2" val="0" effectPower="65" effectType="STUN" abnormalLvl="1" abnormalType="stun"/>
+        </for>
+    </skill>
+    <skill id="14679" levels="1" name="Cry of Fate - Heart Breaker">
+    <!-- Inflicts a powerful vital spot attack by striking the heart. Attack the target with 1700 Power added to P. Atk. Over-hit. Half-kill. -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="829"/>
+        <set name="hitCancelTime" val="699"/>
+        <set name="mpConsume" val="0"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="1700"/>
+        <set name="castRange" val="40"/>
+        <set name="overHit" val="true"/>
+        <set name="lethal1" val="10"/>
+    </skill>
+    <skill id="14680" levels="1" name="Cry of Fate - Dark Paralyze">
+    <!-- Seals with the power of darkness. Causes the enemy's body to go completely rigid for 10 seconds and causes paralysis for 5 seconds. -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Petrification" stackOrder="-1" stackType="paralyze" time="5" val="0"/>
+        </for>
+    </skill>
+	<skill id="14686" levels="1" name="Cry of Fate - Elemental Crash">
+    <!-- Inflicts magic damage on the enemy with 35 power. Also decreases Speed and inflicts fear. -->
+		<table name="#magicLevel">85</table>
+		<table name="#mpInitialConsume">7</table>
+		<table name="#power">143</table>
+		<table name="#mpConsume2">65</table>
+		<set name="reuseDelay" val="6000"/>
+		<set name="hitTime" val="1200"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="900"/>
+		<set name="element" val="0"/> <!-- Fire -->
+		<set name="elementPower" val="80"/>
+		<set name="isDebuff" val="true"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="power" val="20"/> <!-- Base Land Rate -->
+		<set name="lvlDepend" val="1"/>
+		<set name="magicLevel" val="#magicLevel"/>		
+		<set name="mpInitialConsume" val="#mpInitialConsume"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="power" val="#power"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="target" val="TARGET_ONE"/>
+		<for>
+			<effect count="5" name="Fear" time="2" val="0" stackOrder="1" stackType="fear"/>
+		</for>
+	</skill>
+	<skill id="14687" levels="1" name="Cry of Fate - Hell Binding">
+    <!-- Floats the target into the air and stops him from moving for awhile. -->
+        <set name="icon" val="icon.skill11050"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14688" levels="2" name="Cry of Fate - Mark of Weakness">
+    <!-- For 10 seconds, weakens the enemy. Decreases 40 HP per second and increases weakness to de-buff by 5%. -->
+        <table name="#DOT">40 5</table>
+        <set name="castRange" val="600"/>
+        <set name="hitTime" val="1200"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume" val="1"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison1" abnormal="poison"/>
+        </for>
+    </skill>
+    <skill id="14689" levels="2" name="Cry of Fate - Mark of Plague">
+    <!-- Stigma that connects to the epidemic dimension. For 10 seconds, inflicts the plague in the enemy. Decreases 70 HP per second and block recovery. -->
+        <table name="#DOT">70 8</table>
+        <set name="castRange" val="600"/>
+        <set name="hitTime" val="1500"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume" val="1"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison2" abnormal="poison"/>
+        </for>
+    </skill>
+    <skill id="14690" levels="1" name="Cry of Fate - Exile">
+    <!-- Kicks out the target to another dimension. The exiled target becomes incapacitated and loses 167 HP per second. -->
+        <set name="icon" val="icon.skill11273"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14691" levels="1" name="Cry of Fate - Assault Attack">
+    <!-- Attacks the target with 1300 power added to P. Atk. For 5 seconds, decreases the enemy's P. Def./M. Def. by 30% and evasion by 10. -->
+        <set name="castRange" val="40"/>
+        <set name="hitTime" val="910"/>
+        <set name="hitCancelTime" val="300"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="1300"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect name="Debuff" time="5" val="0">
+                <mul order="0x30" stat="pDef" val="0.70"/>
+                <mul order="0x30" stat="mDef" val="0.70"/>
+                <add order="0x40" stat="rEvas" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14692" levels="1" name="Cry of Fate - Death Strike">
+    <!-- Attacks the target with 1400 Power added to P. Atk. -->
+        <set name="castRange" val="40"/>
+        <set name="hitTime" val="1409"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="1400"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="14693" levels="1" name="Cry of Fate - Pipe Organ Melody">
+    <!-- For 30 minutes, increases Max HP by 2572, Max MP by 953, HP recovery by 20%, and MP recovery by 20%. -->
+        <set name="hitTime" val="699"/>
+        <set name="hitCancelTime" val="300"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="power" val="1400"/>
+        <set name="mpConsume" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect name="Buff" time="1800" val="0" stackOrder="1" stackType="buff">
+                <add order="0x40" stat="maxHp" val="2572"/>
+                <add order="0x40" stat="maxMp" val="953"/>
+                <mul order="0x30" stat="regHp" val="1.20"/>
+                <mul order="0x30" stat="regMp" val="1.20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14694" levels="1" name="Cry of Fate - Dark Blast">
+    <!-- Inflicts no-type damage on the enemy with 31 power added to M. Atk. Decreases the enemy's attacking urge against yourself. -->
+        <set name="castRange" val="600"/>
+        <set name="hitTime" val="1500"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="power" val="31"/>
+        <set name="mpConsume" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="14695" levels="1" name="Cry of Fate - Light of Heal">
+    <!-- Restores the target's HP with 1488 Power. Once HP is filled, the remaining effect stores CP. -->
+        <set name="icon" val="icon.skill11755"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14696" levels="1" name="Cry of Fate - Dark Force">
+    <!-- Pushes and inflicts a magic attack. -->
+        <set name="icon" val="icon.skill0101"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14697" levels="1" name="Ghost's Hell Binding">
+    <!-- Floats the target into the air and stops him from moving for awhile. -->
+        <set name="icon" val="icon.skill11050"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14698" levels="1" name="Current Shock">
+    <!-- Incurs a current shock. -->
+        <set name="hitTime" val="1000"/>
+        <set name="skillRadius" val="600"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLvl" val="18"/>
+        <set name="mpConsume" val="0"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="target" val="TARGET_AURA"/>
+        <for>
+            <effect count="2" name="DamOverTime" time="2" val="67"/>
+        </for>
+    </skill>
+    <skill id="14699" levels="1" name="Greeting of Suffering">
+    <!-- Translucent status. -->
+        <set name="icon" val="icon.skill0411"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

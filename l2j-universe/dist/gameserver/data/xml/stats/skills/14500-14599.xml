@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="14505" levels="1" name="Enraged Earth Wyrm Appearance">
+    <!-- none -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="11000"/>
+        <for/>
+    </skill>
+	<skill id="14571" levels="5" name="Shilen's Breath">
+    <!-- Is killed and poisoned by Shilen's Breath. Increases resistance to darkness by 5 and HP recovery by 5%. If killed while poisoned, the poison stage increases. -->
+		<table name="#stat">1 1 0.605 0.452 0.299</table>
+		<table name="#Res">5 5 0 0 0</table>
+		<table name="#regHp">5 10 0 0 0</table>	
+		<table name="#time">600 600 300 300 300</table>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		    <effect name="Buff" time="#time" count="1" val="0">
+				<add order="0x40" stat="defenceUnholy" val="#Res"/>
+				<mul order="0x30" stat="regHp" val="#regHp"/>				
+				<mul order="0x30" stat="pAtk" val="#stat"/>
+				<mul order="0x30" stat="mAtk" val="#stat"/>
+				<mul order="0x30" stat="pDef" val="#stat"/>
+				<mul order="0x30" stat="mDef" val="#stat"/>
+				<mul order="0x30" stat="pAtkSpd" val="#stat"/>
+				<mul order="0x30" stat="mAtkSpd" val="#stat"/>
+				<mul order="0x30" stat="runSpd" val="#stat"/>
+				<mul order="0x30" stat="rEvas" val="#stat"/>
+				<mul order="0x30" stat="cAtk" val="#stat"/>
+				<mul order="0x30" stat="accCombat" val="#stat"/>
+            </effect>
+		</for>
+	</skill>	
+    <skill id="14590" levels="1" name="Cry of Fate - Dark Paralyze">
+    <!-- Seals with the power of darkness. Causes the enemy's body to go completely rigid for 10 seconds and causes paralysis for 5 seconds. -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Petrification" stackOrder="-1" stackType="paralyze" time="5" val="0"/>
+        </for>
+    </skill>
+</list>

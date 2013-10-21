@@ -1,0 +1,22 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="179" name="Fortuna Prison" maxChannels="1" collapseIfEmpty="1" timelimit="180" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="90" max="99"/>
+		<return loc="206856 89992 -1037"/>
+		<teleport loc="42104 -172712 -7980"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<party min="7" max="45"/>
+		<geodata map="21_12"/>
+		<spawns>
+		</spawns>
+		<doors>
+			<door id="21120001" opened="true" />
+		</doors>
+        <zones>
+            <zone name="[fortuna_start]" active="true"/>
+        </zones>
+	</instance>
+</list>

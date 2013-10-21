@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+   	<skill id="8800" levels="1" name="Top-Grade Guard Ring - Innadril">
+    <!-- Increases Resistance to Holy by 15. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+            <add order="0x40" stat="defenceHoly" val="15"/>
+        </for>
+	</skill>
+	<skill id="8801" levels="1" name="Top-Grade Guard Ring - Goddard">
+    <!-- Increases Resistance to Dark by 15. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+            <add order="0x40" stat="defenceUnholy" val="15"/>
+        </for>
+	</skill>
+	<skill id="8802" levels="1" name="Top-Grade Guard Ring - Rune">
+    <!-- Increases Resistance to wind by 15. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+            <add order="0x40" stat="defenceWind" val="15"/>
+        </for>
+	</skill>
+	<skill id="8803" levels="1" name="Top-Grade Guard Ring - Schuttgart">
+    <!-- Increases Resistance to Dark by 15. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+            <add order="0x40" stat="defenceUnholy" val="15"/>
+        </for>
+	</skill>
+	<skill id="8804" levels="1" name="Refined Tauti Bracelet">
+	<!-- INT+1,STR+1. 5 Talisman(s) can be equipped. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="STR" val="1"/>
+			<add order="0x10" stat="INT" val="1"/>
+			<add order="0x40" stat="maxMp" val="216"/>
+			<add order="0x40" stat="talismansLimit" val="5"/>
+		</for>
+	</skill>
+	<skill id="8870" levels="1" name="Tauti's Ring">
+    <!-- Increases Critical Damage by 15%,
+		Skill Attack by 5%, 
+		damage inflicted during PvP by 5%, 
+		resistance to Paralysis/Yoke/Exile by 10, 
+		resistance to Damage Reflect by 5, resistance to HP Drain by 5, and decreases damage received during PvP by 5%. Increases Critical by 54 when equipped with a blunt. -->
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+			<add order="0x40" stat="defenceUnholy" val="25"/>
+			<add order="0x40" stat="defenceFire" val="25"/>
+            <mul order="0x30" stat="cAtk" val="1.15"/>
+            <mul order="0x30" stat="skillPower" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+            <add order="0x40" stat="rootResist" val="10"/>
+            <add order="0x40" stat="paralyzeResist" val="10"/>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+            <add order="0x40" stat="rCrit" val="54">
+                <using kind="Sword, Big Sword"/>
+            </add>
+        </for>
+    </skill>
+</list>

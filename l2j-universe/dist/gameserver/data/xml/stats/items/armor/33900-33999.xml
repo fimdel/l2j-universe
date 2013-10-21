@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="33900" name="Immortal Circlet" add_name="Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_circlet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="114"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33901" name="Immortal Tunic" add_name="Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_u_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1750"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="152"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33902" name="Immortal Stockings" add_name="Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_l_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="850"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="95"/>
+			<enchant stat="rCrit" order="0x40" value="0"/>
+			<enchant stat="mCritRate" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33903" name="Immortal Gloves" add_name="Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="accCombat" order="0x40" value="0"/>
+			<enchant stat="maccCombat" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33904" name="Immortal Shoes" add_name="Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="runSpd" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33905" name="Immortal Sigil" add_name="Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.weapon_karyen_i00"/>
+		<set name="type" value="SIGIL"/>
+		<set name="ex_type" value="SIGIL"/>
+		<set name="weight" value="920"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="19"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33906" name="Immortal Necklace" add_name="Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.r1_necklace_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<set name="ex_type" value="NECKLACE"/>
+		<for>
+			<add stat="mDef" order="0x10" value="123"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="33907" name="Immortal Earring" add_name="Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.r1_earring_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<set name="ex_type" value="EARRING"/>
+		<for>
+			<add stat="mDef" order="0x10" value="92"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="33908" name="Immortal Ring" add_name="Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.r1_ring_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<set name="ex_type" value="RING"/>
+		<for>
+			<add stat="mDef" order="0x10" value="62"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="33951" name="Immortal Helmet" add_name="Attack-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="114"/>
+			<enchant stat="rEvas" order="0x40" value="0"/>
+			<enchant stat="mEvas" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33952" name="Immortal Breastplate" add_name="Attack-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t501_u_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7520"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="304"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33953" name="Immortal Gaiters" add_name="Attack-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t501_l_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3170"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="190"/>
+			<enchant stat="rCrit" order="0x40" value="0"/>
+			<enchant stat="mCritRate" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33954" name="Immortal Gauntlet" add_name="Attack-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t501_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="accCombat" order="0x40" value="0"/>
+			<enchant stat="maccCombat" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33955" name="Immortal Boots" add_name="Attack-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t501_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="runSpd" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33957" name="Immortal Leather Helmet" add_name="Assassin-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="114"/>
+			<enchant stat="rEvas" order="0x40" value="0"/>
+			<enchant stat="mEvas" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33958" name="Immortal Leather Armor" add_name="Assassin-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t502_u_i00"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4140"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="228"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33959" name="Immortal Leather Legging" add_name="Assassin-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t502_l_i00"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="1320"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="143"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33960" name="Immortal Leather Gloves" add_name="Assassin-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t502_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33961" name="Immortal Leather Boots" add_name="Assassin-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t502_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="runSpd" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33962" name="Immortal Circlet" add_name="Magic-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_circlet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="114"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33963" name="Immortal Tunic" add_name="Magic-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_u_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1750"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="152"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33964" name="Immortal Stockings" add_name="Magic-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_l_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="850"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="95"/>
+			<enchant stat="rCrit" order="0x40" value="0"/>
+			<enchant stat="mCritRate" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33965" name="Immortal Gloves" add_name="Magic-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="accCombat" order="0x40" value="0"/>
+			<enchant stat="maccCombat" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33966" name="Immortal Shoes" add_name="Magic-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="runSpd" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33967" name="Immortal Helmet" add_name="Defense-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="114"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+			<enchant stat="rEvas" order="0x40" value="0"/>
+			<enchant stat="mEvas" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="33968" name="Immortal Breastplate" add_name="Defense-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t501_u_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7520"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="304"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33969" name="Immortal Gaiters" add_name="Defense-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t501_l_i00"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3170"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="190"/>
+			<enchant stat="rCrit" order="0x40" value="0"/>
+			<enchant stat="mCritRate" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33970" name="Immortal Gauntlet" add_name="Defense-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t501_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="accCombat" order="0x40" value="0"/>
+			<enchant stat="maccCombat" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33971" name="Immortal Boots" add_name="Defense-type / Heavy / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t501_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="runSpd" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33973" name="Immortal Leather Helmet" add_name="Enhance-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="114"/>
+			<enchant stat="rEvas" order="0x40" value="0"/>
+			<enchant stat="mEvas" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33974" name="Immortal Leather Armor" add_name="Enhance-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t502_u_i00"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4140"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="228"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33975" name="Immortal Leather Legging" add_name="Enhance-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t502_l_i00"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="1320"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="143"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33976" name="Immortal Leather Gloves" add_name="Enhance-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t502_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="accCombat" order="0x40" value="0"/>
+			<enchant stat="maccCombat" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33977" name="Immortal Leather Boots" add_name="Enhance-type / Light / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t502_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="runSpd" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33978" name="Immortal Circlet" add_name="Recovery-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_circlet_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="114"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33979" name="Immortal Tunic" add_name="Recovery-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_u_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="1750"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="152"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33980" name="Immortal Stockings" add_name="Recovery-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_l_i00"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="850"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="95"/>
+			<enchant stat="rCrit" order="0x40" value="0"/>
+			<enchant stat="mCritRate" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33981" name="Immortal Gloves" add_name="Recovery-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_g_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="accCombat" order="0x40" value="0"/>
+			<enchant stat="maccCombat" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="33982" name="Immortal Shoes" add_name="Recovery-type / Robe / Event">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="R"/>
+		<set name="icon" value="icon.armor_t503_b_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="76"/>
+			<enchant stat="runSpd" order="0x40" value="0"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+</list>

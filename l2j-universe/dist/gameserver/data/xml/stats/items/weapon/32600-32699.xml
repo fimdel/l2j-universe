@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="32602" name="Fantasy Vesper Shield">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_verteidiger_i01"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="crystal_count" value="0"/>
+		<for>
+			<add stat="sDef" order="0x10" value="371"/>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+</list>

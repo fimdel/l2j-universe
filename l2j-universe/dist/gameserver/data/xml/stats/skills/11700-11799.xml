@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="11749" levels="1" name="Iss Chain Air Blow">
+		<!-- Inflicts a powerful blow on the target. -->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2000"/>
+		<set name="castRange" val="40"/>
+		<set name="mpConsume2" val="40"/>
+		<set name="power" val="15803"/>
+		<set name="magicLevel" val="85"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="overHit" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="isAlterSkill" val="true"/>
+	</skill>
+	<skill id="11750" levels="1" name="Iss Chain Knock Blow">
+		<!-- Inflicts a powerful blow on the target. -->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="castRange" val="900"/>
+		<set name="mpConsume1" val="40"/>
+		<set name="power" val="15803"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="flyType" val="CHARGE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="isAlterSkill" val="true"/>
+		<cond msgId="113" addName="1">
+			<not>
+				<using kind="Bow, Crossbow"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="11751" levels="1" name="Superior Weapon Mastery">
+		<!-- Increases INT by 2, M. Atk. by 103, and P. Atk. by 82. Additionally, there is a chance the cooldown of skills will reset or the duration double depending on your INT. -->
+		<table name="#pAtk">82</table>
+		<table name="#mAtk">103</table>
+		<set name="magicLevel" val="87"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="141;330"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#pAtk">87 93 98 104 109 115 120 126 131 137</table>
+			<table name="#mAtk">109 116 123 130 137 144 151 158 165 172</table>
+		</enchant1>
+		<for>
+			<add order="0x10" stat="INT" val="2"/>
+			<add order="0x40" stat="mAtk" val="#mAtk"/>
+			<add order="0x40" stat="pAtk" val="#pAtk"/>
+		</for>
+	</skill>
+	<skill id="11752" levels="8" name="Sustain">
+		<!-- For 15 seconds, Heals the target by 172 per second. Further increases incoming Healing power by 10%. Also increases your Healing power. -->
+		<table name="#hot">172 173 173 174 174 175 175 176</table>
+		<table name="#hpEff">1.10 1.13 1.16 1.19 1.22 1.25 1.28 1.30</table>
+		<table name="#magicLevel">85 87 89 91 93 95 97 99</table>
+		<table name="#abnormal_lv">30 31 32 33 34 35 36 37</table>
+		<set name="reuseDelay" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="castRange" val="600"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="HEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="15" name="HealOverTime" stackOrder="#abnormal_lv" stackType="ChantofLife" time="1" val="#hot">
+				<mul order="0x30" stat="hpEff" val="#hpEff"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11753" levels="3" name="Sustain"> 
+		<!-- For 10 seconds, increases Healing power by 50. If triggered again, the effect will increase. -->
+		<table name="#hpEff">50 100 200</table>
+		<table name="#magicLevel">85 88 92</table>
+		<table name="#mpConsume2">70</table>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="600"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillRadius" val="900"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="10" name="HealOverTime" time="1" val="0">
+				<add order="0x40" stat="hpEff" val="#hpEff"/>
+			</effect>
+		</for>
+	</skill> 
+	<skill id="11754" levels="5" name="Fairy of Life">
+		<!-- Summons a fairy that follows and periodically heals the target for 60 seconds. More heals will be triggered when receiving damage. -->
+		<table name="#magicLevel">85 86 89 92 95</table>
+		<table name="#mpConsume2">43 46 48 52 55</table>
+		<table name="#lifeTime">60 60 60 60 60</table>
+		<table name="#cubicLevel">1 2 3 4 5</table>
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="2200"/>
+		<set name="castRange" val="600"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="target" val="TARGET_PARTY_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="reuseDelay" val="15000"/>
+		<set name="relationSkillsId" val="1531;"/>
+		<enchant1 levels="10" name="Power"/>
+		<enchant2 levels="10" name="Time">
+			<table name="#lifeTime">66 72 78 84 90 96 102 108 114 120</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<for>
+			<effect name="Cubic" stackType="fairy_cubic" stackOrder="1" time="#lifeTime">
+				<def name="cubicId" val="17"/>
+				<def name="cubicLevel" val="#cubicLevel"/>
+				<player cubic="17"/>
+			</effect>
+			<effect count="1" name="Buff" time="#lifeTime" val="0"/>
+		</for>
+	</skill>
+	<skill id="11755" levels="8" name="Radiant Heal">
+		<!-- Heals the target with 1488 power. If HP is full, CP is restored. -->
+		<table name="#magicLevel">85 86 88 90 92 94 96 98</table>
+		<table name="#power">1488 1495 1507 1519 1532 1544 1557 1570</table>
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="4500"/>
+		<set name="castRange" val="600"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="HEAL_HP_CP"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1217;1401"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">1583 1589 1596 1602 1615 1629 1642 1656 1670 1684</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+	</skill>
+	<skill id="11756" levels="8" name="Panic Heal">
+		<!-- Heals the target with 1488 power. If HP is full, CP is restored. -->
+		<table name="#magicLevel">85 86 88 90 92 94 96 98</table>
+		<table name="#power">1488 1495 1507 1519 1532 1544 1557 1570</table>
+		<set name="reuseDelay" val="1000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="castRange" val="600"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="HEAL_HP_CP"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1218;"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">1583 1589 1596 1602 1615 1629 1642 1656 1670 1684</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+	</skill>
+	<skill id="11757" levels="8" name="Brilliant Heal">
+		<!-- Heals yourself and nearby party members with 1191 power. If HP is full, CP is restored. -->
+		<table name="#magicLevel">85 87 89 91 93 95 97 99</table>
+		<table name="#power">1191 1200 1210 1220 1230 1240 1250 1261</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="6500"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillRadius" val="900"/>
+		<set name="skillType" val="HEAL_HP_CP"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1402;1219;"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">1269 1278 1286 1295 1304 1312 1321 1329  1347</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+	</skill>
+	<skill id="11758" levels="1" name="Celestial Protection">
+		<!-- Renders the selected party member invincible for 10 seconds. -->
+		<set name="reuseDelay" val="120000"/>
+		<set name="hitTime" val="500"/>
+		<set name="magicLevel" val="85"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="target" val="TARGET_PARTY_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="castRange" val="600"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1418;"/>
+		<set name="delayedEffect" val="11833"/>
+		<for>
+			<effect abnormal="invul2" count="1" name="Invulnerable" stackOrder="-1" stackType="Invulnerable" time="10" val="0"/>
+		</for>
+	</skill>
+	<skill id="11759" levels="1" name="Celestial Party Protection">
+		<!-- Renders all party members invincible for 10 seconds. -->
+		<set name="reuseDelay" val="120000"/>
+		<set name="hitTime" val="500"/>
+		<set name="magicLevel" val="87"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="target" val="TARGET_PARTY"/>	
+		<set name="skillRadius" val="1000"/>		
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1418"/>
+		<set name="delayedEffect" val="11834"/>
+		<for>
+			<effect abnormal="invul2" count="1" name="Invulnerable" stackOrder="-1" stackType="Invulnerable" time="10" val="0"/>
+		</for>
+	</skill>
+	<skill id="11760" levels="8" name="Radiant Recharge">
+		<!-- Recovers the target's MP with a maximum of 166 power depending on the target's level. Also, for 10 seconds, recovers 12 MP per second. Ineffective on classes that have the Recharge skill. -->
+		<table name="#power">166 167 170 174 177 180 183 187</table>
+		<table name="#magicLevel">85 86 88 90 92 94 96 98</table>
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="5500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="castRange" val="600"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MANAHEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1013;"/>
+		<cond msgId="113" addName="1">
+			<target forbiddenClassIds="29;42;105;112;146"/>
+		</cond>
+		<enchant1 levels="10" name="Cost"> 
+			<table name="#power">190 191 193 195 198 201 205 208 210 215</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<for>
+			<effect count="10" name="ManaHealOverTime" time="1" val="12"/>
+		</for>
+	</skill>
+	<skill id="11761" levels="5" name="Brilliant Recharge">
+		<!-- Recovers party members' MP with a maximum of 140 power depending on their level. Also, for 10 seconds, recovers 10 MP per second. -->
+		<table name="#power">140 143 145 148 150</table>
+		<table name="#magicLevel">85 86 87 88 89</table>
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="5500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="skillType" val="MANAHEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>	
+		<set name="relationSkillsId" val="1428;"/>
+		<enchant1 levels="10" name="Cost"> 
+			<table name="#power">152 153 154 156 158 161 164 166 169 172</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<for>
+			<effect count="10" name="ManaHealOverTime" time="1" val="10"/>
+		</for>
+	</skill>
+	<skill id="11762" levels="1" name="Balance Heal">
+		<!-- Equalizes all party members' HP and restores 333 HP every second for 15 seconds. -->
+		<set name="reuseDelay" val="20000"/>
+		<set name="coolTime" val="1000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="85"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillRadius" val="900"/>
+		<set name="skillType" val="BALANCE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1335;"/>
+		<enchant1 levels="10" name="Cost"/>
+		<for>
+			<effect count="15" name="HealOverTime" time="1" val="333"/>
+		</for>
+	</skill>
+	<skill id="11763" levels="1" name="Radiant Purge">
+	<!-- Cancels all of the target's debuffs. -->
+		<table name="#healhp">0</table>
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="85"/>
+		<set name="mpConsume2" val="35"/>
+		<set name="castRange" val="600"/>
+		<set name="effectPoint" val="633"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1012;1409;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#healhp">1 2 3 4 5 6 7 8 9 10</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<for>
+			<effect count="1" name="DispelEffects" time="0" val="0">
+				<def name="dispelType" val="cleanse"/>
+				<def name="cancelRate" val="100"/>
+				<def name="negateCount" val="10"/>
+			</effect>
+			<effect count="1" name="HealPercent" time="0" val="#healhp"/>
+		</for>
+	</skill>
+	<skill id="11764" levels="1" name="Brilliant Purge">
+		<!-- Cancels all party members' debuffs and makes them immune to debuffs for 7 seconds. -->
+		<table name="#mpConsume2">70</table>
+		<table name="#healhp">0</table>
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="600"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillRadius" val="900"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="negateCount" val="5"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1550;"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<enchant1 levels="10" name="Cost"/>
+		<enchant2 levels="10" name="Power Hp">
+			<table name="#healhp">1 2 3 4 5 6 7 8 9 10</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" time="7" val="0">
+				<add order="0x40" stat="debuffResist" val="100"/>
+			</effect>			
+			<effect count="1" name="DispelEffects" time="0" val="0">
+				<def name="dispelType" val="cleanse"/>
+				<def name="cancelRate" val="100"/>
+				<def name="negateCount" val="10"/>
+			</effect>
+			<effect count="1" name="HealPercent" time="0" val="#healhp"/>
+		</for>
+	</skill>
+	<skill id="11765" levels="4" name="Crystal Regeneration">
+		<!-- Crystallize yourself and become immune to damage and debuffs for 10 seconds. Recover 266 HP and 74 MP every second. -->
+		<table name="#magicLevel">85 90 95 99</table>
+		<table name="#regMp">74 77 79 84</table>
+		<table name="#regHp">266 273 280 284</table>
+		<table name="#time">10</table>
+		<set name="reuseDelay" val="300000"/>
+		<set name="hitTime" val="500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1430;"/>
+		<set name="npcId" val="13338"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#regHp">286 288 289 291 294 297 300 302 305 308</table>
+			<table name="#regMp">84 85 86 87 88 90 91 93 94 96</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Cost"/>
+		<enchant3 levels="10" name="Time">
+			<table name="#time">11 12 13 14 15 16 17 18 19 20</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<for>
+			<effect count="10" name="HealOverTime" time="1" val="#regHp"/>
+			<effect count="10" name="ManaHealOverTime" time="1" val="#regMp"/>
+			<effect abnormal="dancestun" count="1" name="Petrification" stackOrder="-1" stackType="paralyze" time="#time" val="0"/>
+		</for>
+	</skill>
+	<skill id="11766" levels="8" name="Dark Veil">
+		<!-- Inflicts damage on the target with 128 power and decreases aggression toward yourself. -->
+		<table name="#magicLevel">85 87 89 91 93 95 97 99</table>
+		<table name="#power">128 132 136 140 144 146 150 154</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#powerPvP">0</table>
+		<set name="reuseDelay" val="2000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2280"/>
+		<set name="powerPvP" val="#powerPvP"/>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="alterSkillsId" val="11999;12000;14579"/>
+		<set name="relationSkillsId" val="1523;"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">156 158 159 161 163 165 167 169 170 172</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Duel">
+			<table name="#powerPvP">156 158 159 161 163 165 167 169 170 172</table>
+			<table name="#power">156 158 159 161 163 165 167 169 170 172</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">156 158 159 161 163 165 167 169 170 172</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">156 158 159 161 163 165 167 169 170 172</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 levels="10" name="Recycle" enchRoute="9">
+			<table name="#power">156 158 159 161 163 165 167 169 170 172</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+	</skill>
+	<skill id="11767" levels="8" name="Mass Dark Veil">
+		<!-- Inflicts damage on the target and nearby enemies with 117 power and decreases aggression toward yourself. -->
+		<table name="#magicLevel">85 86 87 88 89 90 91 92</table>
+		<table name="#power">117 119 123 126 129 133 136 139</table>
+		<table name="#elementPower">0</table>
+		<table name="#element">none</table>
+		<table name="#powerPvP">0</table>
+		<set name="reuseDelay" val="6700"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="3780"/>
+		<set name="powerPvP" val="#powerPvP"/>
+		<set name="elementPower" val="#elementPower"/>
+		<set name="element" val="#element"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="affectLimit" val="5;12"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_AREA"/>
+		<set name="skillRadius" val="300"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<enchant1 levels="10" name="Cost">
+			<table name="#power">143 144 146 148 150 151 153 155 156 158</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Duel">
+			<table name="#powerPvP">143 144 146 148 150 151 153 155 156 158</table>
+			<table name="#power">143 144 146 148 150 151 153 155 156 158</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Holy Attack">
+			<table name="#element">holy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">143 144 146 148 150 151 153 155 156 158</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Dark Attack">
+			<table name="#element">unholy</table>
+			<table name="#elementPower">20 23 26 30 33 36 40 43 46 50</table>
+			<table name="#power">143 144 146 148 150 151 153 155 156 158</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 levels="10" name="Recycle" enchRoute="9">
+			<table name="#power">143 144 146 148 150 151 153 155 156 158</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant5>
+	</skill>
+	<skill id="11768" levels="1" name="Rebirth">
+		<!-- Recovers all party members' HP/MP/CP. There is also a chance of canceling any debuffs. -->
+		<set name="magicType" val="MAGIC"/>
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="300"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume1" val="13"/>
+		<set name="mpConsume2" val="53"/>
+		<set name="cancelRate" val="50"/>
+		<set name="skillRadius" val="1000"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1271;"/>
+		<enchant1 levels="10" name="Cost"/>
+		<enchant2 levels="10" name="Chance"/>
+		<for>
+			<effect count="1" name="HealPercent" time="0" val="100"/>
+			<effect count="1" name="ManaHealPercent" time="0" val="100"/>
+			<effect count="1" name="HealCPPercent" time="0" val="100"/>
+			<effect count="1" name="DispelEffects" time="0" val="0">
+				<def name="dispelType" val="cleanse"/>
+				<def name="cancelRate" val="50"/>
+				<def name="negateCount" val="10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11769" levels="6" name="Dark Backfire">
+		<!-- For 30 seconds, when the target uses a skill, increases MP Consumption by 50% and decreases Casting Spd. and Atk. Spd. by 20%. -->
+		<table name="#mpConsum">1.5 2.0 2.5 3.0 3.5 4.0</table>
+		<table name="#magicLevel">85 87 90 93 96 99</table>
+		<table name="#activateRate">50</table>
+		<table name="#patkspd">.8</table>
+		<table name="#matkspd">.8</table>
+		<set name="reuseDelay" val="21000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="levelModifier" val="2"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1396;1206;"/>
+		<set name="saveVs" val="MEN"/>
+		<enchant1 levels="10" name="Cost"/> 
+		<enchant2 levels="10" name="Chance">
+			<table name="#activateRate">53 56 59 62 65 68 71 74 77 80</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Break Haste">
+			<table name="#patkspd">.79 .78 .77 .76 .75 .74 .73 .72 .71 .7</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<enchant4 levels="10" name="Break Acumen">
+			<table name="#matkspd">.79 .78 .77 .76 .75 .74 .73 .72 .71 .7</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant4>
+		<enchant5 levels="10" name="Recycle" enchRoute="9"/>
+		<for>
+			<effect count="1" name="Buff" time="30" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="#patkspd"/>
+				<mul order="0x30" stat="mAtkSpd" val="#matkspd"/>
+				<mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="#mpConsum"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11770" levels="1" name="Dissolve">
+		<!-- Removes the aggression of nearby enemies toward you and increases speed by 100. -->
+		<table name="#mpConsume2">50</table>
+		<set name="reuseDelay" val="300000"/>
+		<set name="hitTime" val="500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="magicLevel" val="85"/>
+		<set name="save" val="3"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1075;1034;1273;"/> 
+		<for>
+			<effect count="1" name="SilentMove" time="15" val="0">
+				<add order="0x30" stat="runSpd" val="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11771" levels="1" name="Wise Retainer of Lights">
+      	<!-- Finally! Causes Lakcis, the giant of light, to materialize. Protects allies near the giant and attacks the enemies. Continuously decreases HP. -->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="5000"/>
+		<set name="magicLevel" val="99"/>
+		<set name="isHealDamageSkill" val="true"/>
+		<set name="power" val="1250"/>
+		<set name="power2" val="850"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillRadius" val="400"/>
+		<set name="skillType" val="CONT"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="HealAndDamage" />
+		</for>
+	</skill>
+	<skill id="11772" levels="4" name="Giant's Favor">
+	<!-- Performs an ancient secret technique of the Giants to increase P. Def., M. Def., and Healing power by 1000 for 15 seconds. -->
+		<table name="#heal">1000 1500 2000 2500</table>
+		<table name="#magicLevel">85 87 89 90</table>
+		<table name="#abnormal_time">15</table>
+		<table name="#mpConsume2">30</table>
+		<set name="reuseDelay" val="900000"/>
+		<set name="hitTime" val="500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>	
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1459;1073;"/>
+		<enchant1 levels="10" name="Cost"> 
+			<table name="#mpConsume2">16 15 14 13 12 11 10 9 8 7</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table> 
+		</enchant1>
+		<enchant2 levels="10" name="Time">
+			<table name="#time">16 17 18 19 20 21 22 23 24 25</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table> 
+		</enchant2>
+		<enchant3 levels="10" name="Chance Sleep">
+			<!--TODO-->
+			<!--<table name="#chanceSleepBonus">1 2 3 4 5 6 7 8 9 10</table>-->
+		</enchant3>
+		<enchant4 levels="10" name="Recycle" enchRoute="9">
+			<table name="#reuseDelay">873000 846000 819000 792000 765000 738000 711000 684000 657000 630000</table> 
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table> 
+		</enchant4>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" time="#abnormal_time" val="0">
+				<add order="0x40" stat="healPower" val="#heal"/>
+				<add order="0x40" stat="pDef" val="#heal"/>
+				<add order="0x40" stat="mDef" val="#heal"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11773" levels="2" name="Lakcis Disc">
+		<!-- Directly manipulates the power of light to Heal nearby allies and damage nearby enemies. Continuously consumes MP. -->
+		<table name="#magicLevel">89 95</table>
+		<table name="#mp">3 4</table>
+		<set name="skillType" val="CONT"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/> 
+		<set name="operateType" val="OP_TOGGLE"/>
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="5" val="#mp"/>
+			<effect count="0x7fffffff" name="CallSkills" time="5" val="0">
+				<def name="skillIds" val="11771"/>
+				<def name="skillLevels" val="1"/>
+				<def name="isRecursive" val="true"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11774" levels="4" name="Summon Tree of Life">
+		<!-- Summons a Tree of Life. The summoned tree heals nearby party members for 30 seconds. Can also cast a debuff canceling blessing. -->
+		<table name="#skill">1 2 3 4</table>
+		<table name="#magicLevel">85 86 89 92</table>
+		<table name="#mpConsume2">185 205 225 243</table>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="lifeTime" val="30"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="2000"/>
+		<set name="hitTime" val="5000"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="summonType" val="TREE"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="addSkills" val="11806;#skill"/>
+		<table name="#npcId">14933 14943 15010 15011</table>
+		<set name="npcId" val="#npcId"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#npcId">15012 15013 15014 15015 15016 15017 15018 15019 15020 15021</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+			<table name="#skill">101 102 103 104 105 106 107 108 109 110</table>
+		</enchant1>
+		<for/>
+	</skill>
+	<skill id="11775" levels="1" name="Return">
+	<!-- Moves to the summoned entity. Cannot be used beyond 1000 range. -->
+	<!--TODO: finish this spell-->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<enchant1 levels="10" name="Cost"/>
+		<enchant2 levels="10" name="Distance"/>
+		<for/>
+	</skill>
+	<skill id="11776" levels="4" name="Summon Lumi">
+		<!-- Summons a Spirit of Light. -->
+		<table name="#lifeTime">3600 3600 3600 3600</table>
+		<table name="#magicLevel">85 86 89 92</table>
+		<table name="#mpConsume2">96 106 117 127</table>
+		<table name="#npcid">14925 14944 14945 14946</table>
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="5000"/>
+		<set name="lifeTime" val="#lifeTime"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="summonType" val="SERVITOR"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="npcId" val="#npcid"/>
+		<set name="relationSkillsId" val="1360;1361;1359;1358;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#npcid">15000 15001 15002 15003 15004 15005 15006 15007 15008 15009</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+	</skill>
+	<skill id="11777" levels="5" name="Mark of Lumi">
+	<!-- A mark appears that decreases the target's P. Def. and M. Def. by 10% and consumes 113 HP every second for 60 seconds. -->
+		<table name="#dmg">113 118 123 128 134</table>
+		<table name="#magicLevel">85 88 91 94 97</table>
+		<table name="#pdef">0.9 0.85 0.8 0.75 0.75</table>
+		<table name="#mdef">0.9 0.85 0.8 0.75 0.75</table>
+		<table name="#abnormal">6 7 8 9 10</table>
+		<table name="#activateRate">80</table>
+		<table name="#mpConsume2">40</table>
+		<table name="#time">60</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="coolTime" val="800"/>
+		<set name="hitTime" val="1500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="600"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="power" val="#abnormal"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1524;"/>
+		<enchant1 levels="10" name="Time">
+			<table name="#time">66 78 84 90 96 102 108 114 120</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant1>
+		<enchant2 levels="10" name="Hex">
+			<table name="#pdef">.74 .73 .72 .71 .7 .69 .68 .67 .66 .65</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Magic Defense">
+			<table name="#mdef">.74 .73 .72 .71 .7 .69 .68 .67 .66 .65</table>
+            <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant3>
+		<for>
+			<effect count="#time" name="DamOverTime" time="1" stackOrder="#abnormal" val="#dmg">
+				<mul order="0x30" stat="mDef" val="#mdef"/>
+				<mul order="0x30" stat="pDef" val="#pdef"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11778" levels="6" name="Fatal Sleep">
+		<!-- For 20 seconds, inflicts Sleep on the target. When Sleep ends, decreases Atk. Spd., Casting Spd., and Speed by 50%. -->
+		<table name="#effectPoint">121 162 204 243 285 331 379 418 457 495 532 549 566 582 597 611 624 635 646 655</table>
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<table name="#activateRate">50</table>
+		<table name="#abnormal_time">20</table>
+		<table name="#mpConsume2">40</table>
+		<set name="reuseDelay" val="30000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="600"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="save" val="3"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="SLEEP"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="levelModifier" val="2"/>
+		<set name="delayedEffect" val="11779"/>
+		<set name="relationSkillsId" val="1201;1394;1069;"/>
+		<enchant1 levels="10" name="Cost"> 
+			<table name="#mpConsume2">24 23 21 20 18 16 15 13 12 10</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table> 
+		</enchant1>
+		<enchant2 levels="10" name="Chance">
+			<table name="#activateRate">53 56 59 62 65 68 71 74 77 80</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<enchant3 levels="10" name="Recycle" enchRoute="9">
+			<table name="#reuseDelay">29000 28000 27000 26000 25000 24000 23000 22000 21000 21000</table> 
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table> 
+		</enchant3>
+		<for>
+			<effect name="Sleep" count="1" time="#abnormal_time" stackOrder="-1" stackType="Sleep" val="0"/>
+		</for>
+	</skill>
+	<skill id="11779" levels="1" name="Yoked status">
+		<!-- Speed/Atk. Spd./Casting Spd. are decreased by 50%. -->
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<!-- <set name="hitTime" val="1200"/> NOT IN CLIENT -->
+		<set name="target" val="TARGET_ONE"/>
+		<set name="isDebuff" val="true"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="magicType" val="MAGIC"/>
+		<for>
+			<effect name="Debuff" count="1" time="15" stackOrder="1" stackType="Sleep" val="0">
+				<mul order="0x30" stat="runSpd" val="0.5"/>
+				<mul order="0x30" stat="mAtkSpd" val="0.5"/>
+				<mul order="0x30" stat="pAtkSpd" val="0.5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11780" levels="6" name="Dark Devour">
+		<!-- Decreases the Healing power received by the target by 50%. -->
+		<table name="#magicLevel">85 86 89 92 95 98</table>
+		<table name="#hpEff">0.50 0.52 0.56 0.6 0.65 0.7</table>
+		<table name="#activateRate">50</table>
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1525;"/>
+		<enchant1 levels="10" name="Cost"/> 
+		<enchant2 levels="10" name="Chance">
+			<table name="#activateRate">53 56 59 62 65 68 71 74 77 80</table>
+		</enchant2>
+		<enchant3 levels="10" name="Power"/>
+		<enchant4 levels="10" name="Recycle" enchRoute="9"/>
+		<for>
+			<effect count="1" name="Buff" time="120" val="0">
+				<mul order="0x30" stat="hpEff" val="#hpEff"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11781" levels="1" name="Dark Devour">
+		<!-- none -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="11782" levels="2" name="Frantic Healing">
+		<!-- Increases Casting Spd. by 30% and skill MP Consumption by 30%. -->
+		<table name="#magicLevel">85 86</table>
+		<table name="#rate">1.30 1.50</table>
+		<table name="#mp">0.4 0.35</table>
+		<table name="#mpConsume2">50</table>
+		<set name="reuseDelay" val="30000"/>
+		<set name="hitTime" val="500"/>
+		<set name="isAwakeningToggle" val="true"/>
+		<set name="mpConsume2" val="#mpConsume2"/>	
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<for>
+			<effect count="0x7fffffff" name="LDManaDamOverTime" time="5" val="#mp">
+				<mul order="0x30" stat="mAtkSpd" val="#rate"/>
+				<mul order="0x30" stat="mpConsumePhysical" val="1.3"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11783" levels="1" name="Reset">
+		<!-- Restarts the target's debuff timers. -->
+		<table name="#mpConsume2">50</table>
+		<set name="reuseDelay" val="60000"/>
+		<set name="hitTime" val="6000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="600"/>
+		<set name="magicLevel" val="85"/>
+		<set name="power" val="230"/>
+		<set name="lvlDepend" val="1"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="isDebuff" val="true"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Debuff" time="40" val="0" stackOrder="1" stackType="reuse_delay_up">
+				<mul order="0x30" stat="mReuse" val="3"/>
+				<mul order="0x30" stat="pReuse" val="3"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="11784" levels="4" name="Blessed Resurrection">
+		<!-- Resurrects a dead target and restores 85% of the XP lost. -->
+		<table name="#power">85.0 90.0 95.0 100.0</table>
+		<table name="#effectPoint">121 196 290 374</table>
+		<table name="#magicLevel">90 92 93 95</table>
+		<table name="#mpConsume2">50</table>
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="400"/>
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_CORPSE_PLAYER"/>
+		<set name="corpse" val="true"/>
+		<set name="skillType" val="RESURRECT"/>
+		<set name="canPet" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1016;"/>
+		<for/>
+	</skill>
+	<skill id="11785" levels="3" name="Group Resurrection">
+		<!-- Resurrects all dead party members and restores 80% of the XP lost. -->
+		<table name="#power">90.0 95.0 100.0</table>
+		<table name="#effectPoint">196 290 374</table>
+		<table name="#magicLevel">92 93 95</table>
+		<table name="#mpConsume2">150</table>
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="3000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>	
+		<set name="effectPoint" val="#effectPoint"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillRadius" val="1100"/>
+		<set name="corpse" val="true"/>
+		<set name="skillType" val="RESURRECT"/>
+		<set name="canPet" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="relationSkillsId" val="1254;"/>
+		<enchant1 levels="10" name="Cost"/>
+		<for/>
+	</skill>
+	<skill id="11786" levels="1" name="Debuff Immunity">
+	<!-- Immune to debuffs for 5 seconds. -->
+		<set name="reuseDelay" val="30000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="11787" levels="1" name="Superior Armor Mastery">
+		<!-- INT + 2. Max HP + 4299 and M. Def. + 300 when equipped with a Light Armor or Robe. P. Def. + 109 when equipped with a Robe, and P. Def. + 73 when equipped with a Light Armor. Recovery Bonus + 2.8 and MP Recovery Bonus + 3.6. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="magicLevel" val="85"/>
+		<table name="#pDef">109</table>
+		<table name="#mDef">300</table>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="229;212;227;234;"/>
+		<enchant1 levels="10" name="power">
+			<table name="#pDef">116 123 130 137 144 151 158 165 172 180</table>
+			<table name="#mDef">320 340 360 380 400 420 440 460 480 500</table>
+		</enchant1>
+		<for>
+			<add order="0x10" stat="INT" val="2"/>
+			<add order="0x10" stat="maxHp" val="4299">
+				<using kind="Magic, Light"/>
+			</add>
+			<add order="0x10" stat="mDef" val="#mDef">
+				<using kind="Magic, Light"/>
+			</add>
+			<mul order="0x30" stat="regHp" val="2.8">
+				<using kind="Light"/>
+			</mul>
+			<mul order="0x30" stat="regMp" val="3.6">
+				<using kind="Light"/>
+			</mul>
+			<add order="0x40" stat="pDef" val="#pDef">
+				<using kind="Light"/>
+			</add>
+			<add order="0x40" stat="pDef" val="73">
+				<using kind="Magic"/>
+			</add>
+			
+		</for>
+	</skill>
+	<skill id="11788" levels="1" name="Superior Casting Mastery">
+		<!-- INT + 2. Increases Max MP by 313 and Casting Spd. by 23%. Decreases MP Consumption of magic skill by 15% and cooldown by 25%. -->
+		<table name="#maxMp">313</table>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="164;436;228;213;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#maxMp">333 353 374 394 415 435 455 476 496 517</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table> 
+		</enchant1>
+		<for>
+			<add order="0x10" stat="INT" val="2"/>
+			<add order="0x40" stat="maxMp" val="#maxMp"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.23"/>
+			<mul order="0x30" stat="mpConsum" val="0.75"/>
+			<mul order="0x30" stat="mpConsumePhysical" val="0.75"/>
+			<mul order="0x30" stat="mpDanceConsume" val="0.75"/>
+			<mul order="0x30" stat="mReuse" val="0.85"/>
+			<mul order="0x30" stat="pReuse" val="0.85"/>
+		</for>
+	</skill>
+	<skill id="11789" levels="1" name="Superior Anti Magic">
+		<!-- INT + 2. Increases M. Def. + 139. When receiving damage, there is a chance of increasing M. Def. and attributes resistance for 10 seconds. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="#mDef" val="139"/>
+		<set name="relationSkillsId" val="146"/>
+		<triggers>
+		    <trigger id="10058" level="1" type="RECEIVE_DAMAGE" chance="50">
+			<player damage="50;0"/>
+		    </trigger>
+		</triggers>
+		<enchant1 levels="10" name="Power">
+			<table name="#mDef">146 154 162 170 178 186 194 202 210 218</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table> 
+		</enchant1>
+		<for>
+			<add order="0x10" stat="INT" val="2"/>
+			<add order="0x40" stat="mDef" val="#mDef"/>
+		</for>
+	</skill>
+	<skill id="11790" levels="1" name="Superior Elemental Protection">
+		<!-- INT + 2. Increases resistance to Fire/Water/Wind/Earth by 20. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="#power" val="20"/>
+		<set name="relationSkillsId" val="1353;1189;"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#power">21 22 23 24 25 26 27 28 29 30</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table> 
+		</enchant1>
+		<for>
+			<add order="0x10" stat="INT" val="2"/>
+			<add order="0x40" stat="defenceEarth" val="#power"/>
+			<add order="0x40" stat="defenceFire" val="#power"/>
+			<add order="0x40" stat="defenceWater" val="#power"/>
+			<add order="0x40" stat="defenceWind" val="#power"/>
+		</for>
+	</skill>
+	<skill id="11791" levels="1" name="Superior Sigil Mastery">
+		<!-- INT + 2. Increases MP Recovery Bonus by 20 and power of recovery skills by 40 when equipped with a Sigil. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="926"/>
+		<for>
+			<add order="0x10" stat="INT" val="2"/>
+			<add order="0x40" stat="mpEff" val="40">
+				<using kind="Sigil"/>
+			</add>
+			<mul order="0x30" stat="regMp" val="1.2">
+				<using kind="Sigil"/>
+			</mul>
+		</for>
+	</skill>
+	<skill id="11792" levels="1" name="Superior Mind Resistance">
+		<!-- INT + 2. Resistance + 20 to Hold, Sleep, Paralysis, Mental attacks, Poison, Bleed, and Stun. In addition, there is a chance of reflecting debuffs back to the attacker. -->
+		<set name="magicLevel" val="87"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="#power" val="20"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="329;328"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#power">21 22 23 24 25 26 27 28 29 30</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table> 
+		</enchant1>
+		<for>
+			<add order="0x10" stat="INT" val="2"/>
+			<sub order="0x40" stat="rootResist" val="#power"/>
+			<sub order="0x40" stat="sleepResist" val="#power"/>
+			<sub order="0x40" stat="mentalResist" val="#power"/>			
+			<add order="0x40" stat="reflectPhysicDebuff" val="5"/>
+			<add order="0x40" stat="reflectMagicDebuff" val="5"/>
+		</for>
+	</skill>
+	<skill id="11793" levels="3" name="Sustain">
+	<!-- For 15 seconds, Heals allies over time. Also increases your Healing power. If triggered again, the effect will increase. -->
+		<set name="reuseDelay" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="castRange" val="600"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="11794" levels="3" name="Sustain">
+	<!-- For 10 second, increases Healing power by 50, 100, 200. If triggered again, the effect will increase. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="11795" levels="3" name="Sustain">
+	<!-- For 15 seconds, Heals allies over time. Also increases your Healing power. If triggered again, the effect will increase. -->
+		<set name="reuseDelay" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="castRange" val="600"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="11796" levels="3" name="Sustain">
+	<!-- For 10 second, increases Healing power by 50, 100, 200. If triggered again, the effect will increase. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="11797" levels="3" name="Sustain">
+	<!-- For 15 seconds, Heals allies over time. Also increases your Healing power. If triggered again, the effect will increase. -->
+		<set name="reuseDelay" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="castRange" val="600"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="11798" levels="3" name="Sustain">
+	<!-- For 10 second, increases Healing power by 50, 100, 200. If triggered again, the effect will increase. -->
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="11799" levels="3" name="Sustain">
+	<!-- For 15 seconds, Heals allies over time. Also increases your Healing power. If triggered again, the effect will increase. -->
+		<set name="reuseDelay" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="castRange" val="600"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+</list>

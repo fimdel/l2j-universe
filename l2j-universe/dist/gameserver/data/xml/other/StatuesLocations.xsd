@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence minOccurs="1" maxOccurs="1">
+				<xs:element name="location" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="category" type="xs:nonNegativeInteger" use="required" />
+						<xs:attribute name="x" type="xs:token" use="required" />
+						<xs:attribute name="y" type="xs:token" use="required" />
+						<xs:attribute name="z" type="xs:token" use="required" />
+						<xs:attribute name="heading" type="xs:token" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

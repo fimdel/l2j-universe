@@ -1,0 +1,28 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Isthina - Normal Mode -->
+	<instance id="169" name="Isthina Cavern" maxChannels="10" collapseIfEmpty="10" timelimit="120" dispelBuffs="true" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="95" max="99"/>
+		<party min="2" max="5"/>
+		<return loc="115576 -125688 -3456"/>
+		<teleport loc="-178428 147061 2131"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * 3,6" setUponEntry="false" sharedReuseGroup="4"/>
+		<spawns>
+			<!-- Limier -->
+			<spawn mobId="33293" type="point" respawn="0">
+				<coords loc="-177118 143249 -11270 49140"/>
+			</spawn>
+		</spawns>
+		<doors>
+			<door id="14220100" opened="true"/>
+			<door id="14220101" opened="true"/>
+		</doors>
+		<zones>
+			<zone name="[Isthina_epic]" active="true"/>
+		</zones>
+	</instance>
+</list>

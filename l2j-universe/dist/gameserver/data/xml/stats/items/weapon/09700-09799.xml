@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="9720" name="Warrior's Sword">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_sealed_rapier_i00"/>
+		<set name="price" value="25500"/>
+		<set name="rnd_dam" value="40"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="weight" value="1300"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<enchant4_skill id="3426" level="1"/>
+		<!--Maximum Ability-->
+		<for>
+			<add stat="pAtk" order="0x10" value="12"/>
+			<add stat="mAtk" order="0x10" value="10"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="406"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+</list>

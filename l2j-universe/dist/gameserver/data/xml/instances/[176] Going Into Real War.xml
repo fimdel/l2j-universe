@@ -1,0 +1,38 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="176" name="Underground Military Compound" maxChannels="25" collapseIfEmpty="10" timelimit="5">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="1" max="20"/>
+        <party min="1" max="1"/>
+        <return loc="-110380 252472 -1992"/>
+        <teleport loc="-113813 247742 -7872"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="10323"/>
+        <reuse resetReuse="1 15 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+        <spawns>
+            <spawn mobId="33021" type="point" respawn="0">
+                <coords loc="-114875 248336 -7872 62000"/>
+            </spawn>
+            <spawn mobId="33193" type="point" respawn="0">
+                <coords loc="-114014 247680 -7872 13665"/>
+            </spawn>
+
+            <!-- Guards -->
+            <spawn mobId="19141" type="point" respawn="0">
+                <coords loc="-114541 248601 -7872 12000"/>
+                <coords loc="-114974 247888 -7872 12000"/>
+                <coords loc="-114101 248388 -7872 45000"/>
+                <coords loc="-114998 248222 -7872 3800"/>
+            </spawn>
+
+            <!-- Crawlers -->
+            <spawn mobId="23113" type="point" respawn="0">
+                <coords loc="-115029 247884 -7872 0"/>
+                <coords loc="-114921 248281 -7872 0"/>
+                <coords loc="-114559 248661 -7872 0"/>
+                <coords loc="-114148 248416 -7872 0"/>
+            </spawn>
+        </spawns>
+    </instance>
+</list>

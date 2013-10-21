@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="10997" levels="1" name="Archer - Individual Passive"> 
+        <table name="#magicLevel">85</table>
+		<set name="reuseDelay" val="8000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isTrigger" val="true"/>
+		<for>
+			<effect count="1" name="Buff" time="5" val="0">
+				<add order="0x40" stat="runSpd" val="30"/>
+			</effect>
+		</for>	
+    </skill>
+	<skill id="10998" levels="1" name="Archer - Individual"> 
+    <!-- Atk. Spd. + 30% for 5 seconds. -->
+       	<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<triggers>
+			<trigger id="10997" level="1" type="RECEIVE_DAMAGE" chance="50">
+				<player damage="100;0"/>
+			</trigger>
+		</triggers>
+		<for/>
+	</skill>
+	<skill id="10999" levels="1" name="Yul Chain Skill Air Blow">
+    <!-- Attacks long-range enemies. Hurls arrows like rain near the target to inflict damage with 19158 damage added to P. Atk. Bow/crossbow required. Over-hit. -->
+		<set name="reuseDelay" val="7000"/>
+		<set name="hitTime" val="2200"/>
+		<set name="castRange" val="1100"/>
+		<set name="mpConsume2" val="10"/>
+		<set name="flyType" val="THROW_HORIZONTAL"/>
+		<set name="flyRadius" val="-200"/>
+		<set name="magicLevel" val="85"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="overHit" val="true"/>
+		<set name="power" val="19158"/>
+		<set name="skillRadius" val="250"/>
+		<set name="skillType" val="PDAM"/>
+        	<set name="target" val="TARGET_MULTIFACE"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="isAlterSkill" val="true"/>
+		<cond msgId="113" addName="1">
+			<using kind="Bow,Crossbow"/>
+		</cond>
+	</skill>
+</list>

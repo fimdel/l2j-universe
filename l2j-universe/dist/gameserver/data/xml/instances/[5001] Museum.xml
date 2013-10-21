@@ -1,0 +1,20 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="5001" name="museum" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+        <level min="1" max="99"/>
+        <party min="1" max="1"/>
+        <return loc="-114376 259944 -1224"/>
+        <teleport loc="-114692 243930 -7968"/>
+        <quest id="0"/>
+        <reuse resetReuse="30 6 * * 4,7" setUponEntry="true" sharedReuseGroup="0"/>
+        <spawns>
+            <spawn mobId="33004" type="point" respawn="0">
+                <coords loc="-114712 245304 -7999"/>
+            </spawn>
+            <spawn mobId="23121" type="point" respawn="0">
+                <coords loc="-114456 244168 -7999"/>
+                <coords loc="-114920 244168 -7999"/>
+            </spawn>
+        </spawns>
+    </instance>
+</list>

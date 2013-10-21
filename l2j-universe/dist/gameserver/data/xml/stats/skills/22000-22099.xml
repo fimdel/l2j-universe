@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="22000" levels="1" name="Spicy Kimchi">
+    <!-- Regeneration is temporarily increased. Effectiveness 1. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.etc_kimchi_power_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22001" levels="1" name="Spicy Kimchi">
+    <!-- Regeneration and power are temporarily increased. Effectiveness 2. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.etc_kimchi_power_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22002" levels="1" name="Spicy Kimchi">
+    <!-- Regeneration, power, and power speed are temporarily increased. Effectiveness 3. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.etc_kimchi_power_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22003" levels="1" name="Sour Sweet White Kimchi">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.etc_kimchi_time_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22004" levels="1" name="Vitality Ginseng">
+    <!-- Recovers energy upon acquiring XP. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.etc_ginseng_recovery_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22005" levels="1" name="Vitality Red Ginseng">
+    <!-- Replenishes a certain amount of Vitality. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.etc_ginseng_recovery_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22006" levels="1" name="Halloween Candy">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="power" val="100"/>
+		<set name="magicLevel" val="1"/>
+		<set name="itemConsumeId" val="20034"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="VITALITY_HEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="altUse" val="true"/>
+	</skill>
+	<skill id="22007" levels="1" name="Good Luck Lucky Bag">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22008" levels="1" name="Lucky Four-leaf Clover">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22009" levels="1" name="Holiday Miracle">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22010" levels="1" name="Mysterious Formal Dress">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22011" levels="1" name="Santa Claus' Gift - Joy">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22012" levels="1" name="Santa Claus' Gift - Enjoyment">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22013" levels="1" name="Holiday Festival">
+    <!-- Maximum HP/MP/CP, Physical/Defense Power, Speed and P. Atk. are increased, and MP consumption for skills is decreased. Effectiveness 3. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22014" levels="1" name="Holiday Festival">
+    <!-- Maximum HP/MP/CP, Physical/Defense Power, Speed and P. Atk. are increased, and MP consumption for skills is decreased. Effectiveness 3. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22015" levels="1" name="Holiday Festival">
+    <!-- Maximum HP/MP/CP, Physical/Defense Power and Speed are increased, and MP consumption for skills is decreased. Effectiveness 3. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22016" levels="1" name="Holiday Festival">
+    <!-- Maximum HP/MP/CP, Physical/Defense Power, Speed and Magic P. Atk. are increased, and MP consumption for skills is decreased. Effectiveness 3. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00"/>
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22017" levels="1" name="Santa Claus' Gift - Luck">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22018" levels="1" name="Santa Claus' Gift - Luck">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22019" levels="1" name="Extra Pass - Kamaloka (Hall of the Abyss)">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22020" levels="1" name="Extra Pass - Near Kamaloka">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22021" levels="1" name="Extra Pass - Kamaloka (Labyrinth of the Abyss)">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22022" levels="1" name="Premium Valentine Decoration">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="itemConsumeId" val="20198"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22023" levels="1" name="Simple Valentine Cake">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22024" levels="1" name="Velvety Valentine Cake">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22025" levels="1" name="Delectable Valentine Cake">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22026" levels="1" name="Decadent Valentine Cake">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22027" levels="1" name="Heavenly Valentine Cake">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22028" levels="1" name="Chocolate Cookie">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22029" levels="1" name="Baguette's Herb">
+    <!-- Increases Atk. Spd. for a certain amount of time. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_herb_of_baguette_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22030" levels="1" name="Fresh Cream Herb">
+    <!-- Recovers Vitality upon acquiring XP. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_herb_of_cream_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22031" levels="1" name="Cheesecake Herb">
+    <!-- Increases magic Casting Spd. for a certain amount of time. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_herb_of_cheesecake_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22032" levels="1" name="Baguette Legacy">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22033" levels="1" name="Baguette Legacy - Kamael">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22034" levels="1" name="Birthday Cake">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22035" levels="1" name="Birthday Cake Vitality Buff">
+    <!-- Birthday Cake Vitality Buff. Increases your Vitality whenever you gain XP. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_birthday_cake_i00"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="altUse" val="true"/>
+		<set name="isHandler" val="true"/>
+		<set name="isCancelable" val="false"/>
+		<set name="itemConsumeId" val="21595"/>
+		<set name="itemConsumeCount" val="1"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="300" val="0"/>
+		</for>
+	</skill>
+	<skill id="22036" levels="1" name="Beast Soulshot">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22037" levels="1" name="Beast Spiritshot">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22038" levels="1" name="Blessed Beast Spiritshot">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22039" levels="2" name="Rune of XP 30%">
+    <!-- Acquired XP increases by 30%. -->
+		<table name="#power">0.3 0.5</table>
+		<set name="icon" val="br_cashtex.skill.br_cash_rune_of_exp_buff_3"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="ExpMultiplier" val="#power"/>
+		</for>
+	</skill>
+	<skill id="22040" levels="2" name="Rune of SP 30%">
+    <!-- Acquired SP increases by 30%. -->
+		<table name="#power">0.3 0.5</table>
+		<set name="icon" val="br_cashtex.skill.br_cash_rune_of_sp_buff_3"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="SpMultiplier" val="#power"/>
+		</for>
+	</skill>
+	<skill id="22041" levels="2" name="Rune of Crystal Level 3">
+    <!-- The user's grade penalty decreases by 3 level. -->
+		<table name="#power">3 5</table>
+		<set name="icon" val="br_cashtex.skill.br_cash_rune_of_rp_buff_3"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="gradeExpertiseLevel" val="#power"/>
+		</for>
+	</skill>
+	<skill id="22042" levels="1" name="High Grade Potion of Will">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="power" val="100"/>
+		<set name="magicLevel" val="1"/>
+		<set name="itemConsumeId" val="20353"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="COMBATPOINTHEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="altUse" val="true"/>
+		<set name="isHandler" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22043" levels="6" name="Secret Medicine of Will (D-Grade)">
+    <!-- none -->
+		<table name="#itemConsumeId">0 20354 20355 20356 20357 20358</table>
+		<table name="#levelMin">1 20 40 52 61 76</table>
+		<table name="#levelMax">19 39 51 60 75 84</table>
+		<table name="#power">800 1500 2000 2500 3000</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="1"/>
+		<set name="itemConsumeId" val="#itemConsumeId"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="altUse" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="COMBATPOINTHEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1902">
+			<and>
+				<player minLevel="#levelMin"/>
+				<player maxLevel="#levelMax"/>
+			</and>
+		</cond>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22044" levels="6" name="Secret Medicine of Life (D-Grade)">
+    <!-- none -->
+		<table name="#itemConsumeId">0 20359 20360 20361 20362 20363</table>
+		<table name="#levelMin">1 20 40 52 61 76</table>
+		<table name="#levelMax">19 39 51 60 75 84</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="power" val="50"/>
+		<set name="magicLevel" val="1"/>
+		<set name="itemConsumeId" val="#itemConsumeId"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="altUse" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="HEAL_PERCENT"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1902">
+			<and>
+				<player minLevel="#levelMin"/>
+				<player maxLevel="#levelMax"/>
+			</and>
+		</cond>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22045" levels="1" name="Onyx Beast Transformation Scroll">
+    <!-- Transformed into an Onyx Beast. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22046" levels="1" name="Death Blader Transformation Scroll">
+    <!-- Transformed into a Death Blader. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22047" levels="1" name="Grail Apostle Transformation Scroll">
+    <!-- Transformed into a Grail Apostle. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform2"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22048" levels="1" name="Unicorn Transformation Scroll">
+    <!-- Transformed into a Unicorn. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform2"/>
+		<set name="itemConsumeId" val="20367"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="563;3;565;3;564;3;567;3;619;1;5491;1"/>
+		<set name="npcId" val="13081"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="204">
+				<set order="0x40" stat="STR" val="36"/>
+				<set order="0x40" stat="DEX" val="33"/>
+				<set order="0x40" stat="CON" val="38"/>
+				<set order="0x40" stat="INT" val="23"/>
+				<set order="0x40" stat="WIT" val="14"/>
+				<set order="0x40" stat="MEN" val="26"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22049" levels="1" name="Lilim Knight Transformation Scroll">
+    <!-- Transformed into a Lilim Knight. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform2"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22050" levels="1" name="Golem Guardian Transformation Scroll">
+    <!-- Transformed into a Golem Guardian. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform2"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22051" levels="1" name="Inferno Drake Transformation Scroll">
+    <!-- Transformed into an Inferno Drake. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform2"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22052" levels="1" name="Dragon Bomber Transformation Scroll">
+    <!-- Transformed into a Dragon Bomber. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform2"/>
+		<set name="itemConsumeId" val="20371"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="TRANSFORMATION"/>
+		<set name="addSkills" val="580;3;581;3;582;3;583;3;619;1;5491;1"/>
+		<set name="npcId" val="13085"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="216">
+				<set order="0x40" stat="STR" val="41"/>
+				<set order="0x40" stat="DEX" val="31"/>
+				<set order="0x40" stat="CON" val="33"/>
+				<set order="0x40" stat="INT" val="29"/>
+				<set order="0x40" stat="WIT" val="11"/>
+				<set order="0x40" stat="MEN" val="25"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22053" levels="19" name="Escape - Talking Island Village">
+    <!-- none -->
+		<table name="#itemConsumeId">20372 20373 20374 20375 20376 20377 20378 20379 20380 20381 20382 20383 20384 20385 20386 20387 20388 20389 20390</table>
+		<table name="#townId">1 2 3 4 5 7 6 8 19 9 9 13 10 10 12 11 15 14 16</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="20000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="townId" val="#townId"/>
+		<set name="itemConsumeId" val="#itemConsumeId"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RECALL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22054" levels="1" name="Vitality Maintaining Potion">
+    <!-- State in which the Vitality Stage is maintained. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform4"/>
+		<set name="itemConsumeId" val="20391"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="altUse" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="1800" val="0"/>
+		</for>
+	</skill>
+	<skill id="22055" levels="1" name="Vitality Replenishing Potion">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="power" val="25"/>
+		<set name="magicLevel" val="1"/>
+		<set name="itemConsumeId" val="20392"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="VITALITY_HEAL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="altUse" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22056" levels="1" name="Wind Walk">
+    <!-- Increases Speed by 33 for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22057" levels="1" name="Haste">
+    <!-- Increases Atk. Spd. by 33% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22058" levels="1" name="Might">
+    <!-- Increases P. Atk. by 15% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22059" levels="1" name="Shield">
+    <!-- Increases P. Def. by 15% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22060" levels="1" name="Death Whisper">
+    <!-- Increases Critical P. Atk. by 35% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22061" levels="1" name="Guidance">
+    <!-- Increases accuracy by 4 for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22062" levels="1" name="Empower">
+    <!-- Increases M. Atk. by 75% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22063" levels="1" name="Greater Acumen">
+    <!-- Increases Casting Spd. by 30% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22064" levels="1" name="Vampiric Rage">
+    <!-- For 1 hour, 9% of the physical damage inflicted on the enemy is recovered as HP with a certain probability. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22065" levels="1" name="Blessed Body">
+    <!-- Increases Max HP by 35% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22066" levels="1" name="Berserker Spirit">
+    <!-- Decreases party members' P. Def. by 8%, M. Def. by 16%, and evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22067" levels="1" name="Magic Barrier">
+    <!-- Increases magic resistance by 30% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22068" levels="1" name="Blessed Soul">
+    <!-- Increases Max MP by 35% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22069" levels="1" name="Clarity">
+    <!-- For 1 hour, decreases physical skill MP consumption by 20%, magic skill's MP consumption by 10%, and song/dance skill's MP consumption by 20%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22070" levels="1" name="Wild Magic">
+    <!-- For 1 hour, increases by 2 the occurrence rate of damage that is caused by magic damage. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22071" levels="1" name="Huge Fortuna Box">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22072" levels="1" name="Huge Fortuna Cube">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+	</skill>
+	<skill id="22073" levels="1" name="Weapon Enchant Scroll (S-Grade)">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22074" levels="1" name="Armor Enchant Scroll (S-Grade)">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22075" levels="1" name="Ancient Weapon Enchant Crystal (S-Grade)">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22076" levels="1" name="Ancient Armor Enchant Crystal (S-Grade)">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22077" levels="1" name="Holy Weapon Enchant Crystal (S-Grade)">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22078" levels="1" name="Divine Armor Enchant Crystal (S-Grade)">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="22079" levels="1" name="Resist Aqua">
+    <!-- Increases Resistance to water by 20% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20523"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<add order="0x40" stat="defenceWater" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22080" levels="1" name="Resist Wind">
+    <!-- Increases Resistance to wind by 20% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20524"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<add order="0x40" stat="defenceWind" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22081" levels="1" name="Resist Fire">
+    <!-- Increases Resistance to fire by 20% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20525"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<add order="0x40" stat="defenceFire" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22082" levels="1" name="Resist Holy">
+    <!-- Increases Resistance to Holy by 23% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20526"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<add order="0x40" stat="defenceHoly" val="23"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22083" levels="1" name="Resist Dark">
+    <!-- Increases Resistance to Dark by 23% for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20527"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="3600" val="0">
+				<add order="0x40" stat="defenceUnholy" val="23"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22084" levels="1" name="Mental Shield">
+    <!-- Increases Resistance to hold/sleep/abnormal mental attacks by 40 for 1 hour. -->
+		<table name="#mentalResist">40</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20528"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mental" time="3600" val="0">
+				<add order="0x40" stat="rootResist" val="#mentalResist"/>
+				<add order="0x40" stat="sleepResist" val="#mentalResist"/>
+				<add order="0x40" stat="mentalResist" val="#mentalResist"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22085" levels="1" name="Focus">
+    <!-- Increases Critical attack rate by 30 for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20529"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rCrit" time="3600" val="0">
+				<add order="0x40" stat="rCrit" val="30"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22086" levels="1" name="Concentration">
+    <!-- Decreases magic cancel damage by 36 for 1 hour. -->
+		<table name="#concentration">0.64</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20530"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="concentration" time="3600" val="0">
+				<mul order="0x30" stat="concentration" val="#concentration"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22087" levels="1" name="Bless Shield">
+    <!-- Increases Shield defense rate by 15 for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20531"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="shieldProbUp" time="3600" val="0">
+				<mul order="0x30" stat="rShld" val="1.15"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22088" levels="1" name="Agility">
+    <!-- Increases evasion rate by 4 for 1 hour. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20532"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rEvas" time="3600" val="0">
+				<add order="0x40" stat="rEvas" val="4"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22089" levels="1" name="Regeneration">
+    <!-- Increases HP Regeneration by 20% for 1 hour. -->
+		<table name="#rate">1.2</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20533"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="hpregen" time="3600" val="0">
+				<mul order="0x30" stat="regHp" val="#rate"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22090" levels="1" name="Advanced Block">
+    <!-- Increases Shield P. Def. by 40% for 1 hour. -->
+		<table name="#Tab-sDef">1.4</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="br_cashtex.item.br_cash_scroll_of_wind_walk_i00"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="itemConsumeId" val="20534"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="sDef" time="3600" val="0">
+				<mul order="0x30" stat="sDef" val="#Tab-sDef"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="22091" levels="1" name="Eva's Rune">
+    <!-- Through the power of Ev increases Max HP by 10% and decreases re-use time by 20%. Reflects a portion of damage received back onto the enemy. -->
+		<set name="icon" val="BranchSys.icon.br_rune_of_eva_i00"/>
+		<set name="magicLevel" val="1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+	</skill>
+	<skill id="22092" levels="1" name="Scroll Master 1">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22093" levels="1" name="Scroll Master 2">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22094" levels="1" name="Exp. Master">
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RESTORATION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isHandler" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22095" levels="1" name="Summon Spirit of Fire">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22096" levels="1" name="Summon Reckless Spirit of Fire">
+    <!-- none -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22097" levels="1" name="Girl's Gift of Gratitude">
+    <!-- A thank-you gift for helping the girl. For 2 minutes, increases Max HP by 60%, Max MP by 60%, Max CP by 60%, physical P. Def. by 30%, M. Def. by 30%, Speed by 30, and P. Atk. by 20%. Decreases MP consumption during skill use by 10%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_sevenlove_girlpresent_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22098" levels="1" name="Boy's Gift of Gratitude">
+    <!-- A thank-you gift for helping the boy. For 2 minutes, increases Max HP by 40%, Max MP by 40%, Max CP by 40%, physical P. Def. by 30%, M. Def. by 30%, Speed by 20, and M. Atk. by 45%. Decreases MP consumption during skill use by 10%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_sevenlove_boypresent_i00"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="100"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="22099" levels="1" name="Soul Silver Foil">
+    <!-- When using a monster's corpse, comforts the monster's soul to borrow the monster's power temporarily. For 2 minutes, increases Max HP by 60%, Max MP by 60%, Max CP by 60%, physical P. Def. by 30%, M. Def. by 30%, Speed by 30, and P. Atk. by 20%. Decreases MP consumption during skill use by 10%. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="BranchSys.icon.br_ghost_silverpaper_i00"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="castRange" val="400"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+</list>

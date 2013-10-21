@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>	
+	<skill id="13132" levels="4" name="Set Effect - Twilight Light Armor 2 Piece (strong)">
+    <!-- STR +2, CON -1, P. Atk. 180. P. Atk. Spd. + 15%. -->
+		<table name="#Res">0 7 7 7</table>	
+		<table name="#maxHp">0 0 487 487</table>
+		<table name="#cAtk">0 0 0 242</table>
+		<table name="#pAtkSpd">0 0 0 1.15</table>	
+		<table name="#def">0 0 0 10</table>	
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="STR" val="2"/>
+			<sub order="0x10" stat="CON" val="1"/>
+			<add order="0x40" stat="pAtk" val="180"/>			
+			<add order="0x40" stat="rootResist" val="#Res"/>
+			<add order="0x60" stat="maxHp" val="#maxHp"/>
+			<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+			<add order="0x40" stat="cAtkStatic" val="#cAtk"/>
+			<add order="0x40" stat="defenceFire" val="#def"/>
+			<add order="0x40" stat="defenceWater" val="#def"/>
+			<add order="0x40" stat="defenceWind" val="#def"/>
+			<add order="0x40" stat="defenceEarth" val="#def"/>
+		</for>
+	</skill>	
+	<skill id="13138" levels="1" name="Atk. Spd. increasing talisman">
+    <!-- Increases P. Atk. Spd. by 2% when equipped with Talisman. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.02"/>
+		</for>
+	</skill>	
+	<skill id="13139" levels="1" name="P. Atk. increasing talisman">
+    <!-- Increases P. Atk. by 2% when equipped with Talisman. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="pAtk" val="1.02"/>
+		</for>
+	</skill>	
+	<skill id="13140" levels="1" name="P. Def. increasing talisman">
+    <!-- Increases P. Def. by 3% when equipped with Talisman. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="pDef" val="1.03"/>
+		</for>
+	</skill>
+	<skill id="13141" levels="1" name="Casting Spd. increasing talisman">
+    <!-- Increases Casting Spd. by 2 with the power of Talisman. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="mAtkSpd" val="1.02"/>
+		</for>
+	</skill>	
+	<skill id="13142" levels="4" name="M. Def. increasing talisman">
+    <!-- Increases M. Def. by 3% when equipped with Talisman. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="mDef" val="1.03"/>
+		</for>
+	</skill>	
+	<skill id="13143" levels="4" name="M. Atk. increasing talisman">
+    <!-- Increases M. Atk. by 2% when equipped with Talisman. -->
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="mAtk" val="1.02"/>
+		</for>
+	</skill>	
+	<skill id="13146" levels="1" name="Special Ability: Infinity Shaper">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_the_dagger_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13147" levels="1" name="Special Ability: Infinity Cutter">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_the_sword_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13148" levels="1" name="Special Ability: Infinity Slasher">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_the_two_handed_sword_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13149" levels="1" name="Special Ability: Infinity Avenger">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_the_axe_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13150" levels="1" name="Special Ability: Infinity Fighter">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_the_fist_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13151" levels="1" name="Special Ability: Infinity Stormer">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_the_pole_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13152" levels="1" name="Special Ability: Infinity Thrower">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_the_bow_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13153" levels="1" name="Special Ability: Infinity Shooter">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_infinity_shooter_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13154" levels="1" name="Special Ability: Infinity Buster">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Acumen is added. -->
+		<set name="icon" val="icon.weapon_infinity_sword_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.15"/>
+		</for>
+	</skill>
+	<skill id="13155" levels="1" name="Special Ability: Infinity Caster">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Acumen is added. -->
+		<set name="icon" val="icon.weapon_the_mace_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.15"/>
+		</for>
+	</skill>
+	<skill id="13156" levels="1" name="Special Ability: Infinity Retributer">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Acumen is added. -->
+		<set name="icon" val="icon.weapon_the_staff_of_hero_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.15"/>
+		</for>
+	</skill>	
+	<skill id="13157" levels="1" name="Special Ability: Infinity Dual Sword">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_r_dualsword_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>
+	<skill id="13158" levels="1" name="Special Ability: Infinity Dual Dagger">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_r_dualdagger_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>	
+	<skill id="13159" levels="1" name="Special Ability: Infinity Dual Blunt Weapon">
+    <!-- Increases Max HP / Max MP / Max CP, and damage inflicted during PvP. Increases Atk. Spd. and Casting Spd. Increases Critical Rate. -->
+		<set name="icon" val="icon.weapon_r_dualblunt_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="maxHp" val="1.25"/>
+			<mul order="0x30" stat="maxMp" val="1.30"/>
+			<mul order="0x30" stat="maxCp" val="1.50"/>
+			<mul order="0x30" stat="pAtkSpd" val="1.07"/>
+			<mul order="0x30" stat="mAtkSpd" val="1.1"/>
+			<mul order="0x30" stat="cAtk" val="1.15"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+		</for>
+	</skill>	
+</list>

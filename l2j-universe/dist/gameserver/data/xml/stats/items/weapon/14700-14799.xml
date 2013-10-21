@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="14774" name="Wild Rose Pig Candy" add_name="14 day limited period">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="20160"/>
+		<set name="icon" value="icon.etc_pig_candy_i00"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="temporal" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="8325" level="1"/>
+			<skill id="8326" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="1"/>
+			<add stat="mAtk" order="0x10" value="1"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="14780" name="Baguette's Bread Sword">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_samurai_longsword_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="weight" value="1350"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="14781" name="Baguette's Dagger">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_dagger_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14782" name="Baguette's Two-handed Sword">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_two_handed_sword_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="weight" value="2250"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="14783" name="Baguette's Mace">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_iron_hammer_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="1640"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14784" name="Baguette's Two-handed Hammer">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_barakiel_axe_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="weight" value="2080"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14785" name="Baguette's Spear">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_short_spear_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="weight" value="2120"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14786" name="Baguette's Bow">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_short_bow_i00"/>
+		<set name="mp_consume" value="2"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="8"/>
+		<set name="spiritshots" value="2"/>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="weight" value="1790"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14787" name="Baguette's Fist">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_foxs_nail_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="weight" value="1520"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14788" name="Baguette's Magic Sword">
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_samurai_longsword_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="weight" value="830"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="14789" name="Baguette's Staff">
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_apprentices_wand_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="weight" value="990"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14790" name="Baguette's Two-handed Staff">
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.weapon_willow_staff_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="weight" value="340"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="5.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14791" name="Baguette's Shield">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.shield_leather_shield_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="0"/>
+		<set name="spiritshots" value="0"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="460"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<for>
+			<add stat="sDef" order="0x10" value="90"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="14792" name="Baguette's Rapier">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_rapier_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="2"/>
+		<set name="spiritshots" value="2"/>
+		<set name="type" value="RAPIER"/>
+		<set name="ex_type" value="RAPIER"/>
+		<set name="weight" value="1520"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<enchant4_skill id="3426" level="1"/>
+		<!--Maximum Ability-->
+		<for>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14793" name="Baguette's Ancient Sword">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_tulwar_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="ANCIENTSWORD"/>
+		<set name="ex_type" value="ANCIENT_SWORD"/>
+		<set name="weight" value="1800"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<add stat="accCombat" order="0x10" value="2.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14794" name="Baguette's Crossbow">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_hunting_gun_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="weight" value="1580"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<add stat="accCombat" order="0x10" value="-2.0000"/>
+		</for>
+	</weapon>
+	<weapon id="14795" name="Baguette's Dualsword">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.weapon_dual_sword_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="weight" value="1520"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="80"/>
+		</for>
+	</weapon>
+	<weapon id="14797" name="Baguette's Two-handed Dagger">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.dual_dagger_i00"/>
+		<set name="rnd_dam" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="weight" value="2150"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<add stat="accCombat" order="0x10" value="-4.0000"/>
+		</for>
+	</weapon>
+</list>

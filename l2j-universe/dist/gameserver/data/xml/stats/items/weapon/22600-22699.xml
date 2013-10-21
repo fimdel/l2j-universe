@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="22650" name="Emerald Weapon - One-Handed Sword">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_sword"/>
+		<set name="weight" value="144"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22651" name="Emerald Weapon - Dagger">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_sword"/>
+		<set name="weight" value="106"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="52"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22652" name="Emerald Weapon - Two-Handed Sword">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_twohand_sword"/>
+		<set name="weight" value="209"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22653" name="Emerald Weapon - Fist Weapon">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_dualfist"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22654" name="Emerald Weapon - Spear">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_pole"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22655" name="Emerald Weapon - Bow">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_bow"/>
+		<set name="weight" value="181"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="6"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="118"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22656" name="Emerald Weapon - Crossbow">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_twohand_crossbow"/>
+		<set name="weight" value="181"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="6"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="76"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22657" name="Emerald Weapon - One-Handed Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_blunt"/>
+		<set name="weight" value="172"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22658" name="Emerald Weapon - Two-Handed Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_twohand_blunt"/>
+		<set name="weight" value="101"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22659" name="Emerald Weapon - One-Handed Magic Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_magic_twohand_blunt"/>
+		<set name="weight" value="173"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="48"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22660" name="Emerald Weapon - Two-handed Magic Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_magic_twohand_blunt"/>
+		<set name="weight" value="101"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="58"/>
+			<add stat="mAtk" order="0x10" value="37"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22661" name="Emerald Weapon - Dual Sword">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_dual"/>
+		<set name="weight" value="247"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22662" name="Emerald Weapon - Dual Dagger">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_dualdagger"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22663" name="Emerald Weapon - Dual Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_dualblunt"/>
+		<set name="weight" value="250"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22664" name="Emerald Weapon - Shield">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_beam_shield"/>
+		<set name="weight" value="200"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<for>
+			<add stat="pDef" order="0x10" value="5"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+</list>

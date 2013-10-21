@@ -1,0 +1,19 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="171" name="Nursery" maxChannels="25" collapseIfEmpty="1" timelimit="60" dispelBuffs="true">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="85" max="90"/>
+		<party min="1" max="14"/>
+		<return loc="-178440, 153864, 2525"/>
+		<teleport loc="-185839, 147909, -15312"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="33152" type="point">
+				<coords loc="-185848 147608 -15325 16383"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

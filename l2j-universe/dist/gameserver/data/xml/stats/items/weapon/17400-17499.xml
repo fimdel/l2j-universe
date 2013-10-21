@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="17401" name="Seraph Shield" add_name="Heavy">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.beranka_i00"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="R95"/>
+		<set name="crystal_count" value="429"/>
+		<for>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="sDef" order="0x10" value="505"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17416" name="Amaranthine Shaper">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_stanpid_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13282" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="527"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17417" name="Amaranthine Cutter">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_plenitas_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="602"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17418" name="Amaranthine Slasher">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_bauen_i00"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13261" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="733"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17419" name="Amaranthine Avenger">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_qutram_i00"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13256" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="602"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17420" name="Amaranthine Fighter">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_octoclaw_i00"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13267" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="733"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17421" name="Amaranthine Stormer">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_crabel_i00"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13263" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="602"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17422" name="Amaranthine Thrower">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_castron_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13292" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="1185"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17423" name="Amaranthine Shooter">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_stilla_i00"/>
+		<set name="weight" value="1580"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13294" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="763"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17424" name="Amaranthine Buster">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weaon_serapear_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13295" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="350"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17425" name="Amaranthine Caster">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_pilia_i00"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13299" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="482"/>
+			<add stat="mAtk" order="0x10" value="350"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17426" name="Amaranthine Retributer">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_shaelon_i00"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="6897"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13304" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="587"/>
+			<add stat="mAtk" order="0x10" value="371"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17427" name="Amaranthine Dual Sword">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualsword_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="8276"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13277" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="733"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17428" name="Amaranthine Dual Dagger">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualdagger_i00"/>
+		<set name="weight" value="2050"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="8276"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13287" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="602"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17429" name="Amaranthine Dual Blunt Weapon">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualblunt_i00"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="8276"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13272" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="733"/>
+			<add stat="mAtk" order="0x10" value="298"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17435" name="Eternal Shield" add_name="Heavy">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_akra_i00"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="945"/>
+		<for>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="sDef" order="0x10" value="526"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17450" name="Blessed Celestial Shaper">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_shaper_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13282" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="559"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17451" name="Blessed Celestial Cutter">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_cutter_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="639"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17452" name="Blessed Celestial Slasher">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_slasher_i00"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13261" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="778"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17453" name="Blessed Celestial Avenger">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_avenger_i00"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13256" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="639"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17454" name="Blessed Celestial Fighter">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_octoclaw_i00"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13267" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="778"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17455" name="Blessed Celestial Stormer">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_stormer_i00"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13263" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="639"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17456" name="Blessed Celestial Thrower">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_thrower_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13292" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="1257"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17457" name="Blessed Celestial Shooter">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_schutze_i00"/>
+		<set name="weight" value="1580"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13294" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="809"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17458" name="Blessed Celestial Buster">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_burster_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13295" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="511"/>
+			<add stat="mAtk" order="0x10" value="371"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17459" name="Blessed Celestial Caster">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_caster_i00"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13299" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="511"/>
+			<add stat="mAtk" order="0x10" value="371"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17460" name="Blessed Celestial Retributer">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_singer_i00"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13304" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="622"/>
+			<add stat="mAtk" order="0x10" value="408"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17461" name="Blessed Celestial Dual Sword">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualsword_i00"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13277" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="778"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17462" name="Blessed Celestial Dual Dagger">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualdagger_i00"/>
+		<set name="weight" value="2050"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13287" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="639"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17463" name="Blessed Celestial Dual Blunt Weapon">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualblunt_i00"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13272" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="778"/>
+			<add stat="mAtk" order="0x10" value="327"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+	<weapon id="17469" name="Blessed Celestial Shield" add_name="Heavy">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.weapon_vesper_verteidiger_i01"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="R99"/>
+		<set name="crystal_count" value="0"/>
+		<for>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="sDef" order="0x10" value="526"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="false"/>
+	</weapon>
+</list>

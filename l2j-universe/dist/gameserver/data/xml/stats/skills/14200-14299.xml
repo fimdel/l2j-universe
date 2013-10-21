@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="14200" levels="1" name="Blessing of Garden">
+    <!-- Critical P. Atk. is increased by 40%. -->
+		<set name="icon" val="icon.skill1253"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14201" levels="1" name="Apherus Invincibility">
+    <!-- Invincible status. -->
+		<set name="icon" val="icon.skill0442"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14202" levels="1" name="Garden Malice">
+    <!-- Poison status. -->
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14203" levels="1" name="Hold">
+    <!-- Hold status. -->
+		<set name="icon" val="icon.skill4047"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14204" levels="1" name="Hold">
+    <!-- Hold status. -->
+		<set name="icon" val="icon.skill4047"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14205" levels="1" name="Oath of Loyalty">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14206" levels="2" name="Rachiq Evolution">
+    <!-- Rachiq Evaluation P. Atk. 100% increased. -->
+		<set name="icon" val="icon.skill1068"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14207" levels="1" name="Pull Up">
+    <!-- none -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14208" levels="1" name="Reverberation of Shock">
+    <!-- Knock back. -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14209" levels="1" name="Millipede Paralysis">
+    <!-- none -->
+		<set name="icon" val="icon.skill0279"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14210" levels="1" name="Teredor Hiding Presentation">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14211" levels="1" name="Teredor Appearance Presentation">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14212" levels="1" name="Manifestation of Authority">
+    <!-- none -->
+		<set name="icon" val="icon.skill14289"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14213" levels="1" name="Manifestation of Authority">
+    <!-- none -->
+		<set name="icon" val="icon.skill14289"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14214" levels="1" name="Manifestation of Authority">
+    <!-- none -->
+		<set name="icon" val="icon.skill14289"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14215" levels="1" name="Barrier of Reflection">
+    <!-- Reflects 600% of damage. -->
+		<set name="icon" val="icon.skill0086"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="5000"/>
+		<set name="mpConsume" val="1"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="reuseDelay" val="5000"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="coolTime" val="200"/>
+		<for>
+			<effect name="Buff" time="10" val="0" abnormalLvl="1" abnormalType="istina_barrier">
+				<add order="0x40" stat="reflectDam" val="600"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="14216" levels="1" name="Energy Seal">
+    <!-- Yoke status. -->
+		<set name="icon" val="icon.skill14216"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14217" levels="1" name="Yoke Status">
+    <!-- Instantly immobilized. -->
+		<set name="icon" val="icon.skill1042"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14218" levels="1" name="Istina's Mark">
+    <!-- Istina's Mark is received. Handling Istina any further will be difficult. -->
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="2000"/>
+		<set name="castRange" val="200"/>
+		<set name="mpConsume" val="1"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="power" val="1000"/>
+		<set name="reuseDelay" val="10000"/>
+		<for>
+			<effect name="Debuff" abnormalTime="60" val="0" abnormalLvl="1" abnormalType="istina_mark"/>
+		</for>
+	</skill>
+	<skill id="14219" levels="1" name="Death Blow">
+    <!-- none -->
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="2000"/>
+		<set name="castRange" val="500"/>
+		<set name="mpConsume" val="1"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="reuseDelay" val="3000"/>
+		<set name="power" val="36404"/>
+		<for>
+			<effect name="Debuff" val="0" abnormalTime="1" abnormalLvl="1" abnormalType="istina_death_blow"/>
+		</for>
+	</skill>
+	<skill id="14220" levels="1" name="Flood">
+    <!-- Flood -->
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="2000"/>
+		<set name="reuseDelay" val="2000"/>
+		<set name="mpConsume" val="2"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="coolTime" val="200"/>
+		<for>
+			<effect name="Buff" time="60" val="0" abnormalLvl="1" abrnormalType="istina_flood">
+				<mul order="0x40" stat="pAtk" val="1.2"/>
+				<mul order="0x40" stat="mAtk" val="1.2"/>
+				<mul order="0x40" stat="pAtkSpd" val="1.2"/>
+				<mul order="0x40" stat="mAtkSpd" val="1.2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="14221" levels="1" name="Acid Eruption">
+    <!-- none -->
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="5000"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="power" val="13000"/>
+		<set name="coolTime" val="200"/>
+	</skill>
+	<skill id="14222" levels="1" name="Acid Eruption">
+    <!-- none -->
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="5000"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="skillRadius" val="1500"/>
+		<set name="power" val="15000"/>
+		<set name="coolTime" val="200"/>
+	</skill>
+	<skill id="14223" levels="1" name="Acid Eruption">
+    <!-- none -->
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="5000"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="skillRadius" val="1500"/>
+		<set name="power" val="20000"/>
+		<set name="coolTime" val="200"/>
+	</skill>
+	<skill id="14224" levels="1" name="Energy Control Device">
+    <!-- Energy Control -->
+		<set name="icon" val="icon.skill14216"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14225" levels="8" name="Control Stage 1">
+    <!-- Control Stage 1 -->
+		<set name="icon" val="icon.skill14225_1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14226" levels="1" name="Flood Cancel">
+    <!-- none -->
+		<set name="icon" val="icon.skill14226"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14227" levels="1" name="Regeneration of Limit">
+    <!-- Istina's life force is quickly regenerated. -->
+		<set name="icon" val="icon.skill1229"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14228" levels="1" name="Energy Regeneration Stage 1">
+    <!-- Energy Regeneration -->
+		<set name="icon" val="icon.skill1229"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14229" levels="1" name="Energy Regeneration Stage 2">
+    <!-- Energy Regeneration -->
+		<set name="icon" val="icon.skill1229"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14230" levels="1" name="Energy Regeneration Stage 3">
+    <!-- Energy Regeneration -->
+		<set name="icon" val="icon.skill1229"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14231" levels="1" name="Creation's Rage">
+    <!-- Stun status. -->
+		<set name="icon" val="icon.skill0048"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14232" levels="1" name="Yoke of Thorns">
+    <!-- Speed is decreased by 50%. -->
+		<set name="icon" val="icon.skill0127"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14233" levels="1" name="Shock Wave">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14234" levels="1" name="Mind Contamination">
+    <!-- Max HP and Max MP are decreased by 50%. -->
+		<set name="icon" val="icon.skill1045"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14235" levels="1" name="Maguen Steal">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14236" levels="1" name="Ultimate Forcefulness">
+    <!-- Looking at Taklacan with forcefulness. -->
+		<set name="icon" val="icon.skill0018"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14237" levels="1" name="Earth Vibration">
+    <!-- Vibration spreads through the body to decrease HP continuously. -->
+		<set name="icon" val="icon.skill0096"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14238" levels="1" name="Sound Blade">
+    <!-- Physical and magic skills are blocked. -->
+		<set name="icon" val="icon.skill1336"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14239" levels="1" name="Sound Prison">
+    <!-- Hold status. -->
+		<set name="icon" val="icon.skill4047"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14240" levels="1" name="Poison Eruption">
+    <!-- Poison status. -->
+		<set name="icon" val="icon.skill4035"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14241" levels="1" name="Poison Fog">
+    <!-- Poison status. -->
+		<set name="icon" val="icon.skill4035"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14242" levels="1" name="Wide Area Curse">
+    <!-- HP is decreased by the decaying darkness. -->
+		<set name="icon" val="icon.skill1107"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14243" levels="1" name="Octavis's Influence">
+    <!-- none -->
+		<set name="icon" val="icon.skill0024"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14244" levels="1" name="Region Status Metastasis">
+    <!-- none -->
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14245" levels="1" name="Rotten Net">
+    <!-- Shock status. -->
+		<set name="icon" val="icon.skill14245"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14246" levels="1" name="Earth Demolition">
+    <!-- none -->
+		<set name="icon" val="icon.skill0096"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14247" levels="1" name="Black Vortex">
+    <!-- none -->
+		<set name="icon" val="icon.skill0054"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14248" levels="1" name="Leap Attack">
+    <!-- Shock status. -->
+		<set name="icon" val="icon.skill0793"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14249" levels="1" name="Recovery Howl">
+    <!-- Flood -->
+		<set name="icon" val="icon.skill0918"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14250" levels="1" name="Touch of Death">
+    <!-- Shock status. -->
+		<set name="icon" val="icon.skill0260"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14251" levels="1" name="Death Rap">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14252" levels="1" name="Hands of Hell">
+    <!-- Pulled away. -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14253" levels="1" name="Drag to Hell">
+    <!-- Poison status. -->
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14254" levels="1" name="Flash">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14255" levels="1" name="Large Flash">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14256" levels="2" name="Powerful Cutting">
+    <!-- none -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14257" levels="2" name="Nearby Cutting">
+    <!-- none -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14258" levels="2" name="Scalp">
+    <!-- none -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14259" levels="2" name="Double Cutting">
+    <!-- none -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14260" levels="2" name="Life Force Absorb">
+    <!-- none -->
+		<set name="icon" val="icon.skill1147"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14261" levels="2" name="Coagulated Blood">
+    <!-- none -->
+		<set name="icon" val="icon.skill1275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14262" levels="2" name="Flame Hurl">
+    <!-- none -->
+		<set name="icon" val="icon.skill1230"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14263" levels="2" name="Electric Attack">
+    <!-- none -->
+		<set name="icon" val="icon.skill1275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14264" levels="1" name="Poison Cloud">
+    <!-- Poison status. -->
+		<set name="icon" val="icon.skill1167"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14265" levels="1" name="Resurrection">
+    <!-- none -->
+		<set name="icon" val="icon.skill1016"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14266" levels="1" name="Yoke">
+    <!-- Hold status. -->
+		<set name="icon" val="icon.skill1201"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14267" levels="2" name="Hole Punch">
+    <!-- none -->
+        <set name="castRange" val="30"/>
+        <set name="power" val="65447"/>
+        <set name="coolTime" val="200"/>
+        <set name="effectRange" val="400"/>
+        <set name="hitTime" val="5000"/>
+        <set name="magicLvl" val="0"/>
+        <set name="mpConsume" val="50"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="1500"/>
+        <set name="saveVs" val="CON"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+	<skill id="14268" levels="1" name="Shock and Terror">
+    <!-- Fear status. -->
+		<set name="icon" val="icon.skill1092"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14269" levels="1" name="Foot Strike">
+    <!-- Hold status. -->
+		<set name="icon" val="icon.skill1201"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14270" levels="1" name="Spinning Blade of Fear">
+    <!-- Fear status. -->
+		<set name="icon" val="icon.skill1092"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14271" levels="1" name="Spinning Blade">
+    <!-- Hold status. -->
+		<set name="icon" val="icon.skill1201"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14272" levels="1" name="Powerful Blow">
+    <!-- none -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14273" levels="1" name="Indiscriminate Rush">
+    <!-- Knock back. -->
+		<set name="icon" val="icon.skill0494"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14274" levels="1" name="Mechanic Shot">
+    <!-- none -->
+		<set name="icon" val="icon.skill1275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14275" levels="1" name="Swing">
+    <!-- none -->
+		<set name="icon" val="icon.skill0245"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14276" levels="1" name="Particle Repair">
+    <!-- none -->
+		<set name="icon" val="icon.skill0045"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14277" levels="1" name="Orbis Spawn">
+    <!-- Decaying darkness. -->
+		<set name="icon" val="icon.skill11273"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14278" levels="1" name="Orbis De-spawn">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14279" levels="1" name="Octavis's Influence">
+    <!-- Octavis's influence. -->
+		<set name="icon" val="icon.skill14279"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14280" levels="1" name="Octavis's Influence">
+    <!-- Octavis's influence. -->
+		<set name="icon" val="icon.skill14279"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14281" levels="1" name="Octavis's Influence">
+    <!-- Octavis's influence. -->
+		<set name="icon" val="icon.skill14279"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14282" levels="1" name="Octavis's Obedience">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14283" levels="1" name="Golem Connection">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14284" levels="1" name="Golem Connection Break">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14285" levels="1" name="Octavis's Arrow Shaft">
+    <!-- Octavis's arrow shaft. Throw a spear on the floor to inflict powerful attack damage. -->
+		<set name="castRange" val="1000"/>
+        <set name="power" val="50000"/>
+        <set name="coolTime" val="10"/>
+        <set name="effectRange" val="1000"/>
+        <set name="hitTime" val="5000"/>
+        <set name="magicLvl" val="0"/>
+        <set name="mpConsume" val="50"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+	</skill>
+	<skill id="14286" levels="1" name="Teleport">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14287" levels="1" name="Enhance">
+    <!-- none -->
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14288" levels="1" name="Agathion Cute Trick - Magmeld">
+    <!-- You can see the summoned spirit's cute tricks. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill_agathion_cute"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="3000"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="2292">
+			<player agathion="16080"/>
+		</cond>
+	</skill>
+	<skill id="14289" levels="2" name="Manifestation of Authority">
+    <!-- Atk Spd, Speed, Casting Spd, Max HP, Max MP decreased; HP consumed every second. -->
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="7000"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="isDebuff" val="true"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="coolTime" val="200"/>
+		<for>
+			<effect count="60" name="DamOverTime" time="1" val="2500" stackOrder="1" stackType="istina_authority" abnormal="poison">
+				<mul order="0x40" stat="runSpd" val="0.85"/>
+				<mul order="0x40" stat="pAtkSpd" val="0.75"/>
+				<mul order="0x40" stat="mAtkSpd" val="0.75"/>
+				<mul order="0x40" stat="pAtk" val="0.75"/>
+				<mul order="0x40" stat="mAtk" val="0.75"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="14291" levels="1" name="Self Defense">
+    <!-- Cannot be targeted. -->
+		<set name="icon" val="icon.skill0445"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14292" levels="7" name="Strike">
+    <!-- none -->
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14293" levels="7" name="Range Strike">
+    <!-- none -->
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14294" levels="7" name="Shock Strike">
+    <!-- Shock status. -->
+        <table name="#mpConsume">186 186 197 212 232 244 255</table>
+        <table name="#magicLevel">85</table>
+        <table name="#reuseDelay">120000</table>
+        <set name="mpConsume" val="#mpConsume"/>
+        <set name="magicLvl" val="#magicLevel"/>
+        <set name="nextActionAttack" val="true"/>
+        <set name="power" val="22179"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="overHit" val="true"/>
+        <set name="reuseDelay" val="#reuseDelay"/>
+        <set name="hitTime" val="1300"/>
+        <set name="coolTime" val="296"/>
+        <set name="skillRadius" val="450"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="effectRange" val="400"/>
+        <for>
+            <effect name="Stun" abnormalTime="4" val="0" effectPower="135" effectType="STUN" abnormalLvl="1" abnormalType="stun"/>
+        </for>
+    </skill>
+	<skill id="14295" levels="7" name="Range Shock Strike">
+    <!-- Shock status. -->
+		<set name="icon" val="icon.skill0048"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14296" levels="7" name="Shoot">
+    <!-- none -->
+		<set name="icon" val="icon.skill0056"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14297" levels="7" name="Shock Shot">
+    <!-- Shock status. -->
+		<set name="icon" val="icon.skill0101"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14298" levels="6" name="Stab">
+    <!-- Bleed. Speed is decreased. -->
+        <table name="#effectPoint">119 154 237 279 311 323 333</table>
+        <table name="#abnormal_lv">3 4 5 6 7 8</table>
+        <table name="#power">25 34 44 54 62 67</table>
+        <table name="#hpsap">0</table>
+        <table name="#mpConsume2">28 37 60 73 83 89</table>
+        <table name="#magicLevel">24 32 49 58 66 70</table>
+        <set name="levelModifier" val="2"/>
+        <set name="icon" val="icon.skill0096"/>
+        <set name="coolTime" val="720"/>
+        <set name="reuseDelay" val="3000"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="hitTime" val="1080"/>
+        <set name="hitCancelTime" val="3600"/>
+        <set name="mpConsume2" val="#mpConsume2"/>
+        <set name="activateRate" val="100"/>
+        <set name="effectPoint" val="#effectPoint"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BLEED"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="nextAction" val="attack"/>
+        <set name="trait" val="BLEED"/>
+        <set name="saveVs" val="CON"/>
+        <for>
+            <effect abnormal="bleeding" count="20" name="Bleed" stackType="Bleed" stackOrder="#abnormal_lv" time="1" val="#power">
+                <mul order="0x30" stat="runSpd" val="0.8"/>
+            </effect>
+            <effect count="1" name="Heal" time="0" val="#hpsap" applyOnCaster="true">
+                <def name="ignoreHpEff" val="true"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="14299" levels="3" name="Divinity Burn">
+    <!-- none -->
+		<set name="icon" val="icon.skill1265"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

@@ -1,0 +1,800 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "armor_sets.dtd">
+<!--
+@pchayka
+id - порядковый номер сета (хранение, соответствует скриптам)
+Все прочие параметры могут быть указаны как массив строк, разделенных ";" - legs="2402;11378". 
+Уровень и ид скила разделяется "-"
+Если у сета нет части или умения, параметр указывать не нужно
+3006 скилл сета добавляется сервером, вносить сюда его не нужно
+ -->
+<list>
+	<!--NORMAL SETS-->
+	<!--No GRADE-->
+	<set chests="23" legs="2386" head="43">	<!--Wooden Breastplate Set (Light)-->
+		<set_skills parts="3" skills="3500-1"/>
+	</set>
+	<set chests="1101" legs="1104" head="44">	<!--Devotion Robe Set (Robe)-->
+		<set_skills parts="3" skills="3501-1"/>
+	</set>
+	<set chests="9670" legs="9671" head="9669">	<!--Natives Set (bestows Native transform skill when all are worn together)-->
+		<set_skills parts="3" skills="3359-1"/>
+	</set>			
+	<!--D GRADE-->
+	<set chests="58" legs="59" head="47" shield="628" shield_skills="3543-1" enchant6skills="3611-1">	<!--Mithril Breastplate Set(Heavy)-->
+		<set_skills parts="3" skills="3502-1"/>
+	</set>
+	<set chests="352" legs="2378" head="2411" shield="2493" shield_skills="3544-1" enchant6skills="3611-1">	<!--Brigandine Armor Set(Heavy)-->
+		<set_skills parts="3" skills="3506-1"/>
+	</set>
+	<set chests="394" legs="416" feet="2422" enchant6skills="3612-1">	<!--Reinforced leather Set (Light)-->
+		<set_skills parts="3" skills="3503-1"/>
+	</set>
+	<set chests="395" legs="417" feet="2424" enchant6skills="3612-1">	<!--Manticore skin Set (Light)-->
+		<set_skills parts="3" skills="3505-1"/>
+	</set>
+	<set chests="436" legs="469" gloves="2447" enchant6skills="3613-1">	<!--Tunic of knowledge Set (Robe)-->
+		<set_skills parts="3" skills="3504-1"/>
+	</set>
+	<set chests="437" legs="470" gloves="2450" enchant6skills="3613-1">	<!--Mithril Tunic Set (Robe)-->
+		<set_skills parts="3" skills="3507-1"/>
+	</set>
+	<set chests="7851" head="7850" gloves="7852" feet="7853" enchant6skills="3611-1">	<!--Clan Oath Armor Set(Heavy)-->
+		<set_skills parts="4" skills="3605-1"/>
+	</set>
+	<set chests="7854" head="7850" gloves="7855" feet="7856" enchant6skills="3612-1">	<!--Clan Oath Brigandine Set (Light)-->
+		<set_skills parts="4" skills="3606-1"/>
+	</set>
+	<set chests="7857" head="7850" gloves="7858" feet="7859" enchant6skills="3613-1">	<!--Clan Oath Aketon Set (Robe)-->
+		<set_skills parts="4" skills="3607-1"/>
+	</set>
+	<set chests="9821" head="9820" gloves="9822" feet="9823" enchant6skills="3611-1">	<!--Shadow Item: Clan Oath Armor Set(Heavy)-->
+		<set_skills parts="4" skills="3605-1"/>
+	</set>
+	<set chests="9824" head="9820" gloves="9825" feet="9826" enchant6skills="3612-1">	<!--Shadow Item: Clan Oath Brigandine Set (Light)-->
+		<set_skills parts="4" skills="3606-1"/>
+	</set>
+	<set chests="9827" head="9820" gloves="9828" feet="9829" enchant6skills="3613-1">	<!--Shadow Item: Clan Oath Aketon Set (Robe)-->
+		<set_skills parts="4" skills="3607-1"/>
+	</set>
+	<set chests="16880" legs="16881" gloves="16882">	<!--Mithril Tunic of Friendship-->
+		<set_skills parts="3" skills="3507-1"/>
+	</set>
+	<set chests="15106" legs="15107;14993" gloves="15108;14994">	<!--Mithril Tunic of Friendship-->
+		<set_skills parts="3" skills="3507-1"/>
+	</set>
+	<set chests="14992" legs="15107;14993" gloves="15108;14994">	<!--Mithril Tunic of Friendship-->
+		<set_skills parts="3" skills="3507-1"/>
+	</set>
+	<set chests="16905" legs="16906" feet="16907">	<!--Manticore Skin Shirt of Friendship-->
+		<set_skills parts="3" skills="3505-1"/>
+	</set>
+	<set chests="15131" legs="15132;15018" feet="15133;15019">	<!--Manticore Skin Shirt of Friendship-->
+		<set_skills parts="3" skills="3505-1"/>
+	</set>
+	<set chests="15017" legs="15132;15018" feet="15133;15019">	<!--Manticore Skin Shirt of Friendship-->
+		<set_skills parts="3" skills="3505-1"/>
+	</set>
+	<set chests="16909" legs="16910" head="16911" shield="16914" shield_skills="3544-1">	<!--Brigandine of Friendship-->
+		<set_skills parts="3" skills="3506-1"/>
+	</set>
+	<set chests="15135" legs="15022;15136" head="15023;15137" shield="15026;15140" shield_skills="3544-1">	<!--Brigandine of Friendship-->
+		<set_skills parts="3" skills="3506-1"/>
+	</set>
+	<!--C GRADE-->
+	<set chests="15021" legs="15022;15136" head="15023;15137" shield="15026;15140" shield_skills="3544-1">	<!--Brigandine of Friendship-->
+		<set_skills parts="3" skills="3506-1"/>
+	</set>
+	<set chests="354" legs="381" head="2413" shield="2495" shield_skills="3545-1" enchant6skills="3614-1">	<!--Chain Mail Shirt Set(Heavy)-->
+		<set_skills parts="3" skills="3509-1"/>
+	</set>
+	<set chests="60" head="517" shield="107" shield_skills="3546-1" enchant6skills="3614-1">	<!--Composite Armor Set(Heavy)-->
+		<set_skills parts="2" skills="3512-1"/>
+	</set>
+	<set chests="356" head="2414" shield="2497" shield_skills="3547-1" enchant6skills="3614-1">	<!--Full Plate Armor Set(Heavy)-->
+		<set_skills parts="2" skills="3516-1"/>
+	</set>
+	<set chests="397" legs="2387" feet="62" enchant6skills="3615-1">	<!--Mithrill Shirt Set (Light)-->
+		<set_skills parts="3" skills="3508-1"/>
+	</set>
+	<set chests="398" legs="418" feet="2431" enchant6skills="3615-1">	<!--Plated Leather Set (Light)-->
+		<set_skills parts="3" skills="3511-1"/>
+	</set>
+	<set chests="400" legs="420" feet="2436" enchant6skills="3615-1">	<!--Theca Leather Set (Light)-->
+		<set_skills parts="3" skills="3514-1"/>
+	</set>
+	<set chests="401" feet="2437" enchant6skills="3615-1">	<!--Drake Leather Set (Light)-->
+		<set_skills parts="2" skills="3515-1"/>
+	</set>
+	<set chests="439" legs="471" gloves="2454" enchant6skills="3616-1">	<!--Karmian Robe Set (Robe)-->
+		<set_skills parts="3" skills="3510-1"/>
+	</set>
+	<set chests="441" legs="472" gloves="2459" enchant6skills="3616-1">	<!--Demon Robe Set (Robe)-->
+		<set_skills parts="3" skills="3513-1"/>
+	</set>
+	<set chests="442" legs="473" gloves="2463" enchant6skills="3616-1">	<!--Divine Robe Set (Robe)-->
+		<set_skills parts="3" skills="3517-1"/>
+	</set>
+	<set chests="16876" legs="16877" gloves="16878">	<!--Karmian Tunic of Friendship-->
+		<set_skills parts="3" skills="3510-1"/>
+	</set>
+	<set chests="15102" legs="15103;14989" gloves="15104;14990">	<!--Karmian Tunic of Friendship-->
+		<set_skills parts="3" skills="3510-1"/>
+	</set>
+	<set chests="14988" legs="15103;14989" gloves="15104;14990">	<!--Karmian Tunic of Friendship-->
+		<set_skills parts="3" skills="3510-1"/>
+	</set>
+	<set chests="16896" legs="16897" feet="16898">	<!--Plate Leather Armor of Friendship-->
+		<set_skills parts="3" skills="3511-1"/>
+	</set>
+	<set chests="15122" legs="15123;15009" feet="15124;15010">	<!--Plate Leather Armor of Friendship-->
+		<set_skills parts="3" skills="3511-1"/>
+	</set>
+	<set chests="15008" legs="15123;15009" feet="15124;15010">	<!--Plate Leather Armor of Friendship-->
+		<set_skills parts="3" skills="3511-1"/>
+	</set>
+	<set chests="16901" head="16900" shield="16904" shield_skills="3547-1">	<!--Full Plate Armor of Friendship-->
+		<set_skills parts="2" skills="3516-1"/>
+	</set>
+	<set chests="15127" head="15012;15126" shield="15016;15130" shield_skills="3547-1">	<!--Full Plate Armor of Friendship-->
+		<set_skills parts="2" skills="3516-1"/>
+	</set>
+	<set chests="15013" head="15012;15126" shield="15016;15130" shield_skills="3547-1">	<!--Full Plate Armor of Friendship-->
+		<set_skills parts="2" skills="3516-1"/>
+	</set>
+	<!--B GRADE-->
+	<set chests="357;31054" legs="383;11355;31063" head="503;11363;31055" gloves="5710;11356;31060" feet="5726;11359;31057" enchant6skills="3617-1">	<!--Zubei's Breastplate Set(Heavy)-->
+		<set_skills parts="5" skills="3518-1"/>
+	</set>
+	<set chests="2384;31064" legs="2388;11353;31065" head="503;12978;31055" gloves="5711;11357;31061" feet="5727;11360;31058" enchant6skills="3618-1">	<!--Zubei's Leather Set (Light)-->
+		<set_skills parts="5" skills="3520-1"/>
+	</set>
+	<set chests="2397;30601" legs="2402;11378;30443" head="503;12979;31055" gloves="5712;11358;31062" feet="5728;11361;31059" enchant6skills="3619-1">	<!--Zubei Robe Set (Robe)-->
+		<set_skills parts="5" skills="3522-1"/>
+	</set>
+	<set chests="2376;30943" legs="2379;11375;30944" head="2415;11373;30946" gloves="5714;11365;30952" feet="5730;11370;30947" shield="673;11374;30945" shield_skills="3548-1" enchant6skills="3617-1">	<!--Avadon Heavy Set(Heavy)-->
+		<set_skills parts="5" skills="3519-1"/>
+	</set>
+	<set chests="2390;30951" head="2415;12980;30946" gloves="5715;11366;30953" feet="5731;11371;30948" enchant6skills="3618-1">	<!--Avadon Leather Set (Light)-->
+		<set_skills parts="4" skills="3521-1"/>
+	</set>
+	<set chests="2406;30950" head="2415;12981;30946" gloves="5716;11367;30954" feet="5732;11372;30949" enchant6skills="3619-1">	<!--Avadon Robe Set (Robe)-->
+		<set_skills parts="4" skills="3523-1"/>
+	</set>
+	<set chests="358;30554" legs="2380;11394;30565" head="2416;11403;30556" gloves="5718;11399;30558" feet="5734;11396;30561" enchant6skills="3617-1">	<!--Blue Wolf's Breastplate Set(Heavy)-->
+		<set_skills parts="5" skills="3524-1"/>
+	</set>
+	<set chests="2391;30564" head="2416;12984;30556" gloves="5719;11400;30559" feet="5735;11397;30562" enchant6skills="3618-1">	<!--Blue Wolf Leather Set (Light)-->
+		<set_skills parts="4" skills="3526-1"/>
+	</set>
+	<set chests="2398;30557" legs="2403;11404;30555" head="2416;12985;30556" gloves="5720;11401;30560" feet="5736;11398;30563" enchant6skills="3619-1">	<!--Blue Wolf Robe Set (Robe)-->
+		<set_skills parts="5" skills="3528-1"/>
+	</set>
+	<set chests="2381;31417" head="2417;11387;31416" gloves="5722;11379;31430" feet="5738;11382;31427" shield="110;11385;31426" shield_skills="3549-1" enchant6skills="3617-1">	<!--Doom Plate Heavy Set(Heavy)-->
+		<set_skills parts="4" skills="3525-1"/>
+	</set>
+	<set chests="2392;31353" head="2417;12982;31416" gloves="5723;11380;31431" feet="5739;11383;31428" enchant6skills="3618-1">	<!--Doom Leather Set (Light)-->
+		<set_skills parts="4" skills="3527-1"/>
+	</set>
+	<set chests="2399;30602" legs="2404;11406;30444" head="2417;12983;31416" gloves="5724;11381;31432" feet="5740;11384;31429" enchant6skills="3619-1">	<!--Doom Robe Set (Robe)-->
+		<set_skills parts="5" skills="3529-1"/>
+	</set>
+	<set chests="16888" head="16889" gloves="16891" feet="16893">	<!--Leather Armor of Doom of Friendship-->
+		<set_skills parts="4" skills="3527-1"/>
+	</set>
+	<set chests="15114" head="15115;15001" gloves="15117;15003" feet="15119;15005">	<!--Leather Armor of Doom of Friendship-->
+		<set_skills parts="4" skills="3527-1"/>
+	</set>
+	<set chests="15000" head="15115;15001" gloves="15117;15003" feet="15119;15005">	<!--Leather Armor of Doom of Friendship-->
+		<set_skills parts="4" skills="3527-1"/>
+	</set>
+	<set chests="16871" head="16872" gloves="16873" feet="16874">	<!--Avadon Robe of Friendship-->
+		<set_skills parts="4" skills="3523-1"/>
+	</set>
+	<set chests="15097" head="14984;15098" gloves="14985;15099" feet="14986;15100">	<!--Avadon Robe of Friendship-->
+		<set_skills parts="4" skills="3523-1"/>
+	</set>
+	<set chests="14983" head="14984;15098" gloves="14985;15099" feet="14986;15100">	<!--Avadon Robe of Friendship-->
+		<set_skills parts="4" skills="3523-1"/>
+	</set>
+	<set chests="16894" head="16889" gloves="16890" feet="16892" shield="16895" shield_skills="3549-1">	<!--Doom Plate Armor of Friendship-->
+		<set_skills parts="4" skills="3525-1"/>
+	</set>
+	<set chests="15120" head="15001;15115" gloves="15002;15116" feet="15004;15118" shield="15007;15121" shield_skills="3549-1">	<!--Doom Plate Armor of Friendship-->
+		<set_skills parts="4" skills="3525-1"/>
+	</set>
+	<set chests="15006" head="15001;15115" gloves="15002;15116" feet="15004;15118" shield="15007;15121" shield_skills="3549-1">	<!--Doom Plate Armor of Friendship-->
+		<set_skills parts="4" skills="3525-1"/>
+	</set>
+	<!--A GRADE-->
+	<set chests="365;31462" legs="388;11407;31473" head="512;11417;31463" gloves="5765;11408;31470" feet="5777;11413;31465" shield="641;11416;31464" shield_skills="3550-1" enchant6skills="3620-1">	<!--Dark Crystal Breastplate Set(Heavy)-->
+		<set_skills parts="5" skills="3530-1"/>
+	</set>
+	<set chests="2385;31469" legs="2389;11419;31354" head="512;12986;31463" gloves="5766;11409;31471" feet="5778;11414;31466" enchant6skills="3621-1">	<!--Dark Crystal Leather Set (Light)-->
+		<set_skills parts="5" skills="3532-1"/>
+	</set>
+	<set chests="2407;31468" head="512;12987;31463" gloves="5767;11410;31472" feet="5779;11415;31467" enchant6skills="3622-1">	<!--Dark Crystal Robe Set (Robe)-->
+		<set_skills parts="4" skills="3535-1"/>
+	</set>
+	<set chests="2382;30608" head="547;11446;30607" gloves="5768;11437;30620" feet="5780;11441;30616" enchant6skills="3620-1">	<!--Tallum Plate Heavy Set(Heavy)-->
+		<set_skills parts="4" skills="3531-1"/>
+	</set>
+	<set chests="2393;30619" head="547;12988;30607" gloves="5769;11438;30621" feet="5781;11442;30617" enchant6skills="3621-1">	<!--Tallum Leather Set (Light)-->
+		<set_skills parts="4" skills="3533-1"/>
+	</set>
+	<set chests="2400;30609" legs="2405;11447;30606" head="547;12989;30607" gloves="5770;11439;30622" feet="5782;11443;30618" enchant6skills="3622-1">	<!--Tallum Robe Set (Robe)-->
+		<set_skills parts="5" skills="3534-1"/>
+	</set>
+	<set chests="374;30905" head="2418;11481;30891" gloves="5771;11472;30902" feet="5783;11477;30893" shield="2498;11480;30892" shield_skills="3551-1" enchant6skills="3620-1">	<!--Nightmare Heavy Set(Heavy)-->
+		<set_skills parts="4" skills="3536-1"/>
+	</set>
+	<set chests="2394;30897" head="2418;12992;30891" gloves="5772;11473;30903" feet="5784;11478;30894" enchant6skills="3621-1">	<!--Nightmare Leather Set (Light)-->
+		<set_skills parts="4" skills="3538-1"/>
+	</set>
+	<set chests="2408;30896" head="2418;12993;30891" gloves="5773;11474;30904" feet="5785;11479;30895" enchant6skills="3622-1">	<!--Robe of Nightmare Set (Robe)-->
+		<set_skills parts="4" skills="3540-1"/>
+	</set>
+	<set chests="2383;31312" head="2419;11456;31314" gloves="5774;11448;31322" feet="5786;11453;31315" enchant6skills="3620-1">	<!--Majestic Plate Heavy Set(Heavy)-->
+		<set_skills parts="4" skills="3537-1"/>
+	</set>
+	<set chests="2395;31320" head="2419;12990;31314" gloves="5775;11449;31323" feet="5787;11454;31316" enchant6skills="3621-1">	<!--Majestic Leather Set (Light)-->
+		<set_skills parts="4" skills="3539-1"/>
+	</set>
+	<set chests="2409;31319" head="2419;12991;31314" gloves="5776;11450;31324" feet="5788;11455;31317" enchant6skills="3622-1">	<!--Majestic Robe Set (Robe)-->
+		<set_skills parts="4" skills="3541-1"/>
+	</set>
+	<set chests="7861" head="7860" gloves="7862" feet="7863" enchant6skills="3620-1">	<!--Apella Plate Armor Set(Heavy)-->
+		<set_skills parts="4" skills="3608-1"/>
+	</set>
+	<set chests="7864" head="7860" gloves="7865" feet="7866" enchant6skills="3621-1">	<!--Apella Brigandine Set (Light)-->
+		<set_skills parts="4" skills="3609-1"/>
+	</set>
+	<set chests="7867" head="7860" gloves="7868" feet="7869" enchant6skills="3622-1">	<!--Apella Doublet Set (Robe)-->
+		<set_skills parts="4" skills="3610-1"/>
+	</set>
+	<set chests="9831" head="9830" gloves="9832" feet="9833" enchant6skills="3620-1">	<!--Impoved Apella Plate Armor Set(Heavy)-->
+		<set_skills parts="4" skills="3608-2"/>
+	</set>
+	<set chests="9834" head="9830" gloves="9835" feet="9836" enchant6skills="3621-1">	<!--Impoved Apella Brigandine Set (Light)-->
+		<set_skills parts="4" skills="3609-2"/>
+	</set>
+	<set chests="9837" head="9830" gloves="9838" feet="9839" enchant6skills="3622-1">	<!--Impoved Apella Doublet Set (Robe)-->
+		<set_skills parts="4" skills="3610-2"/>
+	</set>
+	<set chests="14583" head="14582" gloves="14584" feet="14585" enchant6skills="3620-1">	<!--Apella of Combat Heavy Armor Set-->
+		<set_skills parts="4" skills="3608-2"/>
+	</set>
+	<set chests="14586" head="14582" gloves="14587" feet="14588" enchant6skills="3621-1">	<!--Apella of Combat Light Armor Set-->
+		<set_skills parts="4" skills="3609-2"/>
+	</set>
+	<set chests="14589" head="14582" gloves="14590" feet="14591" enchant6skills="3622-1">	<!--Apella of Combat Robe Set-->
+		<set_skills parts="4" skills="3610-2"/>
+	</set>
+	<set chests="16866" head="16867" gloves="16868" feet="16869">	<!--Dark Crystal Robe of Friendship-->
+		<set_skills parts="4" skills="3535-1"/>
+	</set>
+	<set chests="15092" head="15093;14979" gloves="15094;14980" feet="15095;14981">	<!--Dark Crystal Robe of Friendship-->
+		<set_skills parts="4" skills="3535-1"/>
+	</set>
+	<set chests="14978" head="15093;14979" gloves="15094;14980" feet="15095;14981">	<!--Dark Crystal Robe of Friendship-->
+		<set_skills parts="4" skills="3535-1"/>
+	</set>
+	<set chests="16884" legs="16885" head="16867" gloves="16886" feet="16887">	<!--Dark Crystal Leather Armor of Friendship-->
+		<set_skills parts="5" skills="3532-1"/>
+	</set>
+	<set chests="15110" legs="15111;14997" head="15093;14979" gloves="15112;14998" feet="15113;14999">	<!--Dark Crystal Leather Armor of Friendship-->
+		<set_skills parts="5" skills="3532-1"/>
+	</set>
+	<set chests="14996" legs="15111;14997" head="15093;14979" gloves="15112;14998" feet="15113;14999">	<!--Dark Crystal Leather Armor of Friendship-->
+		<set_skills parts="5" skills="3532-1"/>
+	</set>
+	<set chests="16915" head="16916" gloves="16917" feet="16918" shield="16919" shield_skills="3551-1">	<!--Friendship Armor of Nightmare-->
+		<set_skills parts="4" skills="3536-1"/>
+	</set>
+	<set chests="15141" head="15142;15028" gloves="15143;15029" feet="15144;15030" shield="15145;15031" shield_skills="3551-1">	<!--Friendship Armor of Nightmare-->
+		<set_skills parts="4" skills="3536-1"/>
+	</set>
+	<set chests="15027" head="15142;15028" gloves="15143;15029" feet="15144;15030" shield="15145;15031" shield_skills="3551-1">	<!--Friendship Armor of Nightmare-->
+		<set_skills parts="4" skills="3536-1"/>
+	</set>
+	<!--S GRADE-->
+	<set chests="6373;30757" legs="6374;11505;30762" head="6378;11509;30758" gloves="6375;11506;30761" feet="6376;11507;30760" shield="6377;11508;30759" shield_skills="3554-1" enchant6skills="3623-1">	<!--Imperial Crusader Set (Heavy)-->
+		<set_skills parts="5" skills="3553-1"/>
+	</set>
+	<set chests="6379;31412" head="6382;11486;31411" gloves="6380;11483;31414" feet="6381;11484;31413" enchant6skills="3624-1">	<!--Draconic Leather Set (Light)-->
+		<set_skills parts="4" skills="3555-1"/>
+	</set>
+	<set chests="6383;31298" head="6386;11490;31296" gloves="6384;11487;31299" feet="6385;11489;31297" enchant6skills="3625-1">	<!--Major Arcana Robe Set (Robe)-->
+		<set_skills parts="4" skills="3556-1"/>
+	</set>			
+	<set chests="9432;33602" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic Set (Robe)-->
+		<set_skills parts="5" skills="3416-1"/>
+	</set>
+	<set chests="9433" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic Healer Set (Robe)-->
+		<set_skills parts="5" skills="3354-1"/>
+	</set>
+	<set chests="9434" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic Enchanter Set (Robe)-->
+		<set_skills parts="5" skills="3355-1"/>
+	</set>
+	<set chests="9435" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic Summoner Set (Robe)-->
+		<set_skills parts="5" skills="3356-1"/>
+	</set>
+	<set chests="9436" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic Human Wizard Set (Robe)-->
+		<set_skills parts="5" skills="3357-1"/>
+	</set>
+	<set chests="9416;33591" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Set (Heavy)-->
+		<set_skills parts="5" skills="3412-1"/>
+	</set>
+	<set chests="9417" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Shield Master Set (Heavy)-->
+		<set_skills parts="5" skills="3348-1"/>
+	</set>
+	<set chests="9418" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Weapon Master Set (Heavy)-->
+		<set_skills parts="5" skills="3349-1"/>
+	</set>
+	<set chests="9419" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Force Master Set (Heavy)-->
+		<set_skills parts="5" skills="3350-1"/>
+	</set>
+	<set chests="9420" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Blast Plate Bard Set (Heavy)-->
+		<set_skills parts="5" skills="3351-1"/>
+	</set>
+	<set chests="9425;33597" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Set (Light)-->
+		<set_skills parts="5" skills="3413-1"/>
+	</set>
+	<set chests="9426" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Dagger Master Set (Light)-->
+		<set_skills parts="5" skills="3352-1"/>
+	</set>
+	<set chests="9427" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Bow Master Set (Light)-->
+		<set_skills parts="5" skills="3353-1"/>
+	</set>
+	<set chests="10126" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Force Master Set (Light)-->
+		<set_skills parts="5" skills="3414-1"/>
+	</set>
+	<set chests="10127" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Weapon Master Set (Light)-->
+		<set_skills parts="5" skills="3415-1"/>
+	</set>
+	<set chests="10168" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Enchanter Set (Light)-->
+		<set_skills parts="5" skills="3355-1"/>
+	</set>
+	<set chests="10214" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor Summoner Set (Light)-->
+		<set_skills parts="5" skills="3420-1"/>
+	</set>
+	<set chests="10228" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Platinum Plate - Shield Master Set(Heavy)-->
+		<set_skills parts="5" skills="3636-1"/>
+	</set>
+	<set chests="10229" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Platinum Plate - Weapon Master Set(Heavy)-->
+		<set_skills parts="5" skills="3637-1"/>
+	</set>
+	<set chests="10230" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Platinum Plate - Force Master Set(Heavy)-->
+		<set_skills parts="5" skills="3639-1"/>
+	</set>
+	<set chests="10231" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Platinum Plate - Bard Set(Heavy)-->
+		<set_skills parts="5" skills="3638-1"/>
+	</set>
+	<set chests="10233" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jewel Leather Mail Dagger Master Set (Light)-->
+		<set_skills parts="5" skills="3640-1"/>
+	</set>
+	<set chests="10234" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jewel Leather Mail Bow Master Set (Light)-->
+		<set_skills parts="5" skills="3641-1"/>
+	</set>
+	<set chests="10236" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Silver Satin Tunic Healer Set (Robe)-->
+		<set_skills parts="5" skills="3645-1"/>
+	</set>
+	<set chests="10237" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Silver Satin Tunic Enchanter Set (Robe)-->
+		<set_skills parts="5" skills="3646-1"/>
+	</set>
+	<set chests="10238" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Silver Satin Tunic Summoner Set (Robe)-->
+		<set_skills parts="5" skills="3647-1"/>
+	</set>
+	<set chests="10239" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Silver Satin Tunic Human Wizard Set (Robe)-->
+		<set_skills parts="5" skills="3648-1"/>
+	</set>
+	<set chests="10487" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jeweled Leather Armor Force Master Set (Light)-->
+		<set_skills parts="5" skills="3642-1"/>
+	</set>
+	<set chests="10488" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jeweled Leather Armor Weapon Master Set (Light)-->
+		<set_skills parts="5" skills="3643-1"/>
+	</set>
+	<set chests="10489" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jeweled Leather Armor Enchanter Set (Light)-->
+		<set_skills parts="5" skills="3646-1"/>
+	</set>
+	<set chests="10490" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jeweled Leather Armor Summoner Set (Light)-->
+		<set_skills parts="5" skills="3644-1"/>
+	</set>
+	<!--S80 GRADE-->
+	<set chests="15609;16174" legs="15612;16295" head="15606;16289" gloves="15615;16298" feet="15618;16301" shield="15621;16304" shield_skills="8493-1" enchant6skills="3623-1">	<!--Destino Set (Heavy)-->
+		<set_skills parts="2" skills="13013-1"/>
+		<set_skills parts="3" skills="13013-2"/>
+		<set_skills parts="4" skills="13013-3"/>
+		<set_skills parts="5" skills="13013-4;13063-4"/>
+	</set>
+	<set chests="15610;16175" legs="15613;16296" head="15607;16290" gloves="15616;16299" feet="15619;16302" enchant6skills="3624-1">	<!--Destino Set (Light)-->
+		<set_skills parts="2" skills="13014-1"/>
+		<set_skills parts="3" skills="13014-2"/>
+		<set_skills parts="4" skills="13014-3"/>
+		<set_skills parts="5" skills="13014-4;13063-4"/>
+	</set>
+	<set chests="15611;16176" legs="15614;16297" head="15608;16291" gloves="15617;16300" feet="15620;16303" enchant6skills="3625-1">	<!--Destino Set (Robe)-->
+		<set_skills parts="2" skills="13015-1"/>
+		<set_skills parts="3" skills="13015-2"/>
+		<set_skills parts="4" skills="13015-3"/>
+		<set_skills parts="5" skills="13015-4;13063-4"/>
+	</set>
+	<set chests="13432;14520" legs="13438;16312" head="13137;16306" gloves="13439;16315" feet="13440;16318" shield="13471;16321" shield_skills="8494-1" enchant6skills="3623-1">	<!--Heavy Vesper Set(Heavy)-->
+		<set_skills parts="2" skills="13001-1"/>
+		<set_skills parts="3" skills="13001-2"/>
+		<set_skills parts="4" skills="13001-3"/>
+		<set_skills parts="5" skills="13001-4;13063-4"/>
+	</set>
+	<set chests="13435;14523" legs="13448;16843" head="13140;16837" gloves="13449;16846" feet="13450;16849" shield="13471;16321" shield_skills="8494-1" enchant6skills="3623-1">	<!--Noble Heavy Vesper Set(Heavy)-->
+		<set_skills parts="2" skills="13002-1"/>
+		<set_skills parts="3" skills="13002-2"/>
+		<set_skills parts="4" skills="13002-3"/>
+		<set_skills parts="5" skills="13002-4;13063-4"/>
+	</set>
+	<set chests="13433;14521" legs="13441;16313" head="13138;16307" gloves="13442;16316" feet="13443;16319" enchant6skills="3624-1">	<!--Light Vesper Set (Light)-->
+		<set_skills parts="2" skills="13003-1"/>
+		<set_skills parts="3" skills="13003-2"/>
+		<set_skills parts="4" skills="13003-3"/>
+		<set_skills parts="5" skills="13003-4;13063-4"/>
+	</set>
+	<set chests="13436;14524" legs="13451;16844" head="13141;16838" gloves="13452;16847" feet="13453;16850" enchant6skills="3624-1">	<!--Noble Light Vesper Set (Light)-->
+		<set_skills parts="2" skills="13004-1"/>
+		<set_skills parts="3" skills="13004-2"/>
+		<set_skills parts="4" skills="13004-3"/>
+		<set_skills parts="5" skills="13004-4;13063-4"/>
+	</set>
+	<set chests="13434;14522" legs="13444;16314" head="13139;16308" gloves="13445;16317" feet="13446;16320" enchant6skills="3625-1">	<!--Robe Vesper Set (Robe)-->
+		<set_skills parts="2" skills="13005-1"/>
+		<set_skills parts="3" skills="13005-2"/>
+		<set_skills parts="4" skills="13005-3"/>
+		<set_skills parts="5" skills="13005-4;13063-4"/>
+	</set>
+	<set chests="13437;14525" legs="13454;16845" head="13142;16839" gloves="13455;16848" feet="13456;16851" enchant6skills="3625-1">	<!--Noble Robe Vesper Set (Robe)-->
+		<set_skills parts="2" skills="13006-1"/>
+		<set_skills parts="3" skills="13006-2"/>
+		<set_skills parts="4" skills="13006-3"/>
+		<set_skills parts="5" skills="13006-4;13063-4"/>
+	</set>
+	<set chests="15592;16171" legs="15595" head="15589" gloves="15598" feet="15601" shield="15604" shield_skills="8495-1" enchant6skills="3623-1">	<!--Verpes Set (Heavy)-->
+		<set_skills parts="2" skills="13016-1"/>
+		<set_skills parts="3" skills="13016-2"/>
+		<set_skills parts="4" skills="13016-3"/>
+		<set_skills parts="5" skills="13016-4;13063-4"/>
+	</set>
+	<set chests="15593;16172" legs="15596" head="15590" gloves="15599" feet="15602" enchant6skills="3624-1">	<!--Verpes Set (Light)-->
+		<set_skills parts="2" skills="13017-1"/>
+		<set_skills parts="3" skills="13017-2"/>
+		<set_skills parts="4" skills="13017-3"/>
+		<set_skills parts="5" skills="13017-4;13063-4"/>
+	</set>
+	<set chests="15594;16173" legs="15597" head="15591" gloves="15600" feet="15603" enchant6skills="3625-1">	<!--Verpes Set (Robe)-->
+		<set_skills parts="2" skills="13018-1"/>
+		<set_skills parts="3" skills="13018-2"/>
+		<set_skills parts="4" skills="13018-3"/>
+		<set_skills parts="5" skills="13018-4;13063-4"/>
+	</set>
+	<set chests="15575;16168" legs="15578" head="15572" gloves="15581" feet="15584" shield="15587" shield_skills="8496-1" enchant6skills="3623-1">	<!--Elegia Set (Heavy)-->
+		<set_skills parts="2" skills="13019-1"/>
+		<set_skills parts="3" skills="13019-2"/>
+		<set_skills parts="4" skills="13019-3"/>
+		<set_skills parts="5" skills="13019-4;13063-4"/>
+	</set>
+	<set chests="15576;16169" legs="15579" head="15573" gloves="15582" feet="15585" enchant6skills="3624-1">	<!--Elegia Set (Light)-->
+		<set_skills parts="2" skills="13020-1"/>
+		<set_skills parts="3" skills="13020-2"/>
+		<set_skills parts="4" skills="13020-3"/>
+		<set_skills parts="5" skills="13020-4;13063-4"/>
+	</set>
+	<set chests="15577;16170" legs="15580" head="15574" gloves="15583" feet="15586" enchant6skills="3625-1">	<!--Elegia Set (Robe)-->
+		<set_skills parts="2" skills="13021-1"/>
+		<set_skills parts="3" skills="13021-2"/>
+		<set_skills parts="4" skills="13021-3"/>
+		<set_skills parts="5" skills="13021-4;13063-4"/>
+	</set>
+	<!--R GRADE-->
+	<set chests="19731;19795;19859;33968" legs="19732;19796;19860;33969" head="19730;19794;19858;33967" gloves="19733;19797;19861;33970" feet="19734;19798;19862;33971" enchant6skills="13339-1">	<!-- Immortal Heavy Set - Defense Type (Heavy)-->
+		<set_skills parts="2" skills="13064-1"/>
+		<set_skills parts="3" skills="13064-2"/>
+		<set_skills parts="4" skills="13064-3"/>
+		<set_skills parts="5" skills="13064-4;13063-4"/>
+	</set>
+	<set chests="19523;19587;19651;33952" legs="19524;19588;19652;33953" head="19522;19586;19650;33951" gloves="19525;19589;19653;33954" feet="19526;19590;19654;33955" enchant6skills="13339-1">	<!-- Immortal Heavy Set - Attack-Type (Heavy)-->
+		<set_skills parts="2" skills="13065-1"/>
+		<set_skills parts="3" skills="13065-2"/>
+		<set_skills parts="4" skills="13065-3"/>
+		<set_skills parts="5" skills="13065-4;13063-4"/>
+	</set>
+	<set chests="19747;19811;19875" legs="19748;19812;19876" head="19746;19810;19874" gloves="19749;19813;19877" feet="19750;19814;19878" enchant6skills="13339-1">	<!--Комплект Тяжелых Доспехов Ада - защита (Heavy)-->
+		<set_skills parts="2" skills="13066-1"/>
+		<set_skills parts="3" skills="13066-2"/>
+		<set_skills parts="4" skills="13066-3"/>
+		<set_skills parts="5" skills="13066-4;13063-4"/>
+	</set>
+	<set chests="19539;19603;19667" legs="19540;19604;19668" head="19538;19602;19666" gloves="19541;19605;19669" feet="19542;19606;19670" enchant6skills="13339-1">	<!--Комплект Тяжелых Доспехов Ада - атака (Heavy)-->
+		<set_skills parts="2" skills="13067-1"/>
+		<set_skills parts="3" skills="13067-2"/>
+		<set_skills parts="4" skills="13067-3"/>
+		<set_skills parts="5" skills="13067-4;13063-4"/>
+	</set>
+	<set chests="19529;19593;19657;33958" legs="19530;19594;19658;33959" head="19528;19592;19656;33957" gloves="19531;19595;19659;33960" feet="19532;19596;19660;33961" enchant6skills="13340-1">	<!--Комплект Легких Доспехов Бессмертия - смерт. (Ligth)-->
+		<set_skills parts="2" skills="13074-1"/>
+		<set_skills parts="3" skills="13074-2"/>
+		<set_skills parts="4" skills="13074-3"/>
+		<set_skills parts="5" skills="13074-4;13063-4"/>
+	</set>
+	<set chests="19737;19801;19865;33974" legs="19738;19802;19866;33975" head="19736;19800;19864;33973" gloves="19739;19803;19867;33976" feet="19740;19804;19868;33977" enchant6skills="13340-1">	<!--Комплект Легких Доспехов Бессмертия - усил. (Ligth)-->
+		<set_skills parts="2" skills="13075-1"/>
+		<set_skills parts="3" skills="13075-2"/>
+		<set_skills parts="4" skills="13075-3"/>
+		<set_skills parts="5" skills="13075-4;13063-4"/>
+	</set>
+	<set chests="19545;19609;19673" legs="19546;19610;19674" head="19544;19608;19672" gloves="19547;19611;19675" feet="19548;19612;19676" enchant6skills="13340-1">	<!--Комплект Легких Доспехов Ада - смерт. (Ligth)-->
+		<set_skills parts="2" skills="13076-1"/>
+		<set_skills parts="3" skills="13076-2"/>
+		<set_skills parts="4" skills="13076-3"/>
+		<set_skills parts="5" skills="13076-4;13063-4"/>
+	</set>
+	<set chests="19753;19817;19881" legs="19754;19818;19882" head="19752;19816;19880" gloves="19755;19819;19883" feet="19756;19820;19884" enchant6skills="13340-1">	<!--Комплект Легких Доспехов Ада - усил. (Ligth)-->
+		<set_skills parts="2" skills="13077-1"/>
+		<set_skills parts="3" skills="13077-2"/>
+		<set_skills parts="4" skills="13077-3"/>
+		<set_skills parts="5" skills="13077-4;13063-4"/>
+	</set>
+	<set chests="19534;19598;19662;33963" legs="19535;19599;19663;33964" head="19533;19597;19661;33962" gloves="19536;19600;19664;33965" feet="19537;19601;19665;33966" enchant6skills="13341-1">	<!--Комплект Магических Доспехов Бессмертия - маг. (Robe)-->
+		<set_skills parts="2" skills="13084-1"/>
+		<set_skills parts="3" skills="13084-2"/>
+		<set_skills parts="4" skills="13084-3"/>
+		<set_skills parts="5" skills="13084-4;13063-4"/>
+	</set>
+	<set chests="19742;19806;19870;33979" legs="19743;19807;19871;33980" head="19741;19805;19869;33978" gloves="19744;19808;19872;33981" feet="19745;19809;19873;33982" enchant6skills="13341-1">	<!--Комплект Магических Доспехов Бессмертия - восст. (Robe)-->
+		<set_skills parts="2" skills="13085-1"/>
+		<set_skills parts="3" skills="13085-2"/>
+		<set_skills parts="4" skills="13085-3"/>
+		<set_skills parts="5" skills="13085-4;13063-4"/>
+	</set>
+	<set chests="19550;19614;19678" legs="19551;19615;19679" head="19549;19613;19677" gloves="19552;19616;19680" feet="19553;19617;19681" enchant6skills="13341-1">	<!--Комплект Магических Доспехов Ада - маг. (Robe)-->
+		<set_skills parts="2" skills="13086-1"/>
+		<set_skills parts="3" skills="13086-2"/>
+		<set_skills parts="4" skills="13086-3"/>
+		<set_skills parts="5" skills="13086-4;13063-4"/>
+	</set>
+	<set chests="19758;19822;19886" legs="19759;19823;19887" head="19757;19821;19885" gloves="19760;19824;19888" feet="19761;19825;19889" enchant6skills="13341-1">	<!--Комплект Магических Доспехов Ада - восст. (Robe)-->
+		<set_skills parts="2" skills="13087-1"/>
+		<set_skills parts="3" skills="13087-2"/>
+		<set_skills parts="4" skills="13087-3"/>
+		<set_skills parts="5" skills="13087-4;13063-4"/>
+	</set>
+	<!--R95 GRADE-->
+	<set chests="19763;19827;19891" legs="19764;19828;19892" head="19762;19826;19890" gloves="19765;19829;19893" feet="19766;19830;19894" enchant6skills="13339-1">	<!--Комплект Тяжелых Доспехов Кадейры - защита (Heavy)-->
+		<set_skills parts="2" skills="13068-1"/>
+		<set_skills parts="3" skills="13068-2"/>
+		<set_skills parts="4" skills="13068-3"/>
+		<set_skills parts="5" skills="13068-4;13063-4"/>
+	</set>
+	<set chests="19555;19619;19683" legs="19556;19620;19684" head="19554;19618;19682" gloves="19557;19621;19685" feet="19558;19622;19686" enchant6skills="13339-1">	<!--Комплект Тяжелых Доспехов Кадейры - атака (Heavy)-->
+		<set_skills parts="2" skills="13069-1"/>
+		<set_skills parts="3" skills="13069-2"/>
+		<set_skills parts="4" skills="13069-3"/>
+		<set_skills parts="5" skills="13069-4;13063-4"/>
+	</set>
+	<set chests="19561;19625;19689" legs="19562;19626;19690" head="19560;19624;19688" gloves="19563;19627;19691" feet="19564;19628;19692" enchant6skills="13340-1">	<!--Комплект Легких Доспехов Кадейры - смерт. (Light)-->
+		<set_skills parts="2" skills="13078-1"/>
+		<set_skills parts="3" skills="13078-2"/>
+		<set_skills parts="4" skills="13078-3"/>
+		<set_skills parts="5" skills="13078-4;13063-4"/>
+	</set>
+	<set chests="19769;19833;19897" legs="19770;19834;19898" head="19768;19832;19896" gloves="19771;19835;19899" feet="19772;19836;19900" enchant6skills="13340-1">	<!--Комплект Легких Доспехов Кадейры - усил. (Light)-->
+		<set_skills parts="2" skills="13079-1"/>
+		<set_skills parts="3" skills="13079-2"/>
+		<set_skills parts="4" skills="13079-3"/>
+		<set_skills parts="5" skills="13079-4;13063-4"/>
+	</set>
+	<set chests="19566;19630;19694" legs="19567;19631;19695" head="19565;19629;19693" gloves="19568;19632;19696" feet="19569;19633;19697" enchant6skills="13341-1">	<!--Комплект Магических Доспехов Кадейры - маг. (Robe)-->
+		<set_skills parts="2" skills="13088-1"/>
+		<set_skills parts="3" skills="13088-2"/>
+		<set_skills parts="4" skills="13088-3"/>
+		<set_skills parts="5" skills="13088-4;13063-4"/>
+	</set>
+	<set chests="19774;19838;19902" legs="19775;19839;19903" head="19773;19837;19901" gloves="19776;19840;19904" feet="19777;19841;19905" enchant6skills="13341-1">	<!--Комплект Магических Доспехов Кадейры - восст. (Robe)-->
+		<set_skills parts="2" skills="13089-1"/>
+		<set_skills parts="3" skills="13089-2"/>
+		<set_skills parts="4" skills="13089-3"/>
+		<set_skills parts="5" skills="13089-4;13063-4"/>
+	</set>
+	<!--R99 GRADE-->
+	<set chests="19779;19843;19907" legs="19780;19844;19908" head="19778;19842;19906" gloves="19781;19845;19909" feet="19782;19846;19910" enchant6skills="13339-1">	<!--Комплект Тяжелых Доспехов Айдиоса - защита (Heavy)-->
+		<set_skills parts="2" skills="13070-1"/>
+		<set_skills parts="3" skills="13070-2"/>
+		<set_skills parts="4" skills="13070-3"/>
+		<set_skills parts="5" skills="13070-4;13063-4"/>
+	</set>
+	<set chests="19571;19635;19699" legs="19572;19636;19700" head="19570;19634;19698" gloves="19573;19637;19701" feet="19574;19638;19702" enchant6skills="13339-1">	<!--Комплект Тяжелых Доспехов Айдиоса - атака (Heavy)-->
+		<set_skills parts="2" skills="13071-1"/>
+		<set_skills parts="3" skills="13071-2"/>
+		<set_skills parts="4" skills="13071-3"/>
+		<set_skills parts="5" skills="13071-4;13063-4"/>
+	</set>
+	<set chests="19577;19641;19705" legs="19578;19642;19706" head="19576;19640;19704" gloves="19579;19643;19707" feet="19580;19644;19708" enchant6skills="13340-1">	<!--Комплект Легких Доспехов Айдиоса - смерт. (Light)-->
+		<set_skills parts="2" skills="13080-1"/>
+		<set_skills parts="3" skills="13080-2"/>
+		<set_skills parts="4" skills="13080-3"/>
+		<set_skills parts="5" skills="13080-4;13063-4"/>
+	</set>
+	<set chests="19785;19849;19913" legs="19786;19850;19914" head="19784;19848;19912" gloves="19787;19851;19915" feet="19788;19852;19916" enchant6skills="13340-1">	<!--Комплект Легких Доспехов Айдиоса - усил. (Light)-->
+		<set_skills parts="2" skills="13081-1"/>
+		<set_skills parts="3" skills="13081-2"/>
+		<set_skills parts="4" skills="13081-3"/>
+		<set_skills parts="5" skills="13081-4;13063-4"/>
+	</set>
+	<set chests="19582;19646;19710" legs="19583;19647;19711" head="19581;19645;19709" gloves="19584;19648;19712" feet="19585;19649;19713" enchant6skills="13341-1">	<!--Комплект Магических Доспехов Айдиоса - маг. (Robe)-->
+		<set_skills parts="2" skills="13090-1"/>
+		<set_skills parts="3" skills="13090-2"/>
+		<set_skills parts="4" skills="13090-3"/>
+		<set_skills parts="5" skills="13090-4;13063-4"/>
+	</set>
+	<set chests="19790;19854;19918" legs="19791;19855;19919" head="19789;19853;19917" gloves="19792;19856;19920" feet="19793;19857;19921" enchant6skills="13341-1">	<!--Комплект Магических Доспехов Айдиоса - восст. (Robe)-->
+		<set_skills parts="2" skills="13091-1"/>
+		<set_skills parts="3" skills="13091-2"/>
+		<set_skills parts="4" skills="13091-3"/>
+		<set_skills parts="5" skills="13091-4;13063-4"/>
+	</set>
+	<set chests="19715" legs="19716" head="19714" gloves="19717" feet="19718" enchant6skills="13339-1">	<!--Комплект Тяжелых Благословенных Доспехов Богов - атак. (Heavy)-->
+		<set_skills parts="2" skills="13073-1"/>
+		<set_skills parts="3" skills="13073-2"/>
+		<set_skills parts="4" skills="13073-3"/>
+		<set_skills parts="5" skills="13073-4;13063-4"/>
+	</set>	
+	<set chests="19923" legs="19924" head="19922" gloves="19925" feet="19926" enchant6skills="13339-1">	<!--Комплект Тяжелых Благословенных Доспехов Богов - защит. (Heavy)-->
+		<set_skills parts="2" skills="13072-1"/>
+		<set_skills parts="3" skills="13072-2"/>
+		<set_skills parts="4" skills="13072-3"/>
+		<set_skills parts="5" skills="13072-4;13063-4"/>
+	</set>
+	<set chests="19721" legs="19722" head="19720" gloves="19723" feet="19724" enchant6skills="13340-1">	<!--Комплект Легких Благословенных Доспехов Богов - смерт. (Light)-->
+		<set_skills parts="2" skills="13082-1"/>
+		<set_skills parts="3" skills="13082-2"/>
+		<set_skills parts="4" skills="13082-3"/>
+		<set_skills parts="5" skills="13082-4;13063-4"/>
+	</set>
+	<set chests="19929" legs="19930" head="19928" gloves="19931" feet="19932" enchant6skills="13340-1">	<!--Комплект Легких Благословенных Доспехов Богов - усил. (Light)-->
+		<set_skills parts="2" skills="13083-1"/>
+		<set_skills parts="3" skills="13083-2"/>
+		<set_skills parts="4" skills="13083-3"/>
+		<set_skills parts="5" skills="13083-4;13063-4"/>
+	</set>	
+	<set chests="19726" legs="19727" head="19725" gloves="19728" feet="19729" enchant6skills="13341-1">	<!--Комплект Магических Благословенных Доспехов Богов - маг. (Robe)-->
+		<set_skills parts="2" skills="13092-1"/>
+		<set_skills parts="3" skills="13092-2"/>
+		<set_skills parts="4" skills="13092-3"/>
+		<set_skills parts="5" skills="13092-4;13063-4"/>
+	</set>
+	<set chests="19934" legs="19935" head="19933" gloves="19936" feet="19937" enchant6skills="13341-1">	<!--Комплект Магических Благословенных Доспехов Богов - восст. (Robe)-->
+		<set_skills parts="2" skills="13093-1"/>
+		<set_skills parts="3" skills="13093-2"/>
+		<set_skills parts="4" skills="13093-3"/>
+		<set_skills parts="5" skills="13093-4;13063-4"/>
+	</set>
+	<!--PVP SETS-->
+	<!--A GRADE-->
+	<set chests="10793" head="2418;11481;30891" gloves="5771;11472;30902" feet="5783;11477;30893" shield="2498;11480;30892" shield_skills="3551-1" enchant6skills="3620-1">	<!--Armor of Nightmare - PvP Set (Heavy)-->
+		<set_skills parts="4" skills="8193-1"/>
+	</set>
+	<set chests="10795" head="2418;12992;30891" gloves="5772;11473;30903" feet="5784;11478;30894" enchant6skills="3621-1">	<!--Leather Armor of Nightmare - PvP Set (Light)-->
+		<set_skills parts="4" skills="8195-1"/>
+	</set>
+	<set chests="10797" head="2418;12993;30891" gloves="5773;11474;30904" feet="5785;11479;30895" enchant6skills="3622-1">	<!--Robe of Nightmare - PvP Set (Robe)-->
+		<set_skills parts="4" skills="8197-1"/>
+	</set>
+	<set chests="10794" head="2419;11456;31314" gloves="5774;11448;31322" feet="5786;11453;31315" enchant6skills="3620-1">	<!--Majestic Plate Armor - PvP Set (Heavy)-->
+		<set_skills parts="4" skills="8194-1"/>
+	</set>
+	<set chests="10796" head="2419;12990;31314" gloves="5775;11449;31323" feet="5787;11454;31316" enchant6skills="3621-1">	<!--Majestic Leather Mail - PvP Set (Light)-->
+		<set_skills parts="4" skills="8196-1"/>
+	</set>
+	<set chests="10798" head="2419;12991;31314" gloves="5776;11450;31324" feet="5788;11455;31317" enchant6skills="3622-1">	<!--Majestic Robe - PvP Set (Robe)-->
+		<set_skills parts="4" skills="8198-1"/>
+	</set>
+	<!--S GRADE-->
+	<set chests="10799" legs="6374;11505;30762" head="6378;11509;30758" gloves="6375;11506;30761" feet="6376;11507;30760" shield="6377;11508;30759" shield_skills="3554-1" enchant6skills="3623-1">	<!--Imperial Crusader Breastplate - PvP Set (Heavy)-->
+		<set_skills parts="5" skills="8199-1"/>
+	</set>
+	<set chests="10800" head="6382;11486;31411" gloves="6380;11483;31414" feet="6381;11484;31413" enchant6skills="3624-1">	<!--Draconic Leather Armor - PvP Set (Light)-->
+		<set_skills parts="4" skills="8200-1"/>
+	</set>
+	<set chests="10801" head="6386;11490;31296" gloves="6384;11487;31299" feet="6385;11489;31297" enchant6skills="3625-1">	<!--Major Arcana Robe - PvP Set (Robe)-->
+		<set_skills parts="4" skills="8201-1"/>
+	</set>
+	<set chests="10802" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Breastplate - PvP Set (Heavy)-->
+		<set_skills parts="5" skills="8202-1"/>
+	</set>
+	<set chests="10803" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Breastplate - PvP Shield Master Set (Heavy)-->
+		<set_skills parts="5" skills="8203-1"/>
+	</set>
+	<set chests="10804" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Breastplate - PvP Weapon Master Set (Heavy)-->
+		<set_skills parts="5" skills="8204-1"/>
+	</set>
+	<set chests="10805" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Breastplate - PvP Force Master Set (Heavy)-->
+		<set_skills parts="5" skills="8205-1"/>
+	</set>
+	<set chests="10806" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Breastplate - PvP Bard Set (Heavy)-->
+		<set_skills parts="5" skills="8206-1"/>
+	</set>
+	<set chests="10807" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor - PvP Set (Light)-->
+		<set_skills parts="5" skills="8207-1"/>
+	</set>
+	<set chests="10808" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor - PvP Dagger Master Set (Light)-->
+		<set_skills parts="5" skills="8208-1"/>
+	</set>
+	<set chests="10809" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor - PvP Bow Master Set (Light)-->
+		<set_skills parts="5" skills="8209-1"/>
+	</set>
+	<set chests="10810" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic - PvP Set (Robe)-->
+		<set_skills parts="5" skills="8210-1"/>
+	</set>
+	<set chests="10811" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic - PvP Healer Set (Robe)-->
+		<set_skills parts="5" skills="8211-1"/>
+	</set>
+	<set chests="10812" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic - PvP Enchanter Set (Robe)-->
+		<set_skills parts="5" skills="8212-1"/>
+	</set>
+	<set chests="10813" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic - PvP Summoner Set (Robe)-->
+		<set_skills parts="5" skills="8213-1"/>
+	</set>
+	<set chests="10814" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Tunic - PvP Wizard Set (Robe)-->
+		<set_skills parts="5" skills="8214-1"/>
+	</set>
+	<set chests="10815" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor - PvP Force Master Set (Light)-->
+		<set_skills parts="5" skills="8215-1"/>
+	</set>
+	<set chests="10816" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor - PvP Weapon Master Set (Light)-->
+		<set_skills parts="5" skills="8216-1"/>
+	</set>
+	<set chests="10817" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor - PvP Enchanter Set (Light)-->
+		<set_skills parts="5" skills="8217-1"/>
+	</set>
+	<set chests="10818" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Leather Armor - PvP Summoner Set (Light)-->
+		<set_skills parts="5" skills="8218-1"/>
+	</set>
+	<set chests="10820" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Platinum Breastplate - PvP Shield Master Set (Heavy)-->
+		<set_skills parts="5" skills="8219-1"/>
+	</set>
+	<set chests="10821" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Platinum Breastplate - PvP Weapon Master Set (Heavy)-->
+		<set_skills parts="5" skills="8220-1"/>
+	</set>
+	<set chests="10822" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Platinum Breastplate - PvP Force Master Set (Heavy)-->
+		<set_skills parts="5" skills="8222-1"/>
+	</set>
+	<set chests="10823" legs="9421;11512;33592" head="9422;11557;33593" gloves="9423;11513;33594" feet="9424;11526;33595" shield="9441;11532;33596" shield_skills="3417-1" enchant6skills="3623-1">	<!--Dynasty Platinum Breastplate - PvP Bard Set (Heavy)-->
+		<set_skills parts="5" skills="8221-1"/>
+	</set>
+	<set chests="10825" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jewel Leather Armor - PvP Dagger Master Set (Light)-->
+		<set_skills parts="5" skills="8223-1"/>
+	</set>
+	<set chests="10826" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jewel Leather Armor - PvP Bow Master Set (Light)-->
+		<set_skills parts="5" skills="8224-1"/>
+	</set>
+	<set chests="10828" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Silver Satin Tunic - PvP Healer Set (Robe)-->
+		<set_skills parts="5" skills="8229-1"/>
+	</set>
+	<set chests="10829" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Silver Satin Tunic - PvP Enchanter Set (Robe)-->
+		<set_skills parts="5" skills="8230-1"/>
+	</set>
+	<set chests="10830" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Silver Satin Tunic - PvP Summoner Set (Robe)-->
+		<set_skills parts="5" skills="8231-1"/>
+	</set>
+	<set chests="10831" legs="9437;11558;33603" head="9438;11539;33604" gloves="9439;11514;33605" feet="9440;11533;33606" enchant6skills="3625-1">	<!--Dynasty Silver Satin Tunic - PvP Wizard Set (Robe)-->
+		<set_skills parts="5" skills="8232-1"/>
+	</set>
+	<set chests="10832" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jewel Leather Armor - PvP Force Master Set (Light)-->
+		<set_skills parts="5" skills="8225-1"/>
+	</set>
+	<set chests="10833" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jewel Leather Armor - PvP Weapon Master Set (Light)-->
+		<set_skills parts="5" skills="8226-1"/>
+	</set>
+	<set chests="10834" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jewel Leather Armor - PvP Enchanter Set (Light)-->
+		<set_skills parts="5" skills="8228-1"/>
+	</set>
+	<set chests="10835" legs="9428;11516;33598" head="9429;11525;33599" gloves="9430;11515;33600" feet="9431;11524;33601" enchant6skills="3624-1">	<!--Dynasty Jewel Leather Armor - PvP Summoner Set (Light)-->
+		<set_skills parts="5" skills="8227-1"/>
+	</set>
+</list>

@@ -1,0 +1,7 @@
+<!ELEMENT list (statues)*>
+		<!ELEMENT statues (spawn)*>
+		<!ATTLIST statues
+				type CDATA #REQUIRED>
+		<!ELEMENT spawn (#PCDATA)>
+		<!ATTLIST spawn
+				loc CDATA #REQUIRED>

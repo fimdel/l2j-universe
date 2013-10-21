@@ -1,0 +1,23 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Octavis - Normal Mode -->
+	<instance id="180" name="Octavis Catacomb" maxChannels="10" collapseIfEmpty="10" timelimit="120" dispelBuffs="true" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="95" max="99"/>
+		<party min="7" max="49"/>
+		<return loc="-178428 147061 2131"/> <!-- TODO[K]: RLC (HC) -->
+		<teleport loc="210548, 118712, -10020"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * 3,6" setUponEntry="false" sharedReuseGroup="4"/>
+		<geodata map="26_21"/>
+		<doors>
+			<door id="26210001" opened="true"/>
+			<door id="26210002" opened="true"/>
+		</doors>
+		<zones>
+			<zone name="[Octavis_epic]" active="true"/>
+		</zones>
+	</instance>
+</list>

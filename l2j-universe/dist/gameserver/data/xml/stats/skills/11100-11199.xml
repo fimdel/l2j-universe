@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="11142" levels="3" name="Damaged Area">
+    <!-- Momentarily incurs damage. All speeds are decreased. -->
+		<table name="#power">126 130 140 146</table>
+		<table name="#magicLevel">85 86 87 88</table>
+		<table name="#mpConsume2">61 63 65</table>
+		<set name="reuseDelay" val="6000"/>
+		<set name="hitTime" val="1200"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="800"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="coolTime" val="3000"/>
+		<set name="flyRadius" val="-280"/>
+		<set name="flyType" val="THROW_HORIZONTAL"/>
+		<set name="isDebuff" val="true"/>		
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="power" val="#power"/>
+		<set name="skillRadius" val="350"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="saveVs" val="CON"/>
+		<set name="target" val="TARGET_AURA"/>
+		<for/>
+	</skill>
+	<skill id="11143" levels="3" name="Damaged Area">
+    <!-- Momentarily incurs damage. All speeds are decreased. -->
+		<table name="#power">126 130 140 146</table>
+		<table name="#magicLevel">85 86 87 88</table>
+		<table name="#mpConsume2">61 63 65</table>
+		<set name="reuseDelay" val="6000"/>
+		<set name="hitTime" val="1200"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="castRange" val="800"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="coolTime" val="3000"/>
+		<set name="flyRadius" val="-280"/>
+		<set name="flyType" val="THROW_HORIZONTAL"/>
+		<set name="isDebuff" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="power" val="#power"/>
+		<set name="skillRadius" val="350"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="saveVs" val="CON"/>
+		<set name="target" val="TARGET_AURA"/>
+		<for/>
+	</skill>
+	<skill id="11174" levels="3" name="Shadow Snare Zone">
+    <!-- Drags enemies around a target toward it. -->
+		<table name="#mpConsume2">123 127 132 136 140 144</table>
+		<table name="#magicLevel">89 91 93 95 97 99</table>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="nextActionAttack" val="true"/>
+		<set name="target" val="TARGET_AREA"/>
+		<set name="reuseDelay" val="45000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="coolTime" val="700"/>
+		<set name="castRange" val="600"/>
+		<set name="effectRange" val="900"/>
+		<set name="saveVs" val="CON"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="TargetToMe" time="1" val="0"/>
+		</for>
+	</skill>
+	<skill id="11175" levels="3" name="Shadow Snare Zone">
+    <!-- Drags enemies around a target toward it. -->
+		<table name="#mpConsume2">123 127 132 136 140 144</table>
+		<table name="#magicLevel">89 91 93 95 97 99</table>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="nextActionAttack" val="true"/>
+		<set name="target" val="TARGET_AREA"/>
+		<set name="reuseDelay" val="45000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="coolTime" val="700"/>
+		<set name="castRange" val="600"/>
+		<set name="effectRange" val="900"/>
+		<set name="saveVs" val="CON"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="TargetToMe" time="1" val="0"/>
+		</for>
+	</skill>
+	<skill id="11179" levels="1" name="Yoke Status">
+    <!-- Raised into the air and instantly immobilized. -->
+        <table name="#magicLevel">85</table>
+        <table name="#mpConsume2">65</table>
+        <set name="reuseDelay" val="6000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="mpConsume2" val="#mpConsume2"/>
+        <set name="castRange" val="900"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="flyRadius" val="-90"/>
+        <set name="flyType" val="THROW_HORIZONTAL"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="500"/>
+        <set name="saveVs" val="MEN"/>
+        <set name="skillRadius" val="200"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect name="Paralyze" time="10" val="0" abnormal="floatroot" stackType="paralyze" stackOrder="1"/>
+        </for>
+	</skill>
+	<skill id="11180" levels="1" name="Yoke Status">
+    <!-- Raised into the air and instantly immobilized. -->
+        <table name="#magicLevel">85</table>
+        <table name="#mpConsume2">65</table>
+        <set name="reuseDelay" val="6000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="mpConsume2" val="#mpConsume2"/>
+        <set name="castRange" val="900"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="flyRadius" val="-90"/>
+        <set name="flyType" val="THROW_HORIZONTAL"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="500"/>
+        <set name="saveVs" val="MEN"/>
+        <set name="skillRadius" val="200"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect name="Paralyze" time="10" val="0" abnormal="floatroot" stackType="paralyze" stackOrder="1"/>
+        </for>
+	</skill>
+	<skill id="11181" levels="1" name="Yoke Status">
+    <!-- Raised into the air and instantly immobilized. -->
+        <table name="#magicLevel">85</table>
+        <table name="#mpConsume2">65</table>
+        <set name="reuseDelay" val="6000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="mpConsume2" val="#mpConsume2"/>
+        <set name="castRange" val="900"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="flyRadius" val="-90"/>
+        <set name="flyType" val="THROW_HORIZONTAL"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="500"/>
+        <set name="saveVs" val="MEN"/>
+        <set name="skillRadius" val="200"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect name="Paralyze" time="10" val="0" abnormal="floatroot" stackType="paralyze" stackOrder="1"/>
+        </for>
+	</skill>
+	<skill id="11182" levels="1" name="Yoke Status">
+    <!-- Raised into the air and instantly immobilized. -->
+        <table name="#magicLevel">85</table>
+        <table name="#mpConsume2">65</table>
+        <set name="reuseDelay" val="6000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="mpConsume2" val="#mpConsume2"/>
+        <set name="castRange" val="900"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="isDebuff" val="true"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="lvlDepend" val="2"/>
+        <set name="flyRadius" val="-90"/>
+        <set name="flyType" val="THROW_HORIZONTAL"/>
+        <set name="mpInitialConsume" val="22"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="500"/>
+        <set name="saveVs" val="MEN"/>
+        <set name="skillRadius" val="200"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect name="Paralyze" time="10" val="0" abnormal="floatroot" stackType="paralyze" stackOrder="1"/>
+        </for>
+	</skill>
+	<skill id="11183" levels="1" name="Superior Quick Recovery">
+    <!-- INT + 2 and decreases cooldown for skills by 25%. -->
+		<set name="magicLevel" val="85"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="relationSkillsId" val="164;"/> 
+		<for>
+			<add order="0x40" stat="INT" val="2"/>
+			<mul order="0x30" stat="mAtk" val="1.05">
+				<using kind="Sigil"/>
+			</mul>
+			<mul order="0x30" stat="regMp" val="1.20">
+				<using kind="Sigil"/>
+			</mul>
+		</for>
+	</skill>
+	<skill id="11184" levels="1" name="Superior Arcane Lore">
+    <!-- INT + 2 and increases resistance to Fire/Water/Wind/Earth by 20 and M. Def. by 5%. -->
+		<set name="magicLvl" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+		<set name="relationSkillsId" val="433;481;1442;"/> 
+		<for>
+			<add order="0x40" stat="INT" val="2"/>
+			<mul order="0x30" stat="mDef" val="1.05"/>
+			<add order="0x40" stat="defenceFire" val="20"/>
+			<add order="0x40" stat="defenceWind" val="20"/>
+			<add order="0x40" stat="defenceWater" val="20"/>
+			<add order="0x40" stat="defenceEarth" val="20"/>
+		</for>
+	</skill>
+	<skill id="11185" levels="1" name="Superior Mana Boost">
+    <!-- INT + 2 and increases Max MP by 313. -->
+        <table name="#maxMp">313</table>
+        <table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="relationSkillsId" val="213;1565;"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<enchant1 levels="10" name="Power">
+            <table name="#maxMp">333 354 374 395 415 435 456 476 497 517</table>
+            <table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+        </enchant1>
+		<for>
+			<add order="0x40" stat="INT" val="2"/>
+			<add order="0x40" stat="maxMp" val="#maxMp"/>
+		</for>
+	</skill>
+	<skill id="11186" levels="1" name="Superior Fast MP Recovery">
+    <!-- INT + 2 and increases MP Recovery Bonus by 3.6. -->
+        <table name="#regMp">3.6</table>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="relationSkillsId" val="229;"/> 
+        <enchant1 levels="10" name="Power">
+            <table name="#regMp">3.8 4 4.2 4.4 4.7 4.9 5.1 5.3 5.5 5.7</table>
+            <table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+        </enchant1>
+		<for>
+			<add order="0x40" stat="INT" val="2"/>
+			<mul order="0x30" stat="regMp" val="#regMp"/>
+		</for>
+	</skill>
+	<skill id="11187" levels="1" name="Superior Clear Mind">
+    <!-- INT + 2, increases MP Recovery Bonus by 5.1 while standing and by 6.5 while walking. -->
+        <table name="#regMp">5.1</table>
+        <table name="#regMp2">6.5</table>
+		<table name="#magicLevel">85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="relationSkillsId" val="1297;"/> 
+        <enchant1 levels="10" name="Power">
+            <table name="#regMp">5.4 5.7 6 6.3 6.7 7 7.3 7.6 7.9 8.2</table>
+            <table name="#regMp2">6.9 7.3 7.7 8.1 8.5 8.9 9.3 9.7 10.1 10.5</table>
+            <table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+        </enchant1>
+		<for>
+			<add order="0x40" stat="INT" val="2"/>
+			<add order="0x40" stat="regMp" val="#regMp">
+				<and>
+					<player resting="true"/>
+				</and>
+			</add>
+			<add order="0x40" stat="regMp" val="#regMp2">
+				<and>
+					<player moving="true"/>
+					<player running="false"/>
+				</and>
+			</add>
+		</for>
+	</skill>
+</list>

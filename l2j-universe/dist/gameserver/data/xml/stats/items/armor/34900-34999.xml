@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="34925" name="Cloak of Light">
+		<set name="icon" value="icon.amor_goodness_cloak"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<set name="ex_type" value="CLOAK"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="50"/>
+			<add stat="mDef" order="0x10" value="40"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<skills>
+			<!--Cloak of Light-->
+			<skill id="19039" level="1"/>
+			<!--Castle Return-->
+			<skill id="19041" level="1"/>
+		</skills>
+		<cond msgId="1518">
+			<player castleLight="true"/>
+		</cond>
+	</armor>
+	<armor id="34926" name="Cloak of Darkness">
+		<set name="icon" value="icon.amor_evilness_cloak"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<set name="ex_type" value="CLOAK"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="50"/>
+			<add stat="mDef" order="0x10" value="40"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<skills>
+			<!--Cloak of Darkness-->
+			<skill id="19040" level="1"/>
+			<!--Castle Return-->
+			<skill id="19041" level="1"/>
+		</skills>
+		<cond msgId="1518">
+			<player castleDark="true"/>
+		</cond>
+	</armor>
+	<armor id="34935" name="Star Agathion - Heejin Jang" add_name="7-day">
+		<set name="icon" value="icon.bracelet_tersi_agathion"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</armor>
+	<armor id="34936" name="Star Agathion - Hyuk Jang" add_name="7-day">
+		<set name="icon" value="icon.bracelet_tersi_agathion"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</armor>
+	<armor id="34937" name="Star Agathion - Soo-ro Kim" add_name="7-day">
+		<set name="icon" value="icon.bracelet_tersi_agathion"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</armor>
+	<armor id="34938" name="Star Agathion - Jaebum Park" add_name="7-day">
+		<set name="icon" value="icon.bracelet_tersi_agathion"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</armor>
+	<armor id="34939" name="Star Agathion - Shin-young Kim" add_name="7-day">
+		<set name="icon" value="icon.bracelet_tersi_agathion"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</armor>
+	<armor id="34984" name="Talisman of Infinity">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.br_rudolf_food_orange_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="13384" level="1"/>
+		</skills>
+	</armor>
+	<armor id="34985" name="Talisman of Destruction">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.br_rudolf_food_orange_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="13385" level="1"/>
+		</skills>
+	</armor>
+	<armor id="34986" name="Talisman of Annihilation">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.br_rudolf_food_orange_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="13386" level="1"/>
+		</skills>
+	</armor>
+	<armor id="34987" name="Talisman of Hellfire">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.br_rudolf_food_red_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="13387" level="1"/>
+		</skills>
+	</armor>
+	<armor id="34988" name="Talisman of Desire">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.br_rudolf_food_blue_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="13388" level="1"/>
+		</skills>
+	</armor>
+	<armor id="34989" name="Talisman of Longing">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys.br_rudolf_food_purple_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="TALISMAN"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<skills>
+			<skill id="13389" level="1"/>
+		</skills>
+	</armor>
+	<armor id="34996" name="Radiant Cloak of Light">
+        <set name="type" value="NONE"/>
+        <set name="weight" value="220"/>
+		<set name="ex_type" value="CLOAK"/>
+		<equip>
+            <slot id="BACK"/>
+        </equip>
+        <for>
+            <add stat="pDef" order="0x10" value="50"/>
+            <add stat="mDef" order="0x10" value="40"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+            <enchant stat="mDef" order="0x0C" value="0"/>
+        </for>
+		<skills>
+			<!--Radiant Cloak of Light-->
+			<skill id="19037" level="1"/>
+			<!--Castle Return-->
+			<skill id="19041" level="1"/>
+		</skills>
+		<cond msgId="1518">
+			<player castleLightClanLeader="true"/>
+		</cond>
+    </armor>
+	<armor id="34997" name="Cold Cloak of Darkness">
+        <set name="type" value="NONE"/>
+        <set name="weight" value="220"/>
+        <set name="ex_type" value="CLOAK"/>
+		<equip>
+            <slot id="BACK"/>
+        </equip>
+        <for>
+            <add stat="pDef" order="0x10" value="50"/>
+            <add stat="mDef" order="0x10" value="40"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+            <enchant stat="mDef" order="0x0C" value="0"/>
+        </for>
+		<skills>
+			<!--Cold Cloak of Darkness-->
+			<skill id="19038" level="1"/>
+			<!--Castle Return-->
+			<skill id="19041" level="1"/>
+		</skills>
+		<cond msgId="1518">
+			<player castleDarkClanLeader="true"/>
+		</cond>
+    </armor>
+</list>

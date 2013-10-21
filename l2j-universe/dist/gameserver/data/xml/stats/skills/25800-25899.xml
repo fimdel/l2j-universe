@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="25885" levels="1" name="Souvenir Administration">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="25890" levels="1" name="Souvenir Vortex Ability">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+            <mul order="0x30" stat="mAtkSpd" val="1.1"/>
+        </for>
+    </skill>
+    <skill id="25891" levels="1" name="Souvenir Elemental Ability">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+            <add order="0x40" stat="defenceFire" val="10"/>
+            <add order="0x40" stat="defenceWater" val="10"/>
+            <add order="0x40" stat="defenceWind" val="10"/>
+            <add order="0x40" stat="defenceEarth" val="10"/>
+        </for>
+    </skill>
+    <skill id="25892" levels="1" name="SA2 Protection">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.15"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="25893" levels="1" name="SA2 Holy">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.15"/>
+        </for>
+    </skill>
+    <skill id="25894" levels="1" name="SA2 Mental">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+            <mul order="0x30" stat="maxHp" val="1.20"/>
+        </for>
+    </skill>
+    <skill id="25895" levels="1" name="SA2 Eclipse">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+            <mul order="0x30" stat="mCritRate" val="0.1"/>
+        </for>
+    </skill>
+    <skill id="25896" levels="1" name="SA2 Efficiency">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="25897" levels="1" name="SA2 Sacrifice">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+            <mul order="0x30" stat="mReuse" val="0.9"/>
+        </for>
+    </skill>
+    <skill id="25898" levels="1" name="SA2 Intense">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+            <mul order="0x30" stat="mAtk" val="1.1"/>
+        </for>
+    </skill>
+    <skill id="25899" levels="1" name="SA2 Wind">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="1.05"/>
+            <mul order="0x30" stat="mDef" val="1.05"/>
+            <mul order="0x30" stat="runSpd" val="1.05"/>
+        </for>
+    </skill>
+</list>

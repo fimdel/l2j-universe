@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="13000" levels="1" name="Vitality Recovering Cake Buff">
+    <!-- Recovers vitality upon acquiring XP. The effect lasts for 20 minutes. -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.event_six_party_cake_i00"/>
+        <set name="reuseDelay" val="43200000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13001" levels="4" name="Vesper Heavy Armor Set">
+    <!-- Increases P. Def. by 5.57%. -->
+        <table name="#Resist">0 0 0 70</table>
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#maxHp">0 531 531 531</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <set name="icon" val="icon.armor_t94_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="DEX" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="1.0557"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="sleepResist" val="#Resist"/>
+            <add order="0x40" stat="rootResist" val="#Resist"/>
+        </for>
+    </skill>
+    <skill id="13002" levels="4" name="Vesper Noble Heavy Armor Set">
+    <!-- Increases P. Def. by 5.57%. -->
+        <table name="#accCombat">0 4 4 4</table>
+        <table name="#Resist">0 0 0 70</table>
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#magicResist">1 1 1 1.01</table>
+        <table name="#runSpd">0 0 5 5</table>
+        <table name="#maxHp">0 540 540 540</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t94_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="accCombat" val="#accCombat"/>
+            <add order="0x40" stat="runSpd" val="#runSpd"/>
+            <mul order="0x40" stat="magicResist" val="#magicResist"/>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="DEX" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="1.0557"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="sleepResist" val="#Resist"/>
+            <add order="0x40" stat="rootResist" val="#Resist"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13003" levels="4" name="Vesper Light Armor Set">
+    <!-- Increases MP recovery rate by 5%. -->
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#maxMp">0 347 347 347</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#pAtkSpd">1 1 1 1.0557</table>
+        <set name="icon" val="icon.armor_t95_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs1"/>
+            <add order="0x40" stat="DEX" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="1.0557"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+        </for>
+    </skill>
+    <skill id="13004" levels="4" name="Vesper Noble Light Armor Set">
+    <!-- Increases MP recovery rate by 5%. -->
+        <table name="#rCrit">0 3 3 3</table>
+        <table name="#cAtkStatic">0 0 172 172</table>
+        <table name="#paralyzeResist">0 0 0 50</table>
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#maxMp">0 354 354 354</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#pAtkSpd">1 1 1 1.0557</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t95_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x40" stat="paralyzeResist" val="#paralyzeResist"/>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs1"/>
+            <add order="0x40" stat="DEX" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="1.0557"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13005" levels="4" name="Vesper Robe Set">
+    <!-- Increases MP recovery rate by 5.57%. -->
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#concentration">1 1 1 0.7</table>
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#mAtk">1 1.0847 1.0847 1.0847</table>
+        <table name="#mAtkSpd">1 1 1.15 1.15</table>
+        <set name="icon" val="icon.armor_t96_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="#parametrs"/>
+            <sub order="0x40" stat="MEN" val="#parametrs1"/>
+            <add order="0x40" stat="WIT" val="#parametrs"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="1.0557"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <mul order="0x30" stat="concentration" val="#concentration"/>
+        </for>
+    </skill>
+    <skill id="13006" levels="4" name="Vesper Noble Robe Set">
+    <!-- Increases MP recovery rate by 5.57%. -->
+        <table name="#runSpd">0 0 7 7</table>
+        <table name="#mpConsum">1 1 1 0.97</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#concentration">1 0.7 0.7 0.7</table>
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#mAtk">1 1.0847 1.0847 1.0847</table>
+        <table name="#mAtkSpd">1 1 1.15 1.15</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t96_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="runSpd" val="#runSpd"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="INT" val="#parametrs"/>
+            <sub order="0x40" stat="MEN" val="#parametrs1"/>
+            <add order="0x40" stat="WIT" val="#parametrs"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="1.0557"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <mul order="0x30" stat="concentration" val="#concentration"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13007" levels="1" name="Vesper Heavy Armor Set for Adults">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing all speeds of the attacker. -->
+        <set name="icon" val="icon.armor_t94_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13008" levels="1" name="Vesper Noble Heavy Armor Set for Adults">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing all speeds of the attacker. -->
+        <set name="icon" val="icon.armor_t94_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13009" levels="1" name="Vesper Light Armor Set for Adults">
+    <!-- Decreases damage incurred during PVP. Chance of hurling the target at the opponent when attacked. -->
+        <set name="icon" val="icon.armor_t95_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13010" levels="1" name="Vesper Noble Light Armor Set for Adults">
+    <!-- Decreases damage incurred during PVP. Chance of hurling the target at the opponent when attacked. -->
+        <set name="icon" val="icon.armor_t95_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13011" levels="1" name="Vesper Robe Set for Adults">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing critical receive rate and critical damage amount. -->
+        <set name="icon" val="icon.armor_t96_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13012" levels="1" name="Vesper Noble Robe Set for Adults">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing critical receive rate and critical damage amount. -->
+        <set name="icon" val="icon.armor_t96_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13013" levels="4" name="Moirai Heavy Armor Set">
+    <!-- Increases M. Def by 2%. -->
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#pAtk">1 1.0426 1.0426 1.0426</table>
+        <table name="#pAtkSpd">1 1 1.04 1.04</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 3</table>
+        <table name="#defenceWater">0 0 0 3</table>
+        <table name="#defenceWind">0 0 0 3</table>
+        <table name="#defenceEarth">0 0 0 3</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t100_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="magicResist" val="2"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13014" levels="4" name="Moirai Leather Armor Set">
+    <!-- Increases Speed by 3%. -->
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#pAtk">1 1.0426 1.0426 1.0426</table>
+        <table name="#pAtkSpd">1 1 1.04 1.04</table>
+        <table name="#rootResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 3</table>
+        <table name="#defenceWater">0 0 0 3</table>
+        <table name="#defenceWind">0 0 0 3</table>
+        <table name="#defenceEarth">0 0 0 3</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t101_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="runSpd" val="1.03"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13015" levels="4" name="Moirai Robe Set">
+    <!-- Increases Casting Spd. by 5%. -->
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#mAtkSpd">1.05 1.05 1.15 1.15</table>
+        <table name="#mAtk">1 1.0811 1.0811 1.0811</table>
+        <table name="#paralyzeResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t102_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="#parametrs"/>
+            <sub order="0x40" stat="MEN" val="#parametrs"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="paralyzeResist" val="#paralyzeResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13016" levels="4" name="Vorpal Heavy Armor Set">
+    <!-- Increases P. Def. by 8.47%. -->
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#maxHp">0 541 541 541</table>
+        <table name="#runSpd">0 7 7 7</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#accCombat">0 0 4 4</table>
+        <table name="#magicResist">0 0 0 2</table>
+        <table name="#Resist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t94_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="accCombat" val="#accCombat"/>
+            <add order="0x30" stat="runSpd" val="#runSpd"/>
+            <add order="0x40" stat="CON" val="#parametrs"/>
+            <sub order="0x40" stat="STR" val="#parametrs"/>
+            <mul order="0x30" stat="pDef" val="1.0847"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="magicResist" val="#magicResist"/>
+            <add order="0x40" stat="bleedResist" val="#Resist"/>
+            <add order="0x40" stat="rootResist" val="#Resist"/>
+            <add order="0x40" stat="sleepResist" val="#Resist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13017" levels="4" name="Vorpal Leather Armor Set">
+    <!-- Increases P. Def. by 5.57%. -->
+        <table name="#maxMp">0 360 360 360</table>
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#parametrs2">0 0 0 3</table>
+        <table name="#runSpd">1 1.03 1.03 1.03</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#pAtkSpd">1 1 1.05 1.05</table>
+        <table name="#cAtkStatic">0 0 0 182</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t95_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x30" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <add order="0x40" stat="DEX" val="#parametrs1"/>
+            <sub order="0x40" stat="CON" val="#parametrs2"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="1.0557"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="runSpd" val="#runSpd"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13018" levels="4" name="Vorpal Robe Set">
+    <!-- Increases Speed by 7. -->
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#maxMp">0 92 92 92</table>
+        <table name="#mAtkSpd">1 1 1.15 1.15</table>
+        <table name="#mAtk">1 1.087 1.087 1.087</table>
+        <table name="#regMp">1 1.05 1.05 1.05</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t96_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x30" stat="maxMp" val="#maxMp"/>
+            <add order="0x30" stat="runSpd" val="7"/>
+            <add order="0x40" stat="WIT" val="#parametrs1"/>
+            <sub order="0x40" stat="MEN" val="#parametrs"/>
+            <sub order="0x40" stat="INT" val="#parametrs"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13019" levels="4" name="Elegia Heavy Armor Set">
+    <!-- Increases Max HP by 550. -->
+        <table name="#parametrs">0 0 0 3</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#pAtk">1 1.0659 1.0659 1.0659</table>
+        <table name="#rCrit">0 0 127 127</table>
+        <table name="#magicResist">0 0 2 2</table>
+        <table name="#absorbDam">0 0 0 3</table>
+        <table name="#Resist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t97_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs1"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <add order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="maxHp" val="550"/>
+            <add order="0x40" stat="magicResist" val="#magicResist"/>
+            <add order="0x40" stat="absorbDam" val="#absorbDam"/>
+            <add order="0x40" stat="bleedResist" val="#Resist"/>
+            <add order="0x40" stat="rootResist" val="#Resist"/>
+            <add order="0x40" stat="sleepResist" val="#Resist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13020" levels="4" name="Elegia Leather Armor Set">
+    <!-- Increases Speed by 3%. -->
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#pAtk">1 1.0659 1.0659 1.0659</table>
+        <table name="#rCrit">0 0 172 172</table>
+        <table name="#pAtkSpd">1 1 1 1.06</table>
+        <table name="#paralyzeResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t98_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <add order="0x40" stat="DEX" val="#parametrs1"/>
+            <sub order="0x40" stat="CON" val="#parametrs1"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="rCrit" val="#rCrit"/>
+            <mul order="0x30" stat="runSpd" val="1.03"/>
+            <add order="0x40" stat="paralyzeResist" val="#paralyzeResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13021" levels="4" name="Elegia Robe Set">
+    <!-- Increases Speed by 7. -->
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#maxMp">0 97 97 97</table>
+        <table name="#mAtk">1 1.1 1.1 1.1</table>
+        <table name="#mAtkSpd">1 1 1.15 1.15</table>
+        <table name="#regMp">1 1 1.05 1.05</table>
+        <table name="#mpConsum">1 1 1 0.97</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t99_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x30" stat="maxMp" val="#maxMp"/>
+            <add order="0x30" stat="runSpd" val="7"/>
+            <add order="0x10" stat="WIT" val="#parametrs1"/>
+            <add order="0x10" stat="INT" val="#parametrs"/>
+            <sub order="0x10" stat="MEN" val="#parametrs1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13022" levels="1" name="Moirai Heavy Armor Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing all speeds of the attacker. -->
+        <set name="icon" val="icon.armor_t100_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13023" levels="1" name="Moirai Light Armor Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of hurling the target at the opponent when attacked. -->
+        <set name="icon" val="icon.armor_t101_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13024" levels="1" name="Moirai Robe Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing critical receive rate and critical damage amount. -->
+        <set name="icon" val="icon.armor_t102_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13025" levels="1" name="Vorpal Heavy Armor Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing all speeds of the attacker. -->
+        <set name="icon" val="icon.armor_t94_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13026" levels="1" name="Vorpal Leather Armor Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of hurling the target at the opponent when attacked. -->
+        <set name="icon" val="icon.armor_t95_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13027" levels="1" name="Vorpal Robe Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing critical receive rate and critical damage amount. -->
+        <set name="icon" val="icon.armor_t96_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13028" levels="1" name="Elegia Heavy Armor Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing all speeds of the attacker. -->
+        <set name="icon" val="icon.armor_t97_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13029" levels="1" name="Elegia Leather Armor Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of hurling the target at the opponent when attacked. -->
+        <set name="icon" val="icon.armor_t98_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13030" levels="1" name="Elegia Robe Set - PVP">
+    <!-- Decreases damage incurred during PVP. Chance of decreasing critical receive rate and critical damage amount. -->
+        <set name="icon" val="icon.armor_t99_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13031" levels="1" name="Fire Resistance">
+    <!-- Increases Fire Resistance by 5. -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="5"/>
+        </for>
+    </skill>
+    <skill id="13032" levels="1" name="Earth Resistance">
+    <!-- Increases Earth Resistance by 5. -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="5"/>
+        </for>
+    </skill>
+    <skill id="13033" levels="1" name="Darkness Resistance">
+    <!-- Increases Dark Resistance by 5. -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="5"/>
+        </for>
+    </skill>
+    <skill id="13034" levels="1" name="Water Resistance">
+    <!-- Increases Water Resistance by 5. -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="5"/>
+        </for>
+    </skill>
+    <skill id="13035" levels="1" name="Wind Resistance">
+    <!-- Increases Wind Resistance by 5. -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="5"/>
+        </for>
+    </skill>
+    <skill id="13036" levels="1" name="Divinity Resistance">
+    <!-- Increases Divinity Resistance by 5. -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="5"/>
+        </for>
+    </skill>
+    <skill id="13037" levels="1" name="Fire Resistance">
+    <!-- Increases Fire Resistance by 10. -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="10"/>
+        </for>
+    </skill>
+    <skill id="13038" levels="1" name="Earth Resistance">
+    <!-- Increases Earth Resistance by 10. -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="10"/>
+        </for>
+    </skill>
+    <skill id="13039" levels="1" name="Darkness Resistance">
+    <!-- Increases Dark Resistance by 10. -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="10"/>
+        </for>
+    </skill>
+    <skill id="13040" levels="1" name="Water Resistance">
+    <!-- Increases Water Resistance by 10. -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="10"/>
+        </for>
+    </skill>
+    <skill id="13041" levels="1" name="Wind Resistance">
+    <!-- Increases Wind Resistance by 10. -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="10"/>
+        </for>
+    </skill>
+    <skill id="13042" levels="1" name="Divinity Resistance">
+    <!-- Increases Divinity Resistance by 10. -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="10"/>
+        </for>
+    </skill>
+    <skill id="13043" levels="1" name="Fire Resistance">
+    <!-- Increases Fire Resistance by 15. -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="15"/>
+        </for>
+    </skill>
+    <skill id="13044" levels="1" name="Earth Resistance">
+    <!-- Increases Earth Resistance by 15. -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="15"/>
+        </for>
+    </skill>
+    <skill id="13045" levels="1" name="Darkness Resistance">
+    <!-- Increases Dark Resistance by 15. -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="15"/>
+        </for>
+    </skill>
+    <skill id="13046" levels="1" name="Water Resistance">
+    <!-- Increases Water Resistance by 15. -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="15"/>
+        </for>
+    </skill>
+    <skill id="13047" levels="1" name="Wind Resistance">
+    <!-- Increases Wind Resistance by 15. -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="15"/>
+        </for>
+    </skill>
+    <skill id="13048" levels="1" name="Divinity Resistance">
+    <!-- Increases Divinity Resistance by 15. -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="15"/>
+        </for>
+    </skill>
+    <skill id="13049" levels="1" name="Fire Resistance">
+    <!-- Increases Fire Resistance by 20. -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="20"/>
+        </for>
+    </skill>
+    <skill id="13050" levels="1" name="Earth Resistance">
+    <!-- Increases Earth Resistance by 20. -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="20"/>
+        </for>
+    </skill>
+    <skill id="13051" levels="1" name="Darkness Resistance">
+    <!-- Increases Dark Resistance by 20. -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="20"/>
+        </for>
+    </skill>
+    <skill id="13052" levels="1" name="Water Resistance">
+    <!-- Increases Water Resistance by 20. -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="20"/>
+        </for>
+    </skill>
+    <skill id="13053" levels="1" name="Wind Resistance">
+    <!-- Increases Wind Resistance by 20. -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="20"/>
+        </for>
+    </skill>
+    <skill id="13054" levels="1" name="Divinity Resistance">
+    <!-- Increases Divinity Resistance by 20. -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="20"/>
+        </for>
+    </skill>
+    <skill id="13055" levels="1" name="Fire Resistance">
+    <!-- Increases Fire Resistance by 25. -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="25"/>
+        </for>
+    </skill>
+    <skill id="13056" levels="1" name="Earth Resistance">
+    <!-- Increases Earth Resistance by 25. -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="25"/>
+        </for>
+    </skill>
+    <skill id="13057" levels="1" name="Darkness Resistance">
+    <!-- Increases Dark Resistance by 25. -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="25"/>
+        </for>
+    </skill>
+    <skill id="13058" levels="1" name="Water Resistance">
+    <!-- Increases Water Resistance by 25. -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="25"/>
+        </for>
+    </skill>
+    <skill id="13059" levels="1" name="Wind Resistance">
+    <!-- Increases Wind Resistance by 25. -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="25"/>
+        </for>
+    </skill>
+    <skill id="13060" levels="1" name="Divinity Resistance">
+    <!-- Increases Divinity Resistance by 25. -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="25"/>
+        </for>
+    </skill>
+	<skill id="13061" levels="4" name="Special Ability: Long Blow">
+    <!-- Increases bow/crossbow range. Inflicts additional damage during PVP. -->
+        <set name="icon" val="icon.skill13061"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pAtkRange" val="150"/>
+            <mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13062" levels="5" name="Special Ability: Damage Up">
+    <!-- Increases critical rate. Inflicts additional damage during PVP. -->
+		<table name="#pdam">288 332 377 415 468</table>
+		<table name="#attack">1.05 1.05 1.1 1.1 1.1</table>
+        <set name="icon" val="icon.skill13062"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pAtk" val="#pdam"/>
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="#attack"/>
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="#attack"/>
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="#attack"/>
+        </for>
+    </skill>
+    <skill id="13063" levels="4" name="R Grade Cloak Slot Completion">
+    <!-- Opens a cloak slot. -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="openCloakSlot" val="1"/>
+		</for>
+    </skill>
+    <skill id="13064" levels="4" name="Set Effect - Immortal Heavy Armor 2 Piece (defense)">
+    <!-- Increases CON +1 and HP +463. -->
+        <table name="#critChanceRcpt">1 0.967 0.967 0.967</table>
+        <table name="#stunResist">0 5 5 5</table>
+        <table name="#mDef">0 0 38 38</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 77</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13064"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="maxHp" val="463"/>
+            <mul order="0x30" stat="critChanceRcpt" val="#critChanceRcpt"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x30" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x30" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13065" levels="4" name="Set Effect - Immortal Heavy Armor 2 Piece (attack)">
+    <!-- STR +1 -->
+        <table name="#cAtkStatic">0 209 209 209</table>
+        <table name="#rootResist">0 5 5 5</table>
+        <table name="#maxHp">0 0 463 463</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+		<table name="#pDef">1 1 1 1.07</table>
+		<table name="#pAtk">0 0 0 180</table>
+        <set name="icon" val="icon.skill13065"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+			<mul order="0x30" stat="pDef" val="#pDef"/>
+			<add order="0x40" stat="pAtk" val="#pAtk"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13066" levels="4" name="Set Effect - Twilight Heavy Armor 2 Piece (defense)">
+    <!-- CON +2, STR -1, HP +487. -->
+        <table name="#maxMp">0 202 202 202</table>
+        <table name="#stunResist">0 7 7 7</table>
+        <table name="#mDef">0 0 44 44</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 87</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13066"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="2"/>
+            <sub order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="maxHp" val="487"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x30" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x30" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13067" levels="4" name="Set Effect - Twilight Heavy Armor 2 Piece (attack)">
+    <!-- STR +2, CON -1 -->
+        <table name="#cAtkStatic">0 242 242 242</table>
+        <table name="#rootResist">0 7 7 7</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#pAtk">0 0 0 180</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13067"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="2"/>
+            <sub order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13068" levels="4" name="Set Effect - Seraph Heavy Armor 2 Piece (defense)">
+    <!-- CON +3, STR -2, HP 511. -->
+        <table name="#critChanceRcpt">1 0.967 0.967 0.967</table>
+        <table name="#critDamRcpt">0 0 281 281</table>
+        <table name="#stunResist">0 10 10 10</table>
+        <table name="#mDef">0 0 50 50</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 96</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13068"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="3"/>
+            <sub order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="maxHp" val="511"/>
+            <mul order="0x30" stat="critChanceRcpt" val="#critChanceRcpt"/>
+            <sub order="0x30" stat="critDamRcpt" val="#critDamRcpt"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x30" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x30" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13069" levels="4" name="Set Effect - Seraph Heavy Armor 2 Piece (attack)">
+    <!-- STR +3, CON -2 -->
+        <table name="#cAtkStatic">0 281 281 281</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#maxHp">0 0 511 511</table>
+        <table name="#cAtkStatic">0 0 0 214</table>
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#skillPower">1 1 1.06 1.06</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13069"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="3"/>
+            <sub order="0x40" stat="CON" val="2"/>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="skillPower" val="#skillPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13070" levels="4" name="Set Effect - Eternal Heavy Armor 2 Piece (defense)">
+    <!-- CON +3, STR -1, HP 521. -->
+        <table name="#critChanceRcpt">1 0.967 0.967 0.967</table>
+        <table name="#stunResist">0 10 10 10</table>
+        <table name="#hpEff">0 0 108 108</table>
+        <table name="#mDef">0 0 54 54</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 103</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13070"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="3"/>
+            <sub order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="maxHp" val="521"/>
+            <mul order="0x30" stat="critChanceRcpt" val="#critChanceRcpt"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x30" stat="hpEff" val="#hpEff"/>
+            <add order="0x30" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x30" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13071" levels="4" name="Set Effect - Eternal Heavy Armor 2 Piece (attack)">
+    <!-- STR +3, CON -1 -->
+        <table name="#cAtkStatic">0 298 298 298</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#maxHp">0 0 521 521</table>
+        <table name="#pAtk">0 0 0 246</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#absorbDam">0 0 2 2</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13071"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="3"/>
+            <sub order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="absorbDam" val="#absorbDam"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13072" levels="4" name="Set Effect - R99 Rare Heavy Armor 2 Piece (defense)">
+    <!-- CON +4, STR -2, HP 536. -->
+        <table name="#critChanceRcpt">1 0.967 0.967 0.967</table>
+        <table name="#stunResist">0 15 15 15</table>
+        <table name="#reflectDam">0 0 20 20</table>
+        <table name="#mDef">0 0 58 58</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 108</table>
+        <table name="#defenceFire">0 0 0 20</table>
+        <table name="#defenceWater">0 0 0 20</table>
+        <table name="#defenceWind">0 0 0 20</table>
+        <table name="#defenceEarth">0 0 0 20</table>
+        <set name="icon" val="icon.skill13072"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="4"/>
+            <sub order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="maxHp" val="536"/>
+            <mul order="0x30" stat="critChanceRcpt" val="#critChanceRcpt"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="reflectDam" val="#reflectDam"/>
+            <add order="0x30" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x30" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13073" levels="4" name="Set Effect - R99 Rare Heavy Armor 2 Piece (attack)">
+    <!-- STR +4, CON -2, Atk. Spd. + 3%. -->
+        <table name="#pAtkSpd">1.03 1.03 1.0298 1.08</table>
+        <table name="#cAtkStatic">0 325 325 325</table>
+        <table name="#rootResist">0 15 15 15</table>
+        <table name="#maxHp">0 0 536 536</table>
+        <table name="#pAtk">0 0 0 255</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#stunPower">0 0 10 10</table>
+        <table name="#defenceFire">0 0 0 20</table>
+        <table name="#defenceWater">0 0 0 20</table>
+        <table name="#defenceWind">0 0 0 20</table>
+        <table name="#defenceEarth">0 0 0 20</table>
+        <set name="icon" val="icon.skill13073"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="4"/>
+            <sub order="0x40" stat="CON" val="2"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="stunPower" val="#stunPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13074" levels="4" name="Set Effect - Immortal Light Armor 2 Piece (assassin)">
+    <!-- DEX +1 -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#sleepResist">0 5 5 5</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13074"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="1"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13075" levels="4" name="Set Effect - Immortal Light Armor 2 Piece (strong)">
+    <!-- STR +1, P. Atk. +155. -->
+        <table name="#rootResist">0 5 5 5</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#maxHp">0 0 463 463</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13075"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="pAtk" val="155"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13076" levels="4" name="Set Effect - Twilight Light Armor 2 Piece (assassin)">
+    <!-- DEX +2, STR -1 -->
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#rootResist">0 7 7 7</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkAdd">0 0 180 180</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="2"/>
+            <sub order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="pAtk" val="#pAtkAdd"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13077" levels="4" name="Set Effect - Twilight Light Armor 2 Piece (strong)">
+    <!-- STR +2, CON -1, P. Atk. 180. -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#cAtkStatic">0 0 0 242</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#rootResist">0 7 7 7</table>
+        <table name="#maxHp">0 0 487 487</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="2"/>
+            <sub order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="pAtk" val="180"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13078" levels="4" name="Set Effect - Seraph Light Armor 2 Piece (assassin)">
+    <!-- DEX +3, STR -2 -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#skillPower">1 1 1.06 1.06</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="3"/>
+            <sub order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="rCrit" val="#rCrit"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="skillPower" val="#skillPower"/>
+            <mul order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13079" levels="4" name="Set Effect - Seraph Light Armor 2 Piece (strong)">
+    <!-- STR +3, CON -2, P. Atk. 214. -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#maxHp">0 0 511 511</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#mentalPower">0 0 20 20</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="3"/>
+            <sub order="0x40" stat="CON" val="2"/>
+            <add order="0x40" stat="pAtk" val="214"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="mentalPower" val="#mentalPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13080" levels="4" name="Set Effect - Eternal Light Armor 2 Piece (assassin)">
+    <!-- DEX +3, STR -1 -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#sleepResist">0 10 10 10</table>
+        <table name="#absorbDam">0 0 0 1</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="3"/>
+            <sub order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="rCrit" val="#rCrit"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="absorbDam" val="#absorbDam"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13081" levels="4" name="Set Effect - Eternal Light Armor 2 Piece (strong)">
+    <!-- STR +3, CON -1, P. Atk. 246. -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#maxHp">0 0 521 521</table>
+        <table name="#skillPower">1 1 1.06 1.06</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="3"/>
+            <sub order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="pAtk" val="246"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <mul order="0x30" stat="skillPower" val="#skillPower"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13082" levels="4" name="Set Effect - R99 Rare Light Armor 2 Piece (assassin)">
+    <!-- DEX +4, STR -2. Atk. Spd. + 3%. -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#rootResist">0 15 15 15</table>
+        <table name="#cAtkStatic">0 0 325 325</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 20</table>
+        <table name="#defenceWater">0 0 0 20</table>
+        <table name="#defenceWind">0 0 0 20</table>
+        <table name="#defenceEarth">0 0 0 20</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="4"/>
+            <sub order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="rCrit" val="#rCrit"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="1.03"/>
+            <mul order="0x40" stat="rCrit" val="#rCrit"/>
+            <add order="0x40" stat="cAtkStatic" val="#cAtkStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13083" levels="4" name="Set Effect - R99 Rare Light Armor 2 Piece (strong)">
+    <!-- STR +4, CON -2, P. Atk. 255. -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1.03 1.03</table>
+        <table name="#maxHp">0 0 536 536</table>
+        <table name="#mpConsum">1 1 1 0.96</table>
+        <table name="#rootResist">0 15 15 15</table>
+        <table name="#defenceFire">0 0 0 20</table>
+        <table name="#defenceWater">0 0 0 20</table>
+        <table name="#defenceWind">0 0 0 20</table>
+        <table name="#defenceEarth">0 0 0 20</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="4"/>
+            <sub order="0x40" stat="CON" val="2"/>
+            <add order="0x40" stat="pAtk" val="255"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13084" levels="4" name="Set Effect - Immortal Robe 2 Piece (magic)">
+    <!-- INT +1. Casting Spd. 3%. -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.12</table>
+        <table name="#maxMp">0 185 185 185</table>
+        <table name="#regMp">0 0 0.6 0.6</table>
+        <table name="#mCritRate">1 1 1 1.03</table>
+        <table name="#sleepResist">0 5 5 5</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x30" stat="regMp" val="#regMp"/>
+            <mul order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13085" levels="4" name="Set Effect - Immortal Robe 2 Piece (recovery)">
+    <!-- WIT +1. Casting Spd. 3%. -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.12</table>
+        <table name="#maxMp">0 185 185 185</table>
+        <table name="#regMp">0 0 0.6 0.6</table>
+        <table name="#healPower">0 0 0 65</table>
+        <table name="#stunResist">0 5 5 5</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13086" levels="4" name="Set Effect - Twilight Robe 2 Piece (magic)">
+    <!-- INT +2. MEN -1. Casting Spd. 3%. -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#mAtkAdd">0 0 184 184</table>
+        <table name="#maxMp">0 202 202 202</table>
+        <table name="#mCritRate">1 1 1 1.04</table>
+        <table name="#sleepResist">0 5 5 5</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="2"/>
+            <sub order="0x40" stat="MEN" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13087" levels="4" name="Set Effect - Twilight Robe 2 Piece (recovery)">
+    <!-- WIT+2. MEN -1. Casting Spd. 3%. -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#maxMp">0 202 202 202</table>
+        <table name="#regMp">0 0 0.7 0.7</table>
+        <table name="#healPower">0 0 0 85</table>
+        <table name="#stunResist">0 7 7 7</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="2"/>
+            <sub order="0x40" stat="MEN" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13088" levels="4" name="Set Effect - Seraph Robe 2 Piece (magic)">
+    <!-- INT +3. MEN -2. Casting Spd. 3%. -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#mAtkAdd">0 0 222 222</table>
+        <table name="#maxMp">0 221 221 221</table>
+        <table name="#mCritRate">1 1 1 1.03</table>
+        <table name="#concentration">1 1 0.9 0.9</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="3"/>
+            <sub order="0x40" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x30" stat="concentration" val="#concentration"/>
+            <mul order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13089" levels="4" name="Set Effect - Seraph Robe 2 Piece (recovery)">
+    <!-- WIT+3. MEN -2. Casting Spd. 3%. -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#maxMp">0 221 221 221</table>
+        <table name="#regMp">0 0 0.8 0.8</table>
+        <table name="#healPower">0 0 0 89</table>
+        <table name="#mCritRate">1 1 1.03 1.03</table>
+        <table name="#stunResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="3"/>
+            <sub order="0x40" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13090" levels="4" name="Set Effect - Eternal Robe 2 Piece (magic)">
+    <!-- INT +3. MEN -1. Casting Spd. 3%. -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#mAtkAdd">0 0 256 256</table>
+        <table name="#maxMp">0 228 228 228</table>
+        <table name="#mCritDamage">0 0 297 297</table>
+        <table name="#mCritRate">1 1 1 1.03</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="3"/>
+            <sub order="0x40" stat="MEN" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x30" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="mCAtkStatic" val="#mCritDamage"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13091" levels="4" name="Set Effect - Eternal Robe 2 Piece (recovery)">
+    <!-- WIT+3. MEN -1. Casting Spd. 3%. -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#maxMp">0 228 228 228</table>
+        <table name="#mentalPower">0 15 15 15</table>
+        <table name="#regMp">0 0 0.9 0.9</table>
+        <table name="#healPower">0 0 0 108</table>
+        <table name="#stunResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="3"/>
+            <sub order="0x40" stat="MEN" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="mentalPower" val="#mentalPower"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13092" levels="4" name="Set Effect - R99 Rare Robe 2 Piece (magic)">
+    <!-- INT +4. MEN -2. Casting Spd. +15%. -->
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#mAtkAdd">0 0 267 267</table>
+        <table name="#mAtkSpd">1.15 1.15 1.15 1.25</table>
+        <table name="#maxMp">0 239 239 239</table>
+        <table name="#mentalPower">0 0 20 20</table>
+        <table name="#mCritRate">1 1 1 1.03</table>
+        <table name="#sleepResist">0 15 15 15</table>
+        <table name="#defenceFire">0 0 0 20</table>
+        <table name="#defenceWater">0 0 0 20</table>
+        <table name="#defenceWind">0 0 0 20</table>
+        <table name="#defenceEarth">0 0 0 20</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="4"/>
+            <sub order="0x40" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="1.15"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="mentalPower" val="#mentalPower"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13093" levels="4" name="Set Effect - R99 Rare Robe 2 Piece (recovery)">
+    <!-- WIT+4. MEN -2. Casting Spd. +15%. -->
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#mAtkAdd">0 0 276 276</table>
+        <table name="#mAtkSpd">1.15 1.15 1.15 1.25</table>
+        <table name="#maxMp">0 239 239 239</table>
+        <table name="#regMp">0 0 1 1</table>
+        <table name="#healPower">0 0 0 111</table>
+        <table name="#stunResist">0 15 15 15</table>
+        <table name="#defenceFire">0 0 0 20</table>
+        <table name="#defenceWater">0 0 0 20</table>
+        <table name="#defenceWind">0 0 0 20</table>
+        <table name="#defenceEarth">0 0 0 20</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="4"/>
+            <sub order="0x40" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13094" levels="4" name="R1 2 set">
+        <set name="icon" val="icon.armor_t501_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13095" levels="4" name="R1 2 set">
+        <set name="icon" val="icon.armor_t502_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13096" levels="4" name="R1 2 set">
+        <set name="icon" val="icon.armor_t503_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13097" levels="4" name="R2 2 set">
+        <set name="icon" val="icon.armor_t601_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13098" levels="4" name="R2 2 set">
+        <set name="icon" val="icon.armor_t602_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13099" levels="4" name="R2 2 set">
+        <set name="icon" val="icon.armor_t603_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

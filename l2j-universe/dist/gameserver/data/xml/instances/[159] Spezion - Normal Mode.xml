@@ -1,0 +1,32 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Spezion - Normal Mode -->
+	<instance id="159" name="Spezion Cavern" maxChannels="10" collapseIfEmpty="10" timelimit="60" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="90" max="99"/>
+		<party min="1" max="7"/>
+		<return loc="175464 143336 -11780"/>
+		<teleport loc="217769, 110626, -1344"/>
+		<remove itemId="17612" count="1" necessary="true"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<geodata map="26_19"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<spawns>
+			<group name="spassia_first_room" spawned="false"/>
+			<group name="spassia_second_room" spawned="false"/>
+			<group name="spassia_third_room" spawned="false"/>
+		</spawns>
+		<doors>
+			<door id="26190002" opened="false"/>
+			<door id="26190004" opened="false"/>
+			<door id="26190017" opened="false"/>
+			<door id="26190005" opened="false"/>
+			<door id="26190003" opened="false"/>
+			<door id="26190019" opened="false"/>
+			<door id="26190006" opened="false"/>
+			<door id="26190007" opened="false"/>
+			<door id="26190001" opened="false"/>
+		</doors>
+	</instance>
+</list>

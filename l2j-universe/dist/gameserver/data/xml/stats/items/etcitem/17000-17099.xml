@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="17000" name="Jewelry Pack (B-grade)" add_name="(90-day)">
+	<!-- When used, you acquire a Jewelry Set of Fortune (B-grade). Expires after 90 days if not used. Cannot be exchanged or dropped. -->
+		<set name="reuse_delay" value="3000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="17001" name="Jewelry Pack (C-grade)" add_name="(90-day)">
+	<!-- When used, you acquire a Jewelry Set of Fortune (C-grade). Expires after 90 days if not used. Cannot be exchanged or dropped. -->
+		<set name="reuse_delay" value="3000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="17002" name="Jewelry Pack (D-grade)" add_name="(90-day)">
+	<!-- When used, you acquire an Jewelry Set of Fortune (D-grade). Expires after 90 days if not used. Cannot be exchanged or dropped. -->
+		<set name="reuse_delay" value="3000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="17003" name="Santa Claus' Gift" add_name="Event">
+	<!-- Santa Claus' Gift. One can receive the gift when Double-clicked. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.lucky_bag_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<skills>
+			<skill id="9085" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17005" name="Santa - CP Potion" add_name="Event">
+	<!-- It recovers CP by 300. -->
+		<set name="reuse_delay" value="1"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_cp_potion_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="20"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17018" name="Hot Springs Recovery Potion">
+	<!-- Bottle containing hot springs water. It might have healing effects against maladies. -->
+		<set name="reuse_delay" value="3000"/>
+		<set name="price" value="2500"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_cp_potion_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="20"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9078" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="17019" name="Mounting Item 3 Pack">
+	<!-- Dimensional Item Pack
+	Wrapped Pack containing 1 Mount - Gold Maned Lion (7-day), 1 Mount - Darkmane Pacer (7-day), and 1 Mount - Steam Beetle (7-day). Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17020" name="Fresh Milk Pack (Event)">
+	<!-- Dimensional Item Pack
+	Event - Wrapped Pack containing fresh milk. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17021" name="Dimensional Experience Pack 30 (Event)">
+	<!-- Dimensional Item Pack
+	Event - Wrapped Pack containing a High-grade Minion Coupon 2-unit Pack, a Feather of Blessing 3-unit Pack, and a Kamaloka Entrance Pass 3-unit Pack. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17022" name="Varka Karm Pack (Event)">
+	<!-- Dimensional Item Pack
+	Wrapped pack containing a Varka Karm (used by Varka Silenos). Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17023" name="Ketra Karm Pack (Event)">
+	<!-- Dimensional Item Pack
+	Wrapped pack containing a Ketra Karm (used by Ketra Orcs). Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17024" name="Vitality Maintaining Potion Pack (Event)">
+	<!-- Dimensional Item Pack
+	Event - Wrapped Pack containing 5 Vitality Potions (30min). Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be shared between characters on the same account through the Dimensional Merchant. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17025" name="PC Points Pack (7,000)">
+	<!-- Wrapped Pack containing 7000 PC Points. Cannot be exchanged, dropped, destroyed or sold in private store. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17026" name="First Mate Hat Pack (Event)">
+	<!-- First Mate Hat - Wrapped Pack for event. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17027" name="Straw Hat Pack (Event)">
+	<!-- Straw Hat - Wrapped Pack for event. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17028" name="Phantom Mask Pack (Event)">
+	<!-- Phantom Mask - Wrapped Pack for event. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17029" name="Black Phantom Mask Pack (Event)">
+	<!-- Black Phantom Mask - Wrapped Pack for event. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17030" name="Forgotten Scroll: Create Item Lv10">
+	<!-- Forgotten Scroll for learning Create Item Lv10. Only Maestro can use it. Can be acquired by level 82. -->
+		<set name="class" value="SPELLBOOKS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="BranchSys2.Icon.br_spell_books_sword_i01"/>
+		<set name="price" value="120000"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="SPELLBOOK"/>
+		<set name="ex_type" value="SPELLBOOK"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17031" name="Freya White Pack">
+	<!-- 3 Vitality Replenishing Potions
+	Fire, Water, Wind, Earth, Holy, and Dark Crystals
+	Circlet of Freezing - Wrapped Pack for event. Cannot be exchanged or dropped. Can be stored in private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17032" name="Hero's Treasure Chest Pack">
+	<!-- Wrapped Pack containing a Hero's Treasure Chest. Cannot be exchanged or dropped. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17034" name="Forgotten Scroll: Fighter's Will (Event)">
+	<!-- Forgotten Scroll to learn the Fighter's Will. Fighters use it. Can be acquired at level 81. Cannot be exchanged or dropped. Event item. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.Icon.br_spell_books_sword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17035" name="Forgotten Scroll: Archer's Will (Event)">
+	<!-- Forgotten Scroll to learn the Archer's Will. Fighters use it. Can be acquired at level 81. Cannot be exchanged or dropped. Event item. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.Icon.br_spell_books_sword_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17036" name="Forgotten Scroll: Magician's Will (Event)">
+	<!-- Forgotten Scroll to learn Magician's Will. Used by the Mage types. Can be acquired at level 81. Cannot be exchanged or dropped. Event item. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.Icon.br_spell_books_magic_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17037" name="Forgotten Scroll: Protection of Rune (Event)">
+	<!-- Forgotten Scroll for learning Protection of Rune. Can be acquired at level 82. Cannot be exchanged or dropped. Event item. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_element_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17038" name="Forgotten Scroll: Protection of Elemental (Event)">
+	<!-- Forgotten Scroll for learning Protection of Elemental. Can be acquired at level 82. Cannot be exchanged or dropped. Event item. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_element_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17039" name="Forgotten Scroll: Protection of Alignment (Event)">
+	<!-- Forgotten Scroll for learning Protection of Alignment. Can be acquired at level 82. Cannot be exchanged or dropped. Event item. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_spell_books_element_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17040" name="Love Box Pack">
+	<!-- Wrapped Pack containing a Love Box. Cannot be exchanged or dropped. Can be stored in a private warehouse. 
+	This item will be deleted in bulk after the regular maintenance time on Jul. 7. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_box_love_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17041" name="Sentiment Box Pack">
+	<!-- Wrapped Pack containing a Sentiment Box. Cannot be exchanged or dropped. Can be stored in a private warehouse. 
+	This item will be deleted in bulk after the regular maintenance time on Jul. 7. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_box_belief_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17042" name="Confession Box Pack">
+	<!-- Wrapped Pack containing a Confession Box. Cannot be exchanged or dropped. Can be stored in a private warehouse. 
+	This item will be deleted in bulk after the regular maintenance time on Jul. 7. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_box_wish_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17043" name="Joy Box Pack">
+	<!-- Wrapped Pack containing a Joy Box. Cannot be exchanged or dropped. Can be stored in a private warehouse. 
+	This item will be deleted in bulk after the regular maintenance time on Jul. 7. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_box_joy_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17044" name="Love Box">
+	<!-- Contains Talismans for STR, DEX and CON. Cannot be dropped or destroyed. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_box_love_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17045" name="Sentiment Box">
+	<!-- Contains a Talisman for WIT, MEN and INT. Cannot be dropped or destroyed. Can be stored in a private warehouse.  -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_box_belief_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17046" name="Confession Box">
+	<!-- Contains a Talisman for Stun/Sleep/Hold/Paralysis Resistance. Cannot be dropped or destroyed. Can be stored in a private warehouse.  -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_box_wish_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17047" name="Joy Box">
+	<!-- Contains a Love Box, Sentiment Box, and Confession Box. Cannot be dropped or destroyed. Can be stored in a private warehouse. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_box_joy_pack"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17048" name="Shiny Bracelet Pack">
+	<!-- Wrapped Pack containing a Shiny Bracelet. Cannot be traded, dropped, or destroyed. Can be stored in a private warehouse. 
+	This item will be deleted in bulk after the regular maintenance time on Jul. 7. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17062" name="Event - Scroll: Summon Baby White Tiger">
+	<!-- Scroll that summons a baby White Tiger. If you relieve the Baby White Tiger's fatigue, you can acquire Apiga. (Recovery is only possible through Cupid's Fatigue Relief Potion or Cupid's Powerful Fatigue Relief Potion.) Exchange possible. -->
+		<set name="reuse_delay" value="10000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_tiger_a"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17063" name="Event - Scroll: Summon Gloomy Baby White Tiger">
+	<!-- Scroll that summons a Gloomy Baby White Tiger. Can sometimes transform into a White Tiger while trying to recover the Baby White Tiger. (Recovery is only possible through Cupid's Fatigue Relief Potion or Cupid's Powerful Fatigue Relief Potion.) Exchange possible. -->
+		<set name="reuse_delay" value="10000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_tiger_a"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17064" name="Event - Scroll: Summon Baby White Tiger Captain">
+	<!-- Scroll that summons a baby White Tiger Captain. If you relieve the Baby White Tiger Captain's fatigue, you can acquire Apiga. (Recovery is only possible through Cupid's Fatigue Relief Potion or Cupid's Powerful Fatigue Relief Potion.) Exchange possible. -->
+		<set name="reuse_delay" value="10000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_tiger_b"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17065" name="Event - Scroll: Summon Gloomy Baby White Tiger Captain">
+	<!-- Scroll that summons a Gloomy Baby White Tiger Captain. Can sometimes transform into a White Tiger Captain while trying to recover the Baby White Tiger. (Recovery is only possible through Cupid's Fatigue Relief Potion or Cupid's Powerful Fatigue Relief Potion.) Exchange possible. -->
+		<set name="reuse_delay" value="10000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_scroll_of_tiger_b"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17066" name="Event - Save the White Tiger Event Pack">
+	<!-- Event pack that can be obtained 1 time per account every 12 hours. By Double-clicking, you can obtain the Scroll: Summon Baby White Tiger and "Cupid's Fatigue Relief Potion" that are needed for the event. No exchange available. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17067" name="Event - Cupid's Fatigue Relief Potion">
+	<!-- Decreases fatigue when used on a White Tiger. -->
+		<set name="reuse_delay" value="2000"/>
+		<set name="delay_share_group" value="13"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_faitgue_relief_of_cupid_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17068" name="Event - Cupid's Major Fatigue Relief Potion">
+	<!-- Decreases fatigue when used on a White Tiger. It Has a better effect than Cupid's Fatigue Relief Potion. -->
+		<set name="reuse_delay" value="4000"/>
+		<set name="delay_share_group" value="14"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_nutrients_of_cupid_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17069" name="Vesper Weapon Pack">
+	<!-- Pack containing a Vesper weapon. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9100" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17070" name="Icarus Weapon Pack">
+	<!-- Pack containing an Icarus weapon. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9101" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17071" name="Dynasty Weapon Pack">
+	<!-- Pack containing a Dynasty weapon. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9102" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17072" name="Vesper Armor Pack">
+	<!-- Pack containing a Vesper armor. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9103" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17073" name="Moirai Armor Pack">
+	<!-- Pack containing a Destino armor. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9104" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17074" name="Dynasty Armor Pack">
+	<!-- Pack containing a Dynasty armor. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9105" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17075" name="Soul Crystal - Step 14 Box">
+	<!-- Box containing a Soul Crystal - Step 14. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9106" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17076" name="Soul Crystal - Step 15 Box">
+	<!-- Box containing a Soul Crystal - Step 15. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9107" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17077" name="Soul Crystal - Step 16 Box">
+	<!-- Box containing a Soul Crystal - Step 16. Which one could it be? -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9108" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17078" name="Facelifting Potion Pack">
+	<!-- Box containing a Facelifting Potion. Sometimes, Sometimes contains Fresh Milk. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9109" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17079" name="Dye Potion Pack">
+	<!-- Box containing a Dye Potion. Sometimes, Sometimes contains Fresh Milk. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9110" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17080" name="Hairstyle Change Potion Pack">
+	<!-- Box containing a Hair Style Change Potion. Sometimes, Sometimes contains Fresh Milk. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9111" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17081" name="Golden Apigas Box">
+	<!-- Box containing an S-grade Gemstone and an Attribute Stone. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<skills>
+			<skill id="9112" level="1"/>
+		</skills>
+		<set name="capsuled" value="true"/>
+	</etcitem>
+	<etcitem id="17082" name="Transformation Sealbook: Anakim Pack">
+	<!-- Wrapped Pack containing a Transformation Scroll: Anakim. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17083" name="Bird Nest Pack (Event)">
+	<!-- Wrapped Pack containing a Bird Nest (Event). Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17084" name="Shadow Item: Magician Cap Pack" add_name="Escape">
+	<!-- Wrapped Pack containing a Shadow Item: Magician Cap. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17085" name="Shadow Item: Magician Cap Pack" add_name="Big Head">
+	<!-- Wrapped Pack containing a Shadow Item: Magician Cap. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17086" name="Shadow Item: Magician Cap Pack" add_name="Firework">
+	<!-- Wrapped Pack containing a Shadow Item: Magician Cap. Cannot be exchanged or dropped. Can be stored in a private warehouse. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_pi_gift_box_i04"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="17087" name="Seed: Twin Coba">
+	<!-- If you plant it in a monster in the Oren region, twin Coba will grow. The success rate is high when a level 77 - 87 character uses it on a level 77 - 87 monster. -->
+		<set name="price" value="1000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_twin_coba_seed_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="17088" name="Seed: Alternative Twin Coba">
+	<!-- If you plant it in a monster in the Oren region, Improved Twin Coba will grow. The success rate is high when a level 77 - 87 character uses it on a level 77 - 87 monster. -->
+		<set name="price" value="1000"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_twin_coba_seed_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="17089" name="Seed: Red Coba">
+	<!-- If you plant it in a monster in the Schuttgart region, Red Coba will grow. The success rate is high when a level 65 - 75 character uses it on a level 65 - 75 monster. -->
+		<set name="price" value="500"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_red_coba_seed_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="17090" name="Seed: Alternative Red Coba">
+	<!-- If you plant it in a monster in the Schuttgart region, Improved Red Coba will grow. The success rate is high when a level 65 - 75 character uses it on a level 65 - 75 monster. -->
+		<set name="price" value="500"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_red_coba_seed_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="17091" name="Seed: Golden Coba">
+	<!-- If you plant it in a monster in the Schuttgart region, Golden Coba will grow. The success rate is high when a level 68 - 78 character uses it on a level 68 - 78 monster. -->
+		<set name="price" value="650"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_golden_coba_seed_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="17092" name="Seed: Alternative Golden Coba">
+	<!-- If you plant it in a monster in the Schuttgart region, Improved Golden Coba will grow. The success rate is high when a level 68 - 78 character uses it on a level 68 - 78 monster. -->
+		<set name="price" value="650"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_golden_coba_seed_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+	</etcitem>
+	<etcitem id="17093" name="Vitality Maintaining Potion (10-minute) (Event)">
+	<!-- Vitality is maintained for 10 min. Cooldown is 30 min. Cannot be exchanged, dropped, or destroyed. Vitality item with limited usage. Can be shared between characters on the same account through the Dimensional Merchant. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_lesser_potion_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="17094" name="Nevit's Voice">
+	<!-- Seashell containing Nevit's voice. Item that raises your evaluation value by 10. Can acquire 100,000 Adena by Double-clicking. Cannot be exchanged or dropped. -->
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_fish_scale_i01"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="17095" name="XP Buff 50% (1-hour)" add_name="40927">
+	<!-- Increases acquired XP by 50% for a certain amount of time. Can only be used at levels 1 - 19. Cannot be exchanged or dropped. -->
+		<set name="delay_share_group" value="16"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_dragons_blood_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="9115" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="17096" name="XP Buff 50% (1.5-hour)" add_name="40927">
+	<!-- Increases acquired XP by 50% for a certain amount of time. Can only be used at levels 1 - 19. Cannot be exchanged or dropped. -->
+		<set name="delay_share_group" value="16"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_dragons_blood_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="9116" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="17097" name="XP Buff 50% (2-hour)" add_name="40927">
+	<!-- Increases acquired XP by 50% for a certain amount of time. Can only be used at levels 1 - 19. Cannot be exchanged or dropped. -->
+		<set name="delay_share_group" value="16"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_dragons_blood_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="9117" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="17098" name="XP Buff 50% (2.5-hour)" add_name="40927">
+	<!-- Increases acquired XP by 50% for a certain amount of time. Can only be used at levels 1 - 19. Cannot be exchanged or dropped. -->
+		<set name="delay_share_group" value="16"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_dragons_blood_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="9118" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="17099" name="XP Buff 50% (3-hour)" add_name="40927">
+	<!-- Increases acquired XP by 50% for a certain amount of time. Can only be used at levels 1 - 19. Cannot be exchanged or dropped. -->
+		<set name="delay_share_group" value="16"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_dragons_blood_i03"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<skills>
+			<skill id="9119" level="1"/>
+		</skills>
+	</etcitem>
+</list>

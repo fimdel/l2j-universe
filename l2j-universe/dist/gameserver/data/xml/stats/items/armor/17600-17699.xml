@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="17609" name="(Not In Use) Istina's Necklace">		<!--Done By Darvin (c)Java-Team-->
+		<set name="crystal_type" value="S80"/>
+		<set name="crystallizable" value="true"/>
+		<set name="crystal_count" value="729"/>
+		<set name="icon" value="icon.accessary_queen_of_ice_necklace_i00"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NECKLACE"/>
+		</equip>
+		<set name="ex_type" value="NECKLACE"/>
+		<for>
+			<add stat="mDef" order="0x10" value="125"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="17623" name="Earth Wyrm Heart Ring">		<!--Done By Darvin (c)Java-Team-->
+		<!-- Дает возможность использовать умения со следующими эффектами и противоядием: MP +38, Сопротивление Физ. Атк./Мент. Атк., Регенерация MP, Увеличение Крит. Урона, Увеличение Точности, сопротивление отравлению +50%, шанс отравить +50%, Опрокидывание, Отталкивание, Сопротивление Притягиванию +20, Увеличение Скор. Атк./Маг., Защита от Воздуха/Воды, Увеличивает у членов группы Скор. Атк./Маг. и накладывает Ярость Вампира. Если надеть два таких кольца, эффект не проявится только у одного. -->
+		<set name="crystal_type" value="R"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_FINGER"/>
+			<slot id="LEFT_FINGER"/>
+		</equip>
+		<set name="ex_type" value="RING"/>
+		<skills>
+			<skill id="13317" level="1"/>
+			<skill id="13318" level="1"/>
+			<skill id="13319" level="1"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="112"/>
+			<add stat="maxMp" order="0x10" value="38"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+</list>

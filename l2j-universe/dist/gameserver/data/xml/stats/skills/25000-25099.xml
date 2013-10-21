@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="25000" levels="1" name="Rise Cake">
+        <set name="itemConsumeId" val="5283"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="power" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="HOT"/>
+        <set name="skillType" val="MPHOT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect count="5" name="HealOverTime" stackOrder="1" stackType="HpRecoverCast" time="3" val="25.6"/>
+            <effect count="5" name="HealOverTime" stackOrder="1" stackType="MpRecoverCast" time="3" val="25.6"/>
+        </for>
+    </skill>
+    <skill id="25001" levels="1" name="Paialka Antidote">
+        <set name="itemConsumeId" val="13048"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NEGATE_EFFECTS"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="negateEffects" val="Poison:7"/>
+        <set name="altUse" val="true"/>
+        <for/>
+    </skill>
+</list>

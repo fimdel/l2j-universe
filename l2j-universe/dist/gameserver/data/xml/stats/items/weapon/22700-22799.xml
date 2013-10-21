@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="22711" name="Japanese Sword">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_sword"/>
+		<set name="weight" value="144"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22712" name="Japanese Dagger">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_dagger"/>
+		<set name="weight" value="106"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="52"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22713" name="Japanese Long Sword">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_twohand_sword"/>
+		<set name="weight" value="209"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22714" name="Japanese Fist Weapon">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_dualfist"/>
+		<set name="weight" value="152"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22715" name="Japanese Long Spear">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_pole"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22716" name="Japanese Bow">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_bow"/>
+		<set name="weight" value="181"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="6"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="118"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22717" name="Japanese Crossbow">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_twohand_crossbow"/>
+		<set name="weight" value="181"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="6"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="76"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22718" name="Japanese Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_blunt"/>
+		<set name="weight" value="172"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22719" name="Japanese Giant Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_twohand_blunt"/>
+		<set name="weight" value="101"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22720" name="Japanese Magic Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_magic_blunt"/>
+		<set name="weight" value="173"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="48"/>
+			<add stat="mAtk" order="0x10" value="35"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22721" name="Japanese Giant Magic Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_magic_twohand_blunt"/>
+		<set name="weight" value="101"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="58"/>
+			<add stat="mAtk" order="0x10" value="37"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22722" name="Japanese Dual Sword">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_dual"/>
+		<set name="weight" value="247"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="3"/>
+		<set name="spiritshots" value="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22723" name="Japanese Twin Dagger">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_dualdagger"/>
+		<set name="weight" value="205"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="60"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22724" name="Japanese Twin Blunt">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_dualblunt"/>
+		<set name="weight" value="250"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="73"/>
+			<add stat="mAtk" order="0x10" value="29"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="22725" name="Japanese Shield">
+		<!--Done By Zyth23 (c) WunkiaKorps 2013-->
+		<set name="icon" value="BranchSys3.Icon.g_japan_shield"/>
+		<set name="weight" value="200"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="D"/>
+		<set name="crystal_count" value="0"/>
+		<for>
+			<add stat="pDef" order="0x10" value="5"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+</list>

@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<etcitem id="34900" name="Mysterious Mark">
+	<!-- The power of darkness can be faintly felt. Bring it to the Mysterious Butler in each town. Cannot be exchanged, dropped, or traded. Can be stored in a private warehouse. -->
+		<set name="icon" value="icon.etc_coins_black_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34901" name="Proof of Alliance">
+	<!-- Item needed for a clan leader to raise his/her clan level to 4. Can only be used by the clan leader. Cannot be exchanged, dropped, or traded. Can be stored in a private warehouse. -->
+		<set name="icon" value="icon.etc_paper_white_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34902" name="Proof of Aspiration">
+	<!-- Item needed for a clan leader to raise his/her clan level to 5. Can only be used by the clan leader. Cannot be exchanged, dropped, or traded. Can be stored in a private warehouse. -->
+		<set name="icon" value="icon.etc_paper_blue_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34903" name="Mysterious Shadow">
+	<!-- Item that can only be used in the Ceremony of Chaos Arena. Upon use, becomes hidden and decreases Speed by 30%. Cannot be dropped, exchanged, or traded. Can be stored in a private warehouse. -->
+		<set name="icon" value="icon.weapon_apprentices_spellbook_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34904" name="Mysterious Power">
+	<!-- Item that can only be used in the Ceremony of Chaos Arena. Your MP and CP are all reduced to 1 but 1/3 of your HP is maintained. Has a 50% chance of inflicting a lethal strike on the target. Cannot be exchanged, dropped, or traded. Can be stored in a private warehouse. -->
+		<set name="icon" value="icon.weapon_apprentices_spellbook_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34905" name="Clan-exclusive Pet (Raccoon)">
+	<!-- Item that summons a nurture-type clan pet (Raccoon). For 72 hours, you acquire 100 clan reputation points each time it is summoned, and you have a chance of obtaining an additional item. Only PC's who belong to a clan that is above level 5 can summon it. -->
+		<set name="icon" value="icon.accessory_necklace_of_pet_i00"/>
+		<set name="type" value="PET_COLLAR"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34906" name="Clan-exclusive Pet (White Cat)">
+	<!-- Item that summons a nurture-type clan pet (White Cat). For 72 hours, you acquire 100 clan reputation points each time it is summoned, and you have a chance of obtaining an additional item. Only PC's who belong to a clan that is above level 5 can summon it. -->
+		<set name="icon" value="icon.accessory_necklace_of_pet_i00"/>
+		<set name="type" value="PET_COLLAR"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34907" name="Clan-exclusive Pet (Desert Fox)">
+	<!-- Item that summons a nurture-type clan pet (Desert Fox). For 72 hours, you acquire 100 clan reputation points each time it is summoned, and you have a chance of obtaining an additional item. Only PC's who belong to a clan that is above level 5 can summon it. -->
+		<set name="icon" value="icon.accessory_necklace_of_pet_i00"/>
+		<set name="type" value="PET_COLLAR"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34908" name="Clan-exclusive Pet for Training">
+	<!-- Item that summons a Clan-exclusive Pet for Training. If the pet's HP becomes 0 within 30 seconds, you gain 50 Clan Reputation and 10 Individual Fame. -->
+		<set name="icon" value="icon.accessory_necklace_of_pet_i00"/>
+		<set name="type" value="PET_COLLAR"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34909" name="Mark of the Resistance">
+	<!-- Mark received for helping the Zofan Resistance. It is need to enter the Tauti battle. -->
+		<set name="icon" value="icon.scroll_of_verification_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34910" name="Aku's Mark">
+	<!-- Mark received for helping Aku. It is need to enter the Tauti battle (limited). -->
+		<set name="icon" value="icon.scroll_of_verification_i01"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34911" name="Ruler's Authority" add_name="Not in Use">
+	<!-- Item given to the winner of the tournament held in the Mysterious Mansion. Increases Max HP/MP/CP by 500, Weight Gauge by 12000, damage inflicted during PvP by 5%, Damage Reflect Resistance by 5, and Attribute Def. by 10. Also increases HP/MP Recovery Rate and Inventory Slot numbers. Decreases damage received during PvP by 6%. You can use these item skills only during the week of victory. Cannot be dropped, exchanged, or sold.  Can be stored in the private warehouse. -->
+		<set name="icon" value="icon.etc_spell_books_red_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34912" name="Summoning Stone">
+	<!-- Summoning Stone that can be used during the Noblesse quest. Double-click on it to summon the Water Spirit Lanya. -->
+		<set name="icon" value="icon.etc_crystal_ball_white_i00"/>
+		<set name="class" value="OTHER"/>
+		<set name="type" value="SCROLL"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<skills>
+			<skill id="9445" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="34913" name="Sack Containing Ingredients">
+	<!-- Sack containing ingredients. it contains 4 types of ingredients needed to make a weapon that purifies the water of Ev the goddess of water. -->
+		<set name="icon" value="BranchSys2.icon.etc_ancient_treasure_sack_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34914" name="Transport Goods - Aden">
+	<!-- Box stolen from the transportation unit. Give it to the revolutionaries to receive a campaign reward. Cannot be dropped, exchanged, or sold. -->
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34915" name="Hard Transport Goods - Aden" add_name="Not in Use">
+	<!-- Box stolen from the transportation cart. Give it to the revolutionaries to receive a campaign reward. Cannot be dropped, exchanged, or traded. -->
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34916" name="Transport Box">
+	<!-- Box stolen from the transportation unit. Give it to the revolutionaries to receive a campaign reward. Cannot be dropped, exchanged, or traded. -->
+		<set name="icon" value="icon.etc_jewel_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34917" name="Greater Transport Box">
+	<!-- Box stolen from the transportation cart. Give it to the revolutionaries to receive a campaign reward. Cannot be dropped, exchanged, or traded. -->
+		<set name="icon" value="icon.etc_treasure_box_i02"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34918" name="Treasure Chest of the King of Aden">
+	<!-- Precious treasure chest being delivered to the King of Aden. Double-click on it to obtain a reward. -->
+		<set name="icon" value="icon.etc_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34919" name="Tax Bundle">
+	<!-- Deliver to the Revolutionaries to receive a Campaign Reward. -->
+		<set name="icon" value="icon.etc_pouch_brown_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34920" name="Treasure Chest of the King of Rune">
+	<!-- Precious treasure chest being delivered to the King of Rune. Double-click on it to obtain a reward. -->
+		<set name="icon" value="icon.etc_treasure_box_i01"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34927" name="Dimension Keeper's Blue Box">
+	<!-- Blue-colored box bestowed by the kingdom of Aden as a reward for defeating the dimension demons in Kartia's Labyrinth. Double-click on it to see its contents. -->
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34928" name="Dimension Keeper's Red Box">
+	<!-- Red-colored box bestowed by the kingdom of Aden as a reward for defeating the dimension demons in Kartia's Labyrinth. Double-click on it to see its contents. -->
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34929" name="Dimension Keeper's Golden Box">
+	<!-- Gold-colored box bestowed by the kingdom of Aden as a reward for defeating the dimension demons in Kartia's Labyrinth. Double-click on it to see its contents. -->
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34930" name="Dimension Traveler's Blue Box">
+	<!-- Blue-colored box given by the Kartia Researcher as a reward for defeating the dimension demons in Kartia's Labyrinth. Double-click on it to see its contents. -->
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34931" name="Dimension Traveler's Red Box">
+	<!-- Red-colored box given by the Kartia Researcher as a reward for defeating the dimension demons in Kartia's Labyrinth. Double-click on it to see its contents. -->
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34932" name="Dimension Traveler's Golden Box">
+	<!-- Gold-colored box given by the Kartia Researcher as a reward for defeating the dimension demons in Kartia's Labyrinth. Double-click on it to see its contents. -->
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34933" name="Kranken's Gift">
+	<!-- Gift containing Kranken's heart. Open to acquire a Scroll: Enchant Weapon (R-grade) or Scroll: Enchant Armor (R-grade). -->
+		<set name="icon" value="icon.etc_pouch_gold_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34934" name="Pobre's Gift">
+	<!-- Gift containing Pobre's heart. Open to acquire a Scroll: Enchant Weapon (R-grade) or Scroll: Enchant Armor (R-grade). -->
+		<set name="icon" value="icon.etc_pouch_gold_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34940" name="Scroll: Enchant Hair Accessory" add_name="Event">
+	<!-- Increases M. Def. of hair accessories by 2. It is greatly increased starting at + 4. Can be safely enchanted to + 3. Can be exchanged, dropped, or stored in a warehouse. -->
+		<set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34941" name="Life Stone - Hair Accessory" add_name="Event">
+	<!-- Life Stone for Hair Accessories. Can be exchanged and dropped. Can use a warehouse. Cannot provide an augmented hair accessory with the pendent option. -->
+		<set name="icon" value="icon.life_dust_hairacc_general"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="100"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34942" name="Lv2 Giant Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv2 Giant Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34943" name="Lv2 Legendary Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv2 Legendary Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34944" name="Lv2 Ancient Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv2 Ancient Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34945" name="Lv3 Giant Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv3 Giant Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34946" name="Lv3 Legendary Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv3 Legendary Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34947" name="Lv3 Ancient Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv3 Ancient Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34948" name="Scroll of Escape Box: Village" add_name="Event">
+	<!-- When opened, can acquire 1 Scroll of Escape to a random village. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.event_hero_treasure_box_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34949" name="Letter Collector's Gift (8th Anniversary)" add_name="Event">
+	<!-- When Letter Collector's Gift is used, it increases Atk. Spd. by 10%, Casting Spd. by 10%, Spd. by 10, and Max HP and Max MP by 10% for 2 hours. The appearance of the equipped weapon and armor change to a nostalgic style. Cooldown is 30 min. It will be deleted during maintenance on 6/6/2012. -->
+		<set name="icon" value="icon.shield_bread_i02"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="5"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34950" name="Lv4 Giant Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv4 Giant Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34951" name="Lv4 Legendary Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv4 Legendary Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34952" name="Lv4 Ancient Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv4 Ancient Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34953" name="Lv5 Giant Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv5 Giant Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34954" name="Lv5 Legendary Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv5 Legendary Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34955" name="Lv5 Ancient Dye Pack" add_name="Event">
+	<!-- When opened, you can acquire 1 of the following Lv5 Ancient Dyes: STR, DEX, CON, INT, WIT, or MEN. Can be exchanged, dropped, or destroyed. -->
+		<set name="icon" value="icon.present_of_destination_event"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="10"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34956" name="Letter - M">
+	<!-- Item for the Lineage II 8th Anniversary event. Combine with other letters to create a special word and bring it to Angel Cat to receive a great gift! -->
+		<set name="icon" value="icon.etc_alphabet_m_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34957" name="Kbaldir's Letter">
+	<!-- Letter sent by Kbaldir at the Keucereus Alliance Base to the Seed of Hellfire. Bring it to Sizrak in the Seed of Hellfire. -->
+		<set name="icon" value="icon.etc_letter_white_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34958" name="Unstable Petra">
+	<!-- Life energy of the Zofans that contain energy of fire. But it is unstable. Bring it to Aku. -->
+		<set name="icon" value="icon.etc_torch_on_i09"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34959" name="Petra">
+	<!-- Life energy of the Zofans that contain energy of fire. Bring it to Aku. -->
+		<set name="icon" value="icon.etc_torch_on_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34960" name="Tauti's Shard">
+	<!-- Tauti's small shard. Bring it to Fergason. -->
+		<set name="icon" value="icon.piece_of_emery_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34961" name="Helping Seed">
+	<!-- Helping Herb. Double-click on it in a siege area to plant a Tree of Helping. -->
+		<set name="class" value="OTHER"/>
+		<set name="type" value="SCROLL"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<skills>
+			<skill id="9444" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="34962" name="Ashes of Remnants">
+	<!-- Ashes of Remnants. If you plant a Tree of Helping in a siege battle are you can obtain Ashes of Remnants. -->
+		<set name="icon" value="icon.etc_powder_orange_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34963" name="Mysterious Seed">
+	<!-- Mysterious plant seed that is need to make the flower bloom. -->
+		<set name="icon" value="icon.etc_coda_seed_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34964" name="White Chrysanthemum">
+	<!-- White chrysanthemum. Legend says that this flower blooms like a field of white snow when a pure soul receives salvation from the gods. -->
+		<set name="icon" value="icon.etc_flower_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34965" name="Daylily">
+	<!-- Yellow flower called a "Daylily." It symbolizes the alleviation of sorrow and grief. -->
+		<set name="icon" value="icon.etc_flower_i02"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34966" name="Peony">
+	<!-- Red flower called a "Peony." It once represented wealth and honor. -->
+		<set name="icon" value="icon.etc_flower_i01"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34967" name="Petunia">
+	<!-- Pink flower called a "Petunia." It symbolizes a calm heart. -->
+		<set name="icon" value="icon.etc_flower_i03"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34968" name="Pansy">
+	<!-- Purple flower called a "Pansy." It means, "Think of me." -->
+		<set name="icon" value="icon.etc_flower_i04"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34969" name="Iris">
+	<!-- Blue flower called an "Iris". It symbolizes the bringing of good news. -->
+		<set name="icon" value="icon.etc_flower_i05"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34970" name="Kuon">
+	<!-- Black flower called a "Kuon." It is sometimes misunderstood as the flower of death because of its color. It actually symbolizes paying tribute to the dead. -->
+		<set name="icon" value="icon.etc_flower_i06"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34971" name="Deadman's Flesh">
+	<!-- Chunk of dead flesh obtained after defeating the undead monsters in the Guillotine Fortress. Collect them and bring them to Warden Roderik of the Guillotine Fortress. -->
+		<set name="icon" value="icon.etc_bodypart_liver_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34972" name="Harlan's Orders">
+	<!-- Orders sent from Guard Harlan in the Town of Dion to Watchman Endrigo of the Guillotine Fortress. Double-click on it for more information. -->
+		<set name="icon" value="icon.etc_spell_books_assistance_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34973" name="Endrigo's Report">
+	<!-- Investigative document that Watchman Endrigo of the Guillotine Fortress asks to be delivered to his comrade Warden Roderik. Double-click on it for more information. -->
+		<set name="icon" value="icon.mercenary_certification_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34974" name="Mandragora Stem">
+	<!-- Mandragora Stem obtained after defeating the Mandragora of Joy and Sorrow in the Guillotine Fortress. Bring to the Dark Elf Dadphyna in the Guillotine Fortress. -->
+		<set name="icon" value="icon.etc_branch_gold_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34975" name="Mandragora Root">
+	<!-- Mandragora Root obtained after defeating the Mandragora of Prayer in the Guillotine Fortress. Bring to the Dark Elf Dadphyna in the Guillotine Fortress. -->
+		<set name="icon" value="icon.etc_ginseng_gray_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34976" name="Disabled Petra">
+	<!-- Disabled Petra obtained through hunting in the Seed of Hellfire. If you take them to Special Product Broker Kirklan at the Keucereus Alliance Base, you can exchange them for Petra. -->
+		<set name="icon" value="icon.etc_torch_off_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34977" name="Saw-toothed Wheel of Hellfire">
+	<!-- Item collected in the Seed of Hellfire. Contains energy of the Seed of Hellfire. If you take them to Special Product Broker Kirklan at the Kucereus clan outpost, you can exchange them for useful items. -->
+		<set name="icon" value="icon.etc_leash_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34978" name="Scroll of Escape: Hot Springs">
+	<!-- Scroll of Escape to the Hot Springs area. Can only be used in the Soul Testing quest. Can move to the special hot springs area for the quest mission. But cannot be exchanged, dropped, or received again. -->
+		<set name="icon" value="icon.etc_scroll_of_return_i00"/>
+		<set name="class" value="CONSUMABLE"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+		<skills>
+			<skill id="9446" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34979" name="Scroll of Escape: Forge of the Gods">
+	<!-- Scroll of Escape to the Forge of the Gods. Can only be used in the Soul Testing quest. Can move to the special Forge of the Gods area for the quest mission. But cannot be exchanged, dropped, or received again. -->
+		<set name="icon" value="icon.etc_scroll_of_return_i00"/>
+		<set name="class" value="CONSUMABLE"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+		<skills>
+			<skill id="9447" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34980" name="Scroll of Escape: Isle of Prayer">
+	<!-- Scroll of Escape to the Isle of Prayer. Can only be used in the Soul Testing quest. Can move to the special Isle of Prayer area for the quest mission. But cannot be exchanged, dropped, or received again. -->
+		<set name="icon" value="icon.etc_scroll_of_return_i00"/>
+		<set name="class" value="CONSUMABLE"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+		<skills>
+			<skill id="9448" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34981" name="Scroll of Escape: Aden Castle (Siege)">
+	<!-- Scroll of Escape to the Aden Castle siege area. Can only be used in the Soul Testing quest. Can move to the special Aden Castle siege area for the quest mission. But cannot be exchanged, dropped, or received again. -->
+		<set name="icon" value="icon.etc_scroll_of_return_i00"/>
+		<set name="class" value="CONSUMABLE"/>
+		<set name="type" value="SCROLL"/>
+		<set name="weight" value="120"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+		<skills>
+			<skill id="9449" level="1"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34982" name="Scroll of Escape: Rune Castle (Siege)">
+	<!-- Scroll of Escape to the Rune Castle siege area. Can only be used in the Soul Testing quest. Can move to the special Rune Castle siege area for the quest mission. But cannot be exchanged, dropped, or received again. -->
+		<set name="icon" value="icon.etc_scroll_of_return_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="120"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="34983" name="Acquire Noblesse Privileges">
+		<set name="icon" value="icon.etc_nobless_teleport_coupon_i00"/>
+		<set name="type" value="OTHER"/>
+		<set name="destroyable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="enchantable" value="false"/>
+		<set name="attributable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="stackable" value="true"/>
+	</etcitem>
+	<etcitem id="34990" name="Weapon Piece">
+	<!-- Used as an ingredient for a weapon. -->
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="weight" value="0"/>
+		<set name="tradeable" value="true"/>
+		<set name="dropable" value="true"/>
+		<set name="sellable" value="true"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="icon" value="icon.etc_r_weapon_piece_i01"/>
+	</etcitem>
+	<etcitem id="34991" name="Armor Piece">
+	<!-- Used as an ingredient for armor. -->
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="weight" value="0"/>
+		<set name="tradeable" value="true"/>
+		<set name="dropable" value="true"/>
+		<set name="sellable" value="true"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="icon" value="icon.etc_r_armor_piece_i01"/>
+	</etcitem>
+	<etcitem id="34992" name="Accessory Gem">
+	<!-- Used as an ingredient for an accessory. -->
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="weight" value="0"/>
+		<set name="tradeable" value="true"/>
+		<set name="dropable" value="true"/>
+		<set name="sellable" value="true"/>
+		<set name="stackable" value="true"/>
+		<set name="type" value="OTHER"/>
+		<set name="icon" value="icon.etc_r_acc_piece_i01"/>
+	</etcitem>
+	<etcitem id="34993" name="Greater Cokes">
+	<!-- Used as an ingredient to make A-grade or S-grade items. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_synthetic_cokes_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="0"/>
+	</etcitem>
+	<etcitem id="34994" name="Gemstone">
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="D"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_crystal_ball_silver_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="0"/>
+		<skills>
+			<skill id="26068" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="34995" name="Hair Accessory Exchange Certificate">
+	<!-- Certificate that can be exchanged with the Aden Reconstruction Society Member or Leader for Rabbit Ears, Raccoon Ears, Cat Ears, Romantic Chapeau, Angel Circlet, Demon Circlet, Pirate's Eyepatch, Outlaw's Eyepatch, Eyepatch, Party Hat, Refined Angel Ring, or Refined Devil Horns. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="C"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="icon.etc_piece_of_paper_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="0"/>
+		<skills>
+			<skill id="26068" level="2"/>
+		</skills>
+	</etcitem>
+	<etcitem id="34996" name="Cloak of Radiant Light">
+	<!-- Cloak that symbolizes glory and light. Can only be equipped by a lord. All abilities + 3. Damage received during PvP decreases by 15%. Can use Escape: Castle skill. Part of its effect does not apply when you are chaotic. Cannot be used while in a chaotic state. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="B"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="br_cashtex.item.br_cash_pack_of_blessed_spiritshot_b_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="500"/>
+		<skills>
+			<skill id="26068" level="3"/>
+		</skills>
+	</etcitem>
+	<etcitem id="34997" name="Cloak of Cold Darkness">
+	<!-- Cloak that symbolizes avarice and darkness. Can only be equipped by a lord. All abilities + 3. Damage received during PvP decreases by 15%. Can use Escape: Castle skill. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="A"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="br_cashtex.item.br_cash_pack_of_blessed_spiritshot_a_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="500"/>
+		<skills>
+			<skill id="26068" level="4"/>
+		</skills>
+	</etcitem>
+	<etcitem id="34998" name="Tauti's One-handed Axe">
+	<!-- Weapon augmented from Tauti's Fragment. When equipped, can use Tauti's Rage skill. When equipped, increases Atk. Spd. by about 15%, critical by 150, Max HP by 25%, and P. Atk. by 415. Increases damage inflicted during PvP. Enchantment, attribute, crystallization, and augmentation are impossible. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="S"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="br_cashtex.item.br_cash_pack_of_blessed_spiritshot_s_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="500"/>
+		<skills>
+			<skill id="26068" level="5"/>
+		</skills>
+	</etcitem>
+	<etcitem id="34999" name="Tauti's Axe">
+	<!-- Weapon augmented from Tauti's Fragment. When equipped, can use Tauti's Rage skill. When equipped, increases Atk. Spd. by about 15%, critical by 150, Max HP by 25%, and P. Atk. by 415. Increases damage inflicted during PvP. Enchantment, attribute, crystallization, and augmentation are impossible. -->
+		<set name="freightable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<set name="crystal_type" value="D"/>
+		<set name="dropable" value="false"/>
+		<set name="icon" value="br_cashtex.item.br_cash_pack_of_spiritshot_d_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="500"/>
+		<skills>
+			<skill id="26069" level="1"/>
+		</skills>
+	</etcitem>
+</list>

@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="17831" name="Bound Requiem Shaper">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_aspeda_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13279" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="369"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17832" name="Bound Requiem Cutter">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_estia_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13252" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17833" name="Bound Requiem Slasher">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_polion_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17834" name="Bound Requiem Avenger">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_batista_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17835" name="Bound Requiem Fighter">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_fantasma_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17836" name="Bound Requiem Stormer">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_soryu_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17837" name="Bound Requiem Thrower">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_grabathus_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="831"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17838" name="Bound Requiem Shooter">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_shyayaka_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1580"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="535"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17839" name="Bound Requiem Buster">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_kaynon_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="338"/>
+			<add stat="mAtk" order="0x10" value="245"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17840" name="Bound Requiem Caster">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_anatrian_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="338"/>
+			<add stat="mAtk" order="0x10" value="245"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17841" name="Bound Requiem Retributer">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_grangkaz_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="37"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="411"/>
+			<add stat="mAtk" order="0x10" value="270"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17842" name="Bound Requiem Dual Sword">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualsword_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="44"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17843" name="Bound Requiem Dual Dagger">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualdagger_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="2050"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="44"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="422"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17844" name="Bound Requiem Dual Blunt Weapon">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualblunt_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="44"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="514"/>
+			<add stat="mAtk" order="0x10" value="186"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17850" name="Bound Immortal Shield" add_name="Heavy">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_sacon_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="5"/>
+		<set name="crystallizable" value="true"/>
+		<for>
+			<add stat="sDef" order="0x10" value="415"/>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17865" name="Bound Apocalypse Shaper">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_phasian_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="428"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17866" name="Bound Apocalypse Cutter">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_pasis_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="489"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17867" name="Bound Apocalypse Slasher">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_volver_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGSWORD"/>
+		<set name="ex_type" value="BIG_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="595"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17868" name="Bound Apocalypse Avenger">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_raksilion_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="489"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17869" name="Bound Apocalypse Fighter">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_kirche_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1550"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALFIST"/>
+		<set name="ex_type" value="HAND_TO_HAND"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="595"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17870" name="Bound Apocalypse Stormer">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_grave_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="2010"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="POLE"/>
+		<set name="ex_type" value="POLE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="489"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17871" name="Bound Apocalypse Thrower">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_spina_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BOW"/>
+		<set name="ex_type" value="BOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="963"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="293"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17872" name="Bound Apocalypse Shooter">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_medianox_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1580"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="CROSSBOW"/>
+		<set name="ex_type" value="CROSSBOW"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="620"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<add stat="accCombat" order="0x10" value="-2.0"/>
+			<set stat="baseCrit" order="0x08" value="100"/>
+			<set stat="atkBaseSpeed" order="0x08" value="303"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17873" name="Bound Apocalypse Buster">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_imerose_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="SWORD"/>
+		<set name="ex_type" value="SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="392"/>
+			<add stat="mAtk" order="0x10" value="285"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17874" name="Bound Apocalypse Caster">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_yuke_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BLUNT"/>
+		<set name="ex_type" value="BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="392"/>
+			<add stat="mAtk" order="0x10" value="285"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17875" name="Bound Apocalypse Retributer">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_herencia_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1080"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="BIGBLUNT"/>
+		<set name="ex_type" value="BIG_BLUNT_WEAPON"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="90"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="477"/>
+			<add stat="mAtk" order="0x10" value="314"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17876" name="Bound Apocalypse Dual sword">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualsword_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUAL"/>
+		<set name="ex_type" value="DUAL_SWORD"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="108"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="595"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17877" name="Bound Apocalypse Dual Dagger">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualdagger_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="2050"/>
+		<set name="rnd_dam" value="10"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="ex_type" value="DUAL_DAGGER"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="108"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="489"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17878" name="Bound Apocalypse Dual Blunt Weapon">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_r_dualblunt_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1740"/>
+		<set name="rnd_dam" value="20"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DUALBLUNT"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="108"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="595"/>
+			<add stat="mAtk" order="0x10" value="226"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="17884" name="Bound Twilight Shield" add_name="Heavy">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.kratere_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="12"/>
+		<for>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="sDef" order="0x10" value="458"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+	<weapon id="17899" name="Bound Specter Shaper">
+		<!--Done By Darvin (c)Java /Updated by Maleiva2013 - Team 2012-->
+		<set name="icon" value="icon.weapon_ignicion_i00"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="weight" value="1520"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<set name="type" value="DAGGER"/>
+		<set name="ex_type" value="DAGGER"/>
+		<set name="crystal_type" value="R95"/>
+		<set name="crystal_count" value="195"/>
+		<set name="crystallizable" value="true"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<enchant4_skill id="13282" level="3"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="496"/>
+			<add stat="mAtk" order="0x10" value="275"/>
+			<add stat="accCombat" order="0x10" value="-4.0"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<enchant stat="pAtk" order="0x40" value="0"/>
+			<enchant stat="mAtk" order="0x40" value="0"/>
+		</for>
+	</weapon>
+</list>

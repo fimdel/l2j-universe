@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="10300" levels="3" name="The Last Attack">
+		<table name="#targetHp">20</table>
+		<table name="#magicLevel">90 95 99</table>
+		<table name="#activateRate">30 40 50</table>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<cond msgId="113" addName="1">
+			<and>
+				<target percentHP="#targetHp"/>	
+				<target mob="true"/>
+			</and>
+		</cond>
+		<enchant1 levels="10" name="Cost"/>
+		<enchant2 name="Decrease Penalty">
+			<table name="#targetHp">21 22 23 24 25 26 27 28 29 30</table>
+		</enchant2>
+		<for>
+			<effect name="HpToOne"/>
+		</for>
+	</skill>
+</list>

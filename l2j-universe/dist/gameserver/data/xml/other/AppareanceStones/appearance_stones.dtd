@@ -1,0 +1,11 @@
+<!ELEMENT list (appearance_stone)*>
+
+    <!ELEMENT appearance_stone (#PCDATA)>
+    <!ATTLIST appearance_stone
+        cost CDATA #IMPLIED
+        extract_id CDATA #IMPLIED
+        grade CDATA #IMPLIED
+        id CDATA #REQUIRED
+        item_type CDATA #IMPLIED
+        shifting_type CDATA #REQUIRED
+        target_type CDATA #REQUIRED>

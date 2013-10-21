@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="32215" name="Blessed Twilight Shield" add_name="Defense Type">
+		<!--Done By Darvin (c)Java - Team 2012-->
+		<set name="icon" value="icon.kratere_i00"/>
+		<set name="weight" value="1130"/>
+		<equip>
+			<slot id="LEFT_HAND"/>
+		</equip>
+		<set name="type" value="NONE"/>
+		<set name="crystal_type" value="R"/>
+		<set name="crystal_count" value="248"/>
+		<for>
+			<add stat="sDef" order="0x10" value="458"/>
+			<add stat="rEvas" order="0x40" value="-8"/>
+			<add stat="rShld" order="0x10" value="20"/>
+			<enchant stat="sDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<set name="crystallizable" value="true"/>
+	</weapon>
+</list>

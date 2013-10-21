@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "restoration_info.dtd">
+<!--By Bonux-->
+<list>
+	<restoration skill_id="11316" skill_level="1" name="Check Item" consume_item_id="17371">
+    <!-- Summons 1900 Beast Soulshots with 80% probability and 380 Blessed Beast Spiritshots with 20% probability. Consumes 1 Crystal (R-Grade). -->
+		<group chance="80">
+			<item id="20332" min_count="1900" max_count="1900"/> <!--Beast Soulshots-->
+		</group>
+		<group chance="20">
+			<item id="20334" min_count="380" max_count="380"/>	<!--Blessed Beast Spiritshots-->
+		</group>
+	</restoration>
+</list>

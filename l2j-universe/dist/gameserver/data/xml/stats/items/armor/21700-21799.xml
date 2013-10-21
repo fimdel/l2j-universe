@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<armor id="21706" name="Olf's T-shirt" add_name="Event">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.7anni_shirt_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="130"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="28"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21709" name="Agathion Seal Bracelet - Rudolph" add_name="Event">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.event_lbracelet_rudolph"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+	</armor>
+	<armor id="21712" name="Blessed Earring of Zaken">
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="icon.accessory_earring_of_zaken_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="RIGHT_EAR"/>
+			<slot id="LEFT_EAR"/>
+		</equip>
+		<set name="ex_type" value="EARRING"/>
+		<skills>
+			<skill id="3559" level="2"/>
+		</skills>
+		<for>
+			<add stat="mDef" order="0x10" value="94"/>
+			<add stat="maxMp" order="0x10" value="37"/>
+			<enchant stat="mDef" order="0x40" value="0"/>
+		</for>
+	</armor>
+	<armor id="21716" name="Cloak of Zaken">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.Icon.br_zaken_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<set name="ex_type" value="CLOAK"/>
+		<skills>
+			<skill id="21242" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="5"/>
+			<attribute element="water" value="15"/>
+			<attribute element="wind" value="15"/>
+			<attribute element="earth" value="5"/>
+			<attribute element="holy" value="5"/>
+			<attribute element="unholy" value="15"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="20"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21717" name="Cloak of Freya">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<set name="ex_type" value="CLOAK"/>
+		<skills>
+			<skill id="21243" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="10"/>
+			<attribute element="water" value="20"/>
+			<attribute element="wind" value="20"/>
+			<attribute element="earth" value="10"/>
+			<attribute element="holy" value="20"/>
+			<attribute element="unholy" value="10"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="30"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21718" name="Cloak of Frintezza">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.Icon.br_frintessa_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<set name="ex_type" value="CLOAK"/>
+		<skills>
+			<skill id="21244" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="15"/>
+			<attribute element="water" value="5"/>
+			<attribute element="wind" value="5"/>
+			<attribute element="earth" value="15"/>
+			<attribute element="holy" value="5"/>
+			<attribute element="unholy" value="15"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="20"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21719" name="Soul Cloak of Zaken">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.Icon.br_zaken_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="110"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<set name="ex_type" value="CLOAK"/>
+		<skills>
+			<skill id="21242" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="5"/>
+			<attribute element="water" value="10"/>
+			<attribute element="wind" value="10"/>
+			<attribute element="earth" value="5"/>
+			<attribute element="holy" value="5"/>
+			<attribute element="unholy" value="10"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="40"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21720" name="Soul Cloak of Freya">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="110"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<set name="ex_type" value="CLOAK"/>
+		<skills>
+			<skill id="21243" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="5"/>
+			<attribute element="water" value="15"/>
+			<attribute element="wind" value="15"/>
+			<attribute element="earth" value="5"/>
+			<attribute element="holy" value="15"/>
+			<attribute element="unholy" value="5"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="60"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21721" name="Soul Cloak of Frintezza">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.Icon.br_frintessa_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="110"/>
+		<set name="dropable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<set name="ex_type" value="CLOAK"/>
+		<skills>
+			<skill id="21244" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="10"/>
+			<attribute element="water" value="5"/>
+			<attribute element="wind" value="5"/>
+			<attribute element="earth" value="10"/>
+			<attribute element="holy" value="5"/>
+			<attribute element="unholy" value="10"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="40"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21727" name="Zinenze Agathion Bracelet (3 day)" add_name="3 day limited period">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.Icon.br_aga_jinjiayan_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+	</armor>
+	<armor id="21728" name="Zinenze Agathion Bracelet (7 day)" add_name="7 day limited period">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.Icon.br_aga_jinjiayan_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+	</armor>
+	<armor id="21729" name="Enze Agathion Bracelet" add_name="Permanent">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.Icon.br_aga_jiayan_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="120"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+	</armor>
+	<armor id="21755" name="Manor Scholar's Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.g_graduation_cap_gold"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+		<set name="ex_type" value="HAIR_ACCESSORY"/>
+	</armor>
+	<armor id="21756" name="Rank 1 Scholar's Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.g_graduation_cap_white"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+		<set name="ex_type" value="HAIR_ACCESSORY"/>
+	</armor>
+	<armor id="21757" name="Rank 2 Scholar's Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.g_graduation_cap_red"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+		<set name="ex_type" value="HAIR_ACCESSORY"/>
+	</armor>
+	<armor id="21758" name="Rank 3 Scholar's Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.g_graduation_cap_blue"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+		<set name="ex_type" value="HAIR_ACCESSORY"/>
+	</armor>
+	<armor id="21775" name="Imperial Crusader Breastplate of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t88_u_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7620"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="205"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21776" name="Imperial Crusader Gaiters of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t88_l_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3260"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="128"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21777" name="Imperial Crusader Gauntlet of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t88_g_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="540"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="55"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21778" name="Imperial Crusader Boots of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t88_b_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1110"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="55"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21779" name="Imperial Crusader Helmet of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="550"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="83"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21782" name="Draconic Leather Armor of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t89_ul_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="LIGHT"/>
+		<set name="weight" value="4950"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<set name="ex_type" value="FULL_BODY"/>
+		<for>
+			<add stat="pDef" order="0x10" value="249"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21783" name="Draconic Leather Gloves of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t89_g_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="540"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="55"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21784" name="Draconic Leather Boots of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t89_b_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1110"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="55"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21785" name="Draconic Leather Helmet of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_leather_helmet_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="550"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="83"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21787" name="Major Arcana Robe of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t90_ul_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="MAGIC"/>
+		<set name="weight" value="2300"/>
+		<equip>
+			<slot id="FULL_ARMOR"/>
+		</equip>
+		<set name="ex_type" value="FULL_BODY"/>
+		<for>
+			<add stat="pDef" order="0x10" value="166"/>
+			<add stat="maxMp" order="0x10" value="866"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21788" name="Major Arcana Gloves of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t90_g_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="540"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="55"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21789" name="Major Arcana Boots of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t90_b_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1110"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="55"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21790" name="Major Arcana Circlet of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_circlet_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="550"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="83"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21791" name="Arcana Sickle of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.arcana_sigil_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="940"/>
+		<equip>
+			<slot id="NONE"/>
+		</equip>
+		<set name="ex_type" value="OTHER_ITEMS"/>
+		<for>
+			<add stat="pDef" order="0x10" value="13"/>
+			<add stat="rEvas" order="0x10" value="-8"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21793" name="Dynasty Breastplate of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t91_u_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7570"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<set name="ex_type" value="UPPER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="226"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21794" name="Dynasty Gaiters of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t91_l_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3210"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<set name="ex_type" value="LOWER_PIECE"/>
+		<for>
+			<add stat="pDef" order="0x10" value="141"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21795" name="Dynasty Gauntlet of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t91_g_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="520"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<set name="ex_type" value="GLOVES"/>
+		<for>
+			<add stat="pDef" order="0x10" value="61"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21796" name="Dynasty Boots of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_t91_b_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1090"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<set name="ex_type" value="FEET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="61"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="21797" name="Dynasty Helmet of Friendship" add_name="90 day limited period">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<set name="ex_type" value="HELMET"/>
+		<for>
+			<add stat="pDef" order="0x10" value="92"/>
+			<enchant stat="pDef" order="0x40" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+</list>

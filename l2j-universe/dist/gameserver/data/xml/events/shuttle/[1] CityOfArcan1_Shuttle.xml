@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="100" name="CityOfArcan1_Shuttle" type="SHUTTLE_EVENT" impl="ShuttleWay">
+		<parameter name="shuttle_id" value="1" />
+		<parameter name="spawn_point" value="206580 82700 -1035 0" />
+		<parameter name="next_floor_loc" value="206580 82700 323" />
+		<parameter name="floor_doors_id" value="0" />
+		<parameter name="speed" value="300" />
+		<parameter name="return_point" value="206890 83159 -992" />
+		<on_init>
+			<init name="doors" />
+		</on_init>
+		<on_start>
+			<close name="doors" />
+		</on_start>
+		<on_time>
+			<on time="0">
+				<open name="doors" />
+			</on>
+			<on time="17">
+				<start name="event" />
+			</on>
+		</on_time>
+		<objects name="doors">
+			<door id="26200002" />
+		</objects>
+	</event>
+	<event id="101" name="CityOfArcan1_Shuttle" type="SHUTTLE_EVENT" impl="ShuttleWay">
+		<parameter name="next_floor_loc" value="206580 82700 -1035" />
+		<parameter name="floor_doors_id" value="1" />
+		<parameter name="speed" value="300" />
+		<parameter name="return_point" value="206890 83159 -992" />
+		<on_init>
+			<init name="doors" />
+		</on_init>
+		<on_start>
+			<close name="doors" />
+		</on_start>
+		<on_time>
+			<on time="0">
+				<open name="doors" />
+			</on>
+			<on time="17">
+				<start name="event" />
+			</on>
+		</on_time>
+		<objects name="doors">
+			<door id="26200005" />
+		</objects>
+	</event>
+</list>

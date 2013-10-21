@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="10800" levels="1" name="Superior Elemental Resistance">
+    <!-- STR + 2 and resistance to Fire/Water/Wind/Earth + 20. -->
+		<table name="#vul">20</table>
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="relationSkillsId" val="481;"/> 
+		<set name="operateType" val="OP_PASSIVE"/>
+		<enchant1 levels="10" name="Power">
+			<table name="#vul">21 22 23 24 25 26 27 28 29 30</table>
+			<table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+		</enchant1>
+		<for>
+				<add order="0x10" stat="STR" val="2"/>
+				<add order="0x40" stat="defenceWater" val="#vul"/>
+				<add order="0x40" stat="defenceFire" val="#vul"/>
+				<add order="0x40" stat="defenceWind" val="#vul"/>
+				<add order="0x40" stat="defenceEarth" val="#vul"/>
+		</for>
+	</skill>
+	<skill id="10801" levels="5" name="Bullseye">
+    <!-- Decreases the target's resistance to bow/crossbow by 40% and M. Def. by 5%. -->
+		<table name="#magicLevel">85 87 92 95 98</table>
+		<table name="#mDef">0.95 0.9 0.85 0.80 0.75</table>
+		<table name="#Tab-bowRcpt">40 45 50 55 60</table> 
+       	<table name="#mpConsume2">20 22 24 25 28</table>
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="500"/>
+		<set name="castRange" val="900"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="relationSkillsId" val="522;122;"/> 
+		<set name="magicLvl" val="#magicLevel"/>
+		<set name="activateRate" val="60"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isDebuff" val="true"/>
+		<enchant1 levels="10" name="Chance"/>
+        <enchant2 levels="10" name="Break Hold">
+			<!--TODO-->
+            <!--<table name="#breakHold">1 2 3 4 5 6 7 8 9 10</table>-->
+        </enchant2>
+        <enchant3 levels="10" name="Break Shock">
+			<!--TODO-->
+            <!--<table name="#breakStun">1 2 3 4 5 6 7 8 9 10</table>-->
+        </enchant3>
+        <enchant4 levels="10" name="Break Knockdown">
+			<!--TODO-->
+            <!--<table name="#breakPoison">1 2 3 4 5 6 7 8 9 10</table>-->
+        </enchant4>
+		<for>
+			<effect name="Debuff" time="10" val="0" effectPower="40" effectType="DEBUFF" stackOrder="1">
+				<add order="0x40" stat="bowWpnVuln" val="#Tab-bowRcpt"/>
+				<add order="0x40" stat="crossbowWpnVuln" val="#Tab-bowRcpt"/>
+				<mul order="0x30" stat="mDef" val="#mDef"/>
+			</effect>
+		</for>
+	</skill>
+    <skill id="10802" levels="1" name="Mass Bullseye">  
+    <!-- Decreases the target's and nearby enemies resistance to bow/crossbow attacks by 60% and M. Def. by 25%. After a set amount of time, the target explodes incurring great damage. -->
+       	<table name="#mpConsume2">100</table>
+		<set name="reuseDelay" val="180000"/>
+		<set name="hitTime" val="500"/>
+		<set name="castRange" val="900"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="magicLevel" val="99"/>
+		<set name="power" val="150"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="activateRate" val="60"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<enchant1 levels="10" name="Cost"/>
+		<enchant2 levels="10" name="Chance"/>
+        <enchant3 levels="10" name="Break Shock">
+			<!--TODO-->
+            <!--<table name="#breakStun">1 2 3 4 5 6 7 8 9 10</table>-->
+        </enchant3>
+        <enchant4 levels="10" name="Break Knockdown">
+			<!--TODO-->
+            <!--<table name="#breakPoison">1 2 3 4 5 6 7 8 9 10</table>-->
+        </enchant4>
+        <enchant5 levels="10" name="Break Hold">
+			<!--TODO-->
+            <!--<table name="#breakHold">1 2 3 4 5 6 7 8 9 10</table>-->
+        </enchant5>
+		<for>
+			<effect name="Debuff" time="10" val="0" effectPower="40" effectType="DEBUFF" stackOrder="1">
+				<add order="0x40" stat="bowWpnVuln" val="40"/>
+				<add order="0x40" stat="crossbowWpnVuln" val="40"/>
+				<mul order="0x30" stat="mDef" val="0.75"/>
+			</effect>
+		</for>
+	</skill>
+    <skill id="10803" levels="1" name="Time Bomb"> 
+    <!-- Boom! -->
+        <set name="target" val="TARGET_NONE"/> 
+        <set name="skillType" val="NOTDONE"/> 
+        <set name="operateType" val="OP_ACTIVE"/> 
+        <for/> 
+    </skill>
+    <skill id="10804" levels="1" name="Bullseye"> 
+    <!-- Boom! -->
+        <set name="target" val="TARGET_NONE"/> 
+        <set name="skillType" val="NOTDONE"/> 
+        <set name="operateType" val="OP_ACTIVE"/> 
+        <for/> 
+    </skill>
+	<skill id="10805" levels="4" name="Quick Charge">
+    <!-- Quickly moves 500 units of distance forward. -->
+		<table name="#magicLevel">89 92 95 99</table>
+		<table name="#flyRadius">500 600 700 800</table>	 
+       	<table name="#mpConsume2">42 44 46 48</table>
+		<set name="reuseDelay" val="30000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="magicLevel" val="#magicLevel"/>		
+		<set name="save" val="4"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="power" val="1"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="soulBoost" val="true"/>
+		<set name="flyType" val="DUMMY"/>
+		<set name="flyRadius" val="#flyRadius"/>
+		<enchant1 levels="10" name="Distance">
+			<table name="#flyRadius">815 830 845 860 875 890 905 920 935 950</table>	
+		</enchant1>
+	</skill>
+	<skill id="10806" levels="1" name="Frost Trap">
+    <!-- Decreases Speed, Atk. Spd. and Casting Spd. -->
+		<set name="magicLevel" val="85"/>
+		<set name="staticReuse" val="true"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="summonType" val="TRAP"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="skillRadius" val="350"/>
+		<set name="addSkills" val="5269;17"/>
+		<set name="trapNpcId" val="13037"/>
+		<set name="summonType" val="trap"/>
+	</skill>
+	<skill id="10807" levels="1" name="Gravity Trap">
+    <!-- Inflicted with Hold and unable to move. -->
+		<set name="magicLevel" val="85"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="summonType" val="TRAP"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="addSkills" val="5271;19"/>
+		<set name="npcId" val="13041"/>
+		<set name="summonType" val="trap"/>
+		<for/>
+	</skill>
+    <skill id="10808" levels="1" name="Decoy Provocation"> 
+    <!-- Decoy's provocation. Cannot change the target. -->
+        <set name="target" val="TARGET_NONE"/> 
+        <set name="skillType" val="NOTDONE"/> 
+        <set name="operateType" val="OP_ACTIVE"/> 
+        <for/> 
+    </skill>
+	<skill id="10809" levels="1" name="Survival Movement">
+    <!-- P. Evasion + 15. Disappears after 4 strikes. -->
+       	<table name="#mpConsume2">54</table>
+		<set name="reuseDelay" val="30000"/>
+		<set name="hitTime" val="500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="magicLevel" val="85"/>
+		<set name="maxHitCancelCount" val="4"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" stackOrder="30" time="600" val="0">
+				<add order="0x40" stat="rEvas" val="15"/>
+			</effect>
+			<effect name="DispelOnHit" time="600" val="0"/>
+		</for>
+	</skill>
+</list>
