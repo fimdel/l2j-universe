@@ -204,7 +204,7 @@
 	</skill>
 	<skill id="11759" levels="1" name="Celestial Party Protection">
 		<!-- Renders all party members invincible for 10 seconds. -->
-		<set name="reuseDelay" val="120000"/>
+		<set name="reuseDelay" val="1200000"/>
 		<set name="hitTime" val="500"/>
 		<set name="magicLevel" val="87"/>
 		<set name="magicType" val="MAGIC"/>
@@ -329,7 +329,7 @@
 		<set name="operateType" val="OP_ACTIVE"/>
 		<set name="relationSkillsId" val="1550;"/>
 		<set name="isReuseDelayPermanent" val="true"/>
-		<enchant1 levels="10" name="Cost"/>
+		<set name="relationSkillsId" val="1430;"/>					<enchant1 levels="10" name="Cost"/>
 		<enchant2 levels="10" name="Power Hp">
 			<table name="#healhp">1 2 3 4 5 6 7 8 9 10</table>
             <table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
@@ -827,14 +827,14 @@
 		<table name="#rate">1.30 1.50</table>
 		<table name="#mp">0.4 0.35</table>
 		<table name="#mpConsume2">50</table>
-		<set name="reuseDelay" val="30000"/>
+		<set name="reuseDelay" val="0"/>
 		<set name="hitTime" val="500"/>
 		<set name="isAwakeningToggle" val="true"/>
 		<set name="mpConsume2" val="#mpConsume2"/>	
 		<set name="magicLevel" val="#magicLevel"/>
 		<set name="target" val="TARGET_SELF"/>
 		<set name="skillType" val="BUFF"/>
-		<set name="operateType" val="OP_TOGGLE"/>
+		<set name="operateType" val="OP_ACTIVE_TOGGLE"/>
 		<for>
 			<effect count="0x7fffffff" name="LDManaDamOverTime" time="5" val="#mp">
 				<mul order="0x30" stat="mAtkSpd" val="#rate"/>
