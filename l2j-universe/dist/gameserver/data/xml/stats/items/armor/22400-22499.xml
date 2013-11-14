@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE list SYSTEM "item.dtd">
 <list>
-	<armor id="22400" name="Agathion Seal Bracelet - Valakas" add_name="Lv 7">		<!--Done By Darvin (c)Java-Team-->
+	<armor id="22400" name="Agathion Seal Bracelet - Valakas" add_name="Lv 7">
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
 		<set name="crystal_type" value="NONE"/>
 		<set name="icon" value="BranchSys2.icon.br_aga_valakas_01_i00"/>
+<set name="price" value="0"/>
 		<set name="type" value="NONE"/>
 		<set name="weight" value="150"/>
 		<equip>
-			<slot id="RIGHT_BRACELET"/>
+			<slot id="LEFT_BRACELET"/>
 		</equip>
 		<set name="ex_type" value="BRACELET"/>
-	</armor>
-	<armor id="22442" name="Improved Bronze Bracelet">		<!--Done By Darvin (c)Java-Team-->
-		<set name="crystal_type" value="B"/>
-		<set name="icon" value="icon.etc_rbracelet_b_i01"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="1"/>
-		<equip>
-			<slot id="RIGHT_BRACELET"/>
-		</equip>
-		<set name="ex_type" value="BRACELET"/>
+		<skills>
+			<skill id="21273" level="1"/>
+			<skill id="3267" level="1"/>
+			<skill id="23346" level="1"/>
+		</skills>
+		<cond msgId="1507">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
 	</armor>
 	<armor id="22443" name="Improved Steel Bracelet">		<!--Done By Darvin (c)Java-Team-->
 		<set name="crystal_type" value="A"/>

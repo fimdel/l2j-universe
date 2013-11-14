@@ -392,4 +392,23 @@
 		<set name="skillType" val="NOTDONE"/>
 		<set name="operateType" val="OP_ACTIVE"/>
 	</skill>
+<skill id="23346" levels="1" name="Valakas">
+    <!-- Removes the Agathion's seal. -->
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+		<set name="magicLevel" val="85"/>
+		<set name="hitTime" val="3000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="SUMMON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="useSS" val="false"/>
+		<set name="npcId" val="1612"/>
+		<set name="summonType" val="agathion"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
 </list>

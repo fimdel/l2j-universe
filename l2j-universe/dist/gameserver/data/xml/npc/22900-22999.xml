@@ -4225,14 +4225,14 @@
 	</npc>
 	<npc id="22965" name="Novice Phantom" title="">
 		<!--L2WT Tauti Confirmed-->
-		<set name="aggroRange" value="300"/>
+		<set name="aggroRange" value="0"/>
 		<set name="ai_type" value="Fighter"/>
 		<set name="collision_radius" value="28.0"/>
 		<set name="collision_height" value="41.5"/>
-		<set name="level" value="92"/>
+		<set name="level" value="99"/>
 		<set name="type" value="Monster"/>
 		<set name="baseAtkRange" value="40"/>
-		<set name="baseHpMax" value="263372"/>
+		<set name="baseHpMax" value="10137120"/>
 		<set name="baseHpRate" value="1.0"/>
 		<set name="baseHpReg" value="13"/>
 		<set name="baseMpMax" value="2582"/>
@@ -4243,13 +4243,13 @@
 		<set name="baseINT" value="21"/>
 		<set name="baseWIT" value="70"/>
 		<set name="baseMEN" value="20"/>
-		<set name="rewardExp" value="548674"/>
+		<set name="rewardExp" value="5486740"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="11420"/>
+		<set name="rewardSp" value="114205"/>
 		<set name="basePAtk" value="3410"/>
-		<set name="basePDef" value="713"/>
+		<set name="basePDef" value="700"/>
 		<set name="baseMAtk" value="1581"/>
-		<set name="baseMDef" value="633"/>
+		<set name="baseMDef" value="750"/>
 		<set name="basePAtkSpd" value="299"/>
 		<set name="baseCritRate" value="4"/>
 		<set name="baseMAtkSpd" value="398"/>
@@ -4269,29 +4269,41 @@
 			<skill id="5467" level="1"/>
 		</skills>
 		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="4370" max="10192" chance="100.0"/>
-			</group>
-			<group chance="0.09">
-				<reward item_id="18153" min="1" max="1" chance="33.33333"/>
-				<reward item_id="18158" min="1" max="1" chance="33.33333"/>
-				<reward item_id="18164" min="1" max="1" chance="33.33333"/>
-			</group>
-			<group chance="0.3">
-				<reward item_id="17527" min="1" max="1" chance="100.0"/>
-			</group>
-		</rewardlist>
+			<group chance="40.0">
+<reward item_id="57" min="437001" max="10158492" chance="40.0"/>
+</group>
+<group chance="40.0">
+<reward item_id="6393" min="1" max="1" chance="40.0"/>
+<reward item_id="4356" min="1" max="1" chance="40.0"/>
+</group>
+<group chance="0.05">
+<reward item_id="18239" min="1" max="1" chance="0.05"/>
+<reward item_id="18240" min="1" max="1" chance="0.05"/>
+<reward item_id="18241" min="1" max="1" chance="0.05"/>
+<reward item_id="18242" min="1" max="1" chance="0.05"/>
+<reward item_id="18243" min="1" max="1" chance="0.05"/>
+<reward item_id="18244" min="1" max="1" chance="0.05"/>
+<reward item_id="18245" min="1" max="1" chance="0.05"/>
+<reward item_id="18246" min="1" max="1" chance="0.05"/>
+<reward item_id="18247" min="1" max="1" chance="0.05"/>
+<reward item_id="18248" min="1" max="1" chance="0.05"/>
+<reward item_id="18249" min="1" max="1" chance="0.05"/>
+<reward item_id="18250" min="1" max="1" chance="0.05"/>
+<reward item_id="18251" min="1" max="1" chance="0.05"/>
+<reward item_id="18252" min="1" max="1" chance="0.05"/>
+  </group>
+</rewardlist>
 	</npc>
 	<npc id="22966" name="Novice Phantom Wizard" title="">
 		<!--L2WT Tauti Confirmed-->
-		<set name="aggroRange" value="300"/>
+		<set name="aggroRange" value="0"/>
 		<set name="ai_type" value="Fighter"/>
 		<set name="collision_radius" value="20.0"/>
 		<set name="collision_height" value="39.0"/>
-		<set name="level" value="92"/>
+		<set name="level" value="99"/>
 		<set name="type" value="Monster"/>
 		<set name="baseAtkRange" value="40"/>
-		<set name="baseHpMax" value="263372"/>
+		<set name="baseHpMax" value="10137120"/>
 		<set name="baseHpRate" value="1.0"/>
 		<set name="baseHpReg" value="13"/>
 		<set name="baseMpMax" value="2582"/>
@@ -4302,13 +4314,13 @@
 		<set name="baseINT" value="21"/>
 		<set name="baseWIT" value="70"/>
 		<set name="baseMEN" value="20"/>
-		<set name="rewardExp" value="548674"/>
+		<set name="rewardExp" value="5486740"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="11420"/>
+		<set name="rewardSp" value="114205"/>
 		<set name="basePAtk" value="3410"/>
-		<set name="basePDef" value="713"/>
+		<set name="basePDef" value="700"/>
 		<set name="baseMAtk" value="1581"/>
-		<set name="baseMDef" value="633"/>
+		<set name="baseMDef" value="750"/>
 		<set name="basePAtkSpd" value="299"/>
 		<set name="baseCritRate" value="4"/>
 		<set name="baseMAtkSpd" value="398"/>
@@ -4328,28 +4340,43 @@
 			<skill id="5467" level="1"/>
 		</skills>
 		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="4370" max="10192" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="57" min="437001" max="10158492" chance="40.0"/>
 			</group>
-			<group chance="0.6">
-				<reward item_id="18156" min="1" max="1" chance="50.0"/>
-				<reward item_id="18167" min="1" max="1" chance="50.0"/>
+			<group chance="40.0">
+				<reward item_id="4356" min="1" max="1" chance="40.0"/>
 			</group>
-			<group chance="0.3">
-				<reward item_id="17527" min="1" max="1" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="6393" min="1" max="1" chance="40.0"/>
+			</group>
+			<group chance="0.05">
+				<reward item_id="18239" min="1" max="1" chance="0.05"/>
+				<reward item_id="18240" min="1" max="1" chance="0.05"/>
+				<reward item_id="18241" min="1" max="1" chance="0.05"/>
+				<reward item_id="18242" min="1" max="1" chance="0.05"/>
+				<reward item_id="18243" min="1" max="1" chance="0.05"/>
+				<reward item_id="18244" min="1" max="1" chance="0.05"/>
+				<reward item_id="18245" min="1" max="1" chance="0.05"/>
+				<reward item_id="18246" min="1" max="1" chance="0.05"/>
+				<reward item_id="18247" min="1" max="1" chance="0.05"/>
+				<reward item_id="18248" min="1" max="1" chance="0.05"/>
+				<reward item_id="18249" min="1" max="1" chance="0.05"/>
+				<reward item_id="18250" min="1" max="1" chance="0.05"/>
+				<reward item_id="18251" min="1" max="1" chance="0.05"/>
+				<reward item_id="18252" min="1" max="1" chance="0.05"/>
 			</group>
 		</rewardlist>
 	</npc>
 	<npc id="22967" name="Median Phantom" title="">
 		<!--L2WT Tauti Confirmed-->
-		<set name="aggroRange" value="300"/>
+		<set name="aggroRange" value="0"/>
 		<set name="ai_type" value="Fighter"/>
 		<set name="collision_radius" value="30.0"/>
 		<set name="collision_height" value="44.5"/>
-		<set name="level" value="92"/>
+		<set name="level" value="99"/>
 		<set name="type" value="Monster"/>
 		<set name="baseAtkRange" value="40"/>
-		<set name="baseHpMax" value="263372"/>
+		<set name="baseHpMax" value="10137120"/>
 		<set name="baseHpRate" value="1.0"/>
 		<set name="baseHpReg" value="13"/>
 		<set name="baseMpMax" value="2582"/>
@@ -4360,13 +4387,13 @@
 		<set name="baseINT" value="21"/>
 		<set name="baseWIT" value="70"/>
 		<set name="baseMEN" value="20"/>
-		<set name="rewardExp" value="576359"/>
+		<set name="rewardExp" value="5486740"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="11996"/>
+		<set name="rewardSp" value="114205"/>
 		<set name="basePAtk" value="3410"/>
-		<set name="basePDef" value="713"/>
+		<set name="basePDef" value="700"/>
 		<set name="baseMAtk" value="1581"/>
-		<set name="baseMDef" value="633"/>
+		<set name="baseMDef" value="750"/>
 		<set name="basePAtkSpd" value="299"/>
 		<set name="baseCritRate" value="4"/>
 		<set name="baseMAtkSpd" value="398"/>
@@ -4384,37 +4411,48 @@
 		<skills>
 			<skill id="4416" level="6"/>
 			<skill id="5467" level="1"/>
-			<skill id="4410" level="13"/>
 		</skills>
 		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="4513" max="10527" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="57" min="437001" max="10158492" chance="40.0"/>
 			</group>
-			<group chance="0.105">
-				<reward item_id="18159" min="1" max="1" chance="71.42857"/>
-				<reward item_id="18152" min="1" max="1" chance="28.57143"/>
+			<group chance="40.0">
+				<reward item_id="4356" min="1" max="1" chance="40.0"/>
 			</group>
-			<group chance="0.03">
-				<reward item_id="17526" min="1" max="1" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="6393" min="1" max="1" chance="40.0"/>
 			</group>
-		</rewardlist>
-		<rewardlist type="SWEEP">
-			<reward item_id="18153" min="1" max="1" chance="0.003"/>
+			<group chance="0.05">
+				<reward item_id="18239" min="1" max="1" chance="0.05"/>
+				<reward item_id="18240" min="1" max="1" chance="0.05"/>
+				<reward item_id="18241" min="1" max="1" chance="0.05"/>
+				<reward item_id="18242" min="1" max="1" chance="0.05"/>
+				<reward item_id="18243" min="1" max="1" chance="0.05"/>
+				<reward item_id="18244" min="1" max="1" chance="0.05"/>
+				<reward item_id="18245" min="1" max="1" chance="0.05"/>
+				<reward item_id="18246" min="1" max="1" chance="0.05"/>
+				<reward item_id="18247" min="1" max="1" chance="0.05"/>
+				<reward item_id="18248" min="1" max="1" chance="0.05"/>
+				<reward item_id="18249" min="1" max="1" chance="0.05"/>
+				<reward item_id="18250" min="1" max="1" chance="0.05"/>
+				<reward item_id="18251" min="1" max="1" chance="0.05"/>
+				<reward item_id="18252" min="1" max="1" chance="0.05"/>
+			</group>
 		</rewardlist>
 	</npc>
 	<npc id="22968" name="Median Escort Swordsman" title="">
 		<!--L2WT Tauti Confirmed-->
-		<set name="aggroRange" value="300"/>
+		<set name="aggroRange" value="0"/>
 		<set name="ai_type" value="Fighter"/>
 		<set name="collision_radius" value="15.0"/>
 		<set name="collision_height" value="32.5"/>
-		<set name="level" value="94"/>
+		<set name="level" value="99"/>
 		<set name="type" value="Monster"/>
 		<set name="baseAtkRange" value="40"/>
-		<set name="baseHpMax" value="542125"/>
+		<set name="baseHpMax" value="10137120"/>
 		<set name="baseHpRate" value="1.0"/>
 		<set name="baseHpReg" value="13"/>
-		<set name="baseMpMax" value="2684"/>
+		<set name="baseMpMax" value="2582"/>
 		<set name="baseMpReg" value="4"/>
 		<set name="baseSTR" value="40"/>
 		<set name="baseCON" value="43"/>
@@ -4422,13 +4460,13 @@
 		<set name="baseINT" value="21"/>
 		<set name="baseWIT" value="70"/>
 		<set name="baseMEN" value="20"/>
-		<set name="rewardExp" value="1364255"/>
+		<set name="rewardExp" value="5486740"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="28912"/>
-		<set name="basePAtk" value="3735"/>
-		<set name="basePDef" value="737"/>
-		<set name="baseMAtk" value="1732"/>
-		<set name="baseMDef" value="655"/>
+		<set name="rewardSp" value="114205"/>
+		<set name="basePAtk" value="3410"/>
+		<set name="basePDef" value="700"/>
+		<set name="baseMAtk" value="1581"/>
+		<set name="baseMDef" value="750"/>
 		<set name="basePAtkSpd" value="299"/>
 		<set name="baseCritRate" value="4"/>
 		<set name="baseMAtkSpd" value="398"/>
@@ -4436,47 +4474,58 @@
 		<set name="baseWalkSpd" value="50"/>
 		<set name="shots" value="NONE"/>
 		<attributes>
-			<defence attribute="fire" value="240"/>
-			<defence attribute="water" value="240"/>
-			<defence attribute="wind" value="240"/>
-			<defence attribute="earth" value="240"/>
-			<defence attribute="holy" value="240"/>
-			<defence attribute="unholy" value="240"/>
+			<defence attribute="fire" value="220"/>
+			<defence attribute="water" value="220"/>
+			<defence attribute="wind" value="220"/>
+			<defence attribute="earth" value="220"/>
+			<defence attribute="holy" value="220"/>
+			<defence attribute="unholy" value="220"/>
 		</attributes>
 		<skills>
 			<skill id="4416" level="6"/>
 			<skill id="5467" level="1"/>
-			<skill id="4410" level="14"/>
 		</skills>
 		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="6769" max="15804" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="57" min="437001" max="10158492" chance="40.0"/>
 			</group>
-			<group chance="0.06">
-				<reward item_id="18145" min="1" max="1" chance="50.0"/>
-				<reward item_id="18146" min="1" max="1" chance="50.0"/>
+			<group chance="40.0">
+				<reward item_id="4356" min="1" max="1" chance="40.0"/>
 			</group>
-			<group chance="0.03">
-				<reward item_id="17526" min="1" max="1" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="6393" min="1" max="1" chance="40.0"/>
 			</group>
-		</rewardlist>
-		<rewardlist type="SWEEP">
-			<reward item_id="18139" min="1" max="1" chance="9.0E-4"/>
+			<group chance="0.05">
+				<reward item_id="18239" min="1" max="1" chance="0.05"/>
+				<reward item_id="18240" min="1" max="1" chance="0.05"/>
+				<reward item_id="18241" min="1" max="1" chance="0.05"/>
+				<reward item_id="18242" min="1" max="1" chance="0.05"/>
+				<reward item_id="18243" min="1" max="1" chance="0.05"/>
+				<reward item_id="18244" min="1" max="1" chance="0.05"/>
+				<reward item_id="18245" min="1" max="1" chance="0.05"/>
+				<reward item_id="18246" min="1" max="1" chance="0.05"/>
+				<reward item_id="18247" min="1" max="1" chance="0.05"/>
+				<reward item_id="18248" min="1" max="1" chance="0.05"/>
+				<reward item_id="18249" min="1" max="1" chance="0.05"/>
+				<reward item_id="18250" min="1" max="1" chance="0.05"/>
+				<reward item_id="18251" min="1" max="1" chance="0.05"/>
+				<reward item_id="18252" min="1" max="1" chance="0.05"/>
+			</group>
 		</rewardlist>
 	</npc>
 	<npc id="22969" name="Wraith Guardian" title="">
 		<!--L2WT Tauti Confirmed-->
-		<set name="aggroRange" value="300"/>
+		<set name="aggroRange" value="0"/>
 		<set name="ai_type" value="Fighter"/>
 		<set name="collision_radius" value="23.0"/>
 		<set name="collision_height" value="52.0"/>
-		<set name="level" value="93"/>
+		<set name="level" value="99"/>
 		<set name="type" value="Monster"/>
 		<set name="baseAtkRange" value="40"/>
-		<set name="baseHpMax" value="541220"/>
+		<set name="baseHpMax" value="10137120"/>
 		<set name="baseHpRate" value="1.0"/>
 		<set name="baseHpReg" value="13"/>
-		<set name="baseMpMax" value="2632"/>
+		<set name="baseMpMax" value="2582"/>
 		<set name="baseMpReg" value="4"/>
 		<set name="baseSTR" value="40"/>
 		<set name="baseCON" value="43"/>
@@ -4484,59 +4533,72 @@
 		<set name="baseINT" value="21"/>
 		<set name="baseWIT" value="70"/>
 		<set name="baseMEN" value="20"/>
-		<set name="rewardExp" value="1202857"/>
+		<set name="rewardExp" value="5486740"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="25271"/>
-		<set name="basePAtk" value="3569"/>
-		<set name="basePDef" value="725"/>
-		<set name="baseMAtk" value="1655"/>
-		<set name="baseMDef" value="644"/>
+		<set name="rewardSp" value="114205"/>
+		<set name="basePAtk" value="3410"/>
+		<set name="basePDef" value="700"/>
+		<set name="baseMAtk" value="1581"/>
+		<set name="baseMDef" value="750"/>
 		<set name="basePAtkSpd" value="299"/>
 		<set name="baseCritRate" value="4"/>
 		<set name="baseMAtkSpd" value="398"/>
-		<set name="baseRunSpd" value="200"/>
-		<set name="baseWalkSpd" value="30"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseWalkSpd" value="50"/>
 		<set name="shots" value="NONE"/>
 		<attributes>
-			<defence attribute="fire" value="240"/>
-			<defence attribute="water" value="240"/>
-			<defence attribute="wind" value="240"/>
-			<defence attribute="earth" value="240"/>
-			<defence attribute="holy" value="207"/>
-			<defence attribute="unholy" value="404"/>
-			<attack attribute="unholy" value="33"/>
+			<defence attribute="fire" value="220"/>
+			<defence attribute="water" value="220"/>
+			<defence attribute="wind" value="220"/>
+			<defence attribute="earth" value="220"/>
+			<defence attribute="holy" value="220"/>
+			<defence attribute="unholy" value="220"/>
 		</attributes>
 		<skills>
-			<skill id="4416" level="9"/>
+			<skill id="4416" level="6"/>
 			<skill id="5467" level="1"/>
-			<skill id="4410" level="13"/>
 		</skills>
 		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="6513" max="15211" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="57" min="437001" max="10158492" chance="40.0"/>
 			</group>
-			<group chance="0.15">
-				<reward item_id="18153" min="1" max="1" chance="50.0"/>
-				<reward item_id="18158" min="1" max="1" chance="50.0"/>
+			<group chance="40.0">
+				<reward item_id="4356" min="1" max="1" chance="40.0"/>
 			</group>
-			<group chance="0.3">
-				<reward item_id="17527" min="1" max="1" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="6393" min="1" max="1" chance="40.0"/>
+			</group>
+			<group chance="0.05">
+				<reward item_id="18239" min="1" max="1" chance="0.05"/>
+				<reward item_id="18240" min="1" max="1" chance="0.05"/>
+				<reward item_id="18241" min="1" max="1" chance="0.05"/>
+				<reward item_id="18242" min="1" max="1" chance="0.05"/>
+				<reward item_id="18243" min="1" max="1" chance="0.05"/>
+				<reward item_id="18244" min="1" max="1" chance="0.05"/>
+				<reward item_id="18245" min="1" max="1" chance="0.05"/>
+				<reward item_id="18246" min="1" max="1" chance="0.05"/>
+				<reward item_id="18247" min="1" max="1" chance="0.05"/>
+				<reward item_id="18248" min="1" max="1" chance="0.05"/>
+				<reward item_id="18249" min="1" max="1" chance="0.05"/>
+				<reward item_id="18250" min="1" max="1" chance="0.05"/>
+				<reward item_id="18251" min="1" max="1" chance="0.05"/>
+				<reward item_id="18252" min="1" max="1" chance="0.05"/>
 			</group>
 		</rewardlist>
 	</npc>
 	<npc id="22970" name="Wraith Warrior" title="">
 		<!--L2WT Tauti Confirmed-->
-		<set name="aggroRange" value="300"/>
+		<set name="aggroRange" value="0"/>
 		<set name="ai_type" value="Fighter"/>
 		<set name="collision_radius" value="22.0"/>
 		<set name="collision_height" value="43.0"/>
-		<set name="level" value="93"/>
+		<set name="level" value="99"/>
 		<set name="type" value="Monster"/>
 		<set name="baseAtkRange" value="40"/>
-		<set name="baseHpMax" value="541220"/>
+		<set name="baseHpMax" value="10137120"/>
 		<set name="baseHpRate" value="1.0"/>
 		<set name="baseHpReg" value="13"/>
-		<set name="baseMpMax" value="2632"/>
+		<set name="baseMpMax" value="2582"/>
 		<set name="baseMpReg" value="4"/>
 		<set name="baseSTR" value="40"/>
 		<set name="baseCON" value="43"/>
@@ -4544,47 +4606,57 @@
 		<set name="baseINT" value="21"/>
 		<set name="baseWIT" value="70"/>
 		<set name="baseMEN" value="20"/>
-		<set name="rewardExp" value="1202857"/>
+		<set name="rewardExp" value="5486740"/>
 		<set name="rewardRp" value="0"/>
-		<set name="rewardSp" value="25271"/>
-		<set name="basePAtk" value="3569"/>
-		<set name="basePDef" value="725"/>
-		<set name="baseMAtk" value="1655"/>
-		<set name="baseMDef" value="644"/>
+		<set name="rewardSp" value="114205"/>
+		<set name="basePAtk" value="3410"/>
+		<set name="basePDef" value="700"/>
+		<set name="baseMAtk" value="1581"/>
+		<set name="baseMDef" value="750"/>
 		<set name="basePAtkSpd" value="299"/>
 		<set name="baseCritRate" value="4"/>
 		<set name="baseMAtkSpd" value="398"/>
-		<set name="baseRunSpd" value="160"/>
-		<set name="baseWalkSpd" value="60"/>
+		<set name="baseRunSpd" value="120"/>
+		<set name="baseWalkSpd" value="50"/>
 		<set name="shots" value="NONE"/>
 		<attributes>
-			<defence attribute="fire" value="240"/>
-			<defence attribute="water" value="240"/>
-			<defence attribute="wind" value="240"/>
-			<defence attribute="earth" value="240"/>
-			<defence attribute="holy" value="207"/>
-			<defence attribute="unholy" value="404"/>
-			<attack attribute="unholy" value="33"/>
+			<defence attribute="fire" value="220"/>
+			<defence attribute="water" value="220"/>
+			<defence attribute="wind" value="220"/>
+			<defence attribute="earth" value="220"/>
+			<defence attribute="holy" value="220"/>
+			<defence attribute="unholy" value="220"/>
 		</attributes>
 		<skills>
-			<skill id="4416" level="9"/>
+			<skill id="4416" level="6"/>
 			<skill id="5467" level="1"/>
-			<skill id="4411" level="13"/>
 		</skills>
 		<rewardlist type="RATED_GROUPED">
-			<group chance="70.0">
-				<reward item_id="57" min="6513" max="15211" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="57" min="437001" max="10158492" chance="40.0"/>
 			</group>
-			<group chance="0.6">
-				<reward item_id="18156" min="1" max="1" chance="50.0"/>
-				<reward item_id="18167" min="1" max="1" chance="50.0"/>
+			<group chance="40.0">
+				<reward item_id="4356" min="1" max="1" chance="40.0"/>
 			</group>
-			<group chance="0.3">
-				<reward item_id="17527" min="1" max="1" chance="100.0"/>
+			<group chance="40.0">
+				<reward item_id="6393" min="1" max="1" chance="40.0"/>
 			</group>
-		</rewardlist>
-		<rewardlist type="SWEEP">
-			<reward item_id="18164" min="1" max="1" chance="0.003"/>
+			<group chance="0.05">
+				<reward item_id="18239" min="1" max="1" chance="0.05"/>
+				<reward item_id="18240" min="1" max="1" chance="0.05"/>
+				<reward item_id="18241" min="1" max="1" chance="0.05"/>
+				<reward item_id="18242" min="1" max="1" chance="0.05"/>
+				<reward item_id="18243" min="1" max="1" chance="0.05"/>
+				<reward item_id="18244" min="1" max="1" chance="0.05"/>
+				<reward item_id="18245" min="1" max="1" chance="0.05"/>
+				<reward item_id="18246" min="1" max="1" chance="0.05"/>
+				<reward item_id="18247" min="1" max="1" chance="0.05"/>
+				<reward item_id="18248" min="1" max="1" chance="0.05"/>
+				<reward item_id="18249" min="1" max="1" chance="0.05"/>
+				<reward item_id="18250" min="1" max="1" chance="0.05"/>
+				<reward item_id="18251" min="1" max="1" chance="0.05"/>
+				<reward item_id="18252" min="1" max="1" chance="0.05"/>
+			</group>
 		</rewardlist>
 	</npc>
 	<npc id="22971" name="Lizard Charmer" title="">
@@ -5005,7 +5077,7 @@
 		</skills>
 		<rewardlist type="RATED_GROUPED">
 			<group chance="70.0">
-				<reward item_id="57" min="6458" max="15079" chance="100.0"/>
+				<reward item_id="57" min="6458" max="15079" chance="40.0"/>
 			</group>
 			<group chance="0.12">
 				<reward item_id="18138" min="1" max="1" chance="25.0"/>

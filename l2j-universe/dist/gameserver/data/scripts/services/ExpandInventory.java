@@ -38,7 +38,7 @@ public class ExpandInventory extends Functions
 		}
 		if (!Config.SERVICES_EXPAND_INVENTORY_ENABLED)
 		{
-			show("Серви�? откл�?чен.", player);
+			show("Expand Inventory", player);
 			return;
 		}
 		if (player.getInventoryLimit() >= Config.SERVICES_EXPAND_INVENTORY_MAX)
@@ -75,18 +75,18 @@ public class ExpandInventory extends Functions
 		}
 		if (!Config.SERVICES_EXPAND_INVENTORY_ENABLED)
 		{
-			show("Серви�? откл�?чен.", player);
+			show("Expand Inventory", player);
 			return;
 		}
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(Config.SERVICES_EXPAND_INVENTORY_ITEM);
 		String out = "";
-		out += "<html><body>Ра�?�?ирение инвентар�?";
+		out += "<html><body>Expand Personal Inventory";
 		out += "<br><br><table>";
-		out += "<tr><td>Текущий размер:</td><td>" + player.getInventoryLimit() + "</td></tr>";
-		out += "<tr><td>�?ак�?имал�?ный размер:</td><td>" + Config.SERVICES_EXPAND_INVENTORY_MAX + "</td></tr>";
-		out += "<tr><td>Стоимо�?т�? �?лота:</td><td>" + Config.SERVICES_EXPAND_INVENTORY_PRICE + " " + item.getName() + "</td></tr>";
+		out += "<tr><td>Current Slots:</td><td>" + player.getInventoryLimit() + "</td></tr>";
+		out += "<tr><td>Max Slots:</td><td>" + Config.SERVICES_EXPAND_INVENTORY_MAX + "</td></tr>";
+		out += "<tr><td>Price:</td><td>" + Config.SERVICES_EXPAND_INVENTORY_PRICE + " " + item.getName() + "</td></tr>";
 		out += "</table><br><br>";
-		out += "<button width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.ExpandInventory:get\" value=\"Ра�?�?ирит�?\">";
+		out += "<button width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.ExpandInventory:get\" value=\"Upgrade\">";
 		out += "</body></html>";
 		show(out, player);
 	}

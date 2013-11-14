@@ -38,7 +38,7 @@ public class ExpandCWH extends Functions
 		}
 		if (!Config.SERVICES_EXPAND_CWH_ENABLED)
 		{
-			show("Серви�? откл�?чен.", player);
+			show("Clan WH Enabled", player);
 			return;
 		}
 		if (player.getClan() == null)
@@ -49,7 +49,7 @@ public class ExpandCWH extends Functions
 		if (player.getInventory().destroyItemByItemId(Config.SERVICES_EXPAND_CWH_ITEM, Config.SERVICES_EXPAND_CWH_PRICE))
 		{
 			player.getClan().setWhBonus(player.getClan().getWhBonus() + 1);
-			player.sendMessage("Warehouse capacity is now " + (Config.WAREHOUSE_SLOTS_CLAN + player.getClan().getWhBonus()));
+			player.sendMessage("Clan Warehouse capacity is now " + (Config.WAREHOUSE_SLOTS_CLAN + player.getClan().getWhBonus()));
 		}
 		else if (Config.SERVICES_EXPAND_CWH_ITEM == 57)
 		{
@@ -74,7 +74,7 @@ public class ExpandCWH extends Functions
 		}
 		if (!Config.SERVICES_EXPAND_WAREHOUSE_ENABLED)
 		{
-			show("Серви�? откл�?чен.", player);
+			show("Warehouse Enabled", player);
 			return;
 		}
 		if (player.getClan() == null)
@@ -84,12 +84,12 @@ public class ExpandCWH extends Functions
 		}
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(Config.SERVICES_EXPAND_CWH_ITEM);
 		String out = "";
-		out += "<html><body>Ра�?�?ирение кланового �?клада";
+		out += "<html><body>Expand Clan Warehouse Slots";
 		out += "<br><br><table>";
-		out += "<tr><td>Текущий размер:</td><td>" + (Config.WAREHOUSE_SLOTS_CLAN + player.getClan().getWhBonus()) + "</td></tr>";
-		out += "<tr><td>Стоимо�?т�? �?лота:</td><td>" + Config.SERVICES_EXPAND_CWH_PRICE + " " + item.getName() + "</td></tr>";
+		out += "<tr><td>Current Slots:</td><td>" + (Config.WAREHOUSE_SLOTS_CLAN + player.getClan().getWhBonus()) + "</td></tr>";
+		out += "<tr><td>Expand Price:</td><td>" + Config.SERVICES_EXPAND_CWH_PRICE + " " + item.getName() + "</td></tr>";
 		out += "</table><br><br>";
-		out += "<button width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.ExpandCWH:get\" value=\"Ра�?�?ирит�?\">";
+		out += "<button width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.ExpandCWH:get\" value=\"Upgrade CWH\">";
 		out += "</body></html>";
 		show(out, player);
 	}

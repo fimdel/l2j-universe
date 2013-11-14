@@ -38,7 +38,7 @@ public class ExpandWarehouse extends Functions
 		}
 		if (!Config.SERVICES_EXPAND_WAREHOUSE_ENABLED)
 		{
-			show("Серви�? откл�?чен.", player);
+			show("Expand Warehouse Slots", player);
 			return;
 		}
 		if (player.getInventory().destroyItemByItemId(Config.SERVICES_EXPAND_WAREHOUSE_ITEM, Config.SERVICES_EXPAND_WAREHOUSE_PRICE))
@@ -70,17 +70,17 @@ public class ExpandWarehouse extends Functions
 		}
 		if (!Config.SERVICES_EXPAND_WAREHOUSE_ENABLED)
 		{
-			show("Серви�? откл�?чен.", player);
+			show("Expand Warehouse Slots", player);
 			return;
 		}
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(Config.SERVICES_EXPAND_WAREHOUSE_ITEM);
 		String out = "";
-		out += "<html><body>Ра�?�?ирение �?клада";
+		out += "<html><body>Expand Personal Inventory";
 		out += "<br><br><table>";
-		out += "<tr><td>Текущий размер:</td><td>" + player.getWarehouseLimit() + "</td></tr>";
-		out += "<tr><td>Стоимо�?т�? �?лота:</td><td>" + Config.SERVICES_EXPAND_WAREHOUSE_PRICE + " " + item.getName() + "</td></tr>";
+		out += "<tr><td>Current Slots:</td><td>" + player.getWarehouseLimit() + "</td></tr>";
+		out += "<tr><td>Price:</td><td>" + Config.SERVICES_EXPAND_WAREHOUSE_PRICE + " " + item.getName() + "</td></tr>";
 		out += "</table><br><br>";
-		out += "<button width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.ExpandWarehouse:get\" value=\"Ра�?�?ирит�?\">";
+		out += "<button width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.ExpandWarehouse:get\" value=\"Upgrade\">";
 		out += "</body></html>";
 		show(out, player);
 	}

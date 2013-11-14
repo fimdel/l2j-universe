@@ -141,7 +141,7 @@ public class VoteManager extends Functions implements IVoicedCommandHandler, Scr
 			}
 		}
 		int count = 0;
-		StringBuilder html = new StringBuilder("!VoteManager:\n<br>");
+		StringBuilder html = new StringBuilder("!Vote Manager:\n<br>");
 		String playerId = activeChar.getAccountName();
 		for (Entry<Integer, Vote> e : VoteList.entrySet())
 		{

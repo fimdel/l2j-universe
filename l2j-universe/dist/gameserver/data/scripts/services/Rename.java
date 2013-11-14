@@ -93,7 +93,7 @@ public class Rename extends Functions
 			show("You must be in peace zone to use this service.", player);
 			return;
 		}
-		String append = "Sex changing";
+		String append = "!Change Character Sex";
 		append += "<br>";
 		append += "<font color=\"LEVEL\">" + new CustomMessage("scripts.services.SexChange.SexChangeFor", player).addString(Util.formatAdena(Config.SERVICES_CHANGE_SEX_PRICE)).addItemName(Config.SERVICES_CHANGE_SEX_ITEM) + "</font>";
 		append += "<table>";
@@ -129,10 +129,10 @@ public class Rename extends Functions
 		}
 		if (player.getActiveSubClass().getLevel() < 75)
 		{
-			show("You must have at least 75 level.", player);
+			show("You must be at least level 75.", player);
 			return;
 		}
-		String append = "Subclass separation";
+		String append = "!Seperate Subclass";
 		append += "<br>";
 		append += "<font color=\"LEVEL\">" + new CustomMessage("scripts.services.Separate.Price", player).addString(Util.formatAdena(Config.SERVICES_SEPARATE_SUB_PRICE)).addItemName(Config.SERVICES_SEPARATE_SUB_ITEM) + "</font>&nbsp;";
 		append += "<edit var=\"name\" width=80 height=15 /><br>";
@@ -171,12 +171,12 @@ public class Rename extends Functions
 		}
 		if (!player.getActiveSubClass().isBase())
 		{
-			show("You must be at main class.", player);
+			show("You must be on main class.", player);
 			return;
 		}
 		if (player.getActiveSubClass().getLevel() < 75)
 		{
-			show("You must have at least 75 level.", player);
+			show("You must be at least level 75.", player);
 			return;
 		}
 		if (param.length < 2)
@@ -212,7 +212,7 @@ public class Rename extends Functions
 		}
 		if (mysql.simple_get_int("level", "character_subclasses", "char_obj_id=" + newcharid + " AND level > 1") > 1)
 		{
-			show("Target must have level 1.", player);
+			show("Target must be level 1.", player);
 			return;
 		}
 		mysql.set("DELETE FROM character_subclasses WHERE char_obj_id=" + newcharid);
@@ -246,7 +246,7 @@ public class Rename extends Functions
 		}
 		if (!player.isInPeaceZone())
 		{
-			show("You must be in peace zone to use this service.", player);
+			show("You must be in a peace zone to use this service.", player);
 			return;
 		}
 		if (player.isHero())
@@ -254,7 +254,7 @@ public class Rename extends Functions
 			sendMessage("Not available for heroes.", player);
 			return;
 		}
-		String append = "Base class changing";
+		String append = "!Change Base Class";
 		append += "<br>";
 		append += "<font color=\"LEVEL\">" + new CustomMessage("scripts.services.BaseChange.Price", player).addString(Util.formatAdena(Config.SERVICES_CHANGE_BASE_PRICE)).addItemName(Config.SERVICES_CHANGE_BASE_ITEM) + "</font>";
 		append += "<table>";
@@ -302,12 +302,12 @@ public class Rename extends Functions
 		}
 		if (!player.isInPeaceZone())
 		{
-			show("You must be in peace zone to use this service.", player);
+			show("You must be in a peace zone to use this service.", player);
 			return;
 		}
 		if (!player.getActiveSubClass().isBase())
 		{
-			show("You must be on your base class to use this service.", player);
+			show("You must be on your main class to use this service.", player);
 			return;
 		}
 		if (player.isHero())
@@ -416,7 +416,7 @@ public class Rename extends Functions
 		}
 		if (!player.isInPeaceZone())
 		{
-			show("You must be in peace zone to use this service.", player);
+			show("You must be in a peace zone to use this service.", player);
 			return;
 		}
 		if (getItemCount(player, Config.SERVICES_CHANGE_SEX_ITEM) < Config.SERVICES_CHANGE_SEX_PRICE)
@@ -476,7 +476,7 @@ public class Rename extends Functions
 			player.sendPacket(new SystemMessage(SystemMessage.S1_IS_NOT_A_CLAN_LEADER).addName(player));
 			return;
 		}
-		String append = "!Rename clan";
+		String append = "!Rename Clan";
 		append += "<br>";
 		append += "<font color=\"LEVEL\">" + new CustomMessage("scripts.services.Rename.RenameFor", getSelf()).addString(Util.formatAdena(Config.SERVICES_CHANGE_CLAN_NAME_PRICE)).addItemName(Config.SERVICES_CHANGE_CLAN_NAME_ITEM) + "</font>";
 		append += "<table>";

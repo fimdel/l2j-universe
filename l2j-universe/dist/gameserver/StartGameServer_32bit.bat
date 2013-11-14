@@ -1,7 +1,7 @@
 @echo off
-title GoD: Game Server Console
+title Lineage Universe: Glory Days
 :start
-echo Starting GameServer.
+echo Starting L2j-Universe Glory Days Gameserver.
 echo.
 
 java -version:1.7 -Dfile.encoding=UTF-8 -Xmx1G -Xnoclassgc -XX:+UseConcMarkSweepGC -XX:-UseGCOverheadLimit -cp config/xml;../libs/*; lineage2.gameserver.GameServer

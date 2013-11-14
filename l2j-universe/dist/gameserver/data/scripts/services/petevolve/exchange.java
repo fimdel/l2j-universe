@@ -133,11 +133,11 @@ public class exchange extends Functions
 		}
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(Config.SERVICES_EXCHANGE_BABY_PET_ITEM);
 		String out = "";
-		out += "<html><body>Вы можете в л�?бое врем�? обмен�?т�? ва�?его Improved Baby пета на другой вид, без потери опыта. �?ет при �?том должен быт�? вызван.";
-		out += "<br>Стоимо�?т�? обмена: " + Util.formatAdena(Config.SERVICES_EXCHANGE_BABY_PET_PRICE) + " " + item.getName();
-		out += "<br><button width=250 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.petevolve.exchange:exToCougar\" value=\"�?бмен�?т�? на Improved Cougar\">";
-		out += "<br1><button width=250 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.petevolve.exchange:exToBuffalo\" value=\"�?бмен�?т�? на Improved Buffalo\">";
-		out += "<br1><button width=250 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.petevolve.exchange:exToKookaburra\" value=\"�?бмен�?т�? на Improved Kookaburra\">";
+		out += "<html><body>Exchange Baby Pet";
+		out += "<br>Price: " + Util.formatAdena(Config.SERVICES_EXCHANGE_BABY_PET_PRICE) + " " + item.getName();
+		out += "<br><button width=250 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.petevolve.exchange:exToCougar\" value=\"Obtain Improved Cougar\">";
+		out += "<br1><button width=250 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.petevolve.exchange:exToBuffalo\" value=\"Obtain Improved Buffalo\">";
+		out += "<br1><button width=250 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.petevolve.exchange:exToKookaburra\" value=\"Obtain Improved Kookaburra\">";
 		out += "</body></html>";
 		show(out, player);
 	}
@@ -154,14 +154,14 @@ public class exchange extends Functions
 		}
 		if (!Config.SERVICES_CHANGE_PET_NAME_ENABLED)
 		{
-			show("Серви�? откл�?чен.", player);
+			show("Exchange Pet", player);
 			return;
 		}
 		ItemTemplate item = ItemHolder.getInstance().getTemplate(Config.SERVICES_CHANGE_PET_NAME_ITEM);
 		String out = "";
-		out += "<html><body>Вы можете обнулит�? им�? у пета, дл�? того чтобы назначит�? новое. �?ет при �?том должен быт�? вызван.";
-		out += "<br>Стоимо�?т�? обнулени�?: " + Util.formatAdena(Config.SERVICES_CHANGE_PET_NAME_PRICE) + " " + item.getName();
-		out += "<br><button width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.petevolve.exchange:erasePetName\" value=\"�?бнулит�? им�?\">";
+		out += "<html><body>Text Change";
+		out += "<br>Text Change 1: " + Util.formatAdena(Config.SERVICES_CHANGE_PET_NAME_PRICE) + " " + item.getName();
+		out += "<br><button width=100 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h scripts_services.petevolve.exchange:erasePetName\" value=\"Text Change 2\">";
 		out += "</body></html>";
 		show(out, player);
 	}
