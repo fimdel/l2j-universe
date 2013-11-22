@@ -894,19 +894,19 @@
 		</for>
 	</skill>
     <skill id="10270" levels="1" name="Second Wind">
-    <!-- Immediately recovers Max HP by 35% and Max CP by 15% and for 2 minutes, increases Max HP by 35% and Max CP by 15%. -->
-		<table name="#time">120</table>
-		<set name="relationSkillsId" val="121;1561;20006;441;"/> 
-		<set name="magicLevel" val="93"/>
-		<set name="operateType" val="OP_ACTIVE"/>
-		<set name="skillType" val="BUFF"/>
-		<set name="target" val="TARGET_SELF"/>
-		<enchant1 levels="10" name="Time">
+	<!-- Immediately recovers Max HP by 35% and Max CP by 15% and for 2 minutes, increases Max HP by 35% and Max CP by 15%. -->
+			<table name="#time">120</table>
+			<set name="relationSkillsId" val="121;1561;20006;441;"/> 
+			<set name="magicLevel" val="93"/>
+			<set name="operateType" val="OP_ACTIVE"/>
+			<set name="skillType" val="BUFF"/>
+			<set name="target" val="TARGET_SELF"/>
+			<enchant1 levels="10" name="Time">
 			<table name="#time">126 132 138 144 150 156 162 168 174 180</table> <!--Non-Retail Value, Must Be Checked-->
 			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
 		</enchant1>
 		<for>
-			<effect name="Buff" time="#time" val="0" stackOrder="6" stackType="hp_up">
+			<effect name="Buff" time="#time" val="0" stackOrder="11" stackType="guts">
 				<mul order="0x30" stat="maxHp" val="1.35"/>
 				<mul order="0x30" stat="maxCp" val="1.15"/>
 			</effect>
