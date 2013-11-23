@@ -20,6 +20,7 @@ import lineage2.gameserver.data.xml.holder.ItemHolder;
 import lineage2.gameserver.data.xml.holder.OptionDataHolder;
 import lineage2.gameserver.model.Skill;
 import lineage2.gameserver.model.base.Element;
+import lineage2.gameserver.model.items.CrystallizationItem;
 import lineage2.gameserver.stats.conditions.Condition;
 import lineage2.gameserver.tables.SkillTable;
 import lineage2.gameserver.templates.OptionDataTemplate;
@@ -230,7 +231,7 @@ public final class WeaponItemParser extends StatParser<ItemHolder>
 					}
 					template.setBaseAtributeElements(attributes);
 				}
-				else if (subName.equalsIgnoreCase("enchant_options"))
+				else if  (subName.equalsIgnoreCase("enchant_options"))
 				{
 					for (Iterator<org.dom4j.Element> nextIterator = subElement.elementIterator(); nextIterator.hasNext();)
 					{

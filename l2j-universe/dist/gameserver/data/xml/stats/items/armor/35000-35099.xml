@@ -1,300 +1,1786 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE list SYSTEM "item.dtd">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE list SYSTEM "item.dtd">
 <list>
-	<armor id="35063" name="Dark Eternal Helmet" add_name="Heavy">
-		<set name="crystal_type" value="R99"/>
+    <armor id="35002" name="Темный Шлем Айдиоса	Атак.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystal_type" value="R99"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystallizable" value="true"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8805" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35003" name="Темная Кираса Айдиоса	Атак.">
+        <set name="icon" value="icon.armor_t701_u_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="7520"/>
+        <skills>
+            <skill id="8806" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="385"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35004" name="Темные Набедренники Айдиоса	Атак.">
+        <set name="icon" value="icon.armor_t701_l_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="3170"/>
+        <skills>
+            <skill id="8807" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="241"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35005" name="Темные Рукавицы Айдиоса	Атак.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8808" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35006" name="Темные Сапоги Айдиоса	Атак.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8809" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35008" name="Темный Кожаный Шлем Айдиоса	Смерт.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystal_type" value="R99"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystallizable" value="true"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8810" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35009" name="Темный Кожаный Доспех Айдиоса	Смерт.">
+        <set name="icon" value="icon.armor_t702_u_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="4140"/>
+        <skills>
+            <skill id="8811" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="308"/>
+			<add stat="rEvas" order="0x10" value="5"/>
+	    	<add stat="mEvas" order="0x10" value="5"/>	
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35010" name="Темные Кожаные Брюки Айдиоса Смерт.">
+        <set name="icon" value="icon.armor_t702_l_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1320"/>
+        <skills>
+            <skill id="8812" level="1"/>
+        </skills>
+        <for>
+			<add stat="pDef" order="0x10" value="192"/>
+			<add stat="rEvas" order="0x10" value="3"/>
+			<add stat="mEvas" order="0x10" value="3"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35011" name="Темные Кожаные Перчатки Айдиоса Смерт.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8813" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35012" name="Темные Кожаные Сапоги Айдиоса Смерт.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8814" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35013" name="Темная Айдиоса Диадема Маг.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8815" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35014" name="Темная Айдиоса Туника Маг.">
+        <set name="icon" value="icon.armor_t703_u_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1750"/>
+        <skills>
+            <skill id="8816" level="1"/>
+        </skills>
+        <for>
+       		<add stat="pDef" order="0x10" value="212"/>
+			<add stat="mDef" order="0x10" value="49"/>     
+            <add order="0x40" stat="maxMp" value="649"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35015" name="Темная Айдиоса Штаны Маг.">
+        <set name="icon" value="icon.armor_t703_l_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="850"/>
+        <skills>
+            <skill id="8817" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="132"/>
+			<add stat="mDef" order="0x10" value="33"/>
+            <add order="0x40" stat="maxMp" value="427"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35016" name="Темная Айдиоса Перчатки Маг.">
+        <set name="icon" value="icon.armor_t703_g_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8818" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35017" name="Темная Айдиоса Ботинки Маг.">
+        <set name="icon" value="icon.armor_t703_b_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8819" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35018" name="Темная Айдиоса Шлем Защит.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8805" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35019" name="Темная Айдиоса Кираса Защит.">
+        <set name="icon" value="icon.armor_t701_u_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="7520"/>
+        <skills>
+            <skill id="8806" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="385"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35020" name="Темная Айдиоса Набедренники Защит.">
+        <set name="icon" value="icon.armor_t701_l_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="3170"/>
+        <skills>
+            <skill id="8807" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="241"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35021" name="Темная Айдиоса Рукавицы Защит.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8808" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35022" name="Темная Айдиоса Сапоги Защит.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8809" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35023" name="Темная Айдиоса Кожаный Шлем Усил.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8810" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35024" name="Темная Айдиоса Кожаный Доспех Усил.">
+        <set name="icon" value="icon.armor_t702_u_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="4140"/>
+        <skills>
+            <skill id="8811" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="308"/>
+			<add stat="rEvas" order="0x10" value="5"/>
+	    	<add stat="mEvas" order="0x10" value="5"/>	
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35025" name="Темная Айдиоса Кожаный Брюки Усил.">
+        <set name="icon" value="icon.armor_t702_l_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1320"/>
+        <skills>
+            <skill id="8812" level="1"/>
+        </skills>
+        <for>
+			<add stat="pDef" order="0x10" value="192"/>
+			<add stat="rEvas" order="0x10" value="3"/>
+			<add stat="mEvas" order="0x10" value="3"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35026" name="Темная Айдиоса Кожаный Перчатки Усил.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8813" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35027" name="Темная Айдиоса Кожаный Сапоги Усил.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8814" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35028" name="Темная Айдиоса Диадема Восст.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8815" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35029" name="Темная Айдиоса Туника Восст.">
+        <set name="icon" value="icon.armor_t703_u_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1750"/>
+        <skills>
+            <skill id="8816" level="1"/>
+        </skills>
+        <for>
+       		<add stat="pDef" order="0x10" value="212"/>
+			<add stat="mDef" order="0x10" value="49"/>  
+            <add order="0x40" stat="maxMp" value="649"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35030" name="Темная Айдиоса Штаны Восст.">
+        <set name="icon" value="icon.armor_t703_l_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="850"/>
+        <skills>
+            <skill id="8817" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="132"/>
+			<add stat="mDef" order="0x10" value="33"/>
+            <add order="0x40" stat="maxMp" value="427"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35031" name="Темная Айдиоса Перчатки Восст.">
+        <set name="icon" value="icon.armor_t703_g_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8818" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35032" name="Темная Айдиоса Ботинки Восст.">
+        <set name="icon" value="icon.armor_t703_b_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8819" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35033" name="Кровавый Айдиоса Шлем Атак.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8834" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35034" name="Кровавый Айдиоса Кираса Атак.">
+        <set name="icon" value="icon.armor_t701_u_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="7520"/>
+        <skills>
+            <skill id="8835" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="385"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35035" name="Кровавый Айдиоса Набедренники Атак.">
+        <set name="icon" value="icon.armor_t701_l_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="3170"/>
+        <skills>
+            <skill id="8836" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="241"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35036" name="Кровавый Айдиоса Рукавицы Атак.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8837" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35037" name="Кровавый Айдиоса Сапоги Атак.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8838" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35038" name="Кровавый Айдиоса Кожаный Шлем Смерт.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8839" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35039" name="Кровавый Айдиоса Кожаный Доспех Смерт.">
+        <set name="icon" value="icon.armor_t702_u_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="4140"/>
+        <skills>
+            <skill id="8840" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="308"/>
+			<add stat="rEvas" order="0x10" value="5"/>
+	    	<add stat="mEvas" order="0x10" value="5"/>	
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35040" name="Кровавый Айдиоса Кожаный Брюки Смерт.">
+        <set name="icon" value="icon.armor_t702_l_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1320"/>
+        <skills>
+            <skill id="8841" level="1"/>
+        </skills>
+        <for>
+			<add stat="pDef" order="0x10" value="192"/>
+			<add stat="rEvas" order="0x10" value="3"/>
+			<add stat="mEvas" order="0x10" value="3"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35041" name="Кровавый Айдиоса Кожаный Перчатки Смерт.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8842" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35042" name="Кровавый Айдиоса Кожаный Сапоги Смерт.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8843" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35043" name="Кровавый Айдиоса Диадема Маг.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8844" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35044" name="Кровавый Айдиоса Туника Маг.">
+        <set name="icon" value="icon.armor_t703_u_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1750"/>
+        <skills>
+            <skill id="8845" level="1"/>
+        </skills>
+        <for>
+       		<add stat="pDef" order="0x10" value="212"/>
+			<add stat="mDef" order="0x10" value="49"/>   
+            <add order="0x40" stat="maxMp" value="649"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35045" name="Кровавый Айдиоса Штаны Маг.">
+        <set name="icon" value="icon.armor_t703_l_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="850"/>
+        <skills>
+            <skill id="8846" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="132"/>
+			<add stat="mDef" order="0x10" value="33"/>
+            <add order="0x40" stat="maxMp" value="427"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35046" name="Кровавый Айдиоса Перчатки Маг.">
+        <set name="icon" value="icon.armor_t703_g_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8847" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35047" name="Кровавый Айдиоса Ботинки Маг.">
+        <set name="icon" value="icon.armor_t703_b_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8848" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35048" name="Кровавый Айдиоса Шлем Защит.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8834" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35049" name="Кровавый Айдиоса Кираса Защит.">
+        <set name="icon" value="icon.armor_t701_u_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="7520"/>
+        <skills>
+            <skill id="8835" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="385"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35050" name="Кровавый Айдиоса Набедренники Защит.">
+        <set name="icon" value="icon.armor_t701_l_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="3170"/>
+        <skills>
+            <skill id="8836" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="241"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35051" name="Кровавый Айдиоса Рукавицы Защит.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8837" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35052" name="Кровавый Айдиоса Сапоги Защит.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8838" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35053" name="Кровавый Айдиоса Кожаный Шлем Усил.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8839" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35054" name="Кровавый Айдиоса Кожаный Доспех Усил.">
+        <set name="icon" value="icon.armor_t702_u_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="4140"/>
+        <skills>
+            <skill id="8840" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="308"/>
+			<add stat="rEvas" order="0x10" value="5"/>
+	    	<add stat="mEvas" order="0x10" value="5"/>	
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35055" name="Кровавый Айдиоса Кожаный Брюки Усил.">
+        <set name="icon" value="icon.armor_t702_l_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1320"/>
+        <skills>
+            <skill id="8841" level="1"/>
+        </skills>
+        <for>
+			<add stat="pDef" order="0x10" value="192"/>
+			<add stat="rEvas" order="0x10" value="3"/>
+			<add stat="mEvas" order="0x10" value="3"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35056" name="Кровавый Айдиоса Кожаный Перчатки Усил.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8842" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35057" name="Кровавый Айдиоса Кожаный Сапоги Усил.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8843" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35058" name="Кровавый Айдиоса Диадема Восст.">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8844" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35059" name="Кровавый Айдиоса Туника Восст.">
+        <set name="icon" value="icon.armor_t703_u_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1750"/>
+        <skills>
+            <skill id="8845" level="1"/>
+        </skills>
+        <for>
+       		<add stat="pDef" order="0x10" value="212"/>
+			<add stat="mDef" order="0x10" value="49"/>   
+            <add order="0x40" stat="maxMp" value="649"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35060" name="Кровавый Айдиоса Штаны Восст.">
+        <set name="icon" value="icon.armor_t703_l_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="850"/>
+        <skills>
+            <skill id="8846" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="132"/>
+			<add stat="mDef" order="0x10" value="33"/>
+            <add order="0x40" stat="maxMp" value="427"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35061" name="Кровавый Айдиоса Перчатки Восст.">
+        <set name="icon" value="icon.armor_t703_g_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8847" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35062" name="Кровавый Айдиоса Ботинки Восст.">
+        <set name="icon" value="icon.armor_t703_b_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8848" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35063" name="Темная Айдиоса Шлем Тяжелый">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8805" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35064" name="Темная Айдиоса Кираса Тяжелый">
+        <set name="icon" value="icon.armor_t701_u_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="7520"/>
+        <skills>
+            <skill id="8806" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="385"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35065" name="Темная Айдиоса Набедренники Тяжелый">
+        <set name="icon" value="icon.armor_t701_l_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="3170"/>
+        <skills>
+            <skill id="8807" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="241"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35066" name="Темная Айдиоса Рукавицы Тяжелый">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8808" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35067" name="Темная Айдиоса Сапоги Тяжелый">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8809" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35069" name="Темная Айдиоса Кожаный Шлем Легкий">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8810" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35070" name="Темная Айдиоса Кожаный Доспех Легкий">
+        <set name="icon" value="icon.armor_t702_u_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="4140"/>
+        <skills>
+            <skill id="8811" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="308"/>
+			<add stat="rEvas" order="0x10" value="5"/>
+	    	<add stat="mEvas" order="0x10" value="5"/>	
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35071" name="Темная Айдиоса Кожаный Брюки Легкий">
+        <set name="icon" value="icon.armor_t702_l_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1320"/>
+        <skills>
+            <skill id="8812" level="1"/>
+        </skills>
+        <for>
+			<add stat="pDef" order="0x10" value="192"/>
+			<add stat="rEvas" order="0x10" value="3"/>
+			<add stat="mEvas" order="0x10" value="3"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35072" name="Темная Айдиоса Кожаный Перчатки Легкий">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8813" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35073" name="Темная Айдиоса Кожаный Сапоги Легкий">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8814" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35074" name="Темная Айдиоса Диадема Магический">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8815" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35075" name="Темная Айдиоса Туника Магический">
+        <set name="icon" value="icon.armor_t703_u_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1750"/>
+        <skills>
+            <skill id="8816" level="1"/>
+        </skills>
+        <for>
+       		<add stat="pDef" order="0x10" value="212"/>
+			<add stat="mDef" order="0x10" value="49"/>  
+            <add order="0x40" stat="maxMp" value="649"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35076" name="Темная Айдиоса Штаны Магический">
+        <set name="icon" value="icon.armor_t703_l_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="850"/>
+        <skills>
+            <skill id="8817" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="132"/>
+			<add stat="mDef" order="0x10" value="33"/>
+            <add order="0x40" stat="maxMp" value="427"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35077" name="Темная Айдиоса Перчатки Магический">
+        <set name="icon" value="icon.armor_t703_g_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8818" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35078" name="Темная Айдиоса Ботинки Магический">
+        <set name="icon" value="icon.armor_t703_b_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8819" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35079" name="Кровавый Айдиоса Шлем Тяжелый">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8834" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35080" name="Кровавый Айдиоса Кираса Тяжелый">
+        <set name="icon" value="icon.armor_t701_u_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="7520"/>
+        <skills>
+            <skill id="8835" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="385"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
 		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1689"/>
-		<set name="icon" value="icon.armor_helmet_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="530"/>
-		<equip>
-			<slot id="HEAD"/>
-		</equip>
-		<set name="ex_type" value="HELMET"/>
-		<for>
-			<add stat="pDef" order="0x10" value="144"/>
-			<enchant stat="rEvas" order="0x40" value="0"/>
-			<enchant stat="mEvas" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-<armor id="35064" name="Dark Eternal Breastplate" add_name="Heavy">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="4504"/>
-		<set name="icon" value="icon.armor_t701_u_i00"/>
-		<set name="type" value="HEAVY"/>
-		<set name="weight" value="7520"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="CHEST"/>
-		</equip>
-		<set name="ex_type" value="UPPER_PIECE"/>
-		<for>
-			<add stat="pDef" order="0x10" value="385"/>
-			<enchant stat="pAtk" order="0x40" value="0"/>
-			<enchant stat="mAtk" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35065" name="Dark Eternal Gaiters" add_name="Heavy">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="2815"/>
-		<set name="icon" value="icon.armor_t701_l_i00"/>
-		<set name="type" value="HEAVY"/>
-		<set name="weight" value="3170"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="LEGS"/>
-		</equip>
-		<set name="ex_type" value="LOWER_PIECE"/>
-		<for>
-			<add stat="pDef" order="0x10" value="241"/>
-			<enchant stat="rCrit" order="0x40" value="0"/>
-			<enchant stat="mCritRate" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35066" name="Dark Eternal Gauntlet" add_name="Heavy">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1126"/>
-		<set name="icon" value="icon.armor_t701_g_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="510"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="GLOVES"/>
-		</equip>
-		<set name="ex_type" value="GLOVES"/>
-		<for>
-			<add stat="pDef" order="0x10" value="96"/>
-			<enchant stat="accCombat" order="0x40" value="0"/>
-			<enchant stat="maccCombat" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35067" name="Dark Eternal Boots" add_name="Heavy">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1126"/>
-		<set name="icon" value="icon.armor_t701_b_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="1070"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="FEET"/>
-		</equip>
-		<set name="ex_type" value="FEET"/>
-		<for>
-			<add stat="pDef" order="0x10" value="96"/>
-			<enchant stat="runSpd" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35069" name="Dark Eternal Leather Helmet" add_name="Light">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1689"/>
-		<set name="icon" value="icon.armor_leather_helmet_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="530"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="HEAD"/>
-		</equip>
-		<set name="ex_type" value="HELMET"/>
-		<for>
-			<add stat="pDef" order="0x10" value="144"/>
-			<enchant stat="rEvas" order="0x40" value="0"/>
-			<enchant stat="mEvas" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35070" name="Dark Eternal Leather Armor" add_name="Light">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="4504"/>
-		<set name="icon" value="icon.armor_t702_u_i00"/>
-		<set name="type" value="LIGHT"/>
-		<set name="weight" value="4140"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="CHEST"/>
-		</equip>
-		<set name="ex_type" value="UPPER_PIECE"/>
-		<for>
-			<add stat="pDef" order="0x10" value="289"/>
-			<enchant stat="pAtk" order="0x40" value="0"/>
-			<enchant stat="mAtk" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35071" name="Dark Eternal Leather Leggings" add_name="Light">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="2815"/>
-		<set name="icon" value="icon.armor_t702_l_i00"/>
-		<set name="type" value="LIGHT"/>
-		<set name="weight" value="1320"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="LEGS"/>
-		</equip>
-		<set name="ex_type" value="LOWER_PIECE"/>
-		<for>
-			<add stat="pDef" order="0x10" value="181"/>
-			<enchant stat="rCrit" order="0x40" value="0"/>
-			<enchant stat="mCritRate" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35072" name="Dark Eternal Leather Gloves" add_name="Light">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1126"/>
-		<set name="icon" value="icon.armor_t702_g_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="510"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="GLOVES"/>
-		</equip>
-		<set name="ex_type" value="GLOVES"/>
-		<for>
-			<add stat="pDef" order="0x10" value="96"/>
-			<enchant stat="accCombat" order="0x40" value="0"/>
-			<enchant stat="maccCombat" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35073" name="Dark Eternal Leather Boots" add_name="Light">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1126"/>
-		<set name="icon" value="icon.armor_t702_b_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="1070"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="FEET"/>
-		</equip>
-		<set name="ex_type" value="FEET"/>
-		<for>
-			<add stat="pDef" order="0x10" value="96"/>
-			<enchant stat="runSpd" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35074" name="Dark Eternal Circlet" add_name="Robe">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1689"/>
-		<set name="icon" value="icon.armor_circlet_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="530"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="HEAD"/>
-		</equip>
-		<set name="ex_type" value="HELMET"/>
-		<for>
-			<add stat="pDef" order="0x10" value="144"/>
-			<enchant stat="rEvas" order="0x40" value="0"/>
-			<enchant stat="mEvas" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35075" name="Dark Eternal Tunic" add_name="Robe">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="4504"/>
-		<set name="icon" value="icon.armor_t703_u_i00"/>
-		<set name="type" value="MAGIC"/>
-		<set name="weight" value="1750"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="CHEST"/>
-		</equip>
-		<set name="ex_type" value="UPPER_PIECE"/>
-		<for>
-			<add stat="pDef" order="0x10" value="193"/>
-			<enchant stat="pAtk" order="0x40" value="0"/>
-			<enchant stat="mAtk" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35076" name="Dark Eternal Stockings" add_name="Robe">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="2815"/>
-		<set name="icon" value="icon.armor_t703_l_i00"/>
-		<set name="type" value="MAGIC"/>
-		<set name="weight" value="850"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="LEGS"/>
-		</equip>
-		<set name="ex_type" value="LOWER_PIECE"/>
-		<for>
-			<add stat="pDef" order="0x10" value="121"/>
-			<enchant stat="rCrit" order="0x40" value="0"/>
-			<enchant stat="mCritRate" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35077" name="Dark Eternal Gloves" add_name="Robe">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1126"/>
-		<set name="icon" value="icon.armor_t703_g_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="510"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="GLOVES"/>
-		</equip>
-		<set name="ex_type" value="GLOVES"/>
-		<for>
-			<add stat="pDef" order="0x10" value="96"/>
-			<enchant stat="accCombat" order="0x40" value="0"/>
-			<enchant stat="maccCombat" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
-	<armor id="35078" name="Dark Eternal Shoes" add_name="Robe">
-		<set name="crystal_type" value="R99"/>
-		<set name="crystallizable" value="true"/>
-		<set name="crystal_count" value="1126"/>
-		<set name="icon" value="icon.armor_t703_b_i00"/>
-		<set name="type" value="NONE"/>
-		<set name="weight" value="1070"/>
-		<set name="isBlessed" value="true"/>
-		<equip>
-			<slot id="FEET"/>
-		</equip>
-		<set name="ex_type" value="FEET"/>
-		<for>
-			<add stat="pDef" order="0x10" value="96"/>
-			<enchant stat="runSpd" order="0x40" value="0"/>
-			<enchant stat="pDef" order="0x40" value="0"/>
-			<enchant stat="maxHp" order="0x80" value="0"/>
-		</for>
-	</armor>
+    </armor>
+    <armor id="35081" name="Кровавый Айдиоса Набедренники Тяжелый">
+        <set name="icon" value="icon.armor_t701_l_i00"/>
+        <set name="type" value="HEAVY"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="3170"/>
+        <skills>
+            <skill id="8836" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="241"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35082" name="Кровавый Айдиоса Рукавицы Тяжелый">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8837" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35083" name="Кровавый Айдиоса Сапоги Тяжелый">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8838" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35085" name="Кровавый Айдиоса Кожаный Шлем Легкий">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8839" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35086" name="Кровавый Айдиоса Кожаный Доспех Легкий">
+        <set name="icon" value="icon.armor_t702_u_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="4140"/>
+        <skills>
+            <skill id="8840" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="308"/>
+			<add stat="rEvas" order="0x10" value="5"/>
+	    	<add stat="mEvas" order="0x10" value="5"/>	
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35087" name="Кровавый Айдиоса Кожаный Брюки Легкий">
+        <set name="icon" value="icon.armor_t702_l_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1320"/>
+        <skills>
+            <skill id="8841" level="1"/>
+        </skills>
+        <for>
+			<add stat="pDef" order="0x10" value="192"/>
+			<add stat="rEvas" order="0x10" value="3"/>
+			<add stat="mEvas" order="0x10" value="3"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35088" name="Кровавый Айдиоса Кожаный Перчатки Легкий">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8842" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35089" name="Кровавый Айдиоса Кожаный Сапоги Легкий">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8843" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35090" name="Кровавый Айдиоса Диадема Магический">
+        <set name="icon" value="icon.armor_helmet_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="HEAD"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="960"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="530"/>
+        <skills>
+            <skill id="8844" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="144"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35091" name="Кровавый Айдиоса Туника Магический">
+        <set name="icon" value="icon.armor_t703_u_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="5133"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1750"/>
+        <skills>
+            <skill id="8845" level="1"/>
+        </skills>
+        <for>
+       		<add stat="pDef" order="0x10" value="212"/>
+			<add stat="mDef" order="0x10" value="49"/> 
+            <add order="0x40" stat="maxMp" value="649"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35092" name="Кровавый Айдиоса Штаны Магический">
+        <set name="icon" value="icon.armor_t703_l_i00"/>
+        <set name="type" value="MAGIC"/>
+        <equip>
+            <slot id="LEGS"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="4820"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="850"/>
+        <skills>
+            <skill id="8846" level="1"/>
+        </skills>
+        <for>
+            <add stat="pDef" order="0x10" value="132"/>
+			<add stat="mDef" order="0x10" value="33"/>
+            <add order="0x40" stat="maxMp" value="427"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35093" name="Кровавый Айдиоса Перчатки Магический">
+        <set name="icon" value="icon.armor_t703_g_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="GLOVES"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="640"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="510"/>
+        <skills>
+            <skill id="8847" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="35094" name="Кровавый Айдиоса Ботинки Магический">
+        <set name="icon" value="icon.armor_t703_b_i00"/>
+        <set name="type" value="LIGHT"/>
+        <equip>
+            <slot id="FEET"/>
+        </equip>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="2560"/>
+        <set name="crystal_type" value="R99"/><set name="crystallizable" value="true"/>
+        <set name="weight" value="1070"/>
+        <skills>
+            <skill id="8848" level="1"/>
+        </skills>
+        <for>
+            <add order="0x10" stat="pDef" value="96"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
 </list>

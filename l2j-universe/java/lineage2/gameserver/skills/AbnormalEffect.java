@@ -90,6 +90,11 @@ public enum AbnormalEffect
 	S_65("s_65", 0x000001, 65),
 	S_66("s_66", 0x000002, 66),
 	S_67("s_67", 0x000004, 67),
+	TALISMAN_POWER1("talismanpower1", 0x100000, 72),
+	TALISMAN_POWER2("talismanpower2", 0x200000, 73),
+	TALISMAN_POWER3("talismanpower3", 0x300000, 74),
+	TALISMAN_POWER4("talismanpower4", 0x400000, 75),
+	TALISMAN_POWER5("talismanpower5", 0x500000, 76),
 	
 	// event effects
 	E_AFRO_1("afrobaguette1", 0x000001, 0),

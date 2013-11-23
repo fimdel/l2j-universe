@@ -406,183 +406,186 @@
 	</skill>
 	<skill id="13384" levels="1" name="Equip Talisman of Infinity">
 	<!-- Talisman of Infinity burns with power. -->
-		<set name="magicType" val="SPECIAL"/>
-		<set name="magicLevel" val="97"/>
+		<set name="magicType" val="MUSIC"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<set name="skillType" val="CONT"/>
+		<set name="referenceItemId" val="34984" />
+		<set name="referenceItemMpConsume" val="0" />
 		<set name="target" val="TARGET_SELF"/>
-        <set name="skillType" val="BUFF"/>
-		<set name="operateType" val="OP_ACTIVE"/>
-		<set name="isReuseDelayPermanent" val="true"/>
-		<set name="hitTime" val="1000"/>
-		<set name="hitCancelTime" val="500"/>
-		<set name="referenceItemId" val="34984"/>
 		<for>
-			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
-				<add order="0x60" stat="maxHp" val="100"/>
-				<add order="0x60" stat="maxMp" val="100"/>
-				<add order="0x60" stat="maxCp" val="100"/>
-				<add order="0x60" stat="accCombat" val="1"/>
-				<add order="0x60" stat="rEvas" val="1"/>
-				<add order="0x60" stat="mEvas" val="1"/>
-				<add order="0x60" stat="mAtkSpd" val="10"/>
-				<add order="0x60" stat="pAtkSpd" val="10"/>
-				<add order="0x40" stat="absorbDam" val="0.2"/>
+			<effect count="0x7fffffff" name="Buff" abnormal="talismanpower1" time="36000" val="0" stackOrder="1" stackType="Talisman">
+				<add order="0x40" stat="maxCp" val="100"/>
+				<add order="0x40" stat="maxHp" val="100"/>
+				<add order="0x40" stat="maxMp" val="100"/>
+				<add order="0x40" stat="maccCombat" val="1"/>
+                <add order="0x40" stat="rEvas" val="1"/>
+				<add order="0x40" stat="absorbDam" val="2"/>
+				<add order="0x40" stat="mAtkSpd" val="10"/>
+                <add order="0x40" stat="pAtkSpd" val="10"/>
+				<mul order="0x30" stat="skillPower" val="1"/>
+				<mul order="0x30" stat="mpConsum" val="1"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="1"/>
 			</effect>
 		</for>
 	</skill>
 	<skill id="13385" levels="1" name="Equip Talisman of Destruction">
 	<!-- Talisman of Destruction burns with power. -->
-		<set name="magicType" val="SPECIAL"/>
-		<set name="magicLevel" val="97"/>
+			<set name="magicType" val="MUSIC"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<set name="referenceItemId" val="34985" />
+		<set name="referenceItemMpConsume" val="0" />
+		<set name="skillType" val="CONT"/>
 		<set name="target" val="TARGET_SELF"/>
-        <set name="skillType" val="BUFF"/>
-		<set name="operateType" val="OP_ACTIVE"/>
-		<set name="isReuseDelayPermanent" val="true"/>
-		<set name="hitTime" val="1000"/>
-		<set name="hitCancelTime" val="500"/>
-		<set name="referenceItemId" val="34985"/>
 		<for>
-			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
-				<add order="0x60" stat="maxHp" val="100"/>
-				<add order="0x60" stat="maxMp" val="100"/>
-				<add order="0x60" stat="maxCp" val="100"/>
-				<add order="0x60" stat="accCombat" val="2"/>
-				<add order="0x60" stat="rEvas" val="2"/>
-				<add order="0x60" stat="mEvas" val="2"/>
-				<add order="0x60" stat="rCrit" val="30"/>
-				<add order="0x60" stat="mAtkSpd" val="10"/>
-				<add order="0x60" stat="pAtkSpd" val="10"/>
-				<add order="0x40" stat="absorbDam" val="0.2"/>
+			<effect count="0x7fffffff" name="Buff" abnormal="talismanpower2" time="36000" val="0" stackOrder="2" stackType="Talisman">
+				<add order="0x40" stat="maxCp" val="100"/>
+				<add order="0x40" stat="maxHp" val="100"/>
+				<add order="0x40" stat="maxMp" val="100"/>
+				<add order="0x40" stat="maccCombat" val="1"/>
+                <add order="0x40" stat="rEvas" val="1"/>
+				<add order="0x40" stat="absorbDam" val="2"/>
+				<add order="0x40" stat="mAtkSpd" val="10"/>
+                <add order="0x40" stat="pAtkSpd" val="10"/>
+				<add order="0x40" stat="rCrit" val="30"/>
+				<add order="0x40" stat="mCritRate" val="10"/>
+				<mul order="0x30" stat="skillPower" val="1"/>
+				<mul order="0x30" stat="mpConsum" val="1"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="1"/>
 			</effect>
 		</for>
 	</skill>
 	<skill id="13386" levels="1" name="Equip Talisman of Annihilation">
 	<!-- Talisman of Annihilation burns with power. -->
-		<set name="magicType" val="SPECIAL"/>
-		<set name="magicLevel" val="97"/>
-		<set name="target" val="TARGET_SELF"/>
-        <set name="skillType" val="BUFF"/>
+		<set name="magicType" val="MUSIC"/>
 		<set name="operateType" val="OP_ACTIVE"/>
-		<set name="isReuseDelayPermanent" val="true"/>
-		<set name="hitTime" val="1000"/>
-		<set name="hitCancelTime" val="500"/>
-		<set name="referenceItemId" val="34986"/>
+		<set name="referenceItemId" val="34986" />
+		<set name="referenceItemMpConsume" val="0" />
+		<set name="skillType" val="BUFF"/>
+		<set name="target" val="TARGET_SELF"/>
 		<for>
-			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
-				<add order="0x60" stat="maxHp" val="300"/>
-				<add order="0x60" stat="maxMp" val="300"/>
-				<add order="0x60" stat="maxCp" val="300"/>
-				<add order="0x60" stat="accCombat" val="2"/>
-				<add order="0x60" stat="rEvas" val="2"/>
-				<add order="0x60" stat="mEvas" val="2"/>
-				<add order="0x60" stat="rCrit" val="30"/>
-				<add order="0x60" stat="mAtkSpd" val="20"/>
-				<add order="0x60" stat="pAtkSpd" val="20"/>
-				<add order="0x40" stat="absorbDam" val="0.3"/>
-				<add order="0x60" stat="pAtk" val="103"/>
-				<add order="0x60" stat="mAtk" val="156"/>
+			<effect count="0x7fffffff" name="Buff" abnormal="talismanpower2" time="36000" val="0" stackOrder="3" stackType="Talisman">
+				<add order="0x40" stat="maxCp" val="300"/>
+				<add order="0x40" stat="maxHp" val="300"/>
+				<add order="0x40" stat="maxMp" val="300"/>
+				<add order="0x40" stat="maccCombat" val="2"/>
+                <add order="0x40" stat="rEvas" val="2"/>
+				<add order="0x40" stat="absorbDam" val="3"/>
+				<add order="0x40" stat="mAtkSpd" val="20"/>
+                <add order="0x40" stat="pAtkSpd" val="20"/>
+				<add order="0x40" stat="rCrit" val="30"/>
+				<add order="0x40" stat="mCritRate" val="10"/>
+				<add order="0x40" stat="pAtk" val="103"/>
+                <add order="0x40" stat="mAtk" val="156"/>
+				<mul order="0x30" stat="skillPower" val="1"/>
+				<mul order="0x30" stat="mpConsum" val="1"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="1"/>
 			</effect>
 		</for>
 	</skill>
 	<skill id="13387" levels="1" name="Equip Talisman of Hellfire">
 	<!-- Talisman of Hellfire burns with power. -->
-		<set name="magicType" val="SPECIAL"/>
-		<set name="magicLevel" val="97"/>
+		<set name="magicType" val="MUSIC"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<set name="skillType" val="CONT"/>
+		<set name="isForceAura" val="true"/>
 		<set name="target" val="TARGET_SELF"/>
-        <set name="skillType" val="BUFF"/>
-		<set name="operateType" val="OP_ACTIVE"/>
-		<set name="isReuseDelayPermanent" val="true"/>
-		<set name="hitTime" val="1000"/>
-		<set name="hitCancelTime" val="500"/>
-		<set name="referenceItemId" val="34987"/>
+		<set name="referenceItemId" val="34987" />
+		<set name="referenceItemMpConsume" val="0" />
+		<set name="isTrigger" val="true"/>
 		<for>
-			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
-				<add order="0x60" stat="maxHp" val="400"/>
-				<add order="0x60" stat="maxMp" val="400"/>
-				<add order="0x60" stat="maxCp" val="400"/>
-				<add order="0x60" stat="accCombat" val="2"/>
-				<add order="0x60" stat="rEvas" val="2"/>
-				<add order="0x60" stat="mEvas" val="2"/>
-				<add order="0x60" stat="rCrit" val="30"/>
-				<add order="0x60" stat="mAtkSpd" val="30"/>
-				<add order="0x60" stat="pAtkSpd" val="30"/>
-				<add order="0x40" stat="absorbDam" val="0.3"/>
-				<add order="0x60" stat="pAtk" val="103"/>
-				<add order="0x60" stat="mAtk" val="156"/>
-				<add order="0x60" stat="pDef" val="20"/>
-				<add order="0x60" stat="mDef" val="20"/>
-				<add order="0x60" stat="reflectDam" val="10"/>
-				<mul order="0x40" stat="skillPower" val="1.00"/>
+			<effect count="0x7fffffff" name="Buff" abnormal="talismanpower3" time="36000" val="0" stackOrder="4" stackType="Talisman">
+				<add order="0x40" stat="maxCp" val="400"/>
+				<add order="0x40" stat="maxHp" val="400"/>
+				<add order="0x40" stat="maxMp" val="400"/>
+				<add order="0x40" stat="maccCombat" val="2"/>
+                <add order="0x40" stat="rEvas" val="2"/>
+				<add order="0x40" stat="absorbDam" val="3"/>
+				<add order="0x40" stat="mAtkSpd" val="30"/>
+                <add order="0x40" stat="pAtkSpd" val="30"/>
+				<add order="0x40" stat="rCrit" val="30"/>
+				<add order="0x40" stat="mCritRate" val="10"/>
+				<add order="0x40" stat="pAtk" val="103"/>
+                <add order="0x40" stat="mAtk" val="156"/>
+				<mul order="0x30" stat="skillPower" val="1.01"/>
+				<add order="0x40" stat="pDef" val="20"/>
+                <add order="0x40" stat="mDef" val="20"/>
+				<mul order="0x30" stat="mpConsum" val="1"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="1"/>
+				
 			</effect>
 		</for>
 	</skill>
 	<skill id="13388" levels="1" name="Equip Talisman of Desire">
 	<!-- Talisman of Desire burns with power. -->
-		<set name="magicType" val="SPECIAL"/>
-		<set name="magicLevel" val="97"/>
+		<set name="magicType" val="MUSIC"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<set name="skillType" val="CONT"/>
 		<set name="target" val="TARGET_SELF"/>
-        <set name="skillType" val="BUFF"/>
-		<set name="operateType" val="OP_ACTIVE"/>
-		<set name="isReuseDelayPermanent" val="true"/>
-		<set name="hitTime" val="1000"/>
-		<set name="hitCancelTime" val="500"/>
-		<set name="referenceItemId" val="34988"/>
+		<set name="referenceItemId" val="34988" />
+		<set name="referenceItemMpConsume" val="0" />
+		<set name="isTrigger" val="true"/>
 		<for>
-			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
-				<add order="0x60" stat="maxHp" val="500"/>
-				<add order="0x60" stat="maxMp" val="500"/>
-				<add order="0x60" stat="maxCp" val="500"/>
-				<add order="0x60" stat="accCombat" val="2"/>
-				<add order="0x60" stat="rEvas" val="2"/>
-				<add order="0x60" stat="mEvas" val="2"/>
-				<add order="0x60" stat="rCrit" val="30"/>
-				<add order="0x60" stat="mAtkSpd" val="40"/>
-				<add order="0x60" stat="pAtkSpd" val="40"/>
-				<add order="0x40" stat="absorbDam" val="0.3"/>
-				<add order="0x60" stat="pAtk" val="203"/>
-				<add order="0x60" stat="mAtk" val="256"/>
-				<add order="0x60" stat="pDef" val="40"/>
-				<add order="0x60" stat="mDef" val="40"/>
-				<add order="0x60" stat="reflectDam" val="20"/>
-				<mul order="0x40" stat="skillPower" val="2.00"/>
+			<effect count="0x7fffffff" name="Buff" abnormal="talismanpower4" time="36000" val="0" stackOrder="5" stackType="Talisman">
+				<add order="0x40" stat="maxCp" val="500"/>
+				<add order="0x40" stat="maxHp" val="500"/>
+				<add order="0x40" stat="maxMp" val="500"/>
+				<add order="0x40" stat="maccCombat" val="2"/>
+                <add order="0x40" stat="rEvas" val="2"/>
+				<add order="0x40" stat="absorbDam" val="3"/>
+				<add order="0x40" stat="mAtkSpd" val="40"/>
+                <add order="0x40" stat="pAtkSpd" val="40"/>
+				<add order="0x40" stat="rCrit" val="30"/>
+				<add order="0x40" stat="mCritRate" val="10"/>
+				<add order="0x40" stat="pAtk" val="203"/>
+                <add order="0x40" stat="mAtk" val="256"/>
+				<mul order="0x30" stat="skillPower" val="1.02"/>
+				<add order="0x40" stat="pDef" val="40"/>
+                <add order="0x40" stat="mDef" val="40"/>
+				<mul order="0x30" stat="mpConsum" val="0.99"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.99"/>
+				<add order="0x10" stat="STR" val="2"/>
+                <add order="0x10" stat="INT" val="2"/>
+                <add order="0x10" stat="CON" val="2"/>
+                <add order="0x10" stat="MEN" val="2"/>
 			</effect>
 		</for>
 	</skill>
 	<skill id="13389" levels="1" name="Equip Talisman of Longing">
 	<!-- Talisman of Longing burns with power. -->
 		<set name="magicType" val="SPECIAL"/>
-		<set name="magicLevel" val="97"/>
+		<set name="operateType" val="OP_TOGGLE"/>
+		<set name="referenceItemId" val="34989" />
+		<set name="referenceItemMpConsume" val="0" />
+		<set name="isForceAura" val="true"/>
+		<set name="skillType" val="CONT"/>
 		<set name="target" val="TARGET_SELF"/>
-        <set name="skillType" val="BUFF"/>
-		<set name="operateType" val="OP_ACTIVE"/>
-		<set name="isReuseDelayPermanent" val="true"/>
-		<set name="hitTime" val="1000"/>
-		<set name="hitCancelTime" val="500"/>
-		<set name="referenceItemId" val="34989"/>
+		<set name="isReuseDelayPermanent" val="true" />
 		<for>
-			<effect count="1" name="Buff" time="3600" stackType="Talisman" val="2">
-				<add order="0x60" stat="STR" val="2"/>
-				<add order="0x60" stat="DEX" val="2"/>
-				<add order="0x60" stat="CON" val="2"/>
-				<add order="0x60" stat="INT" val="2"/>
-				<add order="0x60" stat="WIT" val="2"/>
-				<add order="0x60" stat="MEN" val="2"/>
-				<add order="0x60" stat="maxHp" val="600"/>
-				<add order="0x60" stat="maxMp" val="600"/>
-				<add order="0x60" stat="maxCp" val="600"/>
-				<add order="0x60" stat="accCombat" val="2"/>
-				<add order="0x60" stat="rEvas" val="2"/>
-				<add order="0x60" stat="mEvas" val="2"/>
-				<add order="0x60" stat="rCrit" val="30"/>
-				<add order="0x60" stat="mAtkSpd" val="50"/>
-				<add order="0x60" stat="pAtkSpd" val="50"/>
-				<add order="0x40" stat="absorbDam" val="0.3"/>
-				<add order="0x60" stat="pAtk" val="303"/>
-				<add order="0x60" stat="mAtk" val="356"/>
-				<add order="0x60" stat="pDef" val="60"/>
-				<add order="0x60" stat="mDef" val="60"/>
-				<add order="0x60" stat="reflectDam" val="30"/>
-				<mul order="0x40" stat="skillPower" val="4.00"/>
+			<effect count="0x7fffffff" name="Buff" abnormal="talismanpower5" time="360000" val="1" stackOrder="6" stackType="Talisman">
+				<add order="0x40" stat="maxCp" val="600"/>
+				<add order="0x40" stat="maxHp" val="600"/>
+				<add order="0x40" stat="maxMp" val="600"/>
+				<add order="0x40" stat="maccCombat" val="2"/>
+                <add order="0x40" stat="rEvas" val="2"/>
+				<add order="0x40" stat="absorbDam" val="3"/>
+				<add order="0x40" stat="mAtkSpd" val="50"/>
+                <add order="0x40" stat="pAtkSpd" val="50"/>
+				<add order="0x40" stat="rCrit" val="30"/>
+				<add order="0x40" stat="mCritRate" val="10"/>
+				<add order="0x40" stat="pAtk" val="303"/>
+                <add order="0x40" stat="mAtk" val="356"/>
+				<mul order="0x30" stat="skillPower" val="1.04"/>
+				<add order="0x40" stat="pDef" val="60"/>
+                <add order="0x40" stat="mDef" val="60"/>
+				<mul order="0x30" stat="mpConsum" val="0.98"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.98"/>
+				<add order="0x10" stat="STR" val="2"/>
+                <add order="0x10" stat="INT" val="2"/>
+                <add order="0x10" stat="CON" val="2"/>
+                <add order="0x10" stat="MEN" val="2"/>
+				<add order="0x10" stat="DEX" val="2"/>
+                <add order="0x10" stat="WIT" val="2"/>
 			</effect>
 		</for>
-	</skill>
+	</skill>	
 </list>

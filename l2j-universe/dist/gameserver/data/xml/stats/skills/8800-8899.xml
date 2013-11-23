@@ -1,69 +1,808 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
-   	<skill id="8800" levels="1" name="Top-Grade Guard Ring - Innadril">
-    <!-- Increases Resistance to Holy by 15. -->
+  <skill id="8800" levels="1" name="Совершенное Кольцо Гвардейца- Иннадрил.">
+        <!-- Darvin Увеличивает защиту оружия от Света на 15-->
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="OP_PASSIVE"/>
-		<for>
+        <for>
             <add order="0x40" stat="defenceHoly" val="15"/>
         </for>
-	</skill>
-	<skill id="8801" levels="1" name="Top-Grade Guard Ring - Goddard">
-    <!-- Increases Resistance to Dark by 15. -->
+    </skill>
+    <skill id="8801" levels="1" name="Совершенное Кольцо Гвардейца- Годард">
+        <!-- Darvin Увеличивает защиту оружия от Тьмы на 15-->
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="OP_PASSIVE"/>
-		<for>
+        <for>
             <add order="0x40" stat="defenceUnholy" val="15"/>
         </for>
-	</skill>
-	<skill id="8802" levels="1" name="Top-Grade Guard Ring - Rune">
-    <!-- Increases Resistance to wind by 15. -->
+    </skill>
+    <skill id="8802" levels="1" name="Совершенное Кольцо Гвардейца- Иннадрил">
+        <!-- Darvin Увеличивает защиту оружия от ветра на 15-->
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="OP_PASSIVE"/>
-		<for>
+        <for>
             <add order="0x40" stat="defenceWind" val="15"/>
         </for>
-	</skill>
-	<skill id="8803" levels="1" name="Top-Grade Guard Ring - Schuttgart">
-    <!-- Increases Resistance to Dark by 15. -->
+    </skill>
+    <skill id="8803" levels="1" name="Совершенное Кольцо Гвардейца- Шутгарт">
+        <!-- Darvin Увеличивает защиту оружия от тьмы на 15-->
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="OP_PASSIVE"/>
-		<for>
+        <for>
             <add order="0x40" stat="defenceUnholy" val="15"/>
         </for>
-	</skill>
-	<skill id="8804" levels="1" name="Refined Tauti Bracelet">
-	<!-- INT+1,STR+1. 5 Talisman(s) can be equipped. -->
-		<set name="target" val="TARGET_SELF"/>
-		<set name="skillType" val="BUFF"/>
-		<set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+	<skill id="8804" levels="1" name="Bracelet Tauty full">
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
 		<for>
-			<add order="0x10" stat="STR" val="1"/>
-			<add order="0x10" stat="INT" val="1"/>
-			<add order="0x40" stat="maxMp" val="216"/>
-			<add order="0x40" stat="talismansLimit" val="5"/>
+			<add order="0x40" stat="talismansLimit" val="5" />
+			<add order="0x10" stat="INT" val="1" />
+			<add order="0x10" stat="STR" val="1" />
 		</for>
 	</skill>
-	<skill id="8870" levels="1" name="Tauti's Ring">
-    <!-- Increases Critical Damage by 15%,
-		Skill Attack by 5%, 
-		damage inflicted during PvP by 5%, 
-		resistance to Paralysis/Yoke/Exile by 10, 
-		resistance to Damage Reflect by 5, resistance to HP Drain by 5, and decreases damage received during PvP by 5%. Increases Critical by 54 when equipped with a blunt. -->
+	<skill id="8805" levels="1" name="Темный Шлем Айдиоса">
+		<!-- Понижение PVP урона на 3% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.03" />
+		</for>
+	</skill>
+	<skill id="8806" levels="1" name="Темная Кираса Айдиоса">
+		<!-- Понижение PVP урона на 8% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.08" />
+		</for>
+	</skill>
+	<skill id="8807" levels="1" name="Темные Набедренники Айдиоса">
+		<!-- Понижение PVP урона на 5% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8808" levels="1" name="Темные Рукавицы Айдиоса">
+		<!-- Понижение PVP урона на 2% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8809" levels="1" name="Темные Сапоги Айдиоса">
+		<!-- Понижение PVP урона на 2% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8810" levels="1" name="Темный Кожаный Шлем Айдиоса">
+		<!-- Понижение PVP урона на 3% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.03" />
+		</for>
+	</skill>
+	<skill id="8811" levels="1" name="Темный Кожаный Доспех Айдиоса">
+		<!-- Понижение PVP урона на 8% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.08" />
+		</for>
+	</skill>
+	<skill id="8812" levels="1" name="Темные Кожаные Брюки Айдиоса">
+		<!-- Понижение PVP урона на 5% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8813" levels="1" name="Темные Кожаные Перчатки Айдиоса">
+		<!-- Понижение PVP урона на 2% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8814" levels="1" name="Темные Кожаные Сапоги Айдиоса">
+		<!-- Понижение PVP урона на 2% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8815" levels="1" name="Темная Диадема Айдиоса">
+		<!-- Понижение PVP урона на 3% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.03" />
+		</for>
+	</skill>
+	<skill id="8816" levels="1" name="Темная Туника Айдиоса">
+		<!-- Понижение PVP урона на 8% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.08" />
+		</for>
+	</skill>
+	<skill id="8817" levels="1" name="Темные Штаны Айдиоса">
+		<!-- Понижение PVP урона на 5% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8818" levels="1" name="Темные Перчатки Айдиоса">
+		<!-- Понижение PVP урона на 2% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8819" levels="1" name="Темные Ботинки Айдиоса">
+		<!-- Понижение PVP урона на 2% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8820" levels="1" name="Темное Острие Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8821" levels="1" name="Темный Резак Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8822" levels="1" name="Темный Эспадон Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8823" levels="1" name="Темный Мститель Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8824" levels="1" name="Темный Воитель Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8825" levels="1" name="Темный Буревестник Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8826" levels="1" name="Темный Бросок Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8827" levels="1" name="Темный Страж Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8828" levels="1" name="Темный Расчленитель Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8829" levels="1" name="Темный Заклинатель Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8830" levels="1" name="Темное Возмездие Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8831" levels="1" name="Темные Парные Мечи Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8832" levels="1" name="Темные Парные Кинжалы Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8833" levels="1" name="Темные Парные Дубины Хелиоса">
+		<!-- PVP урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	 <skill id="8834" levels="1" name="Кровавый Шлем Айдиоса">
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.03" />
+		</for>
+	</skill>
+	<skill id="8835" levels="1" name="Кровавый Кираса Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.08" />
+		</for>
+	</skill>
+	<skill id="8836" levels="1" name="Кровавый Набедренники Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8837" levels="1" name="Кровавый Рукавицы Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8838" levels="1" name="Кровавый Сапоги Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8839" levels="1" name="Кровавый Кожаный Шлем Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.03" />
+		</for>
+	</skill>
+	<skill id="8840" levels="1" name="Кровавый Кожаный Доспех Айдиоса">
+
+	   	<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.08" />
+		</for>
+	</skill>
+	<skill id="8841" levels="1" name="Кровавый Кожаные Брюки Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8842" levels="1" name="Кровавый Кожаные Перчатки Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8843" levels="1" name="Кровавый Кожаные Сапоги Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8844" levels="1" name="Кровавый Диадема Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.03" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.03" />
+		</for>
+	</skill>
+	<skill id="8845" levels="1" name="Кровавый Туника Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.08" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.08" />
+		</for>
+	</skill>
+	<skill id="8846" levels="1" name="Кровавый Штаны Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8847" levels="1" name="Кровавый Перчатки Айдиоса">
+
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8848" levels="1" name="Кровавый Ботинки Айдиоса">
+		<!-- Понижение pvp урона на 2% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pvpPhysDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.02" />
+			<mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.02" />
+		</for>
+	</skill>
+	<skill id="8849" levels="1" name="Кровавый Острие Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8850" levels="1" name="Кровавый Резак Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8851" levels="1" name="Кровавый Эспадон Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8852" levels="1" name="Кровавый Мститель Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8853" levels="1" name="Кровавый Воитель Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8854" levels="1" name="Кровавый Буревестник Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8855" levels="1" name="Кровавый Бросок Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8856" levels="1" name="Кровавый Страж Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8857" levels="1" name="Кровавый Расчленитель Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8858" levels="1" name="Кровавый Заклинатель Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8859" levels="1" name="Кровавый Возмездие Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8860" levels="1" name="Кровавый Парные Мечи Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8861" levels="1" name="Кровавый Парные Кинжалы Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8862" levels="1" name="Кровавый Парные Дубины Хелиоса">
+		<!-- pvp урон +15%, Макс. НР/МР/CP +10% -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="maxCp" val="1.10" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.15" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.15" />
+		</for>
+	</skill>
+	<skill id="8863" levels="1" name="Браслет Таути">
+		<table name="#values">5</table>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="talismansLimit" val="#values" />
+		</for>
+	</skill>
+    <skill id="8864" levels="6" name="Талисман Бессмертия">	
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="referenceItemId" val="#item" />
+		<set name="referenceItemMpConsume" val="0" />
+		<table name="#item">34984 34985 34986 34987 34988 34989</table>
+		<table name="#id">13384 13385 13386 13387 13388 13389</table>
+		<triggers>
+			<trigger id="#id" level="1" type="ADD" chance="100" cancel_effects_on_remove="true"/>
+		</triggers>
+    </skill>
+    <skill id="8870" levels="1" name="Кольцо Таути">
+        <!-- Атака огнем/тьмой +25, MP +38, сила Крит. Атк. +15%, мощность умений +5%,
+      наносимый урон в PvP +5%, сопротивления параличу/оковам/изгнанию +10,
+      сопротивление отражению урона +5, сопротивления вампиризму +5; получаемый урон в PvP -5%,
+      шанс Крит. Атк. при использовании дробящего оружия +54. -->
         <set name="magicLevel" val="99"/>
         <set name="target" val="TARGET_SELF"/>
         <set name="skillType" val="BUFF"/>
         <set name="operateType" val="OP_PASSIVE"/>
         <for>
-			<add order="0x40" stat="defenceUnholy" val="25"/>
-			<add order="0x40" stat="defenceFire" val="25"/>
+            <add order="0x40" stat="attackUnholy" val="25"/>
+            <add order="0x40" stat="attackFire" val="25"/>
             <mul order="0x30" stat="cAtk" val="1.15"/>
-            <mul order="0x30" stat="skillPower" val="1.05"/>
             <mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+            <mul order="0x30" stat="skillPower" val="1.05"/>
             <add order="0x40" stat="rootResist" val="10"/>
             <add order="0x40" stat="paralyzeResist" val="10"/>
             <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
@@ -73,5 +812,342 @@
                 <using kind="Sword, Big Sword"/>
             </add>
         </for>
+	</skill>
+    <skill id="8871" levels="1" name="Футболка Славы">
+		<!-- Макс. HP +465. -->
+		<set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="maxHp" val="465" />
+		</for>
+	</skill>
+    <skill id="8872" levels="1" name="Элегантная Модная Шляпа, воплощение стараний GM">
+		<!-- Физ. Атк. +5%. -->
+		<set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="pAtk" val="1.05" />
+		</for>
+	</skill>
+    <skill id="8873" levels="1" name="Элегантная Модная Шляпа, воплощение стараний GM">
+		<!-- Маг. Атк. +10%. -->
+		<set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="mAtk" val="1.1" />
+		</for>
+	</skill>
+    <skill id="8874" levels="1" name="Элегантная Модная Шляпа, воплощение стараний GM">
+		<!-- МДР +3. -->
+		<set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="WIT" val="3"/>	
+		</for>
+	</skill>
+    <skill id="8875" levels="1" name="Элегантная Модная Шляпа, вместилище благословений GM.">
+		<!-- Физ. Атк.  +5% шанс Крит. Атк. +50. -->
+		<set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="pAtk" val="1.05" />
+			<add order="0x40" stat="rCrit" val="50"/>	
+		</for>
+	</skill>
+    <skill id="8876" levels="1" name="Элегантная Модная Шляпа, вместилище благословений GM.">
+		<!-- Маг. Атк. +10%, ИНТ +3. -->
+		<set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="mAtk" val="1.1" />
+			<add order="0x10" stat="INT" val="3"/>
+		</for>
+	</skill>
+    <skill id="8877" levels="1" name="Элегантная Модная Шляпа, вместилище благословений GM.">
+		<!-- МДР +3, ДУХ +3. -->
+		<set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="WIT" val="3"/>
+			<add order="0x10" stat="MEN" val="3"/>
+		</for>
+	</skill>
+	<skill id="8878" levels="1" name="Таути">
+		<!-- Увеличивает Макс. HP, Физ. Атк., Скор. Атк., шанс Крит. Атк., увеличивает урон, наносимый в PVP -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.15"/>
+			<add order="0x40" stat="baseCrit" val="15.5" />
+			<mul order="0x30" stat="maxHp" val="1.25" />
+			<add order="0x40" stat="pAtk" val="415" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8879" levels="1" name="Таути">
+		<!-- Увеличивает Макс. HP, Физ. Атк., Скор. Атк., шанс Крит. Атк., увеличивает урон, наносимый в PVP -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.15"/>
+			<add order="0x40" stat="baseCrit" val="15.5" />
+			<mul order="0x30" stat="maxHp" val="1.25" />
+			<add order="0x40" stat="pAtk" val="415" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8880" levels="1" name="Таути">
+		<!-- Увеличивает Макс. HP, Физ. Атк., Скор. Атк., шанс Крит. Атк., увеличивает урон, наносимый в PVP -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.15"/>
+			<add order="0x40" stat="baseCrit" val="15.5" />
+			<mul order="0x30" stat="maxHp" val="1.25" />
+			<add order="0x40" stat="pAtk" val="415" />
+			<mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05" />
+			<mul order="0x30" stat="pvpPhysDmgBonus" val="1.05" />
+		</for>
+	</skill>
+	<skill id="8890" levels="1" name="Защита"> <!--TODO-->
+        <table name="#spd">100</table>
+		<set name="magicType" val="MAGIC"/>
+        <set name="magicLevel" val="1"/>
+		<set name="reuseDelay" val="300000"/>
+        <set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NEGATE_EFFECTS"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<set name="negateEffects" val="Sleep;Root;Stun;Paralyze;Mute"/>        
+        <for>
+            <effect name="Buff" time="120" val="0" stackOrder="11">
+                <add order="0x40" stat="runSpd" val="#spd"/>               
+            </effect>
+        </for>
+	</skill>	
+	<skill id="8891" levels="1" name="Поклонение">
+		<!-- в течение 5 сек. поглощает силу окружающих врагов. Для использования умения требуется 1 Кровь Дракона. Время перезарядки: 5 мин. -->
+		<set name="coolTime" val="720" />
+		<set name="reuseDelay" val="300000"/>		
+		<set name="hitTime" val="1080" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="70" /> <!--TODO-->
+		<set name="activateRate" val="100" />
+		<set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>		
+		<set name="target" val="TARGET_AREA"/>
+		<set name="skillType" val="BLEED" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="attack" />
+		<set name="trait" val="BLEED" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect abnormal="bleeding" count="20" name="Bleed" stackType="Bleed" stackOrder="1" time="1" val="900">				
+			</effect>
+		</for>
+	</skill>	
+	<skill id="8892" levels="1" name="Кровопускание"> <!--TODO-->
+    <!-- Вызывает кровотечение у окружающих врагов. Для использования умения требуется 1 Кровь Дракона.	-->        
+		<set name="coolTime" val="720" />
+		<set name="reuseDelay" val="300000"/>		
+		<set name="hitTime" val="1080" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="70" /> <!--TODO-->
+		<set name="activateRate" val="100" />
+		<set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>		
+		<set name="target" val="TARGET_AREA" />
+		<set name="skillType" val="BLEED" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="attack" />
+		<set name="trait" val="BLEED" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect abnormal="bleeding" count="20" name="Bleed" stackType="Bleed" stackOrder="1" time="1" val="900">				
+			</effect>
+		</for>
     </skill>
+	<skill id="8893" levels="1" name="Дыхание Антараса">
+		<!-- Скор. Атк./Скор. Маг./Скорость -90% у окружающих врагов. Вызывает постепенного окаменение тела врага и последующий паралич на 10 секунд. Для использования умения требуется 1 Кровь Дракона. Время действия: 5 сек. Время перезарядки 5 мин. -->
+		<set name="reuseDelay" val="300000"/>
+		<set name="magicLevel" val="1"/>		
+		<set name="castRange" val="40"/>
+		<set name="coolTime" val="370"/>
+		<set name="hitTime" val="1130"/>		
+		<set name="target" val="TARGET_ONE"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>		
+		<set name="skillType" val="PARALYZE"/>
+		<set name="trait" val="PARALYZE"/>
+		<set name="isDebuff" val="true"/>
+		<set name="lvlDepend" val="1"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="delayedEffect" val="8894"/>
+		<for>
+		<effect count="1" name="Debuff" time="5" chance="-1" val="100">
+		    <mul order="0x30" stat="runSpd" val="-1.90" />
+		    <mul order="0x30" stat="pAtkSpd" val="-1.90" />
+		    <mul order="0x30" stat="mAtkSpd" val="-1.90" />
+		</effect>
+		</for>
+	</skill>	
+	<skill id="8894" levels="1" name="Дыхание Паралича">
+		<!-- Обращает в камень и вызывает паралич. -->
+		<set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="PARALYZE"/>
+		<for>			
+		    <effect count="1" name="Paralyze" stackOrder="1" stackType="paralyze" time="10" val="0"/>
+		</for>
+    </skill>	
+	<skill id="8895" levels="1" name="Хвост Антараса">
+		<!-- Сметает СР окружающих врагов. Для использования умения требуется 1 Кровь Дракона. Время действия: 5 сек. Время перезарядки 5 мин. -->
+		<set name="reuseDelay" val="300000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="1800"/>
+		<set name="hitCancelTime" val="500"/>				
+		<set name="target" val="TARGET_AREA"/>
+		<set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<set name="isOffensive" val="true"/>
+		<set name="trait" val="DEATH"/>
+		<set name="saveVs" val="CON"/>
+		<set name="isReflectable" val="false"/>
+		<for>
+			<effect count="1" name="Debuff" time="5" val="100" chance="-1">
+				<sub order="0x40" stat="debuffResist" val="30"/>				
+				<mul order="0x30" stat="maxCp" val="-1.1" />
+			</effect>
+			<effect count="1" name="CPDamPercent" time="5" val="100" chance="-1" isReflectable="false"/>			
+		</for>		
+	</skill>
+	<skill id="8896" levels="1" name="Дыхание Валакаса">
+		<!-- Скор. Атк./Скор. Маг./Скорость -90% у окружающих врагов. Вызывает постепенного окаменение тела врага и последующий паралич на 10 секунд. Для использования умения требуется 1 Кровь Дракона. Время действия: 5 сек. Время перезарядки 5 мин. -->
+		<set name="reuseDelay" val="300000"/>
+		<set name="magicLevel" val="1"/>		
+		<set name="castRange" val="40"/>
+		<set name="coolTime" val="370"/>
+		<set name="hitTime" val="1130"/>		
+		<set name="target" val="TARGET_ONE"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>			
+		<set name="skillType" val="PARALYZE"/>
+		<set name="trait" val="PARALYZE"/>
+		<set name="isDebuff" val="true"/>
+		<set name="lvlDepend" val="1"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="delayedEffect" val="8894"/>
+		<for>
+		<effect count="1" name="Debuff" time="5" chance="-1" val="100">
+		    <mul order="0x30" stat="runSpd" val="0.90" />
+		    <mul order="0x30" stat="pAtkSpd" val="0.90" />
+		    <mul order="0x30" stat="mAtkSpd" val="0.90" />
+		</effect>
+		</for>	
+	</skill>
+	<skill id="8897" levels="1" name="Метеор Валакаса">
+		<!-- Сметает СР окружающих врагов. Для использования умения требуется 1 Кровь Дракона. Время действия: 5 сек. Время перезарядки 5 мин. -->
+		<set name="reuseDelay" val="300000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="1800"/>
+		<set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>
+		<set name="hitCancelTime" val="500"/>				
+		<set name="target" val="TARGET_AREA"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<set name="isOffensive" val="true"/>
+		<set name="trait" val="DEATH"/>
+		<set name="saveVs" val="CON"/>
+		<set name="isReflectable" val="false"/>
+		<for>
+			<effect count="1" name="Debuff" time="5" val="100" chance="-1">
+				<sub order="0x40" stat="debuffResist" val="30"/>				
+				<mul order="0x30" stat="maxCp" val="-1.1" />
+			</effect>
+			<effect count="1" name="CPDamPercent" time="5" val="100" chance="-1" isReflectable="false"/>			
+		</for>	
+	</skill>
+	<skill id="8898" levels="1" name="Дыхание Линдвиора">
+		<!-- Скор. Атк./Скор. Маг./Скорость -90% у окружающих врагов. Вызывает постепенного окаменение тела врага и последующий паралич на 10 секунд. Для использования умения требуется 1 Кровь Дракона. Время действия: 5 сек. Время перезарядки 5 мин. -->
+		<set name="reuseDelay" val="300000"/>
+		<set name="magicLevel" val="1"/>		
+		<set name="castRange" val="40"/>
+		<set name="coolTime" val="370"/>
+		<set name="hitTime" val="1130"/>		
+		<set name="target" val="TARGET_ONE"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>			
+		<set name="skillType" val="PARALYZE"/>
+		<set name="trait" val="PARALYZE"/>
+		<set name="isDebuff" val="true"/>
+		<set name="lvlDepend" val="1"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="delayedEffect" val="8894"/>
+		<for>
+		<effect count="1" name="Debuff" time="5" chance="-1" val="100">
+		    <mul order="0x30" stat="runSpd" val="0.90" />
+		    <mul order="0x30" stat="pAtkSpd" val="0.90" />
+		    <mul order="0x30" stat="mAtkSpd" val="0.90" />
+		</effect>
+		</for>
+	</skill>	
+	<skill id="8899" levels="1" name="Взмах Крыльев Линдвиора">
+		<!-- Сметает СР окружающих врагов. Для использования умения требуется 1 Кровь Дракона. Время действия: 5 сек. Время перезарядки 5 мин. -->
+		<set name="reuseDelay" val="300000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="hitTime" val="1800"/>
+		<set name="itemConsumeId" val="36415"/>
+        <set name="itemConsumeCount" val="1"/>
+		<set name="hitCancelTime" val="500"/>				
+		<set name="target" val="TARGET_AREA"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="nextAction" val="attack"/>
+		<set name="isOffensive" val="true"/>
+		<set name="trait" val="DEATH"/>
+		<set name="saveVs" val="CON"/>
+		<set name="isReflectable" val="false"/>
+		<for>
+			<effect count="1" name="Debuff" time="5" val="100" chance="-1">
+				<sub order="0x40" stat="debuffResist" val="30"/>				
+				<mul order="0x30" stat="maxCp" val="-1.1" />
+			</effect>
+			<effect count="1" name="CPDamPercent" time="5" val="100" chance="-1" isReflectable="false"/>			
+		</for>	
+	</skill>
 </list>

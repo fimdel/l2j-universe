@@ -561,6 +561,30 @@ public enum Stats
 	 */
 	PVP_MAGIC_SKILL_DEFENCE_BONUS("pvpMagicSkillDefenceBonus"),
 	/**
+	 * Field PVE_PHYS_DMG_BONUS.
+	 */
+	PVE_PHYS_DMG_BONUS("pvePhysDmgBonus"),
+	/**
+	 * Field PVE_PHYS_SKILL_DMG_BONUS.
+	 */
+	PVE_PHYS_SKILL_DMG_BONUS("pvePhysSkillDmgBonus"),
+	/**
+	 * Field PVE_MAGIC_SKILL_DMG_BONUS.
+	 */
+	PVE_MAGIC_SKILL_DMG_BONUS("pveMagicSkillDmgBonus"),
+	/**
+	 * Field PVE_PHYS_DEFENCE_BONUS.
+	 */
+	PVE_PHYS_DEFENCE_BONUS("pvePhysDefenceBonus"),
+	/**
+	 * Field PVE_PHYS_SKILL_DEFENCE_BONUS.
+	 */
+	PVE_PHYS_SKILL_DEFENCE_BONUS("pvePhysSkillDefenceBonus"),
+	/**
+	 * Field PVE_MAGIC_SKILL_DEFENCE_BONUS.
+	 */
+	PVE_MAGIC_SKILL_DEFENCE_BONUS("pveMagicSkillDefenceBonus"),
+	/**
 	 * Field PHYS_SKILL_DMG_STATIC.
 	 */
 	PHYS_SKILL_DMG_STATIC("PhysSkillDmgStatic"),

@@ -14,6 +14,7 @@ package lineage2.gameserver.skills.effects;
 
 import lineage2.gameserver.model.Effect;
 import lineage2.gameserver.stats.Env;
+import lineage2.gameserver.skills.AbnormalEffect;
 
 /**
  * @author Mobius
@@ -21,55 +22,55 @@ import lineage2.gameserver.stats.Env;
  */
 public class EffectTalismanOfPower extends Effect
 {
-	/**
-	 * Constructor for EffectTalismanOfPower.
-	 * @param env Env
-	 * @param template EffectTemplate
-	 */
+
 	public EffectTalismanOfPower(Env env, EffectTemplate template)
 	{
 		super(env, template);
 	}
-	
-	/**
-	 * Method onStart.
-	 */
+
 	@Override
 	public void onStart()
 	{
 		super.onStart();
-		switch (getSkill().getLevel())
-		{
-			case 1:
-			case 2:
-				break;
-			case 3:
-				break;
-			case 4:
-				break;
-			case 5:
-				break;
-			case 6:
-				break;
-		}
+		
+		 switch(getSkill().getLevel()) 
+		 { 
+		 case 1: 
+		 case 2: 
+		 getEffected().startAbnormalEffect(AbnormalEffect.TALISMAN_POWER1);
+		 break;
+		 case 3:
+		 getEffected().startAbnormalEffect(AbnormalEffect.TALISMAN_POWER2);
+		 break;
+		 case 4:
+		 getEffected().startAbnormalEffect(AbnormalEffect.TALISMAN_POWER3);
+		 break;
+		 case 5:
+		 getEffected().startAbnormalEffect(AbnormalEffect.TALISMAN_POWER4);
+		 break;
+		 case 6:
+		 getEffected().startAbnormalEffect(AbnormalEffect.TALISMAN_POWER5);
+		 break;
+		 }
+		 
 	}
-	
-	/**
-	 * Method onExit.
-	 */
+
 	@Override
 	public void onExit()
 	{
 		super.onExit();
+		 getEffected().stopAbnormalEffect(AbnormalEffect.TALISMAN_POWER1);
+		 getEffected().stopAbnormalEffect(AbnormalEffect.TALISMAN_POWER2);
+		 getEffected().stopAbnormalEffect(AbnormalEffect.TALISMAN_POWER3);
+		 getEffected().stopAbnormalEffect(AbnormalEffect.TALISMAN_POWER4);
+		 getEffected().stopAbnormalEffect(AbnormalEffect.TALISMAN_POWER5);
+		 
 	}
-	
-	/**
-	 * Method onActionTime.
-	 * @return boolean
-	 */
+
 	@Override
 	protected boolean onActionTime()
 	{
 		return false;
 	}
+
 }

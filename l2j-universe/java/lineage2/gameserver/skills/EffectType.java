@@ -436,6 +436,10 @@ public enum EffectType
 	 */
 	Symbol(EffectSymbol.class, null, false),
 	/**
+	 * Field Talisman
+	 */
+	// Talisman(EffectTalisman.class, null, true),
+	/**
 	 * Field Transformation.
 	 */
 	Transformation(EffectTransformation.class, null, Stats.MUTATE_RESIST, Stats.MUTATE_POWER, true),
