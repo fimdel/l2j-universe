@@ -1,0 +1,12 @@
+!Назначение нового Клан Лидера:
+
+Введите имя Нового Клан Лидера:
+
+<edit var="name" width=80>
+
+    *Внимание новый клан лидер вступит в свои обязанности только после рестарта сервера*
+
+    <button value="Enter" action="bypass -h npc_%objectId%_assign_new_clan_leader $name " width=40 height=15
+            back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+        <button value="Cancel" action="bypass -h npc_%objectId%_Link villagemaster/clan-01.htm" width=40 height=15
+                back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">

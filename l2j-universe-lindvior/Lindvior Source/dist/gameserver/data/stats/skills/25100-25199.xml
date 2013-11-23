@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="25120" levels="22" name="P. Atk. Modifiers">
+        <!--
+              4410
+              Lvl 1 Name - Extremely Weak P. Atk. Lvl 2 Name - Extremely Weak P.
+              Atk. Lvl 3 Name - Extremely Weak P. Atk. Lvl 4 Name - Extremely Weak
+              P. Atk. Lvl 5 Name - Very Weak P. Atk. Lvl 6 Name - Very Weak P. Atk.
+              Lvl 7 Name - Weak P. Atk. Lvl 8 Name - Weak P. Atk. Lvl 9 Name -
+              Slightly Weak P. Atk. Lvl 10 Name - Slightly Weak P. Atk. Lvl 11 Name
+              - Average P. Atk. Lvl 12 Name - Slightly Strong P. Atk. Lvl 13 Name -
+              Slightly Strong P. Atk. Lvl 14 Name - Strong P. Atk. Lvl 15 Name -
+              Strong P. Atk. Lvl 16 Name - Very Strong P. Atk. Lvl 17 Name - Very
+              Strong P. Atk. Lvl 18 Name - Extremely Strong P. Atk. Lvl 19 Name -
+              Extremely Strong P. Atk. Lvl 20 Name - Extremely Strong P. Atk. Lvl
+              21 Name - Extremely Strong P. Atk. Lvl 22 Name - Ultra Strong P. Atk.
+          -->
+        <table name="#pAtk">0.39 0.43 0.47 0.52 0.57 0.63 0.69 0.76 0.83 0.91 1 1.1 1.21 1.33 1.46 1.61 1.77 1.94 2.14
+            2.35 2.59 10
+        </table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+        </for>
+    </skill>
+    <skill id="25121" levels="22" name="M. Atk. Modifiers">
+        <!--
+              4411
+              Lvl 1 Name - Extremely Weak M. Atk. Lvl 2 Name - Extremely Weak M.
+              Atk. Lvl 3 Name - Extremely Weak M. Atk. Lvl 4 Name - Extremely Weak
+              M. Atk. Lvl 5 Name - Very Weak M. Atk. Lvl 6 Name - Very Weak M. Atk.
+              Lvl 7 Name - Weak M. Atk. Lvl 8 Name - Weak M. Atk. Lvl 9 Name -
+              Slightly Weak M. Atk. Lvl 10 Name - Slightly Weak M. Atk. Lvl 11 Name
+              - Average M. Atk. Lvl 12 Name - Slightly Strong M. Atk. Lvl 13 Name -
+              Slightly Strong M. Atk. Lvl 14 Name - Strong M. Atk. Lvl 15 Name -
+              Strong M. Atk. Lvl 16 Name - Very Strong M. Atk. Lvl 17 Name - Very
+              Strong M. Atk. Lvl 18 Name - Extremely Strong M. Atk. Lvl 19 Name -
+              Extremely Strong M. Atk. Lvl 20 Name - Extremely Strong M. Atk. Lvl
+              21 Name - Extremely Strong M. Atk. Lvl 22 Name - Ultra Strong M. Atk.
+          -->
+        <table name="#mAtk">0.15 0.18 0.22 0.27 0.32 0.39 0.47 0.57 0.69 0.83 1 1.21 1.46 1.77 2.14 2.59 3.13 3.79 4.59
+            5.55 6.72 100
+        </table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+        </for>
+    </skill>
+    <skill id="25122" levels="22" name="P. Def. Modifiers">
+        <!--
+              4412
+              Lvl 1 Name - Extremely Weak P. Def. Lvl 2 Name - Extremely Weak P.
+              Def. Lvl 3 Name - Extremely Weak P. Def. Lvl 4 Name - Extremely Weak
+              P. Def. Lvl 5 Name - Very Weak P. Def. Lvl 6 Name - Very Weak P. Def.
+              Lvl 7 Name - Weak P. Def. Lvl 8 Name - Weak P. Def. Lvl 9 Name -
+              Slightly Weak P. Def. Lvl 10 Name - Slightly Weak P. Def. Lvl 11 Name
+              - Average P. Def. Lvl 12 Name - Slightly Strong P. Def. Lvl 13 Name -
+              Slightly Strong P. Def. Lvl 14 Name - Strong P. Def. Lvl 15 Name -
+              Strong P. Def. Lvl 16 Name - Very Strong P. Def. Lvl 17 Name - Very
+              Strong P. Def. Lvl 18 Name - Extremely Strong P. Def. Lvl 19 Name -
+              Extremely Strong P. Def. Lvl 20 Name - Extremely Strong P. Def. Lvl
+              21 Name - Extremely Strong P. Def. Lvl 22 Name - Ultra Strong P. Def.
+          -->
+        <table name="#pDef">0.39 0.43 0.47 0.52 0.57 0.63 0.69 0.76 0.83 0.91 1 1.1 1.21 1.33 1.46 1.61 1.77 1.94 2.14
+            2.35 2.59 10
+        </table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+        </for>
+    </skill>
+    <skill id="25123" levels="22" name="M. Def. Modifiers">
+        <!--
+              4413
+              Lvl 1 Name - Extremely Weak M. Def. Lvl 2 Name - Extremely Weak M.
+              Def. Lvl 3 Name - Extremely Weak M. Def. Lvl 4 Name - Extremely Weak
+              M. Def. Lvl 5 Name - Very Weak M. Def. Lvl 6 Name - Very Weak M. Def.
+              Lvl 7 Name - Weak M. Def. Lvl 8 Name - Weak M. Def. Lvl 9 Name -
+              Slightly Weak M. Def. Lvl 10 Name - Slightly Weak M. Def. Lvl 11 Name
+              - Average M. Def. Lvl 12 Name - Slightly Strong M. Def. Lvl 13 Name -
+              Slightly Strong M. Def. Lvl 14 Name - Strong M. Def. Lvl 15 Name -
+              Strong M. Def. Lvl 16 Name - Very Strong M. Def. Lvl 17 Name - Very
+              Strong M. Def. Lvl 18 Name - Extremely Strong M. Def. Lvl 19 Name -
+              Extremely Strong M. Def. Lvl 20 Name - Extremely Strong M. Def. Lvl
+              21 Name - Extremely Strong M. Def. Lvl 22 Name - Ultra Strong M. Def.
+          -->
+        <table name="#mDef">0.39 0.43 0.47 0.52 0.57 0.63 0.69 0.76 0.83 0.91 1 1.1 1.21 1.33 1.46 1.61 1.77 1.94 2.14
+            2.35 2.59 10
+        </table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mDef" val="#mDef"/>
+        </for>
+    </skill>
+</list>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="11997" levels="1" name="Уникальное Умение Целителя - Пассивное">
+        <!--
+              Уровень: 1; Описание: a,
+          -->
+        <set name="icon" val="icon.skill0217"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="11998" levels="1" name="Уникальное Умение Целителя">
+        <!--
+              Уровень: 1; Описание: В течение 5 сек. увеличивает Скорость на 30%.
+          -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_PET"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="5" val="0">
+                <mul order="0x30" stat="runSpd" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="11999" levels="1" name="Сковывающая Атака Целителя">
+        <!--
+              Уровень: 1; Описание: Наносит по врагу мощный удар.
+          -->
+        <set name="icon" val="icon.skill10317"/>
+        <set name="magicLevel" val="85"/>
+        <!-- Сила с потолка -->
+        <set name="power" val="20678"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

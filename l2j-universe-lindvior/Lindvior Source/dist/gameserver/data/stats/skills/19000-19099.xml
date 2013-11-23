@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="19001" levels="1" name="Проверка - Кровопускание">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="19002" levels="1" name="Якорь">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="19003" levels="5" name="Сопротивление Клана">
+        <table name="#Def">3 4 5 6 7</table>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="minPledgeClass" val="5"/>
+        <!-- Старейшена -->
+        <set name="isCommon" val="true"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="#Def"/>
+            <add order="0x40" stat="defenceUnholy" val="#Def"/>
+        </for>
+    </skill>
+    <skill id="19004" levels="5" name="Защита от Эффектов Клана">
+        <table name="#Def">3 4 5 6 7</table>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="minPledgeClass" val="5"/>
+        <!-- Старейшена -->
+        <set name="isCommon" val="true"/>
+        <for>
+            <add order="0x40" stat="debuffResist" val="#Def"/>
+        </for>
+    </skill>
+    <skill id="19005" levels="5" name="Контроль Мышц Клана">
+        <table name="#Def">12 13 14 15 16</table>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="minPledgeClass" val="5"/>
+        <!-- Старейшена -->
+        <set name="isCommon" val="true"/>
+        <for>
+            <add order="0x40" stat="paralyzeResist" val="#Def"/>
+        </for>
+    </skill>
+    <skill id="19006" levels="5" name="Контроль Разума Клана">
+        <table name="#Def">12 13 14 15 16</table>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="minPledgeClass" val="5"/>
+        <!-- Старейшена -->
+        <set name="isCommon" val="true"/>
+        <for>
+            <add order="0x40" stat="mentalResist" val="#Def"/>
+        </for>
+    </skill>
+    <skill id="19007" levels="1" name="Призыв Клана">
+        <!-- Призывает к персонажу члена клана. Потребляет 10 ед. Руды Души.
+              Требует 900 ед. личной репутации. Действие эффекта распространяется на персонажей,
+              имеющих статус Виконта или выше. -->
+        <set name="isClanSkill" val="true"/>
+        <set name="minPledgeClass" val="8"/>
+        <!-- Виконт -->
+        <set name="target" val="TARGET_CLAN_ONLY"/>
+        <set name="skillType" val="CALL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="party" val="true"/>
+        <set name="skillRadius" val="-2"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="itemConsumeId" val="3031"/>
+        <set name="itemConsumeCount" val="10"/>
+        <set name="fameConsumeSelfCount" val="900"/>
+    </skill>
+    <skill id="19008" levels="1" name="Защитник Клана">
+        <!-- Призывает Защитника Клана на 3 мин.
+              Защитник восстанавливает HP/MP/CP членов клана в определенной зоне. Мощность 500.
+              Потребляет 100 ед. Руды Души. Требует 1 000 ед. репутации клана.
+              Действие эффекта распространяется на персонажей, имеющих статус Короля или выше.
+              Используется только на поле боя. -->
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="minPledgeClass" val="10"/>
+        <!-- Король -->
+    </skill>
+    <skill id="19009" levels="5" name="Рождение Клана">
+        <table name="#px">1.05</table>
+        <table name="#mx">1.06</table>
+        <table name="#reg">5</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="minPledgeClass" val="1"/>
+        <!-- everybody -->
+        <set name="isCommon" val="true"/>
+        <for>
+            <effect name="ClanBirth" abnormalTime="3600" val="0" abnormalLvl="1" abnormalType="clan_renewal">
+                <mul order="0x30" stat="pAtk" val="#px"/>
+                <mul order="0x30" stat="pDef" val="#px"/>
+                <mul order="0x30" stat="mDef" val="#px"/>
+                <mul order="0x30" stat="mAtk" val="#mx"/>
+                <add order="0x40" stat="regHp" val="#reg"/>
+                <add order="0x40" stat="regMp" val="#reg"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19010" levels="1" name="Копия Клана">
+        <!-- Создает иллюзорную копию персонажа, сбивающую с толку врага.
+              Потребляет 50 ед. Руды Души. Требует 1 500 ед. личной репутации.
+              Действие эффекта распространяется на персонажей, имеющих статус Маркиз или выше. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="itemConsumeId" val="3031"/>
+        <set name="itemConsumeCount" val="50"/>
+        <set name="fameConsumeSelfCount" val="1500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="npcId" val="13076"/>
+        <set name="skillType" val="DECOY"/>
+        <set name="summonTotalLifeTime" val="20000"/>
+        <set name="minPledgeClass" val="10"/>
+        <!-- Маркиз -->
+    </skill>
+    <skill id="19011" levels="1" name="Легенда Клана">
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <add order="0x40" stat="pAtk" val="218">
+                <player percentHp="30"/>
+            </add>
+            <add order="0x40" stat="pDef" val="145">
+                <player percentHp="30"/>
+            </add>
+        </for>
+    </skill>
+    <skill id="19012" levels="1" name="Скрыть Клан">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="19013" levels="1" name="Очищение Клана">
+        <set name="isClanSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_CLAN_ONLY"/>
+        <set name="skillRadius" val="2000"/>
+        <set name="minPledgeClass" val="10"/>
+        <!-- Маркиз -->
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="50"/>
+        <for>
+            <effect count="1" name="DispelEffects" time="0" val="0">
+                <def name="dispelType" val="cleanse"/>
+                <def name="cancelRate" val="100"/>
+                <def name="negateCount" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19014" levels="1" name="Предельная Защита Клана">
+        <set name="isClanSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_CLAN_ONLY"/>
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="50"/>
+        <set name="skillRadius" val="1500"/>
+        <set name="minPledgeClass" val="10"/>
+        <!-- Король -->
+        <for>
+            <effect count="1" name="Invulnerable" abnormal="INVUL2" stackOrder="-1" stackType="invul" time="30"
+                    val="0"/>
+        </for>
+    </skill>
+    <skill id="19015" levels="1" name="Дружба Клана">
+        <!-- Увеличивает у окружающих членов клана шанс Крит. Атк. на 3%, шанс Крит. Атк. магией на 20.
+              Потребляет 100 ед. Руды Души. Требует 3 500 ед. личной репутации.
+              Действие эффекта распространяется на персонажей, имеющих статус Маркиз или выше. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="itemConsumeId" val="3031"/>
+        <set name="itemConsumeCount" val="100"/>
+        <set name="minPledgeClass" val="10"/>
+        <!-- Маркиз -->
+        <set name="target" val="TARGET_CLAN"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect count="1" name="Buff" time="1200" val="0">
+                <mul order="0x30" stat="pCritRate" val="1.03"/>
+                <add order="0x40" stat="mCritRate" val="20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19016" levels="1" name="Границы Клана">
+        <set name="isClanSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_CLAN_ONLY"/>
+        <set name="minPledgeClass" val="10"/>
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="100"/>
+        <set name="skillRadius" val="2000"/>
+        <for>
+            <effect count="1" name="Buff" time="1200" val="0">
+                <mul order="0x30" stat="pAtk" val="1.03"/>
+                <mul order="0x30" stat="pDef" val="1.03"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19017" levels="1" name="Узники Клана">
+        <set name="isClanSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="minPledgeClass" val="10"/>
+        <set name="itemConsumeId" val="1785"/>
+        <set name="itemConsumeCount" val="100"/>
+        <set name="skillRadius" val="500"/>
+        <for>
+            <effect count="1" name="Buff" time="60" val="0">
+                <mul order="0x30" stat="runSpd" val="0.77"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19018" levels="1" name="Восстановление Защитника Клана">
+        <!-- 19018	1	Восстановление Защитника Клана	Восстанавливает HP/MP/CP. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="19032" levels="1" name="Способности Света">
+        <!-- 19032	1	Способности Света	Получение Способности Света -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" time="600" val="0" count="1">
+                <add order="0x40" stat="maxCp" val="3000"/>
+                <mul order="0x30" stat="pvpPhysDmgBonus" val="1.1"/>
+                <mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.1"/>
+                <mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19033" levels="1" name="Способности Тьмы">
+        <!-- 19033	1	Способности Тьмы	Получение Способности Тьмы -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isClanSkill" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" time="600" val="0" count="1">
+                <add order="0x40" stat="maxCp" val="3000"/>
+                <mul order="0x30" stat="pvpPhysDmgBonus" val="1.1"/>
+                <mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.1"/>
+                <mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19034" levels="1" name="Imprint of Light">
+        <set name="reuseDelay" val="5000"/>
+        <set name="hitTime" val="180000"/>
+        <set name="magicLevel" val="30"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0246"/>
+        <set name="castRange" val="85"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume1" val="50"/>
+        <set name="target" val="TARGET_HOLY"/>
+        <set name="skillType" val="TAKECASTLE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isCommon" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="castle_side" val="LIGHT"/>
+    </skill>
+    <skill id="19035" levels="1" name="Imprint of Darkness">
+        <set name="reuseDelay" val="5000"/>
+        <set name="hitTime" val="180000"/>
+        <set name="magicLevel" val="30"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0246"/>
+        <set name="castRange" val="85"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="mpConsume1" val="50"/>
+        <set name="target" val="TARGET_HOLY"/>
+        <set name="skillType" val="TAKECASTLE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isCommon" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="castle_side" val="DARK"/>
+    </skill>
+    <skill id="19036" levels="1" name="Благословение Света">
+        <!-- +3% опыта, получаемого через благословение Хранителя Света. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <for>
+            <effect name="Buff" time="3600" val="0" count="1">
+                <mul order="0x30" stat="ExpMultiplier" val="1.03"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19037" levels="1" name="Плащ Света">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isCommon" val="true"/>
+        <for>
+            <add stat="STR" order="0x10" val="3"/>
+            <add stat="CON" order="0x10" val="3"/>
+            <add stat="DEX" order="0x10" val="3"/>
+            <add stat="INT" order="0x10" val="3"/>
+            <add stat="WIT" order="0x10" val="3"/>
+            <add stat="MEN" order="0x10" val="3"/>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.15"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.15"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.15"/>
+        </for>
+    </skill>
+    <skill id="19038" levels="1" name="Плащ Тьмы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isCommon" val="true"/>
+        <for>
+            <add stat="STR" order="0x10" val="3"/>
+            <add stat="CON" order="0x10" val="3"/>
+            <add stat="DEX" order="0x10" val="3"/>
+            <add stat="INT" order="0x10" val="3"/>
+            <add stat="WIT" order="0x10" val="3"/>
+            <add stat="MEN" order="0x10" val="3"/>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.15"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.15"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.15"/>
+        </for>
+    </skill>
+    <skill id="19039" levels="1" name="Плащ Света">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isCommon" val="true"/>
+        <for>
+            <add stat="STR" order="0x10" val="2"/>
+            <add stat="CON" order="0x10" val="2"/>
+            <add stat="DEX" order="0x10" val="2"/>
+            <add stat="INT" order="0x10" val="2"/>
+            <add stat="WIT" order="0x10" val="2"/>
+            <add stat="MEN" order="0x10" val="2"/>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="19040" levels="1" name="Плащ Тьмы">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="isCommon" val="true"/>
+        <for>
+            <add stat="STR" order="0x10" val="2"/>
+            <add stat="CON" order="0x10" val="2"/>
+            <add stat="DEX" order="0x10" val="2"/>
+            <add stat="INT" order="0x10" val="2"/>
+            <add stat="WIT" order="0x10" val="2"/>
+            <add stat="MEN" order="0x10" val="2"/>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="19041" levels="1" name="Scroll of Escape: Castle">
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="castle" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="RECALL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="19074" levels="2" name="Правила Академии">
+        <!-- 19074	1	Правила Академии	В течение 60 мин. увеличивает у членов Академии Физ. Атк. на 10%, Маг. Атк. на 10%, шанс Крит. Атк. на 10%, шанс Крит. Атк. магией на 10%. -->
+        <!-- 19074	2	Правила Академии	В течение 60 мин. увеличивает у членов Академии Физ. Атк. на 20%, Маг. Атк. на 20%, шанс Крит. Атк. на 10%, шанс Крит. Атк. магией на 10%. -->
+        <table name="#Atk">1.10 1.20</table>
+        <set name="isClanSkill" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="minPledgeClass" val="5"/>
+        <!-- Король -->
+        <for>
+            <effect name="Buff" time="3600" val="0" count="1">
+                <mul order="0x30" stat="pAtk" val="#Atk"/>
+                <mul order="0x30" stat="mAtk" val="#Atk"/>
+                <mul order="0x30" stat="pCritRate" val="1.10"/>
+                <add order="0x40" stat="mCritBase" val="1.10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="19075" levels="1" name="Отношения Клана">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="19076" levels="1" name="Награда Академии Клана">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="19080" levels="1" name="Сигель Иксион">
+        <!--
+              Уровень: 1; Описание: Превращает в Иксиона.
+          -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="npcId" val="19048"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <for>
+            <effect name="Transformation" time="300" val="508" count="1"/>
+        </for>
+    </skill>
+    <skill id="19081" levels="1" name="Иксион Тира">
+        <!--
+              Уровень: 1; Описание: Превращает в Иксиона.
+          -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="npcId" val="19050"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <for>
+            <effect name="Transformation" count="1" time="300" val="510"/>
+        </for>
+    </skill>
+    <skill id="19082" levels="1" name="Иксион Одала">
+        <!--
+              Уровень: 1; Описание: Превращает в Иксиона.
+          -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="npcId" val="19051"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <for>
+            <effect name="Transformation" count="1" time="300" val="511"/>
+        </for>
+    </skill>
+    <skill id="19083" levels="1" name="Иксион Эура">
+        <!--
+              Уровень: 1; Описание: Превращает в Иксиона.
+          -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="npcId" val="19049"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <for>
+            <effect name="Transformation" count="1" time="300" val="512"/>
+        </for>
+    </skill>
+    <skill id="19084" levels="1" name="Иксион Фео">
+        <!--
+              Уровень: 1; Описание: Превращает в Иксиона.
+          -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="npcId" val="19052"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <for>
+            <effect name="Transformation" count="1" time="300" val="513"/>
+        </for>
+    </skill>
+    <skill id="19085" levels="1" name="Иксион Иса">
+        <!--
+              Уровень: 1; Описание: Превращает в Иксиона.
+          -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="npcId" val="19053"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <for>
+            <effect name="Transformation" count="1" time="300" val="514"/>
+        </for>
+    </skill>
+    <skill id="19086" levels="1" name="Иксион Веньо">
+        <!--
+              Уровень: 1; Описание: Превращает в Иксиона.
+          -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="npcId" val="19054"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <for>
+            <effect name="Transformation" count="1" time="300" val="515"/>
+        </for>
+    </skill>
+    <skill id="19087" levels="1" name="Альгиз Иксион">
+        <!--
+              Уровень: 1; Описание: Превращает в Иксиона.
+          -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="npcId" val="19055"/>
+        <cond msgId="1509">
+            <player olympiad="false"/>
+        </cond>
+        <for>
+            <effect name="Transformation" count="1" time="300" val="516"/>
+        </for>
+    </skill>
+    <skill id="19088" levels="4" name="Призвать Осадного Голема">
+        <table name="#npcId">15054 15055 15056 15057</table>
+        <set name="itemConsumeId" val="17371"/>
+        <set name="itemConsumeCount" val="400"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="SUMMON"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <!-- Summon-specific -->
+        <set name="lifeTime" val="1200000"/>
+        <set name="npcId" val="#npcId"/>
+    </skill>
+    <skill id="19089" levels="4" name="Призвать Стального Вепря">
+        <table name="#npcId">15058 15059 15060 15061</table>
+        <set name="itemConsumeId" val="17371"/>
+        <set name="itemConsumeCount" val="600"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="SUMMON"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <!-- Summon-specific -->
+        <set name="lifeTime" val="1200000"/>
+        <set name="npcId" val="#npcId"/>
+    </skill>
+    <skill id="19090" levels="4" name="Призвать Стального Вепря">
+        <table name="#npcId">15062 15063 15064 15065</table>
+        <set name="itemConsumeCount" val="500"/>
+        <set name="itemConsumeId" val="17371"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="SUMMON"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <!-- Summon-specific -->
+        <set name="lifeTime" val="1200000"/>
+        <set name="npcId" val="#npcId"/>
+    </skill>
+    <skill id="19092" levels="1" name="Массовое Возвращение">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="19093" levels="1" name="Колчан Стрел с Дополнительным  Зарядом">
+        <set name="icon" val="icon.skill0256"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <triggers>
+            <trigger id="19096" level="1" type="ATTACK" chance="60">
+                <using kind="Bow, Crossbow"/>
+            </trigger>
+        </triggers>
+        <for>
+            <effect count="0x7fffffff" name="ManaDamOverTime" time="1" val="1"/>
+        </for>
+    </skill>
+    <skill id="19094" levels="1" name="Колчан Стрел с Усиленной Разрушительной Силой">
+        <set name="icon" val="icon.skill0256"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <triggers>
+            <trigger id="19097" level="1" type="CRIT" chance="60">
+                <using kind="Bow, Crossbow"/>
+            </trigger>
+        </triggers>
+        <for>
+            <effect count="0x7fffffff" name="ManaDamOverTime" time="1" val="1"/>
+        </for>
+    </skill>
+    <skill id="19095" levels="1" name="Колчан Стрел с Увеличенной Вредоносностью">
+        <set name="icon" val="icon.skill0256"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <triggers>
+            <trigger id="19098" level="1" type="CRIT" chance="60">
+                <using kind="Bow, Crossbow"/>
+            </trigger>
+        </triggers>
+        <for>
+            <effect count="0x7fffffff" name="ManaDamOverTime" time="1" val="1"/>
+        </for>
+    </skill>
+    <skill id="19096" levels="1" name="Дополнительный Удар">
+        <set name="icon" val="icon.skill0256"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="390"/>
+        <set name="isTrigger" val="true"/>
+    </skill>
+    <skill id="19097" levels="1" name="Высший Критический Удар">
+        <set name="icon" val="icon.skill0256"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="390"/>
+        <set name="isTrigger" val="true"/>
+    </skill>
+    <skill id="19098" levels="1" name="Пускание Крови">
+        <set name="icon" val="icon.skill0256"/>
+        <set name="activateRate" val="100"/>
+        <set name="saveVs" val="CON"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="BLEED"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="trait" val="BLEED"/>
+        <set name="isTrigger" val="true"/>
+        <for>
+            <effect name="Bleed" count="20" time="1" val="125" abnormal="BLEEDING" stackTypes="Bleed" stackOrder="4"/>
+        </for>
+    </skill>
+</list>

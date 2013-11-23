@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <etcitem id="13100" name="Recipe - Sealed Arcana Sigil (60%)">
+        <set name="class" value="RECIPIES"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_recipe_black_i00"/>
+        <set name="price" value="75200"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="RECIPE"/>
+        <set name="ex_type" value="RECIPE"/>
+        <set name="weight" value="30"/>
+    </etcitem>
+    <etcitem id="13101" name="Recipe - Sealed Arcana Sigil (100%)">
+        <set name="class" value="RECIPIES"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_recipe_black_i00"/>
+        <set name="price" value="75200"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="RECIPE"/>
+        <set name="ex_type" value="RECIPE"/>
+        <set name="weight" value="30"/>
+    </etcitem>
+    <etcitem id="13102" name="Chaotic Sealed Arcana Sigil">
+        <set name="class" value="ARMOR"/>
+        <set name="crystal_type" value="S"/>
+        <set name="icon" value="icon.arcana_sigil_i01"/>
+        <set name="price" value="3355000"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="1170"/>
+        <for>
+            <mul order="0x10" stat="pEvasionRate" value="8"/>
+            <set order="0x08" stat="rShld" value="20"/>
+        </for>
+    </etcitem>
+    <etcitem id="13103" name="My Teleport Spellbook 1-Book Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13104" name="My Teleport Scroll 30-Sheet Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13105" name="Kamaloka Entrance Pass 3-Sheet Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13106" name="Feather of Blessing 3-Sheet Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13107" name="Agathion of Love 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13108" name="Pumpkin Transformation Stick 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13109" name="Kamaloka Entrance Pass 3-Sheet Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13110" name="Kat the Cat Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13111" name="Feline Queen Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13112" name="Monster Eye Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13113" name="Brown Bear Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13114" name="Fungus Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13115" name="Skull Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13116" name="Ornithomimus Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13117" name="Feline King Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13118" name="Kai the Cat Hat 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13119" name="OX Stick 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13120" name="Rock-Paper-Scissors Stick 30-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13121" name="Purple-Maned Horse 7-Day Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13122" name="Color Name 3-Sheet Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13123" name="My Teleport Spellbook Pack">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i01"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13124" name="Color Name 1-Sheet Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13125" name="My Teleport Scroll 10-Sheet Pack">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13126" name="Vitamin Experience Pack - used for events">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i04"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13127" name="Promotional Parcel 2">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_jewel_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="13128" name="Phoenix Feather">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_feather_gold_i00"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="120"/>
+    </etcitem>
+    <etcitem id="13129" name="Pailaka Scroll of Escape">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_scroll_of_return_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="120"/>
+    </etcitem>
+    <etcitem id="13130" name="Temple Book of Secrets">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+        <set name="type" value="QUEST"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13131" name="Temple Book of Secrets">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+        <set name="type" value="QUEST"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13132" name="Temple Book of Secrets">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+        <set name="type" value="QUEST"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13133" name="Temple Book of Secrets">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+        <set name="type" value="QUEST"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13134" name="Temple Book of Secrets">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+        <set name="type" value="QUEST"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13135" name="Temple Book of Secrets">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+        <set name="type" value="QUEST"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13136" name="Temple Book of Secrets">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+        <set name="type" value="QUEST"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13149" name="Pailaka Final Key">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_key_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13150" name="Pailaka All-Purpose Key">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="icon" value="icon.etc_key_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="13151" name="Pailaka Energy Replenishing Potion (100%)">
+        <set name="reuse_delay" value="10000"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_lesser_potion_red_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="5"/>
+    </etcitem>
+    <etcitem id="13152" name="Pailaka Energy Replenishing Potion (50%)">
+        <set name="reuse_delay" value="10000"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_lesser_potion_red_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="destroyable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="5"/>
+    </etcitem>
+</list>

@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <!--
+		Изменен: 4:02/16.04.2013, Mazaffaka
+		Название: Неопознанный Убийца Драконов - Ивент
+		Описание: Неопознанный Убийца Драконов. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: двуручный меч)
+	-->
+    <etcitem id="33700" name="Неопознанный Убийца Драконов" add_name="Ивент">
+        <set name="icon" value="icon.weapon_dragon_slayer_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12984" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Пронзатель Душ - Ивент
+         Описание: Неопознанный Пронзатель Душ. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: лук)
+     -->
+    <etcitem id="33701" name="Неопознанный Пронзатель Душ" add_name="Ивент">
+        <set name="icon" value="icon.weapon_soul_bow_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12985" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Элизиум - Ивент
+         Описание: Неопознанный Элизиум. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: одноручное дробящее оружие)
+     -->
+    <etcitem id="33702" name="Неопознанный Элизиум" add_name="Ивент">
+        <set name="icon" value="icon.weapon_elysian_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12986" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Пылающий Череп Дракона - Ивент
+         Описание: Неопознанный Пылающий Череп Дракона. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: одноручное дробящее оружие)
+     -->
+    <etcitem id="33703" name="Неопознанный Пылающий Череп Дракона" add_name="Ивент">
+        <set name="icon" value="icon.weapon_dragon_flame_head_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12987" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанная Ветвь Древа Жизни - Ивент
+         Описание: Неопознанная Ветвь Древа Жизни. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: двуручное дробящее оружие)
+     -->
+    <etcitem id="33704" name="Неопознанная Ветвь Древа Жизни" add_name="Ивент">
+        <set name="icon" value="icon.weapon_worldtrees_branch_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12988" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Крушитель Рока - Ивент
+         Описание: Неопознанный Крушитель Рока. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: двуручное дробящее оружие)
+     -->
+    <etcitem id="33705" name="Неопознанный Крушитель Рока" add_name="Ивент">
+        <set name="icon" value="icon.weapon_doom_crusher_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12989" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанная Глефа Таллума - Ивент
+         Описание: Неопознанная Глефа Таллума. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: древковое оружие)
+     -->
+    <etcitem id="33706" name="Неопознанная Глефа Таллума" add_name="Ивент">
+        <set name="icon" value="icon.weapon_tallum_glaive_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12990" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанная Погибель Дракона - Ивент
+         Описание: Неопознанная Погибель Дракона. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: кастеты)
+     -->
+    <etcitem id="33707" name="Неопознанная Погибель Дракона" add_name="Ивент">
+        <set name="icon" value="icon.weapon_dragon_grinder_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12991" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Дамаскус*Клинок Таллума - Ивент
+         Описание: Неопознанный Дамаскус*Клинок Таллума. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: двуручное оружие/парные кинжалы)
+     -->
+    <etcitem id="33708" name="Неопознанный Дамаскус*Клинок Таллума" add_name="Ивент">
+        <set name="icon" value="icon.weapon_dual_sword_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12992" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Шлем Кошмаров - Ивент
+         Описание: Неопознанный Шлем Кошмаров. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: шлем)
+     -->
+    <etcitem id="33709" name="Неопознанный Шлем Кошмаров" add_name="Ивент">
+        <set name="icon" value="icon.armor_leather_helmet_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12993" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Щит Кошмаров - Ивент
+         Описание: Неопознанный Щит Кошмаров. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: щит)
+     -->
+    <etcitem id="33710" name="Неопознанный Щит Кошмаров" add_name="Ивент">
+        <set name="icon" value="icon.shield_shield_of_nightmare_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12994" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанные Сапоги Кошмаров - Ивент
+         Описание: Неопознанные Сапоги Кошмаров. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: сапоги)
+     -->
+    <etcitem id="33711" name="Неопознанные Сапоги Кошмаров" add_name="Ивент">
+        <set name="icon" value="icon.armor_t80_b_i02"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12995" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанная Мантия Кошмаров - Ивент
+         Описание: Неопознанная Мантия Кошмаров. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: полный магический доспех)
+     -->
+    <etcitem id="33712" name="Неопознанная Мантия Кошмаров" add_name="Ивент">
+        <set name="icon" value="icon.armor_t82_ul_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12996" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Кожаный Доспех Кошмаров - Ивент
+         Описание: Неопознанный Кожаный Доспех Кошмаров. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: полный легкий доспех)
+     -->
+    <etcitem id="33713" name="Неопознанный Кожаный Доспех Кошмаров" add_name="Ивент">
+        <set name="icon" value="icon.armor_t81_ul_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12997" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанные Рукавицы Кошмаров - Ивент
+         Описание: Неопознанные Рукавицы Кошмаров. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: перчатки)
+     -->
+    <etcitem id="33714" name="Неопознанные Рукавицы Кошмаров" add_name="Ивент">
+        <set name="icon" value="icon.armor_t80_g_i02"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12998" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Доспех Кошмаров - Ивент
+         Описание: Неопознанный Доспех Кошмаров. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: полный тяжелый доспех)
+     -->
+    <etcitem id="33715" name="Неопознанный Доспех Кошмаров" add_name="Ивент">
+        <set name="icon" value="icon.armor_t80_ul_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="A"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="12999" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Неопознанный Лук Династии - Ивент
+         Описание: Неопознанный Лук Династии. Этот предмет можно опознать двойным щелчком мыши. Он может оказаться Обыкновенным или Скованным Предметом. (Тип: двуручное оружие/лук)
+     -->
+    <etcitem id="33716" name="Неопознанный Лук Династии" add_name="Ивент">
+        <set name="icon" value="icon.weapon_dynasty_bow_i00"/>
+        <set name="type" value="CAPSULE"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="S"/>
+        <set name="weight" value="0"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <cond msgId="129">
+            <player freeInventoryCell="1"/>
+        </cond>
+        <cond msgId="422">
+            <player avaiableInventorySpace="0.8"/>
+        </cond>
+    </etcitem>
+    <etcitem id="33748" name="Small Kukurin Pouch">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="100"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33749" name="Big Kukurin Pouch">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="100"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33764" name="Legacy Trickster Crossbow">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <!--
+		Изменен: 4:02/16.04.2013, Mazaffaka
+		Название: Эликсир Благословения
+		Описание: Наделяет следующими эффектами: Поэма Рога, Гитары, Органа, Лютни, Арфы (ур. 1). Доступно только персонажам 85-го уровня и выше. Время до повторного использования - 2 мин. Нельзя обменять, выбросить, продать в личной лавке. Можно положить в личное хранилище.
+	-->
+    <etcitem id="33766" name="Эликсир Благословения">
+        <set name="icon" value="icon.etc_super_potion_i03"/>
+        <set name="type" value="POTION"/>
+        <set name="weight" value="5"/>
+        <set name="dropable" value="false"/>
+        <set name="freightable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="crystal_type" value="R"/>
+        <set name="reuse_delay" value="120000"/>
+        <skills>
+            <skill id="9198" level="1"/>
+            <skill id="9199" level="1"/>
+            <skill id="9200" level="1"/>
+            <skill id="9201" level="1"/>
+            <skill id="9202" level="1"/>
+            <skill id="9203" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="33774" name="Soulshot: No Grade">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SOULSHOT"/>
+    </etcitem>
+    <etcitem id="33775" name="Soulshot (D-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SOULSHOT"/>
+    </etcitem>
+    <etcitem id="33776" name="Soulshot (C-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SOULSHOT"/>
+    </etcitem>
+    <etcitem id="33777" name="Soulshot (B-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SOULSHOT"/>
+    </etcitem>
+    <etcitem id="33778" name="Soulshot (A-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SOULSHOT"/>
+    </etcitem>
+    <etcitem id="33779" name="Soulshot (S-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SOULSHOT"/>
+    </etcitem>
+    <etcitem id="33780" name="Soulshot (R-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SOULSHOT"/>
+    </etcitem>
+    <etcitem id="33781" name="Spiritshot: No Grade">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33782" name="Spiritshot (D-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33783" name="Spiritshot (C-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33784" name="Spiritshot (B-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33785" name="Spiritshot (A-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33786" name="Spiritshot (S-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33787" name="Spiritshot (R-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SOULSHOT"/>
+    </etcitem>
+    <etcitem id="33788" name="Blessed Spiritshot: No Grade">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33789" name="Blessed Spiritshot (D-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33790" name="Blessed Spiritshot (C-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33791" name="Blessed Spiritshot (B-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33792" name="Blessed Spiritshot (A-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33793" name="Blessed Spiritshot (S-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33794" name="Blessed Spiritshot (R-Grade)">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33795" name="Return Party Cake 3-Sheet Pack">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="100"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33796" name="Returning Hero's Gift Box">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="100"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33798" name="Greeting of Light">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+    <etcitem id="33799" name="Fragment of Light">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="OTHER"/>
+    </etcitem>
+</list>

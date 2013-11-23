@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <etcitem id="9205" name="Alchemist's Chest Key">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.etc_old_key_i02"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="10"/>
+    </etcitem>
+    <etcitem id="9206" name="Greater Healing Potion (Event)">
+        <set name="reuse_delay" value="10000"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.etc_reagent_white_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="POTION"/>
+        <set name="ex_type" value="POTION"/>
+        <set name="weight" value="5"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="9207" name="Quick Healing Potion (Event)">
+        <set name="reuse_delay" value="500"/>
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.etc_potion_gold_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="POTION"/>
+        <set name="ex_type" value="POTION"/>
+        <set name="weight" value="5"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+</list>

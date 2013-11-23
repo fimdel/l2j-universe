@@ -1,0 +1,2271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="13000" levels="1" name="Эффект Торта Телепортации Группы">
+        <!-- Восстанавливает Энергию при получении опыта. Время действия: 20 мин. -->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.event_six_party_cake_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13001" levels="4" name="Комплект Тяжелых Доспехов Венеры">
+        <!--	Увеличивает Физ. Защ. на 5.57%
+                  Увеличивает Физ. Защ. на 5.57%, Макс. HP на 531.
+                  Увеличивает Физ. Защ. на 5.57%, Макс. HP на 531, Физ. Атк. на 5.57%.
+                  Увеличивает Физ. Защ. на 5.57%, Макс. HP на 531, Физ. Атк. на 5.57%, сопротивление усыпляющим/удерживающим атакам - на 70%. СИЛ +2, ЛВК -2
+          -->
+        <table name="#Resist">0 0 0 70</table>
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#maxHp">0 531 531 531</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <set name="icon" val="icon.armor_t94_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="DEX" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="1.0557"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="sleepResist" val="#Resist"/>
+            <add order="0x40" stat="rootResist" val="#Resist"/>
+        </for>
+    </skill>
+    <skill id="13002" levels="4" name="Комплект Красивых Тяжелых Доспехов Венеры">
+        <!--	Увеличивает Физ. Защ. на 5.57%
+                  Увеличивает Физ. Защ. на 5.57%, Макс. HP на 540, Точность на 4.
+                  Увеличивает Физ. Защ. на 5.57%, Макс. HP на 540, Точность на 4, Физ. Атк. на 5.57%, Скорость на 5.
+                  Увеличивает Физ. Защ. на 5.57%, Макс. HP на 540, Точность на 4, Физ. Атк. на 5.57%, Скорость на 5, сопротивление усыпляющим/удерживающим атакам - на 70%, Сопротивление маг. урону на 1%. Позволяет носить плащ. СИЛ +2, ЛВК -2
+          -->
+        <table name="#pAccuracyCombat">0 4 4 4</table>
+        <table name="#Resist">0 0 0 70</table>
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#magicResist">1 1 1 1.01</table>
+        <table name="#runSpd">0 0 5 5</table>
+        <table name="#maxHp">0 540 540 540</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t94_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pAccuracyCombat" val="#pAccuracyCombat"/>
+            <add order="0x40" stat="runSpd" val="#runSpd"/>
+            <mul order="0x30" stat="magicResist" val="#magicResist"/>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="DEX" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="1.0557"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="sleepResist" val="#Resist"/>
+            <add order="0x40" stat="rootResist" val="#Resist"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13003" levels="4" name="Комплект Легких Доспехов Венеры">
+        <!--	Увеличивает Скор. восстановления MP на 5%.
+                  Увеличивает Скор. восстановления MP на 5%, Макс. MP на 347.
+                  Увеличивает Скор. восстановления MP на 5%, Макс. MP на 347, Физ. Атк. на 5.57%.
+                  Увеличивает Скор. восстановления MP на 5%, Макс. MP - на 347, Физ. Атк. - на 5.57%, Скор. Атк. - на 5%. СИЛ +1, ВЫН -2, ЛВК +1.
+          -->
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#maxMp">0 347 347 347</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#pAtkSpd">1 1 1 1.0557</table>
+        <set name="icon" val="icon.armor_t95_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs1"/>
+            <add order="0x40" stat="DEX" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="1.0557"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+        </for>
+    </skill>
+    <skill id="13004" levels="4" name="Комплект Красивых Легких Доспехов Венеры">
+        <!--	Увеличивает Скор. восстановления MP на 5%.
+                  Увеличивает Скор. восстановления MP на 5%, Макс. MP на 354, Уклонение на 3.
+                  Скорость восстановления MP +5%, Макс. MP +354, Уклонение +3, Физ. Атк. +5.57%, сила Крит. Атк. +172.
+                  Скорость восстановления MP +5%, Макс. MP +354, Уклонение +3, Физ. Атк. +5.57%, сила Крит. Атк. +172, Скор. Атк. +5%, Сопротивление параличу +50%. Позволяет носить плащ. СИЛ +1, ВЫН -2, ЛВК +1.
+          -->
+        <table name="#rCrit">0 3 3 3</table>
+        <table name="#pCritDamageStatic">0 0 172 172</table>
+        <table name="#paralyzeResist">0 0 0 50</table>
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#maxMp">0 354 354 354</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#pAtkSpd">1 1 1 1.0557</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t95_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="paralyzeResist" val="#paralyzeResist"/>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs1"/>
+            <add order="0x40" stat="DEX" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="1.0557"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13005" levels="4" name="Комплект Магических Доспехов Венеры">
+        <!--	Увеличивает Скор. восстановления MP на 5.57%.
+                  Увеличивает Скор. восстановления MP на 5.57%, Маг. Атк. на 8.47%.
+                  Увеличивает Скор. восстановления MP на 5.57%, Маг. Атк. - на 8.47%, Скор. Маг. - на 15%.
+                  Увеличивает Скор. восстановления MP на 5.57%, Маг. Атк. - на 8.47%, Скор. Маг. - на 15%, Сопротивление оглушению - на 50%, уменьшает шанс прерывания чтения заклинания при получении урона на 30. ИНТ +1, ДУХ -2, МДР +1.
+          -->
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#concentration">1 1 1 0.7</table>
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#mAtk">1 1.0847 1.0847 1.0847</table>
+        <table name="#mAtkSpd">1 1 1.15 1.15</table>
+        <set name="icon" val="icon.armor_t96_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="#parametrs"/>
+            <sub order="0x40" stat="MEN" val="#parametrs1"/>
+            <add order="0x40" stat="WIT" val="#parametrs"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="1.0557"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <mul order="0x30" stat="concentration" val="#concentration"/>
+        </for>
+    </skill>
+    <skill id="13006" levels="4" name="Комплект Красивых Магических Доспехов Венеры">
+        <!--	Увеличивает Скор. восстановления MP на 5.57%.
+                  Увеличивает Скор. восстановления MP на 5.57%, Маг. Атк. на 8.47%, уменьшает шанс прерывания чтения заклинания при получении урона на 30.
+                  Увеличивает Скор. восстановления MP на 5.57%, Маг. Атк. - на 8.47%, Скор. Маг. - на 15%, Скорость - на 7, уменьшает шанс прерывания чтения заклинания при получении урона на 30.
+                  Скорость восстановления MP +5.57%, Маг. Атк. +8.47%, Скор. Маг. +15%, Скорость +7, Сопротивление оглушению +50%, шанс прерывания чтения заклинания при получении урона -30, расход MP при использовании магических умений -3%. Позволяет носить плащ. ИНТ +1, ДУХ -2, МДР +1.
+          -->
+        <table name="#runSpd">0 0 7 7</table>
+        <table name="#mpConsum">1 1 1 0.97</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#concentration">1 0.7 0.7 0.7</table>
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#mAtk">1 1.0847 1.0847 1.0847</table>
+        <table name="#mAtkSpd">1 1 1.15 1.15</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t96_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="runSpd" val="#runSpd"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="INT" val="#parametrs"/>
+            <sub order="0x40" stat="MEN" val="#parametrs1"/>
+            <add order="0x40" stat="WIT" val="#parametrs"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="1.0557"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <mul order="0x30" stat="concentration" val="#concentration"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13007" levels="1" name="Комплект Тяжелых Доспехов Венеры PvP">
+        <set name="icon" val="icon.armor_t94_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13008" levels="1" name="Комплект Красивых Тяжелых Доспехов Венеры PvP">
+        <set name="icon" val="icon.armor_t94_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13009" levels="1" name="Комплект Легких Доспехов Венеры PvP">
+        <set name="icon" val="icon.armor_t95_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13010" levels="1" name="Комплект Красивых Легких Доспехов Венеры PvP">
+        <set name="icon" val="icon.armor_t95_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13011" levels="1" name="Комплект Магических Доспехов Венеры PvP">
+        <set name="icon" val="icon.armor_t96_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13012" levels="1" name="Комплект Красивых Магических Доспехов Венеры PvP">
+        <set name="icon" val="icon.armor_t96_u_i01"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13013" levels="4" name="Комплект Тяжелых Доспехов Дестино">
+        <!--	Увеличивает Сопротивление маг. урону на 2%.
+                  Увеличивает Сопротивление маг. урону на 2%, Физ. Атк. на 4.26%.
+                  Увеличивает Сопротивление маг. урону на 2%, Физ. Атк. - на 4.26%, Скор. Атк. - на 4%.
+                  Увеличивает Сопротивление маг. урону на 2%, Физ. Атк. - на 4.26%, Скор. Атк. - на 4%, сопротивление оглушению - на 50%, сопротивление огню/воде/ветру/земле - на 3. Позволяет носить плащ. СИЛ +2, ВЫН -2.
+          -->
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#pAtk">1 1.0426 1.0426 1.0426</table>
+        <table name="#pAtkSpd">1 1 1.04 1.04</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 3</table>
+        <table name="#defenceWater">0 0 0 3</table>
+        <table name="#defenceWind">0 0 0 3</table>
+        <table name="#defenceEarth">0 0 0 3</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t100_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="magicResist" val="2"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13014" levels="4" name="Комплект Легких Доспехов Дестино">
+        <!--	Увеличивает Скорость на 3%.
+                  Увеличивает Скорость на 3%, Физ. Атк. на 4.26%.
+                  Увеличивает Скорость на 3%, Физ. Атк. - на 4.26%, Скор. Атк. - на 4%.
+                  Увеличивает Скорость на 3%, Физ. Атк. - на 4.26%, Скор. Атк. - на 4%, сопротивление удерживающим атакам - на 50%, сопротивление огню/воде/ветру/земле - на 3. Позволяет носить плащ. ЛВК +2, ВЫН -2.
+          -->
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#pAtk">1 1.0426 1.0426 1.0426</table>
+        <table name="#pAtkSpd">1 1 1.04 1.04</table>
+        <table name="#rootResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 3</table>
+        <table name="#defenceWater">0 0 0 3</table>
+        <table name="#defenceWind">0 0 0 3</table>
+        <table name="#defenceEarth">0 0 0 3</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t101_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="runSpd" val="1.03"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13015" levels="4" name="Комплект Магических Доспехов Дестино">
+        <!--	Увеличивает Скор. Маг. на 5%.
+                  Увеличивает Скор. Маг. на 5%, Маг. Атк. - на 8.11%.
+                  Увеличивает Скор. Маг. на 15%, Маг. Атк. - на 8.11%.
+                  Увеличивает Скор. Маг. на 15%, Маг. Атк. - на 8.11%, сопротивление парализующим атакам - на 50%, сопротивление огню/воде/ветру/земле - на 5. Позволяет носить плащ. МДР +2, ДУХ -2.
+          -->
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#mAtkSpd">1.05 1.05 1.15 1.15</table>
+        <table name="#mAtk">1 1.0811 1.0811 1.0811</table>
+        <table name="#paralyzeResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t102_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="#parametrs"/>
+            <sub order="0x40" stat="MEN" val="#parametrs"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="paralyzeResist" val="#paralyzeResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13016" levels="4" name="Комплект Тяжелых Доспехов Верпеса">
+        <!--	Увеличивает Физ. Защ. на 8.47%
+                  Увеличивает Физ. Защ. на 8.47%, Макс. HP на 541, Скорость на 7.
+                  Увеличивает Физ. Защ. на 8.47%, Макс. HP на 541, Скорость на 7, Физ. Атк. на 5.57%, Точность на 4.
+                  Увеличивает Физ. Защ. на 8.47%, Макс. HP на 541, Скорость на 7, Физ. Атк. на 5.57%, Точность на 4, Сопротивление Маг. урону на 2%, Сопротивление удерживающим/усыпляющим/кровопускающим атакам на 50%, Сопротивление огню/воде/ветру/земле на 5. Позволяет носить плащ. ВЫН +2. СИЛ -2
+          -->
+        <table name="#parametrs">0 0 0 2</table>
+        <table name="#maxHp">0 541 541 541</table>
+        <table name="#runSpd">0 7 7 7</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#pAccuracyCombat">0 0 4 4</table>
+        <table name="#magicResist">0 0 0 2</table>
+        <table name="#Resist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t94_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pAccuracyCombat" val="#pAccuracyCombat"/>
+            <add order="0x40" stat="runSpd" val="#runSpd"/>
+            <add order="0x40" stat="CON" val="#parametrs"/>
+            <sub order="0x40" stat="STR" val="#parametrs"/>
+            <mul order="0x30" stat="pDef" val="1.0847"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="magicResist" val="#magicResist"/>
+            <add order="0x40" stat="bleedResist" val="#Resist"/>
+            <add order="0x40" stat="rootResist" val="#Resist"/>
+            <add order="0x40" stat="sleepResist" val="#Resist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13017" levels="4" name="Комплект Легких Доспехов Верпеса">
+        <!--	Увеличивает Физ. Защ. на 5.57%
+                  Увеличивает Физ. Защ. на 5.57%, Макс. MP на 360, Скорость на 3%.
+                  Увеличивает Физ. Защ. на 5.57%, Макс. MP - на 360, Скорость - на 3%, Физ. Атк. - на 5.57%, Скор. Атк. - на 5%.
+                  Увеличивает Физ. Защ. на 5.57%, Макс. MP - на 360, Скорость - на 3%, Физ. Атк. - на 5.57%, Скор. Атк. - на 5%, Мощь Крит. Атк. - на 182, Сопротивление оглушающим атакам - на 50%, сопротивление огню/воде/ветру/земле - на 5. Позволяет носить плащ. СИЛ +1, ЛВК +2, ВЫН -3.
+          -->
+        <table name="#maxMp">0 360 360 360</table>
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#parametrs2">0 0 0 3</table>
+        <table name="#runSpd">1 1.03 1.03 1.03</table>
+        <table name="#pAtk">1 1 1.0557 1.0557</table>
+        <table name="#pAtkSpd">1 1 1.05 1.05</table>
+        <table name="#pCritDamageStatic">0 0 0 182</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t95_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <add order="0x40" stat="DEX" val="#parametrs1"/>
+            <sub order="0x40" stat="CON" val="#parametrs2"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="1.0557"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="runSpd" val="#runSpd"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13018" levels="4" name="Комплект Магических Доспехов Верпеса">
+        <!--	Увеличивает Скорость на 7.
+                  Увеличивает Скорость на 7, Макс. MP - на 92,  Маг. Атк. - на 8.7%, скорость восстановления MP - на 5%.
+                  Увеличивает Скорость на 7, Макс. MP - на 92, Скор. Маг. - на 15%, Маг. Атк. - на 8.7%, Скор. восстановления MP - на 5%.
+                  Увеличивает Скорость на 7, Макс. MP - на 92, Скор. Маг. - на 15%, Маг. Атк. - на 8.7%, Скор. восстановления MP - на 5%, Сопротивление оглушающим атакам - на 50%, сопротивление огню/воде/ветру/земле - на 5. Позволяет носить плащ. МДР +2, ДУХ -1, ИНТ -1.
+          -->
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#maxMp">0 92 92 92</table>
+        <table name="#mAtkSpd">1 1 1.15 1.15</table>
+        <table name="#mAtk">1 1.087 1.087 1.087</table>
+        <table name="#regMp">1 1.05 1.05 1.05</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t96_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="runSpd" val="7"/>
+            <add order="0x40" stat="WIT" val="#parametrs1"/>
+            <sub order="0x40" stat="MEN" val="#parametrs"/>
+            <sub order="0x40" stat="INT" val="#parametrs"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13019" levels="4" name="Комплект Тяжелых Доспехов Эллегии">
+        <!--	Увеличивает Макс. HP на 550.
+                  Увеличивает Макс. HP на 550, Физ. Атк. на 6.59%.
+                  Увеличивает Макс. HP на 550, Физ. Атк. на 6.59%, Шанс Крит. удара на 12.74, Сопротивление Маг. урону на 2%.
+                  Увеличивает Макс. HP на 550, Физ. Атк. - на 6.59%, Шанс Крит. Атк. - на 12.74, Сопротивление Маг. урону - на 2%, Сопротивление удерживающим/усыпляющим/кровопускающим атакам - на 50%, Сопротивление огню/воде/ветру/земле - на 5 и с определенной вероятностью восстанавливает определенное количество HP от нанесенного противнику урона. Позволяет носить плащ. СИЛ +3, ВЫН -2.
+          -->
+        <table name="#parametrs">0 0 0 3</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#pAtk">1 1.0659 1.0659 1.0659</table>
+        <table name="#rCrit">0 0 127 127</table>
+        <table name="#magicResist">0 0 2 2</table>
+        <table name="#absorbDam">0 0 0 3</table>
+        <table name="#Resist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t97_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <sub order="0x40" stat="CON" val="#parametrs1"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <add order="0x40" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="maxHp" val="550"/>
+            <add order="0x40" stat="magicResist" val="#magicResist"/>
+            <add order="0x40" stat="absorbDam" val="#absorbDam"/>
+            <add order="0x40" stat="bleedResist" val="#Resist"/>
+            <add order="0x40" stat="rootResist" val="#Resist"/>
+            <add order="0x40" stat="sleepResist" val="#Resist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13020" levels="4" name="Комплект Легких Доспехов Эллегии">
+        <!--	Увеличивает Скорость на 3%.
+                  Увеличивает Скорость на 3%, Физ. Атк. на 6.59%.
+                  Увеличивает Скорость на 3%, Физ. Атк. на 6.59%, Шанс Крит. Удара на 17.05.
+                  Увеличивает Скорость на 3%, Физ. Атк. - на 6.59%, Шанс Крит. Атк. - на 17,05, Скор. Атк. - на 6%, Сопротивление параличу - на 50%, Сопротивление огню/воде/ветру/земле - на 5. Позволяет носить плащ. СИЛ +1, ЛВК +2, ВЫН -2.
+          -->
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#pAtk">1 1.0659 1.0659 1.0659</table>
+        <table name="#rCrit">0 0 172 172</table>
+        <table name="#pAtkSpd">1 1 1 1.06</table>
+        <table name="#paralyzeResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t98_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="#parametrs"/>
+            <add order="0x40" stat="DEX" val="#parametrs1"/>
+            <sub order="0x40" stat="CON" val="#parametrs1"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="pCritRate" val="#rCrit"/>
+            <mul order="0x30" stat="runSpd" val="1.03"/>
+            <add order="0x40" stat="paralyzeResist" val="#paralyzeResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13021" levels="4" name="Комплект Магических Доспехов Эллегии">
+        <!--	Увеличивает Скорость на 7.
+                  Увеличивает Скорость на 7, Маг. Атк. на 10%, Макс. MP на 97.
+                  Увеличивает Скорость на 7, Маг. Атк. - на 10%, Макс. MP - на 97, Скор. Маг. - на 15%, Скор. Восстановления MP - на 5%.
+                  Увеличивает Скорость на 7, Маг. Атк. - на 10%, Макс. MP - на 97, Скор. Маг. - на 15%, Скор. восстановления MP - на 5%, сопротивление оглушающим атакам - на 50%, сопротивление огню/воде/ветру/земле - на 5. Уменьшает Расход МР при использовании магических умений на 3%. Позволяет носить плащ. МДР+2, ИНТ+1, ДУХ-2.
+          -->
+        <table name="#parametrs">0 0 0 1</table>
+        <table name="#parametrs1">0 0 0 2</table>
+        <table name="#maxMp">0 97 97 97</table>
+        <table name="#mAtk">1 1.1 1.1 1.1</table>
+        <table name="#mAtkSpd">1 1 1.15 1.15</table>
+        <table name="#regMp">1 1 1.05 1.05</table>
+        <table name="#mpConsum">1 1 1 0.97</table>
+        <table name="#stunResist">0 0 0 50</table>
+        <table name="#defenceFire">0 0 0 5</table>
+        <table name="#defenceWater">0 0 0 5</table>
+        <table name="#defenceWind">0 0 0 5</table>
+        <table name="#defenceEarth">0 0 0 5</table>
+        <table name="#openCloakSlot">0 0 0 1</table>
+        <set name="icon" val="icon.armor_t99_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="runSpd" val="7"/>
+            <add order="0x10" stat="WIT" val="#parametrs1"/>
+            <add order="0x10" stat="INT" val="#parametrs"/>
+            <sub order="0x10" stat="MEN" val="#parametrs1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+            <add order="0x10" stat="openCloakSlot" val="#openCloakSlot"/>
+        </for>
+    </skill>
+    <skill id="13022" levels="1" name="Комплект Тяжелых Доспехов Дестино PvP">
+        <set name="icon" val="icon.armor_t100_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13023" levels="1" name="Комплект Легких Доспехов Дестино PvP">
+        <set name="icon" val="icon.armor_t101_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13024" levels="1" name="Комплект Магических Доспехов Дестино PvP">
+        <set name="icon" val="icon.armor_t102_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13025" levels="1" name="Комплект Тяжелых Доспехов Верпеса PvP">
+        <set name="icon" val="icon.armor_t94_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13026" levels="1" name="Комплект Легких Доспехов Верпеса PvP">
+        <set name="icon" val="icon.armor_t95_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13027" levels="1" name="Комплект Магических Доспехов Верпеса PvP">
+        <set name="icon" val="icon.armor_t96_u_i03"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13028" levels="1" name="Комплект Тяжелых Доспехов Эллегии PvP">
+        <set name="icon" val="icon.armor_t97_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5693" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13029" levels="1" name="Комплект Легких Доспехов Эллегии PvP">
+        <set name="icon" val="icon.armor_t98_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5694" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13030" levels="1" name="Комплект Магических Доспехов Эллегии PvP">
+        <set name="icon" val="icon.armor_t99_u_i00"/>
+        <set name="magicLevel" val="80"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="5691" level="1" type="RECEIVE_DAMAGE" chance="2">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+        <for>
+            <mul order="0x30" stat="pvpPhysDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDefenceBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpMagicSkillDefenceBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13031" levels="1" name="Устойчивость к Огню">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="5"/>
+        </for>
+    </skill>
+    <skill id="13032" levels="1" name="Устойчивость к Земле">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="5"/>
+        </for>
+    </skill>
+    <skill id="13033" levels="1" name="Устойчивость к Тьме">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="5"/>
+        </for>
+    </skill>
+    <skill id="13034" levels="1" name="Устойчивость к Воде">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="5"/>
+        </for>
+    </skill>
+    <skill id="13035" levels="1" name="Устойчивость к Ветру">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="5"/>
+        </for>
+    </skill>
+    <skill id="13036" levels="1" name="Устойчивость к Святости">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="5"/>
+        </for>
+    </skill>
+    <skill id="13037" levels="1" name="Устойчивость к Огню">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="10"/>
+        </for>
+    </skill>
+    <skill id="13038" levels="1" name="Устойчивость к Земле">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="10"/>
+        </for>
+    </skill>
+    <skill id="13039" levels="1" name="Устойчивость к Тьме">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="10"/>
+        </for>
+    </skill>
+    <skill id="13040" levels="1" name="Устойчивость к Воде">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="10"/>
+        </for>
+    </skill>
+    <skill id="13041" levels="1" name="Устойчивость к Ветру">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="10"/>
+        </for>
+    </skill>
+    <skill id="13042" levels="1" name="Устойчивость к Святости">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="10"/>
+        </for>
+    </skill>
+    <skill id="13043" levels="1" name="Устойчивость к Огню">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="15"/>
+        </for>
+    </skill>
+    <skill id="13044" levels="1" name="Устойчивость к Земле">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="15"/>
+        </for>
+    </skill>
+    <skill id="13045" levels="1" name="Устойчивость к Тьме">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="15"/>
+        </for>
+    </skill>
+    <skill id="13046" levels="1" name="Устойчивость к Воде">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="15"/>
+        </for>
+    </skill>
+    <skill id="13047" levels="1" name="Устойчивость к Ветру">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="15"/>
+        </for>
+    </skill>
+    <skill id="13048" levels="1" name="Устойчивость к Святости">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="15"/>
+        </for>
+    </skill>
+    <skill id="13049" levels="1" name="Устойчивость к Огню">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="20"/>
+        </for>
+    </skill>
+    <skill id="13050" levels="1" name="Устойчивость к Земле">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="20"/>
+        </for>
+    </skill>
+    <skill id="13051" levels="1" name="Устойчивость к Тьме">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="20"/>
+        </for>
+    </skill>
+    <skill id="13052" levels="1" name="Устойчивость к Воде">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="20"/>
+        </for>
+    </skill>
+    <skill id="13053" levels="1" name="Устойчивость к Ветру">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="20"/>
+        </for>
+    </skill>
+    <skill id="13054" levels="1" name="Устойчивость к Святости">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="20"/>
+        </for>
+    </skill>
+    <skill id="13055" levels="1" name="Устойчивость к Огню">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4009"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="25"/>
+        </for>
+    </skill>
+    <skill id="13056" levels="1" name="Устойчивость к Земле">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4012"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceEarth" val="25"/>
+        </for>
+    </skill>
+    <skill id="13057" levels="1" name="Устойчивость к Тьме">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4333"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceUnholy" val="25"/>
+        </for>
+    </skill>
+    <skill id="13058" levels="1" name="Устойчивость к Воде">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4010"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWater" val="25"/>
+        </for>
+    </skill>
+    <skill id="13059" levels="1" name="Устойчивость к Ветру">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4011"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceWind" val="25"/>
+        </for>
+    </skill>
+    <skill id="13060" levels="1" name="Устойчивость к Святости">
+        <!-- Пассивка новых красок -->
+        <set name="icon" val="icon.skill4337"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceHoly" val="25"/>
+        </for>
+    </skill>
+    <skill id="13061" levels="4" name="Особое Свойство: Дальний Удар">
+        <!-- Увеличивает дальность выстрела из лука/арбалета. Увеличивает наносимый урон в PvP. -->
+        <set name="icon" val="icon.skill13061"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pAtkRange" val="150"/>
+            <mul order="0x30" stat="pvpMagicSkillDmgBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysSkillDmgBonus" val="1.05"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" val="1.05"/>
+        </for>
+    </skill>
+    <skill id="13062" levels="5" name="Особое Свойство: Увеличение Урона">
+        <!-- Увеличивает Физ. Атк. Увеличивает наносимый урон в PvP. -->
+        <table name="#pdam">288 332 377 415 468</table>
+        <table name="#attack">1.05 1.05 1.1 1.1 1.1</table>
+        <set name="icon" val="icon.skill13062"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pAtk" val="#pdam"/>
+            <mul order="0x30" stat="pvpMagicSkillDmgBonus" val="#attack"/>
+            <mul order="0x30" stat="pvpPhysSkillDmgBonus" val="#attack"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" val="#attack"/>
+        </for>
+    </skill>
+    <!-- TODO: Необходимо сделать уровни, типа 2 вещи 1-й уровень, 3 вещи - второй уровень и т д -->
+    <skill id="13063" levels="4" name="Активация Ячейки Плаща (R)">
+        <!-- Открывает ячейку плаща. TODO сделать скил нормально -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <skill id="13064" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Бессмертия 2 шт. (защит.)">
+        <!-- 	Увеличивает ВЫН +1, HP на 463.
+                  Увеличивает ВЫН +1, HP на 463, уменьшает вероятность получения крит. Атк. на 3.3%, увеличивает сопротивление оглушению на 5.
+                  Увеличивает ВЫН +1, HP на 463, уменьшает вероятность получения крит. Атк. на 3.3%, увеличивает сопротивление оглушению на 5, Маг. Защ. на 38.
+                  ВЫН +1, HP +463, шанс получения крит. Атк. -3.3%, сопротивление оглушению +5, Маг. Защ. +38, Физ. Защ. +7% и дополнительно +77, сопротивление 4 стихиям +10.
+          -->
+        <table name="#critChanceRcpt">1 0.967 0.967 0.967</table>
+        <table name="#stunResist">0 5 5 5</table>
+        <table name="#mDef">0 0 38 38</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 77</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13064"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="maxHp" val="463"/>
+            <mul order="0x30" stat="critChanceRcpt" val="#critChanceRcpt"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13065" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Бессмертия 2 шт. (атак.)">
+        <!--	СИЛ +1.
+                  СИЛ +1, сила Крит. Атк. +209, сопротивление удержанию +5.
+                  СИЛ +1, сила Крит. Атк. +209, сопротивление удержанию +5, HP +463.
+                  СИЛ +1, сила Крит. Атк. +209, сопротивление удержанию +5, HP +463, сопротивление 4 стихиям +10.
+          -->
+        <table name="#pCritDamageStatic">0 209 209 209</table>
+        <table name="#rootResist">0 5 5 5</table>
+        <table name="#maxHp">0 0 463 463</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13065"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13066" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Ада 2 шт. (защит.)">
+        <!--	Увеличивает ВЫН +2, СИЛ -1, HP на 487.
+                  Увеличивает ВЫН +2, СИЛ -1, HP на 487, MP на 202, сопротивление оглушению на 7.
+                  Увеличивает ВЫН +2, СИЛ -1, HP на 487, MP на 202, сопротивление оглушению на 7, Маг. Защ. на 44.
+                  ВЫН +2, СИЛ -1, HP +487, MP +202, сопротивление оглушению +7, Маг. Защ. +44, Физ. Защ. +7% и дополнительно +87, сопротивление 4 стихиям +10.
+          -->
+        <table name="#maxMp">0 202 202 202</table>
+        <table name="#stunResist">0 7 7 7</table>
+        <table name="#mDef">0 0 44 44</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 87</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13066"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="2"/>
+            <sub order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="maxHp" val="487"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13067" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Ада 2 шт. (атак.)">
+        <!--	СИЛ +2, ВЫН -1.
+                  СИЛ +2, ВЫН -1, сила Крит. Атк. +242, сопротивление удержанию +7.
+                  СИЛ +2, ВЫН -1, сила Крит. Атк. +242, сопротивление удержанию +7, расход MP для умений -4%.
+                  СИЛ +2, ВЫН -1, сила Крит. Атк. +242, сопротивление удержанию +7, Физ. Атк. +180, Физ. Защ. +7%, сопротивление 4 стихиям +10, расход MP для умений -4%.
+          -->
+        <table name="#pCritDamageStatic">0 242 242 242</table>
+        <table name="#rootResist">0 7 7 7</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#pAtk">0 0 0 180</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13067"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="2"/>
+            <sub order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13068" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Кадейры 2 шт. (защит.)">
+        <!--	Увеличивает ВЫН +3, СИЛ -2, HP на 511.
+                  Увеличивает ВЫН +3, СИЛ -2, HP на 511, уменьшает вероятность получения крит. Атк. на 3.3%, увеличивает сопротивление оглушению на 10.
+                  Увеличивает ВЫН +3, СИЛ -2, HP на 511, уменьшает вероятность получения крит. Атк. на 3.3%, урон получаемого Крит. удара на 281, увеличивает сопротивление оглушению на 10, Маг. Защ. на 50.
+                  ВЫН +3, СИЛ -2, HP +511, шанс получения Крит. Атк. -3.3%, урон от Крит. Атк. -281, сопротивление оглушению +10, Маг. Защ. +50, Физ. Защ. +7% и дополнительно +96, сопротивление стихиям +15.
+          -->
+        <table name="#critChanceRcpt">1 0.967 0.967 0.967</table>
+        <table name="#critDamRcpt">0 0 281 281</table>
+        <table name="#stunResist">0 10 10 10</table>
+        <table name="#mDef">0 0 50 50</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 96</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13068"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="3"/>
+            <sub order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="maxHp" val="511"/>
+            <mul order="0x30" stat="critChanceRcpt" val="#critChanceRcpt"/>
+            <sub order="0x30" stat="critDamRcpt" val="#critDamRcpt"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13069" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Кадейры 2 шт. (атак.)">
+        <!--	СИЛ +3, ВЫН -2.
+                  СИЛ +3, ВЫН -2, сила Крит. Атк. +281, сопротивление удержанию +10.
+                  СИЛ +3, ВЫН -2, сила Крит. Атк. +281, сопротивление удержанию +10, HP +511, атака умениями +6%.
+                  СИЛ +3, ВЫН -2, сила Крит. Атк. +281, сопротивление удержанию +10, Физ. Атк. +214, Физ. Защ. +7%, HP +511, атака умениями +6%, сопротивление стихиям +15.
+          -->
+        <table name="#pCritDamageStatic">0 281 281 281</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#maxHp">0 0 511 511</table>
+        <table name="#pCritDamageStatic">0 0 0 214</table>
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#skillPower">1 1 1.06 1.06</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13069"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="3"/>
+            <sub order="0x40" stat="CON" val="2"/>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="skillPower" val="#skillPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13070" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Айдиоса 2 шт. (защит.)">
+        <!--	Увеличивает ВЫН +3, СИЛ -1, HP на 521.
+                  Увеличивает ВЫН +3, СИЛ -1, HP на 521, уменьшает вероятность получения крит. Атк. на 3.3%, увеличивает сопротивление оглушению на 10.
+                  Увеличивает ВЫН +3, СИЛ -1, HP на 521, уменьшает вероятность получения крит. Атк. на 3.3%, получаемое исцеление на 108, увеличивает сопротивление оглушению на 10, Маг. Защ. на 54.
+                  ВЫН +3, СИЛ -1, HP +521, шанс получения крит. Атк. -3.3%, получаемое исцеление +108, сопротивление оглушению +10, Маг. Защ. +54, Физ. Защ. +7% и дополнительно +103, сопротивление 4 стихиям +15.
+          -->
+        <table name="#critChanceRcpt">1 0.967 0.967 0.967</table>
+        <table name="#stunResist">0 10 10 10</table>
+        <table name="#hpEff">0 0 108 108</table>
+        <table name="#mDef">0 0 54 54</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#pDefAdd">0 0 0 103</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13070"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="3"/>
+            <sub order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="maxHp" val="521"/>
+            <mul order="0x30" stat="critChanceRcpt" val="#critChanceRcpt"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="hpEff" val="#hpEff"/>
+            <add order="0x40" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13071" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Айдиоса 2 шт. (атак.)">
+        <!--	СИЛ +3, ВЫН -1.
+                  СИЛ +3, ВЫН -1, сила Крит. Атк. +298, сопротивление удержанию +10.
+                  СИЛ +3, ВЫН -1, сила Крит. Атк. +298, сопротивление удержанию +10, HP +521, с определенной вероятностью поглощает 2% HP от нанесенного противнику урона.
+                  СИЛ +3, ВЫН -1, сила Крит. Атк. +298, сопротивление удержанию +10, Физ. Атк. +246, Физ. Защ. +7%, HP +521, сопротивление стихиям +15, с определенной вероятностью поглощает 2% HP от нанесенного противнику урона.
+          -->
+        <table name="#pCritDamageStatic">0 298 298 298</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#maxHp">0 0 521 521</table>
+        <table name="#pAtk">0 0 0 246</table>
+        <table name="#pDef">1 1 1 1.07</table>
+        <table name="#absorbDam">0 0 2 2</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13071"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="3"/>
+            <sub order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="absorbDam" val="#absorbDam"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13072" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Богов 2 шт. (защит.)">
+        <!--	1	Увеличивает ВЫН +4, СИЛ -2, HP на 536.
+				2	Увеличивает ВЫН +4, СИЛ -2, HP на 536, уменьшает вероятность получения крит. Атк. на 3.3%, увеличивает сопротивление оглушению на 15.
+				3	Увеличивает ВЫН +4, СИЛ -2, HP на 536, уменьшает вероятность получения крит. Атк. на 3.3%, отражает 20% получаемого урона врагу,
+				увеличивает сопротивление оглушению на 15, Маг. Защ. на 58.
+				4	ВЫН +4, СИЛ -2, Скор. Атк. +5%, HP +536, шанс получения крит. Атк. -3.3%, отражает 20% получаемого урона врагу, сопротивление оглушению +15,
+				Маг. Защ. +58, Физ. Защ. +7% и дополнительно +108, сопротивление 4 стихиям +20.
+          -->
+        <table name="#critChanceRcpt">1 0.867 0.867 0.867</table>
+        <table name="#stunResist">0 20 20 20</table>
+        <table name="#reflectDam">0 0 30 30</table>
+        <table name="#mDef">0 0 98 98</table>
+        <table name="#pDef">1 1 1 1.14</table>
+        <table name="#pDefAdd">0 0 0 208</table>
+        <table name="#defenceFire">0 0 0 30</table>
+        <table name="#defenceWater">0 0 0 30</table>
+        <table name="#defenceWind">0 0 0 30</table>
+        <table name="#defenceEarth">0 0 0 30</table>
+        <set name="icon" val="icon.skill13072"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="CON" val="4"/>
+            <sub order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="maxHp" val="536"/>
+            <mul order="0x30" stat="critChanceRcpt" val="#critChanceRcpt"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="reflectDam" val="#reflectDam"/>
+            <add order="0x40" stat="mDef" val="#mDef"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="pDef" val="#pDefAdd"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13073" levels="4" name="Эффект Комплекта - Тяжелые Доспехи Богов 2 шт. (атак.)">
+        <!--	1	СИЛ +4, ВЫН -2, Скор. Атк. +3%.
+				2	СИЛ +4, ВЫН -2, Скор. Атк. +3%, сила Крит. Атк. +325, сопротивление удержанию +15.
+				3	СИЛ +4, ВЫН -2, Скор. Атк. +2,98%, сила Крит. Атк. +325, сопротивление удержанию +15, HP +536, увеличивает шанс успешного оглушения/отбрасывания.
+				4	СИЛ +4, ВЫН -2, Скор. Атк. +8%, сила Крит. Атк. +325, сопротивление удержанию +15, Физ. Атк. +255, Физ. Защ. +7%, HP +536, 
+				увеличивает шанс успешного оглушения/отбрасывания, сопротивление 4 стихиям +20.
+		-->
+        <table name="#pAtkSpd">1.06 1.06 1.0596 1.16</table>
+        <table name="#pCritDamageStatic">0 444 444 444</table>
+        <table name="#rootResist">0 20 20 20</table>
+        <table name="#maxHp">0 0 800 800</table>
+        <table name="#pAtk">0 0 0 400</table>
+        <table name="#pDef">1 1 1 1.14</table>
+        <table name="#stunPower">0 0 20 20</table>
+        <!-- С потолка -->
+        <table name="#defenceFire">0 0 0 30</table>
+        <table name="#defenceWater">0 0 0 30</table>
+        <table name="#defenceWind">0 0 0 30</table>
+        <table name="#defenceEarth">0 0 0 30</table>
+        <set name="icon" val="icon.skill13073"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="4"/>
+            <sub order="0x40" stat="CON" val="2"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pDef" val="#pDef"/>
+            <add order="0x40" stat="stunPower" val="#stunPower"/>
+            <!-- С потолка -->
+            <!--	<add order="0x40" stat="Отбрасывание" val="#stunPower"/>					Реазовать -->
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13074" levels="4" name="Эффект Комплекта - Легкие Доспехи Бессмертия 2 шт. (смерт.)">
+        <!--	ЛВК +1.
+                  ЛВК +1, Уклонение +2.3, сопротивление усыплению +5.
+                  ЛВК +1, Уклонение +2.3, сопротивление усыплению +5, расход MP для умений -4%.
+                  ЛВК +1, Скор. Атк. +3%, Физ. Атк. +7%, Уклонение +2.3, сопротивление усыплению +5, шанс Крит. Атк. +3.3%, сопротивление 4 стихиям +10, расход MP для умений -4%.
+          -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#sleepResist">0 5 5 5</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13074"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="1"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13075" levels="4" name="Эффект Комплекта - Легкие Доспехи Бессмертия 2 шт. (усил.)">
+        <!--	Увеличивает СИЛ +1, Физ. Атк. на 155.
+                  Увеличивает СИЛ +1, Физ. Атк. на 155, сопротивление удерживающим атакам на 5, уменьшает расход MP при использовании умений на 4%.
+                  Увеличивает СИЛ +1, Физ. Атк. на 155, сопротивление удерживающим атакам на 5, HP на 463, уменьшает расход MP при использовании умений на 4%.
+                  СИЛ +1, Скор. Атк. +3%, Физ. Атк. +7% и дополнительно +155, сопротивление удержанию +5, HP +463, сопротивление 4 стихиям +10, расход MP для умений -4%.
+          -->
+        <table name="#rootResist">0 5 5 5</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#maxHp">0 0 463 463</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13075"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="pAtk" val="155"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13076" levels="4" name="Эффект Комплекта - Легкие Доспехи Ада 2 шт. (смерт.)">
+        <!--	ЛВК +2, СИЛ -1.
+                  ЛВК +2, СИЛ -1, Уклонение +2.3, сопротивление удержанию +7.
+                  ЛВК +2, СИЛ -1, Уклонение +2.3, сопротивление удержанию +7, Физ. Атк. +180.
+                  ЛВК +2, СИЛ -1, Скор. Атк. +3%, Физ. Атк. +7%, Уклонение +2.3, сопротивление удержанию +7, Физ. Атк. +180, шанс Крит. Атк. +3.3%, сопротивление 4 стихиям +10.
+          -->
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#rootResist">0 7 7 7</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkAdd">0 0 180 180</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="2"/>
+            <sub order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="pAtk" val="#pAtkAdd"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13077" levels="4" name="Эффект Комплекта - Легкие Доспехи Ада 2 шт. (усил.)">
+        <!--	Увеличивает СИЛ +2, ВЫН -1, Физ. Атк. на 180.
+                  Увеличивает СИЛ +2, ВЫН -1, Физ. Атк. на 180, сопротивление удерживающим атакам на 7, уменьшает расход MP при использовании умений на 4%.
+                  Увеличивает СИЛ +2, ВЫН -1, Физ. Атк. на 180, сопротивление удерживающим атакам на 7, HP на 487, уменьшает расход MP при использовании умений на 4%.
+                  СИЛ +2, Скор. Атк. +3%, Физ. Атк. +7% и дополнительно +180, сопротивление удержанию +7, HP +487, сила Крит. Атк. +242, сопротивление 4 стихиям +10, расход MP для умений -4%.
+          -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#pCritDamageStatic">0 0 0 242</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#rootResist">0 7 7 7</table>
+        <table name="#maxHp">0 0 487 487</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="2"/>
+            <sub order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="pAtk" val="180"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13078" levels="4" name="Эффект Комплекта - Легкие Доспехи Кадейры 2 шт. (смерт.)">
+        <!--	ЛВК +3, СИЛ -2.
+                  ЛВК +3, СИЛ -2, Уклонение +2.3, сопротивление удержанию +10.
+                  ЛВК +3, СИЛ -2, Уклонение +2.3, сопротивление удержанию +10, атака умениями +6%, расход MP для умений -4%.
+                  ЛВК +3, СИЛ -2, Скор. Атк. +3%, Физ. Атк. +7%, Уклонение +2.3, сопротивление удержанию +10, атака умениями +6%, шанс Крит. Атк. +3.3%, сопротивление 4 стихиям +15, расход MP для умений -4%.
+          -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#skillPower">1 1 1.06 1.06</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="3"/>
+            <sub order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="pCritRate" val="#rCrit"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="skillPower" val="#skillPower"/>
+            <mul order="0x30" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13079" levels="4" name="Эффект Комплекта - Легкие Доспехи Кадейры 2 шт. (усил.)">
+        <!--	Увеличивает СИЛ +3, ВЫН -2, Физ. Атк. на 214.
+                  Увеличивает СИЛ +3, ВЫН -2, Физ. Атк. на 214, сопротивление удерживающим атакам на 10, уменьшает расход MP при использовании умений на 4%.
+                  Увеличивает СИЛ +3, ВЫН -2, Физ. Атк. на 214, сопротивление удерживающим атакам на 10, HP на 511, бонус к ментальным атакам на 20, уменьшает расход MP при использовании умений на 4%.
+                  СИЛ +3, ВЫН -2, Скор. Атк. +3%, Физ. Атк. +7% и дополнительно +214, Скор. Атк. +3%, сопротивление удержанию +10, HP +511, сопротивление 4 стихиям +15, бонус к ментальным атакам +20, расход MP для умений -4%.
+          -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#maxHp">0 0 511 511</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#mentalPower">0 0 20 20</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="3"/>
+            <sub order="0x40" stat="CON" val="2"/>
+            <add order="0x40" stat="pAtk" val="214"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="mentalPower" val="#mentalPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13080" levels="4" name="Эффект Комплекта - Легкие Доспехи Айдиоса 2 шт. (смерт.)">
+        <!--	ЛВК +3, СИЛ -1.
+                  ЛВК +3, СИЛ -1, Уклонение +2.3, сопротивление удержанию +10.
+                  ЛВК +3, СИЛ -1, Уклонение +2.3, сопротивление удержанию +10, расход MP для умений -4%, с определенной вероятностью поглощает 1% HP от нанесенного противнику урона.
+                  ЛВК +3, СИЛ -1, Скор. Атк. +3%, Физ. Атк. +7%, Уклонение +2.3, сопротивление удержанию +10, шанс Крит. Атк. +3.3%, сопротивление стихиям +15, расход MP для умений -4%, с определенной вероятностью поглощает 1% HP от нанесенного противнику урона.
+          -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#rCrit">0 2.3 2.3 2.3</table>
+        <table name="#sleepResist">0 10 10 10</table>
+        <table name="#absorbDam">0 0 0 1</table>
+        <table name="#rCrit">1 1 1 1.033</table>
+        <table name="#mpConsum">1 1 0.96 0.96</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="3"/>
+            <sub order="0x40" stat="STR" val="1"/>
+            <add order="0x40" stat="pCritRate" val="#rCrit"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <mul order="0x30" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="absorbDam" val="#absorbDam"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13081" levels="4" name="Эффект Комплекта - Легкие Доспехи Айдиоса 2 шт. (усил.)">
+        <!--	Увеличивает СИЛ +3, ВЫН -1, Физ. Атк. на 246.
+                  Увеличивает СИЛ +3, ВЫН -1, Физ. Атк. на 246, сопротивление удерживающим атакам на 10, уменьшает расход MP при использовании умений на 4%.
+                  Увеличивает СИЛ +3, ВЫН -1, Физ. Атк. на 246, сопротивление удерживающим атакам на 10, Атк. умениями на 6%, HP на 521, уменьшает расход MP при использовании умений на 4%.
+                  СИЛ +3, ВЫН -1, Скор. Атк. +3%, Физ. Атк. +7% и дополнительно +246, Скор. Атк. +3%, сопротивление удержанию +10, атака умениями +6%, HP +511, сопротивление 4 стихиям +15, расход MP для умений -4%.
+          -->
+        <table name="#pAtk">1 1 1 1.07</table>
+        <table name="#pAtkSpd">1 1 1 1.03</table>
+        <table name="#maxHp">0 0 521 521</table>
+        <table name="#skillPower">1 1 1.06 1.06</table>
+        <table name="#mpConsum">1 0.96 0.96 0.96</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="3"/>
+            <sub order="0x40" stat="CON" val="1"/>
+            <add order="0x40" stat="pAtk" val="246"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <mul order="0x30" stat="skillPower" val="#skillPower"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13082" levels="4" name="Эффект Комплекта - Легкие Доспехи Богов 2 шт. (смерт.)">
+        <!--	1	ЛВК +4, СИЛ -2, Скор. Атк. +3%.
+				2	ЛВК +4, СИЛ -2, Скор. Атк. +3%, Уклонение +2.3, сопротивление удержанию +15.
+				3	ЛВК +4, СИЛ -2, Скор. Атк. +3%, Уклонение +2.3, сопротивление удержанию +15, сила Крит. Атк. +325, расход MP для умений -4%.
+				4	ЛВК +4, СИЛ -2, Скор. Атк. +3%, Физ. Атк. +7%, Уклонение +2.3, сопротивление удержанию +15, сила Крит. Атк. +325, шанс Крит. Атк. +3.3%,
+				сопротивление 4 стихиям +20, расход MP для умений -4%.
+          -->
+        <table name="#pAtk">1 1 1 1.14</table>
+        <table name="#rCrit">0 2.4 2.4 2.4</table>
+        <table name="#rootResist">0 20 20 20</table>
+        <table name="#pCritDamageStatic">0 0 425 425</table>
+        <table name="#rCrit">1 1 1 1.043</table>
+        <table name="#pEvasionRate">0 5 5 5</table>
+        <table name="#mpConsum">1 1 0.86 0.86</table>
+        <table name="#defenceFire">0 0 0 30</table>
+        <table name="#defenceWater">0 0 0 30</table>
+        <table name="#defenceWind">0 0 0 30</table>
+        <table name="#defenceEarth">0 0 0 30</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="DEX" val="4"/>
+            <sub order="0x40" stat="STR" val="2"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <mul order="0x30" stat="pAtkSpd" val="1.03"/>
+            <mul order="0x30" stat="pCritRate" val="#rCrit"/>
+            <add order="0x40" stat="pEvasionRate" val="#pEvasionRate"/>
+            <add order="0x40" stat="pCritDamageStatic" val="#pCritDamageStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13083" levels="4" name="Эффект Комплекта - Легкие Доспехи Богов 2 шт. (усил.)">
+        <!--	1	Увеличивает СИЛ +4, ВЫН -2, Физ. Атк. на 255.
+				2	Увеличивает СИЛ +4, ВЫН -2, Физ. Атк. на 255, время продолжительности положительной магии на 10%, сопротивление удерживающим атакам на 15.
+				3	СИЛ +4, ВЫН -2, Физ. Атк. +255, время действия положительных эффектов +10%, сопротивление удержанию +15, Скор. Атк. +3%, HP +536.
+				4	СИЛ +4, ВЫН -2, Физ. Атк. +7% и дополнительно +255, время действия положительных эффектов +10%, сопротивление удержанию +15, Скор. Атк. +3%,
+				HP +536, сопротивление 4 стихиям +20, расход MP для умений -4%.
+		-->
+        <table name="#pAtk">1 1 1 1.14</table>
+        <table name="#pAtkSpd">1 1 1.06 1.06</table>
+        <table name="#maxHp">0 0 836 836</table>
+        <!--	<table name="#Other">1 1.1 1.1 1.1</table>		Что это?-->
+        <table name="#mpConsum">1 1 1 0.86</table>
+        <table name="#rootResist">0 20 20 20</table>
+        <table name="#defenceFire">0 0 0 30</table>
+        <table name="#defenceWater">0 0 0 30</table>
+        <table name="#defenceWind">0 0 0 30</table>
+        <table name="#defenceEarth">0 0 0 30</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="4"/>
+            <sub order="0x40" stat="CON" val="2"/>
+            <add order="0x40" stat="pAtk" val="255"/>
+            <mul order="0x30" stat="pAtk" val="#pAtk"/>
+            <!--	<mul order="0x30" stat="ПоложЭффект" val="#Other"/>	(время продолжительности положительной магии на 10%)	Что это?-->
+            <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+            <add order="0x40" stat="maxHp" val="#maxHp"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13084" levels="4" name="Эффект Комплекта - Магические Доспехи Бессмертия 2 шт. (маг.)">
+        <!--	ИНТ +1, Скор. Маг. +3%.
+                  ИНТ +1, Скор. Маг. +3%, MP +185, сопротивление усыплению +5.
+                  ИНТ +1, Скор. Маг. +3%, MP +185, сопротивление усыплению +5, скорость восстановления MP +0.6.
+                  ИНТ +1, Скор. Маг. +12%, Маг. Атк. +15%, MP +185, сопротивление усыплению +5, скорость восстановления MP +0.6, шанс Маг. Крит. Атк. +30, сопротивление стихиям +10.
+          -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.12</table>
+        <table name="#maxMp">0 185 185 185</table>
+        <table name="#regMp">0 0 0.6 0.6</table>
+        <table name="#mCritRate">0 0 0 30</table>
+        <table name="#sleepResist">0 5 5 5</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13085" levels="4" name="Эффект Комплекта - Магические Доспехи Бессмертия 2 шт. (восст.)">
+        <!--	МДР +1, Скор. Маг. +3%.
+                  МДР +1, Скор. Маг. +3%, MP +185, сопротивление оглушению +5.
+                  МДР +1, Скор. Маг. +3%, MP +185, сопротивление оглушению +5, скорость восстановления MP +0.6.
+                  МДР +1, Скор. Маг. +15%, Маг. Атк. +12%, MP +185, сопротивление оглушению +5, скорость восстановления MP +0.6, исцеление +65, сопротивление стихиям +10.
+          -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.12</table>
+        <table name="#maxMp">0 185 185 185</table>
+        <table name="#regMp">0 0 0.6 0.6</table>
+        <table name="#healPower">0 0 0 65</table>
+        <table name="#stunResist">0 5 5 5</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13086" levels="4" name="Эффект Комплекта - Магические Доспехи Ада 2 шт. (маг.)">
+        <!--	ИНТ +2, ДУХ -1, Скор. Маг. +3%.
+                  ИНТ +2, ДУХ -1, Скор. Маг. +3%, MP +202, сопротивление усыплению +7.
+                  ИНТ +2, ДУХ -1, Скор. Маг. +3%, MP +202, сопротивление усыплению +7, Маг. Атк. +184.
+                  ИНТ +2, ДУХ -1, Скор. Маг. +15%, Маг.Атк. +15% и дополнительно +184, MP +202, сопротивление усыплению +7, шанс Маг. Крит. Атк. +40, сопротивление стихиям +10.
+          -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#mAtkAdd">0 0 184 184</table>
+        <table name="#maxMp">0 202 202 202</table>
+        <table name="#mCritRate">0 0 0 40</table>
+        <table name="#sleepResist">0 5 5 5</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="2"/>
+            <sub order="0x40" stat="MEN" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13087" levels="4" name="Эффект Комплекта - Магические Доспехи Ада 2 шт. (восст.)">
+        <!--	МДР +2, ДУХ -1, Скор. Маг. +3%.
+                  МДР +2, ДУХ -1, Скор. Маг. +3%, MP +202, сопротивление оглушению +7.
+                  МДР +2, ДУХ -1, Скор. Маг. +3%, MP +202, сопротивление оглушению +7, скорость восстановления MP +0.7.
+                  МДР +2, ДУХ -1, Скор. Маг. +15%, Маг. Атк. +15%, MP +202, сопротивление оглушению +7, скорость восстановления MP +0.7, исцеление +85, сопротивление стихиям +10.
+          -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#maxMp">0 202 202 202</table>
+        <table name="#regMp">0 0 0.7 0.7</table>
+        <table name="#healPower">0 0 0 85</table>
+        <table name="#stunResist">0 7 7 7</table>
+        <table name="#defenceFire">0 0 0 10</table>
+        <table name="#defenceWater">0 0 0 10</table>
+        <table name="#defenceWind">0 0 0 10</table>
+        <table name="#defenceEarth">0 0 0 10</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="90"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="2"/>
+            <sub order="0x40" stat="MEN" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13088" levels="4" name="Эффект Комплекта - Магические Доспехи Кадейры 2 шт. (маг.)">
+        <!--	ИНТ +3, ДУХ -2, Скор. Маг. +3%.
+                  ИНТ +3, ДУХ -2, Скор. Маг. +3%, MP +221, сопротивление удержанию +10.
+                  ИНТ +3, ДУХ -2, Скор. Маг. +3%, MP +221, сопротивление удержанию +10, Маг. Атк. +222, увеличивает сопротивление отмене магии.
+                  ИНТ +3, ДУХ -2, Скор. Маг. +15%, Маг. Атк. +15% и дополнительно +222, MP +221, сопротивление удержанию +10, Маг. Атк. +222, увеличивает сопротивление отмене магии, шанс Маг. Крит. Атк. +40, сопротивление стихиям +15.
+          -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#mAtkAdd">0 0 222 222</table>
+        <table name="#maxMp">0 221 221 221</table>
+        <table name="#mCritRate">0 0 0 30</table>
+        <table name="#concentration">1 1 0.9 0.9</table>
+        <!-- С потолка -->
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="3"/>
+            <sub order="0x40" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x30" stat="concentration" val="#concentration"/>
+            <!-- С потолка -->
+            <add order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13089" levels="4" name="Эффект Комплекта - Магические Доспехи Кадейры 2 шт. (восст.)">
+        <!--	МДР +3, ДУХ -2, Скор. Маг. +3%.
+                  МДР +3, ДУХ -2, Скор. Маг. +3%, MP +221, сопротивление оглушению +10.
+                  МДР +3, ДУХ -2, Скор. Маг. +3%, MP +221, сопротивление оглушению +10, скорость восстановления MP +0.8, шанс Маг. Крит. Атк. +30.
+                  МДР +3, ДУХ -2, Скор. Маг. +15%, Маг. Атк. +15%, MP +221, сопротивление оглушению +10, скорость восстановления MP +0.8, шанс Маг. Крит. Атк. +40, исцеление +89, сопротивление стихиям +15.
+          -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#maxMp">0 221 221 221</table>
+        <table name="#regMp">0 0 0.8 0.8</table>
+        <table name="#healPower">0 0 0 89</table>
+        <table name="#mCritRate">0 0 30 40</table>
+        <table name="#stunResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="95"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="3"/>
+            <sub order="0x40" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13090" levels="4" name="Эффект Комплекта - Магические Доспехи Айдиоса 2 шт. (маг.)">
+        <!--	ИНТ +3, ДУХ -1, Скор. Маг. +3%.
+                  ИНТ +3, ДУХ -1, Скор. Маг. +3%, MP +228, сопротивление удержанию +10.
+                  ИНТ +3, ДУХ -1, Скор. Маг. +3%, MP +228, сопротивление удержанию +10, Маг. Атк. +256., Сила Маг. Крит. Атк. +297.
+                  ИНТ +3, ДУХ -1, Скор. Маг. +15%, Маг. Атк. +15%, MP +228, сопротивление удержанию +10, Маг. Атк. +256., сила Маг. Крит. Атк. +297, шанс Маг. Крит. Атк. +30, сопротивление стихиям +15.
+          -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#mAtkAdd">0 0 256 256</table>
+        <table name="#maxMp">0 228 228 228</table>
+        <table name="#mCritDamageStatic">0 0 297 297</table>
+        <table name="#mCritRate">0 0 0 30</table>
+        <table name="#rootResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="3"/>
+            <sub order="0x40" stat="MEN" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="mCritBase" val="#mCritDamageStatic"/>
+            <add order="0x40" stat="rootResist" val="#rootResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13091" levels="4" name="Эффект Комплекта - Магические Доспехи Айдиоса 2 шт. (восст.)">
+        <!--	МДР +3, ДУХ -1, Скор. Маг. +3%.
+                  МДР +3, ДУХ -1, Скор. Маг. +3%, MP +228, сопротивление оглушению +10, бонус к ментальным атакам +15.
+                  МДР +3, ДУХ -1, Скор. Маг. +3%, MP +228, сопротивление оглушению +10, скорость восстановления MP +0.9, бонус к ментальным атакам +15.
+                  МДР +3, ДУХ -1, Скор. Маг. +15%, Маг. Атк. +15%, MP +228, сопротивление оглушению +10, скорость восстановления MP +0.9, исцеление +108, сопротивление стихиям +15.
+          -->
+        <table name="#mAtkSpd">1.03 1.03 1.03 1.15</table>
+        <table name="#mAtk">1 1 1 1.15</table>
+        <table name="#maxMp">0 228 228 228</table>
+        <table name="#mentalPower">0 15 15 15</table>
+        <table name="#regMp">0 0 0.9 0.9</table>
+        <table name="#healPower">0 0 0 108</table>
+        <table name="#stunResist">0 10 10 10</table>
+        <table name="#defenceFire">0 0 0 15</table>
+        <table name="#defenceWater">0 0 0 15</table>
+        <table name="#defenceWind">0 0 0 15</table>
+        <table name="#defenceEarth">0 0 0 15</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="3"/>
+            <sub order="0x40" stat="MEN" val="1"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <add order="0x40" stat="mentalPower" val="#mentalPower"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13092" levels="4" name="Эффект Комплекта - Магические Доспехи Богов 2 шт. (маг.)">
+        <!--	1	ИНТ +4, ДУХ -2, Скор. Маг. + 15%.
+				2	ИНТ +4, ДУХ -2, Скор. Маг. + 15%, MP +239, сопротивление усыпляющим атакам +15.
+				3	ИНТ +4, ДУХ -2, Скор. Маг. +15%, MP +239, сопротивление усыпляющим атакам +15, Маг. Атк. +267, бонус ментальных атак +20.
+				4	ИНТ +4, ДУХ -2, Скор. Маг. +25%, Маг. Атк. +15%, MP +239, сопротивление удержанию +15, Маг. Атк. +267, бонус к ментальным атакам +20,
+				шанс Маг. Крит. Атк. +3%, сопротивление стихиям +20.
+		-->
+        <table name="#mAtk">1 1 1 1.25</table>
+        <table name="#mAtkAdd">0 0 467 467</table>
+        <table name="#mAtkSpd">1.25 1.25 1.25 1.35</table>
+        <table name="#maxMp">0 439 439 439</table>
+        <table name="#mentalPower">0 0 30 30</table>
+        <table name="#mCritRate">1 1 1 1.3</table>
+        <table name="#sleepResist">0 20 20 20</table>
+        <table name="#defenceFire">0 0 0 30</table>
+        <table name="#defenceWater">0 0 0 30</table>
+        <table name="#defenceWind">0 0 0 30</table>
+        <table name="#defenceEarth">0 0 0 30</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="4"/>
+            <sub order="0x40" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="1.15"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x30" stat="mCritRate" val="#mCritRate"/>
+            <add order="0x40" stat="mentalPower" val="#mentalPower"/>
+            <add order="0x40" stat="sleepResist" val="#sleepResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13093" levels="4" name="Эффект Комплекта - Магические Доспехи Богов 2 шт. (восст.)">
+        <!--	1	МДР +4, ДУХ -2, Скор. Маг. +15%.
+				2	МДР +4, ДУХ -2, Скор. Маг. +15%, MP +239, сопротивление оглушению +15.
+				3	МДР +4, ДУХ -2, Скор. Маг. +15%, MP +239, сопротивление оглушению +15, восстановление MP +1, Маг. Атк. +276.
+				4	МДР +4, ДУХ -2, Скор. Маг. +25%, Маг.Атк. +15%, MP +239, сопротивление оглушению +15, скорость восстановления MP +1,
+				Маг. Атк. +276, исцеление +111, сопротивление стихиям +20.
+		-->
+        <table name="#mAtk">1 1 1 1.25</table>
+        <table name="#mAtkAdd">0 0 476 476</table>
+        <table name="#mAtkSpd">1.25 1.25 1.25 1.35</table>
+        <table name="#maxMp">0 439 439 439</table>
+        <table name="#regMp">0 0 1.5 1.5</table>
+        <table name="#healPower">0 0 0 211</table>
+        <table name="#stunResist">0 20 20 20</table>
+        <table name="#defenceFire">0 0 0 30</table>
+        <table name="#defenceWater">0 0 0 30</table>
+        <table name="#defenceWind">0 0 0 30</table>
+        <table name="#defenceEarth">0 0 0 30</table>
+        <set name="icon" val="icon.skill13063"/>
+        <set name="magicLevel" val="99"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="WIT" val="4"/>
+            <sub order="0x40" stat="MEN" val="2"/>
+            <mul order="0x30" stat="mAtk" val="#mAtk"/>
+            <add order="0x40" stat="mAtk" val="#mAtkAdd"/>
+            <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+            <add order="0x40" stat="maxMp" val="#maxMp"/>
+            <mul order="0x30" stat="regMp" val="#regMp"/>
+            <add order="0x40" stat="healPower" val="#healPower"/>
+            <add order="0x40" stat="stunResist" val="#stunResist"/>
+            <add order="0x40" stat="defenceFire" val="#defenceFire"/>
+            <add order="0x40" stat="defenceWater" val="#defenceWater"/>
+            <add order="0x40" stat="defenceWind" val="#defenceWind"/>
+            <add order="0x40" stat="defenceEarth" val="#defenceEarth"/>
+        </for>
+    </skill>
+    <skill id="13094" levels="4" name="R1 2 компл.">
+        <set name="icon" val="icon.armor_t501_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13095" levels="4" name="R1 2 компл.">
+        <set name="icon" val="icon.armor_t502_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13096" levels="4" name="R1 2 компл.">
+        <set name="icon" val="icon.armor_t503_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13097" levels="4" name="R2 2 компл.">
+        <set name="icon" val="icon.armor_t601_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13098" levels="4" name="R2 2 компл.">
+        <set name="icon" val="icon.armor_t602_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="13099" levels="4" name="R2 2 компл.">
+        <set name="icon" val="icon.armor_t603_u_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

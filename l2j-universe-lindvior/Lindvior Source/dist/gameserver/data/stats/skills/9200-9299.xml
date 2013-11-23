@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="9200" levels="1" name="Поэма Лютни">
+        <table name="#time">1800</table>
+        <table name="#vuln1">1.34 1.35 1.36 1.37</table>
+        <table name="#vuln2">1.31 1.32 1.33 1.34</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+                <add order="0x40" stat="absorbDam" val="9"/>
+                <mul order="0x30" stat="pAtkSpd" val="#vuln1"/>
+                <mul order="0x30" stat="mAtkSpd" val="#vuln2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9201" levels="1" name="Поэма Органа">
+        <table name="#vuln">1.37 1.39 1.41 1.43</table>
+        <table name="#time">1800</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="hp_up;hpregen;mp_up">
+                <mul order="0x30" stat="maxHp" val="#vuln"/>
+                <mul order="0x30" stat="maxMp" val="#vuln"/>
+                <mul order="0x30" stat="maxCp" val="#vuln"/>
+                <mul order="0x30" stat="regHp" val="1.20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9202" levels="1" name="Поэма Гитары">
+        <table name="#vuln">32 34 36 38</table>
+        <table name="#time">1800</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="impulse;rCrit;pCritDamage">
+                <add order="0x40" stat="pCritRate" val="#vuln"/>
+                <mul order="0x30" stat="pCritDamage" val="1.35"/>
+                <add order="0x40" stat="mCritRate" val="20"/>
+                <mul order="0x30" stat="mpConsum" val="0.9"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9203" levels="1" name="Поэма Арфы">
+        <table name="#time">1800</table>
+        <table name="#vuln">5 6 7 8</table>
+        <table name="#vuln2">34 35 36 37</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11"
+                    stackType="accuracyUp;SpeedUp;Poem_Arfa;pEvasionRate;CoP">
+                <add order="0x40" stat="pAccuracyCombat" val="#vuln"/>
+                <add order="0x40" stat="pEvasionRate" val="#vuln"/>
+                <add order="0x40" stat="runSpd" val="#vuln2"/>
+                <mul order="0x30" stat="critDamRcpt" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9204" levels="1" name="Кукуру">
+        <set name="abnormal_time" val="60"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="transform"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skilltransform3"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="9210;1"/>
+        <set name="npcId" val="13330"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isCommon" val="true"/>
+        <set name="useSS" val="false"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <cond msgId="1509">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+        <for>
+            <effect name="Transformation" val="137">
+                <set order="0x50" stat="runSpd" val="250"/>
+                <mul order="0x30" stat="pAtk" val="0.5"/>
+                <mul order="0x30" stat="mAtk" val="0.5"/>
+                <mul order="0x30" stat="pAccuracyCombat" val="0.5"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="changebody"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="turn_stone"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="buff_special_multi"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="changebody"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="turn_stone"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="buff_special_multi"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9205" levels="1" name="Стойкость Кукуру">
+        <!--
+              Уровень: 1; Описание: Оседлав Кукуру, Вы чувствуете прилив уверенности.
+          -->
+        <set name="reuseDelay" val="45000"/>
+        <set name="abnormal_time" val="58"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="special_ride"/>
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0169"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9206" levels="1" name="Быстрый Бег">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackType="Hourglass" time="30" val="0" displayId="9206">
+                <mul order="0x30" stat="runSpd" val="1.5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9207" levels="1" name="Счастливый Клевер: Ранг R">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9208" levels="1" name="Счастливый Клевер: Ранг R">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9209" levels="1" name="Кукуру">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="npcId" val="33200"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Transformation" time="60" val="137">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9210" levels="1" name="Слезть с животного">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="9212"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="9211" levels="1" name="Слезть с животного">
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0217"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="useSS" val="false"/>
+        <set name="is_dispel" val="true"/>
+        <for>
+            <effect name="Transformation" time="0"/>
+        </for>
+    </skill>
+    <skill id="9212" levels="1" name="Слезть с Кукуру">
+        <set name="hitTime" val="2500"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skilltransform2"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="useSS" val="false"/>
+        <set name="is_dispel" val="true"/>
+        <for>
+            <effect name="Transformation" time="0"/>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="transform"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="special_ride"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9213" levels="1" name="Кукурин">
+        <!--
+              Уровень: 1; Описание: Оседлать Кукурина.
+          -->
+        <set name="hitTime" val="1000"/>
+        <set name="abnormal_time" val="3600"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="transform"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skilltransform3"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="changebody"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="turn_stone"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="buff_special_multi"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9214" levels="1" name="Божественное Вдохновение">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="1500"/>
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9215" levels="1" name="Божественное Вдохновение">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="1500"/>
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9216" levels="1" name="Божественное Вдохновение">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="1500"/>
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9217" levels="1" name="Божественное Вдохновение">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="1500"/>
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9218" levels="1" name="Поэма Рога">
+        <table name="#pAtk">1.17</table>
+        <table name="#mAtk">1.79</table>
+        <table name="#time">1800</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackType="MagicDefUp;pAtk;pDef;mAtk">
+                <mul order="0x30" stat="pDef" val="1.15"/>
+                <mul order="0x30" stat="pAtk" val="#pAtk"/>
+                <mul order="0x30" stat="mAtk" val="#mAtk"/>
+                <mul order="0x30" stat="mDef" val="1.30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9219" levels="1" name="Поэма Барабана">
+        <table name="#spd">0.85</table>
+        <table name="#time">1800</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="3" stackType="ancient">
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <add order="0x40" stat="mCritRate" val="20"/>
+                <mul order="0x30" stat="pCritDamage" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtk" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <mul order="0x30" stat="runSpd" val="#spd"/>
+                <add order="0x40" stat="debuffResist" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9220" levels="1" name="Поэма Лютни">
+        <table name="#time">1800</table>
+        <table name="#vuln1">1.34 1.35 1.36 1.37</table>
+        <table name="#vuln2">1.31 1.32 1.33 1.34</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+                <add order="0x40" stat="absorbDam" val="9"/>
+                <mul order="0x30" stat="pAtkSpd" val="#vuln1"/>
+                <mul order="0x30" stat="mAtkSpd" val="#vuln2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9221" levels="1" name="Поэма Органа">
+        <table name="#vuln">1.37 1.39 1.41 1.43</table>
+        <table name="#time">1800</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="hp_up;hpregen;mp_up">
+                <mul order="0x30" stat="maxHp" val="#vuln"/>
+                <mul order="0x30" stat="maxMp" val="#vuln"/>
+                <mul order="0x30" stat="maxCp" val="#vuln"/>
+                <mul order="0x30" stat="regHp" val="1.20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9222" levels="1" name="Поэма Гитары">
+        <table name="#vuln">32 34 36 38</table>
+        <table name="#time">1800</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="impulse;rCrit;pCritDamage">
+                <add order="0x40" stat="pCritRate" val="#vuln"/>
+                <mul order="0x30" stat="pCritDamage" val="1.35"/>
+                <add order="0x40" stat="mCritRate" val="20"/>
+                <mul order="0x30" stat="mpConsum" val="0.9"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9223" levels="1" name="Поэма Арфы">
+        <table name="#time">1800</table>
+        <table name="#vuln">5 6 7 8</table>
+        <table name="#vuln2">34 35 36 37</table>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="itemConsumeId" val="734"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11"
+                    stackType="accuracyUp;SpeedUp;Poem_Arfa;pEvasionRate;CoP">
+                <add order="0x40" stat="pAccuracyCombat" val="#vuln"/>
+                <add order="0x40" stat="pEvasionRate" val="#vuln"/>
+                <add order="0x40" stat="runSpd" val="#vuln2"/>
+                <mul order="0x30" stat="critDamRcpt" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9224" levels="1" name="Escape - Talking Island Village">
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="townId" val="1"/>
+        <set name="itemConsumeId" val="32226"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="isHandler" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="RECALL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <cond msgId="1509">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </skill>
+    <skill id="9225" levels="1" name="Иллюзия Света">
+        <!--
+              Уровень: 1; Описание: Призывает Иллюзию Света.
+          -->
+        <set name="reuseDelay" val="10000"/>
+        <set name="hitTime" val="1500"/>
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9226" levels="1" name="Осколок Света">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9227" levels="1" name="Mentor's Poem of Horn">
+        <!--
+              Increases P. Atk. by 17%, P. Def, by 15%, M. Atk. by 79%, and M. Def. by 30%.
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="isPreservedOnDeath" val="true"/>
+        <set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackType="MagicDefUp;pAtk;pDef;mAtk">
+                <mul order="0x30" stat="mAtk" val="1.79"/>
+                <mul order="0x30" stat="pAtk" val="1.17"/>
+                <mul order="0x30" stat="pDef" val="1.15"/>
+                <mul order="0x30" stat="mDef" val="1.3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9228" levels="1" name="Mentor's Poem of Drum">
+        <!--
+              Increases Max MP by 20%, HP recovery bonus by 20%, M. Crit. Atk. Rate by 2,
+              critical rate during a normal physical attack by 20%, P. Atk. by 10%,
+              P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%,
+              Casting Spd. by 20%, resistance to debuff by 10%, and P. Def upon evading a critical attack.
+              Decreases Spd. by 15%, and for party members equipped with melee weapons that receive more
+              than ordinary damage attacks, critical power increases during an ordinary attack.
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="isPreservedOnDeath" val="true"/>
+        <set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="3" stackType="ancient">
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <add order="0x40" stat="mCritRate" val="2"/>
+                <mul order="0x30" stat="pCritRate" val="1.3"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtk" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <add order="0x40" stat="debuffResist" val="10"/>
+                <mul order="0x30" stat="runSpd" val="0.85"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9229" levels="1" name="Mentor's Poem of Lute">
+        <!--
+              Increases Atk. Spd. by 34% and Casting Spd. by 31%. Change of applying Vampiric Rage effect by 9%.
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="isPreservedOnDeath" val="true"/>
+        <set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11"
+                    stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+                <mul order="0x30" stat="pAtkSpd" val="1.34"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.31"/>
+                <add order="0x40" stat="absorbDam" val="9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9230" levels="1" name="Mentor's Poem of Organ">
+        <!--
+              Increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%.
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="isPreservedOnDeath" val="true"/>
+        <set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11"
+                    stackType="hp_up;hpregen;mp_up">
+                <mul order="0x30" stat="maxHp" val="1.37"/>
+                <mul order="0x30" stat="maxMp" val="1.37"/>
+                <mul order="0x30" stat="maxCp" val="1.37"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9231" levels="1" name="Mentor's Poem of Guitar">
+        <!--
+              Increases P. Crit. Rate by 32%, P. Crit. damage by 35%, and M. Crit. Rate by 20.
+              Decreases MP consumption for physical skills by 20%, magical skills by 10%, and enchant skills by 20%.
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="isPreservedOnDeath" val="true"/>
+        <set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11"
+                    stackType="impulse;rCrit;pCritDamage">
+                <mul order="0x30" stat="pCritRate" val="1.32"/>
+                <mul order="0x30" stat="pCritDamage" val="1.35"/>
+                <add order="0x40" stat="mCritRate" val="20"/>
+                <mul order="0x30" stat="mpConsum" val="0.9"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9232" levels="1" name="Mentor's Poem of Harp">
+        <!--
+              Increases physical accuracy by 5, physical and magic evasion by 5, and Spd. by 34. Decreases received critical damage by 30%.
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="isPreservedOnDeath" val="true"/>
+        <set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0" stackOrder="11"
+                    stackType="accuracyUp;SpeedUp;Poem_Arfa;pEvasionRate;CoP">
+                <add order="0x40" stat="pAccuracyCombat" val="5"/>
+                <add order="0x40" stat="pEvasionRate" val="5"/>
+                <add order="0x40" stat="mEvasionRate" val="5"/>
+                <add order="0x40" stat="runSpd" val="34"/>
+                <mul order="0x30" stat="critDamRcpt" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9233" levels="1" name="Mentor’s Guidance">
+        <!--
+                Description: Acquired Experience Points increase by 200% for Mentee.
+				Created by Cain.				
+          -->
+        <table name="#power">2.0</table>
+        <set name="icon" val="br_cashtex.skill.br_cash_rune_of_exp_buff_1"/>
+        <set name="magicLevel" val="1"/>
+        <set name="isPreservedOnDeath" val="true"/>
+        <set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0">
+                <add order="0x40" stat="ExpMultiplier" val="#power"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9234" levels="1" name="Свиток: Модифицировать Головной Убор">
+        <!--
+              Уровень: 1; Описание: Модифицирует Головной Убор.
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9235" levels="1" name="Подарок Луча Терсия 1">
+        <!--
+              Уровень: 1; Описание: Выдает подарок.
+          -->
+        <set name="coolTime" val="1000"/>
+        <set name="hitTime" val="2700"/>
+        <set name="magicLevel" val="85"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9236" levels="1" name="Подарок Луча Терсия 2">
+        <!--
+              Уровень: 1; Описание: Выдает подарок.
+          -->
+        <set name="coolTime" val="1000"/>
+        <set name="hitTime" val="2700"/>
+        <set name="magicLevel" val="85"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9237" levels="1" name="Подарок Луча Терсия 3">
+        <!--
+              Уровень: 1; Описание: Выдает подарок.
+          -->
+        <set name="coolTime" val="1000"/>
+        <set name="hitTime" val="2700"/>
+        <set name="magicLevel" val="85"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9238" levels="1" name="Подарок Луча Терсия 4">
+        <!--
+              Уровень: 1; Описание: Выдает подарок.
+          -->
+        <set name="coolTime" val="1000"/>
+        <set name="hitTime" val="2700"/>
+        <set name="magicLevel" val="85"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9239" levels="1" name="Подарок Луча Терсия 5">
+        <!--
+              Уровень: 1; Описание: Выдает подарок.
+          -->
+        <set name="coolTime" val="1000"/>
+        <set name="hitTime" val="2700"/>
+        <set name="magicLevel" val="85"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9240" levels="2" name="Руна Невитта">
+        <!--
+              Уровень: 1; Описание: Получаемые очки опыта и SP увеличиваются на 1%.
+              Уровень: 2; Описание: Получаемые очки опыта и SP увеличиваются на 2%.
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="icon" val="br_cashtex.skill.br_cash_rune_of_exp_buff_1"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9241" levels="1" name="Ящик Гиганта">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9242" levels="1" name="Ящик Оков">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9243" levels="1" name="Ящик Разрушения">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9244" levels="1" name="Свиток Гигантов: Модифицировать Оружие (D)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9245" levels="1" name="Свиток Гигантов: Модифицировать Доспех (D)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9246" levels="1" name="Свиток Гигантов: Модифицировать Оружие (C)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9247" levels="1" name="Свиток Гигантов: Модифицировать Доспех (C)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9248" levels="1" name="Свиток Гигантов: Модифицировать Оружие (B)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9249" levels="1" name="Свиток Гигантов: Модифицировать Доспех (B)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9250" levels="1" name="Свиток Гигантов: Модифицировать Оружие (A)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9251" levels="1" name="Свиток Гигантов: Модифицировать Доспех (A)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9252" levels="1" name="Свиток Гигантов: Модифицировать Оружие (S)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9253" levels="1" name="Свиток Гигантов: Модифицировать Доспех (S)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9254" levels="1" name="Свиток Гигантов: Модифицировать Оружие (R)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9255" levels="1" name="Свиток Гигантов: Модифицировать Доспех (R)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9256" levels="1" name="Mentee's Appreciation">
+        <!--
+                Description: Acquired Experience Points increase by 10% for Mentor.
+				Created by Cain.
+          -->
+        <table name="#power">0.1</table>
+        <set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+        <set name="magicLevel" val="1"/>
+        <set name="isPreservedOnDeath" val="true"/>
+        <set name="isSelfDispellable" val="false"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <for>
+            <effect count="0x7fffffff" name="Mentoring" time="99999999" val="0">
+                <add order="0x40" stat="ExpMultiplier" val="#power"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9257" levels="1" name="Свиток Наставника: Модифицировать Оружие (D)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9258" levels="1" name="Свиток Наставника: Модифицировать Доспех (D)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9259" levels="1" name="Свиток Наставника: Модифицировать Оружие (C)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9260" levels="1" name="Свиток Наставника: Модифицировать Доспех (C)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9261" levels="1" name="Свиток Наставника: Модифицировать Оружие (B)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9262" levels="1" name="Свиток Наставника: Модифицировать Доспех (B)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9263" levels="1" name="Свиток Наставника: Модифицировать Оружие (A)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9264" levels="1" name="Свиток Наставника: Модифицировать Доспех (A)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9265" levels="1" name="Свиток Наставника: Модифицировать Оружие (S)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9266" levels="1" name="Свиток Наставника: Модифицировать Доспех (S)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9267" levels="1" name="Свиток Наставника: Модифицировать Оружие (R)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9268" levels="1" name="Свиток Наставника: Модифицировать Доспех (R)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9269" levels="1" name="Улучшенный Ящик Гиганта">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9270" levels="1" name="Улучшенный Ящик Оков">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9271" levels="1" name="Улучшенный Ящик Разрушения">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9272" levels="1" name="Ящик Наставника">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="magicLevel" val="1"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9273" levels="1" name="Поэма Рога - ПА">
+        <!--
+              Уровень: 1; Описание: Физ. Атк. +17%, Физ. Защ. +15%, Маг. Атк. +79%, Маг. Защ. +3%. Время действия: 6 мин. Для ПА.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill11517"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9274" levels="1" name="Поэма Барабана - ПА">
+        <!--
+              Уровень: 1; Описание: МР +2%, бонус восстановления НР +2%, шанс Маг. Крит. Атк. +2, сила Крит. Атк. при обычной атаке +2%, Физ. Атк. +1%, Физ. Защ. +2%, Скор. Атк. +2%, Маг. Атк. +2%, Маг. Защ. +2%, Скор. Маг. +2%. Сопротивление снятию положительных эффектов +1%. Также увеличивает Физ. Защ. при получении Крит. Атк. Скорость -15%, дополнительно увеличивает силу Крит. Атк. при обычны ударах для оснащенных оружием ближнего боя членов группы, получивших определенный урон. Время действия: 6 мин. Для ПА.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill11522"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9275" levels="1" name="Поэма Лютни - ПА">
+        <!--
+              Уровень: 1; Описание: Скор. Атк. +34%, Скор. Маг. +31%, дает 9% шанс колдовства Гнева Вампира. Время действия: 6 мин. Для ПА.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill11518"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9276" levels="1" name="Поэма Органа - ПА">
+        <!--
+              Уровень: 1; Описание: Макс. НР +37%, Макс. МР +37%, Макс. СР +37%, бонус восстановления НР +2%. Время действия: 6 мин. Для ПА.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill11519"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9277" levels="1" name="Поэма Гитары - ПА">
+        <!--
+              Уровень: 1; Описание: Шанс Физ. Крит. Атк. +32%, сила Физ. Крит. Атк. +35%, шанс Маг. Крит. Атк. +2, расход МР для физических умений -2%, для магических умений -1%, для усиливающих умений Заклинателя Иса -2% Время действия: 6 мин. Для ПА.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill11520"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9278" levels="1" name="Поэма Арфы - ПА">
+        <!--
+              Уровень: 1; Описание: Физ. Точность +5, Физ. Уклонение и Маг. Уклонение +5, Скорость +34. Урон при получении Крит. Атк. -3%. Время действия: 6 мин. Для ПА
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill11521"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9279" levels="1" name="ПА поддержка развития">
+        <!--
+              Уровень: 1; Описание: Очки опыта и SP +3%. Неприменимо к Питомцам и Слугам. Только для ПА.
+          -->
+        <set name="icon" val="icon.etc_pccafe_exp_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9280" levels="2" name="Horn Melody - Heavenly Cocktail">
+        <set name="icon" val="icon.etc_fruit_cocktail_i01"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="itemConsumeCount" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <set name="itemConsumeId" val="34620"/>
+        <for>
+            <effect name="Buff" count="1" time="3600" val="0" stackType="horn_melody;mDef;pAtk;pDef;mAtk;Motion;Whisper"
+                    stackOrder="10">
+                <mul stat="pDef" order="0x30" val="1.15"/>
+                <mul stat="pAtk" order="0x30" val="1.17"/>
+                <mul stat="mAtk" order="0x30" val="1.79"/>
+                <mul stat="mDef" order="0x30" val="1.30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9281" levels="2" name="Drum Melody - Heavenly Cocktail">
+        <set name="icon" val="icon.etc_fruit_cocktail_i01"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <for>
+            <effect name="Buff" time="3600" val="0" stackType="drum_melody;blessing_of_saha;counter_critical;ancient"
+                    stackOrder="11">
+                <mul stat="maxMp" order="0x30" val="1.2"/>
+                <mul stat="regHp" order="0x30" val="1.2"/>
+                <add stat="mCritRate" order="0x40" val="20"/>
+                <mul stat="pAtk" order="0x30" val="1.1"/>
+                <mul stat="pDef" order="0x30" val="1.2"/>
+                <mul stat="pAtkSpd" order="0x30" val="1.2"/>
+                <mul stat="mAtk" order="0x30" val="1.2"/>
+                <mul stat="mAtkSpd" order="0x30" val="1.2"/>
+                <mul stat="mDef" order="0x30" val="1.2"/>
+                <mul stat="pCritDamage" order="0x30" val="1.2"/>
+                <mul stat="debuffResist" order="0x30" val="1.1"/>
+                <mul stat="runSpd" order="0x30" val="0.9"/>
+                <triggers>
+                    <trigger id="11569" level="1" type="RECEIVE_DAMAGE" chance="10">
+                        <player damage="100;0"/>
+                    </trigger>
+                </triggers>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9282" levels="2" name="Lute Melody - Heavenly Cocktail">
+        <set name="icon" val="icon.etc_fruit_cocktail_i01"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <cond msgId="1902">
+            <and>
+                <player minLevel="85"/>
+                <player maxLevel="99"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="Buff" time="1800" val="0"
+                    stackType="lute_melody;force_of_saha;vampRage;mAtkSpeedUp;pAtkSpeedUp" stackOrder="10">
+                <mul stat="pAtkSpd" order="0x30" val="1.34"/>
+                <mul stat="mAtkSpd" order="0x30" val="1.31"/>
+                <add stat="absorbDam" order="0x40" val="9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9283" levels="2" name="Pipe Organ Melody - Heavenly Cocktail">
+        <set name="icon" val="icon.etc_fruit_cocktail_i01"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <cond msgId="1902">
+            <and>
+                <player minLevel="85"/>
+                <player maxLevel="99"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="Buff" time="3600" val="0" stackType="pipe_organ_melody;maxHp;maxCp;maxMp;regHp"
+                    stackOrder="10">
+                <mul stat="maxHp" order="0x30" val="1.37"/>
+                <mul stat="maxMp" order="0x30" val="1.37"/>
+                <mul stat="maxCp" order="0x30" val="1.37"/>
+                <mul stat="regMp" order="0x30" val="1.20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9284" levels="2" name="Guitar Melody - Heavenly Cocktail">
+        <set name="icon" val="icon.etc_fruit_cocktail_i01"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <cond msgId="1902">
+            <and>
+                <player minLevel="85"/>
+                <player maxLevel="99"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="Buff" time="1800" val="0"
+                    stackType="guitar_melody;critical_of_saha;pCritDamage;pCritRate;impulse;mCritRate;clarity"
+                    stackOrder="10">
+                <mul stat="pCritRate" order="0x30" val="1.32"/>
+                <mul stat="pCritDamage" order="0x30" val="1.35"/>
+                <add stat="mCritRate" order="0x40" val="20"/>
+                <mul stat="mpConsumePhysical" order="0x30" val="0.8"/>
+                <mul stat="mpConsum" order="0x30" val="0.9"/>
+                <mul stat="mpDanceConsume" order="0x30" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9285" levels="2" name="Harp Melody - Heavenly Cocktail">
+        <set name="icon" val="icon.etc_fruit_cocktail_i01"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <cond msgId="1902">
+            <and>
+                <player minLevel="85"/>
+                <player maxLevel="99"/>
+            </and>
+        </cond>
+        <for>
+            <effect name="Buff" time="1800" val="0"
+                    stackType="harp_melody;speed_of_saha;runSpd;pAccuracyCombat;pEvasionRate;mEvasionRate;critDamRcpt"
+                    stackOrder="10">
+                <add stat="pAccuracyCombat" order="0x40" val="5"/>
+                <add stat="pCritRate" order="0x40" val="5"/>
+                <add stat="pEvasionRate" order="0x40" val="5"/>
+                <add stat="mEvasionRate" order="0x40" val="5"/>
+                <add stat="runSpd" order="0x40" val="34"/>
+                <mul stat="critDamRcpt" order="0x30" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9286" levels="1" name="Свиток ПА: Модифицировать Оружие (D)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9287" levels="1" name="Свиток ПА: Модифицировать Оружие (C)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9288" levels="1" name="Свиток ПА: Модифицировать Оружие (B)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9289" levels="1" name="Свиток ПА: Модифицировать Оружие (A)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9290" levels="1" name="Свиток ПА: Модифицировать Оружие (S)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9291" levels="1" name="Свиток ПА: Модифицировать Оружие (R)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9292" levels="1" name="ПА Быстродействующее Зелье Исцеления">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9293" levels="1" name="ПА Заряд Души: без Ранга">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9294" levels="1" name="ПА Заряд Души: Ранг D">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9295" levels="1" name="ПА Заряд Души: Ранг C">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9296" levels="1" name="ПА Заряд Души: Ранг B">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9297" levels="1" name="ПА Заряд Души: Ранг A">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9298" levels="1" name="ПА Заряд Души: Ранг S">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9299" levels="1" name="ПА Заряд Души: Ранг R">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

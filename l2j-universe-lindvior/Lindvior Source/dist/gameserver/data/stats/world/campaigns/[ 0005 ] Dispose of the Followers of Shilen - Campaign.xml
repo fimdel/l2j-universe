@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "campaigns.dtd">
+
+<!--
+	Уничтожение Адептов Шилен - Кампания
+-->
+<list>
+    <quest id="5" name="_0005_ShilenAdeptsDestruction">
+        <!-- TODO проверить -->
+        <level min="40"/>
+        <spawn name="_0005_ShilenAdeptsDestruction"/>
+        <dates>
+            <date day="Wednesday" time="11:30"/>
+            <date day="Wednesday" time="22:00"/>
+        </dates>
+        <steps>
+            <step id="501" name="_0005_ShilenAdeptsDestruction" title="Уничтожение Адептов Шилен" points="10000"
+                  duration="30">
+                <dialogs>
+                    <dialog type="start" name="dc0005_start001"/>
+                    <dialog type="accept" name="dc0005_context001"/>
+                    <dialog type="failed" name="dc0005_failed001"/>
+                    <dialog type="reward" name="dc0005_reward001"/>
+                    <dialog type="elite_reward" name="dc0005_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="19088" points="1"/>
+                    <!-- Адепт Шилен -->
+                </points>
+                <rewards>
+                    <reward id="33501" count="1" type="usual"/>
+                    <reward id="33501" count="1" type="elite"/>
+                    <reward id="33500" count="1" type="elite"/>
+                </rewards>
+            </step>
+        </steps>
+    </quest>
+</list>

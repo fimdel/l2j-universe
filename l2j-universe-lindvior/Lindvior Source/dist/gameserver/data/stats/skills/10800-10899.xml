@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="10800" levels="1" name="Grand Hawk-Eye Mastery">
+        <table name="#vul">20</table>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="relationSkillsId" val="481"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <enchant1 levels="10" name="Power">
+            <table name="#vul">21 22 23 24 25 26 27 28 29 30</table>
+            <table name="#magicLevel">86 87 88 90 91 92 93 95 97 99</table>
+        </enchant1>
+        <for>
+            <add order="0x10" stat="STR" val="2"/>
+            <add order="0x40" stat="defenceWater" val="#vul"/>
+            <add order="0x40" stat="defenceFire" val="#vul"/>
+            <add order="0x40" stat="defenceWind" val="#vul"/>
+            <add order="0x40" stat="defenceEarth" val="#vul"/>
+        </for>
+    </skill>
+    <skill id="10801" levels="5" name="Targeting">
+        <table name="#magicLevel">85 87 92 95 98</table>
+        <table name="#mDef">0.95 0.9 0.85 0.80 0.75</table>
+        <table name="#Tab-bowRcpt">40 45 50 55 60</table>
+        <set name="relationSkillsId" val="522;122"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <table name="#activateRate">85</table>
+        <set name="activateRate" val="#activateRate"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isDebuff" val="true"/>
+        <table name="#rootResist">0</table>
+        <table name="#stunResist">0</table>
+        <table name="#stunResis">0</table>
+        <enchant1 levels="10" name="Chans">
+            <table name="#activateRate">86 87 88 89 90 91 92 93 94 95</table>
+        </enchant1>
+        <enchant2 levels="10" name="Power">
+            <table name="#rootResist">1 2 3 4 5 6 7 8 9 10</table>
+        </enchant2>
+        <enchant3 levels="10" name="Power">
+            <table name="#stunResist">1 2 3 4 5 6 7 8 9 10</table>
+        </enchant3>
+        <enchant4 levels="10" name="Power">
+            <table name="#stunResis">1 2 3 4 5 6 7 8 9 10</table>
+        </enchant4>
+        <for>
+            <effect name="Debuff" time="10" val="0" effectPower="40" effectType="DEBUFF" stackOrder="1">
+                <add order="0x40" stat="bowWpnVuln" val="#Tab-bowRcpt"/>
+                <add order="0x40" stat="crossbowWpnVuln" val="#Tab-bowRcpt"/>
+                <mul order="0x30" stat="mDef" val="#mDef"/>
+                <sud order="0x40" stat="stunResist" val="#stunResist"/>
+                <sud order="0x40" stat="stunResist" val="#stunResis"/>
+                <sud order="0x40" stat="rootResist" val="#rootResist"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10802" levels="1" name="Сосредоточенное Нацеливание">
+        <set name="magicLevel" val="99"/>
+        <set name="power" val="150"/>
+        <set name="target" val="TARGET_AURA"/>
+        <table name="#activateRate">85</table>
+        <set name="activateRate" val="#activateRate"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <table name="#rootResist">0</table>
+        <table name="#stunResist">0</table>
+        <table name="#stunResis">0</table>
+        <enchant1 levels="10" name="Cost"/>
+        <enchant2 levels="10" name="Chans">
+            <table name="#activateRate">86 87 88 89 90 91 92 93 94 95</table>
+        </enchant2>
+        <enchant3 levels="10" name="Power">
+            <table name="#rootResist">1 2 3 4 5 6 7 8 9 10</table>
+        </enchant3>
+        <enchant4 levels="10" name="Power">
+            <table name="#stunResist">1 2 3 4 5 6 7 8 9 10</table>
+        </enchant4>
+        <enchant5 levels="10" name="Power">
+            <table name="#stunResis">1 2 3 4 5 6 7 8 9 10</table>
+        </enchant5>
+        <for>
+            <effect name="Debuff" time="10" val="0" effectPower="40" effectType="DEBUFF" stackOrder="1">
+                <add order="0x40" stat="bowWpnVuln" val="40"/>
+                <add order="0x40" stat="crossbowWpnVuln" val="40"/>
+                <mul order="0x30" stat="mDef" val="0.75"/>
+                <sud order="0x40" stat="stunResist" val="#stunResist"/>
+                <sud order="0x40" stat="stunResist" val="#stunResis"/>
+                <sud order="0x40" stat="rootResist" val="#rootResist"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="10803" levels="1" name="Предсказанная Гибель">
+        <set name="magicLevel" val="97"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="30000"/>
+        <for/>
+    </skill>
+    <skill id="10804" levels="1" name="Предсказанная Гибель">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for/>
+    </skill>
+    <skill id="10805" levels="4" name="Молниеносность">
+        <table name="#magicLevel">89 92 95 99</table>
+        <table name="#flyRadius">500 600 700 800</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="save" val="4"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="power" val="1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="soulBoost" val="true"/>
+        <set name="flyType" val="DUMMY"/>
+        <set name="flyRadius" val="#flyRadius"/>
+        <enchant1 levels="10" name="Power">
+            <table name="#flyRadius">815 830 845 860 875 890 905 920 935 950</table>
+        </enchant1>
+    </skill>
+    <skill id="10806" levels="1" name="Ice Trap">
+        <table name="#skill">17</table>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="relationSkillsId" val="516"/>
+        <set name="skillType" val="SUMMON"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="addSkills" val="5269;#skill"/>
+        <set name="npcId" val="13326"/>
+        <set name="summonType" val="trap"/>
+        <table name="#activateRate">85</table>
+        <set name="activateRate" val="#activateRate"/>
+        <enchant1 levels="10" name="Chance">
+            <table name="#activateRate">86 87 88 89 90 91 92 93 94 95</table>
+        </enchant1>
+        <for/>
+    </skill>
+    <skill id="10807" levels="1" name="Гравитационная Ловушка">
+        <table name="#skill">19</table>
+        <set name="relationSkillsId" val="518"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="SUMMON"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <set name="addSkills" val="5271;#skill"/>
+        <set name="npcId" val="13327"/>
+        <set name="summonType" val="trap"/>
+        <table name="#activateRate">85</table>
+        <set name="activateRate" val="#activateRate"/>
+        <enchant1 levels="10" name="Chance">
+            <table name="#activateRate">86 87 88 89 90 91 92 93 94 95</table>
+        </enchant1>
+        <for/>
+    </skill>
+    <skill id="10808" levels="1" name="Предсказанная Гибель">
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for/>
+    </skill>
+    <skill id="10809" levels="1" name="Выживание">
+        <table name="#time">2</table>
+        <table name="#pEvasionRate">0</table>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <enchant1 levels="10" name="Power">
+            <table name="#time">2 2 2 3 3 3 3 4 4 5</table>
+        </enchant1>
+        <enchant2 levels="10" name="Chans">
+            <table name="#pEvasionRate">1 2 3 4 5 6 7 8 9 10</table>
+        </enchant2>
+        <for>
+            <effect count="1" name="Buff" stackOrder="3" stackType="pEvasionRate" time="#time" val="0">
+                <add order="0x40" stat="pEvasionRate" val="15"/>
+                <add order="0x40" stat="pEvasionRate" val="#pEvasionRate"/>
+            </effect>
+        </for>
+    </skill>
+</list>

@@ -1,0 +1,57 @@
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <!--Starts of Fate-->
+    <instance id="178" name="Labyrinth of Belis" maxChannels="50" collapseIfEmpty="10" timelimit="180"
+              dispelBuffs="false" respawn="60">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="18" max="25"/>
+        <return loc="-111816 231880 -3192"/>
+        <teleport loc="-119934 211153 -8584"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="10331"/>
+        <reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+        <geodata map="16_24"/>
+        <spawns>
+            <spawn mobId="19155" type="point" respawn="60">
+                <coords loc="-118973 211197 -8592 8546"/>
+            </spawn>
+            <spawn mobId="22998" type="point" respawn="0">
+                <coords loc="-118236 211528 -8592 65473"/>
+                <coords loc="-118736 211376 -8592 45047"/>
+                <coords loc="-118286 211509 -8592 46803"/>
+                <coords loc="-118539 210783 -8592 49229"/>
+                <coords loc="-118589 210803 -8592 37908"/>
+                <coords loc="-118389 210943 -8592 56191"/>
+            </spawn>
+            <spawn mobId="22997" type="point" respawn="20">
+                <coords loc="-116418 212746 -8592 48982"/>
+                <coords loc="-116826 212746 -8592 3505"/>
+                <coords loc="-116353 213250 -8592 30173"/>
+                <coords loc="-116753 213130 -8592 55258"/>
+                <coords loc="-116724 212536 -8592 33362"/>
+                <coords loc="-116703 213230 -8592 41838"/>
+            </spawn>
+            <spawn mobId="33215" type="point" respawn="60">
+                <coords loc="-116512 212974 -8575 0"/>
+            </spawn>
+            <spawn mobId="33216" type="point" respawn="60">
+                <coords loc="-118253 214706 -8584 57541"/>
+            </spawn>
+        </spawns>
+        <doors>
+            <door id="16240001" opened="false"/>
+            <door id="16240002" opened="false"/>
+            <door id="16240003" opened="false"/>
+            <door id="16240004" opened="false"/>
+            <door id="16240005" opened="false"/>
+            <door id="16240006" opened="false"/>
+            <door id="16240007" opened="false"/>
+            <door id="16240008" opened="false"/>
+        </doors>
+    </instance>
+</list>

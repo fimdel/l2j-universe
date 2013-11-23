@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="9503" levels="1" name="소파의 보급 상자">
+        <!-- 9503	1	소파의 보급 상자	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9504" levels="1" name="재개의 주문서 (하급)">
+        <!-- 9504	1	재개의 주문서 (하급)	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9505" levels="1" name="재개의 주문서 (중급)">
+        <!-- 9505	1	재개의 주문서 (중급)	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9506" levels="1" name="재개의 주문서 (상급)">
+        <!-- 9506	1	재개의 주문서 (상급)	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9507" levels="1" name="재개의 주문서 (최상급)">
+        <!-- 9507	1	재개의 주문서 (최상급)	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9508" levels="1" name="정화의 주문서 (하급)">
+        <!-- 9508	1	정화의 주문서 (하급)	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9509" levels="1" name="정화의 주문서 (중급)">
+        <!-- 9509	1	정화의 주문서 (중급)	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9510" levels="1" name="정화의 주문서 (상급)">
+        <!-- 9510	1	정화의 주문서 (상급)	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9511" levels="1" name="정화의 주문서 (최상급)">
+        <!-- 9511	1	정화의 주문서 (최상급)	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9512" levels="1" name="드라코의 액세서리 선물상자">
+        <!-- 9512	1	드라코의 액세서리 선물상자	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9513" levels="1" name="드라코의 빨간 약병">
+        <!-- 9513	1	드라코의 빨간 약병	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9514" levels="1" name="드라코의 파란 약병">
+        <!-- 9514	1	드라코의 파란 약병	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9515" levels="1" name="Шляпа Драко (воин)">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="STR" val="2"/>
+            <add order="0x40" stat="DEX" val="2"/>
+            <add order="0x40" stat="CON" val="2"/>
+        </for>
+    </skill>
+    <skill id="9516" levels="1" name="Шляпа Драко (маг)">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="INT" val="2"/>
+            <add order="0x40" stat="WIT" val="2"/>
+            <add order="0x40" stat="MEN" val="2"/>
+        </for>
+    </skill>
+    <skill id="9517" levels="1" name="드라코의 모자">
+        <!-- 9517	1	드라코의 모자	none -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9518" levels="1" name="드라코의 축복 - 30분">
+        <!-- 9518	1	드라코의 축복 - 30분	30분 동안 획득 경험치와 SP가 200% 추가된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9519" levels="1" name="드라코의 축복 - 1시간">
+        <!-- 9519	1	드라코의 축복 - 1시간	1시간 동안 획득 경험치와 SP가 200% 추가된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9520" levels="1" name="드라코의 축복 - 2시간">
+        <!-- 9520	1	드라코의 축복 - 2시간	2시간 동안 획득 경험치와 SP가 200% 추가된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9521" levels="1" name="드라코의 축복 - 3시간">
+        <!-- 9521	1	드라코의 축복 - 3시간	3시간 동안 획득 경험치와 SP가 200% 추가된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9522" levels="1" name="혈맹원 소환">
+        <!-- 9522	1	혈맹원 소환	선택한 혈맹원을 현재 위치로 소환할 수 있다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9523" levels="1" name="의문의 주문">
+        <!-- 9523	1	의문의 주문	의문의 저주로 인해서 갑작스럽게 마을로 이동한 상태. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9524" levels="1" name="혼돈의 체력 회복제">
+        <!-- 9524	1	혼돈의 체력 회복제	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9525" levels="1" name="Шляпа Драко - Благ. Воскрешение">
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="power" val="100"/>
+        <set name="magicLevel" val="1"/>
+        <set name="effectPoint" val="624"/>
+        <set name="target" val="TARGET_CORPSE_PLAYER"/>
+        <set name="corpse" val="true"/>
+        <set name="skillType" val="RESURRECT"/>
+        <set name="useSS" val="false"/>
+        <set name="canPet" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <cond msgId="1509">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </skill>
+    <skill id="9526" levels="1" name="Шляпа Драко - Благ. Воскрешение">
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="power" val="100"/>
+        <set name="magicLevel" val="1"/>
+        <set name="effectPoint" val="624"/>
+        <set name="target" val="TARGET_CORPSE_PLAYER"/>
+        <set name="corpse" val="true"/>
+        <set name="skillType" val="RESURRECT"/>
+        <set name="useSS" val="false"/>
+        <set name="canPet" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <cond msgId="1509">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </skill>
+
+    <skill id="9527" levels="1" name="Verdof's Vitality Replenishing Herb">
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="icon" val="icon.skilltransform4"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="hitTime" val="100"/>
+    </skill>
+
+    <skill id="9528" levels="1" name="용의 기운 충전 물약">
+        <!-- 9528	1	용의 기운 충전 물약	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9529" levels="1" name="네비트의 룬(용의 비상)">
+        <!-- 9529	1	네비트의 룬(용의 비상)	습득하는 경험치와 SP가 100% 증가한다. (95레벨 이하 적용) -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9530" levels="1" name="장희진 아가시온의 효과">
+        <!-- 9530	1	장희진 아가시온의 효과	CON +3, MEN +3, 무게게이지 10000증가, 최대 HP/MP/CP 300, 마법 저항 5%, 최대 HP 5% 증가한다. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9531" levels="1" name="장희진 아가시온의 축복받은 귀환">
+        <!-- 9531	1	장희진 아가시온의 축복받은 귀환	축복받은 귀환 스킬을 사용할 수 있다. 재사용 딜레이 1시간. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9532" levels="1" name="장혁 아가시온의 효과">
+        <!-- 9532	1	장혁 아가시온의 효과	CON +3, MEN +3, 무게게이지 10000증가, 최대 HP/MP/CP 300, 물리 공격력 5% 증가한다. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9533" levels="1" name="장혁 아가시온의 축복받은 귀환">
+        <!-- 9533	1	장혁 아가시온의 축복받은 귀환	축복받은 귀환 스킬을 사용할 수 있다. 재사용 딜레이 1시간. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9534" levels="1" name="김수로 아가시온의 효과">
+        <!-- 9534	1	김수로 아가시온의 효과	CON +3, MEN +3, 무게게이지 10000증가, 최대 HP/MP/CP 300, 물리 방어력 5%, 최대 HP 5% 증가한다. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9535" levels="1" name="김수로 아가시온의 축복받은 귀환">
+        <!-- 9535	1	김수로 아가시온의 축복받은 귀환	축복받은 귀환 스킬을 사용할 수 있다. 재사용 딜레이 1시간. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9536" levels="1" name="박재범 아가시온의 효과">
+        <!-- 9536	1	박재범 아가시온의 효과	CON +3, MEN +3, 무게게이지 10000증가, 최대 HP/MP/CP 300, 마법 공격력 6% 증가한다. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9537" levels="1" name="박재범 아가시온의 축복받은 귀환">
+        <!-- 9537	1	박재범 아가시온의 축복받은 귀환	축복받은 귀환 스킬을 사용할 수 있다. 재사용 딜레이 1시간. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9538" levels="1" name="김신영 아가시온의 효과">
+        <!-- 9538	1	김신영 아가시온의 효과	CON +3, MEN +3, 무게게이지 10000증가, 최대 HP/MP/CP 300 증가한다.  스킬 재사용 딜레이 3%, 스킬 소모 MP 3% 감소한다. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9539" levels="1" name="김신영 아가시온의 축복받은 귀환">
+        <!-- 9539	1	김신영 아가시온의 축복받은 귀환	축복받은 귀환 스킬을 사용할 수 있다. 재사용 딜레이 1시간. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9540" levels="1" name="의문의 힘의 허브">
+        <!-- 9540	1	의문의 힘의 허브	혼돈의 제전에 참여한 이에게 적용된 능력. 5분 동안 몬스터에 대한 공격력이 100% 증가한 상태. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9541" levels="1" name="의문의 마력의 허브">
+        <!-- 9541	1	의문의 마력의 허브	혼돈의 제전에 참여한 이에게 적용된 능력. 5분 동안 몬스터에 대한 마법력이 400% 증가한 상태. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9542" levels="1" name="의문의 활력 회복">
+        <!-- 9542	1	의문의 활력 회복	혼돈의 제전에 참여한 이에게 적용된 능력. 5분 동안 사냥을 통한 경험치 획득 시 활력이 충전된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9543" levels="1" name="HP Recovery Herb">
+        <set name="icon" val="icon.skill0000"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="hitTime" val="100"/>
+        <set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="HEAL_PERCENT"/>
+        <set name="power" val="40"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="isHideUseMessage" val="true"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <set name="hitCancelTime" val="500"/>
+    </skill>
+
+    <skill id="9544" levels="1" name="Power Herb">
+        <set name="icon" val="icon.etc_warrior_set_i00"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="reuseDelay" val="2000"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="hitTime" val="100"/>
+        <set name="isHideUseMessage" val="true"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <set name="hitCancelTime" val="500"/>
+        <for>
+            <effect name="Buff" time="30" val="0" stackType="pAtk" stackOrder="5">
+                <mul stat="pAtk" order="0x30" val="2"/>
+                <mul stat="mAtk" order="0x30" val="4"/>
+            </effect>
+        </for>
+    </skill>
+
+    <skill id="9545" levels="1" name="혼돈의 제전 - 포엠 오브 혼">
+        <!-- 9545	1	혼돈의 제전 - 포엠 오브 혼	7분 동안 공격력을 17%, 방어력을 15%, 마법력을 79%, 마법 저항을 30% 증가시킨다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9546" levels="1" name="혼돈의 제전 - 포엠 오브 드럼">
+        <!-- 9546	1	혼돈의 제전 - 포엠 오브 드럼	7분 동안 최대 MP를 20%, HP 회복 보너스를 20%, 마법 크리티컬 확률을 20, 일반 공격 시 크리티컬 위력을 20%, 공격력을 10%, 방어력을 20%, 공격 속도를 20%, 마법력을 20%, 마법 저항을 20%, 마법 속도를 20%, 디버프 저항력을 10%, 크리티컬 공격 피해 시 방어력을 증가시킨다. 이동 속도를 15% 감소시키며 추가로 일정 대미지 이상의 공격을 받은 근접 무기, 활, 석궁을 장비한 파티원은 일반 공격 시 크리티컬 위력이 증가한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9547" levels="1" name="혼돈의 제전 - 포엠 오브 오르간">
+        <!-- 9547	1	혼돈의 제전 - 포엠 오브 오르간	7분 동안 최대 HP를 37%, 최대 MP를 37%, 최대 CP를 37%, HP 회복 보너스를 20% 증가시킨다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9548" levels="1" name="혼돈의 제전 - 포엠 오브 기타">
+        <!-- 9548	1	혼돈의 제전 - 포엠 오브 기타	7분 동안 물리 크리티컬 확률을 32%, 물리 크리티컬 위력을 35%, 마법 크리티컬 확률을 20 증가시키고 물리 스킬 소모 MP를 20%, 마법 스킬의 소모 MP를 10%, 이스 인챈터의 강화 스킬 소모 MP를 20% 감소시킨다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9549" levels="1" name="혼돈의 제전 - 포엠 오브 하프">
+        <!-- 9549	1	혼돈의 제전 - 포엠 오브 하프	7분 동안 물리 명중을 5, 물리 회피와 마법 회피를 5, 이동 속도를 34 증가시키고 크리티컬 피격 대미지를 30% 감소시킨다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9550" levels="1" name="혼돈의 제전 - 포엠 오브 비파">
+        <!-- 9550	1	혼돈의 제전 - 포엠 오브 비파	7분 동안 공격 속도를 34%, 마법 속도를 31% 증가시키고 일정 확률로 뱀피릭 레이지 효과가 9% 적용된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9551" levels="1" name="혼돈의 제전 - 가디언스 하모니">
+        <!-- 9551	1	혼돈의 제전 - 가디언스 하모니	7분 동안 공격력을 12%, 방어력을 45%, 방패 방어 확률을 30%, 방패 방어력을 50%, 물리 크리티컬 위력을 35%, 물리 크리티컬 확률을 100% 증가시킨다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9552" levels="1" name="혼돈의 제전 - 버서커스 하모니">
+        <!-- 9552	1	혼돈의 제전 - 버서커스 하모니	7분 동안 공격력을 35%, 마법력을 16%, 공격 속도와 마법 속도를 8%, 물리 크리티컬 위력을 35%, 물리 크리티컬 확률 100%, 이동 속도를 8씩 증가시키고 마법 저항을 16%, 방어력을 8%, 물리 회피를 4 감소시킨다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9553" levels="1" name="혼돈의 제전 - 매지션스 하모니">
+        <!-- 9553	1	혼돈의 제전 - 매지션스 하모니	7분 동안 공격력을 8%, 마법력을 40%, 공격 속도와 마법 속도를 8%, 마법 저항을 14%, 마법 크리티컬 확률을 100%, MP 회복 보너스를 20%, 이동 속도를 8 증가시키고 방어력을 8%, 물리 회피를 4, 마법 스킬 사용 시 소모 MP를 15%, 물리 스킬의 소모 MP를 5%, 스킬 재 사용 시간을 20% 감소시킨다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9568" levels="1" name="타우티의 보물상자">
+        <!-- 9568	1	타우티의 보물상자	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <!--Чистейшая вода, полученная от самой Леди Озера. Этой водой нужно полить Древо Жизни, растущее в Эльфийской Деревне.-->
+    <skill id="9579" levels="1" name="Кристально Чистая Вода">
+        <set name="icon" val="icon.skill0000"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isHandler" val="true"/>
+        <set name="hitTime" val="5000"/>
+    </skill>
+    <!--Чистейший свет Объятий Тиминиэль из Магмельда, полученный от Нерупы. Можно использовать в Деревне Темных Эльфов перед Каменной Статуей Шилен.-->
+    <skill id="9580" levels="1" name="Кристально Чистый Свет">
+        <set name="icon" val="icon.skill0000"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isHandler" val="true"/>
+        <set name="hitTime" val="5000"/>
+    </skill>
+    <!--Девственная Душа, полученная от Энфеукса из Долины Святых. Можно использовать в Пещере Душ, которая находится в окрестностях Деревни Камаэль.-->
+    <skill id="9581" levels="1" name="Девственная Душа">
+        <set name="icon" val="icon.skill0000"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isHandler" val="true"/>
+        <set name="hitTime" val="5000"/>
+    </skill>
+    <!--Обжигающее Пламя, полученное от Вулкана - Кузнеца Пламени из Кузницы Богов. Можно использовать рядом с Храмом Паагрио в Деревне Орков.-->
+    <skill id="9582" levels="1" name="Обжигающее Пламя">
+        <set name="icon" val="icon.skill0000"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isHandler" val="true"/>
+        <set name="hitTime" val="5000"/>
+    </skill>
+    <!--Дружеское письмо Вулкана - Кузнеца Пламени. Можно использовать на развалинах Деревни Гномов.-->
+    <skill id="9583" levels="1" name="Письмо Лучшего Друга">
+        <set name="icon" val="icon.skill0000"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="1"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isHandler" val="true"/>
+        <set name="hitTime" val="5000"/>
+    </skill>
+</list>

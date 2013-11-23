@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+    <!-- Используется для настройки EVERYBODY_HAS_ADMIN_RIGHTS -->
+	<char>
+        <PlayerID set="0"/>
+        <!-- По умолчанию False для всех игроков -->
+        <IsGM set="True"/>
+        <!-- разрешает использование амин команд. -->
+        <CanUseGMCommand set="True"/>
+        <CanAnnounce set="True"/>
+        <CanBan set="True"/>
+        <CanBanChat set="True"/>
+        <CanUnBanChat set="True"/>
+        <BanChatDelay set="-1"/>
+        <BanChatMaxValue set="-1"/>
+        <BanChatCountPerDay set="-1"/>
+        <BanChatBonusId set="-1"/>
+        <BanChatBonusCount set="-1"/>
+        <CanChatPenalty set="True"/>
+        <UseGMShop set="True"/>
+        <CanDelete set="True"/>
+        <CanKick set="True"/>
+        <Menu set="True"/>
+        <GodMode set="True"/>
+        <CanEditCharAll set="True"/>
+        <CanEditChar set="True"/>
+        <CanEditPledge set="True"/>
+        <CanViewChar set="True"/>
+        <CanEditNPC set="True"/>
+        <CanViewNPC set="True"/>
+        <CanTeleport set="True"/>
+        <CanRestart set="True"/>
+        <MonsterRace set="True"/>
+        <Rider set="True"/>
+        <FastUnstuck set="True"/>
+        <ResurectFixed set="True"/>
+        <Door set="True"/>
+        <Res set="True"/>
+        <PeaceAttack set="True"/>
+        <Heal set="True"/>
+        <Unblock set="True"/>
+        <CanChangeClass set="False"/>
+        <!-- блокирует взятие предметов из инвентаря, возможен только дестрой предмета. По умолчанию False -->
+        <BlockInventory set="False"/>
+        <CanGmEdit set="True"/>
+        <IsEventGm set="True"/>
+        <CanReload set="True"/>
+        <CanRename set="True"/>
+        <CanJail set="True"/>
+        <CanPolymorph set="True"/>
+        <!-- По умолчанию True для всех игроков -->
+        <UseInventory set="True"/>
+        <UseTrade set="True"/>
+        <CanAttack set="True"/>
+        <CanEvaluate set="True"/>
+        <CanJoinParty set="True"/>
+        <CanJoinClan set="True"/>
+        <UseWarehouse set="True"/>
+        <UseShop set="True"/>
+    </char>
+</list>

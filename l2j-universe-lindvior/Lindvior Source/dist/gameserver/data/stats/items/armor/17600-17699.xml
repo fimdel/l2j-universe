@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+    <armor id="17609" name="(Not In Use) Istina's Necklace">        <!--Done By Darvin (c)Java-Team-->
+        <set name="crystal_type" value="S80"/>
+        <set name="crystallizable" value="true"/>
+        <set name="crystal_count" value="500"/>
+        <set name="icon" value="icon.accessary_queen_of_ice_necklace_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="150"/>
+        <equip>
+            <slot id="NECKLACE"/>
+        </equip>
+        <set name="ex_type" value="NECKLACE"/>
+        <for>
+			<add stat="mDef" order="0x10" value="125"/>
+			<add stat="maxMp" order="0x60" value="50"/>
+			<enchant stat="mDef" order="0x0C" value="0"/>
+        </for>
+    </armor>
+    <armor id="17623" name="Earth Wyrm Heart Ring">        <!--Done By Darvin (c)Java-Team-->
+        <set name="crystal_type" value="R"/>
+        <set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.ring_earthworm_heart"/>
+		<set name="price" value="15192000"/>
+		<set name="crystal_count" value="83"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<set name="crystal_count" value="324"/>
+        <equip>
+            <slot id="RIGHT_FINGER"/>
+            <slot id="LEFT_FINGER"/>
+        </equip>
+        <set name="ex_type" value="RING"/>
+        <skills>
+            <skill id="13317" level="1"/>
+            <skill id="13318" level="1"/>
+            <skill id="13319" level="1"/>
+        </skills>
+        <for>
+			<add stat="mDef" order="0x10" value="108"/>
+			<add stat="maxMp" order="0x60" value="38"/>
+			<enchant stat="mDef" order="0x0C" value="0"/>
+        </for>
+    </armor>
+</list>

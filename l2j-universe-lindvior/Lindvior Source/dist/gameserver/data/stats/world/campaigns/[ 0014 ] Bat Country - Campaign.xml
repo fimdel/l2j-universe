@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "campaigns.dtd">
+
+<!--
+	Хорошо Спрятаться - Кампания
+-->
+<list>
+    <quest id="14" name="_0014_FantasyIsland2">
+        <level min="40"/>
+        <spawn name="_0014_FantasyIsland"/>
+        <dates>
+            <date day="Wednesday" time="14:00"/>
+            <date day="Saturday" time="14:00"/>
+            <date day="Wednesday" time="18:00"/>
+            <date day="Saturday" time="18:00"/>
+        </dates>
+        <steps>
+            <step id="1401" name="_0014_FantasyIsland2" title="Хорошо Спрятаться" points="10000" duration="30">
+                <dialogs>
+                    <dialog type="start" name="dc0014_01_start001"/>
+                    <dialog type="accept" name="dc0014_01_context001"/>
+                    <dialog type="failed" name="dc0014_01_failed001"/>
+                    <dialog type="reward" name="dc0014_01_reward001"/>
+                    <dialog type="elite_reward" name="dc0014_01_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="33658" points="2"/>
+                    <!-- Стая Летучих Мышей -->
+                </points>
+                <rewards>
+                    <reward id="33501" count="1" type="usual"/>
+                    <reward id="33501" count="1" type="elite"/>
+                    <reward id="33500" count="1" type="elite"/>
+                </rewards>
+            </step>
+        </steps>
+    </quest>
+</list>

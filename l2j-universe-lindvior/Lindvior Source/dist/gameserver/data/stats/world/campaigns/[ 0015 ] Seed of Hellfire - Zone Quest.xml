@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "campaigns.dtd">
+
+<!--
+	Семя Адского Пламени - локальный квест
+-->
+<list>
+    <quest id="15" name="_0015_SeedOfHellfire">
+        <level min="97"/>
+        <spawn name="_0015_SeedOfHellfire"/>
+        <steps>
+            <step id="1501" name="_0015_SeedOfHellfire" title="Семя Адского Пламени" points="10000" duration="30">
+                <zones>
+                    <zone name="[hellfire_north_stage2]"/>
+                    <zone name="[hellfire_south_stage2]"/>
+                </zones>
+                <dialogs>
+                    <dialog type="start" name="dc0015_01_start001"/>
+                    <dialog type="accept" name="dc0015_01_context001"/>
+                    <dialog type="failed" name="dc0015_01_failed001"/>
+                    <dialog type="reward" name="dc0015_01_reward001"/>
+                    <dialog type="elite_reward" name="dc0015_01_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="19259" points="1"/>
+                    <npc id="19279" points="2"/>
+                    <npc id="19280" points="3"/>
+                    <npc id="19281" points="3"/>
+                    <npc id="23221" points="2"/>
+                    <npc id="23222" points="3"/>
+                    <npc id="23223" points="4"/>
+                </points>
+                <rewards>
+                    <reward id="33709" count="1" type="usual"/>
+                    <reward id="35548" count="1" type="elite"/>
+                </rewards>
+            </step>
+        </steps>
+    </quest>
+</list>

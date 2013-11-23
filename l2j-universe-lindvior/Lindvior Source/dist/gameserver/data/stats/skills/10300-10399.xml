@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="10300" levels="3" name="Последняя Атака">
+        <!--
+              Применяется для добивания обессиленного монстра, находящегося на последнем издыхании.
+              При успешном применении сокращает НР монстра до 1. Недоступно в PVP. Доступно при НР монстра < 20%.
+              Требуется меч/дробящее оружие/древковое оружие/кастет/парное дробящее оружие/парные мечи
+          -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="activateRate" val="20"/>
+        <table name="#magicLevel">90 95 99</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="lethal1" val="20"/>
+        <set name="SSBoost" val="1.5"/>
+        <set name="condition" val="24"/>
+        <set name="blowChance" val="40"/>
+        <set name="power" val="2200"/>
+        <table name="#percentHP">20</table>
+        <cond msg="Not Using with Bow">
+            <not>
+                <using kind="Bow,Crossbow"/>
+            </not>
+        </cond>
+        <cond msg="Can be only used when HP is 20% or lower">
+            <not>
+                <target percentHP="#percentHP"/>
+            </not>
+        </cond>
+        <cond msg="Not Don">
+            <not>
+                <target pvp="true"/>
+            </not>
+        </cond>
+        <enchant1 levels="10" name="Cost"/>
+        <enchant2 levels="10" name="Power">
+            <table name="#percentHP">21 22 23 24 25 26 27 28 29 30</table>
+        </enchant2>
+    </skill>
+</list>

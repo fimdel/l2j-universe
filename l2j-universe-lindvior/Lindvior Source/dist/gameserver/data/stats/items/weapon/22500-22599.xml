@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+    <weapon id="22547" name="(Тест) Световой Меч">
+        <set name="crystal_type" value="NONE"/>
+        <set name="type" value="SWORD"/>
+        <set name="ex_type" value="SWORD"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+</list>

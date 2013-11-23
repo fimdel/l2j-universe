@@ -1,0 +1,718 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="200" name="Memory of Disaster" maxChannels="1" collapseIfEmpty="0" timelimit="10">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="85" max="99"/>
+        <party min="1" max="1"/>
+        <return loc="119667 -181970 -1864 52800"/>
+        <teleport loc="119667 -181970 -1864 52800"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <reuse resetReuse="1 15 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+        <spawns>
+            <!-- Teredor -->
+            <spawn mobId="19172" type="point">
+                <coords loc="116976 -180554 -1240 44233"/>
+            </spawn>
+            <!-- Teredor -->
+            <spawn mobId="19172" type="point">
+                <coords loc="116756 -180525 -1248 54603"/>
+            </spawn>
+            <!-- Teredor -->
+            <spawn mobId="19172" type="point">
+                <coords loc="117022 -180966 -1264 22269"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="117237 -179407 -1120 44733"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="116369 -183743 -1568 40076"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115600 -182720 -1448 49344"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="117216 -179456 -1120 11963"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="116322 -183783 -1552 7306"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115600 -182741 -1448 16575"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115567 -182774 -1448 10803"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="117152 -182896 -1512 49144"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="117152 -182944 -1512 16375"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="116621 -182586 -1552 14147"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="116671 -182536 -1528 40076"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="117506 -182360 -1520 36749"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="117479 -182396 -1496 16442"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="117455 -182330 -1496 54603"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="117479 -182372 -1496 3980"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="116624 -182576 -1544 46916"/>
+            </spawn>
+            <!-- Siege Golem -->
+            <spawn mobId="19189" type="point" respawn="30">
+                <coords loc="116881 -180742 -1248 55038"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="116288 -179462 -1104 21968"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="117120 -179184 -1128 9773"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115686 -177872 -896 9492"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115695 -177893 -896 13287"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115720 -177818 -888 45193"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="116205 -179442 -1096 6355"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="117196 -179405 -1120 53083"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="116261 -179369 -1104 47660"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="116256 -179408 -1104 14890"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="117137 -179192 -1128 28046"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115122 -178764 -896 29238"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="116012 -178222 -1072 24130"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115117 -178782 -896 24362"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115540 -179356 -912 42683"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115504 -179408 -912 9914"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115088 -178752 -888 57131"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115137 -178787 -904 26382"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="117148 -179144 -1128 42542"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115712 -177840 -888 42262"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115188 -178356 -912 51861"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115792 -179319 -1000 7301"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115868 -179246 -1040 41878"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115876 -179228 -1048 42683"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="116867 -179451 -1120 39234"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="116791 -179529 -1128 10900"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="116779 -179539 -1128 9904"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115984 -178192 -1064 56900"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="116816 -179488 -1128 6464"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115840 -179280 -1024 40071"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115252 -178412 -912 42387"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115114 -178706 -888 43610"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115220 -178972 -912 49128"/>
+            </spawn>
+            <!-- Teredor -->
+            <spawn mobId="19172" type="point">
+                <coords loc="115215 -178461 -912 9618"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="116100 -178476 -1168 53564"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115735 -177881 -888 21817"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115585 -177827 -896 21134"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115691 -177776 -888 52457"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115020 -179172 -896 9653"/>
+            </spawn>
+            <!-- Teredor -->
+            <spawn mobId="19172" type="point">
+                <coords loc="115219 -179089 -896 16358"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115704 -178557 -1080 36029"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115568 -177792 -896 53903"/>
+            </spawn>
+            <!-- Teredor -->
+            <spawn mobId="19172" type="point">
+                <coords loc="116145 -178578 -1176 20795"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19196" type="point" respawn="30">
+                <coords loc="115143 -178222 -912 38493"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115147 -179138 -896 6164"/>
+            </spawn>
+            <!-- Soldier -->
+            <spawn mobId="19197" type="point" respawn="30">
+                <coords loc="115055 -178310 -904 10803"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115648 -178576 -1072 3260"/>
+            </spawn>
+            <!-- Tentacle -->
+            <spawn mobId="19171" type="point" respawn="30">
+                <coords loc="115088 -178256 -912 5723"/>
+            </spawn>
+
+            <spawn mobId="19190" type="point">
+                <coords loc="117380 -182226 -1472 15892"/>
+            </spawn>
+            <spawn mobId="19182" type="point">
+                <coords loc="115971 -183778 -1480 14940"/>
+            </spawn>
+            <spawn mobId="19190" type="point">
+                <coords loc="116912 -182201 -1504 17008"/>
+            </spawn>
+            <spawn mobId="19183" type="point">
+                <coords loc="117083 -182215 -1504 17716"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115120 -179072 -904 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115568 -177792 -896 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115216 -178464 -912 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="116000 -178576 -1136 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="116816 -179488 -1128 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115984 -178192 -1064 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115840 -179280 -1024 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115648 -178576 -1072 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115504 -179408 -912 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115088 -178752 -888 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="116256 -179408 -1104 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="117120 -179184 -1128 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115712 -177840 -888 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115088 -178256 -912 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115600 -182720 -1448 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="117216 -179456 -1120 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="116322 -183783 -1552 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="117479 -182372 -1496 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="117152 -182944 -1512 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="116624 -182576 -1544 0"/>
+            </spawn>
+            <spawn mobId="19191" type="point">
+                <coords loc="116785 -183034 -1608 39436"/>
+            </spawn>
+            <spawn mobId="19215" type="point">
+                <coords loc="116753 -183066 -1616 37428"/>
+            </spawn>
+            <spawn mobId="19212" type="point">
+                <coords loc="116743 -183026 -1608 39048"/>
+            </spawn>
+            <spawn mobId="19213" type="point">
+                <coords loc="116721 -182953 -1624 43164"/>
+            </spawn>
+            <spawn mobId="19214" type="point">
+                <coords loc="116367 -182941 -1592 57008"/>
+            </spawn>
+            <spawn mobId="19211" type="point">
+                <coords loc="116565 -182913 -1616 46712"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="13171 16362 -4584 49668"/>
+            </spawn>
+            <spawn mobId="19210" type="point">
+                <coords loc="116473 -182934 -1616 51232"/>
+            </spawn>
+            <spawn mobId="19209" type="point">
+                <coords loc="116420 -182947 -1608 55040"/>
+            </spawn>
+            <spawn mobId="19207" type="point">
+                <coords loc="116644 -182928 -1624 46556"/>
+            </spawn>
+            <spawn mobId="19208" type="point">
+                <coords loc="116379 -182998 -1600 57808"/>
+            </spawn>
+            <spawn mobId="19203" type="point">
+                <coords loc="116444 -182973 -1608 55092"/>
+            </spawn>
+            <spawn mobId="19205" type="point">
+                <coords loc="116594 -182965 -1616 46528"/>
+            </spawn>
+            <spawn mobId="19204" type="point">
+                <coords loc="116506 -182946 -1616 49564"/>
+            </spawn>
+            <spawn mobId="19202" type="point">
+                <coords loc="116419 -183043 -1600 57948"/>
+            </spawn>
+            <spawn mobId="19201" type="point">
+                <coords loc="116482 -183011 -1616 52928"/>
+            </spawn>
+            <spawn mobId="19200" type="point">
+                <coords loc="116560 -182986 -1616 47932"/>
+            </spawn>
+            <spawn mobId="19198" type="point">
+                <coords loc="116685 -183032 -1624 40604"/>
+            </spawn>
+            <spawn mobId="19199" type="point">
+                <coords loc="116620 -183006 -1624 43820"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115880 -181700 -1496 0"/>
+            </spawn>
+            <spawn mobId="19192" type="point">
+                <coords loc="116557 -183170 -1608 17036"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="116364 -184073 -1552 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="116123 -181103 -1576 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115823 -183301 -1480 0"/>
+            </spawn>
+            <spawn mobId="18919" type="point">
+                <coords loc="115823 -183301 -1480 0"/>
+            </spawn>
+            <spawn mobId="19206" type="point">
+                <coords loc="116676 -182991 -1624 42600"/>
+            </spawn>
+            <spawn mobId="19190" type="point">
+                <coords loc="117221 -182221 -1472 16628"/>
+            </spawn>
+
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="11674 17696 -4584 29231"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="12343 16323 -4584 49299"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="11828 18332 -4584 37855"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="11564 18014 -4584 31731"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="11740 18650 -4584 36081"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="11696 17908 -4584 63480"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="11696 17802 -4584 34088"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="11564 17855 -4584 30409"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="11718 18650 -4584 55791"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="11520 17696 -4584 47797"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="11740 18544 -4584 25212"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="11564 17749 -4584 916"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="11652 18491 -4584 55200"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="11608 18067 -4584 55283"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="11784 18597 -4584 21761"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="11828 18332 -4584 13489"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="11718 18597 -4584 29572"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="12902 16647 -4584 36157"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="12515 16719 -4584 37594"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="12515 16539 -4584 64206"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="12644 16395 -4584 59667"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="12300 16575 -4584 43386"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="12515 16827 -4584 36866"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="12429 16827 -4584 45361"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="12429 16683 -4584 1896"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="12945 16359 -4584 36209"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="10328 17349 -4584 63473"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="10235 17209 -4584 33631"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="10080 16929 -4584 45290"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="10421 17139 -4584 8372"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="10111 16859 -4584 60299"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="10142 16999 -4584 6717"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="10142 17244 -4584 10689"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="10173 17034 -4584 5900"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="10452 17139 -4584 11136"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="11285 16061 -4584 36160"/>
+            </spawn>
+            <spawn mobId="33550" type="point">
+                <coords loc="10400 17092 -4584 0"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="11077 16001 -4584 9825"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="10142 17069 -4584 30552"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="11205 16081 -4584 47855"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="11237 15901 -4584 21934"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="11141 15861 -4584 14562"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="13507 16362 -4584 3601"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="13411 16414 -4584 25233"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="11173 15821 -4584 1714"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="13651 16310 -4584 12879"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="13699 16258 -4584 32649"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="13315 16544 -4584 63577"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="13363 16570 -4584 9370"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="13843 16258 -4584 30837"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="13603 16518 -4584 58008"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="13411 16388 -4584 54217"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="13219 16518 -4584 30117"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="13699 16310 -4584 16309"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="13795 16206 -4584 15048"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="9575 17191 -4584 32054"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="13939 16128 -4584 36178"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="9667 17119 -4584 18363"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="9161 17407 -4584 44863"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33546" type="point">
+                <coords loc="9851 17287 -4584 9848"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="9621 17311 -4584 21402"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33544" type="point">
+                <coords loc="9483 17263 -4584 28488"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33542" type="point">
+                <coords loc="9943 17311 -4584 28200"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="9529 17143 -4584 45426"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33540" type="point">
+                <coords loc="9575 17359 -4584 36320"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="9897 17287 -4584 48477"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="9759 17335 -4584 43341"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="9391 17359 -4584 38153"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33536" type="point">
+                <coords loc="9575 17191 -4584 36158"/>
+            </spawn>
+            <!-- Sacrificed Dark Elf -->
+            <spawn mobId="33538" type="point">
+                <coords loc="9069 17359 -4584 33478"/>
+            </spawn>
+        </spawns>
+    </instance>
+</list>

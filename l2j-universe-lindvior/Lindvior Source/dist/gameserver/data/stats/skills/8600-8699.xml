@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="8600" levels="1" name="Верховой Небесный Скакун">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="9206;1;619;1"/>
+        <set name="npcId" val="13311"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Transformation" time="9000" val="129">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8601" levels="1" name="Верховой Дикий Скакун">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="9206;1;619;1"/>
+        <set name="npcId" val="13312"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Transformation" time="9000" val="130">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8602" levels="1" name="Верховой Кровавый Скакун">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="9206;1;619;1"/>
+        <set name="npcId" val="13313"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Transformation" time="9000" val="131">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8603" levels="1" name="Верховая Безлимитная Стрела">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="9206;1;619;1"/>
+        <set name="npcId" val="13314"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Transformation" time="9000" val="132">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8604" levels="1" name="Верховой Синий Фонтом">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="9206;1;619;1"/>
+        <set name="npcId" val="13315"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Transformation" time="9000" val="133">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8605" levels="1" name="Верховое Белое Крыло">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="9206;1;619;1"/>
+        <set name="npcId" val="13316"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Transformation" time="9000" val="134">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8606" levels="1" name="Верховая Скоростная Звезда">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="9206;1;619;1"/>
+        <set name="npcId" val="13317"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Transformation" time="9000" val="135">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8607" levels="1" name="Верховая Сверкающая Леди">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="addSkills" val="9206;1;619;1"/>
+        <set name="npcId" val="13318"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Transformation" time="9000" val="136">
+                <add order="0x40" stat="runSpd" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8608" levels="1" name="Талисман R - Физ. Атк.">
+        <!-- Увеличивает Физ. Атк. на 37, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="pAtk" val="37"/>
+        </for>
+    </skill>
+
+    <skill id="8609" levels="1" name="Талисман R90 - Физ. Атк.">
+        <!-- Увеличивает Физ. Атк. на 43, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="pAtk" val="43"/>
+        </for>
+    </skill>
+
+    <skill id="8610" levels="1" name="Талисман R95 - Физ. Атк.">
+        <!-- Увеличивает Физ. Атк. на 52, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="pAtk" val="52"/>
+        </for>
+    </skill>
+
+    <skill id="8611" levels="1" name="Талисман R99 - Физ. Атк.">
+        <!-- Увеличивает Физ. Атк. на 60, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="pAtk" val="60"/>
+        </for>
+    </skill>
+
+    <skill id="8612" levels="1" name="Талисман R - Физ. Защ.">
+        <!-- Увеличивает Физ. Защ. на 38, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="pDef" val="38"/>
+        </for>
+    </skill>
+
+    <skill id="8613" levels="1" name="Талисман R90 - Физ. Защ.">
+        <!-- Увеличивает Физ. Защ. на 43, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="pDef" val="43"/>
+        </for>
+    </skill>
+
+    <skill id="8614" levels="1" name="Талисман R95 - Физ. Защ.">
+        <!-- Увеличивает Физ. Защ. на 49, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="pDef" val="49"/>
+        </for>
+    </skill>
+
+    <skill id="8615" levels="1" name="Талисман R99 - Физ. Защ.">
+        <!-- Увеличивает Физ. Защ. на 54, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="pDef" val="54"/>
+        </for>
+    </skill>
+
+    <skill id="8616" levels="1" name="Талисман R - Маг. Атк.">
+        <!-- Увеличивает Маг. Атк. на 37, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="mAtk" val="37"/>
+        </for>
+    </skill>
+
+    <skill id="8617" levels="1" name="Талисман R90 - Маг. Атк.">
+        <!-- Увеличивает Маг. Атк. на 46, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="mAtk" val="46"/>
+        </for>
+    </skill>
+
+    <skill id="8618" levels="1" name="Талисман R95 - Маг. Атк.">
+        <!-- Увеличивает Маг. Атк. на 56, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="mAtk" val="56"/>
+        </for>
+    </skill>
+
+    <skill id="8619" levels="1" name="Талисман R99 - Маг. Атк.">
+        <!-- Увеличивает Маг. Атк. на 66, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="mAtk" val="66"/>
+        </for>
+    </skill>
+
+    <skill id="8620" levels="1" name="Талисман R - Маг. Защ.">
+        <!-- Увеличивает Маг. Защ. на 21, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="mDef" val="21"/>
+        </for>
+    </skill>
+
+    <skill id="8621" levels="1" name="Талисман R90 - Маг. Защ.">
+        <!-- Увеличивает Маг. Защ. на 24, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="mDef" val="24"/>
+        </for>
+    </skill>
+
+    <skill id="8622" levels="1" name="Талисман R95 - Маг. Защ.">
+        <!-- Увеличивает Маг. Защ. на 28, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="mDef" val="28"/>
+        </for>
+    </skill>
+
+    <skill id="8623" levels="1" name="Талисман R99 - Маг. Защ.">
+        <!-- Увеличивает Маг. Защ. на 32, когда экипирован Талисман. -->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x60" stat="mDef" val="32"/>
+        </for>
+    </skill>
+    <skill id="8624" levels="1" name="Талисман R - Макс. HP">
+        <!-- Талисман R - Макс. HP	Увеличивает Макс. HP на 219, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxHp" val="219"/>
+        </for>
+    </skill>
+    <skill id="8625" levels="1" name="Талисман R90 - Макс. HP">
+        <!-- Талисман R90 - Макс. HP	Увеличивает Макс. HP на 246, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxHp" val="246"/>
+        </for>
+    </skill>
+    <skill id="8626" levels="1" name="Талисман R95 - Макс. HP">
+        <!-- Талисман R95 - Макс. HP	Увеличивает Макс. HP на 277, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxHp" val="277"/>
+        </for>
+    </skill>
+    <skill id="8627" levels="1" name="Талисман R99 - Макс. HP">
+        <!-- Талисман R99 - Макс. HP	Увеличивает Макс. HP на 305, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxHp" val="305"/>
+        </for>
+    </skill>
+    <skill id="8628" levels="1" name="Талисман R - Макс. MP">
+        <!-- Талисман R - Макс. MP	Увеличивает Макс. MP на 219, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxMp" val="219"/>
+        </for>
+    </skill>
+    <skill id="8629" levels="1" name="Талисман R90 - Макс. MP">
+        <!-- Талисман R90 - Макс. MP	Увеличивает Макс. MP на 246, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxMp" val="246"/>
+        </for>
+    </skill>
+    <skill id="8630" levels="1" name="Талисман R95 - Макс. MP">
+        <!-- Талисман R95 - Макс. MP	Увеличивает Макс. MP на 277, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxMp" val="277"/>
+        </for>
+    </skill>
+    <skill id="8631" levels="1" name="Талисман R99 - Макс. MP">
+        <!-- Талисман R99 - Макс. MP	Увеличивает Макс. MP на 305, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxMp" val="305"/>
+        </for>
+    </skill>
+    <skill id="8632" levels="1" name="Талисман R - Макс. CP">
+        <!-- Талисман R - Макс. CP	Увеличивает Макс. CP на 219, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxCp" val="219"/>
+        </for>
+    </skill>
+    <skill id="8633" levels="1" name="Талисман R90 - Макс. CP">
+        <!-- Талисман R90 - Макс. CP	Увеличивает Макс. CP на 246, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxCp" val="246"/>
+        </for>
+    </skill>
+    <skill id="8634" levels="1" name="Талисман R95 - Макс. CP">
+        <!-- Талисман R95 - Макс. CP	Увеличивает Макс. CP на 277, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxCp" val="277"/>
+        </for>
+    </skill>
+    <skill id="8635" levels="1" name="Талисман R99 - Макс. CP">
+        <!-- Талисман R99 - Макс. CP	Увеличивает Макс. CP на 305, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="maxCp" val="305"/>
+        </for>
+    </skill>
+    <skill id="8636" levels="1" name="Талисман R - Мощность Крит. Атк.">
+        <!-- Талисман R - Мощность Крит. Атк.	Увеличивает Силу Крит. Удара на 135, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pCritDamage" val="135"/>
+        </for>
+    </skill>
+    <skill id="8637" levels="1" name="Талисман R90 - Мощность Крит. Атк.">
+        <!-- Талисман R90 - Мощность Крит. Атк.	Увеличивает Силу Крит. Удара на 142, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pCritDamage" val="142"/>
+        </for>
+    </skill>
+    <skill id="8638" levels="1" name="Талисман R95 - Мощность Крит. Атк.">
+        <!-- Талисман R95 - Мощность Крит. Атк.	Увеличивает Силу Крит. Удара на 149, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pCritDamage" val="149"/>
+        </for>
+    </skill>
+    <skill id="8639" levels="1" name="Талисман R99 - Мощность Крит. Атк.">
+        <!-- Талисман R99 - Мощность Крит. Атк.	Увеличивает Силу Крит. Удара на 155, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pCritDamage" val="155"/>
+        </for>
+    </skill>
+    <skill id="8640" levels="1" name="Талисман R - Крит. Защ.">
+        <!-- Талисман R - Крит. Защ.	Увеличивает Крит. Защ. на 135, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="pCritDamageStatic" val="135"/>
+        </for>
+    </skill>
+    <skill id="8641" levels="1" name="Талисман R90 - Крит. Защ.">
+        <!-- Талисман R90 - Крит. Защ.	Увеличивает Крит. Защ. на 142, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="pCritDamageStatic" val="142"/>
+        </for>
+    </skill>
+    <skill id="8642" levels="1" name="Талисман R95 - Крит. Защ.">
+        <!-- Талисман R95 - Крит. Защ.	Увеличивает Крит. Защ. на 149, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="pCritDamageStatic" val="149"/>
+        </for>
+    </skill>
+    <skill id="8643" levels="1" name="Талисман R99 - Крит. Защ.">
+        <!-- Талисман R99 - Крит. Защ.	Увеличивает Крит. Защ. на 155, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <sub order="0x40" stat="pCritDamageStatic" val="155"/>
+        </for>
+    </skill>
+    <skill id="8644" levels="1" name="Талисман R - Шанс Крит. Атк. магией">
+        <!-- Талисман R - Шанс Крит. Атк. магией	Увеличивает вероятность нанесения крит. удара магией на 2%, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <basemul order="0x30" stat="mCritRate" val="1.02"/>
+        </for>
+    </skill>
+    <skill id="8645" levels="1" name="Талисман R85 - Физ. Точность">
+        <!-- Талисман R85 - Физ. Точность	Увеличивает Физ. Точность на 2, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pAccuracyCombat" val="2"/>
+        </for>
+    </skill>
+    <skill id="8646" levels="1" name="Талисман R85 - Маг. Точность">
+        <!-- Талисман R85 - Маг. Точность	Увеличивает Маг. Точность на 2, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="mAccuracyCombat" val="2"/>
+        </for>
+    </skill>
+    <skill id="8647" levels="1" name="Талисман R85 - Физ. Уклонение">
+        <!-- Талисман R85 - Физ. Уклонение	Увеличивает Физ. Уклонене на 2, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="pEvasionRate" val="2"/>
+        </for>
+    </skill>
+    <skill id="8648" levels="1" name="Талисман R85 - Маг. Уклонение">
+        <!-- Талисман R85 - Маг. Уклонение	Увеличивает Маг. Уклонение на 2, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="mEvasionRate" val="2"/>
+        </for>
+    </skill>
+    <skill id="8649" levels="1" name="Талисман R - Шанс Крит. Атк.">
+        <!-- Талисман R - Шанс Крит. Атк.	Увеличивает шанс Крит. Атк. на 2%, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="pCritRate" val="1.02"/>
+        </for>
+    </skill>
+    <skill id="8650" levels="1" name="Талисман R85 - Уклонение от Физ. крит. удара">
+        <!-- Талисман R85 - Уклонение от Физ. крит. удара	Увеличивает шанс уклонения от Физ. крит. удара на 2%, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <mul order="0x30" stat="pSkillEvasion" val="1.02"/>
+        </for>
+    </skill>
+    <skill id="8651" levels="1" name="Талисман R - Физ. Атк. (актив.)">
+        <!-- Талисман R - Физ. Атк. (актив.)	Мгновенно увеличивает Физ. Атк. на 111 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pAtk" val="111"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8652" levels="1" name="Талисман R90 - Физ. Атк. (актив.)">
+        <!-- Талисман R90 - Физ. Атк. (актив.)	Немедленно увеличивает Физ. Атк. на 129 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pAtk" val="129"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8653" levels="1" name="Талисман R95 - Физ. Атк. (актив.)">
+        <!-- Талисман R95 - Физ. Атк. (актив.)	Немедленно увеличивает Физ. Атк. на 156 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pAtk" val="156"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8654" levels="1" name="Талисман R99 - Физ. Атк. (актив.)">
+        <!-- Талисман R99 - Физ. Атк. (актив.)	Немедленно увеличивает Физ. Атк. на 180 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pAtk" val="180"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8655" levels="1" name="Талисман R - Физ. Защ. (актив.)">
+        <!-- Талисман R - Физ. Защ. (актив.)	Мгновенно увеличивает Физ. Защ. на 114 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pDef" val="114"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8656" levels="1" name="Талисман R90 - Физ. Защ. (актив.)">
+        <!-- Талисман R90 - Физ. Защ. (актив.)	Немедленно увеличивает Физ. Защс. на 129 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pDef" val="129"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8657" levels="1" name="Талисман R95 - Физ. Защ. (актив.)">
+        <!-- Талисман R95 - Физ. Защ. (актив.)	Немедленно увеличивает Физ. Защс. на 147 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pDef" val="147"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8658" levels="1" name="Талисман R99 - Физ. Защ. (актив.)">
+        <!-- Талисман R99 - Физ. Защ. (актив.)	Немедленно увеличивает Физ. Защс. на 162 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pDef" val="162"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8659" levels="1" name="Талисман R - Маг. Атк. (актив.)">
+        <!-- Талисман R - Маг. Атк. (актив.)	Мгновенно увеличивает Маг. Атк. на 111 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mAtk" val="111"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8660" levels="1" name="Талисман R90 - Маг. Атк. (актив.)">
+        <!-- Талисман R90 - Маг. Атк. (актив.)	Немедленно увеличивает Маг. Атк. на 138 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mAtk" val="138"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8661" levels="1" name="Талисман R95 - Маг. Атк. (актив.)">
+        <!-- Талисман R95 - Маг. Атк. (актив.)	Немедленно увеличивает Маг. Атк. на 168 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mAtk" val="168"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8662" levels="1" name="Талисман R99 - Маг. Атк. (актив.)">
+        <!-- Талисман R99 - Маг. Атк. (актив.)	Немедленно увеличивает Маг. Атк. на 198 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mAtk" val="198"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8663" levels="1" name="Талисман R - Маг. Защ. (актив.)">
+        <!-- Талисман R - Маг. Защ. (актив.)	Мгновенно увеличивает Маг. Защ. на 63 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mDef" val="63"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8664" levels="1" name="Талисман R90 - Маг. Защ. (актив.)">
+        <!-- Талисман R90 - Маг. Защ. (актив.)	Немедленно увеличивает Маг. Защ. на 72 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mDef" val="72"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8665" levels="1" name="Талисман R95 - Маг. Защ. (актив.)">
+        <!-- Талисман R95 - Маг. Защ. (актив.)	Немедленно увеличивает Маг. Защ. на 84 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mDef" val="84"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8666" levels="1" name="Талисман R99 - Маг. Защ. (актив.)">
+        <!-- Талисман R99 - Маг. Защ. (актив.)	Немедленно увеличивает Маг. Защ. на 96 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mDef" val="96"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8667" levels="1" name="Талисман R - Макс. HP (актив.)">
+        <!-- Талисман R - Макс. HP (актив.)	Мгновенно увеличивает Макс. HP на 657 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxHp" val="657"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8668" levels="1" name="Талисман R90 - Макс. HP (актив.)">
+        <!-- Талисман R90 - Макс. HP (актив.)	Немедленно увеличивает Макс. HP на 738 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxHp" val="738"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8669" levels="1" name="Талисман R95 - Макс. HP (актив.)">
+        <!-- Талисман R95 - Макс. HP (актив.)	Немедленно увеличивает Макс. HP на 831 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxHp" val="831"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8670" levels="1" name="Талисман R99 - Макс. HP (актив.)">
+        <!-- Талисман R99 - Макс. HP (актив.)	Немедленно увеличивает Макс. HP на 915 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxHp" val="915"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8671" levels="1" name="Талисман R - Макс. MP (актив.)">
+        <!-- Талисман R - Макс. MP (актив.)	Мгновенно увеличивает Макс. MP на 327 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxMp" val="327"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8672" levels="1" name="Талисман R90 - Макс. MP (актив.)">
+        <!-- Талисман R90 - Макс. MP (актив.)	Немедленно увеличивает Макс. MP на 357 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxMp" val="357"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8673" levels="1" name="Талисман R95 - Макс. MP (актив.)">
+        <!-- Талисман R95 - Макс. MP (актив.)	Немедленно увеличивает Макс. MP на 390 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxMp" val="390"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8674" levels="1" name="Талисман R99 - Макс. MP (актив.)">
+        <!-- Талисман R99 - Макс. MP (актив.)	Немедленно увеличивает Макс. MP на 417 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxMp" val="417"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8675" levels="1" name="Талисман R - Макс. CP (актив.)">
+        <!-- Талисман R - Макс. CP (актив.)	Мгновенно увеличивает Макс. CP на 297 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxCp" val="297"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8676" levels="1" name="Талисман R90 - Макс. CP (актив.)">
+        <!-- Талисман R90 - Макс. CP (актив.)	Немедленно увеличивает Макс. CP на 324 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxCp" val="324"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8677" levels="1" name="Талисман R95 - Макс. CP (актив.)">
+        <!-- Талисман R95 - Макс. CP (актив.)	Немедленно увеличивает Макс. CP на 390 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxCp" val="390"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8678" levels="1" name="Талисман R99 - Макс. CP (актив.)">
+        <!-- Талисман R99 - Макс. CP (актив.)	Немедленно увеличивает Макс. CP на 417 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="maxCp" val="417"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8679" levels="1" name="Талисман R - Мощность Крит. Атк. (актив.)">
+        <!-- Талисман R - Мощность Крит. Атк. (актив.)	Мгновенно увеличивает Силу Крит. удара на 405 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pCritDamage" val="405"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8680" levels="1" name="Талисман R90 - Мощность Крит. Атк. (актив.)">
+        <!-- Талисман R90 - Мощность Крит. Атк. (актив.)	Немедленно увеличивает Силу Крит. удара на 426 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pCritDamage" val="426"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8681" levels="1" name="Талисман R95 - Мощность Крит. Атк. (актив.)">
+        <!-- Талисман R95 - Мощность Крит. Атк. (актив.)	Немедленно увеличивает Силу Крит. удара на 447 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pCritDamage" val="447"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8682" levels="1" name="Талисман R99 - Мощность Крит. Атк. (актив.)">
+        <!-- Талисман R99 - Мощность Крит. Атк. (актив.)	Немедленно увеличивает Силу Крит. удара на 465 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pCritDamage" val="465"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8683" levels="1" name="Талисман R - Крит. Защ. (актив.)">
+        <!-- Талисман R - Крит. Защ. (актив.)	Мгновенно увеличивает Крит. Защ. на 405 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <sub order="0x40" stat="pCritDamageStatic" val="405"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8684" levels="1" name="Талисман R90 - Крит. Защ. (актив.)">
+        <!-- Талисман R90 - Крит. Защ. (актив.)	Немедленно увеличивает Крит. Защ. на 426 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <sub order="0x40" stat="pCritDamageStatic" val="426"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8685" levels="1" name="Талисман R95 - Крит. Защ. (актив.)">
+        <!-- Талисман R95 - Крит. Защ. (актив.)	Немедленно увеличивает Крит. Защ. на 447 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <sub order="0x40" stat="pCritDamageStatic" val="447"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8686" levels="1" name="Талисман R99 - Крит. Защ. (актив.)">
+        <!-- Талисман R99 - Крит. Защ. (актив.)	Немедленно увеличивает Крит. Защ. на 465 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <sub order="0x40" stat="pCritDamageStatic" val="465"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8687" levels="1" name="Талисман R - Шанс Крит. Атк. магией (актив.)">
+        <!-- Талисман R - Шанс Крит. Атк. магией (актив.)	Немедленно увеличивает шанс Крит. Атк. магией на 4% с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <basemul order="0x30" stat="mCritRate" val="1.04"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8688" levels="1" name="Талисман R85 - Физ. Точность (актив.)">
+        <!-- Талисман R85 - Физ. Точность (актив.)	Немедленно увеличивает Физ. Точность на 4 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pAccuracyCombat" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8689" levels="1" name="Талисман R85 - Маг. Точность (актив.)">
+        <!-- Талисман R85 - Маг. Точность (актив.)	Немедленно увеличивает Маг. Точность на 4 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mAccuracyCombat" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8690" levels="1" name="Талисман R85 - Физ. Уклонение (актив.)">
+        <!-- Талисман R85 - Физ. Уклонение (актив.)	Немедленно увеличивает Физ. Уклонение на 4 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="pEvasionRate" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8691" levels="1" name="Талисман R85 - Маг. Уклонение (актив.)">
+        <!-- Талисман R85 - Маг. Уклонение (актив.)	Немедленно увеличивает Маг. Уклонение на 4 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="mEvasionRate" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8692" levels="1" name="Талисман R - Шанс Крит. Атк. (актив.)">
+        <!-- Талисман R - Шанс Крит. Атк. (актив.)	Немедленно Увеличивает шанс Крит. Атк. на 4% с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <mul order="0x30" stat="pCritRate" val="1.04"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8693" levels="1" name="Талисман R85 - Уклонение от Физ. крит. удара(актив.)">
+        <!-- Талисман R85 - Уклонение от Физ. крит. удара(актив.)	Немедленно Увеличивает шанс Уклонения на 6% во время Крит. Атк. с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <mul order="0x30" stat="pSkillEvasion" val="1.06"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8694" levels="1" name="Талисман R - Защ. Щитом">
+        <!-- Талисман R - Защ. Щитом	Увеличивает Защ. Щитом на 207, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="sDef" val="207"/>
+        </for>
+    </skill>
+    <skill id="8695" levels="1" name="Талисман R90 - Защ. Щитом">
+        <!-- 8695	1	Талисман R90 - Защ. Щитом	Увеличивает Защ. Щитом на 229, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="sDef" val="229"/>
+        </for>
+    </skill>
+    <skill id="8696" levels="1" name="Талисман R95 - Защ. Щитом">
+        <!-- Талисман R95 - Защ. Щитом	Увеличивает Защ. Щитом на 253, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="sDef" val="253"/>
+        </for>
+    </skill>
+    <skill id="8697" levels="1" name="Талисман R99 - Защ. Щитом">
+        <!-- Талисман R99 - Защ. Щитом	Увеличивает Защ. Щитом на 273, когда экипирован Талисман. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <add order="0x40" stat="sDef" val="273"/>
+        </for>
+    </skill>
+    <skill id="8698" levels="1" name="Талисман R - Защ. Щитом (актив.)">
+        <!-- Талисман R - Защ. Щитом (актив.)	Мгновенно увеличивает Защ. Щитом на 1242 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="sDef" val="1242"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="8699" levels="1" name="Талисман R90 - Защ. Щитом (актив.)">
+        <!-- Талисман R90 - Защ. Щитом (актив.)	Немедленно увеличивает Защ. Щитом на 1371 с помощью силы Талисмана. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="equipDelay" val="30000"/>
+        <set name="hitTime" val="1200"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="staticReuse" val="true"/>
+        <set name="reuseDelay" val="360000"/>
+        <set name="mpConsume" val="50"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="Buff" abnormalTime="120" val="0" abnormalLvl="1" abnormalType="talisman">
+                <add order="0x40" stat="sDef" val="1371"/>
+            </effect>
+        </for>
+    </skill>
+</list>

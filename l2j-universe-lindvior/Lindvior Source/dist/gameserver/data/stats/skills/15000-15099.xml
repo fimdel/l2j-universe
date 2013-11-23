@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="15000" levels="1" name="Состояние Мутации">
+		<!--
+			Уровень: 1; Описание: В течение 1 сек. Превращение в проклятую свинью.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="500"/>
+		<set name="icon" val="icon.skill11537"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15001" levels="1" name="Отмена Мутации">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="icon" val="icon.skill01703"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15002" levels="1" name="NPC - Цепное Возрождение">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="icon" val="icon.skill015002"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15003" levels="1" name="NPC - Призыв Древа Жизни">
+		<!--
+			Уровень: 1; Описание: Каждую секунду в течение 15 сек. для всех членов группы HP +666.
+		-->
+		<set name="icon" val="icon.skill1229"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15004" levels="1" name="Благословение Барда - Бальзам">
+		<!--
+			Уровень: 1; Описание: СР/НР/МР соратников вокруг +1%.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10278"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15005" levels="1" name="Благословение Барда - Громкий Звук">
+		<!--
+			Уровень: 1; Описание: В течение 6 мин.: Макс. HP/MP +1% , Физ. Атк., Маг. Атк., Скор. Физ. Атк., Скор. Маг. +2%.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0219"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15006" levels="1" name="Превращение в Барда - Бад">
+		<!--
+			Уровень: 1; Описание: Превращение в Барда.
+		-->
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15007" levels="1" name="Сила Мастера">
+		<!--
+			Уровень: 1; Описание: Физ. Атк., Скор. Физ. Атк., Скор. Маг. +5%.
+		-->
+		<set name="icon" val="icon.skill10001"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15008" levels="1" name="Благословение IM - Восстановление Дракона">
+		<!--
+			Уровень: 1; Описание: СР/НР/МР соратников, находящихся поблизости +1%.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10278"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15009" levels="1" name="Благословение IM - Сила Дракона">
+		<!--
+			Уровень: 1; Описание: В течение 6 мин.: Макс. HP/MP +1% , Физ. Атк., Маг. Атк., Скор. Физ. Атк., Скор. Магии +2%.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill4689"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15010" levels="1" name="Ядовитая Область Долины">
+		<!--
+			Уровень: 1; Описание: Смотритель Пространства Картии отравил эту землю. Здоровье героя будет непрерывно уменьшатся, пока Хранитель Пространства Картии не будет убит.
+		-->
+		<set name="icon" val="icon.skill5086"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15011" levels="1" name="Отравленный Район">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="icon" val="icon.skill5086"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15012" levels="1" name="Удар Дубиной">
+		<!--
+			Уровень: 1; Описание: Удар Дубиной.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15013" levels="1" name="Удар Предметом">
+		<!--
+			Уровень: 1; Описание: Очень сильный удар предметом, который герой держит в руках.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15014" levels="1" name="Удар Бонио Келифаса">
+		<!--
+			Уровень: 1; Описание: Сильный удар Бонио Калипасом, который герой держит в руках.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15015" levels="1" name="Полоснуть Копьем">
+		<!--
+			Уровень: 1; Описание: Полоснуть противника любимым копьем.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15016" levels="1" name="Рваные Раны">
+		<!--
+			Уровень: 1; Описание: Удар острым предметом, который герой держит в руках. Вызывает кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15017" levels="1" name="Метнуть Камень">
+		<!--
+			Уровень: 1; Описание: Метнуть Камень. Отравляет.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15018" levels="1" name="Метнуть Предмет">
+		<!--
+			Уровень: 1; Описание: Метнуть Предмет.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15019" levels="1" name="Метнуть Предмет">
+		<!--
+			Уровень: 1; Описание: Вызывает Кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15020" levels="1" name="Метнуть Предмет">
+		<!--
+			Уровень: 1; Описание: Хорошее попадание вызывает гематому.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15021" levels="1" name="Метнуть Боевой Молот">
+		<!--
+			Уровень: 1; Описание: Попадание в голову вызывает гематому.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15022" levels="1" name="Метнуть Боевой Топор">
+		<!--
+			Уровень: 1; Описание: Хорошее попадание может вызвать кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15023" levels="1" name="Метнуть Копье">
+		<!--
+			Уровень: 1; Описание: С определенной вероятностью может вызвать кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15024" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Физ. Атк. +2% или НР +5%. Требуется Здоровье Героя.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill1068"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15025" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Физ. Атк. + 2%, Скор. Физ. Атк. +2% или НР +3%. Требуется Здоровье Героя.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill1388"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15026" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Восстанавливает 5% НР объекта или собственное НР +4%. Требуется Здоровье Героя.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10274"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15027" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Физ. Защита +2%, Маг. Защита +2%. Усиливает Способности Героя.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill1068"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15028" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Физ. Защита +3%, Маг. Защита +3%. Усиливает Способности Героя.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill1388"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15029" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Физ. Атк. +3%, Скор. Физ. Атк. +3%. Усиливает Способности Героя.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill1062"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15030" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Физ. Атк. +5%, Скор. Физ. Атк. +5%. Усиливает Способности Героя.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill1062"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15031" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Маг. Атк +3%, Скор. Магии +3%. Усиливает Способности Героя.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0337"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15032" levels="1" name="Использовать Петру">
+		<!--
+			Уровень: 1; Описание: Маг. Атк +5%, Скор. Магии +5%. Усиливает Способности Героя.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0337"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15033" levels="1" name="NPC - Удар Ненавести">
+		<!--
+			Уровень: 1; Описание: Притягивает к герою выбранную цель во время ее разворота.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10015"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15034" levels="1" name="NPC - Удар Ненавести">
+		<!--
+			Уровень: 1; Описание: Притягивает к герою выбранную цель во время ее разворота.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10015"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15035" levels="1" name="NPC - Атака Щитом">
+		<!--
+			Уровень: 1; Описание: Удар щитом противников, находящихся рядом с выбранной целью.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15036" levels="1" name="NPC - Разрушение Брони">
+		<!--
+			Уровень: 1; Описание: Физ. Защ. -5%.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10258"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15037" levels="1" name="Опрокидывание">
+		<!--
+			Уровень: 1; Описание: Опрокидывание всех противников, находящихся рядом с героем.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15038" levels="1" name="Заколоть">
+		<!--
+			Уровень: 1; Описание: Мгновенно вызывает паралич и кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15039" levels="1" name="Полет Пламени">
+		<!--
+			Уровень: 1; Описание: Уничтожает врагов сильным пламенем. С низкой вероятностью может ввергнуть противника в ужас. Необходим Топор.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill11056"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15040" levels="1" name="Магия Огня">
+		<!--
+			Уровень: 1; Описание: Причиняет урон объекту и тем, кто находится рядом с ним. С определенной вероятностью может ввергнуть противника в ужас.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="4000"/>
+		<set name="icon" val="icon.skill11056"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15041" levels="1" name="Магия Огня">
+		<!--
+			Уровень: 1; Описание: Причиняет урон объекту и тем, кто находится рядом с ним. С определенной вероятностью может ввергнуть противника в ужас.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill11056"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15042" levels="1" name="Удар Таути">
+		<!--
+			Уровень: 1; Описание: Физ. Атк -2%.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15043" levels="1" name="Удар Таути">
+		<!--
+			Уровень: 1; Описание: Физ. Атк -3%.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15044" levels="1" name="Взмах Топором Таути">
+		<!--
+			Уровень: 1; Описание: Вызывает состояние Оглушения.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill4107"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15045" levels="1" name="Взмах Топором Таути">
+		<!--
+			Уровень: 1; Описание: Вызывает состояние Оглушения.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill4107"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15046" levels="1" name="Сокрушительный Удар Топором Таути">
+		<!--
+			Уровень: 1; Описание: Вызывает состояние Оглушения. Враг не может двигаться некоторое время.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill0100"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15047" levels="1" name="Метнуть Топор Таути (вперед)">
+		<!--
+			Уровень: 1; Описание: Урон и нокдаун впередистоящему противнику.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="3000"/>
+		<set name="icon" val="icon.skill0100"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15048" levels="1" name="Метнуть Топор Таути (назад)">
+		<!--
+			Уровень: 1; Описание: Большой урон стоящему сзади противнику.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="5000"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15049" levels="1" name="Метнуть Топор Таути (назад/и дальше)">
+		<!--
+			Уровень: 1; Описание: Большой урон стоящему сзади противнику, а также всем остальным, кто стоит по траектории полета топора.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="5000"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15050" levels="1" name="Крик Таути">
+		<!--
+			Уровень: 1; Описание: Ошеломление противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15051" levels="1" name="Крик Таути (сильный)">
+		<!--
+			Уровень: 1; Описание: Крик Таути, изменяет состояние Героя. Не оказывает влияние на ракурс камеры. Имеет широкий диапазон распространения.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15052" levels="1" name="Таути Поглощения Жизни">
+		<!--
+			Уровень: 1; Описание: Поглощает жизнь противника и всех, кто находится рядом с ним.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15053" levels="1" name="Длань Паагрио">
+		<!--
+			Уровень: 1; Описание: Сила Паагрио повышает температуру яиц. Управлять Духом Огня силы Паагрио трудно, поэтому невозможно предсказать температуру нагрева яиц. Она может варьироваться от 1 до 1 градусов.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15054" levels="1" name="Высиживание Яиц">
+		<!--
+			Уровень: 1; Описание: Согревает яица и приближает температуру к 37 градусам, повышая таким образом вероятность успешного вылупления.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15055" levels="1" name="Казнь">
+		<!--
+			Уровень: 1; Описание: Вызывает Кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15056" levels="1" name="Танец Ножа Палача">
+		<!--
+			Уровень: 1; Описание: Физ. Атк. +1%.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill1062"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15057" levels="1" name="Проникновение Смерти">
+		<!--
+			Уровень: 1; Описание: НР противника -99%.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15058" levels="1" name="Пролом 3">
+		<!--
+			Уровень: 1; Описание: Обходит защиту противника, нанося 3 урона.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15059" levels="1" name="Кровохлестание">
+		<!--
+			Уровень: 1; Описание: Наносит урон противнику и всем, кто вокруг него. Вызывает Кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15060" levels="1" name="Хлебни Яда">
+		<!--
+			Уровень: 1; Описание: Наносит урон противнику и всем, кто вокруг него. Вызывает Состояние Отравления.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15061" levels="1" name="Увеличить Силу Удара">
+		<!--
+			Уровень: 1; Описание: Физ. Атк +5%.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill1062"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15062" levels="1" name="Взырвная Сила Удара">
+		<!--
+			Уровень: 1; Описание: Физ. Атк +1%.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill1062"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15063" levels="1" name="Безжалостный Укус">
+		<!--
+			Уровень: 1; Описание: Атака всех, кто находится вокруг объекта атаки.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15064" levels="1" name="Враг не Спасется">
+		<!--
+			Уровень: 1; Описание: В течение 1 сек. Сопротивление всем Отрицательным Эффектам, повышает Скор. Перемещения.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10279"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15065" levels="1" name="Сокрушить">
+		<!--
+			Уровень: 1; Описание: Урон противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15066" levels="1" name="Помощь Соратника">
+		<!--
+			Уровень: 1; Описание: Призвать одного из своих соратников.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15067" levels="1" name="Заклинание: Ослабить Атаку">
+		<!--
+			Уровень: 1; Описание: Значительно ослабляет Физ./Маг. Атк. противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10549"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15068" levels="1" name="Похищение Жизни">
+		<!--
+			Уровень: 1; Описание: Урон всем членам группы противника. Полное восстановление собственного НР.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15069" levels="1" name="Оковы Опасности">
+		<!--
+			Уровень: 1; Описание: Деморализация.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10549"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15070" levels="1" name="Блокировка Передвижения">
+		<!--
+			Уровень: 1; Описание: Нокдаун. Обездвиживает противника на некоторое время.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10549"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15071" levels="1" name="Стрела Неизвестности">
+		<!--
+			Уровень: 1; Описание: Мощный урон противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15072" levels="1" name="Отравленная Стрела">
+		<!--
+			Уровень: 1; Описание: Отравление противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15073" levels="1" name="Мутация">
+		<!--
+			Уровень: 1; Описание: Мутация.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11537"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15074" levels="1" name="Кошмар Шамана">
+		<!--
+			Уровень: 1; Описание: каждую секунду в течение 5 сек. 1 урона одному из противников.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15075" levels="1" name="Полусмерть">
+		<!--
+			Уровень: 1; Описание: Противник на волоске от смерти. Кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15076" levels="1" name="Бой Ярости">
+		<!--
+			Уровень: 1; Описание: Физ. Атк +1%.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill1062"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15077" levels="1" name="Натиск Души и Тела">
+		<!--
+			Уровень: 1; Описание: Натиск Души и Тела деморализует противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill0495"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15078" levels="1" name="Пронизывающий Вопль">
+		<!--
+			Уровень: 1; Описание: Атака противника, находящегося прямо перед героем.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15079" levels="1" name="Уничтожение Души">
+		<!--
+			Уровень: 1; Описание: Маг. Атк. всех, кто находится вокруг объекта атаки.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15080" levels="1" name="Призвать Оруженосца">
+		<!--
+			Уровень: 1; Описание: Призвать своего Оруженосца.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15081" levels="1" name="Громовой Удар">
+		<!--
+			Уровень: 1; Описание: Громовой Удар деморализует противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10549"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15082" levels="1" name="Громовой Дождь Стрел">
+		<!--
+			Уровень: 1; Описание: Мощный урон всех, кто находится вокруг персонажа игрока.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15083" levels="1" name="Отступление">
+		<!--
+			Уровень: 1; Описание: Увеличить дистанцию между собой и противником.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11057"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15084" levels="1" name="Ядовитая Стрела">
+		<!--
+			Уровень: 1; Описание: С определенной вероятностью наносит мощный урон противнику и вызывает Состояние Отравления.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15085" levels="1" name="Психоз">
+		<!--
+			Уровень: 1; Описание: Ввергает противника в психоз.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15086" levels="1" name="Потеря Рассудка">
+		<!--
+			Уровень: 1; Описание: Нокдаун.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10549"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15087" levels="1" name="Физическая Защита: Щит Хоаса">
+		<!--
+			Уровень: 1; Описание: Увеличивает Физ./Маг. Защиту..
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill1418"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15088" levels="1" name="На Грани Смерти">
+		<!--
+			Уровень: 1; Описание: Наносит объекту атаки и всем, кто находится с ним рядом необычайно сильный урон в случае, если их здоровье близко к нолю.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15089" levels="1" name="Призвать Слугу">
+		<!--
+			Уровень: 1; Описание: Призывать Слугу .
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15090" levels="1" name="Маг. Защита: Щит Хаоса">
+		<!--
+			Уровень: 1; Описание: Увеличивает Физ./Маг. Атк..
+		-->
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15091" levels="1" name="Уничтожение Физического Щита">
+		<!--
+			Уровень: 1; Описание: Нокдаун.
+		-->
+		<set name="icon" val="icon.skill10549"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15092" levels="1" name="Уничтожение Магического Щита">
+		<!--
+			Уровень: 1; Описание: Нокдаун.
+		-->
+		<set name="icon" val="icon.skill10549"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15093" levels="1" name="Отрицательный Эффект Физ. Атк.">
+		<!--
+			Уровень: 1; Описание: Разрушает щит, значительно уменьшает Физ./Маг. Защиту.
+		-->
+		<set name="icon" val="icon.skill11510"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15094" levels="1" name="Флаг Клана">
+		<!--
+			Уровень: 1; Описание: Призывает Флаг Клана. Всем членам своего клана 2 Положительного Эффекта, а членам Клана противника 2 Отрицательного Эффекта. Изчезает через 3 мин. Время действия 1 мин.  Расходует 2 единиц Репутации Клана. Доступно игроку с Рангом Маркиз. Время перезарядки 3 мин..
+		-->
+		<set name="reuseDelay" val="1800000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="10000"/>
+		<set name="icon" val="icon.skill0247"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15095" levels="1" name="Моральный Дух Клана">
+		<!--
+			Уровень: 1; Описание: В режиме PvP увеличивает урон противника и снижает собственный урон.
+		-->
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="BranchSys2.icon.skill20006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15096" levels="1" name="Проклятие Клана">
+		<!--
+			Уровень: 1; Описание: Область влияния Проклятия Флага Клана.
+		-->
+		<set name="icon" val="icon.skill1167"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15097" levels="1" name="Рейдовый Босс">
+		<!--
+			Уровень: 1; Описание: Это один из трех Демонов, стерегущих Лабиринт Картии. Он пришел из Разлома Между Мирами, получив в Аду Бездны имя Шилен. Его называеют Великим Верховным Демоном Ада.
+		-->
+		<set name="icon" val="icon.skillraid"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15098" levels="1" name="Рейдовый Босс">
+		<!--
+			Уровень: 1; Описание: Это один из трех Демонов, стерегущих Лабиринт Картии. Он пришел из Разлома Между Мирами, получив в Аду Бездны имя Шилен. Он является Верховным Демоном Ада, демоном ревности.
+		-->
+		<set name="icon" val="icon.skillraid"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15099" levels="1" name="Рейдовый Босс">
+		<!--
+			Уровень: 1; Описание: Это один из трех Демонов, стерегущих Лабиринт Картии. Он пришел из Разлома Между Мирами, получив в Аду Бездны имя Шилен. Он является Верховным Демоном Ада, демоном чревоугодния.
+		-->
+		<set name="icon" val="icon.skillraid"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "campaigns.dtd">
+
+<!--
+	Печать Шилен - Кампания
+-->
+<list>
+    <quest id="9" name="_0009_ShilenAdeptsDestruction2">
+        <level min="75"/>
+        <spawn name="_0009_ShilenAdeptsDestruction2"/>
+        <dates>
+            <date day="Monday" time="13:30"/>
+            <date day="Tuesday" time="13:30"/>
+            <date day="Wednesday" time="13:30"/>
+            <date day="Thursday" time="13:30"/>
+            <date day="Friday" time="13:30"/>
+            <date day="Saturday" time="13:30"/>
+            <date day="Sunday" time="13:30"/>
+            <date day="Monday" time="15:30"/>
+            <date day="Tuesday" time="15:30"/>
+            <date day="Wednesday" time="15:30"/>
+            <date day="Thursday" time="15:30"/>
+            <date day="Friday" time="15:30"/>
+            <date day="Saturday" time="15:30"/>
+            <date day="Sunday" time="15:30"/>
+            <date day="Monday" time="17:30"/>
+            <date day="Tuesday" time="17:30"/>
+            <date day="Wednesday" time="17:30"/>
+            <date day="Thursday" time="17:30"/>
+            <date day="Friday" time="17:30"/>
+            <date day="Saturday" time="17:30"/>
+            <date day="Sunday" time="17:30"/>
+            <date day="Monday" time="23:00"/>
+            <date day="Tuesday" time="23:00"/>
+            <date day="Wednesday" time="23:00"/>
+            <date day="Thursday" time="23:00"/>
+            <date day="Friday" time="23:00"/>
+            <date day="Saturday" time="23:00"/>
+            <date day="Sunday" time="23:00"/>
+        </dates>
+        <steps>
+            <step id="901" name="_0009_ShilenAdeptsDestruction2" title="Печать Шилен" points="7000" duration="30">
+                <dialogs>
+                    <dialog type="start" name="dc0009_01_start001"/>
+                    <dialog type="accept" name="dc0009_01_context001"/>
+                    <dialog type="failed" name="dc0009_01_failed001"/>
+                    <dialog type="reward" name="dc0009_01_reward001"/>
+                    <dialog type="elite_reward" name="dc0009_01_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="23147" points="1"/>
+                    <!-- Воскрешенное Создание -->
+                    <npc id="23148" points="1"/>
+                    <!-- Безумное Создание -->
+                    <npc id="23149" points="1"/>
+                    <!-- Жадное Создание -->
+                    <npc id="23150" points="2"/>
+                    <!-- Создание Ада -->
+                    <npc id="23151" points="1"/>
+                    <!-- Посланник Шилен -->
+                </points>
+                <rewards>
+                    <reward id="33501" count="1" type="usual"/>
+                    <reward id="33501" count="1" type="elite"/>
+                    <reward id="33500" count="1" type="elite"/>
+                </rewards>
+            </step>
+        </steps>
+    </quest>
+</list>

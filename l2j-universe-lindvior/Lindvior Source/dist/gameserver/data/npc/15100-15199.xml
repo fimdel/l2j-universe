@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+    <npc id="15141" name="Кровавая Пантера" title="Hit">
+        <set name="aggroRange" value="0"/>
+        <set name="collision_height" value="14.5"/>
+        <set name="collision_radius" value="20.0"/>
+        <set name="ai_type" value="CharacterAI"/>
+        <set name="basePAtkSpd" value="720"/>
+        <set name="baseMAtkSpd" value="879"/>
+        <set name="baseWalkSpd" value="50"/>
+        <set name="baseShldDef" value="0.0"/>
+        <set name="baseShldRate" value="0.0"/>
+        <set name="baseRunSpd" value="198"/>
+        <set name="baseMpMax" value="38712"/>
+        <set name="baseHpMax" value="0"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseMpReg" value="3"/>
+        <set name="baseHpReg" value="8.5"/>
+        <set name="baseCON" value="43"/>
+        <set name="baseDEX" value="30"/>
+        <set name="baseINT" value="21"/>
+        <set name="baseMEN" value="20"/>
+        <set name="baseSTR" value="40"/>
+        <set name="baseWIT" value="20"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCritRate" value="40"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="basePAtk" value="500"/>
+        <set name="basePDef" value="500"/>
+        <set name="baseMAtk" value="500"/>
+        <set name="baseMDef" value="500"/>
+        <set name="baseMDef" value="87"/>
+        <set name="basePDef" value="130"/>
+        <set name="level" value="99"/>
+        <set name="rewardExp" value="0"/>
+        <set name="rewardRp" value="0"/>
+        <set name="rewardSp" value="0"/>
+        <set name="texture" value=""/>
+        <set name="shots" value="NONE"/>
+        <set name="type" value="Npc"/>
+        <ai_params>
+            <set name="showName" value="true"/>
+            <set name="show Title" value="true"/>
+        </ai_params>
+        <attributes>
+            <defence attribute="fire" value="20"/>
+            <defence attribute="water" value="20"/>
+            <defence attribute="wind" value="20"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="20"/>
+        </attributes>
+    </npc>
+</list>

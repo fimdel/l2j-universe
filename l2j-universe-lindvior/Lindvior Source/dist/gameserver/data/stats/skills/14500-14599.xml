@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="14500" levels="1" name="Рука Смерти">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14501" levels="1" name="Взгляд Страха">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14502" levels="1" name="Разрушение Души">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14503" levels="1" name="Жатва Земляного Червя">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="45000"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14504" levels="1" name="Забвение Земляного Червя">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="15000"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14505" levels="1" name="Явление Разгневаного Земляного Червя">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="10000"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14506" levels="1" name="Всасывание">
+        <!--
+              Уровень: 1; Описание: Тянетесь.
+          -->
+        <set name="hitTime" val="500"/>
+        <set name="abnormal_time" val="1"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="knockdown"/>
+        <set name="magicLevel" val="97"/>
+        <set name="icon" val="icon.skill0006"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14507" levels="1" name="Атака в Прыжке">
+        <!--
+              Уровень: 1; Описание: Передвижение после получение урона невозможно.
+          -->
+        <set name="reuseDelay" val="5000"/>
+        <set name="hitTime" val="100"/>
+        <set name="abnormal_time" val="3"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="knockdown"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0793"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14508" levels="1" name="Цепь Оков">
+        <!--
+              Уровень: 1; Описание: Притягивает к себе одну цель.
+          -->
+        <set name="reuseDelay" val="5000"/>
+        <set name="hitTime" val="3000"/>
+        <set name="abnormal_time" val="1"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="knockdown"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14509" levels="1" name="Поглощение Жизни">
+        <!--
+              Уровень: 1; Описание: Поглощает жизненную силу цели и превращает ее в свою энергию.
+          -->
+        <set name="reuseDelay" val="30000"/>
+        <set name="hitTime" val="10000"/>
+        <set name="magicLevel" val="85"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14510" levels="2" name="Состояние Поглощения">
+        <!--
+              Уровень: 1; Описание: Состояние, когда из персонажа выкачивают HP.
+              Уровень: 2; Описание: Противник поглощает Ваши HP.
+          -->
+        <set name="abnormal_effect" val="POISON"/>
+        <set name="abnormal_time" val="10"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="physical_stance"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14511" levels="1" name="Обнажение Слабых Мест">
+        <!--
+              Уровень: 1; Описание: Отброшенное состояние после получения определенного урона в область хвоста.
+          -->
+        <set name="hitTime" val="500"/>
+        <set name="abnormal_time" val="1"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="knockdown"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0793"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14512" levels="1" name="Обнажение Слабых Мест">
+        <!--
+              Уровень: 1; Описание: Уставшее состояние после получения определенного урона в область хвоста.
+          -->
+        <set name="hitTime" val="500"/>
+        <set name="abnormal_time" val="60"/>
+        <set name="abnormal_level" val="9"/>
+        <set name="abnormal_type" val="speed_down"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0793"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14513" levels="1" name="Пинок">
+        <!--
+              Уровень: 1; Описание: Мощным пинком отбрасывает цель. Физ. Защ и Маг. Защ. - 1%, дополнительно уменьшает Физ. Защ. и Маг. Защ. на 5, Уклонение на 4. Скапливается при последовательном получении ударов.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="hitTime" val="5000"/>
+        <set name="abnormal_effect" val="KNOCKBACK"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="absorb"/>
+        <set name="magicLevel" val="85"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill0261"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14514" levels="1" name="Исцеление Тьмы">
+        <!--
+              Уровень: 1; Описание: HP восстанавливаются.
+          -->
+        <set name="reuseDelay" val="60000"/>
+        <set name="hitTime" val="3000"/>
+        <set name="abnormal_time" val="10"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="life_force_orc"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1229"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14515" levels="1" name="Вампиризм Тьмы">
+        <!--
+              Уровень: 1; Описание: Высасывается кровь!
+          -->
+        <set name="reuseDelay" val="15000"/>
+        <set name="hitTime" val="10000"/>
+        <set name="magicLevel" val="96"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1147"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14516" levels="1" name="Плач Тьмы">
+        <!--
+              Уровень: 1; Описание: Состояние страха.
+          -->
+        <set name="reuseDelay" val="15000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="abnormal_effect" val="AFFRAID"/>
+        <set name="abnormal_time" val="10"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="AFFRAID"/>
+        <set name="magicLevel" val="96"/>
+        <set name="icon" val="icon.skill0763"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14517" levels="1" name="Соединение Души">
+        <!--
+              Уровень: 1; Описание: HP восстанавливаются.
+          -->
+        <set name="reuseDelay" val="30000"/>
+        <set name="hitTime" val="3000"/>
+        <set name="abnormal_time" val="10"/>
+        <set name="abnormal_level" val="2"/>
+        <set name="abnormal_type" val="hp_recover"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1335"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14518" levels="1" name="Мгновенное Перемещение">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="reuseDelay" val="10000"/>
+        <set name="coolTime" val="200"/>
+        <set name="hitTime" val="100"/>
+        <set name="magicLevel" val="96"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill0484"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14519" levels="1" name="Огненный Шар Ада">
+        <!--
+              Уровень: 1; Описание: HP уменьшаются.
+          -->
+        <set name="reuseDelay" val="15000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="abnormal_time" val="10"/>
+        <set name="abnormal_level" val="2"/>
+        <set name="abnormal_type" val="bleeding"/>
+        <set name="magicLevel" val="96"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1296"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14520" levels="1" name="Ледяное Копье Ада">
+        <!--
+              Уровень: 1; Описание: HP уменьшаются.
+          -->
+        <set name="reuseDelay" val="15000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="abnormal_time" val="2"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="stun"/>
+        <set name="magicLevel" val="96"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1296"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14521" levels="1" name="Падший Судья">
+        <!--
+              Уровень: 1; Описание: Оглушены.
+          -->
+        <set name="reuseDelay" val="30000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="abnormal_time" val="3"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="stun"/>
+        <set name="magicLevel" val="96"/>
+        <set name="icon" val="icon.skill0347"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14522" levels="1" name="Благословение Эмбрио">
+        <!--
+              Уровень: 1; Описание: HP восстанавливаются.
+          -->
+        <set name="reuseDelay" val="20000"/>
+        <set name="hitTime" val="10000"/>
+        <set name="magicLevel" val="96"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1147"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14523" levels="1" name="Танец Исступления">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="reuseDelay" val="10000"/>
+        <set name="coolTime" val="500"/>
+        <set name="hitTime" val="2000"/>
+        <set name="magicLevel" val="94"/>
+        <set name="icon" val="icon.skill0458"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14524" levels="1" name="Проклятие Исступления">
+        <!--
+              Уровень: 1; Описание: Мутированы.
+          -->
+        <set name="reuseDelay" val="10000"/>
+        <set name="hitTime" val="3000"/>
+        <set name="abnormal_effect" val="CHANGEBODY"/>
+        <set name="abnormal_time" val="15"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="changebody"/>
+        <set name="magicLevel" val="94"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1072"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14525" levels="1" name="Звук Исступления">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="coolTime" val="200"/>
+        <set name="magicLevel" val="94"/>
+        <set name="icon" val="icon.skill0484"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14526" levels="1" name="Крик Смерти">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="6000"/>
+        <set name="magicLevel" val="97"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14527" levels="1" name="Антарас: Кровопускание">
+        <!--
+              Уровень: 1; Описание: Кровотечение.
+          -->
+        <set name="reuseDelay" val="3000"/>
+        <set name="abnormal_effect" val="BLEEDING"/>
+        <set name="magicLevel" val="97"/>
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14528" levels="1" name="Передача Статуса">
+        <!--
+              Уровень: 1; Описание: Переносит цель в Растлевающую Тьму.
+          -->
+        <set name="reuseDelay" val="30000"/>
+        <set name="hitTime" val="1000"/>
+        <set name="abnormal_effect" val="CHANGEBODY"/>
+        <set name="abnormal_time" val="600"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="transform"/>
+        <set name="magicLevel" val="94"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1072"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="changebody"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="turn_stone"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="buff_special_multi"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14529" levels="1" name="Передача Статуса">
+        <!--
+              Уровень: 1; Описание: Переносит цель в Растлевающую Тьму.
+          -->
+        <set name="reuseDelay" val="30000"/>
+        <set name="hitTime" val="1000"/>
+        <set name="abnormal_effect" val="CHANGEBODY"/>
+        <set name="abnormal_time" val="600"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="transform"/>
+        <set name="magicLevel" val="94"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1072"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="changebody"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="turn_stone"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="buff_special_multi"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14530" levels="1" name="Передача Статуса">
+        <!--
+              Уровень: 1; Описание: Переносит цель в Растлевающую Тьму.
+          -->
+        <set name="reuseDelay" val="5000"/>
+        <set name="hitTime" val="1000"/>
+        <set name="abnormal_effect" val="CHANGEBODY"/>
+        <set name="abnormal_time" val="600"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="transform"/>
+        <set name="magicLevel" val="94"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1072"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14531" levels="1" name="Выпад">
+        <!--
+              Уровень: 1; Описание: Отсутствие брони. Физ. Защ и Маг. Защ. - 1%, дополнительно уменьшает Физ. Защ. и Маг. Защ. на 5, Уклонение на 4. Скапливается при последовательном получении ударов.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="hitTime" val="1500"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="absorb"/>
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14532" levels="1" name="Оглушающая Атака">
+        <!--
+              Уровень: 1; Описание: Оглушены.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="hitTime" val="1500"/>
+        <set name="abnormal_effect" val="STUN"/>
+        <set name="abnormal_time" val="5"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="stun"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0100"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14533" levels="1" name="Безумство">
+        <!--
+              Уровень: 1; Описание: Скор. Атк. увеличена.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="hitTime" val="1500"/>
+        <set name="abnormal_time" val="30"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="berserker"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1062"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14534" levels="1" name="Мгновенная Неуязвимость">
+        <!--
+              Уровень: 1; Описание: Бонус обмена членов группы. Неуязвимы.
+          -->
+        <set name="abnormal_effect" val="INVUL2"/>
+        <set name="abnormal_time" val="10"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="INVUL2"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1418"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14535" levels="1" name="Усиление Концентрации">
+        <!--
+              Уровень: 1; Описание: Бонус обмена членов группы. Опыт увеличен на 3%.
+          -->
+        <set name="abnormal_effect" val="VP_UP"/>
+        <set name="abnormal_time" val="600"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="substitute_buff"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="br_cashtex.skill.br_cash_rune_of_exp_buff_1"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14536" levels="1" name="Кровопускание">
+        <!--
+              Уровень: 1; Описание: Кровотечение.
+          -->
+        <set name="hitTime" val="2000"/>
+        <set name="abnormal_effect" val="BLEEDING"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="bleeding"/>
+        <set name="magicLevel" val="90"/>
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14537" levels="1" name="Молчание">
+        <!--
+              Уровень: 1; Описание: Молчите.
+          -->
+        <set name="hitTime" val="2000"/>
+        <set name="abnormal_effect" val="MUTED"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="MUTED"/>
+        <set name="magicLevel" val="90"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1064"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14538" levels="1" name="Легкая Походка">
+        <!--
+              Уровень: 1; Описание: Скорость увеличена.
+          -->
+        <set name="hitTime" val="500"/>
+        <set name="abnormal_time" val="1200"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="speed_up"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1204"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14539" levels="1" name="Импульс">
+        <!--
+              Уровень: 1; Описание: Импульс и отсутствие брони. Физ. Защ и Маг. Защ. - 1%, дополнительно уменьшает Физ. Защ. и Маг. Защ. на 5, Уклонение на 4. Скапливается при последовательном получении ударов.
+          -->
+        <set name="hitTime" val="1799"/>
+        <set name="abnormal_effect" val="STUN"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="absorb"/>
+        <set name="icon" val="icon.skill0100"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14540" levels="1" name="Импульс">
+        <!--
+              Уровень: 1; Описание: Оглушены.
+          -->
+        <set name="hitTime" val="1000"/>
+        <set name="abnormal_effect" val="STUN"/>
+        <set name="abnormal_time" val="9"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="stun"/>
+        <set name="magicLevel" val="90"/>
+        <set name="icon" val="icon.skill0100"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14541" levels="1" name="Кровопускание">
+        <!--
+              Уровень: 1; Описание: Кровотечение.
+          -->
+        <set name="hitTime" val="4000"/>
+        <set name="abnormal_effect" val="BLEEDING"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="bleeding"/>
+        <set name="magicLevel" val="90"/>
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14542" levels="1" name="Уменьшение Точности">
+        <!--
+              Уровень: 1; Описание: Точность уменьшена.
+          -->
+        <set name="hitTime" val="1500"/>
+        <set name="abnormal_time" val="60"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="hit_down"/>
+        <set name="magicLevel" val="90"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1222"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14543" levels="1" name="Поглощение Яда">
+        <!--
+              Уровень: 1; Описание: Отравлены.
+          -->
+        <set name="hitTime" val="1799"/>
+        <set name="abnormal_effect" val="POISON"/>
+        <set name="abnormal_time" val="30"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="poison"/>
+        <set name="magicLevel" val="90"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1167"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14544" levels="1" name="Уменьшение Физ. Защ.">
+        <!--
+              Уровень: 1; Описание: Физ. Защ. уменьшена.
+          -->
+        <set name="hitTime" val="1200"/>
+        <set name="abnormal_time" val="60"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="pd_down"/>
+        <set name="magicLevel" val="90"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill0122"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14545" levels="1" name="Лечение">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="5000"/>
+        <set name="magicLevel" val="90"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1011"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14546" levels="1" name="Шоковая Волна">
+        <!--
+              Уровень: 1; Описание: Оглушены.
+          -->
+        <set name="hitTime" val="1799"/>
+        <set name="abnormal_effect" val="STUN"/>
+        <set name="abnormal_time" val="9"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="stun"/>
+        <set name="magicLevel" val="90"/>
+        <set name="icon" val="icon.skill0048"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14547" levels="1" name="Оковы Пожертвования">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="reuseDelay" val="10000"/>
+        <set name="hitTime" val="6000"/>
+        <set name="magicLevel" val="94"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14548" levels="1" name="Оковы Пожертвования">
+        <!--
+              Уровень: 1; Описание: Подняты в воздух и обездвижены.
+          -->
+        <set name="abnormal_effect" val="FLOATROOT"/>
+        <set name="abnormal_time" val="6"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="FLOATROOT"/>
+        <set name="magicLevel" val="94"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14549" levels="1" name="Оковы Жертвы">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="reuseDelay" val="10000"/>
+        <set name="hitTime" val="6000"/>
+        <set name="magicLevel" val="94"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14550" levels="1" name="Оковы Жертвы">
+        <!--
+              Уровень: 1; Описание: Подняты в воздух и обездвижены.
+          -->
+        <set name="abnormal_effect" val="FLOATROOT"/>
+        <set name="abnormal_time" val="6"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="FLOATROOT"/>
+        <set name="magicLevel" val="94"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14551" levels="1" name="Благословение Шилен">
+        <!--
+              Уровень: 1; Описание: Скор. Атк./Скорость/Маг. Атк. увеличены.
+          -->
+        <set name="reuseDelay" val="30000"/>
+        <set name="abnormal_time" val="30"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="attack_time_down"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1086"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14552" levels="1" name="Благословение Крови">
+        <!--
+              Уровень: 1; Описание: Скор. Атк./Скорость/Маг. Атк. увеличены.
+          -->
+        <set name="reuseDelay" val="30000"/>
+        <set name="abnormal_time" val="30"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="attack_time_down"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1086"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14553" levels="1" name="Сердцебиение Земляного Червя">
+        <!--
+              Уровень: 1; Описание: Оглушены.
+          -->
+        <set name="hitTime" val="3000"/>
+        <set name="abnormal_effect" val="STUN"/>
+        <set name="abnormal_time" val="5"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="fly_away"/>
+        <set name="magicLevel" val="99"/>
+        <set name="icon" val="icon.skill4107"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14554" levels="1" name="Защита Сердца Земляного Червя">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="60000"/>
+        <set name="magicLevel" val="99"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14555" levels="1" name="Защита Сердца Земляного Червя">
+        <!--
+              Уровень: 1; Описание: Физ. Защ. увеличена.
+          -->
+        <set name="abnormal_effect" val="FLOATROOT"/>
+        <set name="abnormal_time" val="60"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="FLOATROOT"/>
+        <set name="magicLevel" val="99"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14556" levels="1" name="Лечение Торумбы">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="5000"/>
+        <set name="magicLevel" val="99"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1011"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14557" levels="1" name="Лечение Торумбы">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="5000"/>
+        <set name="magicLevel" val="99"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1011"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14558" levels="1" name="Момент Слабости">
+        <!--
+              Уровень: 1; Описание: Физ. Защ./Маг. Защ. уменьшены.
+          -->
+        <set name="hitTime" val="500"/>
+        <set name="abnormal_time" val="15"/>
+        <set name="abnormal_level" val="3"/>
+        <set name="abnormal_type" val="pd_down"/>
+        <set name="magicLevel" val="99"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill0122"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14559" levels="1" name="Состояние Поглощения Души">
+        <!--
+              Уровень: 1; Описание: Состояние, когда из персонажа выкачивают HP.
+          -->
+        <set name="abnormal_effect" val="POISON"/>
+        <set name="abnormal_time" val="10"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="physical_stance"/>
+        <set name="magicLevel" val="90"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14560" levels="1" name="Паралич от Яда Траджана">
+        <!--
+              Уровень: 1; Описание: Парализованы.
+          -->
+        <set name="abnormal_effect" val="HOLD1"/>
+        <set name="abnormal_time" val="5"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="HOLD1"/>
+        <set name="magicLevel" val="90"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1170"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14561" levels="1" name="Ядовитая Область Траджана">
+        <!--
+              Уровень: 1; Описание: Отравлены.
+          -->
+        <set name="hitTime" val="500"/>
+        <set name="abnormal_time" val="5"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="poison"/>
+        <set name="icon" val="icon.skill4035"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14562" levels="1" name="Включить Неуязвимость">
+        <!--
+              Уровень: 1; Описание: Неуязвимы.
+          -->
+        <set name="hitTime" val="500"/>
+        <set name="abnormal_effect" val="INVUL2"/>
+        <set name="abnormal_time" val="3600"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="pd_up_special"/>
+        <set name="icon" val="icon.skill0442"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14563" levels="1" name="Снять Неуязвимость">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="500"/>
+        <set name="magicLevel" val="99"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="pd_up_special"/>
+                <def name="max_abnormal_level" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14564" levels="1" name="Оковы Пожертвования">
+        <!--
+              Уровень: 1; Описание: Поднимает цель в воздух и обездвиживает на время действия заклятия.
+          -->
+        <set name="reuseDelay" val="120000"/>
+        <set name="hitTime" val="600000"/>
+        <set name="magicLevel" val="87"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14565" levels="1" name="Оковы Пожертвования">
+        <!--
+              Уровень: 1; Описание: Поднимает цель в воздух и обездвиживает на время действия заклятия.
+          -->
+        <set name="reuseDelay" val="120000"/>
+        <set name="hitTime" val="420000"/>
+        <set name="magicLevel" val="87"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14566" levels="1" name="Оковы Пожертвования">
+        <!--
+              Уровень: 1; Описание: Поднимает цель в воздух и обездвиживает на время действия заклятия.
+          -->
+        <set name="reuseDelay" val="120000"/>
+        <set name="hitTime" val="300000"/>
+        <set name="magicLevel" val="87"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14567" levels="1" name="Оковы Пожертвования">
+        <!--
+              Уровень: 1; Описание: Поднимает цель в воздух и обездвиживает на время действия заклятия.
+          -->
+        <set name="reuseDelay" val="120000"/>
+        <set name="hitTime" val="180000"/>
+        <set name="magicLevel" val="87"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14568" levels="1" name="Оковы Пожертвования">
+        <!--
+              Уровень: 1; Описание: Поднимает цель в воздух и обездвиживает на время действия заклятия.
+          -->
+        <set name="reuseDelay" val="120000"/>
+        <set name="hitTime" val="60000"/>
+        <set name="magicLevel" val="87"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14569" levels="1" name="Оковы Пожертвования">
+        <!--
+              Уровень: 1; Описание: Подняты в воздух и обездвижены.
+          -->
+        <set name="abnormal_effect" val="FLOATROOT"/>
+        <set name="abnormal_time" val="600"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="FLOATROOT"/>
+        <set name="magicLevel" val="87"/>
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14570" levels="1" name="Состояние Оков Земляного Червя">
+        <!--
+              Уровень: 1; Описание: Земляной Червь ослаблен. Можно атаковать дополнительно!
+          -->
+        <set name="abnormal_effect" val="KNOCKDOWN"/>
+        <set name="abnormal_time" val="3"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="knockdown"/>
+        <set name="magicLevel" val="91"/>
+        <set name="icon" val="icon.skill0005"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14571" levels="5" name="Дыхание Шилен">
+        <!--
+              1) Отравление Дыханием Шилен после смерти. Сопротивление тьме +5, восстановление HP +5%. В случае смерти в отравленном состоянии, уровень отравления повышается.\0	a,none\0	a,none\0
+              2) Отравление Дыханием Шилен после смерти. Сопротивление тьме +5, восстановление HP +10%, получение доп. опыта. В случае смерти в отравленном состоянии, уровень отравления повышается.\0	a,none\0	a,none\0
+              3) Все способности уменьшены из-за отравления Дыханием Шилен из-за постоянных смертей. В случае смерти в отравленном состоянии, уровень отравления повышается. Снизить уровень отравления на 2 можно у Темного Судьи, а также у любого Гида для Новичков и Помощника Приключенцев.\0	a,none\0	a,none\0
+              4) Все способности уменьшены из-за отравления Дыханием Шилен из-за постоянных смертей. В случае смерти в отравленном состоянии, уровень отравления повышается. Снизить уровень отравления на 2 можно у Темного Судьи, а также у любого Гида для Новичков и Помощника Приключенцев.\0	a,none\0	a,none\0
+              5) Все способности уменьшены из-за отравления Дыханием Шилен из-за постоянных смертей. В случае смерти в отравленном состоянии, уровень отравления повышается. Снизить уровень отравления на 2 можно у Темного Судьи, а также у любого Гида для Новичков и Помощника Приключенцев.\0	a,none\0	a,none\0
+          -->
+        <table name="#stat">1 1 0.605 0.452 0.299</table>
+        <table name="#Res">5 5 0 0 0</table>
+        <table name="#regHp">5 10 0 0 0</table>
+        <table name="#time">600 600 300 300 300</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <effect name="Buff" time="#time" count="1" val="0">
+                <add order="0x40" stat="defenceUnholy" val="#Res"/>
+                <mul order="0x30" stat="regHp" val="#regHp"/>
+                <mul order="0x30" stat="pAtk" val="#stat"/>
+                <mul order="0x30" stat="mAtk" val="#stat"/>
+                <mul order="0x30" stat="pDef" val="#stat"/>
+                <mul order="0x30" stat="mDef" val="#stat"/>
+                <mul order="0x30" stat="pAtkSpd" val="#stat"/>
+                <mul order="0x30" stat="mAtkSpd" val="#stat"/>
+                <mul order="0x30" stat="runSpd" val="#stat"/>
+                <mul order="0x30" stat="pEvasionRate" val="#stat"/>
+                <mul order="0x30" stat="pCritDamage" val="#stat"/>
+                <mul order="0x30" stat="pAccuracyCombat" val="#stat"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14572" levels="1" name="Замедление Розы">
+        <!--
+              Уровень: 1; Описание: Скор. Атк. уменьшена на 5%.
+          -->
+        <set name="abnormal_effect" val="ROOT"/>
+        <set name="abnormal_time" val="30"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="speed_down"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1394"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14573" levels="1" name="Спасия: Самоуничтожение">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="magicLevel" val="99"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14574" levels="1" name="Энергетическая Бомба">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="hitTime" val="100"/>
+        <set name="magicLevel" val="99"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14575" levels="1" name="Душа Медузы">
+        <!--
+              Уровень: 1; Описание: Воздействие Медузы превращает в камень. Долгое пребывание в этом состоянии может привести к смерти!
+          -->
+        <set name="reuseDelay" val="10000"/>
+        <set name="hitTime" val="2000"/>
+        <set name="abnormal_effect" val="HOLD2"/>
+        <set name="abnormal_time" val="7"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="turn_stone"/>
+        <set name="icon" val="icon.skill0320"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14576" levels="1" name="Уничтожение Хвоста">
+        <!--
+              Уровень: 1; Описание: Отсутствие брони. Физ. Защ и Маг. Защ. - 1%, дополнительно уменьшает Физ. Защ. и Маг. Защ. на 5, Уклонение на 4. Скапливается при последовательном получении ударов.
+          -->
+        <set name="hitTime" val="3000"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="absorb"/>
+        <set name="icon" val="icon.skill0122"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14577" levels="1" name="Дыхание Евы">
+        <!--
+              Уровень: 1; Описание: При смерти от Духания Эвы Дыхание Шилен не действует на вас.
+          -->
+        <set name="abnormal_time" val="60"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="death_penalty_block"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill1073"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14578" levels="1" name="Опьянение Земляного Червя">
+        <!--
+              Уровень: 1; Описание: Земляной Червь ослаблен. Можно атаковать дополнительно!
+          -->
+        <set name="coolTime" val="300"/>
+        <set name="hitTime" val="699"/>
+        <set name="abnormal_time" val="15"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="earthworm_debuff"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill0005"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14579" levels="1" name="Проникновение в Нутро Земляного Червя">
+        <!--
+              Уровень: 1; Описание: Проникнуть во внутрь Земляного Червя.
+          -->
+        <set name="coolTime" val="500"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill10317"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14580" levels="1" name="">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="14581"/>
+        <set name="alterSkillId" val="14582"/>
+        <set name="alterSkillId" val="14583"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="14581" levels="1" name="Крик Судьбы - Заряд Щита">
+        <!--
+              Уровень: 1; Описание: Удар Щитом. Атакует цель с силой Физ. Атк. + 615, уменьшает Физ. Защ. на 1%, Уклонение на 2, увеличивает урон от получаемого крит. удара на 1%.
+          -->
+        <set name="coolTime" val="569"/>
+        <set name="hitTime" val="800"/>
+        <set name="abnormal_time" val="10"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="shield_attack"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill10008"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack1"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14582" levels="1" name="Крик Судьбы - Цепной Удар">
+        <!--
+              Уровень: 1; Описание: Притягивает к себе одну цель.
+          -->
+        <set name="coolTime" val="1000"/>
+        <set name="hitTime" val="500"/>
+        <set name="abnormal_time" val="1"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="stun"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill10015"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack2"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14583" levels="1" name="Крик Судьбы - Страшный Суд">
+        <!--
+              Уровень: 1; Описание: Атакует цель с силой Физ. Атк. + 798, уменьшает Скорость на 1%. Требуется меч или дробящее оружие. Возможен сверхудар.
+          -->
+        <set name="coolTime" val="470"/>
+        <set name="hitTime" val="1200"/>
+        <set name="abnormal_time" val="5"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="speed_down"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill10009"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack3"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14584" levels="1" name="">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="14585"/>
+        <set name="alterSkillId" val="14586"/>
+        <set name="alterSkillId" val="14587"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="14585" levels="1" name="Крик Судьбы - Разрушение Брони">
+        <!--
+              Уровень: 1; Описание: Атакует цель с силой Физ. Атк. + 5662, ослабляет Физ. Защ. Дополнительно впитывает энергию.
+          -->
+        <set name="coolTime" val="200"/>
+        <set name="hitTime" val="1090"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="4"/>
+        <set name="abnormal_type" val="pd_down"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill10258"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack1"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14586" levels="1" name="Крик Судьбы - Удар Гиганта">
+        <!--
+              Уровень: 1; Описание: Сильный удар кулаком по земле, оглушающий врагов вокруг на 3 сек. Требуются парные мечи/двуручный меч/копье/боевое оружие.
+          -->
+        <set name="coolTime" val="300"/>
+        <set name="hitTime" val="1000"/>
+        <set name="abnormal_effect" val="KNOCKDOWN"/>
+        <set name="abnormal_time" val="3"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="knockdown"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill10266"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack2"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14587" levels="1" name="Крик Судьбы - Мегаудар">
+        <!--
+              Уровень: 1; Описание: Атакует врага с силой Физ. Атк. + 812 и отправляет в нокдаун.
+          -->
+        <set name="coolTime" val="200"/>
+        <set name="hitTime" val="1490"/>
+        <set name="abnormal_effect" val="KNOCKDOWN"/>
+        <set name="abnormal_time" val="2"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="knockdown"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill10262"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack3"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14588" levels="1" name="">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="14589"/>
+        <set name="alterSkillId" val="14590"/>
+        <set name="alterSkillId" val="14591"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="14589" levels="1" name="Крик Судьбы - Разбивание Сердца">
+        <!--
+              Уровень: 1; Описание: Атакует врага в сердце. Сила атаки = Физ. Атк. + 7127. Сверхудар. Возможен смертельный удар.
+          -->
+        <set name="coolTime" val="699"/>
+        <set name="hitTime" val="829"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill10509"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack1"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14590" levels="1" name="Soul Cry - Dark Paralize">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormal="HOLD2" count="1" name="Petrification" stackOrder="-1" stackType="HOLD1" time="5"
+                    val="0"/>
+        </for>
+    </skill>
+    <skill id="14591" levels="1" name="Крик Судьбы - Песчаная Взвесь">
+        <!--
+              Уровень: 1; Описание: Ослепляет врагов и злит их, привлекая к Вам внимание, но значительно снижая точность врагов в течение 5 сек.
+          -->
+        <set name="coolTime" val="300"/>
+        <set name="hitTime" val="1500"/>
+        <set name="abnormal_time" val="5"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="hit_down"/>
+        <set name="icon" val="icon.skill10540"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack3"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14592" levels="1" name="">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="14593"/>
+        <set name="alterSkillId" val="14594"/>
+        <set name="alterSkillId" val="14595"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="14593" levels="1" name="Крик Судьбы - Точечный Удар">
+        <!--
+              Уровень: 1; Описание: Наносит несколько ударов врагу на расстоянии. Атакует с силой = Физ. Атк. + 1199 и игнорирует 3% Физ. Защ. цели. Требуется лук/арбалет. Возможен сверхудар. Критический удар.
+          -->
+        <set name="coolTime" val="850"/>
+        <set name="hitTime" val="2200"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack1"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14594" levels="1" name="Крик Судьбы - Скорострельный Выстрел">
+        <!--
+              Уровень: 1; Описание: При экипировке лука/арбалета Скор. Атк. +5%.
+          -->
+        <set name="coolTime" val="200"/>
+        <set name="hitTime" val="800"/>
+        <set name="abnormal_effect" val="REALTARGET"/>
+        <set name="abnormal_time" val="20"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="REALTARGET"/>
+        <set name="icon" val="icon.skill10779"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14595" levels="1" name="Крик Судьбы - Обманный Выстрел">
+        <!--
+              Уровень: 1; Описание: Атакует с силой = Физ. Атк. + 4912 и отбрасывает врага. Требуется лук/арбалет. Возможен сверхудар. С определенной вероятностью отменяет цель врага.
+          -->
+        <set name="coolTime" val="449"/>
+        <set name="hitTime" val="2200"/>
+        <set name="abnormal_effect" val="KNOCKBACK"/>
+        <set name="abnormal_time" val="2"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="stun"/>
+        <set name="magicLevel" val="85"/>
+        <set name="icon" val="icon.skill0101"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack3"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14596" levels="1" name="">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="14597"/>
+        <set name="alterSkillId" val="14598"/>
+        <set name="alterSkillId" val="14599"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="14597" levels="1" name="Крик Судьбы - Шип Элементаля">
+        <!--
+              Уровень: 1; Описание: Наносит врагу маг. урон 126 ед. и снижает сопротивлению огню на 2.
+          -->
+        <set name="coolTime" val="300"/>
+        <set name="hitTime" val="2279"/>
+        <set name="abnormal_time" val="3"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="armor_unholy"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill11011"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack1"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14598" levels="1" name="Крик Судьбы - Стихийное Разрушение">
+        <!--
+              Уровень: 1; Описание: Наносит врагу маг. урон 15 ед., снижает скорость передвижения и повергает в состояние ужаса.
+          -->
+        <set name="coolTime" val="300"/>
+        <set name="hitTime" val="2779"/>
+        <set name="abnormal_time" val="3"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="speed_down"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="icon" val="icon.skill11513"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack2"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14599" levels="1" name="Крик Судьбы - Адские Оковы">
+        <!--
+              Уровень: 1; Описание: Поднимает цель в воздух и обездвиживает на время действия заклятия.
+          -->
+        <set name="coolTime" val="500"/>
+        <set name="hitTime" val="1500"/>
+        <set name="abnormal_effect" val="FLOATROOT"/>
+        <set name="abnormal_time" val="5"/>
+        <set name="abnormal_level" val="1"/>
+        <set name="abnormal_type" val="FLOATROOT"/>
+        <set name="magicLevel" val="85"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="icon" val="icon.skill11050"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="i_dispel_by_slot" time="0">
+                <def name="abnormal_type" val="npc_attack3"/>
+                <def name="max_abnormal_level" val="-1"/>
+            </effect>
+        </for>
+    </skill>
+</list>

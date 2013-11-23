@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "campaigns.dtd">
+
+<!--
+	Храм Орбиса - локальный квест
+-->
+<list>
+    <quest id="2" name="_0002_OrbisTemple">
+        <level min="75"/>
+        <spawn name="_0002_OrbisTemple"/>
+        <steps>
+            <step id="201" name="_0002_OrbisTemple1" title="Храм Орбиса - 1" points="42000" nextTaskId="202"
+                  duration="30">
+                <zones>
+                    <zone name="[orbis_temple_3]"/>
+                    <zone name="[orbis_temple_1_2]"/>
+                </zones>
+                <dialogs>
+                    <dialog type="start" name="dc0002_01_start001"/>
+                    <dialog type="accept" name="dc0002_01_context001"/>
+                    <dialog type="failed" name="dc0002_01_failed001"/>
+                    <dialog type="reward" name="dc0002_01_reward001"/>
+                    <dialog type="elite_reward" name="dc0002_01_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="22911" points="1000"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="22912" points="1000"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="22913" points="2000"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="25833" points="1000"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="18979" points="1000"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22914" points="1000"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22915" points="1000"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22916" points="2000"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="25834" points="1000"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="18980" points="1000"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22917" points="1000"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22918" points="1000"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22919" points="2000"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22920" points="1000"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="25835" points="1000"/>
+                    <!-- Метатель Орбиса -->
+                </points>
+                <rewards>
+                    <reward id="32604" count="1" type="usual"/>
+                    <!-- Наградной Сундук Снабжения Орбиса -->
+                    <reward id="32605" count="1" type="elite"/>
+                    <!-- Хороший Наградной Сундук Орбиса -->
+                </rewards>
+            </step>
+            <step id="202" name="_0002_OrbisTemple2" title="Храм Орбиса - 2" points="60000" nextTaskId="203"
+                  autostart="false" duration="30">
+                <zones>
+                    <zone name="[orbis_temple_3]"/>
+                    <zone name="[orbis_temple_1_2]"/>
+                </zones>
+                <dialogs>
+                    <dialog type="start" name="dc0002_02_start001"/>
+                    <dialog type="accept" name="dc0002_02_context001"/>
+                    <dialog type="failed" name="dc0002_02_failed001"/>
+                    <dialog type="reward" name="dc0002_02_reward001"/>
+                    <dialog type="elite_reward" name="dc0002_02_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="22911" points="1"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="22912" points="1"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="22913" points="2"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="25833" points="1"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="18979" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22914" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22915" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22916" points="2"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="25834" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="18980" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22917" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22918" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22919" points="2"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22920" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="25835" points="1"/>
+                    <!-- Метатель Орбиса -->
+                </points>
+                <rewards>
+                    <reward id="32604" count="1" type="usual"/>
+                    <!-- Наградной Сундук Снабжения Орбиса -->
+                    <reward id="32606" count="1" type="elite"/>
+                    <!-- Хороший Наградной Сундук Орбиса -->
+                </rewards>
+            </step>
+            <step id="203" name="_0002_OrbisTemple3" title="Храм Орбиса - 3" points="90000" nextTaskId="204"
+                  autostart="false" duration="30">
+                <zones>
+                    <zone name="[orbis_temple_3]"/>
+                    <zone name="[orbis_temple_1_2]"/>
+                </zones>
+                <dialogs>
+                    <dialog type="start" name="dc0002_03_start001"/>
+                    <dialog type="accept" name="dc0002_03_context001"/>
+                    <dialog type="failed" name="dc0002_03_failed001"/>
+                    <dialog type="reward" name="dc0002_03_reward001"/>
+                    <dialog type="elite_reward" name="dc0002_03_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="22911" points="1"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="22912" points="1"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="22913" points="2"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="25833" points="1"/>
+                    <!-- Жертва Орбиса -->
+                    <npc id="18979" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22914" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22915" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22916" points="2"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="25834" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="18980" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22917" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22918" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22919" points="2"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22920" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="25835" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="18982" points="1"/>
+                    <!-- Древний Герой Орбиса -->
+                    <npc id="22925" points="2"/>
+                    <!-- Древний Герой Орбиса -->
+                    <npc id="22924" points="1"/>
+                    <!-- Древний Герой Орбиса -->
+                </points>
+                <rewards>
+                    <reward id="32604" count="1" type="usual"/>
+                    <!-- Наградной Сундук Снабжения Орбиса -->
+                    <reward id="32607" count="1" type="elite"/>
+                    <!-- Лучший Наградной Сундук Орбиса -->
+                </rewards>
+            </step>
+            <step id="204" name="_0002_OrbisTemple4" title="Храм Орбиса - 4" points="42000" nextTaskId="205"
+                  autostart="false" duration="30">
+                <zones>
+                    <zone name="[orbis_temple_3]"/>
+                    <zone name="[orbis_temple_1_2]"/>
+                </zones>
+                <dialogs>
+                    <dialog type="start" name="dc0002_04_start001"/>
+                    <dialog type="accept" name="dc0002_04_context001"/>
+                    <dialog type="failed" name="dc0002_04_failed001"/>
+                    <dialog type="reward" name="dc0002_04_reward001"/>
+                    <dialog type="elite_reward" name="dc0002_04_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="18979" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22914" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22915" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22916" points="2"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="25834" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="18980" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22917" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22918" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22919" points="2"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22920" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="25835" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22921" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="22922" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="18981" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="22923" points="2"/>
+                    <!-- Ученый Орбиса -->
+                </points>
+                <rewards>
+                    <reward id="32604" count="1" type="usual"/>
+                    <!-- Наградной Сундук Снабжения Орбиса -->
+                    <reward id="32605" count="1" type="elite"/>
+                    <!-- Хороший Наградной Сундук Орбиса -->
+                </rewards>
+            </step>
+            <step id="205" name="_0002_OrbisTemple5" title="Храм Орбиса - 5" points="60000" nextTaskId="206"
+                  autostart="false" duration="30">
+                <zones>
+                    <zone name="[orbis_temple_3]"/>
+                    <zone name="[orbis_temple_1_2]"/>
+                </zones>
+                <dialogs>
+                    <dialog type="start" name="dc0002_05_start001"/>
+                    <dialog type="accept" name="dc0002_05_context001"/>
+                    <dialog type="failed" name="dc0002_05_failed001"/>
+                    <dialog type="reward" name="dc0002_05_reward001"/>
+                    <dialog type="elite_reward" name="dc0002_05_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="18979" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22914" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22915" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22916" points="2"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="25834" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="18980" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22917" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22918" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22919" points="2"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22920" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="25835" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22921" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="22922" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="18981" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="22923" points="2"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="18983" points="1"/>
+                    <!-- Старший Ученый Орбиса -->
+                    <npc id="22927" points="2"/>
+                    <!-- Старший Ученый Орбиса -->
+                    <npc id="22926" points="1"/>
+                    <!-- Старший Ученый Орбиса -->
+                </points>
+                <rewards>
+                    <reward id="32604" count="1" type="usual"/>
+                    <!-- Наградной Сундук Снабжения Орбиса -->
+                    <reward id="32606" count="1" type="elite"/>
+                    <!-- Элитный Наградной Сундук Орбиса -->
+                </rewards>
+            </step>
+            <step id="206" name="_0002_OrbisTemple6" title="Храм Орбиса - 6" points="90000" nextTaskId="201"
+                  autostart="false" duration="30">
+                <zones>
+                    <zone name="[orbis_temple_3]"/>
+                    <zone name="[orbis_temple_1_2]"/>
+                </zones>
+                <dialogs>
+                    <dialog type="start" name="dc0002_06_start001"/>
+                    <dialog type="accept" name="dc0002_06_context001"/>
+                    <dialog type="failed" name="dc0002_06_failed001"/>
+                    <dialog type="reward" name="dc0002_06_reward001"/>
+                    <dialog type="elite_reward" name="dc0002_06_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="18979" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22914" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22915" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="22916" points="2"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="25834" points="1"/>
+                    <!-- Страж Орбиса -->
+                    <npc id="18980" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22917" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22918" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22919" points="2"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22920" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="25835" points="1"/>
+                    <!-- Метатель Орбиса -->
+                    <npc id="22921" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="22922" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="18981" points="1"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="22923" points="2"/>
+                    <!-- Ученый Орбиса -->
+                    <npc id="18983" points="1"/>
+                    <!-- Старший Ученый Орбиса -->
+                    <npc id="22927" points="2"/>
+                    <!-- Старший Ученый Орбиса -->
+                    <npc id="22926" points="1"/>
+                    <!-- Старший Ученый Орбиса -->
+                    <npc id="18982" points="1"/>
+                    <!-- Древний Герой Орбиса -->
+                    <npc id="22925" points="2"/>
+                    <!-- Древний Герой Орбиса -->
+                    <npc id="22924" points="1"/>
+                    <!-- Древний Герой Орбиса -->
+                </points>
+                <rewards>
+                    <reward id="32604" count="1" type="usual"/>
+                    <!-- Наградной Сундук Снабжения Орбиса -->
+                    <reward id="32607" count="1" type="elite"/>
+                    <!-- Лучший Наградной Сундук Орбиса -->
+                </rewards>
+            </step>
+        </steps>
+    </quest>
+</list>

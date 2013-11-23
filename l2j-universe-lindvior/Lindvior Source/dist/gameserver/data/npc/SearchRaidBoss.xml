@@ -1,0 +1,3508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+    <npc id="70000" template_id="29001" name="Queen Ant" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="45.00"/>
+        <set name="collision_height" value="53.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="4017" level="1"/>
+            <!--Queen Ant Brandish-->
+            <skill id="4018" level="1"/>
+            <!--Decrease Speed-->
+            <skill id="4019" level="1"/>
+            <!--Decrease Speed-->
+            <skill id="4021" level="1"/>
+            <!--Queen Ant-->
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4416" level="12"/>
+            <!--Bugs-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+                <!--shil-->
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+                <!--Adena-->
+            </group>
+            <group chance="50.0">
+                <reward item_id="6660" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="water" value="20"/>
+            <defence attribute="wind" value="20"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="20"/>
+        </attributes>
+    </npc>
+    <npc id="70001" template_id="29006" name="Core" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="140.00"/>
+        <set name="collision_height" value="75.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="4416" level="2"/>
+            <!--Magic Creatures-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+                <!--shil-->
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+                <!--Adena-->
+            </group>
+            <group chance="50.0">
+                <reward item_id="6662" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="fire" value="20"/>
+            <defence attribute="water" value="20"/>
+            <defence attribute="wind" value="20"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="20"/>
+        </attributes>
+    </npc>
+    <npc id="70002" template_id="29014" name="Orfen" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="35.00"/>
+        <set name="collision_height" value="143.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4062" level="1"/>
+            <!--Orfen-->
+            <skill id="4063" level="1"/>
+            <!--Paralysis-->
+            <skill id="4064" level="1"/>
+            <!--Paralysis-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="4416" level="13"/>
+            <!--Fairies-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="6661" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="water" value="20"/>
+            <defence attribute="wind" value="53"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="20"/>
+        </attributes>
+    </npc>
+    <npc id="70003" template_id="29019" name="Antharas" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="300.00"/>
+        <set name="collision_height" value="300.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4071" level="2"/>
+            <!--Resist Bow/Crossbow Weapons-->
+            <skill id="4106" level="1"/>
+            <!--Antharas Stun-->
+            <skill id="4107" level="1"/>
+            <!--Antharas Stun-->
+            <skill id="4108" level="1"/>
+            <!--Antharas Terror-->
+            <skill id="4109" level="1"/>
+            <!--Curse of Antharas-->
+            <skill id="4110" level="11"/>
+            <!--null-->
+            <skill id="4111" level="11"/>
+            <!--null-->
+            <skill id="4112" level="11"/>
+            <!--null-->
+            <skill id="4113" level="11"/>
+            <!--null-->
+            <skill id="4122" level="1"/>
+            <!--Antharas-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="4416" level="10"/>
+            <!--Dragons-->
+            <skill id="5092" level="1"/>
+            <!--Antharas Terror-->
+            <skill id="5093" level="1"/>
+            <!--Antharas Meteor-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="6656" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="fire" value="50"/>
+            <defence attribute="water" value="50"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="50"/>
+            <defence attribute="unholy" value="50"/>
+        </attributes>
+    </npc>
+    <npc id="70004" template_id="29020" name="Baium" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="65.00"/>
+        <set name="collision_height" value="174.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4256" level="1"/>
+            <!--100% stun resistance.-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="4416" level="1"/>
+            <!--Undead-->
+            <skill id="4127" level="1"/>
+            <!--Baium: General Attack-->
+            <skill id="4128" level="1"/>
+            <!--Wind Of Force-->
+            <skill id="4129" level="1"/>
+            <!--Earthquake-->
+            <skill id="4130" level="1"/>
+            <!--Striking of Thunderbolt-->
+            <skill id="4131" level="1"/>
+            <!--Stun-->
+            <skill id="4132" level="1"/>
+            <!--Spear: Pound the Ground-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="6658" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="fire" value="20"/>
+            <defence attribute="water" value="20"/>
+            <defence attribute="wind" value="20"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="53"/>
+        </attributes>
+    </npc>
+    <npc id="70005" template_id="29028" name="Valakas" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="190.00"/>
+        <set name="collision_height" value="335.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <ai_params>
+            <set name="MaxPursueRange" value="50000"/>
+            <set name="SelfAggressive" value="100"/>
+            <set name="isMadness" value="30"/>
+            <set name="canSeeInHide" value="true"/>
+            <set name="canSeeInSilentMove" value="true"/>
+        </ai_params>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4071" level="2"/>
+            <!--Resist Bow/Crossbow Weapons-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="5"/>
+            <!--Blunt Weapons-->
+            <skill id="4416" level="10"/>
+            <!--Dragons-->
+            <skill id="4679" level="1"/>
+            <!--Valakas-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="6657" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <attack attribute="fire" value="370"/>
+            <defence attribute="fire" value="370"/>
+            <defence attribute="water" value="250"/>
+            <defence attribute="wind" value="300"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="300"/>
+            <defence attribute="unholy" value="300"/>
+        </attributes>
+    </npc>
+    <npc id="70006" template_id="29047" name="Scarlet van Halisha" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="92.00"/>
+        <set name="collision_height" value="112.80"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <equip>
+            <rhand item_id="8222"/>
+            <!--Monster Only (Follower of Frintezza Tran Calibur)-->
+        </equip>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4071" level="4"/>
+            <!--Resist Bow/Crossbow Weapons-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="1"/>
+            <!--Bare Hands-->
+            <skill id="4416" level="9"/>
+            <!--Demons-->
+            <skill id="5078" level="1"/>
+            <!--Frintezza Critical Damage-->
+            <skill id="5014" level="1"/>
+            <!--Frintezza's Daemon Attack-->
+            <skill id="5018" level="2"/>
+            <!--Frintezza's Daemon Field-->
+            <skill id="5016" level="1"/>
+            <!--Yoke of Scarlet-->
+            <skill id="5019" level="1"/>
+            <!--Frintezza's Daemon Drain-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="8191" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <attack attribute="unholy" value="370"/>
+            <defence attribute="fire" value="300"/>
+            <defence attribute="water" value="300"/>
+            <defence attribute="wind" value="300"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="250"/>
+            <defence attribute="unholy" value="270"/>
+        </attributes>
+    </npc>
+    <npc id="70007" template_id="29056" name="Ice Fairy Sirra" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="16.00"/>
+        <set name="collision_height" value="35.60"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="4416" level="7"/>
+            <!--Spirits-->
+            <skill id="4430" level="5"/>
+            <!--Greater Resist Water Attacks-->
+            <skill id="4478" level="1"/>
+            <!--Ice Fairy Aqua Splash-->
+            <skill id="4494" level="1"/>
+            <!--Raid Boss-->
+            <skill id="5036" level="1"/>
+            <!--Raid Boss - Level 60-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="8180" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="fire" value="20"/>
+            <defence attribute="water" value="300"/>
+            <defence attribute="wind" value="20"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="20"/>
+        </attributes>
+    </npc>
+    <npc id="70008" template_id="29195" name="Истхина" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="100.00"/>
+        <set name="collision_height" value="111.30"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <attributes>
+            <defence attribute="fire" value="300"/>
+            <defence attribute="water" value="300"/>
+            <defence attribute="wind" value="300"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="300"/>
+            <defence attribute="unholy" value="300"/>
+        </attributes>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4416" level="3"/>
+            <!--Звери-->
+            <skill id="14708" level="1"/>
+            <!--Истхина-->
+            <skill id="5463" level="1"/>
+            <!--Защита Воды-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19453" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19452" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19451" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+    </npc>
+    <npc id="70009" template_id="29194" name="Октавис" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="17.00"/>
+        <set name="collision_height" value="81.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4416" level="6"/>
+            <!--Гуманоиды-->
+            <skill id="14726" level="1"/>
+            <!--Октавис-->
+            <skill id="5467" level="1"/>
+            <!--Защита Тьмы-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19457" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19458" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19459" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="fire" value="20"/>
+            <defence attribute="water" value="20"/>
+            <defence attribute="wind" value="20"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="20"/>
+        </attributes>
+    </npc>
+    <npc id="70010" template_id="29213" name="Байлор" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="54.00"/>
+        <set name="collision_height" value="77.50"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4416" level="9"/>
+            <!--Демоны-->
+            <skill id="5467" level="1"/>
+            <!--Защита Тьмы-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="10170" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="fire" value="20"/>
+            <defence attribute="water" value="20"/>
+            <defence attribute="wind" value="20"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="20"/>
+        </attributes>
+    </npc>
+    <npc id="70011" template_id="29218" name="Валлок" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="100.00"/>
+        <set name="collision_height" value="150.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4416" level="9"/>
+            <!--Демоны-->
+            <skill id="14727" level="1"/>
+            <!--Валлок-->
+            <skill id="5467" level="1"/>
+            <!--Защита Тьмы-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="30.231">
+                <reward item_id="18094" min="1" max="1" chance="6.04016"/>
+                <!-- Благословенная Диадема Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18086" min="1" max="1" chance="5.99385"/>
+                <!-- Благословенные Рукавицы Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18088" min="1" max="1" chance="5.98062"/>
+                <!-- Благословенный Щит Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18087" min="1" max="1" chance="5.96077"/>
+                <!-- Благословенные Сапоги Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18089" min="1" max="1" chance="5.95746"/>
+                <!-- Благословенный Кожаный Шлем Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18097" min="1" max="1" chance="5.95085"/>
+                <!-- Благословенные Перчатки Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18096" min="1" max="1" chance="5.94092"/>
+                <!-- Благословенные Штаны Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18099" min="1" max="1" chance="5.93431"/>
+                <!-- Благословенный Символ Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18091" min="1" max="1" chance="5.91115"/>
+                <!-- Благословенные Кожаные Брюки Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18090" min="1" max="1" chance="5.90784"/>
+                <!-- Благословенный Кожаный Доспех Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18095" min="1" max="1" chance="5.90784"/>
+                <!-- Благословенная Туника Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18092" min="1" max="1" chance="5.87476"/>
+                <!-- Благословенные Кожаные Перчатки Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18098" min="1" max="1" chance="5.78214"/>
+                <!-- Благословенные Ботинки Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18085" min="1" max="1" chance="5.76560"/>
+                <!-- Благословенные Набедренники Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18093" min="1" max="1" chance="5.75237"/>
+                <!-- Благословенные Кожаные Сапоги Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18084" min="1" max="1" chance="5.67298"/>
+                <!-- Благословенная Кираса Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18083" min="1" max="1" chance="5.66637"/>
+                <!-- Благословенный Шлем Айдиоса -->
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <defence attribute="fire" value="20"/>
+            <defence attribute="water" value="20"/>
+            <defence attribute="wind" value="20"/>
+            <defence attribute="earth" value="20"/>
+            <defence attribute="holy" value="20"/>
+            <defence attribute="unholy" value="20"/>
+        </attributes>
+    </npc>
+    <npc id="70012" template_id="29233" name="Tauty" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="40.00"/>
+        <set name="collision_height" value="90.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <attributes>
+            <defence attribute="fire" value="300"/>
+            <defence attribute="water" value="300"/>
+            <defence attribute="wind" value="300"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="267"/>
+            <defence attribute="unholy" value="464"/>
+        </attributes>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4416" level="9"/>
+            <skill id="4435" level="5"/>
+            <skill id="4438" level="5"/>
+            <skill id="4439" level="5"/>
+            <skill id="4440" level="5"/>
+            <skill id="4441" level="5"/>
+            <skill id="5467" level="1"/>
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35570" min="1" max="1" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+    </npc>
+    <npc id="70013" template_id="19159" name="Земляной Червь" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="1328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="2615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="500.0"/>
+        <set name="collision_height" value="1450.0"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <attributes>
+            <defence attribute="fire" value="220"/>
+            <defence attribute="water" value="220"/>
+            <defence attribute="wind" value="220"/>
+            <defence attribute="earth" value="220"/>
+            <defence attribute="holy" value="220"/>
+            <defence attribute="unholy" value="220"/>
+        </attributes>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4408" level="1"/>
+            <skill id="4409" level="1"/>
+            <skill id="4410" level="11"/>
+            <skill id="4411" level="11"/>
+            <skill id="4412" level="11"/>
+            <skill id="4413" level="11"/>
+            <skill id="4414" level="2"/>
+            <skill id="4415" level="1"/>
+            <skill id="4416" level="10"/>
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="50">
+                <reward item_id="17623" min="1" max="1" chance="100"/>
+            </group>
+            <group chance="30.231">
+                <reward item_id="18094" min="1" max="1" chance="6.04016"/>
+                <!-- Благословенная Диадема Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18086" min="1" max="1" chance="5.99385"/>
+                <!-- Благословенные Рукавицы Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18088" min="1" max="1" chance="5.98062"/>
+                <!-- Благословенный Щит Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18087" min="1" max="1" chance="5.96077"/>
+                <!-- Благословенные Сапоги Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18089" min="1" max="1" chance="5.95746"/>
+                <!-- Благословенный Кожаный Шлем Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18097" min="1" max="1" chance="5.95085"/>
+                <!-- Благословенные Перчатки Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18096" min="1" max="1" chance="5.94092"/>
+                <!-- Благословенные Штаны Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18099" min="1" max="1" chance="5.93431"/>
+                <!-- Благословенный Символ Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18091" min="1" max="1" chance="5.91115"/>
+                <!-- Благословенные Кожаные Брюки Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18090" min="1" max="1" chance="5.90784"/>
+                <!-- Благословенный Кожаный Доспех Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18095" min="1" max="1" chance="5.90784"/>
+                <!-- Благословенная Туника Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18092" min="1" max="1" chance="5.87476"/>
+                <!-- Благословенные Кожаные Перчатки Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18098" min="1" max="1" chance="5.78214"/>
+                <!-- Благословенные Ботинки Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18085" min="1" max="1" chance="5.76560"/>
+                <!-- Благословенные Набедренники Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18093" min="1" max="1" chance="5.75237"/>
+                <!-- Благословенные Кожаные Сапоги Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18084" min="1" max="1" chance="5.67298"/>
+                <!-- Благословенная Кираса Айдиоса -->
+            </group>
+            <group chance="30.231">
+                <reward item_id="18083" min="1" max="1" chance="5.66637"/>
+                <!-- Благословенный Шлем Айдиоса -->
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+    </npc>
+    <npc id="70014" template_id="29180" name="Freya" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="22.00"/>
+        <set name="collision_height" value="55.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="4441" level="5"/>
+            <skill id="23215" level="1"/>
+            <skill id="4416" level="6"/>
+            <!--Humanoids-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="6644" level="1"/>
+            <!--Ice Queen Freya-->
+            <skill id="5463" level="1"/>
+            <!--Water Attacks-->
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="16026" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="21894" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <attack attribute="water" value="370"/>
+            <defence attribute="fire" value="250"/>
+            <defence attribute="water" value="370"/>
+            <defence attribute="wind" value="300"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="300"/>
+            <defence attribute="unholy" value="300"/>
+        </attributes>
+    </npc>
+    <npc id="70015" template_id="29181" name="Zaken" title="Raid Boss">
+        <set name="ai_type" value="Fighter"/>
+        <set name="type" value="Monster"/>
+        <set name="aggroRange" value="0"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="70"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="9596000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="208"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="159000"/>
+        <set name="baseMAtkSpd" value="1972"/>
+        <set name="baseMDef" value="5328"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="300.8"/>
+        <set name="baseMpReg" value="2.1"/>
+        <set name="basePAtk" value="1556061"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="5615"/>
+        <set name="baseRunSpd" value="372"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="129"/>
+        <set name="collision_radius" value="16.00"/>
+        <set name="collision_height" value="32.00"/>
+        <set name="level" value="97"/>
+        <set name="rewardExp" value="21709536"/>
+        <set name="rewardRp" value="1680"/>
+        <set name="rewardSp" value="140740"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4441" level="5"/>
+            <skill id="4416" level="1"/>
+            <!--Undead-->
+            <skill id="5467" level="1"/>
+            <!--Dark Attacks-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="6689" level="1"/>
+            <!--Absorb HP MP-->
+            <skill id="6690" level="1"/>
+            <!--Hold-->
+            <skill id="6691" level="1"/>
+            <!--Dualsword Deadly Move-->
+            <skill id="6692" level="1"/>
+            <!--Dualsword Range Deadly Move-->
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="10.0">
+                <reward item_id="35566" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35567" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35568" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="35569" min="1" max="1" chance="10.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35562" min="1" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="35563" min="1" max="70" chance="50.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="21712" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="21892" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="4357" min="1" max="5" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="10639" min="100" max="500" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="13419" min="10" max="50" chance="50.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="57" min="120000" max="150000" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17998" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="17999" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="18000" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="50.0">
+                <reward item_id="19472" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18032" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18033" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="18034" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="40.0">
+                <reward item_id="19475" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18066" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18067" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="18068" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="30.0">
+                <reward item_id="19478" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18100" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18101" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="18102" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="20.0">
+                <reward item_id="19481" min="1" max="1" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18573" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18574" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18575" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18576" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="15.0">
+                <reward item_id="18577" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19166" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19167" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="10.0">
+                <reward item_id="19168" min="1" max="5" chance="100.0000"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30297" min="1" max="5" chance="15.9198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30298" min="1" max="5" chance="15.0876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30299" min="1" max="5" chance="15.8952"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="30300" min="1" max="5" chance="15.8876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21581" min="1" max="2" chance="20.6198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21582" min="1" max="1" chance="10.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="21580" min="1" max="1" chance="10.3198"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19447" min="10" max="15" chance="55.5876"/>
+            </group>
+            <group chance="100.0">
+                <reward item_id="19448" min="10" max="15" chance="55.9148"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <attack attribute="unholy" value="370"/>
+            <defence attribute="fire" value="300"/>
+            <defence attribute="water" value="300"/>
+            <defence attribute="wind" value="300"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="250"/>
+            <defence attribute="unholy" value="370"/>
+        </attributes>
+    </npc>
+    <npc id="70517" template_id="30123" name="Анти PK" title="Наблюдатель">
+        <set name="aggroRange" value="10000"/>
+        <set name="ai_type" value="Guard"/>
+        <set name="baseAtkRange" value="1100"/>
+        <set name="baseCON" value="43"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="80"/>
+        <set name="baseDEX" value="30"/>
+        <set name="baseHpMax" value="322290.113"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="8.5"/>
+        <set name="baseINT" value="21"/>
+        <set name="baseMAtk" value="122242"/>
+        <set name="baseMAtkSpd" value="1333"/>
+        <set name="baseMDef" value="124469"/>
+        <set name="baseMEN" value="20"/>
+        <set name="baseMpMax" value="1674.8"/>
+        <set name="baseMpReg" value="3"/>
+        <set name="basePAtk" value="1999952"/>
+        <set name="basePAtkSpd" value="1253"/>
+        <set name="basePDef" value="123577"/>
+        <set name="baseRunSpd" value="160"/>
+        <set name="baseSTR" value="40"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="20"/>
+        <set name="baseWalkSpd" value="50"/>
+        <set name="castle_id" value="3"/>
+        <set name="collision_height" value="24.0"/>
+        <set name="collision_radius" value="8.0"/>
+        <set name="level" value="99"/>
+        <set name="rewardExp" value="0"/>
+        <set name="rewardRp" value="0"/>
+        <set name="rewardSp" value="0"/>
+        <set name="shots" value="NONE"/>
+        <set name="type" value="Guard"/>
+        <equip>
+            <rhand item_id="275"/>
+            <!--Long Bow-->
+        </equip>
+        <skills>
+            <skill id="23215" level="1"/>
+            <skill id="4416" level="14"/>
+            <!--Humans-->
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4071" level="2"/>
+            <!--Resist Bow/Crossbow Weapons-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="5"/>
+            <!--Blunt Weapons-->
+            <skill id="4416" level="10"/>
+            <!--Dragons-->
+            <skill id="4679" level="1"/>
+            <!--Valakas-->
+        </skills>
+        <attributes>
+            <defence attribute="fire" value="150"/>
+            <defence attribute="water" value="150"/>
+            <defence attribute="wind" value="150"/>
+            <defence attribute="earth" value="150"/>
+            <defence attribute="holy" value="150"/>
+            <defence attribute="unholy" value="150"/>
+        </attributes>
+    </npc>
+</list>

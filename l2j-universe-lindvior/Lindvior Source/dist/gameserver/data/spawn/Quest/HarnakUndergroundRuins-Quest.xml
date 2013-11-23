@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "../spawn.dtd">
+<list>
+    <spawn group="1_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107536" y="206320" z="-10872" h="49536"/>
+        <npc id="27438">
+            <set name="room" value="1"/>
+            <set name="nextMobId" value="27441"/>
+            <set name="msg1Id" value="10338018"/>
+            <set name="msg2Id" value="10338019"/>
+        </npc>
+        <!-- Carcass -->
+    </spawn>
+    <spawn group="1_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="206704" z="-10872" h="49536"/>
+        <npc id="27441">
+            <set name="room" value="1"/>
+            <set name="nextMobId" value="27443"/>
+            <set name="msg1Id" value="10338022"/>
+            <set name="msg2Id" value="10338023"/>
+        </npc>
+        <!-- Weiss Khan -->
+    </spawn>
+    <spawn group="1_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108320" y="206320" z="-10872" h="49536"/>
+        <npc id="27454">
+            <set name="room" value="1"/>
+            <set name="msg1Id" value="10338026"/>
+            <set name="msg2Id" value="10338027"/>
+        </npc>
+        <!-- Weiss Ele -->
+    </spawn>
+    <spawn group="1_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108208" y="206592" z="-10872" h="49536"/>
+        <npc id="27443">
+            <set name="room" value="1"/>
+            <set name="nextMobId" value="27439"/>
+            <set name="msg1Id" value="10338020"/>
+            <set name="msg2Id" value="10338021"/>
+        </npc>
+        <!-- Seknus -->
+    </spawn>
+    <spawn group="1_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107648" y="206592" z="-10872" h="49536"/>
+        <npc id="27437">
+            <set name="room" value="1"/>
+            <set name="msg1Id" value="10338016"/>
+            <set name="msg2Id" value="10338017"/>
+            <set name="nextMobId" value="27442"/>
+        </npc>
+        <!-- Bathus -->
+    </spawn>
+    <spawn group="1_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107536" y="206480" z="-10872" h="49536"/>
+        <npc id="27442">
+            <set name="room" value="1"/>
+            <set name="nextMobId" value="27438"/>
+            <set name="msg1Id" value="10338018"/>
+            <set name="msg2Id" value="10338019"/>
+        </npc>
+        <!-- Bamonti -->
+    </spawn>
+    <spawn group="1_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108320" y="206480" z="-10872" h="49536"/>
+        <npc id="27439">
+            <set name="room" value="1"/>
+            <set name="nextMobId" value="27454"/>
+            <set name="msg1Id" value="10338024"/>
+            <set name="msg2Id" value="10338025"/>
+        </npc>
+        <!-- Lotus -->
+    </spawn>
+    <spawn group="1_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="206704" z="-10872" h="49536"/>
+        <npc id="27440">
+            <set name="room" value="1"/>
+            <set name="nextMobId" value="27437"/>
+            <set name="msg1Id" value="10338014"/>
+            <set name="msg2Id" value="10338015"/>
+        </npc>
+        <!-- Rakzan -->
+    </spawn>
+    <spawn group="2_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108030" y="206882" z="-10872" h="49536"/>
+        <npc id="33557"/>
+        <!-- Source of Power -->
+    </spawn>
+    <spawn group="2_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107937" y="206882" z="-10872" h="49536"/>
+        <npc id="33556"/>
+        <!-- Source of Power -->
+    </spawn>
+    <spawn group="2_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107827" y="206882" z="-10872" h="49536"/>
+        <npc id="33501">
+            <set name="ControlNpc" value="true"/>
+        </npc>
+        <!-- Source of Power -->
+    </spawn>
+
+    <!-- 2 room, first spawn -->
+    <!-- 2 room, first spawn for Sigel Knight -->
+    <spawn group="3_group_1_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27440">
+            <set name="room" value="2"/>
+            <set name="msg2Id" value="1811181"/>
+            <set name="nextGroup" value="3_group_2_139"/>
+        </npc>
+        <!-- Rakzan -->
+    </spawn>
+
+    <!-- 2 room, first spawn for Tyrr Warrior -->
+    <spawn group="3_group_1_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27437">
+            <set name="room" value="2"/>
+            <set name="msg2Id" value="1811181"/>
+            <set name="nextGroup" value="3_group_2_140"/>
+        </npc>
+        <!-- Bathus -->
+    </spawn>
+
+    <!-- 2 room, first spawn for Othell Rogue -->
+    <spawn group="3_group_1_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27442">
+            <set name="room" value="2"/>
+            <set name="msg2Id" value="1811181"/>
+            <set name="nextGroup" value="3_group_2_141"/>
+        </npc>
+        <!-- Bamonti -->
+    </spawn>
+
+    <!-- 2 room, first spawn for Yul Archer -->
+    <spawn group="3_group_1_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27438">
+            <set name="room" value="2"/>
+            <set name="msg2Id" value="1811181"/>
+            <set name="nextGroup" value="3_group_2_142"/>
+        </npc>
+        <!-- Carcass -->
+    </spawn>
+
+    <!-- 2 room, first spawn for Feoh Wizard -->
+    <spawn group="3_group_1_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27441">
+            <set name="room" value="2"/>
+            <set name="msg2Id" value="1811181"/>
+            <set name="nextGroup" value="3_group_2_143"/>
+        </npc>
+        <!--Weiss Khan -->
+    </spawn>
+
+    <!-- 2 room, first spawn for Iss Enchanter -->
+    <spawn group="3_group_1_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27443">
+            <set name="room" value="2"/>
+            <set name="msg2Id" value="1811181"/>
+            <set name="nextGroup" value="3_group_2_144"/>
+        </npc>
+        <!-- Seknus -->
+    </spawn>
+
+    <!-- 2 room, first spawn for Wynn Summoner -->
+    <spawn group="3_group_1_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27439">
+            <set name="room" value="2"/>
+            <set name="msg2Id" value="1811181"/>
+            <set name="nextGroup" value="3_group_2_145"/>
+        </npc>
+        <!-- Lotus -->
+    </spawn>
+
+    <!-- 2 room, first spawn for Aeore Healer -->
+    <spawn group="3_group_1_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27454">
+            <set name="room" value="2"/>
+            <set name="msg2Id" value="1811181"/>
+            <set name="nextGroup" value="3_group_2_146"/>
+        </npc>
+        <!-- Weiss Ele -->
+    </spawn>
+
+    <!-- ######### Second Spawn, Sigel Knight ######### -->
+    <spawn group="3_group_2_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27440">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107726" y="209248" z="-10872" h="49536"/>
+        <npc id="27440">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27440">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_139"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Second Spawn, Tyrr Warrior ######### -->
+    <spawn group="3_group_2_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27437">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107726" y="209248" z="-10872" h="49536"/>
+        <npc id="27437">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27437">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_140"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Second Spawn, Othell Rogue ######### -->
+    <spawn group="3_group_2_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27442">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107726" y="209248" z="-10872" h="49536"/>
+        <npc id="27442">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27442">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_141"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Second Spawn, Yul Archer ######### -->
+    <spawn group="3_group_2_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27438">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107726" y="209248" z="-10872" h="49536"/>
+        <npc id="27438">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27438">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_142"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Second Spawn, Feoh Wizard ######### -->
+    <spawn group="3_group_2_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27441">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107726" y="209248" z="-10872" h="49536"/>
+        <npc id="27441">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27441">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_143"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Second Spawn, Iss Enchanter ######### -->
+    <spawn group="3_group_2_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27443">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107726" y="209248" z="-10872" h="49536"/>
+        <npc id="27443">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27443">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_144"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Second Spawn, Wynn Summoner ######### -->
+    <spawn group="3_group_2_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27439">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107726" y="209248" z="-10872" h="49536"/>
+        <npc id="27439">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27439">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_145"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Second Spawn, Aeore Healer ######### -->
+    <spawn group="3_group_2_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27454">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107726" y="209248" z="-10872" h="49536"/>
+        <npc id="27454">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_2_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27454">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_3_146"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- Third Spawn, Source Power -->
+    <spawn group="3_group_source_power" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107929" y="208863" z="-10872" h="49536"/>
+        <npc id="33501"/>
+    </spawn>
+
+    <!-- ######### Third Spawn, Sigel Knight ######### -->
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="209248" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108206" y="209134" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="209022" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208699" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107650" y="209142" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208855" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107542" y="209024" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208857" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208697" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_139"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Third Spawn,  Tyrr Warrior ######### -->
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="209248" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108206" y="209134" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="209022" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208699" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107650" y="209142" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208855" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107542" y="209024" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208857" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208697" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_140"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Third Spawn, Othell Rogue ######### -->
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="209248" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108206" y="209134" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="209022" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208699" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107650" y="209142" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208855" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107542" y="209024" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208857" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208697" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_141"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Third Spawn, Yul Archer ######### -->
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="209248" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108206" y="209134" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="209022" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208699" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107650" y="209142" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208855" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107542" y="209024" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208857" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208697" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_142"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Third Spawn, Feoh Wizard ######### -->
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="209248" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108206" y="209134" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="209022" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208699" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107650" y="209142" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208855" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107542" y="209024" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208857" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208697" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_143"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Third Spawn, Iss Enchanter ######### -->
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="209248" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108206" y="209134" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="209022" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208699" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107650" y="209142" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208855" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107542" y="209024" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208857" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208697" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_144"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Third Spawn, Wynn Summoner ######### -->
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="209248" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108206" y="209134" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="209022" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208699" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107650" y="209142" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208855" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107542" y="209024" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208857" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208697" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_145"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- ######### Third Spawn, Aeore Healer ######### -->
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107776" y="209248" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108206" y="209134" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="209022" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208699" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108096" y="209248" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107650" y="209142" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108314" y="208855" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107542" y="209024" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208857" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107541" y="208697" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <spawn group="3_group_3_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="2"/>
+            <set name="nextGroup" value="3_group_4_146"/>
+        </npc>
+    </spawn>
+    <!-- ############################################### -->
+
+    <!-- 2 room, fourth spawn for Sigel Knight -->
+    <spawn group="3_group_4_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27440">
+            <set name="room" value="2"/>
+            <set name="lastGroup" value="true"/>
+        </npc>
+        <!-- Rakzan -->
+    </spawn>
+
+    <!-- 2 room, fourth spawn for Tyrr Warrior -->
+    <spawn group="3_group_4_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27437">
+            <set name="room" value="2"/>
+            <set name="lastGroup" value="true"/>
+        </npc>
+        <!-- Bathus -->
+    </spawn>
+
+    <!-- 2 room, fourth spawn for Othell Rogue -->
+    <spawn group="3_group_4_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27442">
+            <set name="room" value="2"/>
+            <set name="lastGroup" value="true"/>
+        </npc>
+        <!-- Bamonti -->
+    </spawn>
+
+    <!-- 2 room, fourth spawn for Yul Archer -->
+    <spawn group="3_group_4_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27438">
+            <set name="room" value="2"/>
+            <set name="lastGroup" value="true"/>
+        </npc>
+        <!-- Carcass -->
+    </spawn>
+
+    <!-- 2 room, fourth spawn for Feoh Wizard -->
+    <spawn group="3_group_4_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27441">
+            <set name="room" value="2"/>
+            <set name="lastGroup" value="true"/>
+        </npc>
+        <!--Weiss Khan -->
+    </spawn>
+
+    <!-- 2 room, fourth spawn for Iss Enchanter -->
+    <spawn group="3_group_4_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27443">
+            <set name="room" value="2"/>
+            <set name="lastGroup" value="true"/>
+        </npc>
+        <!-- Seknus -->
+    </spawn>
+
+    <!-- 2 room, fourth spawn for Wynn Summoner -->
+    <spawn group="3_group_4_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27439">
+            <set name="room" value="2"/>
+            <set name="lastGroup" value="true"/>
+        </npc>
+        <!-- Lotus -->
+    </spawn>
+
+    <!-- 2 room, fourth spawn for Aeore Healer -->
+    <spawn group="3_group_4_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="209248" z="-10872" h="49536"/>
+        <npc id="27454">
+            <set name="room" value="2"/>
+            <set name="lastGroup" value="true"/>
+        </npc>
+        <!-- Weiss Ele -->
+    </spawn>
+
+    <!-- 3 room -->
+    <spawn group="4_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="212489" z="-10824" h="49536"/>
+        <npc id="33340"/>
+        <!-- Hermuncus -->
+    </spawn>
+    <spawn group="4_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="210899" z="-10872" h="49536"/>
+        <npc id="33501">
+            <set name="useLightHeal" value="true"/>
+        </npc>
+        <!-- Source of Power -->
+    </spawn>
+    <spawn group="4_group" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="211407" z="-10872" h="49536"/>
+        <npc id="27445"/>
+        <!-- Harnak's Wraith -->
+    </spawn>
+
+    <spawn group="4_group_seal" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108046" y="211409" z="-10872" h="32768"/>
+        <npc id="33548">
+            <set name="shout" value="true"/>
+        </npc>
+        <!-- Seal Control Device -->
+    </spawn>
+    <spawn group="4_group_seal" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107790" y="211409" z="-10872" h="32768"/>
+        <npc id="33548"/>
+        <!-- Seal Control Device -->
+    </spawn>
+
+    <!-- 3 room, spawn for Sigel Knight -->
+    <spawn group="4_group_minion_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211596" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211232" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211596" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_139" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211232" z="-10872" h="49536"/>
+        <npc id="27462">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+
+    <!-- 3 room, spawn for Tyrr Warrior -->
+    <spawn group="4_group_minion_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211596" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211232" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211596" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_140" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211232" z="-10872" h="49536"/>
+        <npc id="27463">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <!-- 3 room, spawn for Othell Rogue -->
+    <spawn group="4_group_minion_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211596" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211232" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211596" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_141" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211232" z="-10872" h="49536"/>
+        <npc id="27464">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <!-- 3 room, spawn for Yul Archer -->
+    <spawn group="4_group_minion_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211596" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211232" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211596" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_142" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211232" z="-10872" h="49536"/>
+        <npc id="27465">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <!-- 3 room, spawn for Feoh Wizard -->
+    <spawn group="4_group_minion_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211596" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211232" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211596" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_143" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211232" z="-10872" h="49536"/>
+        <npc id="27466">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <!-- 3 room, spawn for Iss Enchanter -->
+    <spawn group="4_group_minion_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211596" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211232" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211596" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_144" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211232" z="-10872" h="49536"/>
+        <npc id="27467">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+
+    <!-- 3 room, spawn for Wynn Summoner -->
+    <spawn group="4_group_minion_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211596" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211232" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211596" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_145" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211232" z="-10872" h="49536"/>
+        <npc id="27468">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+
+    <!-- 3 room, spawn for Aeore Healer -->
+    <spawn group="4_group_minion_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211596" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-108500" y="211232" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211596" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="4_group_minion_146" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107349" y="211232" z="-10872" h="49536"/>
+        <npc id="27469">
+            <set name="room" value="3"/>
+        </npc>
+    </spawn>
+    <spawn group="hermunkus" count="1" respawn="0" respawn_random="0" period_of_day="none">
+        <point x="-107926" y="212489" z="-10824" h="49536"/>
+        <npc id="33340">
+            <set name="lastSpawn" value="true"/>
+        </npc>
+        <!-- Hermuncus -->
+    </spawn>
+</list>

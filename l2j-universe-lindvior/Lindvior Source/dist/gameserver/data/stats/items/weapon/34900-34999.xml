@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+    <weapon id="34921" name="Меч Революционера">
+        <!--Done by ALF-->
+        <set name="icon" value="icon.weapon_sword_of_revolution_i00"/>
+        <set name="weight" value="1520"/>
+        <set name="type" value="SWORD"/>
+        <set name="crystal_type" value="D"/>
+        <set name="crystal_count" value="2"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="34922" name="Лук Революционера">
+        <!--Done by ALF-->
+        <set name="icon" value="icon.weapon_gastraphetes_i00"/>
+        <set name="weight" value="1520"/>
+        <set name="type" value="BOW"/>
+        <set name="crystal_type" value="D"/>
+        <set name="crystal_count" value="2"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="34923" name="Посох Революционера">
+        <!--Done by ALF-->
+        <set name="icon" value="icon.weapon_goathead_staff_i00"/>
+        <set name="weight" value="1080"/>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="D"/>
+        <set name="crystal_count" value="2"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="34924" name="Скипетр Революционера">
+        <!--Done by ALF-->
+        <set name="icon" value="icon.weapon_life_stick_i00"/>
+        <set name="weight" value="1080"/>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="D"/>
+        <set name="crystal_count" value="2"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="34998" name="Таути однорук">
+        <!-- Done by Chekan -->
+        <set name="icon" value="icon.weapon_tauti_one_hand_axe_i01"/>
+        <set name="type" value="BLUNT"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="100"/>
+        <set name="crystal_type" value="R"/>
+        <set name="weight" value="1000"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="augmentable" value="false"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <skills>
+            <skill id="8878" level="1"/>
+            <skill id="9459" level="1"/>
+        </skills>
+        <attributes>
+            <attribute element="unholy" value="450"/>
+        </attributes>
+        <for>
+            <add order="0x08" stat="pAtk" value="629.0"/>
+            <add order="0x08" stat="mAtk" value="322.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="379.0"/>
+            <set stat="pCritBase" order="0x08" value="150"/>
+        </for>
+    </weapon>
+    <weapon id="34999" name="Таути двурук">
+        <!-- Done by Chekan -->
+        <set name="icon" value="icon.weapon_tauti_one_hand_magic_axe_i01"/>
+        <set name="type" value="BIGBLUNT"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="100"/>
+        <set name="crystal_type" value="R"/>
+        <set name="weight" value="1000"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="augmentable" value="false"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <skills>
+            <skill id="8880" level="1"/>
+            <skill id="9459" level="1"/>
+        </skills>
+        <attributes>
+            <attribute element="unholy" value="450"/>
+        </attributes>
+        <for>
+            <add order="0x08" stat="pAtk" value="766.0"/>
+            <add order="0x08" stat="mAtk" value="322.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <set stat="pCritBase" order="0x08" value="150"/>
+            <add order="0x08" stat="pAtkSpd" value="325.0"/>
+        </for>
+    </weapon>
+</list>

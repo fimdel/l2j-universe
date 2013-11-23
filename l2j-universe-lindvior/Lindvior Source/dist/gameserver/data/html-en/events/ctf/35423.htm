@@ -1,0 +1,43 @@
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<html>
+<head>
+<body scroll="no">
+<title>Red Team Base</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+    <tr>
+        <td valign="top" align="center">
+            <br><br>
+            <font name="hs12" color="FF0000">Red Team Base</font>
+            <br1><img src="L2UI_CH3.herotower_deco" width=256 height=32>
+                <br1>
+                    <table border=0 cellspacing=0 cellpadding=2 width=280>
+                        <tr>
+                            <td FIXWIDTH=270 align=center valign=top>
+                                How much will n1 + n2?
+                            </td>
+                        </tr>
+                        <tr>
+                            <td FIXWIDTH=270 align=center valign=top>
+                                <edit var="sum" width=200 type=number>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <table border=0 cellspacing=0 cellpadding=2 width=280>
+                        <tr>
+                            <td FIXWIDTH=286 align=center valign=top>
+                                <button value="Capture Base!"
+                                        action="bypass -h scripts_events.CaptureTheFlag.CaptureTheFlag:capture 2 n1 n2 $sum"
+                                        width=200 height=29 back="L2UI_CT1.OlympiadWnd_DF_Apply_Down"
+                                        fore="L2UI_CT1.OlympiadWnd_DF_Apply">
+                            </td>
+                        </tr>
+                    </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

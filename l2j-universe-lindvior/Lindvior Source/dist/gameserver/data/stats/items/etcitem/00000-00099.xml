@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <etcitem id="17" name="Wooden Arrow">
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_wooden_quiver_i00"/>
+        <set name="price" value="2"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="ARROW"/>
+        <set name="weight" value="6"/>
+        <equip>
+            <slot id="LEFT_HAND"/>
+        </equip>
+    </etcitem>
+    <etcitem id="53" name="(Not In Use)">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="54" name="(Not In Use)">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="55" name="Shiny Agathion 7 Day Pack (Event)">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="56" name="Sobbing Agathion 7 Day Pack (Event)">
+        <set name="freightable" value="true"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="100"/>
+    </etcitem>
+    <etcitem id="57" name="Adena">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_adena_i00"/>
+        <set name="price" value="1"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="MONEY"/>
+    </etcitem>
+    <etcitem id="65" name="Red Potion">
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_potion_red_i00"/>
+        <set name="price" value="40"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="POTION"/>
+        <set name="ex_type" value="POTION"/>
+        <set name="weight" value="80"/>
+        <skills>
+            <skill id="2001" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+</list>

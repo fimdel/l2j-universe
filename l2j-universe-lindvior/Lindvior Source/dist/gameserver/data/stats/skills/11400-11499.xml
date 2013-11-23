@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="11497" levels="1" name="Уникальное Умение Призывателя - Пассивное">
+        <!--
+              Уровень: 1; Описание: a,
+          -->
+        <set name="icon" val="icon.skill0217"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="11498" levels="1" name="Уникальное Умение Призывателя">
+        <!--
+          Предположительно яраость пета и тригес скила виликое владение призывом	Уровень: 1; Описание: В течение 5 сек. увеличивает Физ. Атк., Маг. Атк., шанс Крит. Атк., силу Крит. Атк. на 10%.
+          -->
+        <set name="icon" val="icon.skill1543"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_PET"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="5" val="0">
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="mAtk" val="1.1"/>
+                <mul order="0x30" stat="pCritRate" val="1.1"/>
+                <mul order="0x30" stat="pCritDamage" val="1.1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="11499" levels="1" name="Сковывающая Атака Призывателя">
+        <!--
+              Уровень: 1; Описание: Наносит по врагу мощный удар.
+          -->
+        <set name="icon" val="icon.skill10317"/>
+        <set name="magicLevel" val="85"/>
+        <!-- Сила с потолка -->
+        <set name="power" val="22465"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

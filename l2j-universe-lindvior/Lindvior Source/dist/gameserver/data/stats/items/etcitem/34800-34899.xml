@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Кристалл Тьмы - Ивент
+         Описание: Инкрустированный в оружие, он увеличивает его атаку тьмы на определенный процент. Инкрустированный в броню, он увеличивает ее сопротивление свету на определенный процент. Может быть инкрустирован до 6-го уровня; ниже сила кристалла будет потеряна. Также возможно усиление до 3-х способностей при инкрустации в броню. Невозможно получение способностей, противоположных друг другу. Нельзя использовать на олимпиаде.
+     -->
+    <etcitem id="34800" name="Кристалл Тьмы" add_name="Ивент">
+        <set name="icon" value="icon.etc_unholy_crystal_i00"/>
+        <set name="type" value="ATTRIBUTE_STONE"/>
+        <set name="weight" value="1"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <skills>
+            <skill id="2334" level="2"/>
+        </skills>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Кристалл Святости - Ивент
+         Описание: Инкрустированный в оружие, он увеличивает его атаку света на определенный процент.Инкрустированный в броню, он увеличивает ее сопротивление тьме на определенный процент. Может быть инкрустирован до 6-го уровня; ниже сила кристалла будет потеряна. Также возможно усиление до 3-х способностей при инкрустации в броню. Невозможно получение способностей, противоположных друг другу. Нельзя использовать на олимпиаде.
+     -->
+    <etcitem id="34801" name="Кристалл Святости" add_name="Ивент">
+        <set name="icon" value="icon.etc_holy_crystal_i00"/>
+        <set name="type" value="CRYSTAL"/>
+        <set name="weight" value="1"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <skills>
+            <skill id="2333" level="2"/>
+        </skills>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук Зарядов Души - Ивент
+         Описание: Сундук с Зарядами Души
+     -->
+    <etcitem id="34811" name="Сундук Зарядов Души" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук Благ. Зарядов Духа - Ивент
+         Описание: Сундук с Благословенными Зарядами Духа
+     -->
+    <etcitem id="34812" name="Сундук Благ. Зарядов Духа" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук Руды - Ивент
+         Описание: Сундук с Рудами Стихий
+     -->
+    <etcitem id="34813" name="Сундук Руды" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук Кристаллов - Ивент
+         Описание: Сундук с Кристаллами Стихий
+     -->
+    <etcitem id="34814" name="Сундук Кристаллов" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="CRYSTAL"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Коробка со Свитками Модификации Доспехов - S - Ивент
+         Описание: Коробка со Свитками Модификации Доспехов - S
+     -->
+    <etcitem id="34815" name="Коробка со Свитками Модификации Доспехов - S" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Коробка со Свитками Модификации Доспехов - R - Ивент
+         Описание: Коробка со Свитками Модификации Доспехов - R
+     -->
+    <etcitem id="34816" name="Коробка со Свитками Модификации Доспехов - R" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Коробка со Свитками Модификации Оружия - S - Ивент
+         Описание: Коробка со Свитками Модификации Оружия - S
+     -->
+    <etcitem id="34817" name="Коробка со Свитками Модификации Оружия - S" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Коробка со Свитками Модификации Оружия - R - Ивент
+         Описание: Коробка со Свитками Модификации Оружия - R
+     -->
+    <etcitem id="34818" name="Коробка со Свитками Модификации Оружия - R" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук с Кольцом Большой Тыквы - Ивент
+         Описание: Сундук с Кольцом Большой Тыквы. Можно получить кольцо для мага или воина.
+     -->
+    <etcitem id="34819" name="Сундук с Кольцом Большой Тыквы" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук с Серьгой Большой Тыквы - Ивент
+         Описание: Сундук с Серьгой Большой Тыквы. Можно получить кольцо для мага или воина.
+     -->
+    <etcitem id="34820" name="Сундук с Серьгой Большой Тыквы" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук с Ожерельем Большой Тыквы - Ивент
+         Описание: Сундук с Ожерельем Большой Тыквы. Можно получить ожерелье.
+     -->
+    <etcitem id="34821" name="Сундук с Ожерельем Большой Тыквы" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук с Аксессуарами Большой Тыквы - Ивент
+         Описание: Сундук с Кольцом Большой Тыквы, Сундук с Серьгой Большой Тыквы, Сундук с Ожерельем Большой Тыквы.
+     -->
+    <etcitem id="34822" name="Сундук с Аксессуарами Большой Тыквы" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук с Редким Кристаллом Души - Ранг R - Ивент
+         Описание: Сундук с редким Кристаллом Души Ранга R
+     -->
+    <etcitem id="34823" name="Сундук с Редким Кристаллом Души - Ранг R" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="CRYSTAL"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук с Редким Кристаллом Души - Ранг R95 - Ивент
+         Описание: Сундук с редким Кристаллом Души Ранга R95
+     -->
+    <etcitem id="34824" name="Сундук с Редким Кристаллом Души - Ранг R95" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="CRYSTAL"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук с Редким Кристаллом Души - Ранг R99 - Ивент
+         Описание: Сундук с редким Кристаллом Души Ранга R99
+     -->
+    <etcitem id="34825" name="Сундук с Редким Кристаллом Души - Ранг R99" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="CRYSTAL"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук с Талисманом - Ивент
+         Описание: Сундук с Талисманом
+     -->
+    <etcitem id="34826" name="Сундук с Талисманом" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <skills>
+            <skill id="22453" level="1"/>
+        </skills>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Коробка Эликсиров - Ранг S - Ивент
+         Описание: Коробка Эликсиров Ранга S
+     -->
+    <etcitem id="34827" name="Коробка Эликсиров - Ранг S" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Коробка Эликсиров - Ранг R - Ивент
+         Описание: Коробка Эликсиров Ранга R
+     -->
+    <etcitem id="34828" name="Коробка Эликсиров - Ранг R" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Коробка со Свитком Благословения - Ранг R - Ивент
+         Описание: Коробка со Свитком Благословения Ранг R
+     -->
+    <etcitem id="34829" name="Коробка со Свитком Благословения - Ранг R" add_name="Ивент">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Упаковка: Комплект Усиления (R)
+         Описание: Свиток: Модифицировать Оружие (R) 3 шт., Благословенный Свиток: Модифицировать Оружие (R) 2 шт., Свиток: Модифицировать Доспехи (R) 15 шт., Благословенный Свиток: Модифицировать Доспехи (R) 5 шт., Супер Кристалл Стихии (R), Редкий Кристалл Души (R95), Камень Жизни Высшего Качества 4 шт.
+     -->
+    <etcitem id="34830" name="Упаковка: Комплект Усиления (R) ">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="100"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+		Изменен: 4:02/16.04.2013, Mazaffaka
+		Название: Упаковка: Афроамериканский Парик
+		Описание: При открытии, можно получить 1 Афроамериканский Парик
+	-->
+    <etcitem id="34835" name="Упаковка: Афроамериканский Парик">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="100"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Упаковка: Афроамериканский Парик 7 дн.
+         Описание: При открытии можно получить 1 Афроамериканский Парик (7 дн.)
+     -->
+    <etcitem id="34836" name="Упаковка: Афроамериканский Парик 7 дн.">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="100"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Магическая Веревка - Ранг R
+         Описание: Свита из кожи ящерецы, обладает магической силой. Если обвязать ей вещи, то они станут легче.
+     -->
+    <etcitem id="34837" name="Магическая Веревка - Ранг R">
+        <set name="icon" value="icon.etc_braided_hemp_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="2"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Компактная Упаковка: Заряды Души - Ранг R
+         Описание: Компактная Упаковка: Заряды Души - Ранг R. При использовании дает 300 Зарядов Души Ранга R.
+     -->
+    <etcitem id="34838" name="Компактная Упаковка: Заряды Души - Ранг R">
+        <set name="icon" value="icon.etc_pouch_yellow_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="200"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Компактная Упаковка: Заряды Духа - Ранг R
+         Описание: Компактная Упаковка: Заряды Духа - Ранг R. При использовании дает 300 Зарядов Духа Ранга R.
+     -->
+    <etcitem id="34839" name="Компактная Упаковка: Заряды Духа - Ранг R">
+        <set name="icon" value="icon.etc_pouch_yellow_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="200"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Компактная Упаковка: Благословенные Заряды Духа - Ранг R
+         Описание: Компактная Упаковка: Благословенные Заряды Духа - Ранг R. При использовании дает 300 Благословенных Зарядов Духа Ранга R.
+     -->
+    <etcitem id="34840" name="Компактная Упаковка: Благословенные Заряды Духа - Ранг R">
+        <set name="icon" value="icon.etc_pouch_yellow_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="200"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Рецепт - Компактная Упаковка: Заряды Души Ранг R (100%)
+         Описание: Только для Гномов. Рецепт создания Компактной Упаковки: Заряда Души Ранг R. Требуется умение "Создать Вещь" 11-го уровня. Шанс Успеха 100%.
+     -->
+    <etcitem id="34841" name="Рецепт - Компактная Упаковка: Заряды Души Ранг R (100%)">
+        <set name="icon" value="icon.etc_recipe_gold_i00"/>
+        <set name="type" value="RECIPE"/>
+        <set name="class" value="RECIPIES"/>
+        <set name="weight" value="30"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Рецепт - Компактная Упаковка: Заряды Духа Ранг R (100%)
+         Описание: Только для Гномов. Рецепт создания Компактной Упаковки: Заряда Души Ранг R. Требуется умение "Создать Вещь" 11-го уровня. Шанс Успеха 100%.
+     -->
+    <etcitem id="34842" name="Рецепт - Компактная Упаковка: Заряды Духа Ранг R (100%)">
+        <set name="icon" value="icon.etc_recipe_gold_i00"/>
+        <set name="type" value="RECIPE"/>
+        <set name="class" value="RECIPIES"/>
+        <set name="weight" value="30"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Рецепт - Компактная Упаковка: Благословенные Заряды Духа Ранг R (100%)
+         Описание: Только для Гномов. Рецепт создания Компактной Упаковки: Благословенного Заряда Души Ранг R. Требуется умение "Создать Вещь" 11-го уровня. Шанс Успеха 100%.
+     -->
+    <etcitem id="34843" name="Рецепт - Компактная Упаковка: Благословенные Заряды Духа Ранг R (100%)">
+        <set name="icon" value="icon.etc_recipe_gold_i00"/>
+        <set name="type" value="RECIPE"/>
+        <set name="class" value="RECIPIES"/>
+        <set name="weight" value="30"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Настойка Сомнения
+     -->
+    <etcitem id="34844" name="Настойка Сомнения">
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="icon" value=""/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Настойка Сомнения
+     -->
+    <etcitem id="34845" name="Настойка Сомнения">
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="icon" value=""/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Подарок Барда
+         Описание: Подарочный сундук , наполненный духом Барда.
+     -->
+    <etcitem id="34846" name="Подарок Барда">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Медовый Напиток Мафр - 2 часа
+         Описание: Витаминный предмет
+         В течение 2 часов дает эффект восстановления энергии. Не восстанавливает энергию при использовании во время получения эффекта "Радость Дня Рождения". Нельзя обменять/выбросить/. Можно положить в личное хранилище. Энергетический предмет, кол-во использований ограничено.
+     -->
+    <etcitem id="34847" name="Медовый Напиток Мафр - 2 часа">
+        <set name="icon" value="icon.etc_hot_spring_nectar_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="1"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+		Изменен: 4:02/16.04.2013, Mazaffaka
+		Название: Таинственная Настойка Силы
+	-->
+    <etcitem id="34849" name="Таинственная Настойка Силы">
+        <set name="icon" value="icon.etc_warrior_set_i00"/>
+        <set name="type" value="HERB"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Таинственная Настойка Магии
+     -->
+    <etcitem id="34850" name="Таинственная Настойка Магии">
+        <set name="icon" value="icon.etc_magic_set_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Фрагмент Кубика Доспехов - R
+         Описание: Можно обменять у Рабочего Склада на Свиток: Модифицировать Доспех (R).
+     -->
+    <etcitem id="34851" name="Фрагмент Кубика Доспехов - R">
+        <set name="icon" value="Branchsys2.icon.event_cubic_a_piece_i01"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Фрагмент Кубика Оружия - R
+         Описание: Можно обменять у Рабочего Склада на Свиток: Модифицировать Оружие (R).
+     -->
+    <etcitem id="34852" name="Фрагмент Кубика Оружия - R">
+        <set name="icon" value="Branchsys2.icon.event_cubic_w_piece_i01"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сверкающий Фрагмент Кубика Доспехов – R
+         Описание: Можно обменять у Рабочего Склада на Благословенный Свиток: Модифицировать Доспех (R).
+     -->
+    <etcitem id="34853" name="Сверкающий Фрагмент Кубика Доспехов – R">
+        <set name="icon" value="Branchsys2.icon.shine_cubic_a_piece_i01"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сверкающий Фрагмент Кубика Оружия – R
+         Описание: Можно обменять у Рабочего Склада на Благословенный Свиток: Модифицировать Доспех (R).
+     -->
+    <etcitem id="34854" name="Сверкающий Фрагмент Кубика Оружия – R">
+        <set name="icon" value="Branchsys2.icon.shine_cubic_w_piece_i01"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сундук Реан
+         Описание: Сундук Реан, меняется на Сосуд Опыта. Небольшой шанс получить Свиток Опыта. Нельзя обменять, выбросить, уничтожить. Можно положить в личное хранилище.
+     -->
+    <etcitem id="34855" name="Сундук Реан">
+        <set name="icon" value="icon.present_of_destination_event"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Музыкальный Кристалл: Тема - Любовь - Кампания
+         Описание: Тема: Любовь. Исчезает после использования.
+     -->
+    <etcitem id="34856" name="Музыкальный Кристалл: Тема - Любовь" add_name="Кампания">
+        <set name="icon" value="icon.etc_echo_crystal_i02"/>
+        <set name="type" value="CRYSTAL"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="reuse_delay" value="10000"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Музыкальный Кристалл: Тема - Фестиваль - Кампания
+         Описание: Тема: Фестиваль. Исчезает после использования.
+     -->
+    <etcitem id="34857" name="Музыкальный Кристалл: Тема - Фестиваль" add_name="Кампания">
+        <set name="icon" value="icon.etc_echo_crystal_i04"/>
+        <set name="type" value="CRYSTAL"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="reuse_delay" value="10000"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Музыкальный Кристалл: Тема - Праздник - Кампания
+         Описание: Тема: Праздник. Исчезает после использования.
+     -->
+    <etcitem id="34858" name="Музыкальный Кристалл: Тема - Праздник" add_name="Кампания">
+        <set name="icon" value="icon.etc_echo_crystal_i00"/>
+        <set name="type" value="CRYSTAL"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="reuse_delay" value="10000"/>
+        <skills>
+            <skill id="22186" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Улучшенный Браслет Истхины
+         Описание: Браслет Истхины. Активирует 5 ячеек талисмана. МР +216, ВЫН +1, ДУХ +1. Нельзя обменять/выбросить/модифицировать, выставить на продажу в личной торговой лавке.
+     -->
+    <etcitem id="34859" name="Улучшенный Браслет Истхины">
+        <set name="icon" value="icon.istina_bangel"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="150"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="crystal_type" value="R"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Улучшенный Браслет Октависа
+         Описание: Браслет Октависа. Активирует 5 ячеек талисмана. MP +216 ЛВК +1, МДР +1. Нельзя обменять/выбросить/модифицировать, выставить на продажу в личной торговой лавке.
+     -->
+    <etcitem id="34860" name="Улучшенный Браслет Октависа">
+        <set name="icon" value="icon.octavis_bangel"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="150"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="crystal_type" value="R"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Мешочек с Усилителем и Материалами - R
+         Описание: Мешочек с усилителем и материалами - R
+     -->
+    <etcitem id="34861" name="Мешочек с Усилителем и Материалами - R">
+        <set name="icon" value="icon.etc_pouch_gold_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Яркое Бумажное Украшение
+         Описание: С надписью на языке демонов: "Жизнь тленна".
+     -->
+    <etcitem id="34862" name="Яркое Бумажное Украшение ">
+        <set name="icon" value="icon.etc_plan_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Зараженное Яйцо Драко
+         Описание: Яйцо Драко, зараженное злом, которое создал Дьявол Тироль и которое Шилен передала Монстрам. Двойной щелчок для использования
+     -->
+    <etcitem id="34863" name="Зараженное Яйцо Драко">
+        <set name="icon" value="icon.etc_ev_triol_egg"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Малое Яйцо Драко
+         Описание: Яйцо Драко, очищенное от энергии зла. Двойной щелчок для использования. При повышении температуры из яйца вылупляется детеныш.
+     -->
+    <etcitem id="34864" name="Малое Яйцо Драко">
+        <set name="icon" value="icon.etc_ev_small_egg"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Большое Яйцо Драко
+         Описание: Яйцо Драко, очищенное от энергии зла. Двойной щелчок для использования. При повышении температуры из яйца вылупляется детеныш.
+     -->
+    <etcitem id="34865" name="Большое Яйцо Драко">
+        <set name="icon" value="icon.etc_ev_big_egg"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Скорлупа
+         Описание: Скорлупа. Если отнести ее Слуге Пламени Асурану, можно получить награду.
+     -->
+    <etcitem id="34866" name="Скорлупа">
+        <set name="icon" value="icon.etc_ev_broken_egg"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Подарок Драко
+         Описание: Подарок от Драко, вылупившегося из очищенного Яйца Драко.
+     -->
+    <etcitem id="34867" name="Подарок Драко">
+        <set name="icon" value="icon.etc_treasure_box_i03"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сверкающий Подарок Драко
+         Описание: Сверкающий подарок от Драко, вылупившегося из очищенного Яйца Драко.
+     -->
+    <etcitem id="34868" name="Сверкающий Подарок Драко">
+        <set name="icon" value="icon.etc_treasure_box_i08"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+		Изменен: 4:02/16.04.2013, Mazaffaka
+		Название: Упаковка: Сертификат Подопечного
+		Описание: Содержит Сертификат Подопечного и Пособие Наставника. Нельзя обменять/выбросить/уничтожить. Можно положить в личное хранилище. Можно использовать персонажам с одного аккаунта при помощи Менеджера Витаминов. После вскрытия упаковки предметы нельзя будет передать другому персонажу аккаунта.
+	-->
+    <etcitem id="34870" name="Упаковка: Сертификат Подопечного">
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="100"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+		Изменен: 4:02/16.04.2013, Mazaffaka
+		Название: Плохая Магическая Заколка - Ранг R
+		Описание: Используется для улучшения Поясов Ранга R.
+	-->
+    <etcitem id="34879" name="Плохая Магическая Заколка - Ранг R">
+        <set name="icon" value="icon.etc_rune_clip_i00"/>
+        <set name="type" value="MAGIC_RUNE_CLIP"/>
+        <set name="weight" value="20"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Нормальная Магическая Заколка - Ранг R
+         Описание: Используется для улучшения Поясов Ранга R.
+     -->
+    <etcitem id="34880" name="Нормальная Магическая Заколка - Ранг R">
+        <set name="icon" value="icon.etc_rune_clip_i00"/>
+        <set name="type" value="MAGIC_RUNE_CLIP"/>
+        <set name="weight" value="20"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Хорошая Магическая Заколка - Ранг R
+         Описание: Используется для улучшения Поясов Ранга R.
+     -->
+    <etcitem id="34881" name="Хорошая Магическая Заколка - Ранг R">
+        <set name="icon" value="icon.etc_rune_clip_i01"/>
+        <set name="type" value="MAGIC_RUNE_CLIP"/>
+        <set name="weight" value="20"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Совершенная Магическая Заколка - Ранг R
+         Описание: Используется для улучшения Поясов Ранга R.
+     -->
+    <etcitem id="34882" name="Совершенная Магическая Заколка - Ранг R">
+        <set name="icon" value="icon.etc_rune_clip_i02"/>
+        <set name="type" value="MAGIC_RUNE_CLIP"/>
+        <set name="weight" value="20"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Бутыль с Душой Истхины
+         Описание: Если отнести к Лимиэру, он наделит Браслет Истхины Душой Истхины. Нельзя обменять/выбросить/продать в магазине. Можно положить в личное хранилище.
+     -->
+    <etcitem id="34883" name="Бутыль с Душой Истхины">
+        <set name="icon" value="icon.etc_fruit_juice_glass_bottle_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="60"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Бутыль с Душой Октависа
+         Описание: Наделяет Браслет Октависа Душой Октависа. Нельзя обменять/выбросить/продать в магазине. Можно положить в личное хранилище.
+     -->
+    <etcitem id="34884" name="Бутыль с Душой Октависа">
+        <set name="icon" value="icon.etc_fruit_juice_glass_bottle_i06"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="60"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Упаковка: Диадема Землетрясения (60 дн.)
+         Описание: При открытии можно получить Диадему Землетрясения. Нельзя обменять/выбросить/уничтожить/прдать в магазине. Можно положить в личное хранилище. Можно использовать персонажам с одного аккаунта при помощи Менеджера Витаминов.
+     -->
+    <etcitem id="34885" name="Упаковка: Диадема Землетрясения (60 дн.)">
+        <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="10"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Фрагмент Пророчества
+         Описание: Осколок, который проглотил монстр, содержит некое пророчество.
+     -->
+    <etcitem id="34886" name="Фрагмент Пророчества">
+        <set name="icon" value="icon.etc_jewel_red_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="0"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Бутылка для Воды из Источника
+         Описание: Подойти к источнику и двойным кликом наполнить Бутылку водой.
+     -->
+    <etcitem id="34887" name="Бутылка для Воды из Источника">
+        <set name="icon" value="icon.etc_hot_spring_glass_bottle_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="20"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Бутылка с Водой из Источника
+         Описание: Бутылка с Водой из Источника.
+     -->
+    <etcitem id="34888" name="Бутылка с Водой из Источника">
+        <set name="icon" value="icon.etc_fruit_juice_glass_bottle_i05"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="0"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Толстая Кожа
+         Описание: Материал, из которого можно изготовить предмет для очистки воды.
+     -->
+    <etcitem id="34889" name="Толстая Кожа">
+        <set name="icon" value="icon.etc_leather_brown_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="0"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Лопата
+         Описание: Щелкните по предмету дважды для разведения огня в Кузнеце Богов.
+     -->
+    <etcitem id="34890" name="Лопата ">
+        <set name="icon" value="icon.etc_trowel_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="20"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Сила Огня
+         Описание: Материал, из которого можно изготовить предмет для очистки воды.
+     -->
+    <etcitem id="34891" name="Сила Огня">
+        <set name="icon" value="icon.etc_bead_red_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="0"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <skills>
+            <skill id="2329" level="4"/>
+        </skills>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Отвердевшая Сила Воды
+         Описание: Материал, из которого можно изготовить предмет для очистки воды
+     -->
+    <etcitem id="34892" name="Отвердевшая Сила Воды">
+        <set name="icon" value="icon.etc_hard_fossil_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="0"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Семя Лекарственного Растения Помощи
+         Описание: Чтобы посадить Семя Лекарственного Растения Помощи, кликнете два раза по предмету в Осажденном районе.
+     -->
+    <etcitem id="34893" name="Семя Лекарственного Растения Помощи">
+        <set name="icon" value="icon.etc_coda_seed_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="0"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Следы Лекарственного Растения
+         Описание: Лекарственного Растения Помощи оставит свои следы, если посадить его в осажденном районе,
+     -->
+    <etcitem id="34894" name="Следы Лекарственного Растения">
+        <set name="icon" value="icon.etc_powder_orange_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="0"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Книга Заклинаний - Флаг Клана
+         Описание: Необходима для изучения умения "Флаг Клана". Умение расходует 100 очков репутации клана. Умение может быть использовано членом клана в звании Маркиз и выше. Можно изучить в состоянии основного класса. Нельзя обменять или выбросить. Можно положить в личное хранилище.
+     -->
+    <etcitem id="34895" name="Книга Заклинаний - Флаг Клана">
+        <set name="icon" value="icon.etc_spell_books_assistance_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="20"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+    </etcitem>
+    <!--
+		Изменен: 4:02/16.04.2013, Mazaffaka
+		Название: Доказательство Выжившего
+		Описание: Тот, кто владеет Доказательством Выжившего, может в любой момент быть вызванным на бой редким монстром из "Секты Скальдов Адского Огня". Следует быть постоянно начеку.
+	-->
+    <etcitem id="34898" name="Доказательство Выжившего">
+        <set name="icon" value="icon.etc_fire_rune_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="weight" value="0"/>
+    </etcitem>
+    <!--
+         Изменен: 4:02/16.04.2013, Mazaffaka
+         Название: Ключ Тьмы
+         Описание: Активизирует устройство, позволяющее найти Таути в Храме. Доступно только главе группы.
+     -->
+    <etcitem id="34899" name="Ключ Тьмы">
+        <set name="icon" value="icon.etc_dark_key_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="destroyable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <set name="attributable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="stackable" value="true"/>
+        <set name="weight" value="0"/>
+        <skills>
+            <skill id="2237" level="1"/>
+        </skills>
+    </etcitem>
+</list>

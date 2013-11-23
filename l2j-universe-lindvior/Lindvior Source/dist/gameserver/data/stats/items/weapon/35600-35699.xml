@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <weapon id="35672" name="Пата Защиты">
+        <!-- Кастет, изготовленный для обучения революционеров. Нельзя выбросить, обменять, купить/продать. -->
+        <set name="icon" value="icon.weapon_aspeda_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="ex_type" value="HAND_TO_HAND"/>
+        <set name="crystal_type" value="C"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+
+    <weapon id="35673" name="Рапира Защиты">
+        <!-- Рапира, изготовленная для обучения революционеров. Нельзя выбросить, обменять, купить/продать. -->
+        <set name="icon" value="icon.weapon_aspeda_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="RAPIER"/>
+        <set name="ex_type" value="RAPIER"/>
+        <set name="crystal_type" value="C"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+
+    <weapon id="35674" name="Булава Защиты">
+        <!-- Булава, изготовленная для обучения революционеров. Нельзя выбросить, обменять, купить/продать. -->
+        <set name="icon" value="icon.weapon_aspeda_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="ex_type" value="BLUNT_WEAPON"/>
+        <set name="crystal_type" value="C"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="35634" name="Sword of Protection">
+        <!-- Longsword created to develop the Revolutionaries. Cannot be dropped, exchanged, or traded. -->
+        <set name="icon" value="icon.weapon_dynasty_blade_i00"/>
+
+        <set name="type" value="SWORD"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="enchant_enabled" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+        <for>
+            <add order="0x08" stat="pAtk" value="333.0"/>
+            <add order="0x08" stat="mAtk" value="151.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="379.0"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35635" name="Bow of Protection">
+        <!-- Bow created to develop the Revolutionaries. Cannot be dropped, exchanged, or traded. -->
+        <set name="icon" value="icon.weapon_dynasty_bow_i00"/>
+        <set name="type" value="BOW"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="enchant_enabled" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+        <for>
+            <add order="0x08" stat="pAtk" value="654.0"/>
+            <add order="0x08" stat="mAtk" value="151.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="12.0"/>
+            <add order="0x08" stat="pAtkSpd" value="293.0"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35636" name="Magic Sword of Protection">
+        <!-- Magic sword created to develop the Revolutionaries. Cannot be dropped, exchanged, or traded. -->
+        <set name="icon" value="icon.weapon_dynasty_magic_sword_i00"/>
+        <set name="type" value="SWORD"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="enchant_enabled" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+        <for>
+            <add order="0x08" stat="pAtk" value="267.0"/>
+            <add order="0x08" stat="mAtk" value="202.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="379.0"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35637" name="Dagger of Protection">
+        <!-- Dagger created to develop the Revolutionaries. Cannot be dropped, exchanged, or traded. -->
+        <set name="icon" value="icon.weapon_dynasty_dagger_i00"/>
+        <set name="type" value="DAGGER"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="enchant_enabled" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+        <for>
+            <add order="0x08" stat="pAtk" value="291.0"/>
+            <add order="0x08" stat="mAtk" value="151.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="12.0"/>
+            <add order="0x08" stat="pAtkSpd" value="433.0"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35638" name="Dual Weapon of Protection">
+        <!-- Dual weapon created to develop the Revolutionaries. Cannot be dropped, exchanged, or traded. -->
+        <set name="icon" value="icon.weapon_dual_sword_i00"/>
+        <set name="type" value="DUAL"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="enchant_enabled" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+        <for>
+            <add order="0x08" stat="pAtk" value="405.0"/>
+            <add order="0x08" stat="mAtk" value="151.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="325.0"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35639" name="Two-handed Sword of Protection">
+        <!-- Two-handed sword created to develop the Revolutionaries. Cannot be dropped, exchanged, or traded. -->
+        <set name="icon" value="icon.weapon_dynasty_twohand_sword_i00"/>
+        <set name="type" value="BIGSWORD"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1740"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="enchant_enabled" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+        <for>
+            <add order="0x08" stat="pAtk" value="405.0"/>
+            <add order="0x08" stat="mAtk" value="151.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="325.0"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35672" name="Пата Защиты">
+        <!-- Кастет, изготовленный для обучения революционеров. Нельзя выбросить, обменять, купить/продать. -->
+        <set name="icon" value="icon.weapon_aspeda_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="ex_type" value="HAND_TO_HAND"/>
+        <set name="crystal_type" value="C"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+
+    <weapon id="35673" name="Рапира Защиты">
+        <!-- Рапира, изготовленная для обучения революционеров. Нельзя выбросить, обменять, купить/продать. -->
+        <set name="icon" value="icon.weapon_aspeda_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="RAPIER"/>
+        <set name="ex_type" value="RAPIER"/>
+        <set name="crystal_type" value="C"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+
+    <weapon id="35674" name="Булава Защиты">
+        <!-- Булава, изготовленная для обучения революционеров. Нельзя выбросить, обменять, купить/продать. -->
+        <set name="icon" value="icon.weapon_aspeda_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="ex_type" value="BLUNT_WEAPON"/>
+        <set name="crystal_type" value="C"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="35678" name="Test Shaper" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_stanpid_i10"/>
+        <set name="type" value="DAGGER"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35679" name="Test Cutter" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_plenitas_i10"/>
+        <set name="type" value="SWORD"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35680" name="Test Slasher" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_bauen_i10"/>
+        <set name="type" value="BIGSWORD"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1740"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35681" name="Test Avenger" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_qutram_i10"/>
+        <set name="type" value="BLUNT"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1740"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35682" name="Test Fighter" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_durga_i10"/>
+        <set name="type" value="DUALFIST"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1550"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35683" name="Test Stormer" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_crabel_i10"/>
+        <set name="type" value="POLE"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="2010"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35684" name="Test Thrower" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_castron_i10"/>
+        <set name="type" value="BOW"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35685" name="Test Shooter" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_stilla_i10"/>
+        <set name="type" value="CROSSBOW"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1580"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35686" name="Test Buster" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weaon_serapear_i10"/>
+        <set name="type" value="SWORD"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35687" name="Test Caster" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_pilia_i10"/>
+        <set name="type" value="BLUNT"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1080"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35688" name="Test Retributer" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_shaelon_i10"/>
+        <set name="type" value="BIGBLUNT"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1080"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35689" name="Test Dualsword" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_r_dualsword_i10"/>
+        <set name="type" value="DUAL"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35690" name="Test Dual Dagger" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_r_dualdagger_i10"/>
+        <set name="type" value="DUALDAGGER"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="2050"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+    <weapon id="35691" name="Test Dual Blunt" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_r_dualblunt_i10"/>
+        <set name="type" value="DUALBLUNT"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1740"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+
+    </weapon>
+    <weapon id="35692" name="Monster's Weapon" add_name="For Test">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i00"/>
+        <set name="type" value="SWORD"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_type" value="NONE"/>
+        <set name="weight" value="1520"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="false"/>
+        <set name="tradeble" value="false"/>
+    </weapon>
+</list>

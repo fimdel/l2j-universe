@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <weapon id="20971" name="Trejuo Transformation Stick" add_name="Blessed Child Transformation">
+        <set name="freightable" value="true"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="BranchSys2.icon.br_blessed_taiboy_i00"/>
+        <set name="price" value="0"/>
+        <set name="type" value="SWORD"/>
+        <set name="ex_type" value="SWORD"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="LEFT_HAND"/>
+        </equip>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <set stat="atkBaseSpeed" order="0x08" value="379"/>
+            <set stat="pCritBase" order="0x08" value="8.0"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="20972" name="Sujin Transformation Stick" add_name="Blessed Child Transformation">
+        <set name="freightable" value="true"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="BranchSys2.icon.br_blessed_taigirl_i00"/>
+        <set name="price" value="0"/>
+        <set name="type" value="SWORD"/>
+        <set name="ex_type" value="SWORD"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="LEFT_HAND"/>
+        </equip>
+        <for>
+            <add stat="pAtk" order="0x10" value="1"/>
+            <add stat="mAtk" order="0x10" value="1"/>
+            <set stat="atkBaseSpeed" order="0x08" value="379"/>
+            <set stat="pCritBase" order="0x08" value="8.0"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+</list>

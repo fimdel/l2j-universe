@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="14600" levels="1" name="Chain Skills">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="PASSIVE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="14601"/>
+        <set name="alterSkillId" val="14602"/>
+        <set name="alterSkillId" val="14603"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="14601" levels="1" name="Cry of Fate - Mark of Weakness">
+        <table name="#DOT">174</table>
+        <set name="isMagic" val="true"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison1"
+                    abnormal="POISON"/>
+        </for>
+    </skill>
+    <skill id="14602" levels="1" name="Cry of Fate - Mark of Plague">
+        <table name="#DOT">238</table>
+        <set name="isMagic" val="true"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison2"
+                    abnormal="POISON"/>
+        </for>
+    </skill>
+    <skill id="14603" levels="1" name="Cry of Fate - Exile">
+        <table name="#DOT">167</table>
+        <set name="isMagic" val="true"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison2"
+                    abnormal="POISON"/>
+        </for>
+    </skill>
+    <skill id="14604" levels="1" name="Chain Skills">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="PASSIVE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="14605"/>
+        <set name="alterSkillId" val="14606"/>
+        <set name="alterSkillId" val="14607"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="14605" levels="1" name="Крик Судьбы - Атака Штурмом">
+        <table name="#Tab">0.7</table>
+        <set name="power" val="5175"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="300">
+                <mul order="0x30" stat="pDef" val="#Tab"/>
+                <mul order="0x30" stat="mDef" val="#Tab"/>
+                <mul order="0x30" stat="pEvasionRate" val="0.9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14606" levels="1" name="Крик Судьбы - Смертельный Удар">
+        <set name="power" val="9444"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14607" levels="1" name="Крик Судьбы - Поэма Органа">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="10">
+                <add order="0x40" stat="maxHp" val="2572"/>
+                <add order="0x40" stat="maxMp" val="953"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <mul order="0x30" stat="regMp" val="1.2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14608" levels="1" name="Chain Skills">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="PASSIVE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="alterSkillId" val="14609"/>
+        <set name="alterSkillId" val="14610"/>
+        <set name="alterSkillId" val="14611"/>
+        <set name="alterIconTime" val="5"/>
+    </skill>
+    <skill id="14609" levels="1" name="Cry of Fate - Dark Blast">
+        <set name="skillType" val="MDAM"/>
+        <set name="isMagic" val="true"/>
+        <set name="power" val="124"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="14610" levels="1" name="Cry of Fate - Light of Heal">
+        <set name="skillType" val="HEAL_WITH_CP"/>
+        <set name="isMagic" val="true"/>
+        <set name="power" val="1488"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+    </skill>
+    <skill id="14611" levels="1" name="Cry of Fate - Dark Force">
+        <set name="power" val="113"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="effetRange" val="600"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14612" levels="1" name="Press the icon to use the chain skill">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="4" alterData="457"/>
+        </for>
+    </skill>
+    <skill id="14613" levels="1" name="Press the icon to use the chain skill">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="4" alterData="458"/>
+        </for>
+    </skill>
+    <skill id="14614" levels="1" name="Press the icon to use the chain skill">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="EFFECT"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="4" alterData="459"/>
+        </for>
+    </skill>
+    <skill id="14615" levels="1" name="Укус Траджана">
+        <!--
+              Уровень: 1; Описание: Физ. Защ и Маг. Защ. - 1%, дополнительно уменьшает Физ. Защ. и Маг. Защ. на 5, Уклонение на 4. Скапливается при последовательном получении ударов.
+          -->
+        <set name="icon" val="icon.skill0122"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14616" levels="1" name="Состояние Вампиризма">
+        <!--
+              Уровень: 1; Описание: Ваша кровь высасывается.
+          -->
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14617" levels="1" name=" Устойчивость к Нокдаунам">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14618" levels="1" name=" Устойчивость к отталкиваниям">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14619" levels="1" name=" Устойчивость к обезоруживанию">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14620" levels="1" name=" Устойчивость к Воздушным Оковам">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14621" levels="1" name=" Устойчивость к притягиванию">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14622" levels="1" name=" Устойчивость к изгнанию">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14623" levels="1" name=" Устойчивость к мутации">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14624" levels="1" name="Темное Пространство Афроса">
+        <!--
+              Уровень: 1; Описание: Уменьшает скорость атаки и сокращает HP.
+          -->
+        <set name="icon" val="icon.skill0048"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14625" levels="1" name="Release of Power">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillType" val="HEAL"/>
+        <set name="power" val="1488"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14626" levels="1" name=" Устойчивость к метальным атакам">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14627" levels="1" name="Смердящий Прах">
+        <!--
+              Уровень: 1; Описание: Ослабляет защиту.
+          -->
+        <set name="icon" val="icon.skill0122"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14628" levels="1" name=" Выброс желудочного сока">
+        <!--
+              Уровень: 1; Описание:  Сокращает скорость
+          -->
+        <set name="icon" val="icon.skill1184"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14629" levels="1" name="Разрезание трупа">
+        <!--
+              Уровень: 1; Описание: Кровопускание
+          -->
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14630" levels="1" name="Уборка гнили">
+        <!--
+              Уровень: 1; Описание: Отталкивание
+          -->
+        <set name="icon" val="icon.skill0101"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14631" levels="1" name="Смердящие останки">
+        <!--
+              Уровень: 1; Описание: Безмолвие
+          -->
+        <set name="icon" val="icon.skill1064"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14632" levels="1" name="Ужасающий танец Ножа">
+        <!--
+              Уровень: 1; Описание: Увеличивает скорость атаки.
+          -->
+        <set name="icon" val="icon.skill1086"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14633" levels="1" name="Ампутация Лодыжки">
+        <!--
+              Уровень: 1; Описание: Отталкивание
+          -->
+        <set name="icon" val="icon.skill0261"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14634" levels="1" name="Отчаянный Заклейменный">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill14634"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14635" levels="1" name="Взрыв трупа">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill14635"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14636" levels="1" name="Безжалостная хватка">
+        <!--
+              Уровень: 1; Описание: Воздушные Оковы
+          -->
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14637" levels="1" name=" Молниеносный Туман">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0014637"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14638" levels="1" name="Ногти- лезвие">
+        <!--
+              Уровень: 1; Описание: Кровопускание
+          -->
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14639" levels="1" name="Смешанные токсические вещества">
+        <!--
+              Уровень: 1; Описание: Интоксикация
+          -->
+        <set name="icon" val="icon.skill0129"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14640" levels="1" name="Передвижение">
+        <!--
+              Уровень: 1; Описание: Увеличивает уклонение
+          -->
+        <set name="icon" val="icon.skill1087"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14641" levels="1" name="Землетрясение">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0014641"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14642" levels="1" name="Ампутация">
+        <!--
+              Уровень: 1; Описание: Отталкивание
+          -->
+        <set name="icon" val="icon.skill0261"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14643" levels="1" name="Призыв">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14644" levels="1" name="Клык">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0014644"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14645" levels="1" name="Стрела Тьмы">
+        <!--
+              Уровень: 1; Описание: Отталкивание
+          -->
+        <set name="icon" val="icon.skill0101"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14646" levels="1" name="Раскол">
+        <!--
+              Уровень: 1; Описание: Снижает скорость атаки.
+          -->
+        <set name="icon" val="icon.skill0115"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14647" levels="1" name="Раскол">
+        <!--
+              Уровень: 1; Описание: Снижает скорость атаки.
+          -->
+        <set name="icon" val="icon.skill0115"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14648" levels="1" name="Неистовство">
+        <!--
+              Уровень: 1; Описание: Неистовство
+          -->
+        <set name="icon" val="icon.skill1062"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14649" levels="1" name="Bounce">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for/>
+    </skill>
+    <skill id="14650" levels="1" name="Удар мертвеца">
+        <!--
+              Уровень: 1; Описание: Атака монстров!
+          -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14651" levels="1" name="Взрыв">
+        <!--
+              Уровень: 1; Описание: Через 7 секунд враги окаменеют.
+          -->
+        <set name="icon" val="icon.skill0092"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14652" levels="1" name="Поглощение крови">
+        <!--
+              Уровень: 1; Описание: 1%-е поглощение крови
+          -->
+        <set name="icon" val="icon.skill1268"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14653" levels="1" name="Омертвение">
+        <!--
+              Уровень: 1; Описание: Пряма защита от монстров. Повышает защиту до 5.
+          -->
+        <set name="icon" val="icon.skill0110"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14654" levels="1" name="Поглощение сумерек">
+        <!--
+              Уровень: 1; Описание: Исцеление монстров. Урон 124 ед.
+          -->
+        <set name="icon" val="icon.skill1401"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14655" levels="1" name="Отражение">
+        <!--
+              Уровень: 1; Описание: Отражение урона 5%.
+          -->
+        <set name="icon" val="icon.skill0086"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14656" levels="1" name="Ярость мертвеца">
+        <!--
+              Уровень: 1; Описание: Повышает атак. силу/ вероятность крит. атаки/силу крит. атаки/ скорость атаки на 1%.
+          -->
+        <set name="icon" val="icon.skill1068"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14657" levels="1" name="Отражение ярости">
+        <!--
+              Уровень: 1; Описание: Юлокировка Безумия
+          -->
+        <set name="icon" val="icon.skill1170"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14658" levels="1" name="Вихрь">
+        <!--
+              Уровень: 1; Описание: Атака монстров! Сила 36675.
+          -->
+        <set name="icon" val="icon.skill0036"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14659" levels="1" name="Взрыв">
+        <!--
+              Уровень: 1; Описание: Враги окаменеют через 7 секунд.
+          -->
+        <set name="icon" val="icon.skill0092"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14660" levels="1" name="Удар крови">
+        <!--
+              Уровень: 1; Описание: Атака монстров! Урон 5937 ед.
+          -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14661" levels="1" name="Колебания Тьмы">
+        <!--
+              Уровень: 1; Описание: Атака монстров! Урон 49414 ед.
+          -->
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14662" levels="1" name="Ужас Тьмы">
+        <!--
+              Уровень: 1; Описание: Атака монстров! Урон 5937 ед.
+          -->
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14663" levels="1" name="Удар Хранителя">
+        <!--
+              Уровень: 1; Описание: Атака монстров! Урон 45844 ед.
+          -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14664" levels="1" name="Разрушительный Удар">
+        <!--
+              Уровень: 1; Описание: Атака монстров! Урон 5937 ед.
+          -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14665" levels="1" name="Яростное нападение">
+        <!--
+              Уровень: 1; Описание: Натиск монстров!
+          -->
+        <set name="icon" val="icon.skill0493"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14666" levels="1" name="Удар напролом">
+        <!--
+              Уровень: 1; Описание: Атака монстров! Урон 5937 ед.
+          -->
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14667" levels="1" name="Искры приговора">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill1230"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14668" levels="1" name="Наказание падения">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill1296"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14649" levels="1" name="Bounce">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for/>
+    </skill>
+    <skill id="14670" levels="1" name="Удар Щупальцем Подземного Червя">
+        <!--
+              Уровень: 1; Описание: Размахивает оружием и наносит врагу дополнительно 1 ед. урона. Требуется древковое оружие. Игнорирует Защиту Щитом. Возможен Сверхудар. Возможен Крит. Удар.
+          -->
+        <set name="icon" val="icon.skill0036"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14671" levels="1" name="Удар Щупальцем Подземного Червя">
+        <!--
+              Уровень: 1; Описание: Размахивает оружием и наносит врагу дополнительно 1 ед. урона. Требуется древковое оружие. Игнорирует Защиту Щитом. Возможен Сверхудар. Возможен Крит. Удар.
+          -->
+        <set name="icon" val="icon.skill0036"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14672" levels="1" name="Скачок">
+        <!--
+              Уровень: 1; Описание: Прыжок
+          -->
+        <set name="icon" val="icon.skill4107"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14673" levels="1" name="Крик Судьбы - Заряд Щита">
+        <!--
+              Уровень: 1; Описание: Увеличивает урон от атаки на 15 ед. Сокращает защиту на 1%, уклонение на 2. Увеличивает урон от получаемого крит. удара на 1%.
+          -->
+        <set name="power" val="1500"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="9" val="0" effectPower="80">
+                <basemul order="0x30" stat="critDamRcpt" val="1.1"/>
+                <!-- TODO: Это стоит уточнить и проверить -->
+                <mul order="0x30" stat="pDef" val="0.9"/>
+                <sub order="0x40" stat="pEvasionRate" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14674" levels="1" name="Крик Судьбы - Цепной Удар">
+        <!--
+              Уровень: 1; Описание: Притягивает к себе одну цель.
+          -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="ThrowHorizontal" time="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="14675" levels="1" name="Крик Судьбы - Страшный Суд">
+        <!--
+              Уровень: 1; Описание: Атакует цель с силой Физ. Атк. + 2, уменьшает Скорость на 1%.
+          -->
+        <set name="icon" val="icon.skill10009"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14676" levels="1" name="Крик Судьбы - Разрушение Брони">
+        <!--
+              Уровень: 1; Описание: Атакует цель с силой Физ. Атк. + 13, ослабляет Физ. Защ. Дополнительно впитывает энергию.
+          -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="1300"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="3" stackType="pDefDown" time="20" val="0">
+                <mul order="0x30" stat="pDef" val="0.85"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14677" levels="1" name="Крик Судьбы - Удар Гиганта">
+        <!--
+              Уровень: 1; Описание: Сильный удар кулаком по земле, оглушающий врагов вокруг на 3 сек. Требуются парные мечи/двуручный меч/копье/кастеты.
+          -->
+        <set name="icon" val="icon.skill10266"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14678" levels="1" name="Крик Судьбы - Мощный Взрыв">
+        <!--
+              Уровень: 1; Описание: Атакует цель с силой Физ. Атк. + 2, позволяет оглушить врагов вокруг на 2 сек.
+          -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="2000"/>
+        <for>
+            <effect abnormal="STUN" count="1" name="Stun" stackOrder="-1" stackType="Stun" time="2" val="0"/>
+        </for>
+    </skill>
+    <skill id="14679" levels="1" name="Крик Судьбы - Разбивание Сердца">
+        <!--
+              Уровень: 1; Описание: Атакует врага в сердце. Сила Физ. Атк. + 17. Сверхудар. Возможен смертельный удар.
+          -->
+        <set name="target" val="TARGET_ONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="1700"/>
+        <set name="overHit" val="true"/>
+        <set name="lethal1" val="10"/>
+        <!-- Half-Kill -->
+    </skill>
+    <skill id="14680" levels="1" name="Soul Cry - Dark Paralize">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormal="HOLD2" count="1" name="Petrification" stackOrder="-1" stackType="paralyze" time="5"
+                    val="0"/>
+        </for>
+    </skill>
+    <skill id="14686" levels="1" name="Basic strokes">
+        <table name="#magicLevel">85</table>
+        <table name="#mpInitialConsume">7</table>
+        <table name="#power">143</table>
+        <set name="element" val="0"/>
+        <!-- Fire -->
+        <set name="elementPower" val="80"/>
+        <set name="isDebuff" val="true"/>
+        <set name="isMagic" val="true"/>
+        <set name="saveVs" val="MEN"/>
+        <set name="power" val="20"/>
+        <!-- Base Land Rate -->
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="mpInitialConsume" val="#mpInitialConsume"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="#power"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="5" name="Fear" time="2" val="0" stackOrder="1" stackType="fear"/>
+        </for>
+    </skill>
+    <skill id="14687" levels="1" name="Крик Судьбы - Адские Оковы">
+        <!--
+              Уровень: 1; Описание: Поднимает цель в воздух и обездвиживает на время действия заклятия.
+          -->
+        <set name="icon" val="icon.skill11050"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14688" levels="2" name="Крик Судьбы - Знак Слабости">
+        <!--
+              Уровень: 1; Описание: Ослабляет врага  и снижает по 4 HP каждую секунду. Время действия: 1 сек. Печать, увеличивающася на 5% слабости к негативным эффектам.
+              Уровень: 2; Описание: Ослабляет врага  и снижает по 5 HP каждую секунду. Время действия: 1 сек. Печать, увеличивающася на 5% слабости к негативным эффектам.
+          -->
+        <table name="#DOT">40 5</table>
+        <set name="isMagic" val="true"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison1"
+                    abnormal="POISON"/>
+        </for>
+    </skill>
+    <skill id="14689" levels="2" name="Крик Судьбы - Знак Чумы">
+        <!--
+              Уровень: 1; Описание: Печать, соединенная с Пространством Чумы. Заражает врага чумой, уменьшает каждую секунду по 7 HP, мешает восстановлению. Время действия: 1 сек.
+              Уровень: 2; Описание: Печать, соединенная с Пространством Чумы. Заражает врага чумой, уменьшает каждую секунду по 8 HP, мешает восстановлению. Время действия: 1 сек.
+          -->
+        <table name="#DOT">70 8</table>
+        <set name="isMagic" val="true"/>
+        <set name="skillType" val="POISON"/>
+        <set name="power" val="70"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect count="10" name="DamOverTime" time="1" val="#DOT" stackOrder="7" stackType="poison2"
+                    abnormal="POISON"/>
+        </for>
+    </skill>
+    <skill id="14690" levels="1" name="Крик Судьбы - Изгнание">
+        <!--
+              Уровень: 1; Описание: Отправляет цель во второе измерение. Изгнанная цель впадает в состояние несостоятельности. Каждую секунду уменьшается по 167 HP.
+          -->
+        <set name="icon" val="icon.skill11273"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14691" levels="1" name="Крик Судьбы - Атака Штурмом">
+        <!--
+              Уровень: 1; Описание: Атакует врага с силой = Физ. Атк. + 13. Уменьшает Физ. Защ./Маг. Защ. на 3%, Уклонение на 1. Время действия: 5 сек.
+          -->
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="1300"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <for>
+            <effect name="Debuff" time="5" val="0">
+                <mul order="0x30" stat="pDef" val="0.70"/>
+                <mul order="0x30" stat="mDef" val="0.70"/>
+                <add order="0x40" stat="pEvasionRate" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14692" levels="1" name="Крик Судьбы - Смертельный Удар">
+        <!--
+              Уровень: 1; Описание: Атакует врага с силой = Физ. Атк. + 14.
+          -->
+        <set name="skillType" val="PDAM"/>
+        <set name="power" val="1400"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="14693" levels="1" name="Крик Судьбы - Поэма Органа">
+        <!--
+              Уровень: 1; Описание: Увеличивает Макс. HP на 2572, Макс. MP на 953, восстановление HP на 2%, восстановление MP на 2%. Время действия: 3 мин.
+          -->
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="power" val="1400"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <for>
+            <effect name="Buff" time="1800" val="0" stackOrder="1" stackType="buff">
+                <add order="0x40" stat="maxHp" val="2572"/>
+                <add order="0x40" stat="maxMp" val="953"/>
+                <mul order="0x30" stat="regHp" val="1.20"/>
+                <mul order="0x30" stat="regMp" val="1.20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14694" levels="1" name="Крик Судьбы - Темный Порыв">
+        <!--
+              Уровень: 1; Описание: Атакует врага с силой = Маг. Атк. + 3, а также уменьшает желание врага атаковать персонаж.
+          -->
+        <set name="skillType" val="MDAM"/>
+        <set name="isMagic" val="true"/>
+        <set name="power" val="31"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="14695" levels="1" name="Крик Судьбы - Свет Исцеления">
+        <!--
+              Уровень: 1; Описание: Восстанавливает 1488 HP цели. Заполняет HP, а оставшимся эффектом - CP.
+          -->
+        <set name="icon" val="icon.skill11755"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14696" levels="1" name="Крик Судьбы - Темная Сила">
+        <!--
+              Уровень: 1; Описание: Отступая, проводит магическую атаку.
+          -->
+        <set name="icon" val="icon.skill0101"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14697" levels="1" name="Адские Оковы Призрака">
+        <!--
+              Уровень: 1; Описание: Поднимает цель в воздух и обездвиживает на время действия заклятия.
+          -->
+        <set name="icon" val="icon.skill11050"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14698" levels="1" name="Электрическое оглушение">
+        <!--
+              Уровень: 1; Описание: Наносит электрическое оглушение.
+          -->
+        <set name="skillRadius" val="600"/>
+        <set name="isDebuff" val="true"/>
+        <set name="isMagic" val="true"/>
+        <set name="lvlDepend" val="1"/>
+        <set name="magicLevel" val="18"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillType" val="MDAM"/>
+        <set name="target" val="TARGET_AURA"/>
+        <for>
+            <effect count="2" name="DamOverTime" time="2" val="67"/>
+        </for>
+    </skill>
+    <skill id="14699" levels="1" name=" Приветствие боли">
+        <!--
+              Уровень: 1; Описание: Наступает состояние полупрозрачности.
+          -->
+        <set name="icon" val="icon.skill0411"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

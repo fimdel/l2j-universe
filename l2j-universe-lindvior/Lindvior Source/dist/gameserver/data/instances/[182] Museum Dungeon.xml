@@ -1,0 +1,28 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="182" name="Museum Dungeon" maxChannels="25" collapseIfEmpty="10" timelimit="10">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="1" max="20"/>
+        <party min="1" max="1"/>
+        <return loc="-114371 260183 -1192"/>
+        <teleport loc="-114709 243907 -7968"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="10327"/>
+        <reuse resetReuse="1 15 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+        <spawns>
+            <!-- Toyron -->
+            <spawn mobId="33004" type="point" respawn="0">
+                <coords loc="-114710 245457 -7968 49152"/>
+            </spawn>
+
+            <!-- Desks -->
+            <spawn mobId="33126" type="point" respawn="0">
+                <coords loc="-115672 244683 -7952 0"/>
+                <coords loc="-114714 245750 -7952 0"/>
+                <coords loc="-113757 244686 -7952 0"/>
+                <coords loc="-114706 243605 -7952 0"/>
+            </spawn>
+        </spawns>
+    </instance>
+</list>

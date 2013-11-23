@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+    <armor id="23085" name="Футболка Ольфа" add_name="Ивент">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="icon" value="BranchSys2.icon.7anni_shirt_i00"/>
+        <set name="type" value="NONE"/>
+        <set name="weight" value="130"/>
+        <for>
+            <add stat="maxMp" order="0x10" value="2"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+</list>

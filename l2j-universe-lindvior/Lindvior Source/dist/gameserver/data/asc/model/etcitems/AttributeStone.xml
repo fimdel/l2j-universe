@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!-- Автор: ALF (Чипаченко Е.Г.) -->
+<!--
+	id - айди итема
+	min_arm - минимальное значение атрибута в броне для аттирбутации
+	max_arm - максимальное значение атрибута в броне для аттирбутации
+	min_weap - минимальное значение атрибута в оружии для аттирбутации
+	max_weap - максимальное значение атрибута в оружии для аттирбутации
+	inc_arm - увеличение СОПРОТИВЛЕНИЯ атрибута при аттрибутации БРОНИ
+	inc_weap - увеличение СИЛЫ атрибута при аттрибутации ОРУЖИЯ
+	inc_weap_arm - увеличение СИЛЫ атрибута при аттрибутации БРОНИ
+	element - Элемент (береи по оружию)
+	chance - шанс успешной аттрибутации
+-->
+<list>
+    <!-- Аттрибуты первого уровня -->
+    <item id="9546" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="80" element="FIRE"/>
+    <item id="9547" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="80" element="WATER"/>
+    <item id="9548" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="80" element="EARTH"/>
+    <item id="9549" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="80" element="WIND"/>
+    <item id="9550" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="80" element="HOLY"/>
+    <item id="9551" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="80" element="UNHOLY"/>
+
+    <!-- Аттрибуты второго уровня -->
+    <item id="9552" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="70" element="FIRE"/>
+    <item id="9553" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="70" element="WATER"/>
+    <item id="9554" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="70" element="EARTH"/>
+    <item id="9555" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="70" element="WIND"/>
+    <item id="9556" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="70" element="HOLY"/>
+    <item id="9557" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="70" element="UNHOLY"/>
+
+    <!-- Аттрибуты третьего уровня -->
+    <item id="9558" min_arm="120" max_arm="180" min_weap="300" max_weap="450" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="60" element="FIRE"/>
+    <item id="9559" min_arm="120" max_arm="180" min_weap="300" max_weap="450" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="60" element="WATER"/>
+    <item id="9560" min_arm="120" max_arm="180" min_weap="300" max_weap="450" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="60" element="EARTH"/>
+    <item id="9561" min_arm="120" max_arm="180" min_weap="300" max_weap="450" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="60" element="WIND"/>
+    <item id="9562" min_arm="120" max_arm="180" min_weap="300" max_weap="450" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="60" element="HOLY"/>
+    <item id="9563" min_arm="120" max_arm="180" min_weap="300" max_weap="450" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="60" element="UNHOLY"/>
+
+    <!-- Аттрибуты четвертого уровня -->
+    <item id="9564" min_arm="180" max_arm="240" min_weap="450" max_weap="600" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="50" element="FIRE"/>
+    <item id="9565" min_arm="180" max_arm="240" min_weap="450" max_weap="600" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="50" element="WATER"/>
+    <item id="9566" min_arm="180" max_arm="240" min_weap="450" max_weap="600" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="50" element="EARTH"/>
+    <item id="9567" min_arm="180" max_arm="240" min_weap="450" max_weap="600" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="50" element="WIND"/>
+    <item id="9568" min_arm="180" max_arm="240" min_weap="450" max_weap="600" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="50" element="HOLY"/>
+    <item id="9569" min_arm="180" max_arm="240" min_weap="450" max_weap="600" inc_arm="6" inc_weap="5" inc_weap_arm="0"
+          chance="50" element="UNHOLY"/>
+
+    <!-- Аттрибуты Необработанные -->
+    <item id="10521" min_arm="120" max_arm="240" min_weap="300" max_weap="600" inc_arm="3" inc_weap="5" inc_weap_arm="3"
+          chance="40" element="FIRE"/>
+    <item id="10522" min_arm="120" max_arm="240" min_weap="300" max_weap="600" inc_arm="3" inc_weap="5" inc_weap_arm="3"
+          chance="40" element="WATER"/>
+    <item id="10523" min_arm="120" max_arm="240" min_weap="300" max_weap="600" inc_arm="3" inc_weap="5" inc_weap_arm="3"
+          chance="40" element="EARTH"/>
+    <item id="10524" min_arm="120" max_arm="240" min_weap="300" max_weap="600" inc_arm="3" inc_weap="5" inc_weap_arm="3"
+          chance="40" element="WIND"/>
+    <item id="10525" min_arm="120" max_arm="240" min_weap="300" max_weap="600" inc_arm="3" inc_weap="5" inc_weap_arm="3"
+          chance="40" element="HOLY"/>
+    <item id="10526" min_arm="120" max_arm="240" min_weap="300" max_weap="600" inc_arm="3" inc_weap="5" inc_weap_arm="3"
+          chance="40" element="UNHOLY"/>
+
+    <!-- Goddess of Destruction -->
+    <!-- Аттрибуты Супер 60 -->
+    <item id="33481" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="60" inc_weap="150" inc_weap_arm="0"
+          chance="30" element="FIRE"/>
+    <item id="33482" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="60" inc_weap="150" inc_weap_arm="0"
+          chance="30" element="WATER"/>
+    <item id="33483" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="60" inc_weap="150" inc_weap_arm="0"
+          chance="30" element="EARTH"/>
+    <item id="33484" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="60" inc_weap="150" inc_weap_arm="0"
+          chance="30" element="WIND"/>
+    <item id="33485" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="60" inc_weap="150" inc_weap_arm="0"
+          chance="30" element="HOLY"/>
+    <item id="33486" min_arm="0" max_arm="60" min_weap="0" max_weap="150" inc_arm="60" inc_weap="150" inc_weap_arm="0"
+          chance="30" element="UNHOLY"/>
+
+    <!-- Аттрибуты Супер 120 -->
+    <item id="33487" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="60" inc_weap="150"
+          inc_weap_arm="0" chance="20" element="FIRE"/>
+    <item id="33488" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="60" inc_weap="150"
+          inc_weap_arm="0" chance="20" element="WATER"/>
+    <item id="33489" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="60" inc_weap="150"
+          inc_weap_arm="0" chance="20" element="EARTH"/>
+    <item id="33490" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="60" inc_weap="150"
+          inc_weap_arm="0" chance="20" element="WIND"/>
+    <item id="33491" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="60" inc_weap="150"
+          inc_weap_arm="0" chance="20" element="HOLY"/>
+    <item id="33492" min_arm="60" max_arm="120" min_weap="150" max_weap="300" inc_arm="60" inc_weap="150"
+          inc_weap_arm="0" chance="20" element="UNHOLY"/>
+
+</list>

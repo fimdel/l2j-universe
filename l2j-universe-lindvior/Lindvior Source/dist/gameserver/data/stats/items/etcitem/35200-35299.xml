@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <etcitem id="35292" name="Свиток Телепорта: Крепость Гильотина">
+        <!-- Магический свиток, телепортирующий в Крепость Гильотина,. Нельзя продать -->
+        <set name="class" value="CONSUMABLE"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.etc_scroll_of_return_i00"/>
+        <set name="price" value="35000"/>
+        <set name="stackable" value="true"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="30"/>
+        <skills>
+            <skill id="9461" level="1"/>
+        </skills>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="35295" name="Бутыль с Душой Таути">
+        <!-- Бутыль с душой Таути. Может вселить душу Таути в браслет Таути. Нельзя обменять/выбросить/продать в личной торговой лавке. Можно положить в личное хранилище. -->
+        <set name="icon" value="icon.etc_fruit_juice_glass_bottle_i08"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="60"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <etcitem id="35296" name="Часть Острия Фантазмы">
+        <!-- Важный материал для создания Острия Фантазмы. -->
+        <set name="icon" value="icon.etc_vesper_shaper_piece_i00"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="60"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <etcitem id="35297" name="Часть Резака Фантазмы">
+        <!-- Важный материал для создания Острия Фантазмы. -->
+        <set name="icon" value="icon.etc_vesper_cutter_piece_i00"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="60"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <etcitem id="35298" name="Часть Эспадона Фантазмы">
+        <!-- Важный материал для создания Острия Фантазмы. -->
+        <set name="icon" value="icon.etc_vesper_slasher_piece_i00"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="60"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+    <etcitem id="35299" name="Часть Мстителя Фантазмы">
+        <!-- Важный материал для создания Острия Фантазмы. -->
+        <set name="icon" value="icon.etc_vesper_avenger_piece_i00"/>
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="type" value="OTHER"/>
+        <set name="weight" value="60"/>
+        <set name="stackable" value="true"/>
+    </etcitem>
+</list>

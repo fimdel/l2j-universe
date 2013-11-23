@@ -1,0 +1,131 @@
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<html noscrollbar>
+<head>
+<body>
+<table width=700>
+    <tr>
+        <td height=10></td>
+    </tr>
+</table>
+<table width=600>
+    <tr>
+        <td height=10>
+            %bbs_menu%
+        </td>
+        <td>
+            <center>
+                <table border=0 cellpadding=0 cellspacing=0 width=600 height=490
+                       background="L2UI_CH3.refinewnd_back_Pattern">
+                    <tr>
+                        <td valign="top" align="center">
+                            <table border=0 cellpadding=0 cellspacing=0>
+                                <tr>
+                                    <td width=256 height=185 background="L2UI_CT1.OlympiadWnd_DF_GrandTexture"></td>
+                                </tr>
+                            </table>
+                            <center>
+                                <table border=0 cellspacing=0 cellpadding=0 width=550>
+                                    <tr>
+                                        <td WIDTH=550 align=center valign=top>
+                                            <font name="hs12">Бафер&nbsp;<?cb_name?></font>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table width=430>
+                                    <tr>
+                                        <td>
+                                            <center>Введите в поле название для шаблона</center>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" align="center">
+                                            <edit var="GrpNameAdd" width=350 length=25>
+                                        </td>
+                                        <td valign="top" align="center">
+                                            <button value="Создать" action="bypass _bbsbuff;addgrp; $GrpNameAdd"
+                                                    width=80 height=25 back="L2UI_CT1.Button_DF_Down"
+                                                    fore="L2UI_CT1.Button_DF">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table width=500 height=15>
+                                    <tr>
+                                        <td width=500>
+                                            <table border=0 cellspacing=0 cellpadding=2 width=370>
+                                                <tr>
+                                                    <td FIXWIDTH=410 align=left valign=top>
+                                                        <font color="FFFF00">Описание баффера:</font>&nbsp;›&nbsp; Цена
+                                                        за 1 баф: 15 000 Adena.&nbsp;›&nbsp;Время: 1 час.
+                                                        <br1><font color="AAAAAA">Данный баффер уникален своей
+                                                            функциональностью, к примеру вы можете создавать шаблоны
+                                                            бафов с нуля под своего персонажа и стиль игры. <br>Также
+                                                            существует система ребафа уже готового шаблона.
+                                                            (Восстанавливает баф когда он заканчивается). <br>Если у вас
+                                                            имеется питомец вы сможете обеспечить его бафами из готового
+                                                            шаблона, а также подключить свой набор бафов на
+                                                            авторебаф.</font>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border=0 cellspacing=0 cellpadding=2 width=385>
+                                                <tr>
+                                                    <td FIXWIDTH=410 align=left valign=top></td>
+                                                </tr>
+                                            </table>
+                                            <center>
+                                                <table width=240 height=15>
+                                                    <tr>
+                                                        <td width=240>Восстановить статистику. (Бесплатно)</td>
+                                                    </tr>
+                                                </table>
+                                            </center>
+                                            <center>
+                                                <table width=240 height=15>
+                                                    <tr>
+                                                        <td width=80 valign="top" align="center">
+                                                            <button value="HP" action="bypass _bbsbuff;reghp" width=80
+                                                                    height=25 back="L2UI_CT1.Button_DF_Down"
+                                                                    fore="L2UI_CT1.Button_DF">
+                                                        </td>
+                                                        <td width=80 valign="top" align="center">
+                                                            <button value="MP" action="bypass _bbsbuff;regmp" width=80
+                                                                    height=25 back="L2UI_CT1.Button_DF_Down"
+                                                                    fore="L2UI_CT1.Button_DF">
+                                                        </td>
+                                                        <td width=80 valign="top" align="center">
+                                                            <button value="CP" action="bypass _bbsbuff;regcp" width=80
+                                                                    height=25 back="L2UI_CT1.Button_DF_Down"
+                                                                    fore="L2UI_CT1.Button_DF">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </center>
+                                        </td>
+                                        <td>
+                                            <table width=180>
+                                                <tr>
+                                                    <td>Ваши персональные шаблоны:</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>%buffgrps%</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+        </td>
+    </tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <!-- Isthina - Normal Mode -->
+    <instance id="169" name="Isthina Cavern" maxChannels="10" collapseIfEmpty="10" timelimit="120" dispelBuffs="true"
+              respawn="60">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="90" max="99"/>
+        <party min="2" max="5"/>
+        <return loc="-178428 147061 2131"/>
+        <teleport loc="-177120, 142293, -11274"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="0"/>
+        <reuse resetReuse="30 6 * * 3,6" setUponEntry="false" sharedReuseGroup="4"/>
+        <doors>
+            <door id="14220100" opened="true"/>
+            <door id="14220101" opened="true"/>
+        </doors>
+        <zones>
+            <zone name="[Isthina_epic]" active="true"/>
+        </zones>
+    </instance>
+</list>

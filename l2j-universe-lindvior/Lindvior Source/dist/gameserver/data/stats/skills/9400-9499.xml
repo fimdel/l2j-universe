@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="9400" levels="1" name="Сундук с Кольцом Большой Тыквы">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9401" levels="1" name="Сундук с Серьгой Большой Тыквы">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9402" levels="1" name="Сундук с Ожерельем Большой Тыквы">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9403" levels="1" name="Медовый Напиток Мафр">
+        <!--
+              Уровень: 1; Описание: В течение 2 часов восстанавливается энергия при получении опыта во время охоты.
+          -->
+        <set name="reuseDelay" val="3600000"/>
+        <set name="icon" val="icon.etc_hot_spring_nectar_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9404" levels="1" name="Herb of Mysterious Power">
+        <!--Herb of Mysterious Power P. Atk. is increased by 100% for 1 minute 30 seconds-->
+        <set name="magicType" val="SPECIAL"/>
+        <set name="magicLevel" val="40"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isHandler" val="true"/>
+        <set name="altUse" val="true"/>
+        <set name="isHideUseMessage" val="true"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="9" stackType="pAtk" time="300" val="0">
+                <mul order="0x30" stat="pAtk" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9405" levels="1" name="Волшебная Настойка Магии">
+        <!--
+              Уровень: 1; Описание: На 1 минуту 3 секунд Маг. Атк. +4%.
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="hitTime" val="100"/>
+        <set name="icon" val="icon.etc_magic_set_i00"/>
+        <set name="hitCancelTime" val="500"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isHandler" val="true"/>
+        <set name="isHideUseMessage" val="true"/>
+        <for>
+            <effect count="1" name="Buff" time="90" val="0">
+                <mul order="0x30" stat="mAtk" val="5.0"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9406" levels="1" name="Ингредиент, Мешочек с Усилителем - R">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="reuseDelay" val="2000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9407" levels="1" name="Призвать Агатиона - Чан Хе Чжин">
+        <!--
+              Уровень: 1; Описание: Снимает печать с Агатиона.
+          -->
+        <set name="hitTime" val="3000"/>
+        <set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9408" levels="1" name="Призвать Агатиона - Чан Хек">
+        <!--
+              Уровень: 1; Описание: Снимает печать с Агатиона.
+          -->
+        <set name="hitTime" val="3000"/>
+        <set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9409" levels="1" name="Призвать Агатиона - Ким Су Ро">
+        <!--
+              Уровень: 1; Описание: Снимает печать с Агатиона.
+          -->
+        <set name="hitTime" val="3000"/>
+        <set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9410" levels="1" name="Призвать Агатиона - Пак Чже Бом">
+        <!--
+              Уровень: 1; Описание: Снимает печать с Агатиона.
+          -->
+        <set name="hitTime" val="3000"/>
+        <set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9411" levels="1" name="Призвать Агатиона - Ким Син Енг">
+        <!--
+              Уровень: 1; Описание: Снимает печать с Агатиона.
+          -->
+        <set name="hitTime" val="3000"/>
+        <set name="icon" val="icon.etc_summon_aga_agit_i00"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9412" levels="1" name="Трюк Агатиона - Чан Хе Чжин">
+        <!--
+              Уровень: 1; Описание: Демонстрация трюка Агатиона. На 5 мин. ДУХ +2, МДР +1, псих. устойчивость +5, лимит веса +1 , шанс Маг. Крит. Атк. +2.
+          -->
+        <set name="hitTime" val="3000"/>
+        <set name="icon" val="icon.skill_agathion_cute"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9413" levels="1" name="Трюк Агатиона - Чан Хек">
+        <!--
+              Уровень: 1; Описание: Демонстрация трюка Агатиона. На 5 мин. СИЛ +2, ЛВК +1, физ. устойчивость +5, лимит веса +1 , сила Физ. Крит. Атк. +493.
+          -->
+        <set name="hitTime" val="3799"/>
+        <set name="icon" val="icon.skill_agathion_cute"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9414" levels="1" name="Трюк Агатиона - Ким Су Ро">
+        <!--
+              Уровень: 1; Описание: Демонстрация трюка Агатиона. На 5 мин. ВЫН +2, ЛВК +1, физ. Устойчивость +5, лимит веса +1 , Физ. Атк. +5%.
+          -->
+        <set name="hitTime" val="3400"/>
+        <set name="icon" val="icon.skill_agathion_cute"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9415" levels="1" name="Трюк Агатиона - Пак Чже Бом">
+        <!--
+              Уровень: 1; Описание: Демонстрация трюка Агатиона. На 5 мин. СИЛ +2, ВЫН +1, физ. Устойчивость +5, лимит веса +1 , сила Физ. Крит. Атк. +493
+          -->
+        <set name="hitTime" val="6199"/>
+        <set name="icon" val="icon.skill_agathion_cute"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9416" levels="1" name="Трюк Агатиона - Ким Син Енг">
+        <!--
+              Уровень: 1; Описание: Демонстрация трюка Агатиона. На 5 мин. ИНТ +2, МДР +1, псих. Устойчивость +5, лимит веса +1 , шанс Маг. Крит. Атк. +2.
+          -->
+        <set name="hitTime" val="3700"/>
+        <set name="icon" val="icon.skill_agathion_cute"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9417" levels="1" name="Синий Сундук Хранителя Мира">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9418" levels="1" name="Красный Сундук Хранителя Мира">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9419" levels="1" name="Золотистый Сундук Хранителя Мира">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9420" levels="1" name="Синий Сундук Странника">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9421" levels="1" name="Красный Сундук Странника">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9422" levels="1" name="Золотистый Сундук Странника">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9423" levels="1" name="Мешочек с Наградой за Кампанию">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9424" levels="1" name="Мешочек с Наградой за Кампанию">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9425" levels="1" name="Коробка с Краской Гигантов Ур. 2">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9426" levels="1" name="Коробка с Легендарной Краской Ур. 2">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9427" levels="1" name="Коробка с Древней Краской Ур. 2">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9428" levels="1" name="Коробка с Краской Гигантов Ур. 3">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9429" levels="1" name="Коробка с Легендарной Краской Ур. 3">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9430" levels="1" name="Коробка с Древней Краской Ур. 3">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9431" levels="1" name="Коробка с Краской Гигантов Ур. 4">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9432" levels="1" name="Коробка с Легендарной Краской Ур. 4">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9433" levels="1" name="Коробка с Древней Краской Ур. 4">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9434" levels="1" name="Коробка с Краской Гигантов Ур. 5">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9435" levels="1" name="Коробка с Легендарной Краской Ур. 5">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9436" levels="1" name="Коробка с Древней Краской Ур. 5">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9437" levels="1" name="Сундук со Свитком Телепорта: Деревня">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9438" levels="1" name="Herb with Mysterious Magic Power">
+        <!-- На 2 часа увеличивает Скор. Атк. на 10%, Скор. Магии на 10%, Макс НР / МР на 10% и Скорость на 10%. -->
+        <set name="itemConsumeCount" val="1"/>
+        <set name="staticHitTime" val="true"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isPotion" val="true"/>
+        <for>
+            <effect name="Buff" time="7200" val="0" abnormalVisualEffect="S_VESPER_3">
+                <mul order="0x30" stat="pAtkSpd" val="1.10"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.10"/>
+                <mul order="0x30" stat="maxHp" val="1.10"/>
+                <mul order="0x30" stat="maxMp" val="1.10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="9439" levels="1" name="Эффект_Свиток 1  очков личной репутации, Незавершенный Расходный Предмет">
+        <!--
+              Уровень: 1; Описание: Свиток на 1  очков личной репутации
+          -->
+        <set name="reuseDelay" val="3000"/>
+        <set name="hitTime" val="200"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9440" levels="1" name="Эффект_Свиток 5  очков личной репутации, Незавершенный Расходный Предмет">
+        <!--
+              Уровень: 1; Описание: Свиток на 5  очков личной репутации
+          -->
+        <set name="reuseDelay" val="3000"/>
+        <set name="hitTime" val="200"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9441" levels="1" name="Эффект_Свиток 1  очков личной репутации, Незавершенный Расходный Предмет">
+        <!--
+              Уровень: 1; Описание: Свиток на 1  очков личной репутации
+          -->
+        <set name="reuseDelay" val="3000"/>
+        <set name="hitTime" val="200"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9442" levels="1" name="Постановка - Предмет Сбора Огненных Цветов, Незавершенный">
+        <!--
+              Уровень: 1; Описание: Собирает Огненные Цветы.
+          -->
+        <set name="reuseDelay" val="6000"/>
+        <set name="hitTime" val="3000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9443" levels="1" name="Постановка - Предмет, наполненный водой из горячего источника, Незавершенный">
+        <!--
+              Уровень: 1; Описание: Собирает Воду из горячего источника.
+          -->
+        <set name="reuseDelay" val="6000"/>
+        <set name="hitTime" val="3000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9444" levels="1" name="Постановка - Призыв Дерева Помощи, Незавершенный Эффект">
+        <!--
+              Уровень: 1; Описание: Призывает Дерево Помощи.
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9445" levels="1" name="Постановка - призыв Рани, Незавершенный Эффект">
+        <!--
+              Уровень: 1; Описание: Призывает Раню.
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9446" levels="1" name="Свиток Телепорта: Горячие Источники">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="hitTime" val="20000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9447" levels="1" name="Свиток Телепорта: Кузница Богов">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="hitTime" val="20000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9448" levels="1" name="Свиток Телепорта: Кристальный Остров">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="hitTime" val="20000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9449" levels="1" name="Свиток Телепорта: Замок Аден (осада)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="hitTime" val="20000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9450" levels="1" name="Свиток Телепорта: Замок Руна (осада)">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="hitTime" val="20000"/>
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9451" levels="1" name="아이템 스킬 - 워프">
+        <!-- 9451	1	아이템 스킬 - 워프	자신 주변 적들을 스턴&타겟 해제하고 전방으로 텔레포트 한다. 재사용시간 24초. 사용 시 젬스톤 - B그레이드 10개를 소모한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9452" levels="1" name="아이템 스킬 - 대시">
+        <!-- 9452	1	아이템 스킬 - 대시	10초 동안 이동 속도가 30, 물리 회피가 7, HP회복 보너스가 7 증가한다. 사용 시 젬스톤 - B그레이드 10개를 소모한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9453" levels="1" name="아이템 스킬 - 언다잉 윌">
+        <!-- 9453	1	아이템 스킬 - 언다잉 윌	5초 동안 무적 상태가 된다. HP가 20%이하일 때 사용 가능. 사용 시 젬스톤 - B그레이드 20개를 소모한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9454" levels="1" name="아이템 스킬 - 사일런스">
+        <!-- 9454	1	아이템 스킬 - 사일런스	5초간 물리/마법 사용 불가. 사용 시 젬스톤 - B그레이드 30개를 소모한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9455" levels="1" name="아이템 스킬 - 타겟 불가">
+        <!-- 9455	1	아이템 스킬 - 타겟 불가	5초 동안 자신을 타겟하지 못하도록 한다. 사용 시 젬스톤 - B그레이드 10개를 소모한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9456" levels="3" name="아이템 스킬 - 대미지 반사 내성">
+        <!-- 9456	1	아이템 스킬 - 대미지 반사 내성	5분동안 데미지 반사에 대한 내성이 10% 증가한다. -->
+        <!-- 9456	2	아이템 스킬 - 대미지 반사 내성	5분동안 데미지 반사에 대한 내성이 15% 증가한다. -->
+        <!-- 9456	3	아이템 스킬 - 대미지 반사 내성	5분동안 데미지 반사에 대한 내성이 20% 증가한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9459" levels="1" name="Бешенство Таути">
+        <!-- Атака и опрокидывание ближайших врагов. Мощность 27552 -->
+        <table name="#effectPoint">173</table>
+        <table name="#power">27552</table>
+        <set name="power" val="#power"/>
+        <set name="activateRate" val="50"/>
+        <set name="effectPoint" val="#effectPoint"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="overHit" val="true"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="nextAction" val="attack"/>
+        <set name="trait" val="SHOCK"/>
+        <set name="saveVs" val="CON"/>
+        <for>
+            <effect abnormal="STUN" count="1" name="Stun" stackOrder="-1" stackType="Stun" time="3" val="0"/>
+        </for>
+    </skill>
+
+    <skill id="9460" levels="1" name="타우티의 권능">
+        <!-- 9460	1	타우티의 권능	타우티의 권능으로 371 위력으로 주변 적들을 공격해서 넉다운 상태로 만든다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9461" levels="1" name="귀환 - 기요틴 요새">
+        <!-- 9461	1	귀환 - 기요틴 요새	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9464" levels="1" name="아덴왕의 보물상자">
+        <!-- 9464	1	아덴왕의 보물상자	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9465" levels="1" name="봇짐">
+        <!-- 9465	1	봇짐	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9466" levels="1" name="루운왕의 보물상자">
+        <!-- 9466	1	루운왕의 보물상자	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9467" levels="1" name="오염된 드라코의 알">
+        <!-- 9467	1	오염된 드라코의 알	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9468" levels="1" name="드라코의 작은 알">
+        <!-- 9468	1	드라코의 작은 알	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9469" levels="1" name="드라코의 큰 알">
+        <!-- 9469	1	드라코의 큰 알	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9470" levels="1" name="드라코의 선물">
+        <!-- 9470	1	드라코의 선물	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9471" levels="1" name="빛나는 드라코의 선물">
+        <!-- 9471	1	빛나는 드라코의 선물	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9473" levels="1" name="망자의 함">
+        <!-- 9473	1	망자의 함	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9474" levels="1" name="망자의 함">
+        <!-- 9474	1	망자의 함	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9475" levels="1" name="엔지니어 소파의 보급 상자">
+        <!-- 9475	1	엔지니어 소파의 보급 상자	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9476" levels="1" name="저항군의 보급 상자">
+        <!-- 9476	1	저항군의 보급 상자	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9477" levels="1" name="아쿠의 보급 상자">
+        <!-- 9477	1	아쿠의 보급 상자	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9478" levels="1" name="채팅 금지 액티브">
+        <!-- 9478	1	채팅 금지 액티브	일정시간 동안 채팅을 금지시킨다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9479" levels="1" name="Дополнительный Билет">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9480" levels="1" name="Дополнительный Билет">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9481" levels="1" name="Дополнительный Билет">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9482" levels="1" name="Дополнительный Билет">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9483" levels="1" name="Дополнительный Билет">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="9484" levels="1" name="Дополнительный Билет">
+        <!--
+              Уровень: 1; Описание: none
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+
+    <skill id="9485" levels="1" name="오염된 드라코의 알 - 아이템 획득">
+        <!-- 9485	1	오염된 드라코의 알 - 아이템 획득	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9486" levels="1" name="채팅 금지">
+        <!-- 9486	1	채팅 금지	일반공격시 크리티컬이 발생하였을 때 10%의 확률로 타겟이 일정시간 동안 채팅금지 상태가 된다. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="9487" levels="1" name="Благословение Кота-Ангела">
+        <!--
+              Уровень: 1; Описание: Физ. Атк. +5%, Физ. Защ. +2%, Маг. Защ. +5%, Скор. Атк. +5%, Скор. Маг. +5%, Макс. HP/MP +5%, получаемые SP и опыт +3%. Время действия: 6 мин.
+          -->
+        <set name="reuseDelay" val="1800000"/>
+        <set name="icon" val="icon.skilltransform4"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+
+    <skill id="9488" levels="1" name="크리스마스 축복 1단계">
+        <!-- 9488	1	크리스마스 축복 1단계	10분 동안 크리스마스 축복으로 물리 공격력이 1%, 마법력이 2% 증가하고 경험치 획득시 활력이 회복된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9489" levels="1" name="크리스마스 축복 2단계">
+        <!-- 9489	1	크리스마스 축복 2단계	15분 동안 크리스마스 축복으로 물리 공격력이 2%, 마법력이 4% 증가하고 경험치 획득시 활력이 회복된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9490" levels="1" name="크리스마스 축복 3단계">
+        <!-- 9490	1	크리스마스 축복 3단계	20분 동안 크리스마스 축복으로 물리 공격력이 3%, 마법력이 6% 증가하고 경험치 획득시 활력이 회복된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9491" levels="1" name="크리스마스 축복 4단계">
+        <!-- 9491	1	크리스마스 축복 4단계	25분 동안 크리스마스 축복으로 물리 공격력이 4%, 마법력이 8% 증가하고 경험치 획득시 활력이 회복된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9492" levels="1" name="크리스마스 축복 5단계">
+        <!-- 9492	1	크리스마스 축복 5단계	60분 동안 크리스마스 축복으로 물리 공격력이 5%, 마법력이 10% 증가하고 경험치 획득시 활력이 회복된다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9493" levels="1" name="크리스마스 축복의 여운 1단계">
+        <!-- 9493	1	크리스마스 축복의 여운 1단계	크리스마스 축복의 여운을 즐기는 상태. 크리스마스 축복 1단계를 다시 받기 위해서는 3시간의 여유가 필요한 듯 하다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9494" levels="1" name="크리스마스 축복의 여운 2단계">
+        <!-- 9494	1	크리스마스 축복의 여운 2단계	크리스마스 축복의 여운을 즐기는 상태. 크리스마스 축복 2단계를 다시 받기 위해서는 3시간의 여유가 필요한 듯 하다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9495" levels="1" name="크리스마스 축복의 여운 3단계">
+        <!-- 9495	1	크리스마스 축복의 여운 3단계	크리스마스 축복의 여운을 즐기는 상태. 크리스마스 축복 3단계를 다시 받기 위해서는 3시간의 여유가 필요한 듯 하다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9496" levels="1" name="크리스마스 축복의 여운 4단계">
+        <!-- 9496	1	크리스마스 축복의 여운 4단계	크리스마스 축복의 여운을 즐기는 상태. 크리스마스 축복 4단계를 다시 받기 위해서는 3시간의 여유가 필요한 듯 하다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9497" levels="1" name="크리스마스 축복의 여운 5단계">
+        <!-- 9497	1	크리스마스 축복의 여운 5단계	크리스마스 축복의 여운을 즐기는 상태. 크리스마스 축복 5단계를 다시 받기 위해서는 3시간의 여유가 필요한 듯 하다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9498" levels="1" name="산타 걸 망토">
+        <!-- 9498	1	산타 걸 망토	망토를 착용하고 있을 때, 물리 방어력이 50, 마법 저항력이 40 증가한다. -->
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="9499" levels="1" name="안타라스 포켓">
+        <!-- 9499	1	안타라스 포켓	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>

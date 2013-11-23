@@ -1,0 +1,10 @@
+<!ELEMENT list (equipment)*>
+    <!ELEMENT equipment (item)*>
+    <!ATTLIST equipment
+        classId CDATA #REQUIRED>
+    <!ELEMENT item (#PCDATA)>
+    <!ATTLIST item
+        id CDATA #REQUIRED
+        count CDATA #REQUIRED
+        equipped CDATA #IMPLIED
+        warehouse CDATA #IMPLIED>

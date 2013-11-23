@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE list SYSTEM "item.dtd">
+<list>
+    <armor id="10800" name="Draconic Leather Armor {PvP}">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="748"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t89_ul_i00"/>
+        <set name="price" value="15577000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4950"/>
+        <equip>
+            <slot id="FULL_ARMOR"/>
+        </equip>
+        <set name="ex_type" value="FULL_BODY"/>
+        <for>
+            <add stat="pDef" order="0x10" value="249"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10801" name="Major Arcana Robe {PvP}">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="748"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t90_ul_i00"/>
+        <set name="price" value="15577000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="2300"/>
+        <equip>
+            <slot id="FULL_ARMOR"/>
+        </equip>
+        <set name="ex_type" value="FULL_BODY"/>
+        <for>
+            <add stat="pDef" order="0x10" value="166"/>
+            <add stat="maxMp" order="0x10" value="866"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10802" name="Dynasty Breastplate {PvP}">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1171"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_u_i00"/>
+        <set name="price" value="24398000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10803" name="Dynasty Breastplate {PvP}" add_name="Shield Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1171"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_uk_i00"/>
+        <set name="price" value="24398000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="90,91,99,106"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10804" name="Dynasty Breastplate {PvP}" add_name="Weapon Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1171"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_uw_i00"/>
+        <set name="price" value="24398000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="89,113,117,118"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10805" name="Dynasty Breastplate {PvP}" add_name="Force Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1171"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_uf_i00"/>
+        <set name="price" value="24398000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="88,114"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10806" name="Dynasty Breastplate {PvP}" add_name="Bard">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1171"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_uke_i00"/>
+        <set name="price" value="24398000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="100,107"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10807" name="Dynasty Leather Armor {PvP}">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_u_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10808" name="Dynasty Leather Armor {PvP}" add_name="Dagger Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_ud_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="93,101,108,117"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10809" name="Dynasty Leather Armor {PvP}" add_name="Bow Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_ub_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="92,102,109,134"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10810" name="Dynasty Tunic {PvP}">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_u_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10811" name="Dynasty Tunic {PvP}" add_name="Healer">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_uh_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="97,105,112"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10812" name="Dynasty Tunic {PvP}" add_name="Enchanter">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_ue_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="98,115,116"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10813" name="Dynasty Tunic {PvP}" add_name="Summoner">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_us_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="96,104,111"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10814" name="Dynasty Tunic {PvP}" add_name="Wizard">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_uw_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="94,95,103,110"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10815" name="Dynasty Leather Armor {PvP}" add_name="Force Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_ud_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="88,114"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10816" name="Dynasty Leather Armor {PvP}" add_name="Weapon Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_ub_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="89,113,117,118,131,132,133"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10817" name="Dynasty Leather Armor {PvP}" add_name="Enchanter">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_ud_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="98,115,116,136"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10818" name="Dynasty Leather Armor {PvP}" add_name="Summoner">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="878"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_u_i00"/>
+        <set name="price" value="18298000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="96,104,111"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10819" name="Dynasty Platinum Breastplate {PvP}">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1616"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_u_i00"/>
+        <set name="price" value="33673000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10820" name="Dynasty Platinum Breastplate {PvP}" add_name="Shield Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1616"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_uk_i00"/>
+        <set name="price" value="33673000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="90,91,99,106"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10821" name="Dynasty Platinum Breastplate {PvP}" add_name="Weapon Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1616"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_uw_i00"/>
+        <set name="price" value="33673000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="89,113,117,118"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10822" name="Dynasty Platinum Breastplate {PvP}" add_name="Force Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1616"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_uf_i00"/>
+        <set name="price" value="33673000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="88,114"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10823" name="Dynasty Platinum Breastplate {PvP}" add_name="Bard">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1616"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t91_uke_i00"/>
+        <set name="price" value="33673000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="HEAVY"/>
+        <set name="weight" value="7570"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="100,107"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="226"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10824" name="Dynasty Jewel Leather Armor {PvP}">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_u_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10825" name="Dynasty Jewel Leather Armor {PvP}" add_name="Dagger Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_ud_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="93,101,108,117"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10826" name="Dynasty Jewel Leather Armor {PvP}" add_name="Bow Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_ub_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="92,102,109,134"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10827" name="Dynasty Silver Satin Tunic {PvP}">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_u_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10828" name="Dynasty Silver Satin Tunic {PvP}" add_name="Healer">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_uh_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="97,105,112"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10829" name="Dynasty Silver Satin Tunic {PvP}" add_name="Enchanter">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_ue_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="98,115,116"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10830" name="Dynasty Silver Satin Tunic {PvP}" add_name="Summoner">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_us_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="96,104,111"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10831" name="Dynasty Silver Satin Tunic {PvP}" add_name="Wizard">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t93_uw_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="MAGIC"/>
+        <set name="weight" value="1780"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="94,95,103,110"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="113"/>
+            <add stat="maxMp" order="0x10" value="592"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10832" name="Dynasty Jewel Leather Armor {PvP}" add_name="Force Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_u_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="88,114"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10833" name="Dynasty Jewel Leather Armor {PvP}" add_name="Weapon Master">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_u_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="89,113,117,118,131,132,133"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10834" name="Dynasty Jewel Leather Armor {PvP}" add_name="Enchanter">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_u_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="98,115,116,136"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+    <armor id="10835" name="Dynasty Jewel Leather Armor {PvP}" add_name="Summoner">
+        <set name="attributable" value="false"/>
+        <set name="augmentable" value="false"/>
+        <set name="crystal_count" value="1212"/>
+        <set name="crystal_type" value="S"/>
+        <set name="crystallizable" value="true"/>
+        <set name="dropable" value="false"/>
+        <set name="icon" value="icon.armor_t92_u_i00"/>
+        <set name="price" value="25255000"/>
+        <set name="sellable" value="false"/>
+        <set name="tradeable" value="false"/>
+        <set name="type" value="LIGHT"/>
+        <set name="weight" value="4180"/>
+        <equip>
+            <slot id="CHEST"/>
+        </equip>
+        <set name="ex_type" value="UPPER_PIECE"/>
+        <cond msgId="113" addName="1">
+            <player classId="96,104,111"/>
+        </cond>
+        <for>
+            <add stat="pDef" order="0x10" value="170"/>
+            <enchant stat="pDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </armor>
+</list>

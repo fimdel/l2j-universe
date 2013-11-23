@@ -1,0 +1,16 @@
+<!ELEMENT list (config|item)*>
+<!ELEMENT config (#PCDATA)>
+<!ATTLIST config
+	showall CDATA #IMPLIED
+	notax CDATA #IMPLIED
+	nokey CDATA #IMPLIED
+	keepenchanted CDATA #IMPLIED>
+<!ELEMENT item (ingredient|production)*>
+<!ELEMENT ingredient (#PCDATA)>
+<!ATTLIST ingredient
+	count CDATA #REQUIRED
+	id CDATA #REQUIRED>
+<!ELEMENT production (#PCDATA)>
+<!ATTLIST production
+	count CDATA #REQUIRED
+	id CDATA #REQUIRED>

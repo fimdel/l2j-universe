@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+    <weapon id="35000" name="Копье таути">
+        <!-- Done by Chekan -->
+        <set name="icon" value="icon.weapon_tauti_two_hand_pole_i01"/>
+        <set name="type" value="POLE"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="100"/>
+        <set name="crystal_type" value="R"/>
+        <set name="weight" value="1300"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="augmentable" value="false"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <skills>
+            <skill id="8879" level="1"/>
+            <skill id="9459" level="1"/>
+        </skills>
+        <attributes>
+            <attribute element="unholy" value="450"/>
+        </attributes>
+        <for>
+            <add order="0x08" stat="pAtk" value="629.0"/>
+            <add order="0x08" stat="mAtk" value="322.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="325.0"/>
+            <set stat="pCritBase" order="0x08" value="150"/>
+        </for>
+    </weapon>
+    <weapon id="35001" name="Парные топоры таути">
+        <!-- Done by Chekan -->
+        <set name="icon" value="icon.weapon_tauti_dual_axe_i01"/>
+        <set name="type" value="DUAL"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="100"/>
+        <set name="crystal_type" value="R"/>
+        <set name="weight" value="1700"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="augmentable" value="false"/>
+        <set name="tradable" value="false"/>
+        <set name="dropable" value="false"/>
+        <set name="sellable" value="false"/>
+        <set name="enchantable" value="false"/>
+        <skills>
+            <skill id="8879" level="1"/>
+            <skill id="9459" level="1"/>
+        </skills>
+        <for>
+            <add order="0x08" stat="pAtk" value="766.0"/>
+            <add order="0x08" stat="mAtk" value="322.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="325.0"/>
+        </for>
+    </weapon>
+    <weapon id="35095" name="Dark Amaranthine Shaper {PvP}">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_stanpid_i10"/>
+        <set name="type" value="DAGGER"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="8621"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1520"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="true"/>
+        <set name="tradeble" value="true"/>
+        <enchant4_skill id="13282" level="3"/>
+        <skills>
+            <skill id="8820" level="1"/>
+        </skills>
+        <for>
+            <add order="0x08" stat="pAtk" value="610.0"/>
+            <add order="0x08" stat="mAtk" value="303.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="12.0"/>
+            <add order="0x08" stat="pAtkSpd" value="433.0"/>
+            <set order="0x08" stat="pCritBase" value="120"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" value="1.05"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35096" name="Dark Amaranthine Cutter {PvP}">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_plenitas_i10"/>
+        <set name="type" value="SWORD"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="8621"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1520"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="true"/>
+        <set name="tradeble" value="true"/>
+        <enchant4_skill id="13252" level="3"/>
+        <skills>
+            <skill id="8821" level="1"/>
+        </skills>
+        <for>
+            <add order="0x08" stat="pAtk" value="698.0"/>
+            <add order="0x08" stat="mAtk" value="303.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="379.0"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" value="1.05"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35097" name="Dark Amaranthine Slasher {PvP}">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_bauen_i10"/>
+        <set name="type" value="BIGSWORD"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="8621"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1740"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="true"/>
+        <set name="tradeble" value="true"/>
+        <enchant4_skill id="13261" level="3"/>
+        <skills>
+            <skill id="8822" level="1"/>
+        </skills>
+        <for>
+            <add order="0x08" stat="pAtk" value="849.0"/>
+            <add order="0x08" stat="mAtk" value="303.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="8.0"/>
+            <add order="0x08" stat="pAtkSpd" value="325.0"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" value="1.05"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35098" name="Dark Amaranthine Avenger {PvP}">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_qutram_i10"/>
+        <set name="type" value="BLUNT"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="8621"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1740"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="true"/>
+        <set name="tradeble" value="true"/>
+        <enchant4_skill id="13256" level="3"/>
+        <skills>
+            <skill id="8823" level="1"/>
+        </skills>
+        <for>
+            <add order="0x08" stat="pAtk" value="698.0"/>
+            <add order="0x08" stat="mAtk" value="303.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="4.0"/>
+            <add order="0x08" stat="pAtkSpd" value="379.0"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" value="1.05"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+    <weapon id="35099" name="Dark Amaranthine Fighter {PvP}">
+        <!-- Done by silver 2012 -->
+        <set name="icon" value="icon.weapon_durga_i10"/>
+        <set name="type" value="DUALFIST"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="crystal_count" value="8621"/>
+        <set name="crystal_type" value="R99"/>
+        <set name="weight" value="1550"/>
+        <set name="price" value="3000000"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <set name="dropable" value="true"/>
+        <set name="tradeble" value="true"/>
+        <enchant4_skill id="13267" level="3"/>
+        <skills>
+            <skill id="8824" level="1"/>
+        </skills>
+        <for>
+            <add order="0x08" stat="pAtk" value="849.0"/>
+            <add order="0x08" stat="mAtk" value="303.0"/>
+            <add order="0x10" stat="pAccuracyCombat" value="4.0"/>
+            <add order="0x08" stat="pAtkSpd" value="325.0"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <mul order="0x30" stat="pvpPhysDmgBonus" value="1.05"/>
+            <enchant value="0" order="0x0C" stat="pAtk"/>
+            <enchant value="0" order="0x0C" stat="mAtk"/>
+        </for>
+    </weapon>
+</list>

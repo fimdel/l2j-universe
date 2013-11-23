@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (route)*>
+<!ELEMENT route (point)*>
+<!ATTLIST route
+	npcId CDATA #REQUIRED
+	type CDATA #IMPLIED
+	delay CDATA #REQUIRED
+	isRunning CDATA #IMPLIED
+	walkRange CDATA #IMPLIED>
+<!ELEMENT point (#PCDATA)>
+<!ATTLIST point
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+	z CDATA #REQUIRED
+	h CDATA #IMPLIED
+	delay CDATA #IMPLIED
+	endPoint CDATA #IMPLIED>

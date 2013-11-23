@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!ELEMENT list (quest)*>
+    <!ELEMENT quest (level|spawn|dates|steps)*>
+    <!ATTLIST quest
+        id CDATA #REQUIRED
+        name CDATA #REQUIRED>
+    <!ELEMENT level (#PCDATA)>
+    <!ATTLIST level
+        min CDATA #REQUIRED>
+    <!ELEMENT spawn (#PCDATA)>
+    <!ATTLIST spawn
+        name CDATA #REQUIRED>
+    <!ELEMENT dates (date)*>
+    <!ELEMENT date (#PCDATA)>
+    <!ATTLIST date
+        day CDATA #REQUIRED
+        time CDATA #REQUIRED>
+    <!ELEMENT steps (step)*>
+    <!ELEMENT step (dialogs|points|rewards|zones)*>
+    <!ATTLIST step
+        autostart CDATA #IMPLIED
+        duration CDATA #REQUIRED
+        id CDATA #REQUIRED
+        name CDATA #REQUIRED
+        nextTaskId CDATA #IMPLIED
+        points CDATA #REQUIRED
+        title CDATA #REQUIRED>
+    <!ELEMENT dialogs (dialog)*>
+    <!ELEMENT dialog (#PCDATA)>
+    <!ATTLIST dialog
+        name CDATA #REQUIRED
+        type CDATA #REQUIRED>
+    <!ELEMENT points (npc)*>
+    <!ELEMENT npc (#PCDATA)>
+    <!ATTLIST npc
+        id CDATA #REQUIRED
+        points CDATA #REQUIRED>
+    <!ELEMENT rewards (reward)*>
+    <!ELEMENT reward (#PCDATA)>
+    <!ATTLIST reward
+        count CDATA #REQUIRED
+        id CDATA #REQUIRED
+        type CDATA #REQUIRED>
+    <!ELEMENT zones (zone)*>
+    <!ELEMENT zone (#PCDATA)>
+    <!ATTLIST zone
+        name CDATA #REQUIRED>

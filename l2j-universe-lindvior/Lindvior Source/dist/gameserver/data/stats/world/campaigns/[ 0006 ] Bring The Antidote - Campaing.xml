@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "campaigns.dtd">
+
+<!--
+	Сбор противоядия - Кампания
+-->
+<list>
+    <quest id="6" name="_0006_BringTheAntidote">
+        <!-- TODO проверить -->
+        <level min="40"/>
+        <spawn name="_0006_BringTheAntidote"/>
+        <dates>
+            <date day="Wednesday" time="11:30"/>
+            <date day="Wednesday" time="22:00"/>
+        </dates>
+        <steps>
+            <step id="601" name="_0006_BringTheAntidote" title="Сбор противоядия" points="10000" duration="30">
+                <dialogs>
+                    <dialog type="start" name="dc0006_start001"/>
+                    <dialog type="accept" name="dc0006_context001"/>
+                    <dialog type="failed" name="dc0006_failed001"/>
+                    <dialog type="reward" name="dc0006_reward001"/>
+                    <dialog type="elite_reward" name="dc0006_elite_reward001"/>
+                </dialogs>
+                <points>
+                    <npc id="19088" points="1"/>
+                    <!-- Адепт Шилен -->
+                </points>
+                <rewards>
+                    <reward id="33501" count="1" type="usual"/>
+                    <reward id="33501" count="1" type="elite"/>
+                    <reward id="33500" count="1" type="elite"/>
+                </rewards>
+            </step>
+        </steps>
+    </quest>
+</list>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+    <npc id="80000" name="Destroer" title="Попробуй убей меня">
+        <set name="displayId" value="29001"/>
+        <set name="aggroRange" value="20"/>
+        <set name="ai_type" value="Fighter"/>
+        <set name="collision_radius" value="45.00"/>
+        <set name="collision_height" value="53.00"/>
+        <set name="level" value="99"/>
+        <set name="type" value="Monster"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseHpMax" value="135300000"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="8.5"/>
+        <set name="baseMpMax" value="180900"/>
+        <set name="baseMpReg" value="3"/>
+        <set name="baseSTR" value="78"/>
+        <set name="baseCON" value="73"/>
+        <set name="baseDEX" value="40"/>
+        <set name="baseINT" value="31"/>
+        <set name="baseWIT" value="65"/>
+        <set name="baseMEN" value="5"/>
+        <set name="rewardExp" value="0"/>
+        <set name="rewardRp" value="0"/>
+        <set name="rewardSp" value="0"/>
+        <set name="basePAtk" value="9710"/>
+        <set name="basePDef" value="9100"/>
+        <set name="baseMAtk" value="9663"/>
+        <set name="baseMDef" value="8250"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="baseCritRate" value="40"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseMAtkSpd" value="565"/>
+        <set name="baseRunSpd" value="1"/>
+        <set name="baseWalkSpd" value="1"/>
+        <set name="shots" value="NONE"/>
+        <attributes>
+            <defence attribute="fire" value="360"/>
+            <defence attribute="water" value="275"/>
+            <defence attribute="wind" value="300"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="300"/>
+            <defence attribute="unholy" value="300"/>
+        </attributes>
+        <skills>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="4416" level="10"/>
+            <!--Dragons-->
+        </skills>
+        <rewardlist type="RATED_GROUPED">
+            <group chance="25.1693">
+                <reward item_id="4357" min="1" max="3" chance="41.8439"/>
+                <reward item_id="13993" min="1" max="3" chance="19.8379"/>
+            </group>
+            <group chance="10.3687">
+                <reward item_id="13993" min="1" max="1" chance="5.8535"/>
+                <reward item_id="13994" min="1" max="1" chance="5.8535"/>
+                <reward item_id="13995" min="1" max="1" chance="5.8535"/>
+                <reward item_id="13996" min="1" max="1" chance="5.8535"/>
+                <reward item_id="13997" min="3" max="9" chance="5.5860"/>
+                <reward item_id="13998" min="3" max="9" chance="5.5860"/>
+            </group>
+            <group chance="5.421">
+                <reward item_id="14015" min="1" max="1" chance="6.1538"/>
+                <reward item_id="14016" min="1" max="1" chance="6.1538"/>
+                <reward item_id="14017" min="1" max="1" chance="6.1538"/>
+                <reward item_id="14018" min="1" max="1" chance="6.1538"/>
+                <reward item_id="14019" min="1" max="1" chance="6.1538"/>
+                <reward item_id="14020" min="1" max="1" chance="6.1538"/>
+            </group>
+        </rewardlist>
+    </npc>
+    <npc id="80001" name="Destroer Minion" title="Я завалю тебя">
+        <set name="displayId" value="22200"/>
+        <set name="aggroRange" value="150"/>
+        <set name="ai_type" value="Fighter"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="57"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="40"/>
+        <set name="baseDEX" value="73"/>
+        <set name="baseHpMax" value="1353009.677"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="8.5"/>
+        <set name="baseINT" value="76"/>
+        <set name="baseMAtk" value="9738"/>
+        <set name="baseMAtkSpd" value="500"/>
+        <set name="baseMDef" value="505"/>
+        <set name="baseMEN" value="80"/>
+        <set name="baseMpMax" value="1809"/>
+        <set name="baseMpReg" value="3"/>
+        <set name="basePAtk" value="12265"/>
+        <set name="basePAtkSpd" value="253"/>
+        <set name="basePDef" value="621"/>
+        <set name="baseRunSpd" value="170"/>
+        <set name="baseSTR" value="60"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="70"/>
+        <set name="baseWalkSpd" value="78"/>
+        <set name="collision_height" value="37.2"/>
+        <set name="collision_radius" value="15.0"/>
+        <set name="level" value="85"/>
+        <set name="rewardExp" value="0"/>
+        <set name="rewardRp" value="0"/>
+        <set name="rewardSp" value="0"/>
+        <set name="shots" value="SOUL_BSPIRIT"/>
+        <set name="type" value="Monster"/>
+        <skills>
+            <skill id="4045" level="1"/>
+            <!--Resist Full Magic Attack-->
+            <skill id="4408" level="1"/>
+            <!--HP Increase (1x)-->
+            <skill id="4409" level="1"/>
+            <!--MP Increase (1x)-->
+            <skill id="4410" level="11"/>
+            <!--Average P. Atk.-->
+            <skill id="4411" level="11"/>
+            <!--Average M. Atk.-->
+            <skill id="4412" level="11"/>
+            <!--Average P. Def.-->
+            <skill id="4413" level="11"/>
+            <!--Average M. Def.-->
+            <skill id="4414" level="2"/>
+            <!--Standard Type-->
+            <skill id="4415" level="3"/>
+            <!--One-handed Sword-->
+            <skill id="4416" level="10"/>
+            <!--Dragons-->
+        </skills>
+        <rewardlist type="NOT_RATED_GROUPED">
+            <group chance="100.0">
+                <reward item_id="8952" min="1" max="3" chance="100.0000"/>
+                <!--Greater Herb of Life-->
+            </group>
+            <group chance="100.0">
+                <reward item_id="8953" min="1" max="3" chance="100.0000"/>
+                <!--Greater Herb of Mana-->
+            </group>
+            <group chance="25.1693">
+                <reward item_id="4357" min="1" max="2" chance="41.8439"/>
+                <reward item_id="13993" min="1" max="3" chance="19.8379"/>
+            </group>
+        </rewardlist>
+        <attributes>
+            <attack attribute="earth" value="300"/>
+            <defence attribute="fire" value="220"/>
+            <defence attribute="water" value="220"/>
+            <defence attribute="wind" value="170"/>
+            <defence attribute="earth" value="300"/>
+            <defence attribute="holy" value="220"/>
+            <defence attribute="unholy" value="220"/>
+        </attributes>
+    </npc>
+    <npc id="80002" template_id="33530" name="Бритни" title="Управляющий Фарм Зоной">
+        <set name="baseHpMax" value="7324"/>
+        <set name="baseMAtkSpd" value="398"/>
+        <set name="basePAtkSpd" value="299"/>
+        <set name="baseRunSpd" value="120"/>
+        <set name="baseWalkSpd" value="60"/>
+        <set name="collision_height" value="21.5"/>
+        <set name="collision_radius" value="8.0"/>
+        <set name="aggroRange" value="0"/>
+        <set name="ai_type" value="CharacterAI"/>
+        <set name="baseAtkRange" value="40"/>
+        <set name="baseCON" value="43"/>
+        <set name="baseMageCritRate" value="50"/>
+        <set name="baseCritRate" value="40"/>
+        <set name="baseDEX" value="30"/>
+        <set name="baseHpRate" value="1"/>
+        <set name="baseHpReg" value="7.5"/>
+        <set name="baseINT" value="21"/>
+        <set name="baseMAtk" value="780"/>
+        <set name="baseMDef" value="382"/>
+        <set name="baseMEN" value="20"/>
+        <set name="baseMpMax" value="1345.8"/>
+        <set name="baseMpReg" value="2.7"/>
+        <set name="basePAtk" value="1303"/>
+        <set name="basePDef" value="471"/>
+        <set name="baseSTR" value="40"/>
+        <set name="baseShldDef" value="0"/>
+        <set name="baseShldRate" value="0"/>
+        <set name="baseWIT" value="20"/>
+        <set name="castle_id" value="1"/>
+        <set name="level" value="70"/>
+        <set name="rewardExp" value="0"/>
+        <set name="rewardRp" value="0"/>
+        <set name="rewardSp" value="0"/>
+        <set name="shots" value="NONE"/>
+        <set name="texture" value=""/>
+        <set name="type" value="Npc"/>
+        <skills/>
+        <attributes>
+            <defence attribute="fire" value="150"/>
+            <defence attribute="water" value="150"/>
+            <defence attribute="wind" value="150"/>
+            <defence attribute="earth" value="150"/>
+            <defence attribute="holy" value="150"/>
+            <defence attribute="unholy" value="150"/>
+        </attributes>
+    </npc>
+</list>

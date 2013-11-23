@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <etcitem id="937" name="Directions to Ruins">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="938" name="Deck">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="95"/>
+        <set name="icon" value="icon.etc_spell_books_red_i00"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="939" name="Gara's Quest Item #11">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal52"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="940" name="Gara's Quest Item #12">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal52"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="941" name="Gara's Proof of Bravery">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal52"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="942" name="Gara's Proof of Justice">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal52"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="943" name="Gara's Proof of Despair">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal52"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="944" name="Deathknight Skull">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.armor_head15"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="947" name="Scroll: Enchant Weapon (B)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_weapon_i03"/>
+        <set name="price" value="500000"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SCROLL"/>
+        <set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="948" name="Scroll: Enchant Armor (B)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_armor_i03"/>
+        <set name="price" value="80000"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="949" name="Crystal Scroll: Enchant Weapon (B)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+        <set name="price" value="80000"/>
+        <set name="type" value="SCROLL"/>
+        <set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="950" name="Crystal Scroll: Enchant Armor (B)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+        <set name="price" value="80000"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="951" name="Scroll: Enchant Weapon (C)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_weapon_i02"/>
+        <set name="price" value="110000"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SCROLL"/>
+        <set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="952" name="Scroll: Enchant Armor (C)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_armor_i02"/>
+        <set name="price" value="15000"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="953" name="Crystal Scroll: Enchant Weapon (C)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+        <set name="price" value="15000"/>
+        <set name="type" value="SCROLL"/>
+        <set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="954" name="Crystal Scroll: Enchant Armor (C)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+        <set name="price" value="15000"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="955" name="Scroll: Enchant Weapon (D)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+        <set name="price" value="50000"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SCROLL"/>
+        <set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="956" name="Scroll: Enchant Armor (D)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+        <set name="price" value="6000"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="957" name="Crystal Scroll: Enchant Weapon (D)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+        <set name="price" value="6000"/>
+        <set name="type" value="SCROLL"/>
+        <set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="958" name="Crystal Scroll: Enchant Armor (D)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+        <set name="price" value="6000"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="959" name="Scroll: Enchant Weapon (S)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_weapon_i05"/>
+        <set name="price" value="5000000"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SCROLL"/>
+        <set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="960" name="Scroll: Enchant Armor (S)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_armor_i05"/>
+        <set name="price" value="500000"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="961" name="Crystal Scroll: Enchant Weapon (S)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_weapon_i01"/>
+        <set name="price" value="500000"/>
+        <set name="type" value="SCROLL"/>
+        <set name="ex_type" value="SCROLL_ENCHANT_WEAPON"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="962" name="Crystal Scroll: Enchant Armor (S)">
+        <set name="class" value="MISC"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="icon" value="icon.etc_scroll_of_enchant_armor_i01"/>
+        <set name="price" value="500000"/>
+        <set name="type" value="SCROLL"/>
+        <set name="weight" value="120"/>
+        <cond msgId="1508">
+            <not>
+                <player olympiad="true"/>
+            </not>
+        </cond>
+    </etcitem>
+    <etcitem id="963" name="Orcish Arrowhead">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.weapon_winged_spear_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="964" name="Alberius's Letter">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_scroll_white_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="965" name="Evergreen Amulet">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.accessary_near_forest_necklace_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="966" name="Dryad's Tears">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_crystal_ball_green_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="967" name="Cobendell Medicine">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_canuse24"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="968" name="Karrod's Letter">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_scroll_gray_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="969" name="Cecktinon's First Voucher">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_letter_red_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="970" name="Cecktinon's Second Voucher">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_letter_red_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="971" name="Soul Catcher">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.weapon_voodoo_doll_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="972" name="Preserving Oil">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_potion_clear_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="973" name="Zombie Head">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_skull_black_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="974" name="Steelbender Head">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_skull_red_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="976" name="1st Mark of Sentinel">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_system03"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="977" name="2nd Mark of Sentinel">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_system03"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="978" name="Skullcrusher Amulet">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal145"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="979" name="Bloodspear Amulet">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal89"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="980" name="0">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.weapon_mace23"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="982" name="Esrandell's Letter">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal20"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="983" name="Kendell's Letter">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.item_normal20"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="984" name="1st Onyx Talisman">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.accessary_sages_necklace_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="985" name="2nd Onyx Talisman">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.accessary_sages_necklace_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="986" name="Ancient Scroll">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_scroll_gray_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="987" name="Ancient Clay Tablet">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_plate_glay_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+    <etcitem id="988" name="Kartia's Translation">
+        <set name="class" value="OTHER"/>
+        <set name="ex_type" value="OTHER_ITEMS"/>
+        <set name="crystal_type" value="NONE"/>
+        <set name="durability" value="100"/>
+        <set name="icon" value="icon.etc_piece_of_paper_gray_i00"/>
+        <set name="stackable" value="true"/>
+        <set name="type" value="QUEST"/>
+    </etcitem>
+</list>

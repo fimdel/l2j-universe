@@ -1,0 +1,143 @@
+<html>
+<body>
+
+<center>Настройки</center>
+<br><br>
+
+<table>
+    <tr>
+        <td width=5></td>
+        <td width=160>Язык:</td>
+        <td width=30>%lang%</td>
+        <td width=30>
+            <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                    action="bypass -h user_cfg lang en" value="EN">
+        </td>
+        <td width=30>
+            <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                    action="bypass -h user_cfg lang ru" value="RU">
+        </td>
+    </tr>
+
+    <table>
+        <tr>
+            <td width=5></td>
+            <td width=70>Транслит:</td>
+            <td width=30>%translit%</td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg translit on" value="On">
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg translit of" value="Off">
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg translit la" value="La">
+            </td>
+        </tr>
+
+        <tr>
+            <td width=5></td>
+            <td width=160>Картинки в дроплисте:</td>
+            <td width=30>%dli%</td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg dli on" value="On">
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg dli of" value="Off">
+            </td>
+        </tr>
+
+        <tr>
+            <td width=5></td>
+            <td width=70>Блокировка опыта:</td>
+            <td width=30>%noe%</td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg noe on" value="On">
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg noe of" value="Off">
+            </td>
+        </tr>
+
+        <tr>
+            <td width=5></td>
+            <td width=70>Поиск пути:</td>
+            <td width=30>%pf%</td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg pf on" value="On">
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg pf of" value="Off">
+            </td>
+        </tr>
+
+        <tr>
+            <td width=5></td>
+            <td width=70>Не показывать торговцев:</td>
+            <td width=30>%notraders%</td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg notraders on" value="On">
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg notraders of" value="Off">
+            </td>
+        </tr>
+
+        <tr>
+            <td width=5></td>
+            <td width=70>Отключить анимацию бафов:</td>
+            <td width=30>%notShowBuffAnim%</td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg notShowBuffAnim on" value="On">
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg notShowBuffAnim of" value="Off">
+            </td>
+        </tr>
+
+        <tr>
+            <td width=5></td>
+            <td width=70>Классический Shift:</td>
+            <td width=30>%noShift%</td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg noShift on" value="On">
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg noShift of" value="Off">
+            </td>
+        </tr>
+
+        <tr>
+            <td width=5></td>
+            <td width=70>No Carrier:</td>
+            <td width=30>%noCarrier%</td>
+            <td width=30>
+                <edit var="set" width=30 height=12>
+            </td>
+            <td width=30>
+                <button width=30 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"
+                        action="bypass -h user_cfg noCarrier $set" value="Set">
+            </td>
+        </tr>
+
+    </table>
+
+    %additional%
+
+</body>
+</html>

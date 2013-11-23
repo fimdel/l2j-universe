@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+    <weapon id="32215" name="Blessed Twilight Shield" add_name="Defense Type">
+        <!--Done By Darvin (c)Java - Team 2012-->
+        <set name="icon" value="icon.kratere_i00"/>
+        <set name="weight" value="1130"/>
+        <equip>
+            <slot id="LEFT_HAND"/>
+        </equip>
+        <set name="type" value="NONE"/>
+        <set name="crystal_type" value="R"/>
+        <set name="crystal_count" value="3562"/>
+        <for>
+            <add stat="sDef" order="0x10" value="458"/>
+            <add stat="rShld" order="0x10" value="20"/>
+            <add stat="pEvasionRate" order="0x10" value="-8.0000"/>
+            <enchant stat="sDef" order="0x0C" value="0"/>
+            <enchant stat="maxHp" order="0x80" value="0"/>
+        </for>
+    </weapon>
+</list>

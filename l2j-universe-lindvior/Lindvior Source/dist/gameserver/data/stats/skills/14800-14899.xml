@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="14800" levels="1" name="Благословение Мастера - Сопротивление Стихиям (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает сопротивление от всех 4-х стихий на 3.
+          -->
+        <set name="icon" val="icon.skill11565"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14801" levels="1" name="Благословение Мастера - Сопротивление Святости (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает сопротивление Святости/Тьме на 3 и Яду/Кровотечению - на 5%.
+          -->
+        <set name="icon" val="icon.skill11567"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14802" levels="1" name="Благословение Мастера - Сопротивление Ментальности (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает сопротивление Удерживающим/Усыпляющим/Ментальным атакам на 5, сопротивление снятию положительных эффектов - на 3 и сопротивление отрицательным эффектам - на 2.
+          -->
+        <set name="icon" val="icon.skill11824"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14803" levels="1" name="Темная Магия Сада">
+        <!--
+              Уровень: 1; Описание: Состояние паралича.
+          -->
+        <set name="icon" val="icon.skill0279"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14804" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 1.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14805" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 2.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14806" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 3.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="3"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14807" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 4.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14808" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 5.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="5"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14809" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 6.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="6"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14810" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 7.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14811" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 8.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14812" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 9.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="9"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14813" levels="1" name="Сопротивление Отражению Урона">
+        <!--
+              Уровень: 1; Описание: Сопротивление Отражению Урона увеличивается на 1.
+          -->
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" stackOrder="1" val="1">
+                <mul order="0x30" stat="reflectDam" val="1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14814" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 1.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14815" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 2.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14816" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 3.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14817" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 4.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14818" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 5.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14819" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 6.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14820" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 7.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14821" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 8.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14822" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 9.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14823" levels="1" name="Сопротивление Смерти в Подземельях">
+        <!--
+              Уровень: 1; Описание: Сопротивление Смерти в подземелье увеличивается на 1.
+          -->
+        <set name="icon" val="icon.skill0263"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+	<skill id="14824" levels="1" name="Сопротивление Дезактивизации Ивента">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="magicLevel" val="50"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14825" levels="9" name="Атака Пирса">
+		<!--
+			Уровень: 1; Описание: При атаке цели Силой Спокойствия Физ. Атк.17.
+			Уровень: 2; Описание: При атаке цели Силой Спокойствия Физ. Атк. 9992.
+			Уровень: 3; Описание: При атаке цели Силой Спокойствия Физ. Атк. 485.
+			Уровень: 4; Описание: При атаке цели Силой Спокойствия Физ. Атк.17.
+			Уровень: 5; Описание: При атаке цели Силой Спокойствия Физ. Атк.1857.
+			Уровень: 6; Описание: При атаке цели Силой Спокойствия Физ. Атк. 3122.
+			Уровень: 7; Описание: При атаке цели Силой Спокойствия Физ. Атк. 5343.
+			Уровень: 8; Описание: При атаке цели Силой Спокойствия Физ. Атк. 843.
+			Уровень: 9; Описание: При атаке цели Силой Спокойствия Физ. Атк. 9992.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill_transform_s_attack"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14826" levels="9" name="Интенсивное рассечение">
+		<!--
+			Уровень: 1; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 831.
+			Уровень: 2; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 8287.
+			Уровень: 3; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 4.
+			Уровень: 4; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 831.
+			Уровень: 5; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 1532.
+			Уровень: 6; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 2575.
+			Уровень: 7; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 443.
+			Уровень: 8; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 6656.
+			Уровень: 9; Описание: При атаке цели Силой Крепкого Построения Физ. Атк. 8287.
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill_transform_s_attack"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14827" levels="9" name="Благостный огонь">
+		<!--
+			Уровень: 1; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 62.
+			Уровень: 2; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 15.
+			Уровень: 3; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 49.
+			Уровень: 4; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 62.
+			Уровень: 5; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 82.
+			Уровень: 6; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 12.
+			Уровень: 7; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 118.
+			Уровень: 8; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 135.
+			Уровень: 9; Описание: При применении Маг. Атк., наполненной Силой Любви, Физ. Атк. 15.
+		-->
+		<set name="reuseDelay" val="4000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill_transform_s_attack"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14828" levels="9" name="Чистый Взрыв">
+		<!--
+			Уровень: 1; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 5.
+			Уровень: 2; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 12.
+			Уровень: 3; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 39.
+			Уровень: 4; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 5.
+			Уровень: 5; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 66.
+			Уровень: 6; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 82.
+			Уровень: 7; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 94.
+			Уровень: 8; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 18.
+			Уровень: 9; Описание: При поражении Чистой Магией противников вокруг цели Физ. Атк. 12.
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill_transform_s_attack"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14829" levels="9" name="Изящный Удар">
+		<!--
+			Уровень: 1; Описание: При атаке цели Изящным Ударом Физ. Атк. 1187.
+			Уровень: 2; Описание: При атаке цели Изящным Ударом Физ. Атк. 11821.
+			Уровень: 3; Описание: При атаке цели Изящным Ударом Физ. Атк. 1571.
+			Уровень: 4; Описание: При атаке цели Изящным Ударом Физ. Атк. 1187.
+			Уровень: 5; Описание: При атаке цели Изящным Ударом Физ. Атк. 2188.
+			Уровень: 6; Описание: При атаке цели Изящным Ударом Физ. Атк. 3677.
+			Уровень: 7; Описание: При атаке цели Изящным Ударом Физ. Атк. 632.
+			Уровень: 8; Описание: При атаке цели Изящным Ударом Физ. Атк. 9499.
+			Уровень: 9; Описание: При атаке цели Изящным Ударом Физ. Атк. 11821.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill_transform_s_attack"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14830" levels="9" name="Серый Взрыв">
+		<!--
+			Уровень: 1; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 985.
+			Уровень: 2; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 986.
+			Уровень: 3; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 473.
+			Уровень: 4; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 985.
+			Уровень: 5; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 1814.
+			Уровень: 6; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 348.
+			Уровень: 7; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 5269.
+			Уровень: 8; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 794.
+			Уровень: 9; Описание: При атаке цели Силой Благоговейного Сердца Физ. Атк. 9861.
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill_transform_s_attack"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14831" levels="9" name="Мистический Болт">
+		<!--
+			Уровень: 1; Описание: При атаке цели Таинственной Магией Физ. Атк. 69.
+			Уровень: 2; Описание: При атаке цели Таинственной Магией Физ. Атк.166.
+			Уровень: 3; Описание: При атаке цели Таинственной Магией Физ. Атк. 54.
+			Уровень: 4; Описание: При атаке цели Таинственной Магией Физ. Атк. 69.
+			Уровень: 5; Описание: При атаке цели Таинственной Магией Физ. Атк. 91.
+			Уровень: 6; Описание: При атаке цели Таинственной Магией Физ. Атк. 113.
+			Уровень: 7; Описание: При атаке цели Таинственной Магией Физ. Атк. 13.
+			Уровень: 8; Описание: При атаке цели Таинственной Магией Физ. Атк. 15.
+			Уровень: 9; Описание: При атаке цели Таинственной Магией Физ. Атк. 166.
+		-->
+		<set name="reuseDelay" val="4000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill_transform_s_attack"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14832" levels="9" name="Буря Платоника">
+		<!--
+			Уровень: 1; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 55.
+			Уровень: 2; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 133.
+			Уровень: 3; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 43.
+			Уровень: 4; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 55.
+			Уровень: 5; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 72.
+			Уровень: 6; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 91.
+			Уровень: 7; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 14.
+			Уровень: 8; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 12.
+			Уровень: 9; Описание: Полная концентрация: При поражении Чистой Магией противников вокруг цели Физ. Атк. 133.
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill_transform_s_attack"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14833" levels="1" name="Святая Вода Терси">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="6000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14834" levels="1" name="Удар Личинки">
+		<!--
+			Уровень: 1; Описание: Наносит урон и вызывает у врага шок. В состоянии шока враг не может двигаться некоторое время.
+		-->
+		<set name="icon" val="icon.skill0092"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14835" levels="1" name="Взрыв Гнома">
+		<!--
+			Уровень: 1; Описание: Наносит урон и вызывает у врага шок. В состоянии шока враг не может двигаться некоторое время.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14836" levels="1" name="Звенящая Тишина">
+		<!--
+			Уровень: 1; Описание: Наносит урон и вызывает у врага шок. В состоянии шока враг не может двигаться некоторое время.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0092"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14837" levels="1" name="Жалкий Дзаруда">
+		<!--
+			Уровень: 1; Описание: Мгновенное Обездвиживание при поднятии в воздух.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11052"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14838" levels="1" name="Исчезновение">
+		<!--
+			Уровень: 1; Описание: Режим Скрытности.
+		-->
+		<set name="icon" val="icon.skill11541"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14839" levels="1" name="Отмена Исчезновения">
+		<!--
+			Уровень: 1; Описание: Отмена Режима Скрытности.
+		-->
+		<set name="icon" val="icon.skill01703"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14840" levels="1" name="Адольф: Великая Аура Ненавести">
+		<!--
+			Уровень: 1; Описание: Принудительно меняет цель атаки с персонажей на самого атакующего.
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10027"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14841" levels="1" name="Адольф: Великая Аура Ненавести">
+		<!--
+			Уровень: 1; Описание: Принудительно меняет цель атаки с персонажей на самого атакующего.
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10027"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14842" levels="1" name="Адольф: Великая Аура Ненавести">
+		<!--
+			Уровень: 1; Описание: Принудительно меняет цель атаки с персонажей на самого атакующего.
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10027"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14843" levels="1" name="Адольф: Цепная Гидра">
+		<!--
+			Уровень: 1; Описание: Притягивает к герою объект атаки и всех, кто находится рядом с ним.
+		-->
+		<set name="reuseDelay" val="45000"/>
+		<set name="coolTime" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="icon" val="icon.skill10016"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14844" levels="1" name="Адольф: Цепная Гидра">
+		<!--
+			Уровень: 1; Описание: Притягивает к герою объект атаки и всех, кто находится рядом с ним.
+		-->
+		<set name="reuseDelay" val="45000"/>
+		<set name="coolTime" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="icon" val="icon.skill10016"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14845" levels="1" name="Адольф: Цепная Гидра">
+		<!--
+			Уровень: 1; Описание: Притягивает к герою объект атаки и всех, кто находится рядом с ним.
+		-->
+		<set name="reuseDelay" val="45000"/>
+		<set name="coolTime" val="1000"/>
+		<set name="hitTime" val="500"/>
+		<set name="icon" val="icon.skill10016"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14846" levels="1" name="Адольф: Кара Правосудия">
+		<!--
+			Уровень: 1; Описание: Атакует врага и наносит дополнительный урон. Мощность 13673. Физ./Маг. Атк. -2%..
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10010"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14847" levels="1" name="Адольф: Кара Правосудия">
+		<!--
+			Уровень: 1; Описание: Атакует врага и наносит дополнительный урон. Мощность 1634. Физ./Маг. Атк. -2%..
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10010"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14848" levels="1" name="Адольф: Кара Правосудия">
+		<!--
+			Уровень: 1; Описание: Атакует врага и наносит дополнительный урон. Мощность 18395. Физ./Маг. Атк. -2%..
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10010"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14849" levels="1" name="Адольф: Волна Щита">
+		<!--
+			Уровень: 1; Описание: Атакует врагов перед собой и наносит дополнительный урон. Мощность 9516.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10012"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14850" levels="1" name="Адольф: Волна Щита">
+		<!--
+			Уровень: 1; Описание: Атакует врагов перед собой и наносит дополнительный урон. Мощность 11162.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10012"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14851" levels="1" name="Адольф: Волна Щита">
+		<!--
+			Уровень: 1; Описание: Атакует врагов перед собой и наносит дополнительный урон. Мощность 1289.
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10012"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14852" levels="1" name="Адольф: Максимальная Защита">
+		<!--
+			Уровень: 1; Описание: В течение 3 сек. Физ. Защ. +4, Маг. Защ. +4,  Умения с уроном больше 3 наносят только 3 ед. урона, 4%  от него возвращается противнику. Устойчивость к атакам, снимающим положительный эффект +8%.
+		-->
+		<set name="reuseDelay" val="900000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10017"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14853" levels="1" name="Адольф: Максимальная Защита">
+		<!--
+			Уровень: 1; Описание: В течение 3 сек. Физ. Защ. +4, Маг. Защ. +4,  Умения с уроном больше 3 наносят только 3 ед. урона, 4%  от него возвращается противнику. Устойчивость к атакам, снимающим положительный эффект +8%.
+		-->
+		<set name="reuseDelay" val="900000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10017"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14854" levels="1" name="Адольф: Максимальная Защита">
+		<!--
+			Уровень: 1; Описание: В течение 3 сек. Физ. Защ. +4, Маг. Защ. +4,  Умения с уроном больше 3 наносят только 3 ед. урона, 4%  от него возвращается противнику. Устойчивость к атакам, снимающим положительный эффект +8%.
+		-->
+		<set name="reuseDelay" val="900000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10017"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14855" levels="1" name="Бартон: Бросок Урагана">
+		<!--
+			Уровень: 1; Описание: Сильный Удар Плечом: в течение 3 сек. Состояние Оглушения.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="hitTime" val="100"/>
+		<set name="icon" val="icon.skill10267"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14856" levels="1" name="Бартон: Бросок Урагана">
+		<!--
+			Уровень: 1; Описание: Сильный Удар Плечом: в течение 3 сек. Состояние Оглушения.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="hitTime" val="100"/>
+		<set name="icon" val="icon.skill10267"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14857" levels="1" name="Бартон: Бросок Урагана">
+		<!--
+			Уровень: 1; Описание: Сильный Удар Плечом: в течение 3 сек. Состояние Оглушения.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="hitTime" val="100"/>
+		<set name="icon" val="icon.skill10267"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14858" levels="1" name="Бартон: Удар Вечности">
+		<!--
+			Уровень: 1; Описание: Атакует врага мощным ударом и наносит дополнительный урон. Мощность 1533..
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14859" levels="1" name="Бартон: Удар Вечности">
+		<!--
+			Уровень: 1; Описание: Атакует врага мощным ударом и наносит дополнительный урон. Мощность 17947.
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14860" levels="1" name="Бартон: Удар Вечности">
+		<!--
+			Уровень: 1; Описание: Атакует врага мощным ударом и наносит дополнительный урон. Мощность 2592.
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14861" levels="1" name="Бартон: Ударная Волна">
+		<!--
+			Уровень: 1; Описание: Атака Ударной Волной. Мощность 11557.
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10281"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14862" levels="1" name="Бартон: Ударная Волна">
+		<!--
+			Уровень: 1; Описание: Атака Ударной Волной. Мощность 13553.
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10281"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14863" levels="1" name="Бартон: Ударная Волна">
+		<!--
+			Уровень: 1; Описание: Атака Ударной Волной. Мощность 15549.
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10281"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14864" levels="1" name="Бартон: Мощный Бомбардир">
+		<!--
+			Уровень: 1; Описание: При Атаке Ударной Волной в течение 2 сек. состояние Нокдауна. Мощность 11159.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10262"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14865" levels="1" name="Бартон: Мощный Бомбардир">
+		<!--
+			Уровень: 1; Описание: При Атаке Ударной Волной в течение 2 сек. состояние Нокдауна. Мощность 1312.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10262"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14866" levels="1" name="Бартон: Мощный Бомбардир">
+		<!--
+			Уровень: 1; Описание: При Атаке Ударной Волной в течение 2 сек. состояние Нокдауна. Мощность 1546.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10262"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14867" levels="1" name="Бартон: Берсерк">
+		<!--
+			Уровень: 1; Описание: Делает персонажа практически непобедимым. Увеличивает устойчивость к злым чарам/Скорость/Физ. Атк./Физ. Точность/Физ. Защ./Скор. Физ. Атк./силу Крит. Атк. Восстанавливает 2% HP после смерти цели. При HP ниже 6%: Физ. Атк. +1%, шанс Крит. Атк. +1. При HP ниже 3%: Физ. Атк. +3%, шанс Крит. Атк. +3.
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10274"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14868" levels="1" name="Бартон: Берсерк">
+		<!--
+			Уровень: 1; Описание: Делает персонажа практически непобедимым. Увеличивает устойчивость к злым чарам/Скорость/Физ. Атк./Физ. Точность/Физ. Защ./Скор. Физ. Атк./силу Крит. Атк. Восстанавливает 2% HP после смерти цели. При HP ниже 6%: Физ. Атк. +1%, шанс Крит. Атк. +1. При HP ниже 3%: Физ. Атк. +3%, шанс Крит. Атк. +3.
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10274"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14869" levels="1" name="Бартон: Берсерк">
+		<!--
+			Уровень: 1; Описание: Делает персонажа практически непобедимым. Увеличивает устойчивость к злым чарам/Скорость/Физ. Атк./Физ. Точность/Физ. Защ./Скор. Физ. Атк./силу Крит. Атк. Восстанавливает 2% HP после смерти цели. При HP ниже 6%: Физ. Атк. +1%, шанс Крит. Атк. +1. При HP ниже 3%: Физ. Атк. +3%, шанс Крит. Атк. +3.
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10274"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14870" levels="1" name="Хаюк: Туча Стрел">
+		<!--
+			Уровень: 1; Описание: Атакует цель и всех врагов вокруг нее. Наносит дополнительный урон. Мощность 23391.
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10771"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14871" levels="1" name="Хаюк: Туча Стрел">
+		<!--
+			Уровень: 1; Описание: Атакует цель и всех врагов вокруг нее. Наносит дополнительный урон. Мощность 27459.
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10771"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14872" levels="1" name="Хаюк: Туча Стрел">
+		<!--
+			Уровень: 1; Описание: Атакует цель и всех врагов вокруг нее. Наносит дополнительный урон. Мощность 31527.
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10771"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14873" levels="1" name="Хаюк: Дождь Тяжелых Стрел">
+		<!--
+			Уровень: 1; Описание: Обрушивает дождь стрел на цель и врагов вокруг нее, наносит дополнительный урон. Мощность 22526.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10772"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14874" levels="1" name="Хаюк: Дождь Тяжелых Стрел">
+		<!--
+			Уровень: 1; Описание: Обрушивает дождь стрел на цель и врагов вокруг нее, наносит дополнительный урон. Мощность 26448.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10772"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14875" levels="1" name="Хаюк: Дождь Тяжелых Стрел">
+		<!--
+			Уровень: 1; Описание: Обрушивает дождь стрел на цель и врагов вокруг нее, наносит дополнительный урон. Мощность 3371.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10772"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14876" levels="1" name="Хаюк: Удар с Отбросом">
+		<!--
+			Уровень: 1; Описание: Выпускает во врага стрелу и наносит дополнительный урон. Мощность 24888.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="449"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10770"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14877" levels="1" name="Хаюк: Удар с Отбросом">
+		<!--
+			Уровень: 1; Описание: Выпускает во врага стрелу и наносит дополнительный урон. Мощность 26565.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="449"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10770"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14878" levels="1" name="Хаюк: Удар с Отбросом">
+		<!--
+			Уровень: 1; Описание: Выпускает во врага стрелу и наносит дополнительный урон. Мощность 28242.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="449"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10770"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14879" levels="1" name="Хаюк: Точечный Удар">
+		<!--
+			Уровень: 1; Описание: Атакует стоящего вдалеке врага в уязвимую точку и наносит дополнительный урон. Мощность 22198. Игнорирует 3% Физ. Защ. врага.
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="850"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10763"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14880" levels="1" name="Хаюк: Точечный Удар">
+		<!--
+			Уровень: 1; Описание: Атакует стоящего вдалеке врага в уязвимую точку и наносит дополнительный урон. Мощность 2675. Игнорирует 3% Физ. Защ. врага.
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="850"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10763"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14881" levels="1" name="Хаюк: Точечный Удар">
+		<!--
+			Уровень: 1; Описание: Атакует стоящего вдалеке врага в уязвимую точку и наносит дополнительный урон. Мощность 29176. Игнорирует 3% Физ. Защ. врага.
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="850"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10763"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14882" levels="1" name="Отступление">
+		<!--
+			Уровень: 1; Описание: Мгновенно перемещает назад на 3.
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="699"/>
+		<set name="icon" val="icon.skill10774"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14883" levels="1" name="Элийя: Массовое Изгнание">
+		<!--
+			Уровень: 1; Описание: Отправляет врагов вокруг цели в другой мир. Изгнанный враг не может двигаться, атаковать и использовать умения. Противник становится неуязвимим для отрицательных эффектов и каждую секунду теряет 282 HP.
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11296"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14884" levels="1" name="Элийя: Массовое Изгнание">
+		<!--
+			Уровень: 1; Описание: Отправляет врагов вокруг цели в другой мир. Изгнанный враг не может двигаться, атаковать и использовать умения. Противник становится неуязвимим для отрицательных эффектов и каждую секунду теряет 296 HP.
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11296"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14885" levels="1" name="Элийя: Массовое Изгнание">
+		<!--
+			Уровень: 1; Описание: Отправляет врагов вокруг цели в другой мир. Изгнанный враг не может двигаться, атаковать и использовать умения. Противник становится неуязвимим для отрицательных эффектов и каждую секунду теряет 313 HP.
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11296"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14886" levels="1" name="Элийя: Призыв Врат Смерти">
+		<!--
+			Уровень: 1; Описание: Призывает Врата Смерти, которые удерживают врагов на месте и наносят урон.
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11266"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14887" levels="1" name="Элийя: Призыв Врат Смерти">
+		<!--
+			Уровень: 1; Описание: Призывает Врата Смерти, которые удерживают врагов на месте и наносят урон.
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11266"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14888" levels="1" name="Элийя: Призыв Врат Смерти">
+		<!--
+			Уровень: 1; Описание: Призывает Врата Смерти, которые удерживают врагов на месте и наносят урон.
+		-->
+		<set name="reuseDelay" val="600000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11266"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14889" levels="1" name="Адольф: Агрессия">
+		<!--
+			Уровень: 1; Описание: Увеличивает у вашего противника желание атаковать. Мощность 12439.
+		-->
+		<set name="reuseDelay" val="6000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="699"/>
+		<set name="icon" val="icon.skill0014889"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14890" levels="1" name="Адольф: Агрессия">
+		<!--
+			Уровень: 1; Описание: Увеличивает у вашего противника желание атаковать. Мощность 1266.
+		-->
+		<set name="reuseDelay" val="6000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="699"/>
+		<set name="icon" val="icon.skill0028"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14891" levels="1" name="Адольф: Агрессия">
+		<!--
+			Уровень: 1; Описание: Увеличивает у вашего противника желание атаковать. Мощность 12772.
+		-->
+		<set name="reuseDelay" val="6000"/>
+		<set name="coolTime" val="200"/>
+		<set name="hitTime" val="699"/>
+		<set name="icon" val="icon.skill0028"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14892" levels="1" name="Удар Духа-Хранителя">
+		<!--
+			Уровень: 1; Описание: Удар Духа-Хранителя.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14893" levels="1" name="Удар Духа-Хранителя">
+		<!--
+			Уровень: 1; Описание: Удар Духа-Хранителя.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14894" levels="1" name="Удар Духа-Хранителя">
+		<!--
+			Уровень: 1; Описание: Удар Духа-Хранителя.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14895" levels="1" name="Злость Духа-Хранителя">
+		<!--
+			Уровень: 1; Описание: Атака противника Злостью Духа-Хранителя.
+		-->
+		<set name="reuseDelay" val="20000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14896" levels="1" name="Злость Духа-Хранителя">
+		<!--
+			Уровень: 1; Описание: Атака противника Злостью Духа-Хранителя.
+		-->
+		<set name="reuseDelay" val="20000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14897" levels="1" name="Злость Духа-Хранителя">
+		<!--
+			Уровень: 1; Описание: Атака противника Злостью Духа-Хранителя.
+		-->
+		<set name="reuseDelay" val="20000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14898" levels="1" name="Элис: Цепное Возрождение">
+		<!--
+			Уровень: 1; Описание: Восстанавливает 4% от Макс. HP цели и 1-ти союзников вокруг цели, получивших наиболее сильные повреждения. Величина восстановления НР постепенно уменьшается.
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11828"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14899" levels="1" name="Элис: Свет Исцеления">
+		<!--
+			Уровень: 1; Описание: Восстанавливает HP цели. При заполнении шкалы HP восстанавливает CP. Мощность 1488.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11755"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

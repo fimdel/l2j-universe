@@ -1,0 +1,1262 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="1901" levels="1" name="Ясная Цель">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pAccuracyCombat" val="3"/>
+            <mul order="0x30" stat="critChanceRcpt" val="1.03"/>
+        </for>
+    </skill>
+    <skill id="1902" levels="1" name="Крепкая Психика">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="mDef" val="18"/>
+            <add order="0x40" stat="pAtk" val="31"/>
+            <add order="0x40" stat="mAtk" val="32"/>
+        </for>
+    </skill>
+    <skill id="1903" levels="1" name="Активность">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="regHp" val="1.01"/>
+            <mul order="0x30" stat="regMp" val="1.01"/>
+        </for>
+    </skill>
+    <skill id="1904" levels="1" name="Упорство">
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NEGATE_EFFECTS"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="negateEffects" val="Sleep;Root;Stun;Paralyze;Mute"/>
+        <for>
+            <effect abnormal="INVUL2" count="1" name="Invulnerable" stackOrder="-1" stackType="Invulnerable" time="10"
+                    val="0" cancelOnAction="true"/>
+        </for>
+    </skill>
+    <skill id="1905" levels="1" name="Стремительность">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pAtkSpd" val="4"/>
+            <add order="0x40" stat="mAtkSpd" val="3"/>
+            <add order="0x40" stat="runSpd" val="13"/>
+        </for>
+    </skill>
+    <skill id="1906" levels="1" name="Благословенная Вода">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="attackWater" val="10"/>
+            <add order="0x40" stat="defenceWater" val="10"/>
+            <mul order="0x30" stat="regMp" val="1.02"/>
+        </for>
+    </skill>
+    <skill id="1907" levels="1" name="Предвидение">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="10" val="0">
+                <add order="0x40" stat="pEvasionRate" val="30"/>
+                <add order="0x40" stat="mEvasionRate" val="30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1908" levels="1" name="Чуткость">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pCritRate" val="15"/>
+            <add order="0x40" stat="mCritRate" val="10"/>
+        </for>
+    </skill>
+    <skill id="1909" levels="1" name="Острота">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pCritRate" val="208"/>
+            <add order="0x40" stat="mCritRate" val="208"/>
+        </for>
+    </skill>
+    <skill id="1910" levels="1" name="Темные Способности">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x10" stat="INT" val="1">
+                <game night="true"/>
+            </add>
+            <add order="0x10" stat="STR" val="1">
+                <game night="true"/>
+            </add>
+        </for>
+    </skill>
+    <skill id="1911" levels="1" name="Благословенный Ветер">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="attackWind" val="10"/>
+            <add order="0x40" stat="defenceWind" val="10"/>
+        </for>
+    </skill>
+    <skill id="1912" levels="1" name="Бешеное Ускорение">
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMusic" val="true"/>
+        <set name="dispelType" val="negative"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="DispelEffects" time="5" val="0">
+                <add order="0x40" stat="runSpd" val="30"/>
+                <def name="dispelType" val="cleanse"/>
+                <def name="cancelRate" val="100"/>
+                <def name="negateCount" val="10"/>
+            </effect>
+            <effect count="5" name="RemoveTarget" stackOrder="-1" stackType="RemoveTarget" time="1" val="0"/>
+        </for>
+    </skill>
+    <skill id="1913" levels="1" name="Высасывание Жизни">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="absorbPart" val="0.01"/>
+        <for>
+            <add order="0x40" stat="absorbDam" val="1"/>
+        </for>
+    </skill>
+    <skill id="1914" levels="1" name="Дикость">
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="60" val="0">
+                <mul order="0x30" stat="pAtkSpd" val="1.17"/>
+                <mul order="0x30" stat="pDef" val="0.85"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1915" levels="1" name="Сила Огня">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="defenceFire" val="10"/>
+            <add order="0x40" stat="attackFire" val="10"/>
+        </for>
+    </skill>
+    <skill id="1916" levels="1" name="Сильная Энергетика">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="regHp" val="3"/>
+        </for>
+    </skill>
+    <skill id="1917" levels="1" name="Стойкость Бессмертия">
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <cond msgId="113" addName="1">
+            <player percentHP="20"/>
+        </cond>
+        <triggers>
+            <trigger id="1918" level="1" type="RECEIVE_DAMAGE" chance="15">
+                <player damage="1;0"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1918" levels="1" name="Стойкость Бессмертия">
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isTrigger" val="true"/>
+        <for>
+            <effect abnormal="INVUL2" count="1" name="Invulnerable" stackOrder="-1" stackType="Invulnerable" time="5"
+                    val="0" cancelOnAction="false">
+                <add order="0x40" stat="shldAngle" val="100"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1919" levels="1" name="Ловкость">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pSkillDamageStatic" val="1.02"/>
+        </for>
+    </skill>
+    <skill id="1920" levels="1" name="Выносливость">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="5" val="0">
+                <add order="0x40" stat="regHp" val="92"/>
+                <add order="0x40" stat="reflectDam" val="50"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1921" levels="1" name="Благословенная Земля">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="attackEarth" val="10"/>
+            <add order="0x40" stat="defenceEarth" val="10"/>
+            <add order="0x40" stat="pDef" val="16"/>
+        </for>
+    </skill>
+    <skill id="1922" levels="1" name="Дрожь почвы">
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_AURA"/>
+        <set name="skillRadius" val="300"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormal="KNOCKDOWN" count="3" name="KnockDown" stackOrder="-1" stackType="KnockDown" time="1"
+                    val="0"/>
+        </for>
+    </skill>
+    <skill id="1923" levels="1" name="Боевой Инстинкт">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="pAtk" val="1.01">
+                <target pvp="true"/>
+            </mul>
+            <mul order="0x30" stat="mpConsumePhysical" val="0.95"/>
+            <mul order="0x30" stat="pSkillDamageStatic" val="1.01"/>
+            <mul order="0x30" stat="mpConsum" val="0.95"/>
+        </for>
+    </skill>
+    <skill id="1924" levels="1" name="Темная Тишина">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="attackUnholy" val="10"/>
+            <sub order="0x40" stat="defenceUnholy" val="10"/>
+            <add order="0x40" stat="mentalResist" val="20"/>
+        </for>
+    </skill>
+    <skill id="1925" levels="1" name="Духовная Защита">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="20" val="0">
+                <add order="0x08" stat="debuffResist" val="1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1926" levels="1" name="Укрепление Тела">
+        <set name="npcId" val="13311"/>
+        <set name="hpConsume" val="200"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <for>
+            <effect name="Transformation" time="300" val="131">
+                <mul stat="pAtk" order="0x30" val="2"/>
+                <mul stat="pDef" order="0x30" val="2"/>
+                <mul stat="mAtk" order="0x30" val="2"/>
+                <mul stat="mDef" order="0x30" val="2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1927" levels="1" name="Аура Сигеля">
+        <!--
+          Дает членам группы Силу Сигеля. Физ. Атк. +1%.
+      -->
+        <set name="icon" val="icon.icon_sigel"/>
+        <set name="class_level" val="5"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Siegel_Aura" stackOrder="1">
+                <mul stat="pAtk" order="0x30" val="1.01">
+                    <not>
+                        <player classId="139"/>
+                    </not>
+                </mul>
+            </effect>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Siegel_Aura" stackOrder="1">
+                <def name="forceSkillId" val="1928"/>
+            </effect>
+        </for>
+        <triggers>
+            <trigger id="1928" level="1" type="ADD" chance="100">
+                <using skill="1928"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1928" levels="1" name="strength Siegel">
+        <set name="icon" val="icon.icon_sigel"/>
+        <set name="auraSkillId" val="1927"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Siegel_Aura" stackOrder="1">
+                <def name="auraSkillId" val="1927"/>
+            </effect>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Siegel_Aura" stackOrder="1">
+                <not>
+                    <player classId="139"/>
+                </not>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1929" levels="1" name="Tyrr Force">
+        <set name="icon" val="icon.icon_tir"/>
+        <set name="class_level" val="5"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Tyrr_Aura" stackOrder="1">
+                <mul stat="pCritRate" order="0x30" val="1.01">
+                    <not>
+                        <player classId="140"/>
+                    </not>
+                </mul>
+            </effect>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Siegel_Aura" stackOrder="1">
+                <def name="forceSkillId" val="1930"/>
+            </effect>
+        </for>
+        <triggers>
+            <trigger id="1930" level="1" type="ADD" chance="100">
+                <using skill="1930"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1930" levels="1" name="force tyuranta">
+        <set name="icon" val="icon.icon_tir"/>
+        <set name="auraSkillId" val="1929"/>
+        <set name="class_level" val="5"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Tyrr_Aura" stackOrder="1">
+                <mul stat="pCritRate" order="0x30" val="1.01">
+                    <not>
+                        <player classId="140"/>
+                    </not>
+                </mul>
+                <def name="auraSkillId" val="1929"/>
+            </effect>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Tyrr_Aura" stackOrder="1">
+                <not>
+                    <player classId="140"/>
+                </not>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1931" levels="1" name="Othell Force">
+        <set name="icon" val="icon.icon_othel"/>
+        <set name="class_level" val="5"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Othell_Aura" stackOrder="1">
+                <mul stat="pAtkSpd" order="0x30" val="1.01">
+                    <not>
+                        <player classId="141"/>
+                    </not>
+                </mul>
+            </effect>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Siegel_Aura" stackOrder="1">
+                <def name="forceSkillId" val="1932"/>
+            </effect>
+        </for>
+        <triggers>
+            <trigger id="1932" level="1" type="ADD" chance="100">
+                <using skill="1932"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1932" levels="1" name="force odala">
+        <set name="icon" val="icon.icon_othel"/>
+        <set name="auraSkillId" val="1931"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Odala_Aura" stackOrder="1">
+                <mul stat="pAtkSpd" order="0x30" val="1.01">
+                    <not>
+                        <player classId="141"/>
+                    </not>
+                </mul>
+                <def name="auraSkillId" val="1931"/>
+            </effect>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Othell_Aura" stackOrder="1">
+                <not>
+                    <player classId="141"/>
+                </not>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1933" levels="1" name="Yul Force">
+        <set name="icon" val="icon.icon_yr"/>
+        <set name="class_level" val="5"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Eura_Aura" stackOrder="1">
+                <mul stat="regMp" order="0x30" val="1.5">
+                    <not>
+                        <player classId="142"/>
+                    </not>
+                </mul>
+            </effect>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Siegel_Aura" stackOrder="1">
+                <def name="forceSkillId" val="1934"/>
+            </effect>
+        </for>
+        <triggers>
+            <trigger id="1934" level="1" type="ADD" chance="100">
+                <using skill="1934"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1934" levels="1" name="force tyuranta eura">
+        <set name="icon" val="icon.icon_yr"/>
+        <set name="auraSkillId" val="1933"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Eura_Aura" stackOrder="1">
+                <mul stat="regMp" order="0x30" val="1.5">
+                    <not>
+                        <player classId="142"/>
+                    </not>
+                </mul>
+                <def name="auraSkillId" val="1933"/>
+            </effect>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Eura_Aura" stackOrder="1">
+                <not>
+                    <player classId="142"/>
+                </not>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1935" levels="1" name="force feo">
+        <set name="icon" val="icon.icon_feoh"/>
+        <set name="class_level" val="5"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Feo_Aura" stackOrder="1">
+                <mul stat="mAtkSpd" order="0x30" val="1.01">
+                    <not>
+                        <player classId="143"/>
+                    </not>
+                </mul>
+            </effect>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Siegel_Aura" stackOrder="1">
+                <def name="forceSkillId" val="1936"/>
+            </effect>
+        </for>
+        <triggers>
+            <trigger id="1936" level="1" type="ADD" chance="100">
+                <using skill="1936"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1936" levels="1" name="force feo">
+        <set name="icon" val="icon.icon_feoh"/>
+        <set name="auraSkillId" val="1935"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Feo_Aura" stackOrder="1">
+                <mul stat="mAtkSpd" order="0x30" val="1.01">
+                    <not>
+                        <player classId="143"/>
+                    </not>
+                </mul>
+                <def name="auraSkillId" val="1935"/>
+            </effect>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Feo_Aura" stackOrder="1">
+                <not>
+                    <player classId="143"/>
+                </not>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1937" levels="1" name="Wynn Aura">
+        <set name="icon" val="icon.icon_wynn"/>
+        <set name="class_level" val="5"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Venio_Aura" stackOrder="1">
+                <mul stat="mpConsum" order="0x30" val="1.03">
+                    <not>
+                        <player classId="144"/>
+                    </not>
+                </mul>
+            </effect>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Siegel_Aura" stackOrder="1">
+                <def name="forceSkillId" val="1938"/>
+            </effect>
+        </for>
+        <triggers>
+            <trigger id="1938" level="1" type="ADD" chance="100">
+                <using skill="1938"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1938" levels="1" name="Wynn Force">
+        <set name="icon" val="icon.icon_wynn"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Venio_Aura" stackOrder="1">
+                <mul stat="mpConsum" order="0x30" val="1.03">
+                    <not>
+                        <player classId="144"/>
+                    </not>
+                </mul>
+                <def name="auraSkillId" val="1937"/>
+            </effect>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Venio_Aura" stackOrder="1">
+                <not>
+                    <player classId="144"/>
+                </not>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1939" levels="1" name="force algiza">
+        <set name="icon" val="icon.icon_eolh"/>
+        <set name="class_level" val="5"/>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="CONT"/>
+        <for>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Algiza_Aura" stackOrder="1">
+                <mul stat="mAtk" order="0x30" val="1.01">
+                    <not>
+                        <player classId="145"/>
+                    </not>
+                </mul>
+            </effect>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Siegel_Aura" stackOrder="1">
+                <def name="forceSkillId" val="1940"/>
+            </effect>
+        </for>
+        <triggers>
+            <trigger id="1940" level="1" type="ADD" chance="100">
+                <using skill="1940"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1940" levels="1" name="force algiza">
+        <set name="icon" val="icon.icon_eolh"/>
+        <set name="auraSkillId" val="1939"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="skillRadius" val="1000"/>
+        <set name="target" val="TARGET_PARTY"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <effect name="GiantForceAura" count="0x7fffffff" time="5" val="10" stackTypes="Algiza_Aura" stackOrder="1">
+                <mul stat="mAtk" order="0x30" val="1.01">
+                    <not>
+                        <player classId="145"/>
+                    </not>
+                </mul>
+                <def name="auraSkillId" val="1939"/>
+            </effect>
+            <effect name="PartyStrength" count="0x7fffffff" time="3" val="150" stackTypes="Algiza_Aura" stackOrder="1">
+                <not>
+                    <player classId="145"/>
+                </not>
+            </effect>
+        </for>
+    </skill>
+    <!--Inflicts consecutive attacks using a Demon's claws.-->
+    <skill id="1941" levels="1" name="Physical Nail Attack">
+        <set name="icon" val="icon.skill0539"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <!--Attacks nearby enemies with spread wings.-->
+    <skill id="1942" levels="1" name="Wing Storm">
+        <set name="icon" val="icon.skill0492"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <!--Attacks with spread wings. Strikes all in the target rush area.-->
+    <skill id="1943" levels="1" name="Wing Rush">
+        <set name="icon" val="icon.skill0540"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <!--Shoots a death arrow at the enemy.-->
+    <skill id="1944" levels="1" name="Death Arrow">
+        <set name="icon" val="icon.skill1431"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <!--Attack enemies at the front.-->
+    <skill id="1945" levels="1" name="Power Death Beam">
+        <set name="icon" val="icon.skill1471"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+    <skill id="1946" levels="1" name="Блокировать Силу Сигеля">
+        <set name="isAwakenedSkill" val="true"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+    </skill>
+    <!--Tyrr Momentum is not applied.-->
+    <skill id="1947" levels="1" name="Block Tyrr Force">
+        <set name="icon" val="icon.icon_tir"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+    </skill>
+    <!--Othell Momentum is not applied.-->
+    <skill id="1948" levels="1" name="Block Othell Force">
+        <set name="icon" val="icon.icon_othel"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+    </skill>
+    <!--Yul Momentum is not applied.-->
+    <skill id="1949" levels="1" name="Block Yul Force">
+        <set name="icon" val="icon.icon_yr"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+    </skill>
+    <!--Feoh Momentum is not applied.-->
+    <skill id="1950" levels="1" name="Block Feoh Force">
+        <set name="icon" val="icon.icon_feoh"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+    </skill>
+    <!--Iss Momentum is not applied.-->
+    <skill id="1951" levels="1" name="Block Iss Force">
+        <set name="icon" val="icon.icon_is"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+    </skill>
+    <!--Wynn Momentum is not applied.-->
+    <skill id="1952" levels="1" name="Block Wynn Force">
+        <set name="icon" val="icon.icon_wynn"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+    </skill>
+    <!--Aeore Momentum is not applied.-->
+    <skill id="1953" levels="1" name="Block Aeore Force">
+        <set name="icon" val="icon.icon_eolh"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+    </skill>
+    <skill id="1954" levels="1" name="Укрепление Тела в Полете">
+        <set name="npcId" val="13142"/>
+        <set name="hpConsume" val="200"/>
+        <set name="magicType" val="SPECIAL"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="TRANSFORMATION"/>
+        <set name="addSkills" val="619;1"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="isReuseDelayPermanent" val="true"/>
+        <set name="isSkillTimePermanent" val="true"/>
+        <for>
+            <effect name="Transformation" time="300" val="0">
+                <mul stat="pDef" order="0x30" val="0.7"/>
+                <mul stat="mDef" order="0x30" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <!--Increases party members' P. Atk. by 1%, M. Atk. by 1%, P. Critical Rate by 1%, Atk. Spd. by 1%, and Casting Spd. by 1%. Decreases physical and magic skill re-use time by 1%. Always includes Sigel and Aeore Force. When 4 or more forces are applied, the Party Solidarity effect is activated. When the number of forces applied increases, the Party Solidarity effect is raised.-->
+    <skill id="1955" levels="3" name="Party Solidarity">
+        <!--
+              Уровень: 1; Описание: Для членов группы: Физ. Атк. +1%, Маг. Атк. +1%, Шанс Физ. Крит. Атк. +1%, Скор. Атк. +1%, Скор. Маг. +1%. Время перезарядки физ./маг. умений -1%. Дает Силу Сигеля/Альгиза, активирует эффект сплочения группы при применении минимум 4 сил. А при использовании больше 4 сил увеличивает эффект сплочения группы.
+              Уровень: 2; Описание: Для членов группы: Физ. Атк. +5%, Маг. Атк. +5%, Шанс Физ. Крит. Атк. +2%, Скор. Атк. +2%, Скор. Маг. +2%. Время перезарядки физ./маг. Умений -2%. Дает Силу Сигеля/Альгиза, активирует эффект сплочения группы при применении минимум 4 сил. А при использовании больше 4 сил, увеличивает эффект сплочения группы.
+              Уровень: 3; Описание: Для членов группы: Физ. Атк. +13%, Маг. Атк. +13%, Шанс Физ. Крит. Атк. +4%, Скор. Атк. +4%, Скор. Маг. +4%. Время перезарядки физ./маг. умений -5%. Дает Силу Сигеля/Альгиза, активирует эффект сплочения группы при применении минимум 4 сил. А при использовании больше 4 сил, увеличивает эффект сплочения группы.
+          -->
+        <set name="reuseDelay" val="5000"/>
+        <set name="icon" val="icon.skill1955"/>
+        <table name="#pAtk">1.01 1.05 1.13</table>
+        <table name="#pCritRate">1.01 1.02 1.04</table>
+        <table name="#atkSpd">1.01 1.02 1.04</table>
+        <table name="#reuse">0.99 0.98 0.95</table>
+        <set name="operateType" val="OP_TOGGLE"/>
+        <set name="reuseDelay" val="5000"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="skillRadius" val="200"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="CONT"/>
+        <set name="magicLevel" val="85"/>
+        <for>
+            <effect count="1" name="Buff" time="-1">
+                <mul order="0x30" stat="pAtk" val="#pAtk"/>
+                <mul order="0x30" stat="pCritRate" val="#pCritRate"/>
+                <mul order="0x30" stat="pAtkSpd" val="#atkSpd"/>
+                <mul order="0x30" stat="mAtkSpd" val="#atkSpd"/>
+                <mul order="0x30" stat="mReuse" val="#reuse"/>
+                <mul order="0x30" stat="pReuse" val="#reuse"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1956" levels="4" name="">
+        <set name="icon" val="icon.skill0816"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="mpConsume2" val="0"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="1957" levels="4" name="">
+        <set name="icon" val="icon.skill0439"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="mpConsume2" val="0"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="1958" levels="4" name="">
+        <set name="icon" val="icon.skill0817"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="mpConsume2" val="0"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="1959" levels="4" name="">
+        <set name="icon" val="icon.skill0814"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="mpConsume2" val="0"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="1960" levels="4" name="">
+        <set name="icon" val="icon.skill1240"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="mpConsume2" val="0"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="1961" levels="4" name="">
+        <set name="icon" val="icon.skill0198"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <set name="mpConsume2" val="0"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="target" val="TARGET_NONE"/>
+    </skill>
+    <skill id="1962" levels="4" name="Двойной Класс - Увеличение Физ. Атк./Маг. Атк.">
+        <table name="#pAtk">1.03 1.06 1.09 1.12</table>
+        <table name="#mAtk">1.04 1.09 1.13 1.18</table>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <table name="#magicLevel">85 90 95 99</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <for>
+            <mul stat="pAtk" order="0x30" val="#pAtk"/>
+            <mul stat="mAtk" order="0x30" val="#mAtk"/>
+        </for>
+    </skill>
+    <skill id="1963" levels="4" name="Двойной Класс - Увеличение Физ. Защ./Маг. Защ.">
+        <table name="#pDef">1.03 1.06 1.09 1.12</table>
+        <table name="#mDef">1.04 1.09 1.13 1.18</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <table name="#magicLevel">85 90 95 99</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul stat="pDef" order="0x30" val="#pDef"/>
+            <mul stat="mDef" order="0x30" val="#mDef"/>
+        </for>
+    </skill>
+    <skill id="1964" levels="4" name="Двойной Класс - Увеличение скорость">
+        <table name="#pAtkSpd">1.03 1.06 1.09 1.12</table>
+        <table name="#mAtkSpd">1.04 1.09 1.13 1.18</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <table name="#magicLevel">85 90 95 99</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul stat="pAtkSpd" order="0x30" val="#pAtkSpd"/>
+            <mul stat="mAtkSpd" order="0x30" val="#mAtkSpd"/>
+        </for>
+    </skill>
+    <skill id="1965" levels="4" name="Двойной Класс - Увеличение Макс.">
+        <table name="#maxHp">1.06 1.12 1.18 1.24</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <table name="#magicLevel">85 90 95 99</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul stat="maxHp" order="0x30" val="#maxHp"/>
+        </for>
+    </skill>
+    <skill id="1966" levels="4" name="Двойной Класс - Увеличение Макс.">
+        <table name="#maxMp">1.06 1.12 1.18 1.24</table>
+        <table name="#magicLevel">85 90 95 99</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul stat="maxMp" order="0x30" val="#maxMp"/>
+        </for>
+    </skill>
+    <skill id="1967" levels="4" name="Двойной Класс - Увеличение Макс.">
+        <table name="#maxCp">1.06 1.12 1.18 1.24</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul stat="maxCp" order="0x30" val="#maxCp"/>
+        </for>
+    </skill>
+    <skill id="1968" levels="1" name="Двойной Класс - Поглощение НР">
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="absorbDam" val="5"/>
+        </for>
+    </skill>
+    <skill id="1969" levels="1" name="Двойной Класс - Поглощение MР">
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <triggers>
+            <trigger id="1995" level="1" type="ATTACK" chance="15">
+                <player damage="50;0"/>
+            </trigger>
+        </triggers>
+    </skill>
+    <skill id="1970" levels="1" name="Двойной Класс -Особая Физ. Атк.">
+        <table name="#pAtk">1.09</table>
+        <table name="#mDef">0.91</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul stat="pAtk" order="0x30" val="#pAtk"/>
+            <mul stat="mDef" order="0x30" val="#mDef"/>
+        </for>
+    </skill>
+    <skill id="1971" levels="1" name="Двойной Класс - Особая маг. Атк.">
+        <table name="#mAtk">1.13</table>
+        <table name="#mDef">0.91</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul stat="mAtk" order="0x30" val="#mAtk"/>
+            <mul stat="mDef" order="0x30" val="#mDef"/>
+        </for>
+    </skill>
+    <skill id="1972" levels="1" name="Двойной Класс - Шанс успешной Физ. Атк.">
+        <!-- доделать перебрать
+          Шанс успешной Физ. Атк. +20%, шанс успешной Физ. Защ. +20%-->
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="blowRate" val="1.2"/>
+        </for>
+        <skill id="1973" levels="1" name="Двойной Класс - Шанс успешной Псих. Атк.">
+            <!-- доделать перебрать
+           Шанс успешной Псих. Атк. +20%, шанс успешной Псих. Защ. +20%-->
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="magicLevel" val="85"/>
+            <set name="operateType" val="OP_PASSIVE"/>
+            <for>
+                <mul order="0x30" stat="blowRate" val="1.2"/>
+            </for>
+        </skill>
+        <skill id="1974" levels="1" name="Двойной Класс - Бешенство Берсерка">
+            <set name="magicLevel" val="85"/>
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="operateType" val="OP_PASSIVE"/>
+            <triggers>
+                <trigger id="1975" level="1" type="ATTACK" chance="15">
+                    <player damage="50;0"/>
+                </trigger>
+            </triggers>
+        </skill>
+        <skill id="1975" levels="1" name="Двойной Класс - Бешенство Берсерка">
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="magicLevel" val="85"/>
+            <set name="operateType" val="OP_ACTIVE"/>
+            <for>
+                <effect count="1" name="Buff" time="15" val="0">
+                    <mul order="0x30" stat="pAtk" val="1.27"/>
+                </effect>
+            </for>
+        </skill>
+        <skill id="1976" levels="1" name="Двойной Класс - Бешенство Мастера">
+            <set name="magicLevel" val="85"/>
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="operateType" val="OP_PASSIVE"/>
+            <triggers>
+                <trigger id="1977" level="1" type="ATTACK" chance="15">
+                    <player damage="50;0"/>
+                </trigger>
+            </triggers>
+        </skill>
+        <skill id="1977" levels="1" name="Двойной Класс - Бешенство Мастера">
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="magicLevel" val="85"/>
+            <set name="operateType" val="OP_ACTIVE"/>
+            <for>
+                <effect count="1" name="Buff" time="15" val="0">
+                    <mul order="0x30" stat="skillPower" val="1.27"/>
+                </effect>
+            </for>
+        </skill>
+        <skill id="1978" levels="1" name="Двойной Класс - Свет Защиты">
+            <table name="#pDef">1.03 1.06 1.09 1.12</table>
+            <table name="#mDef">1.04 1.09 1.13 1.18</table>
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="magicLevel" val="85"/>
+            <set name="operateType" val="OP_PASSIVE"/>
+            <triggers>
+                <trigger id="1979" level="1" type="RECEIVE_DAMAGE" chance="15">
+                    <player damage="50;0"/>
+                </trigger>
+            </triggers>
+        </skill>
+        <skill id="1979" levels="1" name="Двойной Класс - Свет Защиты">
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="magicLevel" val="85"/>
+            <set name="operateType" val="OP_ACTIVE"/>
+            <for>
+                <effect count="1" name="Buff" time="15" val="0">
+                    <mul order="0x30" stat="mDef" val="1.27"/>
+                </effect>
+            </for>
+        </skill>
+        <skill id="1980" levels="1" name="Двойной Класс - Свет Благословения">
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="magicLevel" val="85"/>
+            <set name="operateType" val="OP_PASSIVE"/>
+            <triggers>
+                <trigger id="1981" level="1" type="RECEIVE_DAMAGE" chance="15">
+                    <player damage="50;0"/>
+                </trigger>
+            </triggers>
+        </skill>
+        <skill id="1981" levels="1" name="Двойной Класс - Свет Благословения">
+            <table name="#Count">5</table>
+            <table name="#maxHeal">300</table>
+            <set name="magicLevel" val="#magicLevel"/>
+            <set name="target" val="TARGET_SELF"/>
+            <set name="skillType" val="BUFF"/>
+            <set name="operateType" val="OP_ACTIVE"/>
+            <for>
+                <effect count="#Count" name="CurseOfLifeFlow" stackOrder="-1" stackType="CurseOfLifeFlow" time="3"
+                        val="#maxHeal"/>
+            </for>
+        </skill>
+    </skill>
+    <skill id="1982" levels="1" name="Двойной Класс - Цепь Гигантов">
+        <set name="magicType" val="MAGIC"/>
+        <set name="magicLevel" val="85"/>
+        <set name="activateRate" val="50"/>
+        <set name="isDebuff" val="true"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MUTE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormal="MUTED" count="1" name="MutePhisycal" stackOrder="-1" stackType="Mute" time="5" val="0"/>
+        </for>
+    </skill>
+    <skill id="1983" levels="1" name="Двойной Класс - Цепь Гигантов">
+        <set name="magicType" val="MAGIC"/>
+        <set name="magicLevel" val="85"/>
+        <set name="activateRate" val="50"/>
+        <set name="isDebuff" val="true"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="MUTE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormal="MUTED" count="1" name="Mute" stackOrder="-1" stackType="Mute" time="5" val="0"/>
+        </for>
+    </skill>
+    <skill id="1984" levels="1" name="Двойной Класс - Оковы Гигантов">
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="DEBUFF"/>
+        <set name="activateRate" val="50"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Debuff" time="5" val="0">
+                <mul stat="runSpd" order="0x30" val="0.1"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1985" levels="1" name="Двойной Класс - Щит Гигантов">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect count="1" name="Buff" time="30" val="0">
+                <add order="0x40" stat="reflectDam" val="100"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="1986" levels="4" name="Двойной Класс -  Максимальное Здоровье">
+        <table name="#maxHp">463 972 1458 1926</table>
+        <table name="#magicLevel">85 90 95 99</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add stat="maxHp" order="0x40" val="#maxHp"/>
+        </for>
+    </skill>
+    <skill id="1987" levels="1" name="Лимит Доспеха Сигеля">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="0.5">
+                <or>
+                    <using armor="Magic"/>
+                    <using armor="Light"/>
+                </or>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" val="0.5">
+                <or>
+                    <using armor="Magic"/>
+                    <using armor="Light"/>
+                </or>
+            </mul>
+        </for>
+    </skill>
+    <skill id="1988" levels="1" name="Лимит Доспеха ">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="0.5">
+                <using armor="Magic"/>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" val="0.5">
+                <using armor="Magic"/>
+            </mul>
+        </for>
+    </skill>
+    <skill id="1989" levels="1" name="Лимит Доспеха">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="0.5">
+                <or>
+                    <using armor="Magic"/>
+                    <using armor="Heavy"/>
+                </or>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" val="0.5">
+                <or>
+                    <using armor="Magic"/>
+                    <using armor="Heavy"/>
+                </or>
+            </mul>
+        </for>
+    </skill>
+    <skill id="1990" levels="1" name="Лимит Доспеха">
+        <table name="#pDef">1.03 1.06 1.09 1.12</table>
+        <table name="#mDef">1.04 1.09 1.13 1.18</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="0.5">
+                <or>
+                    <using armor="Magic"/>
+                    <using armor="Heavy"/>
+                </or>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" val="0.5">
+                <or>
+                    <using armor="Magic"/>
+                    <using armor="Heavy"/>
+                </or>
+            </mul>
+        </for>
+    </skill>
+    <skill id="1991" levels="1" name="Лимит Доспеха">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="0.5">
+                <or>
+                    <using armor="Light"/>
+                    <using armor="Heavy"/>
+                </or>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" val="0.5">
+                <or>
+                    <using armor="Light"/>
+                    <using armor="Heavy"/>
+                </or>
+            </mul>
+        </for>
+    </skill>
+    <skill id="1992" levels="1" name="Лимит Доспеха">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="0.5">
+                <using armor="Heavy"/>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" val="0.5">
+                <using armor="Heavy"/>
+            </mul>
+        </for>
+    </skill>
+    <skill id="1993" levels="1" name="Лимит Доспеха">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for/>
+    </skill>
+    <skill id="1994" levels="1" name="Лимит Доспеха">
+        <table name="#pDef">1.03 1.06 1.09 1.12</table>
+        <table name="#mDef">1.04 1.09 1.13 1.18</table>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="magicLevel" val="85"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <mul order="0x30" stat="mAtkSpd" val="0.5">
+                <using armor="Heavy"/>
+            </mul>
+            <mul order="0x30" stat="pAtkSpd" val="0.5">
+                <using armor="Heavy"/>
+            </mul>
+        </for>
+    </skill>
+    <skill id="1995" levels="1" name="Двойной Класс - поглощение мр">
+        <!-- от болды -->
+        <set name="power" val="80"/>
+        <set name="magicLevel" val="85"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="MANAHEAL"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="1999" levels="1" name="Скилл донатора ур1">
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="pDef" val="2000"/>
+            <add order="0x40" stat="mDef" val="2000"/>
+            <add order="0x40" stat="pEvasionRate" val="250"/>
+            <add order="0x40" stat="mEvasionRate" val="350"/>
+        </for>
+    </skill>
+</list>

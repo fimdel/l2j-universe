@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+    <weapon id="22800" name="Посох Фреи - Одаренность" add_name="Магические Оковы">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_glacierin_i01"/>
+        <set name="weight" value="1080"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="S80"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="426"/>
+            <add stat="mAtk" order="0x10" value="281"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+        <triggers>
+            <trigger id="3577" level="2" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="20"/>
+        </triggers>
+    </weapon>
+    <weapon id="22801" name="Посох Фреи - Одаренность" add_name="Воодушевление">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_glacierin_i01"/>
+        <set name="weight" value="1080"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="S80"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3575" level="2"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="426"/>
+            <add stat="mAtk" order="0x10" value="281"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22802" name="Посох Фреи - Одаренность" add_name="Регенерация MP">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_glacierin_i01"/>
+        <set name="weight" value="1080"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="S80"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="426"/>
+            <add stat="mAtk" order="0x10" value="281"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22803" name="Посох Фреи - Одаренность { PvP }">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_glacierin_i00"/>
+        <set name="weight" value="1080"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="S80"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="426"/>
+            <add stat="mAtk" order="0x10" value="281"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22804" name="Посох Фреи - Одаренность { PvP }" add_name="Магические Оковы">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_glacierin_i01"/>
+        <set name="weight" value="1080"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="S80"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="426"/>
+            <add stat="mAtk" order="0x10" value="281"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+        <triggers>
+            <trigger id="3577" level="2" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="20"/>
+        </triggers>
+    </weapon>
+    <weapon id="22805" name="Посох Фреи - Одаренность { PvP }" add_name="Воодушевление">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_glacierin_i01"/>
+        <set name="weight" value="1080"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="S80"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3575" level="2"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="426"/>
+            <add stat="mAtk" order="0x10" value="281"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22806" name="Посох Фреи - Одаренность { PvP }" add_name="Регенерация MP">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_glacierin_i01"/>
+        <set name="weight" value="1080"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="BLUNT"/>
+        <set name="crystal_type" value="S80"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="426"/>
+            <add stat="mAtk" order="0x10" value="281"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22807" name="Коготь Спасии">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_spacia_claw_i00"/>
+        <set name="weight" value="1550"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="crystal_type" value="R"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="595"/>
+            <add stat="mAtk" order="0x10" value="226"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22808" name="Коготь Спасии" add_name="Фокусировка">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_spacia_claw_i01"/>
+        <set name="weight" value="1550"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="crystal_type" value="R"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8289" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="595"/>
+            <add stat="mAtk" order="0x10" value="226"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22809" name="Коготь Спасии" add_name="Увеличение Урона">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_spacia_claw_i01"/>
+        <set name="weight" value="1550"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="crystal_type" value="R"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="595"/>
+            <add stat="mAtk" order="0x10" value="226"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22810" name="Коготь Спасии" add_name="Ускорение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_spacia_claw_i01"/>
+        <set name="weight" value="1550"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="crystal_type" value="R"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8297" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="595"/>
+            <add stat="mAtk" order="0x10" value="226"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22811" name="Коготь Спасии" add_name="Фокусировка + Увеличение Урона">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_spacia_claw_i01"/>
+        <set name="weight" value="1550"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="crystal_type" value="R"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8289" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="595"/>
+            <add stat="mAtk" order="0x10" value="226"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22812" name="Коготь Спасии" add_name="Увеличение Урона + Ускорение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_spacia_claw_i01"/>
+        <set name="weight" value="1550"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="crystal_type" value="R"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8297" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="595"/>
+            <add stat="mAtk" order="0x10" value="226"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22813" name="Коготь Спасии" add_name="Ускорение + Фокусировка">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_spacia_claw_i01"/>
+        <set name="weight" value="1550"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALFIST"/>
+        <set name="crystal_type" value="R"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8297" level="1"/>
+            <skill id="8289" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="595"/>
+            <add stat="mAtk" order="0x10" value="226"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22814" name="Буревестник Меллисы">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_melisa_stormer_i00"/>
+        <set name="weight" value="2010"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="POLE"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="567"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22815" name="Буревестник Меллисы" add_name="Поглощение HP">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_melisa_stormer_i01"/>
+        <set name="weight" value="2010"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="POLE"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3602" level="10"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="567"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22816" name="Буревестник Меллисы" add_name="Наведение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_melisa_stormer_i01"/>
+        <set name="weight" value="2010"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="POLE"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3008" level="6"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="567"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22817" name="Буревестник Меллисы" add_name="Увеличение Урона">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_melisa_stormer_i01"/>
+        <set name="weight" value="2010"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="POLE"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="567"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22818" name="Буревестник Меллисы" add_name="Поглощение HP + Наведение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_melisa_stormer_i01"/>
+        <set name="weight" value="2010"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="POLE"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3602" level="10"/>
+            <skill id="3008" level="6"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="567"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22819" name="Буревестник Меллисы" add_name="Наведение + Увеличение Урона">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_melisa_stormer_i01"/>
+        <set name="weight" value="2010"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="POLE"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3008" level="6"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="567"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22820" name="Буревестник Меллисы" add_name="Увеличение Урона + Поглощение HP">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_melisa_stormer_i01"/>
+        <set name="weight" value="2010"/>
+        <set name="rnd_dam" value="10"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="POLE"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3602" level="10"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="567"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="80"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22821" name="Кинжал Стерегоса">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_dainsleif_i00"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DAGGER"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="496"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <add stat="pAccuracyCombat" order="0x10" value="-4.0"/>
+            <set stat="pCritBase" order="0x08" value="120"/>
+            <set stat="atkBaseSpeed" order="0x08" value="433"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22822" name="Кинжал Стерегоса" add_name="Наведение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_dainsleif_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DAGGER"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3008" level="6"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="496"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <add stat="pAccuracyCombat" order="0x10" value="-4.0"/>
+            <set stat="pCritBase" order="0x08" value="120"/>
+            <set stat="atkBaseSpeed" order="0x08" value="433"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22823" name="Кинжал Стерегоса" add_name="Ускорение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_dainsleif_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DAGGER"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8297" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="496"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <add stat="pAccuracyCombat" order="0x10" value="-4.0"/>
+            <set stat="pCritBase" order="0x08" value="120"/>
+            <set stat="atkBaseSpeed" order="0x08" value="433"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22824" name="Кинжал Стерегоса" add_name="Фокусировка">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_dainsleif_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DAGGER"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8289" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="496"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <add stat="pAccuracyCombat" order="0x10" value="-4.0"/>
+            <set stat="pCritBase" order="0x08" value="120"/>
+            <set stat="atkBaseSpeed" order="0x08" value="433"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22825" name="Кинжал Стерегоса" add_name="Наведение + Ускорение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_dainsleif_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DAGGER"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3008" level="6"/>
+            <skill id="8297" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="496"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <add stat="pAccuracyCombat" order="0x10" value="-4.0"/>
+            <set stat="pCritBase" order="0x08" value="120"/>
+            <set stat="atkBaseSpeed" order="0x08" value="433"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22826" name="Кинжал Стерегоса" add_name="Ускорение + Фокусировка">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_dainsleif_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DAGGER"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8297" level="1"/>
+            <skill id="8289" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="496"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <add stat="pAccuracyCombat" order="0x10" value="-4.0"/>
+            <set stat="pCritBase" order="0x08" value="120"/>
+            <set stat="atkBaseSpeed" order="0x08" value="433"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22827" name="Кинжал Стерегоса" add_name="Фокусировка + Наведение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_dainsleif_i01"/>
+        <set name="weight" value="1520"/>
+        <set name="rnd_dam" value="5"/>
+        <equip>
+            <slot id="RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DAGGER"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8289" level="1"/>
+            <skill id="3008" level="6"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="496"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <add stat="pAccuracyCombat" order="0x10" value="-4.0"/>
+            <set stat="pCritBase" order="0x08" value="120"/>
+            <set stat="atkBaseSpeed" order="0x08" value="433"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22828" name="Парные Дубины Фрона">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_urukmash_i00"/>
+        <set name="weight" value="1740"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALBLUNT"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="690"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22829" name="Парные Дубины Фрона" add_name="Фокусировка">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_urukmash_i01"/>
+        <set name="weight" value="1740"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALBLUNT"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8289" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="690"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22830" name="Парные Дубины Фрона" add_name="Наведение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_urukmash_i01"/>
+        <set name="weight" value="1740"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALBLUNT"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3008" level="6"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="690"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22831" name="Парные Дубины Фрона" add_name="Увеличение Урона">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_urukmash_i01"/>
+        <set name="weight" value="1740"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALBLUNT"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <for>
+            <add stat="pAtk" order="0x10" value="690"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22832" name="Парные Дубины Фрона" add_name="Фокусировка + Наведение">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_urukmash_i01"/>
+        <set name="weight" value="1740"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALBLUNT"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8289" level="1"/>
+            <skill id="3008" level="6"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="690"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22833" name="Парные Дубины Фрона" add_name="Наведение + Увеличение Урона">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_urukmash_i01"/>
+        <set name="weight" value="1740"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALBLUNT"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="3008" level="6"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="690"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+    <weapon id="22834" name="Парные Дубины Фрона" add_name="Увеличение Урона + Фокусировка">
+        <!--Copyright Mazaffaka Project (c) 2012-->
+        <set name="icon" value="BranchSys3.Icon.g_urukmash_i01"/>
+        <set name="weight" value="1740"/>
+        <set name="rnd_dam" value="20"/>
+        <equip>
+            <slot id="LEFT_RIGHT_HAND"/>
+        </equip>
+        <set name="type" value="DUALBLUNT"/>
+        <set name="crystal_type" value="R95"/>
+        <set name="crystal_count" value="3562"/>
+        <set name="soulshots" value="1"/>
+        <set name="spiritshots" value="1"/>
+        <skills>
+            <skill id="8289" level="1"/>
+        </skills>
+        <for>
+            <add stat="pAtk" order="0x10" value="690"/>
+            <add stat="mAtk" order="0x10" value="275"/>
+            <set stat="pCritBase" order="0x08" value="40"/>
+            <set stat="atkBaseSpeed" order="0x08" value="325"/>
+            <enchant stat="pAtk" order="0x0C" value="0"/>
+            <enchant stat="mAtk" order="0x0C" value="0"/>
+        </for>
+    </weapon>
+</list>

@@ -1,0 +1,45 @@
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!ELEMENT list (enchant_scroll|appearance_stone|life_stone|attribute_stone)*>
+        <!ELEMENT enchant_scroll (item_list)*>
+        <!ATTLIST enchant_scroll
+                chance CDATA #IMPLIED
+                grade CDATA #IMPLIED
+                id CDATA #REQUIRED
+                max CDATA #IMPLIED
+                min CDATA #IMPLIED
+                safe CDATA #IMPLIED
+                target CDATA #IMPLIED
+                type CDATA #IMPLIED>
+        <!ELEMENT item_list (item)*>
+        <!ELEMENT item (#PCDATA)>
+        <!ATTLIST item
+                id CDATA #REQUIRED>
+        <!ELEMENT appearance_stone (#PCDATA)>
+        <!ATTLIST appearance_stone
+                cost CDATA #IMPLIED
+                extract_id CDATA #IMPLIED
+                grade CDATA #IMPLIED
+                id CDATA #REQUIRED
+                item_type CDATA #IMPLIED
+                shifting_type CDATA #REQUIRED
+                target_type CDATA #REQUIRED>
+        <!ELEMENT life_stone (#PCDATA)>
+        <!ATTLIST life_stone
+                grade CDATA #REQUIRED
+                id CDATA #REQUIRED
+                level CDATA #REQUIRED>
+        <!ELEMENT attribute_stone (#PCDATA)>
+        <!ATTLIST attribute_stone
+                chance CDATA #REQUIRED
+                element CDATA #REQUIRED
+                id CDATA #REQUIRED
+                inc_arm CDATA #REQUIRED
+                inc_weap CDATA #REQUIRED
+                inc_weap_arm CDATA #REQUIRED
+                max_arm CDATA #REQUIRED
+                max_weap CDATA #REQUIRED
+                min_arm CDATA #REQUIRED
+                min_weap CDATA #REQUIRED>

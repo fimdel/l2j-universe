@@ -1,0 +1,35 @@
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="241" name="Talking Island - Last" maxChannels="1" collapseIfEmpty="10" timelimit="60">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="85" max="99"/>
+        <party min="1" max="1"/>
+        <return loc="-113656 246040 -1864 52800"/>
+        <teleport loc="210808 13432 -3748 52800"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <reuse resetReuse="1 15 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+        <spawns>
+            <spawn mobId="33748" type="point">
+                <coords loc="210584 13256 -3754 0"/>
+            </spawn>
+            <!-- Darin -->
+            <spawn mobId="33749" type="point">
+                <coords loc="210312 13768 -3754 0"/>
+            </spawn>
+            <!-- Roxxy -->
+            <spawn mobId="30031" type="point">
+                <coords loc="210344 16024 -3748 0"/>
+            </spawn>
+            <!-- Biotin -->
+        </spawns>
+        <zones>
+            <zone name="[Q10385_EXIT_1]" active="true"/>
+            <zone name="[Q10385_EXIT_2]" active="true"/>
+        </zones>
+    </instance>
+</list>

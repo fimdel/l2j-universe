@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="14100" levels="6" name="Мощный Удар Лапой Рачиха">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+			Уровень: 4; Описание: a,none
+			Уровень: 5; Описание: a,none
+			Уровень: 6; Описание: a,none
+		-->
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14101" levels="4" name="Сокрушительный Удар Дерева">
+		<!--
+			Уровень: 1; Описание: Скорость снижена на 2%.
+			Уровень: 2; Описание: Скорость снижена на 2%.
+			Уровень: 3; Описание: Скорость снижена на 2%.
+			Уровень: 4; Описание: Скорость снижена на 2%.
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="abnormal_time" val="15"/>
+		<set name="abnormal_level" val="2"/>
+		<set name="abnormal_type" val="speed_down"/>
+		<set name="icon" val="icon.skill1160"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14102" levels="1" name="Демонстрация Агатиона – Фея Магмельд">
+		<!--
+			Уровень: 1; Описание: Можно увидеть ласку призванной элементали.
+		-->
+		<set name="hitTime" val="3000"/>
+		<set name="magicLevel" val="85"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill_agathion_cute"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14103" levels="1" name="Возвращение Агатиона - Фея Магмельд">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="1800000"/>
+		<set name="hitTime" val="15000"/>
+		<set name="magicLevel" val="1"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14104" levels="1" name="Перевоплощение - Проклятие Орбиса">
+		<!--
+			Уровень: 1; Описание: Перевоплотились по проклятию Орбиса.
+		-->
+		<set name="abnormal_time" val="460"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="transform"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skilltransform3"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="p_block_buff_slot">
+				<def name="abnormal_types" val="improve_speed_avoid_up;speed_up"/>
+			</effect>
+			<effect name="i_dispel_by_slot" time="0">
+				<def name="abnormal_type" val="changebody"/>
+				<def name="max_abnormal_level" val="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot" time="0">
+				<def name="abnormal_type" val="turn_stone"/>
+				<def name="max_abnormal_level" val="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot" time="0">
+				<def name="abnormal_type" val="buff_special_multi"/>
+				<def name="max_abnormal_level" val="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot_probability" time="0">
+				<def name="abnormal_type" val="improve_speed_avoid_up"/>
+				<def name="dispel_chance" val="100"/>
+			</effect>
+			<effect name="i_dispel_by_slot_probability" time="0">
+				<def name="abnormal_type" val="speed_up"/>
+				<def name="dispel_chance" val="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="14105" levels="6" name="Завывание">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+			Уровень: 4; Описание: a,none
+			Уровень: 5; Описание: a,none
+			Уровень: 6; Описание: a,none
+		-->
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="abnormal_time" val="15"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="hit_down"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0412"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14106" levels="1" name="Восстановление">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="3500"/>
+		<set name="magicLevel" val="88"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1258"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14107" levels="1" name="Безумство">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="3500"/>
+		<set name="abnormal_time" val="1200"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="berserker"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1062"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14108" levels="6" name="Шар Рачиха">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+			Уровень: 4; Описание: a,none
+			Уровень: 5; Описание: a,none
+			Уровень: 6; Описание: a,none
+		-->
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1230"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14109" levels="6" name="Луч Рачиха">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+			Уровень: 4; Описание: a,none
+			Уровень: 5; Описание: a,none
+			Уровень: 6; Описание: a,none
+		-->
+		<table name="#magicLevel">85 86 87 88 89 90</table>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="7500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1230"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14110" levels="1" name="Выпад Траджана">
+		<!--
+			Уровень: 1; Описание: Отсутствие брони. Физ. Защ и Маг. Защ. - 1%, дополнительно уменьшает Физ. Защ. и Маг. Защ. на 5, Уклонение на 4. Скапливается при последовательном получении ударов.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="3750"/>
+		<set name="abnormal_time" val="20"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="absorb"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1230"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14111" levels="1" name="Массовая Атака Траджана">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="3750"/>
+		<set name="magicLevel" val="90"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1230"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14112" levels="2" name="Яд Траджана">
+		<!--
+			Уровень: 1; Описание: Отравлены.
+			Уровень: 2; Описание: Отравлены.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="3750"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="20"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="poison"/>
+		<set name="magicLevel" val="90"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14113" levels="1" name="Заражение Траджана">
+		<!--
+			Уровень: 1; Описание: Отравлены.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="20"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="poison"/>
+		<set name="magicLevel" val="90"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14114" levels="1" name="Физ. Устойчивость Траджана">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.skill0322"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14115" levels="1" name="Маг. Устойчивость Траджана">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.skill0322"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14116" levels="1" name="Бешенство Траджана">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.skill1062"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14117" levels="5" name="Усиление Подземного Жука">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+			Уровень: 4; Описание: a,none
+			Уровень: 5; Описание: a,none
+		-->
+		<table name="#abnormal_level">1 2 3 4 5</table>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="300"/>
+		<set name="abnormal_level" val="#abnormal_level"/>
+		<set name="abnormal_type" val="attack_time_down"/>
+		<set name="magicLevel" val="90"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14118" levels="1" name="Усиление Защиты Подземного Жука">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="abnormal_time" val="300"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="pd_up_special"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0322"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14119" levels="1" name="Самоуничтожение Подземного Червя">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="5000"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="5"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="poison"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14120" levels="3" name="Усиление">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#abnormal_level">1 2 3</table>
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="500"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="300"/>
+		<set name="abnormal_level" val="#abnormal_level"/>
+		<set name="abnormal_type" val="ma_up"/>
+		<set name="magicLevel" val="90"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1059"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14121" levels="1" name="Эссенция Разбойника Одала">
+		<!--
+			Уровень: 1; Описание: Скорость увеличена на 1%.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14122" levels="1" name="Эссенция Воина Тира">
+		<!--
+			Уровень: 1; Описание: Физ. Атк. увеличена на 1%.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14123" levels="1" name="Эссенция Волшебника Фео">
+		<!--
+			Уровень: 1; Описание: Маг. Атк. увеличена на 1%.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14124" levels="1" name="Эссенция Заклинателя Иса">
+		<!--
+			Уровень: 1; Описание: Маг. Крит. Удар увеличен на 1%.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14125" levels="1" name="Эссенция Призывателя Веньо">
+		<!--
+			Уровень: 1; Описание: Крит. Удар увеличен на 1%.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14126" levels="1" name="Эссенция Рыцаря Сигеля">
+		<!--
+			Уровень: 1; Описание: Физ. Защ. увеличена на 1%.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14127" levels="1" name="Эссенция Лучника Эура">
+		<!--
+			Уровень: 1; Описание: Скор. Атк. увеличена на 1%.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14128" levels="1" name="Эссенция Целителя Альгиза">
+		<!--
+			Уровень: 1; Описание: Скор. Маг. увеличена на 1%.
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14129" levels="1" name="Усиление Умения">
+		<!--
+			Уровень: 1; Описание: Прирост Умения
+		-->
+		<set name="reuseDelay" val="2000"/>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="600"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="public_slot"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1536"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14130" levels="3" name="Круг Призрака">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14131" levels="3" name="Атака Призрака">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="3000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14132" levels="3" name="Пятно Проклятия">
+		<!--
+			Уровень: 1; Описание: Отравлены.
+			Уровень: 2; Описание: Отравлены.
+			Уровень: 3; Описание: Отравлены.
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="3000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="20"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="poison"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14133" levels="3" name="Крик Проклятия">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1230"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14134" levels="3" name="Атака Изгнания">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14135" levels="3" name="Клинок Изгнания">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14136" levels="3" name="Отсчет Тьмы">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="3000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14137" levels="3" name="Кровавый Пир">
+		<!--
+			Уровень: 1; Описание: Отравлены.
+			Уровень: 2; Описание: Отравлены.
+			Уровень: 3; Описание: Отравлены.
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="20"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="poison"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14138" levels="3" name="Темный Мститель">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="7000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14139" levels="1" name="Телепорт">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="hitTime" val="3000"/>
+		<set name="magicLevel" val="92"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1050"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14140" levels="3" name="Замедление">
+		<!--
+			Уровень: 1; Описание: Снижена Скорость.
+			Уровень: 2; Описание: Снижена Скорость.
+			Уровень: 3; Описание: Снижена Скорость.
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_time" val="30"/>
+		<set name="abnormal_level" val="3"/>
+		<set name="abnormal_type" val="speed_down"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1160"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14141" levels="3" name="Усыпление">
+		<!--
+			Уровень: 1; Описание: Усыплены.
+			Уровень: 2; Описание: Усыплены.
+			Уровень: 3; Описание: Усыплены.
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_effect" val="SLEEP"/>
+		<set name="abnormal_time" val="30"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="sleep"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1069"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14142" levels="3" name="Страх">
+		<!--
+			Уровень: 1; Описание: В состоянии страха.
+			Уровень: 2; Описание: В состоянии страха.
+			Уровень: 3; Описание: В состоянии страха.
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="hitTime" val="10000"/>
+		<set name="abnormal_effect" val="AFFRAID"/>
+		<set name="abnormal_time" val="30"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="AFFRAID"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1169"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14143" levels="3" name="Атака Меча Изгнания">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14144" levels="3" name="Клинок Меча Изгнания">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14145" levels="3" name="Оковы Крови">
+		<!--
+			Уровень: 1; Описание: Снижена Скорость.
+			Уровень: 2; Описание: Снижена Скорость.
+			Уровень: 3; Описание: Снижена Скорость.
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="abnormal_time" val="5"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="speed_down"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1160"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14146" levels="3" name="Воля Крови">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14147" levels="3" name="Подчинение Изгнания">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="6000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14148" levels="3" name="Круг Изгнания">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14149" levels="3" name="Звук Ветра">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0793"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14150" levels="3" name="Пространственная Волна">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="8000"/>
+		<set name="hitTime" val="4000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14151" levels="3" name="Бросок Неба">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="magicLevel" val="92"/>
+		<set name="icon" val="icon.skill0493"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14152" levels="3" name="Крик Разрушения">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="7000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill1230"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14153" levels="3" name="Воздушная Бомба">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0493"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14154" levels="3" name="Содрогающий Землю Крик">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14155" levels="3" name="Дрожь">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+		-->
+		<table name="#magicLevel">92 93 94</table>
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="14156" levels="1" name="Snake">
+        <!--  Automatically generated from The High Five: Part 4.5 client files.
+            Description: none
+            Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+            created 07-7-2011  19:19
+          -->
+        <set name="icon" val="icon.skill0006"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14157" levels="1" name="Long Snake">
+        <!--  Automatically generated from The High Five: Part 4.5 client files.
+            Description: none
+            Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+            created 07-7-2011  19:19
+          -->
+        <set name="icon" val="icon.skill0006"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14158" levels="1" name="Crawler Spear">
+        <!--  Automatically generated from The High Five: Part 4.5 client files.
+            Description: none
+            Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+            created 07-7-2011  19:19
+          -->
+        <set name="icon" val="icon.skill0006"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+	<skill id="14159" levels="1" name="Удар Кулака">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="magicLevel" val="10"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14160" levels="1" name="Взмах Кулака">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="magicLevel" val="10"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14161" levels="1" name="Глубокая Рана">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="magicLevel" val="14"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14162" levels="1" name="Удар Хлыстом">
+		<!--
+			Уровень: 1; Описание: Снижена Скорость.
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="abnormal_time" val="30"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="speed_down"/>
+		<set name="magicLevel" val="16"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1160"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14163" levels="1" name="Вой">
+		<!--
+			Уровень: 1; Описание: Снижена Физ. Атк.
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="abnormal_time" val="30"/>
+		<set name="abnormal_level" val="3"/>
+		<set name="abnormal_type" val="pa_down"/>
+		<set name="magicLevel" val="16"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0115"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="14164" levels="1" name="Akain Jet">
+        <!--  Automatically generated from The High Five: Part 4.5 client files.
+            Description: none
+            Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+            created 07-7-2011  19:19
+          -->
+        <set name="icon" val="icon.skill1275"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14165" levels="1" name="Akain Burst">
+        <!--  Automatically generated from The High Five: Part 4.5 client files.
+            Description: none
+            Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+            created 07-7-2011  19:19
+          -->
+        <set name="icon" val="icon.skill1275"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+	<skill id="14166" levels="1" name="Гусеница">
+		<!--
+			Уровень: 1; Описание: Отравлены.
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2500"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="20"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="poison"/>
+		<set name="magicLevel" val="14"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="14167" levels="1" name="Black Powder">
+        <!--  Automatically generated from The High Five: Part 4.5 client files.
+            Description: none
+            Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+            created 07-7-2011  19:19
+          -->
+        <set name="icon" val="icon.skill0006"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14168" levels="1" name="Throw Granade">
+        <!--  Automatically generated from The High Five: Part 4.5 client files.
+            Description: none
+            Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+            created 07-7-2011  19:19
+          -->
+        <set name="icon" val="icon.skill1275"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+	<skill id="14169" levels="1" name="Грязный Бой">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="18"/>
+		<set name="icon" val="icon.skill0006"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14170" levels="1" name="Цепляющая Сеть">
+		<!--
+			Уровень: 1; Описание: Снижена Скорость.
+		-->
+		<set name="hitTime" val="1500"/>
+		<set name="abnormal_time" val="30"/>
+		<set name="abnormal_level" val="3"/>
+		<set name="abnormal_type" val="speed_down"/>
+		<set name="magicLevel" val="18"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1160"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14171" levels="1" name="Устойчивый Выстрел">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="18"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1275"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="14172" levels="1" name="Ray of Pain">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="power" val="50"/>
+        <effect name="Debuff" count="1" time="30" val="0">
+            <mul order="0x30" stat="pAtkSpd" val="0.85"/>
+            <!-- TODO: Значение с потолка -->
+        </effect>
+    </skill>
+	<skill id="14173" levels="1" name="Штурм">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="20"/>
+		<set name="icon" val="icon.skill0484"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="14174" levels="1" name="Black Powder Eruption">
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="PDAM"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <!-- TODO: Данные с потолка -->
+        <set name="power" val="50"/>
+    </skill>
+	<skill id="14175" levels="1" name="Выстрел Пушки">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="hitTime" val="2500"/>
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14176" levels="1" name="Уничтожение Призрака">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="hitTime" val="10000"/>
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14177" levels="1" name="Уничтожение Призрака">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="hitTime" val="10000"/>
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14178" levels="1" name="Уничтожение Призрака">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="hitTime" val="10000"/>
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14179" levels="1" name="Водяная Пушка Цитадели">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="500"/>
+		<set name="hitTime" val="500"/>
+		<set name="abnormal_time" val="1"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="knockdown"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14180" levels="1" name="Паровая Ловушка">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="1000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="96"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14181" levels="1" name="Паровая Ловушка">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="1000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="magicLevel" val="96"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14182" levels="1" name="Атака Подземного Жука">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14183" levels="1" name="Атака Подземного Жука">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14184" levels="1" name="Выпад Подземного Жука">
+		<!--
+			Уровень: 1; Описание: Отсутствие брони. Физ. Защ и Маг. Защ. - 1%, дополнительно уменьшает Физ. Защ. и Маг. Защ. на 5, Уклонение на 4. Скапливается при последовательном получении ударов.
+		-->
+		<set name="reuseDelay" val="5000"/>
+		<set name="hitTime" val="1500"/>
+		<set name="abnormal_time" val="20"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="absorb"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14185" levels="1" name="Сон Розы">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="hitTime" val="100"/>
+		<set name="abnormal_time" val="30"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="pa_pd_up"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1389"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14186" levels="1" name="Уровень Феи">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="reuseDelay" val="5400000"/>
+		<set name="hitTime" val="15000"/>
+		<set name="magicLevel" val="90"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="14187" levels="1" name="Magmeld Teleport">
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="isSkillTimePermanent" val="true"/>
+		<set name="townId" val="23"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="RECALL"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<cond msgId="2292">
+			<player agathion="16080"/>
+		</cond>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</skill>
+	<skill id="14188" levels="1" name="Яд Подземного Жука">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="hitTime" val="10000"/>
+		<set name="magicLevel" val="90"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14189" levels="1" name="Замедление Феи">
+		<!--
+			Уровень: 1; Описание: Скорость снижена на 3%.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="300"/>
+		<set name="hitTime" val="1200"/>
+		<set name="abnormal_time" val="30"/>
+		<set name="abnormal_level" val="3"/>
+		<set name="abnormal_type" val="speed_down"/>
+		<set name="magicLevel" val="95"/>
+		<set name="icon" val="icon.skill0354"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="14190" levels="1" name="Неуязвимость">
+        <set name="icon" val="icon.skill0000"/>
+        <set name="magicLevel" val="87"/>
+        <set name="magicType" val="MAGIC"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormal="INVUL2" count="1" name="Invulnerable" stackOrder="-1" stackType="Invulnerable"
+                    time="10800" val="0"/>
+        </for>
+    </skill>
+	<skill id="14191" levels="1" name="Отмена Неуязвимости">
+		<!--
+			Уровень: 1; Описание: a,none
+		-->
+		<set name="hitTime" val="500"/>
+		<set name="magicLevel" val="95"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="i_dispel_by_slot" time="0">
+				<def name="abnormal_type" val="pd_up_special"/>
+				<def name="max_abnormal_level" val="10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="14192" levels="1" name="Окаменение">
+		<!--
+			Уровень: 1; Описание: Окаменели.
+		-->
+		<set name="hitTime" val="500"/>
+		<set name="abnormal_effect" val="HOLD2"/>
+		<set name="abnormal_time" val="15"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="turn_stone"/>
+		<set name="magicLevel" val="95"/>
+		<set name="icon" val="icon.skill1540"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14193" levels="1" name="Колючий Щит">
+		<!--
+			Уровень: 1; Описание: Возвращается 1% урона.
+		-->
+		<set name="hitTime" val="500"/>
+		<set name="abnormal_time" val="60"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="dmg_shield"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill0086"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14194" levels="1" name="Массовое Оглушение">
+		<!--
+			Уровень: 1; Описание: Оглушены.
+		-->
+		<set name="hitTime" val="3000"/>
+		<set name="abnormal_effect" val="STUN"/>
+		<set name="abnormal_time" val="10"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="stun"/>
+		<set name="magicLevel" val="95"/>
+		<set name="icon" val="icon.skill0048"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14195" levels="1" name="Массовая Магия Огня">
+		<!--
+			Уровень: 1; Описание: Состояние Пламени.
+		-->
+		<set name="hitTime" val="3000"/>
+		<set name="abnormal_effect" val="BLEEDING"/>
+		<set name="abnormal_time" val="15"/>
+		<set name="abnormal_level" val="3"/>
+		<set name="abnormal_type" val="dot_attr"/>
+		<set name="magicLevel" val="95"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1107"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14196" levels="1" name="Растлевающая Тьма">
+		<!--
+			Уровень: 1; Описание: Преображает окружающее пространство.
+		-->
+		<set name="hitTime" val="3000"/>
+		<set name="abnormal_time" val="15"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="transform"/>
+		<set name="icon" val="icon.skilltransform1"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="i_dispel_by_slot" time="0">
+				<def name="abnormal_type" val="changebody"/>
+				<def name="max_abnormal_level" val="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot" time="0">
+				<def name="abnormal_type" val="turn_stone"/>
+				<def name="max_abnormal_level" val="-1"/>
+			</effect>
+			<effect name="i_dispel_by_slot" time="0">
+				<def name="abnormal_type" val="buff_special_multi"/>
+				<def name="max_abnormal_level" val="-1"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="14197" levels="1" name="Зона Огня">
+		<!--
+			Уровень: 1; Описание: Отравлены.
+		-->
+		<set name="hitTime" val="500"/>
+		<set name="abnormal_effect" val="POISON"/>
+		<set name="abnormal_time" val="5"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="dot_attr"/>
+		<set name="magicLevel" val="95"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14198" levels="1" name="Урон Водной Пушки">
+		<!--
+			Уровень: 1; Описание: Водная Пушка.
+		-->
+		<set name="reuseDelay" val="500"/>
+		<set name="hitTime" val="500"/>
+		<set name="abnormal_time" val="1"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="knockdown"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="14199" levels="6" name="Напряжение Сада">
+		<!--
+			Уровень: 1; Описание: a,none
+			Уровень: 2; Описание: a,none
+			Уровень: 3; Описание: a,none
+			Уровень: 4; Описание: a,none
+			Уровень: 5; Описание: a,none
+			Уровень: 6; Описание: a,none
+		-->
+		<set name="hitTime" val="1500"/>
+		<set name="abnormal_time" val="1"/>
+		<set name="abnormal_level" val="1"/>
+		<set name="abnormal_type" val="knockdown"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

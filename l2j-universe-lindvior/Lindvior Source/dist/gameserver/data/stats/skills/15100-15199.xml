@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="15100" levels="1" name="Благословение Благородства">
+		<!--
+			Уровень: 1; Описание: В течение 6 часов даже после смерти героя Положительный/Отрицательный эффект не исчезают.
+		-->
+		<set name="hitTime" val="100"/>
+		<set name="icon" val="icon.skill1323"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15101" levels="1" name="Свет Исцеления">
+		<!--
+			Уровень: 1; Описание: Восстанавливает HP цели. При заполнении шкалы HP восстанавливает CP. Мощность 1488.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11755"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15102" levels="1" name="Свет Исцеления">
+		<!--
+			Уровень: 1; Описание: Восстанавливает HP цели. При заполнении шкалы HP восстанавливает CP. Мощность 1519.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11755"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15103" levels="1" name="Свет Исцеления">
+		<!--
+			Уровень: 1; Описание: Восстанавливает HP цели. При заполнении шкалы HP восстанавливает CP. Мощность 1557.
+		-->
+		<set name="reuseDelay" val="3000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11755"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15104" levels="1" name="Пространственная Западня">
+		<!--
+			Уровень: 1; Описание: Удерживает цель на месте. Время действия: 3 сек.
+		-->
+		<set name="reuseDelay" val="30000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill11561"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15105" levels="1" name="Таинственная Тень">
+		<!--
+			Уровень: 1; Описание: На 3 секунд персонаж сливается с местностью и становится невидимым. Скорость уменьшается на 3%..
+		-->
+		<set name="reuseDelay" val="360000"/>
+		<set name="hitTime" val="200"/>
+		<set name="icon" val="icon.skill10784"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15106" levels="1" name="Таинственная Сила">
+		<!--
+			Уровень: 1; Описание: Персонаж, жертвую собой, наносит удар по противнику. Наносит урон противнику, равный половине Макс. НР.
+		-->
+		<set name="reuseDelay" val="360000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1690"/>
+		<set name="icon" val="icon.skill10784"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15107" levels="1" name="Тайная Жертва">
+		<!--
+			Уровень: 1; Описание: Блокирует восстановление НР.
+		-->
+		<set name="icon" val="icon.skill4036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15108" levels="1" name="Полномочия Правителей">
+		<!--
+			Уровень: 1; Описание: Повышает силу Физ. Атк..
+		-->
+		<set name="reuseDelay" val="3600000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill10292"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15109" levels="1" name="Благословение Правителя">
+		<!--
+			Уровень: 1; Описание: Увеличивает Бонус Пробуждения, Кровотечения, Шока, Отравления, Удерживающей Атаки.
+		-->
+		<set name="reuseDelay" val="1000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15110" levels="1" name="Заклинание Мантры">
+		<!--
+			Уровень: 1; Описание: Наносит урон всем, кто находится вокруг персонажа.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15111" levels="1" name="Булава Возмездия">
+		<!--
+			Уровень: 1; Описание: Наносит урон противнику, отбрасывая его на некоторое расстояние .
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill4107"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15112" levels="1" name="Угроза">
+		<!--
+			Уровень: 1; Описание: Наносит мощный урон всем, кто находится вокруг персонажа.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15113" levels="1" name="Великолепный Топор">
+		<!--
+			Уровень: 1; Описание: Наносит урон одному из Членов Группы. Вызывает Кровотечение.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15114" levels="1" name="Огромный Нож">
+		<!--
+			Уровень: 1; Описание: Наносит урон всем, кто находится вокруг персонажа.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15115" levels="1" name="Черный Поцелуй">
+		<!--
+			Уровень: 1; Описание: Наносит урон всем, кто находится возле персонажа.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0036"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15116" levels="1" name="Романтичная Свинья">
+		<!--
+			Уровень: 1; Описание: Меняет Силуэт одного из Членов Группы на силуэт Свиньи.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="2500"/>
+		<set name="icon" val="icon.skill11537"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15117" levels="1" name="Кровавое Побоище">
+		<!--
+			Уровень: 1; Описание: Моментально убивает 3 Членов Группы противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="5000"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15118" levels="1" name="Сумасшествие">
+		<!--
+			Уровень: 1; Описание: В течение 5 сек. вызывает Состояние Оглушения у всех Членов Группы противника.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="4000"/>
+		<set name="icon" val="icon.skill3080"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15119" levels="1" name="Излечение Тела">
+		<!--
+			Уровень: 1; Описание: Полное восстановление собственного МР.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="3000"/>
+		<set name="icon" val="icon.skill11755"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15120" levels="1" name="Казнь">
+		<!--
+			Уровень: 1; Описание: Мгновенно убивает случайно выбранного Члена Группы противника..
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="4000"/>
+		<set name="icon" val="icon.skill0223"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15121" levels="1" name="Взрыв Ярости">
+		<!--
+			Уровень: 1; Описание: Взрыв Ярости. При использовании Петры увеличивается Физ. Атк. И скорость восстановления HP.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill1068"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15122" levels="1" name="Поверженные Бонио Калипасом">
+		<!--
+			Уровень: 1; Описание: Поверженные Бонио Калипасом.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15123" levels="1" name="Удар мечем наотмашь">
+		<!--
+			Уровень: 1; Описание: Сильный Удар Мечом наотмашь.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15124" levels="1" name="Рубящий Удар Топором">
+		<!--
+			Уровень: 1; Описание: Сильный рубящий Удар Топором.
+		-->
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0003"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15129" levels="1" name="Рыцарь: Полный Положительный Эффект ур. 1">
+		<!--
+			Уровень: 1; Описание: Тест. Рыцарь: полный Положительный Эффект ур. 1. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15130" levels="1" name="Рыцарь: Полный Положительный Эффект ур. 2">
+		<!--
+			Уровень: 1; Описание: Тест. Рыцарь: полный Положительный Эффект ур. 2. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15131" levels="1" name="Рыцарь: Полный Положительный Эффект ур. 3">
+		<!--
+			Уровень: 1; Описание: Тест. Рыцарь: полный Положительный Эффект ур. 3. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15132" levels="1" name="Рыцарь: Полный Положительный Эффект ур. 4">
+		<!--
+			Уровень: 1; Описание: Тест. Рыцарь: полный Положительный Эффект ур. 4. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15133" levels="1" name="Воитель: Полный Положительный Эффект ур. 1">
+		<!--
+			Уровень: 1; Описание: Тест. Воитель: полный Положительный Эффект ур. 1. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15134" levels="1" name="Воитель: Полный Положительный Эффект ур. 2">
+		<!--
+			Уровень: 1; Описание: Тест. Воитель: полный Положительный Эффект ур. 2. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15135" levels="1" name="Воитель: Полный Положительный Эффект ур. 3">
+		<!--
+			Уровень: 1; Описание: Тест. Воитель: полный Положительный Эффект ур. 3. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15136" levels="1" name="Воитель: Полный Положительный Эффект ур. 4">
+		<!--
+			Уровень: 1; Описание: Тест. Воитель: полный Положительный Эффект ур. 4. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15137" levels="1" name="Маг: Полный Положительный Эффект ур. 1">
+		<!--
+			Уровень: 1; Описание: Тест. Маг: полный Положительный Эффект ур. 1. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15138" levels="1" name="Маг: Полный Положительный Эффект ур. 2">
+		<!--
+			Уровень: 1; Описание: Тест. Маг: полный Положительный Эффект ур. 2. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15139" levels="1" name="Маг: Полный Положительный Эффект ур. 3">
+		<!--
+			Уровень: 1; Описание: Тест. Маг: полный Положительный Эффект ур. 3. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15140" levels="1" name="Маг: Полный Положительный Эффект ур. 4">
+		<!--
+			Уровень: 1; Описание: Тест. Маг: полный Положительный Эффект ур. 4. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15141" levels="1" name="Превосходный СР ур. 1">
+		<!--
+			Уровень: 1; Описание: Тест. Маг: полный Положительный Эффект ур. 1. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15142" levels="1" name="Превосходный СР ур. 2">
+		<!--
+			Уровень: 1; Описание: Тест. Маг: полный Положительный Эффект ур. 2. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15143" levels="1" name="Превосходный СР ур. 3">
+		<!--
+			Уровень: 1; Описание: Тест. Маг: полный Положительный Эффект ур. 3. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15144" levels="1" name="Превосходный СР ур. 4">
+		<!--
+			Уровень: 1; Описание: Тест. Маг: полный Положительный Эффект ур. 4. Увеличение способностей за счет силы Покровителя.
+		-->
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill11065"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="15145" levels="1" name="Полномочия Правителей">
+        <!--
+              Увеличивает число ячеек в инвентаре, уменьшая ограничения по весу.
+              Бонус Восстановления НР 10,12. Бонус Восстановления МР 3,89.
+              Физ. Атк., Маг. Атк., Физ. Защ. Маг. Защ.: +6%, Макс. НР +500,
+              Макс. МР 500, Макс. СР +500. Сопротивление Отражению Урона +5
+          -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_PASSIVE"/>
+        <for>
+            <add order="0x40" stat="maxHp" val="500"/>
+            <add order="0x40" stat="maxMp" val="500"/>
+            <add order="0x40" stat="maxCp" val="500"/>
+            <add order="0x40" stat="regHp" val="10.12"/>
+            <add order="0x40" stat="regMp" val="3.89"/>
+            <mul order="0x30" stat="pAtk" val="1.06"/>
+            <mul order="0x30" stat="mAtk" val="1.06"/>
+            <mul order="0x30" stat="pDef" val="1.06"/>
+            <mul order="0x30" stat="mDef" val="1.06"/>
+            <add order="0x40" stat="inventoryLimit" val="10"/>
+        </for>
+    </skill>
+	<skill id="15155" levels="1" name="Окаменение">
+		<!--
+			Уровень: 1; Описание: Окаменение.
+		-->
+		<set name="hitTime" val="500"/>
+		<set name="icon" val="icon.skill1540"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15182" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10027"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15183" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10027"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15184" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="10000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10027"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15185" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10012"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15186" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10012"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15187" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="60000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1000"/>
+		<set name="icon" val="icon.skill10012"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15188" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10771"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15189" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10771"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15190" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="7000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10771"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15191" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10772"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15192" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10772"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15193" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="15000"/>
+		<set name="coolTime" val="349"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill10772"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15194" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11296"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15195" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11296"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15196" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="300000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill11296"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15197" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="20000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15198" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="20000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="15199" levels="1" name="">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="reuseDelay" val="20000"/>
+		<set name="coolTime" val="500"/>
+		<set name="hitTime" val="1500"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+</list>

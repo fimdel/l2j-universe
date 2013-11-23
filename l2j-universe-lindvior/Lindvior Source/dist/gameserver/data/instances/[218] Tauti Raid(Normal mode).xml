@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <!-- Tauti - Normal Mode -->
+    <instance id="218" name="Tauti Raid" maxChannels="10" collapseIfEmpty="10" timelimit="60" dispelBuffs="true"
+              respawn="60">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="97" max="99"/>
+        <party min="14" max="35"/>
+        <return loc="-147733 152610 -14056"/>
+        <teleport loc="-146151 186525 -11736"/>
+        <remove itemId="34909" count="1" necessary="true"/>
+        <give itemId="0" count="0"/>
+        <quest id="0"/>
+        <reuse resetReuse="30 6 * * 3" setUponEntry="true" sharedReuseGroup="1"/>
+        <spawns>
+            <group name="third_stage_first_room" spawned="false"/>
+            <group name="third_stage_second_room" spawned="false"/>
+        </spawns>
+        <doors>
+            <door id="15240001" opened="true"/>
+            <door id="15240002" opened="true"/>
+        </doors>
+        <zones>
+            <zone name="[Tauti_epic]" active="true"/>
+        </zones>
+    </instance>
+</list>

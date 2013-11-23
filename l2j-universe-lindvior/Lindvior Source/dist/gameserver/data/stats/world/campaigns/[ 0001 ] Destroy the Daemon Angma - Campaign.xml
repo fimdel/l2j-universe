@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "campaigns.dtd">
+
+<!-- 
+	Уничтожение злых духов Тьмы - Кампания
+-->
+<list>
+    <quest id="1" name="_0001_DestroyTheDaemonAngma">
+        <level min="75"/>
+        <spawn name="_0001_DestroyTheDaemonAngma"/>
+        <dates>
+            <date day="Saturday" time="11:00"/>
+            <date day="Saturday" time="22:00"/>
+        </dates>
+        <steps>
+            <step id="101" name="_0001_DestroyTheDaemonAngma" title="Уничтожение злых духов Тьмы" points="10000"
+                  duration="30">
+                <dialogs>
+                    <dialog type="start" name="dc0001_start001"/>
+                    <dialog type="reject" name="dc0001_start002"/>
+                    <dialog type="accept" name="dc0001_context001"/>
+                    <dialog type="failed" name="dc0001_failed001"/>
+                    <dialog type="reward" name="dc0001_reward001"/>
+                    <dialog type="elite_reward" name="dc0001_elite_reward001"/>
+                    <dialog type="finish" name="dc0001_reward_received001"/>
+                </dialogs>
+                <points>
+                    <npc id="19086" points="1"/>
+                    <!-- Демон Гонца Тьмы -->
+                    <npc id="19087" points="2"/>
+                    <!-- Главный Демон Гонца Тьмы -->
+                </points>
+                <rewards>
+                    <reward id="33501" count="1" type="usual"/>
+                    <reward id="33501" count="1" type="elite"/>
+                    <reward id="33500" count="1" type="elite"/>
+                </rewards>
+            </step>
+        </steps>
+    </quest>
+</list>

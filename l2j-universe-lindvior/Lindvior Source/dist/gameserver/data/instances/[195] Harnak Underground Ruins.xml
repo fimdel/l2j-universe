@@ -1,0 +1,95 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="195" name="Harnak Underground Ruins" maxChannels="1" collapseIfEmpty="0" timelimit="60">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="85" max="99"/>
+        <party min="1" max="1"/>
+        <teleport loc="-107910 205828 -10872 0"/>
+        <return loc="-116120 236372 -3088 0"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <reuse resetReuse="1 15 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+        <spawns>
+            <!-- First room, First spawn -->
+            <group name="1_group" spawned="false"/>
+            <!-- First room, Second spawn -->
+            <group name="2_group" spawned="false"/>
+
+            <!-- Second room, First Spawn -->
+            <group name="3_group_1_139" spawned="false"/>
+            <group name="3_group_1_140" spawned="false"/>
+            <group name="3_group_1_141" spawned="false"/>
+            <group name="3_group_1_142" spawned="false"/>
+            <group name="3_group_1_143" spawned="false"/>
+            <group name="3_group_1_144" spawned="false"/>
+            <group name="3_group_1_145" spawned="false"/>
+            <group name="3_group_1_146" spawned="false"/>
+
+            <!-- Second room, Second Spawn -->
+            <group name="3_group_2_139" spawned="false"/>
+            <group name="3_group_2_140" spawned="false"/>
+            <group name="3_group_2_141" spawned="false"/>
+            <group name="3_group_2_142" spawned="false"/>
+            <group name="3_group_2_143" spawned="false"/>
+            <group name="3_group_2_144" spawned="false"/>
+            <group name="3_group_2_145" spawned="false"/>
+            <group name="3_group_2_146" spawned="false"/>
+
+            <!-- Second room, Third Spawn, Source Power -->
+            <group name="3_group_source_power" spawned="false"/>
+
+            <!-- Second room, Third Spawn -->
+            <group name="3_group_3_139" spawned="false"/>
+            <group name="3_group_3_140" spawned="false"/>
+            <group name="3_group_3_141" spawned="false"/>
+            <group name="3_group_3_142" spawned="false"/>
+            <group name="3_group_3_143" spawned="false"/>
+            <group name="3_group_3_144" spawned="false"/>
+            <group name="3_group_3_145" spawned="false"/>
+            <group name="3_group_3_146" spawned="false"/>
+
+            <!-- Second room, Fourth Spawn -->
+            <group name="3_group_4_139" spawned="false"/>
+            <group name="3_group_4_140" spawned="false"/>
+            <group name="3_group_4_141" spawned="false"/>
+            <group name="3_group_4_142" spawned="false"/>
+            <group name="3_group_4_143" spawned="false"/>
+            <group name="3_group_4_144" spawned="false"/>
+            <group name="3_group_4_145" spawned="false"/>
+            <group name="3_group_4_146" spawned="false"/>
+
+            <!-- Third room -->
+            <group name="4_group" spawned="false"/>
+            <group name="4_group_seal" spawned="false"/>
+            <group name="4_group_minion_139" spawned="false"/>
+            <group name="4_group_minion_140" spawned="false"/>
+            <group name="4_group_minion_141" spawned="false"/>
+            <group name="4_group_minion_142" spawned="false"/>
+            <group name="4_group_minion_143" spawned="false"/>
+            <group name="4_group_minion_144" spawned="false"/>
+            <group name="4_group_minion_145" spawned="false"/>
+            <group name="4_group_minion_146" spawned="false"/>
+
+            <!-- Last spawn -->
+            <group name="hermunkus" spawned="false"/>
+
+            <spawn mobId="19119" type="point">
+                <coords loc="-107924 211032 -10872 0"/>
+            </spawn>
+            <spawn mobId="19119" type="point">
+                <coords loc="-107696 208192 -10872 0"/>
+            </spawn>
+            <spawn mobId="19119" type="point">
+                <coords loc="-107937 205691 -10872 0"/>
+            </spawn>
+        </spawns>
+        <doors>
+            <door id="16240100" opened="false"/>
+            <door id="16240102" opened="false"/>
+        </doors>
+        <zones>
+            <zone name="[harnak_underground_4pf_1]" active="false"/>
+            <zone name="[harnak_underground_4pf_2]" active="false"/>
+        </zones>
+    </instance>
+</list>

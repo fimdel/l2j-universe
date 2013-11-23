@@ -1,0 +1,57 @@
+package npc.model;
+
+import events.SavingSnowman.SavingSnowman;
+import l2p.gameserver.model.Creature;
+import l2p.gameserver.model.Skill;
+import l2p.gameserver.model.instances.MonsterInstance;
+import l2p.gameserver.templates.npc.NpcTemplate;
+
+/**
+ * Р”Р°РЅРЅС‹Р№ РёРЅСЃС‚Р°РЅСЃ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РјРѕР±РѕРј Thomas D. Turkey РІ СЌРІРµРЅС‚Рµ Saving Snowman
+ *
+ * @author SYS
+ */
+public class ThomasInstance extends MonsterInstance {
+    /**
+     *
+     */
+    private static final long serialVersionUID = -8306474484707851916L;
+
+    public ThomasInstance(int objectId, NpcTemplate template) {
+        super(objectId, template);
+    }
+
+    @Override
+    public void reduceCurrentHp(double i, double reflectableDamage, Creature attacker, Skill skill, boolean awake, boolean standUp, boolean directHp, boolean canReflect, boolean transferDamage, boolean isDot, boolean sendMessage) {
+        i = 10;
+        if (attacker.getActiveWeaponInstance() != null)
+            switch (attacker.getActiveWeaponInstance().getItemId()) {
+                // Хроно оружие наносит больший урон
+                case 4202: // Chrono Cithara
+                case 5133: // Chrono Unitus
+                case 5817: // Chrono Campana
+                case 7058: // Chrono Darbuka
+                case 8350: // Chrono Maracas
+                    i = 100;
+                    break;
+                default:
+                    i = 10;
+            }
+
+        super.reduceCurrentHp(i, reflectableDamage, attacker, skill, awake, standUp, directHp, canReflect, transferDamage, isDot, sendMessage);
+    }
+
+    @Override
+    protected void onDeath(Creature killer) {
+        Creature topdam = getAggroList().getTopDamager();
+        if (topdam == null)
+            topdam = killer;
+        SavingSnowman.freeSnowman(topdam);
+        super.onDeath(killer);
+    }
+
+    @Override
+    public boolean canChampion() {
+        return false;
+    }
+}

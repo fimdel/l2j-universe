@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="14700" levels="1" name="Улучшение  Защиты">
+        <!--
+              Уровень: 1; Описание: Повышает физ. атаку на 25%, маг. атаку на 5%, защиту на 18, маг. свойства на 162, увеличивает скорость восстановления HP на 3, скорость восстановления MP на 3%, сопротивляемость противобаффным атакам на 8%. Время действия: 1 мин.
+          -->
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect abnormal="INVUL2" count="1" name="Buff" stackOrder="-1" stackType="Immobilize" time="60"
+                    val="0">
+                <mul order="0x30" stat="pAtk" val="1.25"/>
+                <mul order="0x30" stat="mAtk" val="1.50"/>
+                <add order="0x40" stat="pDef" val="1800"/>
+                <add order="0x40" stat="mDef" val="1620"/>
+                <add order="0x40" stat="regHp" val="300"/>
+                <add order="0x40" stat="regMp" val="300"/>
+                <add order="0x40" stat="cancelResist" val="80"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14701" levels="1" name="Мучительный боли">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0003"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14702" levels="1" name="Наступление Тьмы">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill0056"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14703" levels="1" name=" Циркуляция крови">
+        <!--
+              Уровень: 1; Описание: Кровопускание
+          -->
+        <set name="icon" val="icon.skill0096"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14704" levels="1" name="Сковывание">
+        <!--
+              Уровень: 1; Описание: a,none
+          -->
+        <set name="icon" val="icon.skill10015"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14705" levels="1" name="Устойчивость к Оглушению">
+        <!--
+              Уровень: 1; Описание: Сопротивление оглушению.
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14706" levels="1" name="Устойчивость к Оглушению">
+        <!--
+              Уровень: 1; Описание: Сопротивление оглушению.
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14707" levels="1" name="Устойчивость к Оглушению">
+        <!--
+              Уровень: 1; Описание: Сопротивление оглушению.
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14708" levels="1" name="Истхина">
+        <!--
+              Уровень: 1; Описание: Истхина- это богиня истребления, появившаяся от одного из 9 семян посаженных в Грации в месть Эйнхасад. Она является прородительницей всех существ Истребления. Вся жизненная энергия Грации служит ей источником  сил.  Для возрождения Шилен, Истхина готова отравить источники в Южной части Грации смертельным ядом.
+          -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14709" levels="1" name="Истхина">
+        <!--
+              Уровень: 1; Описание: Истхина - богиня истребления, возникшая из одного из 9 семян, посаженных в Грации во имя мести Эйнхасад. Она прородительница всех существ Истребления. Вся жизненная энергия Грации служит ей источником  сил.  Для возрождения Шилен Истхина собирается отравить все источники воды в Южной части Грации смертельным ядом.
+          -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14710" levels="1" name="Рейдовый босс. Уровень 97.">
+        <!--
+              Уровень: 1; Описание: Дракон Земли, известный в Адене своей жестокостью. Он долго спал под землей, но проснулся после пробуждения Шилен от кровавого дождя, который просочился вглубь недр. Теперь он  делает все, чтобы избавиться от оставшихся существ, пытающихся найти печати Шилен.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14711" levels="1" name="Рейдовый босс. Уровень 97.">
+        <!--
+              Уровень: 1; Описание: Мутант, созданный Эмбрио с помощью силы Семи печатей и власти Тьмы Шилен.  Хафф - прототип, полученный после множества экспериментов. Его левая сторона наделена необычайной магической силой, а правая отличается сверхестественной боевой мощью.  Его обязанность - охранять вход в Храм Шилен.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14712" levels="1" name="Рейдовый босс. Уровень 96.">
+        <!--
+              Уровень: 1; Описание: Один из Апостолов, созданных Эмбрио Этис Ван Этиной с помощью силы Семи Печатей.  Ее близнец - Апостол Меллиса. Исадора - волшебница, владеющая силой Печати Возмездия. Ее обязанность - охранять эту силу для возрождения Шилен.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14713" levels="1" name="Рейдовый босс. Уровень 97.">
+        <!--
+              Уровень: 1; Описание: Один из Апостолов, созданных Эмбрио Этис Ван Этиной с помощью силы Семи Печатей.  Ее близнец - Апостол Исадора. Меллиса - лекарь Тьмы , владеющая силой Печати Алчности. Ее обязанность - охранять эту силу для возрождения Шилен.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14714" levels="1" name="Рейдовый босс. Уровень 98.">
+        <!--
+              Уровень: 1; Описание: Миньон Белефа. Для оттеснения внешних сил от фей, Белеф вызвал из Ада Эмамбифи и отправил его в Перламутровый Зал Хрустального Лабиринта. Не обладая собственным сознанием, Эмамбифи действует по приказам Белефа.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14715" levels="1" name="Рейдовый босс. Уровень 98.">
+        <!--
+              Уровень: 1; Описание: Миньон Белефа. Для оттеснения внешних сил от фей Белеф вызвал из Ада Эмамбифи и отправил его в Огненный Коридор Хрустального Лабиринта. Кечи, свободно управляя огнем, контролирует большинство таких Миньонов.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14716" levels="1" name="Рейдовый босс. Уровень 98.">
+        <!--
+              Уровень: 1; Описание: Миньон Белефа. Для оттеснения внешних сил от фей Белеф вызвал из Ада Михаель и отправил ее в Подводный Сад Хрустального Лабиринта. Прекрасная внешне и беспощадная в душе, она обладает силой вершить судьбы живых существ.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14717" levels="1" name="Траскен">
+        <!--
+              Уровень: 1; Описание: Это посланник Ада, отправленный на Землю для сбора жертв Шилен. Ослепляет жертв и переносит их Шилен в собственном рту.
+          -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14718" levels="1" name="Рейдовый босс. Уровень 92.">
+        <!--
+              Уровень: 1; Описание: Это десятый Лорд Шилен и лидер фей, падший под влиянием Растлевающей Тьмы. Он потерял более 8% себя.  Из-за него Колония Фей пропиталась Энергией Зла.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14719" levels="1" name="Рейдовый босс. Уровень 95.">
+        <!--
+              Уровень: 1; Описание: Это десятый Лорд Шилен и лидер фей, падший под влиянием Растлевающей Тьмы. Он потерял более 8% себя.  Из-за него Колония Фей пропиталась Энергией Зла.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14720" levels="1" name="Рейдовый босс. Уровень 88.">
+        <!--
+              Уровень: 1; Описание: Как Адепт Шилен на Материке, она пришла в Храм Зла по следам крови Богини Разрушения. Трансформируется в королеву Бенши.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14721" levels="1" name="Рейдовый босс. Уровень 94.">
+        <!--
+              Уровень: 1; Описание: Спасия, из расы Гигантов, был изгнан за восстание и следование в Эйнхасад. Он спит вечным сном глубоко под Древним Городом Аркан.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14722" levels="1" name="Рейдовый босс. Уровень 98.">
+        <!--
+              Уровень: 1; Описание: Спасия, из расы Гигантов, был изгнан за восстание и следование в Эйнхасад. Он спит вечным сном глубоко под Древним Городом Аркан.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14723" levels="1" name="Рейдовый босс. Уровень 94.">
+        <!--
+              Уровень: 1; Описание: Этот монстр обладает древней живительной силой. Пал под влиянием Лорда Растлевающей Тьмы.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14724" levels="1" name="Рейдовый босс. Уровень 43.">
+        <!--
+              Уровень: 1; Описание: Этот монстр достаточно помог развитию торговли с Материком. Находиться под влиянием Лорда Растлевающей Тьмы.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14725" levels="1" name="Рейдовый босс. Уровень 43.">
+        <!--
+              Уровень: 1; Описание: Этот монстр достаточно помог развитию торговли с Материком. Находиться под влиянием Лорда Растлевающей Тьмы.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14726" levels="1" name="Октавис">
+        <!--
+              Уровень: 1; Описание: Он был когда-то героем расы людей, но стал лидером повстанцев, последовавших за Спасия. Соблазненный Ангелом Полиной, он в конце концов предал повстанцев и стал управляющим в Храме Орбиса. Хотя по приказу Богини он должен был впасть в глубокий сон, Октавис все же снял печати Шилен и погиб от полученного заражения Растлевающей Тьмы.
+          -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14727" levels="1" name="Валлок">
+        <!--
+              Уровень: 1; Описание: Он был создан Белефом для захвата острова. С помощью меча, полученного от Белефа, Валлок сумел открыть двери Ада, вызвал Апостолов Ада и наделил их силой для разрушения района.
+          -->
+        <set name="icon" val="icon.skillboss"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14728" levels="1" name="Рейдовый босс. Уровень 97.">
+        <!--
+              Уровень: 1; Описание:  Будучи когда- то героем, Трон восстал против Богини, был проклят и бежал в Фортуну.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14729" levels="1" name="Рейдовый босс. Уровень 92.">
+        <!--
+              Уровень: 1; Описание: Будучи выдающимся магом, Юи восстала против Богини. После потери любимого Юи сошла сума и была проклята.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14730" levels="1" name="Рейдовый босс. Уровень 94.">
+        <!--
+              Уровень: 1; Описание: Мастер Киннен, могучий воин стоящий роты, предал Богиню и был проклят ею. Сейчас скрывается в Фортуне.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14731" levels="1" name="Рейдовый босс. Уровень 95.">
+        <!--
+              Уровень: 1; Описание:  Бывший главарь банды Ресинда последовал вслед за Троном в Фортуну и был проклят.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14732" levels="1" name="Рейдовый босс. Уровень 96.">
+        <!--
+              Уровень: 1; Описание:  Коняр, плавящий своих врагов неистовым пламенем, однажды опалил Богиню.  Напрасно он просил прощения- Коняр был проклят и теперь скрывается в Фортуне.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14733" levels="1" name="Рейдовый босс. Уровень 93.">
+        <!--
+              Уровень: 1; Описание: В отличае от остальных Трусливый Мукшу может получать назад свои глаза, заменяя Слепого Хорнапи. Когда Хорнапи нет рядом,единственное, на что способен Мукшу- быстро улизнуть.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14734" levels="1" name="Рейдовый босс. Уровень 96.">
+        <!--
+              Уровень: 1; Описание: Этот огромный Орк ослеп в битве. Инстинктивно нападает на врага, следуя звукам и знакам Мукшу.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14735" levels="1" name="Рейдовый босс. Уровень 96.">
+        <!--
+              Уровень: 1; Описание: Йоентумак обладает даром мгновенного саморазрушения. Это самый страшный Ассасин среди Миньонов Трона. Он был проклят, последовав вместе с Троном вслед за Богиней.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14736" levels="1" name="Свет Исцеления">
+        <!--
+              Уровень: 1; Описание: Восстанавливает 1488 HP цели. Заполняет HP, а оставшимся эффектом - CP.
+          -->
+        <set name="skillType" val="HEAL_WITH_CP"/>
+        <set name="isMagic" val="true"/>
+        <set name="power" val="1488"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+    </skill>
+    <skill id="14737" levels="1" name="Печать">
+        <!--
+              Уровень: 1; Описание: Печать установлена.
+          -->
+        <set name="icon" val="icon.skill1042"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14738" levels="1" name="Олимпиада - Поэма Рога">
+        <!--
+              Уровень: 1; Описание: На 3 мин.: Физ. Атк. +17%, Физ. Защ. +15%, Маг. Атк. +79%, Маг. Защ. +3%.
+          -->
+        <table name="#pAtk">1.17</table>
+        <table name="#mAtk">1.79</table>
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="4" stackType="MagicDefUp;pAtk;pDef;mAtk;rogdm;rogbw">
+                <mul order="0x30" stat="pDef" val="1.15"/>
+                <mul order="0x30" stat="pAtk" val="#pAtk"/>
+                <mul order="0x30" stat="mAtk" val="#mAtk"/>
+                <mul order="0x30" stat="mDef" val="1.30"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14739" levels="1" name="Олимпиада - Поэма Барабана">
+        <!--
+              Уровень: 1; Описание:  На 3 мин.: Макс. MP +2%, Бонус восстановления HP +2%, Маг. Крит. Атк. +2, Крит. Атк. +2%, Физ. Атк. +1%, Физ. Защ. +2%, Скор. Атк. +2%, Маг. Атк. +2%, Маг. Защ. +2%, Скор. Маг. +2%,  сопротивление негативным эффектам +1%, и Защиту при получении Крит. Атк. Сокращает скорость передвижения на 15%, но увеличивает силу Крит. Атк. членов группы.
+          -->
+        <table name="#spd">0.85</table>
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="3" stackType="ancient">
+                <mul order="0x30" stat="maxMp" val="1.2"/>
+                <mul order="0x30" stat="regHp" val="1.2"/>
+                <mul order="0x30" stat="mCritRate" val="1.2"/>
+                <mul order="0x30" stat="pCritDamage" val="1.2"/>
+                <mul order="0x30" stat="pAtk" val="1.1"/>
+                <mul order="0x30" stat="pDef" val="1.2"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.2"/>
+                <mul order="0x30" stat="mAtk" val="1.2"/>
+                <mul order="0x30" stat="mDef" val="1.2"/>
+                <mul order="0x30" stat="runSpd" val="#spd"/>
+                <add order="0x40" stat="debuffResist" val="10"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14740" levels="1" name="Олимпиада - Поэма Органа">
+        <!--
+              Уровень: 1; Описание:  На 3 мин.: Макс. HP/MP/CP +37%, регенерация HP +2%.
+          -->
+        <table name="#vuln">1.37</table>
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="hp_up;hpregen;mp_up">
+                <mul order="0x30" stat="maxHp" val="#vuln"/>
+                <mul order="0x30" stat="maxMp" val="#vuln"/>
+                <mul order="0x30" stat="maxCp" val="#vuln"/>
+                <mul order="0x30" stat="regHp" val="1.20"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14741" levels="1" name="Олимпиада - Поэма Гитары">
+        <!--
+              Уровень: 1; Описание:  На 3 мин.: шанс Крит. Атк. +32%, сила Крит. Атк. +35%,  шанс Маг. Крит. Атк. +2, расход MP на Физ. Умения -2%, расход MP на Маг. Умения -1%,  расход MP на умения Заклинателя Иса -2%.
+          -->
+        <table name="#vuln">32</table>
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="impulse;pCritDamage;pCritRate">
+                <add order="0x40" stat="pCritRate" val="#vuln"/>
+                <mul order="0x30" stat="pCritDamage" val="1.35"/>
+                <mul order="0x30" stat="mCritRate" val="1.2"/>
+                <mul order="0x30" stat="mpConsum" val="0.9"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14742" levels="1" name="Олимпиада - Поэма Арфы">
+        <!--
+              Уровень: 1; Описание:  На 3 мин.: Физ. Точность +5, Физ. и Маг. Уворот +5, скорость передвижения +34. Урон от Крит. Атк. -3%.
+          -->
+        <table name="#vuln">5</table>
+        <table name="#vuln2">34</table>
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11"
+                    stackType="accuracyUp;SpeedUp;Poem_Arfa;pEvasionRate;CoP">
+                <add order="0x40" stat="pAccuracyCombat" val="#vuln"/>
+                <add order="0x40" stat="pEvasionRate" val="#vuln"/>
+                <add order="0x40" stat="runSpd" val="#vuln2"/>
+                <mul order="0x30" stat="critDamRcpt" val="0.7"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14743" levels="1" name="Олимпиада - Поэма Лютни">
+        <!--
+              Уровень: 1; Описание: На 3 мин.: Скор. Атк. +34%, Скор. Маг. +31%. С определенным шансом активизирует 9% Гнева Вампира.
+          -->
+        <table name="#vuln1">1.34</table>
+        <table name="#vuln2">1.31</table>
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11" stackType="vampRage;pAtkSpeedUp;mAtkSpeedUp">
+                <add order="0x40" stat="absorbDam" val="9"/>
+                <mul order="0x30" stat="pAtkSpd" val="#vuln1"/>
+                <mul order="0x30" stat="mAtkSpd" val="#vuln2"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14744" levels="1" name="Олимпиада - Гармония Стража">
+        <!--
+              Уровень: 1; Описание: На 3 мин.: сила Физ. Атк. +12%, Физ. Защ. +45%, шанс блока щитом +3%, защита щитом +5%, сила Физ. Крит. Атк. +35%, шанс Физ. Крит. Атк. +1%.
+          -->
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11"
+                    stackType="shieldProbUp;Harmony_isa;Great;HarmonyGuardian_1;HarmonyGuardian_2;Harmonysoe;Harmonydow;HarmonySg;pitmcrit;pitmsrag">
+                <mul order="0x30" stat="pAtk" val="1.12"/>
+                <mul order="0x30" stat="pDef" val="1.45"/>
+                <add order="0x40" stat="rShld" val="30"/>
+                <mul order="0x30" stat="sDef" val="1.50"/>
+                <add order="0x40" stat="pCritRate" val="100"/>
+                <mul order="0x30" stat="pCritDamage" val="1.35"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14745" levels="1" name="Олимпиада - Гармония Берсерка">
+        <!--
+              Уровень: 1; Описание: На 3 мин.: Физ. Атк. +35%, Маг. Атк. +16%, Скор. Атк. +8%, сила Физ. Крит. Атк. +35%, шанс Физ. Крит. Атк. +1%, скорость передвижения +8. Маг. Защ. -16%, Физ. Защ. -8%, Физ. Уворот -4.
+          -->
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11"
+                    stackType="Great;Harmony;Harmony_isa;HarmonyBerserk_1;HarmonyBerserk_2;Harmonysoh;Harmonydof;berserk;pitmcrit1;pitmsrag1">
+                <mul order="0x30" stat="pAtk" val="1.35"/>
+                <mul order="0x30" stat="mAtk" val="1.16"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pCritDamage" val="1.35"/>
+                <add order="0x40" stat="pCritRate" val="100"/>
+                <add order="0x40" stat="runSpd" val="8"/>
+                <mul order="0x30" stat="pDef" val="0.92"/>
+                <mul order="0x30" stat="mDef" val="0.84"/>
+                <sub order="0x40" stat="pEvasionRate" val="4"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14746" levels="1" name="Олимпиада - Гармония Мага">
+        <!--
+              Уровень: 1; Описание: На 3 мин.: Физ. Атк. +8%, Маг. Атк. +4%, Скор. Физ. и Маг. Атк. +8%, Маг. Защ. +14%, шанс Маг. Крит. Атк. +1%, восстановление MP +2%, скорость передвижения +8. Физ. Защ. -8%, Физ. Уворот -4, расход MP на Маг. Умения -15%, расход MP на Физ. Умения -5%, время повторного использования Умений -2%.
+          -->
+        <table name="#time">1800</table>
+        <set name="target" val="TARGET_SELF"/>
+        <table name="#magicLevel">85</table>
+        <set name="magicLevel" val="#magicLevel"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="isMagic" val="true"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+        <for>
+            <effect name="Buff" time="#time" val="0" stackOrder="11"
+                    stackType="concentration;Harmonysor;Harmonysd;Harmony_isa;buff_one;HarmonyMage_1;HarmonyMage_2;HarmonyMage_3;Harmonydom;Harmonysow;HarmonyAw;HarmonyAp;pitmsrag2;pitmmagii">
+                <mul order="0x30" stat="pAtk" val="1.08"/>
+                <mul order="0x30" stat="mAtk" val="1.40"/>
+                <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+                <mul order="0x30" stat="mDef" val="1.14"/>
+                <mul order="0x30" stat="mCritRate" val="2"/>
+                <add order="0x40" stat="mpEff" val="20"/>
+                <add order="0x40" stat="runSpd" val="8"/>
+                <mul order="0x30" stat="pDef" val="0.92"/>
+                <sub order="0x30" stat="pEvasionRate" val="4"/>
+                <mul order="0x30" stat="mpConsum" val="0.85"/>
+                <mul order="0x30" stat="mpConsumePhysical" val="0.95"/>
+                <mul order="0x30" stat="mReuse" val="0.8"/>
+            </effect>
+        </for>
+    </skill>
+    <skill id="14747" levels="1" name="Рейдовый Босс 88 ур.">
+        <!--
+              Уровень: 1; Описание: Детеныши Земляного Червя, обитают в глубине Мифрилового Рудника. Не достигнув еще такого грандиозного размера, как Земляной Червь, они все же очень крупны. Они очень опасны - ядовиты и обладают удивительной разрушительной способностью. Изначально они должны были подрасти еще немного, но из-за проникшего в Рудник влияния крови вылупились раньше, чем предполагалось.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14748" levels="1" name="Рейдовый Босс 98 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Человек, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14749" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Орк, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14750" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Человек, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14751" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Человек, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14752" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Орк, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14753" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Эльф, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14754" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Человек, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14755" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Человек, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14756" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Орк, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14757" levels="1" name="Рейдовый Босс 97 ур.">
+        <!--
+              Уровень: 1; Описание: Герой-Орк, ступивший в Храм Обриса. Растлевающая Тьма Шилен пробудила его от вечного сна, и теперь его отравленная душа ненавидит все живое.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14758" levels="1" name="Рейдовый Босс 59 ур.">
+        <!--
+              Уровень: 1; Описание: Маг высокого уровня, руководивший работами при строительстве Башни Дерзости. После обрушения башни воскрес благодаря наложенному на самого себя заклинанию, но из-за сильных побочных действий заклинания его тело гниет, а душа блуждает во тьме. У него остались только навыки мага высокого уровня, но сам он сошел с ума и нападает на всех, кто ступит в башню.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14759" levels="1" name="Рейдовый Босс 62 ур.">
+        <!--
+              Уровень: 1; Описание: Маг высокого уровня, руководивший работами при строительстве Башни Дерзости. После обрушения башни воскрес благодаря наложенному на самого себя заклинанию, но из-за сильных побочных действий заклинания его тело гниет, а душа блуждает во тьме. У него остались только навыки мага высокого уровня, а для восстановления гниющего тела  злодей нуждается в крови живых.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14760" levels="1" name="Рейдовый Босс 66 ур.">
+        <!--
+              Уровень: 1; Описание: Маг высокого уровня, руководивший работами при строительстве Башни Дерзости. После обрушения башни воскрес. Питается душами и кровью жертв, погребенных под руинами башни. Чтобы поддерживать жизнь, нуждается в крови живых.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14761" levels="1" name="Рейдовый Босс 7 ур.">
+        <!--
+              Уровень: 1; Описание: Злая сила, появившаяся в момент страшного ритуала, когда могущественный маг принес в жертву собственную кровь и душу и был погребен под обломками башни. Маг получил новое тело, но не смог сохранить душу.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14762" levels="1" name="Рейдовый Босс 72 ур.">
+        <!--
+              Уровень: 1; Описание: Баюм однажды решил создать ангела, который защищал бы его. Однако жестокий демон с черными крыльями – все, что удалось создать Баюму из сочетания врачебного искусства и магии высокого уровня - не слушался хозяина и даже в смертный час Баюма, издеваясь, летал над ним. Из-за наложенного Баюмом заклинания он не может выйти за пределы башни, для поддержания жизни нуждается в пище.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14763" levels="1" name="Рейдовый Босс 75 ур.">
+        <!--
+              Уровень: 1; Описание: Баюм однажды решил создать ангела, который защищал бы его. Однако жестокий демон с черными крыльями – все, что удалось создать Баюму из сочетания врачебного искусства и магии высокого уровня - не слушался хозяина. Он хотел только убивать, не разбирая противников и союзников. Из-за наложенного Баюмом заклинания он не может выйти за пределы башни и для поддержания жизни нуждается в пище.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14764" levels="1" name="Рейдовый Босс 75 ур.">
+        <!--
+              Уровень: 1; Описание: Баюм однажды решил создать ангела, который защищал бы его. Однако жестокий демон с черными крыльями – все, что удалось создать Баюму из сочетания врачебного искусства и магии высокого уровня - не слушался хозяина. Он хотел только убивать, не разбирая противников и союзников. Из-за наложенного Баюмом заклинания он не может выйти за пределы башни и для поддержания жизни нуждается в пище.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14765" levels="5" name="Сопротивление Вампиризму">
+        <!--
+              Уровень: 1; Описание: Защищает от вампиризма.
+              Уровень: 2; Описание: Защищает от вампиризма.
+              Уровень: 3; Описание: Защищает от вампиризма.
+              Уровень: 4; Описание: Защищает от вампиризма.
+              Уровень: 5; Описание: Защищает от вампиризма.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14766" levels="1" name="Свет Защиты">
+        <!--
+              Уровень: 1; Описание: Отменяет все негативные эффекты, наложенные на Вас.
+          -->
+        <set name="icon" val="icon.skill14766"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14767" levels="1" name="Осадный Удар">
+        <!--
+              Уровень: 1; Описание: Мощная атака по окружающим целям.
+          -->
+        <set name="icon" val="icon.skill0000"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14768" levels="1" name="Рейдовый Босс 85 ур.">
+        <!--
+              Уровень: 1; Описание: После смерти от Фринтезы, который забрал душу у демона, родилась в новом демоне под именем Скарлет Ван Халиша. Потеряла всякий контроль над собой и теперь лишь приносит жертвы демону Халише.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14769" levels="1" name="Рейдовый Босс 82 ур.">
+        <!--
+              Уровень: 1; Описание: Правитель Семени Бессмертия Экимус, раньше был мужским воплощением Ехидны, одной из девяти апостолов Шилен, а затем был выбран Шилен в качестве правителя Семени Бессмертия и повел за собой Нежить.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14770" levels="1" name="Рейдовый Босс 75 ур.">
+        <!--
+              Уровень: 1; Описание: Верховный демон Шилен, обитающий в подземной темнице замка, где почти не ощущается различие между физическим миром и ментальным. Почуяв запах крови или металла, он разрывает пространственную преграду и уничтожает все на своем пути.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14771" levels="1" name="Рейдовый Босс 29 ур.">
+        <!--
+              Уровень: 1; Описание: Демон Шилен, обитающий в Камалоке и скитающийся между физическим и ментальным мирами. Ожидает воскрешения Шилен для уничтожения физического мира.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14772" levels="1" name="Рейдовый Босс 39 ур.">
+        <!--
+              Уровень: 1; Описание: Демон Шилен, обитающий в Камалоке и скитающийся между физическим и ментальным мирами. Ожидает воскрешения Шилен для уничтожения физического мира.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14773" levels="1" name="Рейдовый Босс 49 ур.">
+        <!--
+              Уровень: 1; Описание: Демон Шилен, обитающий в Камалоке и скитающийся между физическим и ментальным мирами. Ожидает воскрешения Шилен для уничтожения физического мира.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14774" levels="1" name="Рейдовый Босс 59 ур.">
+        <!--
+              Уровень: 1; Описание: Демон Шилен, обитающий в Камалоке и скитающийся между физическим и ментальным мирами. Ожидает воскрешения Шилен для уничтожения физического мира.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14775" levels="1" name="Рейдовый Босс 69 ур.">
+        <!--
+              Уровень: 1; Описание: Демон Шилен, обитающий в Камалоке и скитающийся между физическим и ментальным мирами. Ожидает воскрешения Шилен для уничтожения физического мира.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14776" levels="1" name="Рейдовый Босс 78 ур.">
+        <!--
+              Уровень: 1; Описание: Демон Шилен, обитающий в Камалоке и скитающийся между физическим и ментальным мирами. Ожидает воскрешения Шилен для уничтожения физического мира.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14777" levels="1" name="Рейдовый Босс 81 ур.">
+        <!--
+              Уровень: 1; Описание: Демон Шилен, обитающий в Камалоке и скитающийся между физическим и ментальным мирами. Ожидает воскрешения Шилен для уничтожения физического мира.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14778" levels="1" name="Рейдовый Босс 83 ур.">
+        <!--
+              Уровень: 1; Описание: Демон Шилен, обитающий в Камалоке и скитающийся между физическим и ментальным мирами. Ожидает воскрешения Шилен для уничтожения физического мира.
+          -->
+        <set name="icon" val="icon.skillraid"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14779" levels="1" name="Благословение Мастера - Поэма Рога">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает Физ. Атк. на 23%, Физ. Защ. на 15%, Маг. Атк. на 91% и Сопротивление Магии на 3%.
+          -->
+        <set name="icon" val="icon.skill11517"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14780" levels="1" name="Благословение Мастера - Поэма Барабана">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 мин. увеличивает Макс. MP на 2%, бонус восстановления HP на 2%, шанс Маг. Крит. Атк. на 2, силу Крит. Атк. на 2%, Физ. Атк. на 1%, Физ. Защ. на 2%, Скор. Атк. на 2%, Маг. Атк. на 2%, Сопротивление Магии на 2%, Скор. Маг. на 2%, сопротивление негативным эффектам на 1% и защиту при получении Крит. Атк. Дополнительно увеличивает силу Крит. Атк. членов группы с оружием ближнего боя в руках, если они получили определенный урон.
+          -->
+        <set name="icon" val="icon.skill11522"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14781" levels="1" name="Благословение Мастера - Поэма Органа">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает Макс. HP на 43%, Макс. MP на 43%, Макс. CP на 43% и бонус восстановления HP на 2%.
+          -->
+        <set name="icon" val="icon.skill11519"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14782" levels="1" name="Благословение Мастера - Поэма Гитары">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает шанс Крит. Атк. на 38%, силу Крит. Атк. на 35%, шанс Маг. Крит. Атк. на 2 и снижает Расход MP для физ. умений на 2%, и для маг. умений на 1%, а также для усиливающих умений Заклинателя Иса на 2%.
+          -->
+        <set name="icon" val="icon.skill11520"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14783" levels="1" name="Благословение Мастера - Поэма Арфы">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает Физ. Точность на 8, Физ. и Маг. Уклонение на 8, Скорость на 37 и снижает получаемый урон от Крит. Атк. на 3%.
+          -->
+        <set name="icon" val="icon.skill11521"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14784" levels="1" name="Благословение Мастера - Поэма Лютни">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: Скор. Атк. +37%, Скор. Маг. +34% и с определенным шансом придает эффект Ярость Вампира 9%.
+          -->
+        <set name="icon" val="icon.skill11518"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14785" levels="1" name="Благословение Мастера - Гармония Стража">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает Физ. Атк. на 12%, Физ. Защ. на 45%, Шанс Блока Щитом на 3%, Защиту Щитом на 5%, силу Крит. Атк. на 35% и шанс Крит. Атк. на 1%.
+          -->
+        <set name="icon" val="icon.skill11523"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14786" levels="1" name="Благословение Мастера - Гармония Берсерка">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает Физ. Атк. на 35%, Маг. Атк. на 16%, Скор. Атк./Маг. на 8%, силу Крит. Атк. на 35%, шанс. Крит. Атк. на 1%, Скорость на 8 , но снижает Сопротивление Магии на 16%, Физ. Защ. на 8% и Физ. Уклонение на 4.
+          -->
+        <set name="icon" val="icon.skill11524"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14787" levels="1" name="Благословение Мастера - Гармония Мага">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает Физ. Атк. на 8%, Маг. Атк. на 4%, Скор. Атк./Маг. на 8%, Сопротивление Магии на 14%, Шанс. Маг. Крит. Атк. на 1%, Бонус восстановления MP на 2%, Скорость на 8 и снижает Физ. Защ. на 8%, Физ. Уклонение на 4, Расход MP на Маг. Умения на 15%, на Физ. Умения на 5% и время повторного использования умения на 2%.
+          -->
+        <set name="icon" val="icon.skill11525"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14788" levels="1" name="Благословение Мастера - Сопротивление Стихиям">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает сопротивление от всех 4-х стихий на 3.
+          -->
+        <set name="icon" val="icon.skill11565"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14789" levels="1" name="Благословение Мастера - Сопротивление Святости">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч. увеличивает сопротивление Святости/Тьме на 3 и Яду/Кровотечению на 5%.
+          -->
+        <set name="icon" val="icon.skill11567"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14790" levels="1" name="Благословение Мастера - Сопротивление Ментальности">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: сопротивление Удерживающим/Усыпляющим/Ментальным атакам +5, сопротивление снятию положительных эффектов +3 и сопротивление отрицательным эффектам +2.
+          -->
+        <set name="icon" val="icon.skill11824"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14791" levels="1" name="Благословение Мастера - Поэма Рога (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: Физ. Атк. +23%, Физ. Защ. +15%, Маг. Атк. +91%, Сопротивление Магии +3%.
+          -->
+        <set name="icon" val="icon.skill11517"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14792" levels="1" name="Благословение Мастера - Поэма Барабана (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 мин.: Макс. MP +2%, Бонус восстановления HP +2%, шанс Маг. Крит. Атк. +2, сила Крит. Атк. +2%, Физ. Атк. +1%, Физ. Защ. +2%, Скор. Атк. +2%, Маг. Атк. +2%, Сопротивление Магии +2%, Скор. Маг. +2%, Сопротивление Негативным Эффектам +1% и Защиту при получении Крит. Атк. Дополнительно увеличивает силу Крит. Атк. членов группы с оружием ближнего боя в руках, если они получают определенный урон.
+          -->
+        <set name="icon" val="icon.skill11522"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14793" levels="1" name="Благословение Мастера - Поэма Органа (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: Макс. HP +43%, Макс. MP +43%, Макс. CP +43% и Бонус восстановления HP +2%.
+          -->
+        <set name="icon" val="icon.skill11519"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14794" levels="1" name="Благословение Мастера - Поэма Гитары (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: шанс Физ. Крит. Атк. +38%, сила Физ. Крит. Атк. +35%, шанс Маг. Крит. Атк. +2. Расход MP на Физ. Умения -2%, на Маг. Умения -1% и на усиляющие умения Заклинателя Иса -2%.
+          -->
+        <set name="icon" val="icon.skill11520"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14795" levels="1" name="Благословение Мастера - Поэма Арфы (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: Физ. Точность +8, Физ. и Маг. Уклонение +8, Скорость +37, получаемый урон от Крит. Атк. -3%.
+          -->
+        <set name="icon" val="icon.skill11521"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14796" levels="1" name="Благословение Мастера - Поэма Лютни (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: Скор. Атк. +37%, Скор. Маг. +34%, с определенным шансом придает эффект Ярость Вампира 9%.
+          -->
+        <set name="icon" val="icon.skill11518"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14797" levels="1" name="Благословение Мастера - Гармония Стража (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: Физ. Атк. +12%, Физ. Защ. +45%, шанс блока щитом +3%, Защита Щита +5%, сила Физ. Крит. Атк. +35% и шанс Физ. Крит. Атк. +1%.
+          -->
+        <set name="icon" val="icon.skill11523"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14798" levels="1" name="Благословение Мастера - Гармония Берсерка (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: Физ. Атк. +35%, Маг. Атк. +16%, Скор. Атк./Маг. +8%, сила Физ. Крит. Атк. +35%, шанс Физ. Крит. Атк. +1%, Скорость +8 , Сопротивление Магии -16%, Физ. Защ. -8%, Физ. Уклонение -4.
+          -->
+        <set name="icon" val="icon.skill11524"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+    <skill id="14799" levels="1" name="Благословение Мастера - Гармония Мага (Массовое)">
+        <!--
+              Уровень: 1; Описание: GM всегда на Вашей стороне. На 1 ч.: Физ. Атк. +8%, Маг. Атк. +4%, Скор. Атк./Маг. +8%, Сопротивление Магии +14%, шанс. Маг. Крит. Атк. +1%, бонус восстановления MP +2%, Скорость +8, Физ. Защ. -8%, Физ. Уклонение -4, Расход MP на Маг. Умения -15%, на Физ. Умения -5%, время повторного использования умения -2%.
+          -->
+        <set name="icon" val="icon.skill11525"/>
+        <set name="target" val="TARGET_NONE"/>
+        <set name="skillType" val="NOTDONE"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+    </skill>
+</list>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright Mazaffaka Project (c) 2013.
+  -->
+
+<list>
+    <skill id="7100" levels="1" name="Оглушение Питомца Клана">
+		<!--
+			Уровень: 1; Описание: В течение 3 сек. эффект Оглушения.
+		-->
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill5168"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="7101" levels="1" name="Воздушные Оковы Питомца Клана">
+		<!--
+			Уровень: 1; Описание: В течение 3 сек. Поднимает цель в воздух и обездвиживает.
+		-->
+		<set name="hitTime" val="2000"/>
+		<set name="icon" val="icon.skill11276"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="7102" levels="1" name="Призыв Питомца Клана">
+		<!--
+			Уровень: 1; Описание: none
+		-->
+		<set name="hitTime" val="5000"/>
+		<set name="icon" val="icon.skill0000"/>
+		<set name="target" val="TARGET_NONE"/>
+		<set name="skillType" val="NOTDONE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+    <skill id="7103" levels="1" name="도움의 나무 CP 회복 범위">
+        <!-- 7103	1	도움의 나무 CP 회복 범위	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7104" levels="1" name="파아그리오의 손길">
+        <!-- 7104	1	파아그리오의 손길	파아그리오의 손길로 드라코 알의 온도를 높인다. 작은 드라코의 알에게 사용하면 1~10도, 큰 드라코의 알에게 사용하면 0.1~1.0도 온도를 높일 수 있다. 불꽃의 정령 아가시온을 소환하고 있어야지만 사용이 가능하다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7105" levels="1" name="부화 가능 상태">
+        <!-- 7105	1	부화 가능 상태	부화 가능 상태 -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7106" levels="1" name="적정온도 부화 성공">
+        <!-- 7106	1	적정온도 부화 성공	적정 온도 부화 성공 -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7107" levels="1" name="부화 성공">
+        <!-- 7107	1	부화 성공	부화 성공 -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7108" levels="1" name="부화 실패">
+        <!-- 7108	1	부화 실패	부화 실패 -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7109" levels="1" name="얄미운 앙마 소환">
+        <!-- 7109	1	얄미운 앙마 소환	얄미운 앙마를 소환한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7110" levels="1" name="얄미운 앙마 소환">
+        <!-- 7110	1	얄미운 앙마 소환	얄미운 앙마를 소환한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7111" levels="1" name="얄미운 앙마 소환">
+        <!-- 7111	1	얄미운 앙마 소환	얄미운 앙마를 소환한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7112" levels="1" name="얄미운 앙마 소환">
+        <!-- 7112	1	얄미운 앙마 소환	얄미운 앙마를 소환한다. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7113" levels="1" name="펫 무적 효과">
+        <!-- 7113	1	펫 무적 효과	무적 효과 -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_ONE"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7114" levels="1" name="마법서 - 혈맹 깃발">
+        <!-- 7114	1	마법서 - 혈맹 깃발	none -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+
+    <skill id="7115" levels="1" name="혼돈의 기운">
+        <!-- 7115	1	혼돈의 기운	혼돈의 제전의 참여로 인해 캐릭터의 헤어와 망토가 변경된 상태. -->
+        <set name="operateType" val="OP_ACTIVE"/>
+        <set name="target" val="TARGET_AREA"/>
+        <set name="skillType" val="NOTDONE"/>
+    </skill>
+</list>
